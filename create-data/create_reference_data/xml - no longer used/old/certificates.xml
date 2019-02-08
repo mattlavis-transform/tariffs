@@ -1,0 +1,1970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<env:envelope xmlns="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" id="5000">
+  <env:transaction id="1">
+    <env:app.message id="1">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>1</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>1</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10000</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>9</oub:certificate.type.code>
+            <oub:certificate.code>120</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="2">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>1</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>2</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10000</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>9</oub:certificate.type.code>
+            <oub:certificate.code>120</oub:certificate.code>
+            <oub:description>Importation of animal pathogens Licence under the Importation of Animal Pathogens Order 1980 (IAPO)</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="2">
+    <env:app.message id="3">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>2</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>3</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10001</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>A</oub:certificate.type.code>
+            <oub:certificate.code>001</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="4">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>2</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>4</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10001</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>A</oub:certificate.type.code>
+            <oub:certificate.code>001</oub:certificate.code>
+            <oub:description>Certificate of authenticity - Fresh EMPEROR table grapes</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="3">
+    <env:app.message id="5">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>3</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>5</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10002</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>A</oub:certificate.type.code>
+            <oub:certificate.code>004</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="6">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>3</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>6</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10002</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>A</oub:certificate.type.code>
+            <oub:certificate.code>004</oub:certificate.code>
+            <oub:description>Certificate of authenticity - Tobacco</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="4">
+    <env:app.message id="7">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>4</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>7</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10003</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>A</oub:certificate.type.code>
+            <oub:certificate.code>010</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="8">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>4</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>8</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10003</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>A</oub:certificate.type.code>
+            <oub:certificate.code>010</oub:certificate.code>
+            <oub:description>Certificate of authenticity - Concentrated orange juice</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="5">
+    <env:app.message id="9">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>5</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>9</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10004</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>A</oub:certificate.type.code>
+            <oub:certificate.code>014</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="10">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>5</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>10</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10004</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>A</oub:certificate.type.code>
+            <oub:certificate.code>014</oub:certificate.code>
+            <oub:description>Certificate of authenticity - HANDI</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="6">
+    <env:app.message id="11">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>6</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>11</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10005</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>A</oub:certificate.type.code>
+            <oub:certificate.code>015</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="12">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>6</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>12</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10005</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>A</oub:certificate.type.code>
+            <oub:certificate.code>015</oub:certificate.code>
+            <oub:description>Certificate of authenticity - Silk or cotton handloom products</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="7">
+    <env:app.message id="13">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>7</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>13</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10006</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>A</oub:certificate.type.code>
+            <oub:certificate.code>017</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="14">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>7</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>14</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10006</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>A</oub:certificate.type.code>
+            <oub:certificate.code>017</oub:certificate.code>
+            <oub:description>Certificate of authenticity</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="8">
+    <env:app.message id="15">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>8</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>15</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10007</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>A</oub:certificate.type.code>
+            <oub:certificate.code>019</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="16">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>8</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>16</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10007</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>A</oub:certificate.type.code>
+            <oub:certificate.code>019</oub:certificate.code>
+            <oub:description>Certificate of quality - Nitrate from Chile</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="9">
+    <env:app.message id="17">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>9</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>17</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10008</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>A</oub:certificate.type.code>
+            <oub:certificate.code>022</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="18">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>9</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>18</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10008</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>A</oub:certificate.type.code>
+            <oub:certificate.code>022</oub:certificate.code>
+            <oub:description>Certificate of authenticity B (Basmati Rice)</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="10">
+    <env:app.message id="19">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>10</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>19</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10009</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>A</oub:certificate.type.code>
+            <oub:certificate.code>023</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="20">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>10</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>20</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10009</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>A</oub:certificate.type.code>
+            <oub:certificate.code>023</oub:certificate.code>
+            <oub:description>Certificate of authenticity</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="11">
+    <env:app.message id="21">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>11</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>21</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10010</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>001</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="22">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>11</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>22</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10010</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>001</oub:certificate.code>
+            <oub:description>Attestation of equivalence</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="12">
+    <env:app.message id="23">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>12</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>23</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10011</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>008</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="24">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>12</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>24</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10011</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>008</oub:certificate.code>
+            <oub:description>Document issued by the competent authority or agency in the third country of origin</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="13">
+    <env:app.message id="25">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>13</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>25</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10012</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>034</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="26">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>13</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>26</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10012</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>034</oub:certificate.code>
+            <oub:description>Kimberley Community certificate</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="14">
+    <env:app.message id="27">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>14</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>27</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10013</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>041</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="28">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>14</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>28</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10013</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>041</oub:certificate.code>
+            <oub:description>ICCAT bluefin tuna re-export certificate</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="15">
+    <env:app.message id="29">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>15</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>29</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10014</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>048</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="30">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>15</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>30</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10014</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>048</oub:certificate.code>
+            <oub:description>Certificate for the import of sprouts or seeds intended for the production of sprouts</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="16">
+    <env:app.message id="31">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>16</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>31</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10015</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>050</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="32">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>16</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>32</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10015</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>050</oub:certificate.code>
+            <oub:description>Certificate …</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="17">
+    <env:app.message id="33">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>17</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>33</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10016</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>055</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="34">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>17</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>34</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10016</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>055</oub:certificate.code>
+            <oub:description>Declaration of compliance</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="18">
+    <env:app.message id="35">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>18</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>35</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10017</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>056</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="36">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>18</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>36</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10017</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>056</oub:certificate.code>
+            <oub:description>Certificate concerning pelts of certain wild animal species and of goods incorporating such pelts subject to …</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="19">
+    <env:app.message id="37">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>19</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>37</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10018</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>064</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="38">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>19</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>38</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10018</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>064</oub:certificate.code>
+            <oub:description>Authorisation for export or import of goods that could be used for torture</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="20">
+    <env:app.message id="39">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>20</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>39</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10019</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>065</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="40">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>20</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>40</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10019</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>065</oub:certificate.code>
+            <oub:description>Permit for invasive alien species</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="21">
+    <env:app.message id="41">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>21</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>41</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10020</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>067</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="42">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>21</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>42</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10020</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>067</oub:certificate.code>
+            <oub:description>Import authorisation for restricted goods and technologies</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="22">
+    <env:app.message id="43">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>22</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>43</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10021</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>068</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="44">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>22</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>44</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10021</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>068</oub:certificate.code>
+            <oub:description>Union General Export Authorisation EU GEA</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="23">
+    <env:app.message id="45">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>23</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>45</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10022</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>069</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="46">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>23</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>46</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10022</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>069</oub:certificate.code>
+            <oub:description>Authorisation issued by competent authority</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="24">
+    <env:app.message id="47">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>24</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>47</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10023</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>070</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="48">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>24</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>48</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10023</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>070</oub:certificate.code>
+            <oub:description>Prior authorisation - Restrictive measures against Libya</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="25">
+    <env:app.message id="49">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>25</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>49</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10024</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>400</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="50">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>25</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>50</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10024</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>400</oub:certificate.code>
+            <oub:description>Presentation of the required CITES certificate</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="26">
+    <env:app.message id="51">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>26</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>51</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10025</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>683</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="52">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>26</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>52</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10025</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>C</oub:certificate.type.code>
+            <oub:certificate.code>683</oub:certificate.code>
+            <oub:description>European Union - Attesting document for seal products resulting from hunt by Inuit or other indigenous communities for placing on the Union&apos;s market in accordance with Article 3 (1) of Regulation (EC) No 1007/2009 on trade in seal products</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="27">
+    <env:app.message id="53">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>27</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>53</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10026</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>E</oub:certificate.type.code>
+            <oub:certificate.code>012</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="54">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>27</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>54</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10026</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>E</oub:certificate.type.code>
+            <oub:certificate.code>012</oub:certificate.code>
+            <oub:description>Export licence (Cultural goods)</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="28">
+    <env:app.message id="55">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>28</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>55</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10027</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>E</oub:certificate.type.code>
+            <oub:certificate.code>013</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="56">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>28</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>56</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10027</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>E</oub:certificate.type.code>
+            <oub:certificate.code>013</oub:certificate.code>
+            <oub:description>Export licence (controlled substances) (ozone)</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="29">
+    <env:app.message id="57">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>29</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>57</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10028</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>E</oub:certificate.type.code>
+            <oub:certificate.code>020</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="58">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>29</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>58</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10028</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>E</oub:certificate.type.code>
+            <oub:certificate.code>020</oub:certificate.code>
+            <oub:description>Export authorisation for firearms</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="30">
+    <env:app.message id="59">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>30</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>59</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10029</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>L</oub:certificate.type.code>
+            <oub:certificate.code>081</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="60">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>30</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>60</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10029</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>L</oub:certificate.type.code>
+            <oub:certificate.code>081</oub:certificate.code>
+            <oub:description>Certificate of analysis</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="31">
+    <env:app.message id="61">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>31</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>61</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10030</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>L</oub:certificate.type.code>
+            <oub:certificate.code>082</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="62">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>31</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>62</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10030</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>L</oub:certificate.type.code>
+            <oub:certificate.code>082</oub:certificate.code>
+            <oub:description>Certificate of conformity</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="32">
+    <env:app.message id="63">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>32</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>63</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10031</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>L</oub:certificate.type.code>
+            <oub:certificate.code>100</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="64">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>32</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>64</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10031</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>L</oub:certificate.type.code>
+            <oub:certificate.code>100</oub:certificate.code>
+            <oub:description>Import licence (controlled substances) (ozone), issued by the Commission</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="33">
+    <env:app.message id="65">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>33</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>65</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10032</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>U</oub:certificate.type.code>
+            <oub:certificate.code>058</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="66">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>33</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>66</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10032</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>U</oub:certificate.type.code>
+            <oub:certificate.code>058</oub:certificate.code>
+            <oub:description>Certificate EUR 1. bearing the endorsement &quot;DEROGATION-DECISION 2011/122/EU&quot; or &quot;Derogation - Decision 2011/122/UE&quot;</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="34">
+    <env:app.message id="67">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>34</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>67</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10033</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>U</oub:certificate.type.code>
+            <oub:certificate.code>059</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="68">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>34</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>68</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10033</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>U</oub:certificate.type.code>
+            <oub:certificate.code>059</oub:certificate.code>
+            <oub:description>Origin declaration containing the following statement in English: &quot;Derogation - Annex II(a) of Protocol concerning the definition of  &quot;originating products &quot; and methods of administrative cooperation &quot;</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="35">
+    <env:app.message id="69">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>35</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>69</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10034</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>U</oub:certificate.type.code>
+            <oub:certificate.code>068</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="70">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>35</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>70</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10034</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>U</oub:certificate.type.code>
+            <oub:certificate.code>068</oub:certificate.code>
+            <oub:description>Proof of origin containing the following statement in English: &quot;Product originating in accordance with Appendix 2A of Annex II&quot;</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="36">
+    <env:app.message id="71">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>36</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>71</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10035</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>U</oub:certificate.type.code>
+            <oub:certificate.code>069</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="72">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>36</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>72</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10035</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>U</oub:certificate.type.code>
+            <oub:certificate.code>069</oub:certificate.code>
+            <oub:description>Proof of origin containing the following statement in English: &quot;Product originating in accordance with Appendix 5 of Annex II&quot;</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="37">
+    <env:app.message id="73">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>37</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>73</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10036</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>U</oub:certificate.type.code>
+            <oub:certificate.code>071</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="74">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>37</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>74</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10036</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>U</oub:certificate.type.code>
+            <oub:certificate.code>071</oub:certificate.code>
+            <oub:description>Proof of origin containing the following statement: &quot;Product originating in accordance with Appendix 2A of Annex II (Concerning the Definition of the Concept of &quot;Originating Products&quot; and Methods of Administrative Cooperation)&quot; (OJ L 346, 15.12.2012)</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="38">
+    <env:app.message id="75">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>38</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>75</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10037</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>U</oub:certificate.type.code>
+            <oub:certificate.code>090</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="76">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>38</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>76</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10037</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>U</oub:certificate.type.code>
+            <oub:certificate.code>090</oub:certificate.code>
+            <oub:description>Movement certificate EUR. 1 - Movement certificate EUR-MED (under the condition that in box 7 the remark &quot;no cumulation applied&quot; is marked with a cross) stating European Community origin, in the context of the agreement between the European Union and the Swiss Confederation</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="39">
+    <env:app.message id="77">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>39</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>77</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10038</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>U</oub:certificate.type.code>
+            <oub:certificate.code>091</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="78">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>39</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>78</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10038</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>U</oub:certificate.type.code>
+            <oub:certificate.code>091</oub:certificate.code>
+            <oub:description>Invoice declaration - Invoice declaration EUR-MED (under the condition the declaration contains the remark &quot;no cumulation applied&quot;), stating European Community origin, in the context of the agreement between the European Union and the Swiss Confederation</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="40">
+    <env:app.message id="79">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>40</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>79</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10039</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>U</oub:certificate.type.code>
+            <oub:certificate.code>095</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="80">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>40</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>80</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10039</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>U</oub:certificate.type.code>
+            <oub:certificate.code>095</oub:certificate.code>
+            <oub:description>Certificate of origin Form A bearing the endorsement &quot;Derogation - Commission Implementing Regulation (EU) No 2018/348&quot;</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="41">
+    <env:app.message id="81">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>41</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>81</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10040</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>013</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="82">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>41</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>82</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10040</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>013</oub:certificate.code>
+            <oub:description>Insertion of one of the following endorsements in the &quot;Remarks&quot; column of a goods movement certificate. Regulation (EEC) no 1518/76 (OJ L 169/37):
+  Taxe speciale a l&apos;exportation appliquee 
+  Saerlig udforselsafgift opkraevet 
+  Sonderausfuhrabgabe erhoben 
+  Special export charge collected 
+  Applicata tassa speciale all&apos;esportazione 
+  Bijzondere uitvoerheffing voldaan.</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="42">
+    <env:app.message id="83">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>42</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>83</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10041</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>072</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="84">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>42</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>84</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10041</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>072</oub:certificate.code>
+            <oub:description>Goods with EU origin returning from Andorra</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="43">
+    <env:app.message id="85">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>43</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>85</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10042</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>073</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="86">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>43</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>86</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10042</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>073</oub:certificate.code>
+            <oub:description>Goods with EU origin returning from Switzerland</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="44">
+    <env:app.message id="87">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>44</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>87</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10043</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>074</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="88">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>44</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>88</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10043</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>074</oub:certificate.code>
+            <oub:description>Goods with EU origin returning from the Faroe Islands</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="45">
+    <env:app.message id="89">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>45</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>89</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10044</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>075</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="90">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>45</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>90</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10044</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>075</oub:certificate.code>
+            <oub:description>Goods with EU origin returning from Greenland</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="46">
+    <env:app.message id="91">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>46</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>91</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10045</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>076</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="92">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>46</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>92</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10045</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>076</oub:certificate.code>
+            <oub:description>Goods with EU origin returning from Iceland</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="47">
+    <env:app.message id="93">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>47</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>93</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10046</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>077</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="94">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>47</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>94</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10046</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>077</oub:certificate.code>
+            <oub:description>Goods with EU origin returning from Liechtenstein</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="48">
+    <env:app.message id="95">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>48</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>95</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10047</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>078</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="96">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>48</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>96</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10047</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>078</oub:certificate.code>
+            <oub:description>Goods with EU origin returning from Norway</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="49">
+    <env:app.message id="97">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>49</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>97</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10048</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>079</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="98">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>49</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>98</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10048</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>079</oub:certificate.code>
+            <oub:description>Goods with EU origin returning from San Marino</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="50">
+    <env:app.message id="99">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>50</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>99</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10049</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>085</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="100">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>50</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>100</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10049</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>085</oub:certificate.code>
+            <oub:description>Goods imported in the framework of &quot;Autonomous trade measures&quot;</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="51">
+    <env:app.message id="101">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>51</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>101</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10050</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>107</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="102">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>51</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>102</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10050</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>107</oub:certificate.code>
+            <oub:description>Goods exempted from the prohibition - spare parts from aircrafts mentioned in the CD footnote</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="52">
+    <env:app.message id="103">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>52</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>103</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10051</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>945</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="104">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>52</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>104</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10051</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>945</oub:certificate.code>
+            <oub:description>Travellers&apos; personal effects or goods of a non-commercial nature for travellers&apos; personal use contained in their luggage (Art 10.2 of Regulation (EU) 2017/1509)</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="53">
+    <env:app.message id="105">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>53</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>105</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description.period>
+            <oub:certificate.description.period.sid>10052</oub:certificate.description.period.sid>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>969</oub:certificate.code>
+            <oub:validity.start.date>2019-03-29</oub:validity.start.date>
+          </oub:certificate.description.period>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="106">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>53</oub:transaction.id>
+          <oub:record.code>205</oub:record.code>
+          <oub:subrecord.code>10</oub:subrecord.code>
+          <oub:record.sequence.number>106</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:certificate.description>
+            <oub:certificate.description.period.sid>10052</oub:certificate.description.period.sid>
+            <oub:language.id>EN</oub:language.id>
+            <oub:certificate.type.code>Y</oub:certificate.type.code>
+            <oub:certificate.code>969</oub:certificate.code>
+            <oub:description>Mercury-added products essential for civil protection and military uses; or intended for research, calibration of instrumentation or for use as reference standard</oub:description>
+          </oub:certificate.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+</env:envelope>

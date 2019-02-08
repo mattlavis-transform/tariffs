@@ -1,0 +1,7 @@
+*.log
+.orig
+__pycache__/
+.vscode/
+intellij/
+.idea/
+mfn/

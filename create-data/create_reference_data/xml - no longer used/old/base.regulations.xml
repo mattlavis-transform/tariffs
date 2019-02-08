@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<env:envelope xmlns="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" id="5000">
+	<env:transaction id="1">
+		<env:app.message id="1">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>1</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>1</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900010</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0001|http://www.legislation.gov.uk/uksi/2019/0001/contents/made|UK / Canada Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="2">
+		<env:app.message id="2">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>2</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>2</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900020</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0002|http://www.legislation.gov.uk/uksi/2019/0002/contents/made|UK / South Korea Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="3">
+		<env:app.message id="3">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>3</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>3</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900030</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0003|http://www.legislation.gov.uk/uksi/2019/0003/contents/made|UK / Switzerland Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="4">
+		<env:app.message id="4">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>4</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>4</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900040</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0004|http://www.legislation.gov.uk/uksi/2019/0004/contents/made|UK / Southern African Development Community (SADC) Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="5">
+		<env:app.message id="5">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>5</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>5</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900050</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0005|http://www.legislation.gov.uk/uksi/2019/0005/contents/made|UK / CARIFORUM Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="6">
+		<env:app.message id="6">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>6</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>6</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900060</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0006|http://www.legislation.gov.uk/uksi/2019/0006/contents/made|UK / Eastern and Southern Africa (ESA) Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="7">
+		<env:app.message id="7">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>7</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>7</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900070</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0007|http://www.legislation.gov.uk/uksi/2019/0007/contents/made|UK / Ghana Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="8">
+		<env:app.message id="8">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>8</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>8</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900080</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0008|http://www.legislation.gov.uk/uksi/2019/0008/contents/made|UK / Pacific countries Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="9">
+		<env:app.message id="9">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>9</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>9</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900090</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0009|http://www.legislation.gov.uk/uksi/2019/0009/contents/made|UK / Chile Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="10">
+		<env:app.message id="10">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>10</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>10</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900100</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0010|http://www.legislation.gov.uk/uksi/2019/0010/contents/made|UK / Israel Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="11">
+		<env:app.message id="11">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>11</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>11</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900110</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0011|http://www.legislation.gov.uk/uksi/2019/0011/contents/made|UK / Palestine Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="12">
+		<env:app.message id="12">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>12</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>12</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900120</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0012|http://www.legislation.gov.uk/uksi/2019/0012/contents/made|UK / Singapore Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="13">
+		<env:app.message id="13">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>13</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>13</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900130</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0013|http://www.legislation.gov.uk/uksi/2019/0013/contents/made|UK / Central America Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="14">
+		<env:app.message id="14">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>14</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>14</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900140</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0014|http://www.legislation.gov.uk/uksi/2019/0014/contents/made|UK / Tunisia Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="15">
+		<env:app.message id="15">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>15</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900150</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0015|http://www.legislation.gov.uk/uksi/2019/0015/contents/made|UK / Jordan Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="16">
+		<env:app.message id="16">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>16</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>16</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900160</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0016|http://www.legislation.gov.uk/uksi/2019/0016/contents/made|UK / Kosovo Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="17">
+		<env:app.message id="17">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>17</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>17</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900170</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0017|http://www.legislation.gov.uk/uksi/2019/0017/contents/made|UK / Montenegro Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="18">
+		<env:app.message id="18">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>18</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>18</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900180</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0018|http://www.legislation.gov.uk/uksi/2019/0018/contents/made|UK / Macedonia Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="19">
+		<env:app.message id="19">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>19</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>19</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900190</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0019|http://www.legislation.gov.uk/uksi/2019/0019/contents/made|UK / Albania Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="20">
+		<env:app.message id="20">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>20</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>20</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900200</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0020|http://www.legislation.gov.uk/uksi/2019/0020/contents/made|UK / Cote d'Ivoire Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="21">
+		<env:app.message id="21">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>21</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>21</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900210</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0021|http://www.legislation.gov.uk/uksi/2019/0021/contents/made|UK / Cameroon Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="22">
+		<env:app.message id="22">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>22</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>22</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900220</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0022|http://www.legislation.gov.uk/uksi/2019/0022/contents/made|UK / Faroe Islands Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="23">
+		<env:app.message id="23">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>23</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>23</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900230</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0023|http://www.legislation.gov.uk/uksi/2019/0023/contents/made|UK / Andean Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="24">
+		<env:app.message id="24">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>24</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>24</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900240</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0024|http://www.legislation.gov.uk/uksi/2019/0024/contents/made|UK / East African Community (EAC) Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="25">
+		<env:app.message id="25">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>25</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>25</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900250</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0025|http://www.legislation.gov.uk/uksi/2019/0025/contents/made|UK / Morocco Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="26">
+		<env:app.message id="26">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>26</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>26</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900260</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0026|http://www.legislation.gov.uk/uksi/2019/0026/contents/made|UK / Lebanon Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="27">
+		<env:app.message id="27">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>27</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>27</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900270</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0027|http://www.legislation.gov.uk/uksi/2019/0027/contents/made|UK / Egypt Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="28">
+		<env:app.message id="28">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>28</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>28</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900280</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0028|http://www.legislation.gov.uk/uksi/2019/0028/contents/made|UK / Serbia Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="29">
+		<env:app.message id="29">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>29</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>29</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900290</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0029|http://www.legislation.gov.uk/uksi/2019/0029/contents/made|UK / Ukraine Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="30">
+		<env:app.message id="30">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>30</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>30</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900300</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0030|http://www.legislation.gov.uk/uksi/2019/0030/contents/made|UK / Georgia Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="31">
+		<env:app.message id="31">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>31</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>31</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900310</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0031|http://www.legislation.gov.uk/uksi/2019/0031/contents/made|UK / Mexico Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="32">
+		<env:app.message id="32">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>32</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>32</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900320</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0032|http://www.legislation.gov.uk/uksi/2019/0032/contents/made|UK / European Economic Area (EEA) Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="33">
+		<env:app.message id="33">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>33</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>33</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900330</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0033|http://www.legislation.gov.uk/uksi/2019/0033/contents/made|UK / Turkey Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="34">
+		<env:app.message id="34">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>34</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>34</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900340</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0034|http://www.legislation.gov.uk/uksi/2019/0034/contents/made|UK / Japan Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="35">
+		<env:app.message id="35">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>35</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>35</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900350</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0035|http://www.legislation.gov.uk/uksi/2019/0035/contents/made|UK / Algeria Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="36">
+		<env:app.message id="36">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>36</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>36</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900360</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0036|http://www.legislation.gov.uk/uksi/2019/0036/contents/made|UK / Moldova Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="37">
+		<env:app.message id="37">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>37</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>37</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900370</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0037|http://www.legislation.gov.uk/uksi/2019/0037/contents/made|UK / Vietnam Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="38">
+		<env:app.message id="38">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>38</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>38</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>P1900380</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>FTA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>2019 No. 0038|http://www.legislation.gov.uk/uksi/2019/0038/contents/made|UK / Bosnia Free Trade Agreement</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="39">
+		<env:app.message id="39">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>39</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>39</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>I1900010</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>UTS</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>SI. 2012 Nr 1011|n/a|UK regulation to house supplementary units</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="40">
+		<env:app.message id="40">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>40</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>40</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>I1900020</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>SUR</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>SI. 2012 Nr 1012|n/a|UK regulation to house credibility checks</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+</env:envelope>

@@ -1,0 +1,1653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<env:envelope xmlns="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" id="5000">
+	<env:transaction id="90001990">
+		<env:app.message id="1">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90001990</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>1</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900010</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900010|n/a|Administering certain restrictions on imports of certain steel products from Ukraine</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90001991">
+		<env:app.message id="2">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90001991</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>2</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900020</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900020|n/a|Approving the pre-export checks carried out on certain food by certain third countries as regards the presence of certain mycotoxins</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90001992">
+		<env:app.message id="3">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90001992</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>3</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900030</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>DIV</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900030|n/a|As regards import conditions and the list of countries referred to in Article 9</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90001993">
+		<env:app.message id="4">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90001993</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>4</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900040</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>DIV</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900040|n/a|Banning the placing on the market and the import to, or export from, the UK of cat and dog fur, and products containing such fur</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90001994">
+		<env:app.message id="5">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90001994</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>5</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900050</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900050|n/a|Certain restrictive measures in respect of Somalia</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90001995">
+		<env:app.message id="6">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90001995</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>6</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900060</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>PRS</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900060|n/a|Certain restrictive measures in respect of Zimbabwe</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90001996">
+		<env:app.message id="7">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90001996</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>7</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900070</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900070|n/a|Certification requirements for import into the Union of sprouts and seeds intended for the production of sprouts</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90001997">
+		<env:app.message id="8">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90001997</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>8</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900080</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900080|n/a|Common rules for imports of textile products from certain third countries not covered by bilateral agreements, protocols or other arrangements</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90001998">
+		<env:app.message id="9">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90001998</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>9</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900090</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900090|n/a|Concerning certain specific restrictions on economic and financial relations with Iraq</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90001999">
+		<env:app.message id="10">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90001999</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>10</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900100</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>DIV</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900100|n/a|Concerning the export and import of hazardous chemicals</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002000">
+		<env:app.message id="11">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002000</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>11</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900140</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>DIV</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900140|n/a|Concerning trade in certain goods which could be used for capital punishment, torture or other cruel, inhuman or degrading treatment or punishment</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002001">
+		<env:app.message id="12">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002001</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>12</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900170</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900170|n/a|Defining the conditions for the admission of certain kinds of frozen beef and veal</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002002">
+		<env:app.message id="13">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002002</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>13</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900180</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900180|n/a|Emergency measures suspending imports of dried beans from Nigeria</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002003">
+		<env:app.message id="14">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002003</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>14</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900200</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900200|n/a|Establishing a catch documentation programme for bluefin tuna Thunnus thynnus</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002004">
+		<env:app.message id="15">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002004</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900210</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900210|n/a|Establishing a common organisation of the markets in agricultural products and repealing Council Regulations (EEC) No 922/72, (EEC) No 234/79, (EC) No 1037/2001 and (EC) No 1234/2007</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002005">
+		<env:app.message id="16">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002005</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>16</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900220</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900220|n/a|Establishing a system to prevent, deter and eliminate illegal, unreported and unregulated fishing</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002006">
+		<env:app.message id="17">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002006</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>17</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900230</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900230|n/a|Establishing criteria determining when certain types of scrap metal cease to be waste</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002007">
+		<env:app.message id="18">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002007</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>18</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900240</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900240|n/a|Implementing Article 10 of the United Nations Protocol against the illicit manufacturing of and trafficking in firearms, their parts and components and  ammunition, supplementing the United Nations Convention against Transnational Organised Crime (UN Firearms Protocol), and establishing export authorisation, and import and transit measures for firearms, their parts and components and ammunition</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002008">
+		<env:app.message id="19">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002008</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>19</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900250</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900250|n/a|Implementing the Kimberley Process certification scheme for the international trade in rough diamonds</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002009">
+		<env:app.message id="20">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002009</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>20</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900260</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900260|n/a|Imposing special conditions governing the import of feed and food originating in or consigned from Japan following the accident at the Fukushima nuclear power station</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002010">
+		<env:app.message id="21">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002010</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>21</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900270</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900270|n/a|imposing special conditions governing the import of groundnuts from Brazil, Capsicum annuum and nutmeg from India and nutmeg from Indonesia</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002011">
+		<env:app.message id="22">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002011</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>22</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900280</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900280|n/a|Imposing special conditions governing the import of spices from Ethiopia, groundnuts from Argentina and hazelnuts from Azerbaijan and amending the special conditions governing the import of dried figs and hazelnuts from Turkey and groundnuts from India</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002012">
+		<env:app.message id="23">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002012</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>23</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900290</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900290|n/a|Introducing a system for the statistical monitoring of trade in bluefin tuna, swordfish and bigeye tuna within the Community</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002013">
+		<env:app.message id="24">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002013</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>24</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900300</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>PRS</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900300|n/a|Introducing protective measures on imports of bivalve molluscs from Turkey intended for human consumption</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002014">
+		<env:app.message id="25">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002014</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>25</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900310</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900310|n/a|Laying down detailed rules for implementing certain provisions of Regulation (EU) No 952/2013 of the European Parliament and of the Council laying down the Union Customs Code</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002015">
+		<env:app.message id="26">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002015</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>26</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900320</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900320|n/a|Laying down detailed rules on trade in seal products</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002016">
+		<env:app.message id="27">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002016</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>27</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900330</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900330|n/a|Laying down rules for the monitoring of trade between the UK and third countries in drug precursors</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002017">
+		<env:app.message id="28">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002017</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>28</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900350</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900350|n/a|Laying down special conditions applicable to the import of guar gum originating in or consigned from India due to contamination risks by pentachlorophenol and dioxins</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002018">
+		<env:app.message id="29">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002018</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>29</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900360</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900360|n/a|Laying down specific conditions and detailed procedures for the import of polyamide and melamine plastic kitchenware originating in or consigned from the People&apos;s Republic of China and Hong Kong Special Administrative Region, China</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002019">
+		<env:app.message id="30">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002019</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>30</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900370</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900370|n/a|Laying down specific conditions applicable to the import of okra and curry leaves from India</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002020">
+		<env:app.message id="31">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002020</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>31</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900380</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900380|n/a|Laying down specific conditions applicable to the introduction of consignments from certain third countries due to microbiological contamination</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002021">
+		<env:app.message id="32">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002021</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>32</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900390</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900390|n/a|Lists of animals and products to be subject to controls at border inspection posts</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002022">
+		<env:app.message id="33">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002022</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>33</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900400</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900400|n/a|On emergency measures regarding unauthorised genetically modified rice in rice products originating from China</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002023">
+		<env:app.message id="34">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002023</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>34</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900410</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900410|n/a|On fluorinated greenhouse gases</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002024">
+		<env:app.message id="35">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002024</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>35</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900420</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900420|n/a|On imports of residues from the manufacture of starch from maize from the United States of America</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002025">
+		<env:app.message id="36">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002025</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>36</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900430</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900430|n/a|On mercury</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002026">
+		<env:app.message id="37">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002026</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>37</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900440</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900440|n/a|On organic production and labelling of organic products and repealing Regulation</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002027">
+		<env:app.message id="38">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002027</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>38</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900450</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>DIV</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900450|n/a|On shipments of waste</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002028">
+		<env:app.message id="39">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002028</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>39</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900460</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900460|n/a|On substances that deplete the ozone layer</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002029">
+		<env:app.message id="40">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002029</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>40</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900470</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900470|n/a|On the conclusion of the Voluntary Partnership Agreement with the Republic of Indonesia on forest law enforcement, governance and trade in timber products</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002030">
+		<env:app.message id="41">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002030</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>41</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900480</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900480|n/a|On the export of cultural goods</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002031">
+		<env:app.message id="42">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002031</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>42</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900490</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900490|n/a|On the importation of hops from third countries</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002032">
+		<env:app.message id="43">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002032</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>43</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900500</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900500|n/a|On the protection of species of wild fauna and flora by regulating trade therein</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002033">
+		<env:app.message id="44">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002033</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>44</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900510</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900510|n/a|On the supervision, plant health checks and measures to be taken on wood packaging material actually in use in the transport of specified commodities originating in China</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002034">
+		<env:app.message id="45">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002034</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>45</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900520</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>PRF</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900520|n/a|On the trade in agricultural products with  the Swiss confederation</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002035">
+		<env:app.message id="46">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002035</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>46</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900530</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900530|n/a|Opening and providing for the administration of tariff quotas and introducing a system of import licences and certificates of origin for garlic and certain other agricultural products imported from third countries</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002036">
+		<env:app.message id="47">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002036</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>47</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900540</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900540|n/a|Prohibiting the use of leghold traps and the introduction of pelts and manufactured goods of certain wild animal species originating in countries which catch them by means of leghold traps or trapping methods which do not meet international humane trapping standards</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002037">
+		<env:app.message id="48">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002037</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>48</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900550</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900550|n/a|Regarding the inclusion of certain drug precursors in the list of scheduled substances</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002038">
+		<env:app.message id="49">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002038</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>49</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900560</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900560|n/a|Regarding the increased level of official controls on imports of certain feed and food of non-animal origin</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002039">
+		<env:app.message id="50">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002039</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>50</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900710</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900710|n/a|Regarding the restriction of use of Bisphenol A in plastic infant feeding bottles</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002040">
+		<env:app.message id="51">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002040</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>51</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900720</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900720|n/a|Regarding the rules for applying the system of import and export licences</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002041">
+		<env:app.message id="52">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002041</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>52</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900730</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900730|n/a|Restrictive measures against Iran</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002042">
+		<env:app.message id="53">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002042</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>53</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900740</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>PRS</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900740|n/a|Restrictive measures against President Lukashenko and certain officials of Belarus</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002043">
+		<env:app.message id="54">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002043</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>54</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900750</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900750|n/a|Restrictive measures against the Democratic People&apos;s Republic of Korea</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002044">
+		<env:app.message id="55">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002044</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>55</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900800</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900800|n/a|Restrictive measures directed against certain persons, entities and bodies in view of the situation in Iran</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002045">
+		<env:app.message id="56">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002045</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>56</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900810</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>PRS</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900810|n/a|Restrictive measures in respect of Myanmar/Burma</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002046">
+		<env:app.message id="57">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002046</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>57</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900820</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900820|n/a|Restrictive measures in respect of the situation in South Sudan</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002047">
+		<env:app.message id="58">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002047</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>58</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900830</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900830|n/a|Restrictive measures in view of Russia&apos;s actions destabilising the situation in Ukraine</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002048">
+		<env:app.message id="59">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002048</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>59</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900860</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900860|n/a|Restrictive measures in view of the situation in Libya</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002049">
+		<env:app.message id="60">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002049</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>60</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900880</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900880|n/a|Restrictive measures in view of the situation in Sudan</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002050">
+		<env:app.message id="61">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002050</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>61</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900890</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900890|n/a|Restrictive measures in view of the situation in Syria</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002051">
+		<env:app.message id="62">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002051</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>62</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900950</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900950|n/a|Restrictive measures in view of the situation in Venezuela</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002052">
+		<env:app.message id="63">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002052</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>63</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1900960</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1900960|n/a|Setting up a regime for the control of exports, transfer, brokering and transit of dual use items</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002053">
+		<env:app.message id="64">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002053</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>64</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1901000</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1901000|n/a|Suspending temporarily imports from Bangladesh of foodstuffs containing or consisting of betel leaves</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002054">
+		<env:app.message id="65">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002054</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>65</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1901010</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>DIV</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1901010|n/a|The agreement with the United States of America on trade in wine</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90002055">
+		<env:app.message id="66">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90002055</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>66</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>X1901020</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>TBC X1901020|n/a|Updating the list of invasive alien species</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+</env:envelope>

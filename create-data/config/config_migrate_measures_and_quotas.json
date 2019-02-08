@@ -1,0 +1,997 @@
+{
+    "authorised_use_terms": [
+        "%processing%",
+        "%for the manufacture of%",
+        "%for use in%",
+        "%for use on%",
+        "%for civil use%",
+        "%for technical or industrial uses%",
+        "crude",
+        "%for industrial uses%",
+        "%for other purposes%",
+        "for refining",
+        "%for seagoing vessels%",
+        "%for slaughter%",
+        "%for the industrial assembly%",
+        "%for the industrial manufacture%",
+        "%for the production%",
+        "%for undergoing a specific process%",
+        "%for undergoing chemical transformation%",
+        "for uses other than the production of oil",
+        "Gilled and gutted",
+        "%intended to be fitted%",
+        "%intermediate products%",
+        "%of apparatus of subheading%",
+        "Other (for example, 'heads off')",
+        "reciprocating compressor pumps",
+        "%reciprocating compressors (excluding reciprocating compressor pumps)%",
+        "small cucumbers of a length not exceeding 15 cm",
+        "tallow oil for industrial uses other than the manufacture of foodstuffs for human consumption",
+        "for breaking up",
+        "weighing more than 10|kg each",
+        "Whole",
+        "processing"
+    ],
+    "records": {
+        "measure": ["430","00"],
+        "measure_component": ["430","05"],
+        "measure_condition": ["430","10"],
+        "measure_condition_component": ["430","11"],
+        "measure_excluded_geographical_area": ["430","15"],
+        "footnote_association_measure": ["430","20"],
+        "measure_partial_temporary_stop": ["430","25"]
+    },
+	"special_notes": {
+		"5701109000": "Dutiable surface shall not include the heading, the selvedges and the fringes"
+	},
+    "bulk_migrations": {
+        "import_export": "regulation_migrations_impex.csv",
+        "trade_remedies1": "regulation_migrations_remedies1.csv",
+        "trade_remedies2": "regulation_migrations_remedies2.csv"
+    },
+    "measure_types":{
+        "preferential":["142", "145", "143", "146"]
+    },
+    "country_profiles": {
+        "albania": {
+            "produce_schedule": "Yes",
+            "country_name": "Albania",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Albania",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "AL"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R090891",
+                "D090332",
+                "R061742",
+                "R061916"
+            ]
+        },
+        "algeria": {
+            "produce_schedule": "Yes",
+            "country_name": "Algeria",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Algeria",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "DZ"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R051460",
+                "R051653",
+                "D050690"
+            ]
+        },
+        "andean": {
+            "produce_schedule": "No",
+            "country_name": "Andean",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Andean countries: Colombia, Ecuador and Peru",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "CO",
+                "EC",
+                "PE"
+            ],
+            "table_per_country": 1,
+            "reg_list": [
+                "R130405",
+                "R130741",
+                "R170754",
+                "R170120",
+                "R130404",
+                "R130740"
+            ]
+        },
+        "colombia": {
+            "produce_schedule": "Yes",
+            "country_name": "Colombia",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Colombia",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "CO"
+            ],
+            "table_per_country": 1,
+            "reg_list": [
+                "R130405",
+                "R130741",
+                "R170754",
+                "R170120",
+                "R130404",
+                "R130740"
+            ]
+        },
+        "ecuador": {
+            "produce_schedule": "Yes",
+            "country_name": "Ecuador",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Ecuador",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "EC"
+            ],
+            "table_per_country": 1,
+            "reg_list": [
+                "R130405",
+                "R130741",
+                "R170754",
+                "R170120",
+                "R130404",
+                "R130740"
+            ]
+        },
+        "peru": {
+            "produce_schedule": "Yes",
+            "country_name": "Peru",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Peru",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "PE"
+            ],
+            "table_per_country": 1,
+            "reg_list": [
+                "R130405",
+                "R130741",
+                "R170754",
+                "R170120",
+                "R130404",
+                "R130740"
+            ]
+        },
+        "bosnia": {
+            "produce_schedule": "Yes",
+            "country_name": "Bosnia and Herzegovina",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Bosnia and Herzegovina",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "BA"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R110343",
+                "R110354",
+                "R090891",
+                "R101255",
+                "D080474"
+            ]
+        },
+        "cameroon": {
+            "produce_schedule": "Yes",
+            "country_name": "Cameroon",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Cameroon",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "CM"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "D090152"
+            ]
+        },
+        "canada": {
+            "produce_schedule": "Yes",
+            "country_name": "Canada",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Canada",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "CA",
+                "x1006"
+            ],
+            "measure_type_override": [
+                "142",
+                "143",
+                "145",
+                "146"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R1585/17",
+                "R1772/17",
+                "R1781/17",
+                "R1586/17",
+                "D0037/17"
+            ]
+        },
+        "cariforum": {
+            "produce_schedule": "Yes",
+            "country_name": "CARIFORUM",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and CARIFORUM",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "1033"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "D0805/08"
+            ]
+        },
+        "chile": {
+            "produce_schedule": "Yes",
+            "country_name": "the Republic of Chile",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and the Republic of Chile",
+            "agreement_date": "12/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "CL"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "D0792/06",
+                "R0610/09",
+                "D0979/02",
+                "R0312/03"
+            ]
+        },
+        "cotedivoire": {
+            "produce_schedule": "Yes",
+            "country_name": "Cote d'Ivoire",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Cote d'Ivoire",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "CI",
+                "1032"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R161076"
+            ]
+        },
+        "egypt": {
+            "produce_schedule": "Yes",
+            "country_name": "Egypt",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Egypt",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "EG"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "D100240",
+                "D040635",
+                "R100449",
+                "R071338"
+            ]
+        },
+        "esa": {
+            "produce_schedule": "No",
+            "notes": "There are no quotas associated with this geo. area. Using the individual countries: Comoros ??, Madagascar, Mauritius, the Seychelles, Zambia and Zimbabwe",
+            "country_name": "ESA",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and ESA countries",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "1034"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "D1923/17",
+                "D0196/12",
+                "Azed will send"
+            ]
+        },
+        "mauritius": {
+            "produce_schedule": "Yes",
+            "country_name": "Mauritius",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and ESA countries - Mauritius",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "MU",
+                "1034"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "D1923/17",
+                "D0196/12"
+            ]
+        },
+        "madagascar": {
+            "produce_schedule": "Yes",
+            "country_name": "Madagascar",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and ESA countries - Madagascar",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "MG",
+                "1034"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "D1923/17",
+                "D0196/12"
+            ]
+        },
+        "zambia": {
+            "produce_schedule": "Yes",
+            "country_name": "Zambia",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and ESA countries - Zambia",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "1034"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "D1923/17",
+                "D0196/12"
+            ]
+        },
+        "seychelles": {
+            "produce_schedule": "Yes",
+            "country_name": "the Seychelles",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and ESA countries - Seychelles",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "SC",
+                "1034"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "D1923/17",
+                "D0196/12"
+            ]
+        },
+        "zimbabwe": {
+            "produce_schedule": "Yes",
+            "country_name": "Zimbabwe",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and ESA countries - Zimbabwe",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "ZW",
+                "1034"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "D1923/17",
+                "D0196/12"
+            ]
+        },
+        "faroeislands": {
+            "produce_schedule": "Yes",
+            "country_name": "Faroe Islands",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Faroe Islands",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "FO"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R090054",
+                "R071381",
+                "R992471",
+                "D970126",
+                "D990456",
+                "D060561"
+            ]
+        },
+        "georgia": {
+            "produce_schedule": "Yes",
+            "country_name": "Georgia",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Georgia",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "GE"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "D140494",
+                "R140989"
+            ]
+        },
+        "ghana": {
+            "produce_schedule": "Yes",
+            "country_name": "Ghana",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Ghana",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "GH"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "D1850/16"
+            ]
+        },
+        "israel": {
+            "produce_schedule": "Yes",
+            "country_name": "Israel",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Israel",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "IL"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R1474/00",
+                "R1338/07",
+                "R1153/09",
+                "R1154/09",
+                "R1831/96",
+                "D0066/13"
+            ]
+        },
+        "jordan": {
+            "produce_schedule": "Yes",
+            "country_name": "Jordan",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Jordan",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "JO"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "D060067",
+                "D020357",
+                "R060019"
+            ]
+        },
+        "kosovo": {
+            "produce_schedule": "Yes",
+            "country_name": "Kosovo",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Kosovo",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "XK"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R120374",
+                "R090891",
+                "R171466",
+                "D160342",
+                "R171464",
+                "R120374",
+                "R090891"
+            ]
+        },
+        "lebanon": {
+            "produce_schedule": "Yes",
+            "country_name": "Lebanon",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Lebanon",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "LB"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R030209",
+                "R060973",
+                "R961831",
+                "D060356"
+            ]
+        },
+        "macedonia": {
+            "produce_schedule": "Yes",
+            "country_name": "Macedonia",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Macedonia",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "MK"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R012597",
+                "R120374",
+                "R090891",
+                "R101255",
+                "D040239"
+            ]
+        },
+        "mexico": {
+            "produce_schedule": "Yes",
+            "country_name": "Mexico",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Mexico",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "MX"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R080821",
+                "D000415"
+            ]
+        },
+        "moldova": {
+            "produce_schedule": "Yes",
+            "country_name": "Moldova",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Moldova",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "MD"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "D140492",
+                "R140988",
+                "R152080"
+            ]
+        },
+        "montenegro": {
+            "produce_schedule": "Yes",
+            "country_name": "Montenegro",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Montenegro",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "ME"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R080053",
+                "R080497",
+                "R101255",
+                "D100224"
+            ]
+        },
+        "morocco": {
+            "produce_schedule": "Yes",
+            "country_name": "Morocco",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Morocco",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "MA"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R120812",
+                "D000204",
+                "D120497",
+                "D030914"
+            ]
+        },
+        "pacific": {
+            "produce_schedule": "No",
+            "country_name": "Pacific",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Pacific States (Fiji and Papua New Guinea)",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "FJ",
+                "PG"
+            ],
+            "table_per_country": 1,
+            "reg_list": [
+                "D0729/09"
+            ]
+        },
+        "fiji": {
+            "produce_schedule": "Yes",
+            "country_name": "Fiji",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Fiji",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "FJ"
+            ],
+            "table_per_country": 1,
+            "reg_list": [
+                "D0729/09"
+            ]
+        },
+        "papuanewguinea": {
+            "produce_schedule": "Yes",
+            "country_name": "Papua New Guinea",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Papua New Guinea",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "PG"
+            ],
+            "table_per_country": 1,
+            "reg_list": [
+                "D0729/09"
+            ]
+        },
+        "palestine": {
+            "produce_schedule": "Yes",
+            "country_name": "Palestine",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Palestine",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "PS"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "D0430/97",
+                "D0824/11"
+            ]
+        },
+        "sadc": {
+            "produce_schedule": "Yes",
+            "country_name": "SADC",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and SADC countries",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "1035",
+                "ZA"
+            ],
+            "table_per_country": 1,
+            "reg_list": [
+                "R2253/16",
+                "D1623/16",
+                "R0882/17"
+            ]
+        },
+        "serbia": {
+            "produce_schedule": "Yes",
+            "country_name": "Serbia",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Serbia",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "RS",
+                "XS"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R150781",
+                "R090891",
+                "R101255",
+                "D100036",
+                "D130490",
+                "R110059",
+                "R120374"
+            ]
+        },
+        "southkorea": {
+            "produce_schedule": "Yes",
+            "country_name": "South Korea",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and South Korea",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "KR"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R1093/11",
+                "D0265/11"
+            ]
+        },
+        "switzerland": {
+            "produce_schedule": "Yes",
+            "country_name": "the Swiss Confederation",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and the Swiss Confederation",
+            "agreement_date": "12/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "CH",
+                "x1007"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "D0123/01",
+                "R2114/99",
+                "R0050/04",
+                "R1565/07",
+                "R0082/13",
+                "R1126/09",
+                "R1223/12",
+                "A0003/73",
+                "D0093/06",
+                "D0309/02",
+                "D0559/86",
+                "D0955/05"
+            ]
+        },
+        "centralamerica": {
+            "produce_schedule": "No",
+            "country_name": "Central America",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Central America",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "2200",
+                "CR",
+                "HO",
+                "NI",
+                "PA",
+                "SV"
+            ],
+            "table_per_country": 1,
+            "reg_list": [
+                "D120734",
+                "R130974",
+                "R130975",
+                "R130976",
+                "R130977",
+                "R131011",
+                "R131012",
+                "R130922",
+                "R130923",
+                "R131366"
+            ]
+        },
+        "nicaragua": {
+            "produce_schedule": "Yes",
+            "country_name": "Nicaragua",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Central America - Nicaragua",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "2200",
+                "NI"
+            ],
+            "table_per_country": 1,
+            "reg_list": [
+                "D120734",
+                "R130974",
+                "R130975",
+                "R130976",
+                "R130977",
+                "R131011",
+                "R131012",
+                "R130922",
+                "R130923",
+                "R131366"
+            ]
+        },
+        "honduras": {
+            "produce_schedule": "Yes",
+            "country_name": "Honduras",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Central America - Honduras",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "2200",
+                "HN"
+            ],
+            "table_per_country": 1,
+            "reg_list": [
+                "D120734",
+                "R130974",
+                "R130975",
+                "R130976",
+                "R130977",
+                "R131011",
+                "R131012",
+                "R130922",
+                "R130923",
+                "R131366"
+            ]
+        },
+        "panama": {
+            "produce_schedule": "Yes",
+            "country_name": "Panama",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Central America - Panama",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "2200",
+                "PA"
+            ],
+            "table_per_country": 1,
+            "reg_list": [
+                "D120734",
+                "R130974",
+                "R130975",
+                "R130976",
+                "R130977",
+                "R131011",
+                "R131012",
+                "R130922",
+                "R130923",
+                "R131366"
+            ]
+        },
+        "costarica": {
+            "produce_schedule": "Yes",
+            "country_name": "Costa Rica",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Central America - Costa Rica",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "2200",
+                "CR"
+            ],
+            "table_per_country": 1,
+            "reg_list": [
+                "D120734",
+                "R130974",
+                "R130975",
+                "R130976",
+                "R130977",
+                "R131011",
+                "R131012",
+                "R130922",
+                "R130923",
+                "R131366"
+            ]
+        },
+        "elsalvador": {
+            "produce_schedule": "Yes",
+            "country_name": "El Salvador",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Central America - El Salvador",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "2200",
+                "SV"
+            ],
+            "table_per_country": 1,
+            "reg_list": [
+                "D120734",
+                "R130974",
+                "R130975",
+                "R130976",
+                "R130977",
+                "R131011",
+                "R131012",
+                "R130922",
+                "R130923",
+                "R131366"
+            ]
+        },
+        "tunisia": {
+            "produce_schedule": "Yes",
+            "country_name": "Tunisia",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Tunisia",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "TN"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R010747",
+                "R061918",
+                "R060973",
+                "D980238",
+                "D000822"
+            ]
+        },
+        "norway": {
+            "produce_schedule": "Yes",
+            "country_name": "Norway",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and the European Economic Area - Norway",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "2012",
+                "NO"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "test"
+            ]
+        },
+        "iceland": {
+            "produce_schedule": "Yes",
+            "country_name": "Iceland",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and the European Economic Area - Iceland",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "2012",
+                "IS"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "test"
+            ]
+        },
+        "liechtenstein": {
+            "produce_schedule": "No",
+            "country_name": "Liechtenstein",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and the European Economic Area - Liechtenstein",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "2012",
+                "LI"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "test"
+            ]
+        },
+        "turkey": {
+            "produce_schedule": "Yes",
+            "country_name": "Turkey",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Turkey",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "TR"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R070816",
+                "R061712",
+                "R090933",
+                "R141335",
+                "D960142",
+                "D980223",
+                "D960528"
+            ]
+        },
+        "ukraine": {
+            "produce_schedule": "Yes",
+            "country_name": "Ukraine",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Ukraine",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "UA"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R152076",
+                "R152077",
+                "R152078",
+                "R152079",
+                "R152081",
+                "R152405",
+                "D140295",
+                "R171566"
+            ]
+        },
+        "southafrica": {
+            "produce_schedule": "Yes",
+            "country_name": "Ukraine",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Ukraine",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "ZA"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R152076",
+                "R152077",
+                "R152078",
+                "R152079",
+                "R152081",
+                "R152405",
+                "D140295",
+                "R171566"
+            ]
+        }
+    }
+}

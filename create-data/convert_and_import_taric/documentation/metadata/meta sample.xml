@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BatchFileInterfaceMetadata xmlns="http://www.hmrc.gsi.gov.uk/mdg/batchFileInterfaceMetadataSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.hmrc.gsi.gov.uk/mdg/batchFileInterfaceMetadataSchema schema.xsd">
+	<sourceSystem>DIT</sourceSystem>
+	<sourceSystemType>AWS</sourceSystemType>
+	<sourceSystemOS>RedHat_7.3</sourceSystemOS>
+	<interfaceName>TAQ01</interfaceName>
+	<interfaceVersion>V1.0</interfaceVersion>
+	<correlationID>8452f702-a7e0-40aa-8d2f-052073d9ca88</correlationID>
+	<conversationID>TODO</conversationID>
+	<transactionID>TODO</transactionID>
+	<messageID>TODO</messageID>
+	<extractStartDateTime>2018-12-05T15:06:30Z</extractStartDateTime>
+	<extractEndDateTime>2018-12-05T15:06:35Z</extractEndDateTime>
+	<extractDatabaseDateTime>2018-12-05T15:06:32Z</extractDatabaseDateTime>
+	<checksum>98f4aa09e12ab68140d91957e0733f21</checksum>
+	<checksumAlgorithm>MD5</checksumAlgorithm>
+	<fileSize>3364246</fileSize>
+	<compressed>false</compressed>
+	<compressionAlgorithm>ZIP</compressionAlgorithm>
+	<compressedChecksum>84681975a2d2c5d2bbdbf0fef59eb501</compressedChecksum>
+	<compressedChecksumAlgorithm>MD5</compressedChecksumAlgorithm>
+	<sourceLocation>DIT FTP Server</sourceLocation>
+	<sourceFileName>DIT_20190118-20190118-20181205T150630-EUFileSequence.xml</sourceFileName>
+	<sourceFileEncoding>UTF-8</sourceFileEncoding>
+	<destinations>
+		<destination>
+			<destinationSystem>DIT</destinationSystem>
+			<destinationLocation>ED-Tariff, To Tariff folder</destinationLocation>
+			<destinationFileName>DIT_20190118-20190118-20181205T150630-EUFileSequence.xml</destinationFileName>
+			<destinationFileEncoding>BASE64</destinationFileEncoding>
+		</destination>
+	</destinations>
+</BatchFileInterfaceMetadata>

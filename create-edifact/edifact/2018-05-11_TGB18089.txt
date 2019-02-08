@@ -1,0 +1,7 @@
+UNB+XXIB:1+CEC/XXI/B5+               GB+16092018:2000+TARIC'
+UNH+TGBGB18089+8089'
+001601450937000+000000011000133810928350101201831122018000029130100000001000000   KGM 3Y      90Council Regulation (EU) 2016/2389 amending Regulation (EU) No 1388/2013 opening and providing for the management of autonomous tariff quotas of the Union for certain agricultural and industrial products<P>(OJ L 360, 30/12/2016)'
+001601450937000+00000002100013315092679010120183112201800002923350000000350000000   KGM 3Y      90Council Regulation (EU) 2016/2389 amending Regulation (EU) No 1388/2013 opening and providing for the management of autonomous tariff quotas of the Union for certain agricultural and industrial products<P>(OJ L 360, 30/12/2016)'
+999+00000004+37000000002'
+UNT+00000005+TGBGB18089'
+UNZ+01+TARIC'

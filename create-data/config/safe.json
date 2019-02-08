@@ -1,0 +1,427 @@
+{
+    "bulk_migrations": {
+        "import_export": "regulation_migrations_impex.csv",
+        "trade_remedies": "regulation_migrations_remedies.csv"
+    },
+    "critical_date": "2019-03-29",
+    "dbase": "tariff_dev",
+    "dbase_uktt": "trade_tariff_181119",
+    "debug": 1,
+    "import_files": [
+        "TGB18241.xml",
+        "TGB18242.xml",
+        "TGB18243.xml",
+        "TGB18244.xml",
+        "TGB18245.xml",
+        "TGB18246.xml",
+        "TGB18247.xml",
+        "TGB18248.xml",
+        "TGB18249.xml",
+        "TGB18250.xml",
+        "TGB18251.xml",
+        "TGB19002.xml",
+        "TGB19003.xml",
+        "TGB19006.xml",
+        "TGB19007.xml"
+    ],
+    "last_transaction_id": 90089799,
+    "meursing_list": "12, 13, 14, 21, 25, 27, 29",
+    "quota_profiles": {
+        "albania": {
+            "country_codes": [
+                "AL"
+            ],
+            "reg_list": [
+                "R090891",
+                "D090332",
+                "R061742",
+                "R061916"
+            ]
+        },
+        "algeria": {
+            "country_codes": [
+                "DZ"
+            ],
+            "reg_list": [
+                "R051460",
+                "R051653",
+                "D050690"
+            ]
+        },
+        "andean": {
+            "country_codes": [
+                "XX"
+            ],
+            "reg_list": [
+                "R130405",
+                "R130741",
+                "R170754",
+                "R170120",
+                "R130404",
+                "R130740"
+            ]
+        },
+        "bosnia": {
+            "country_codes": [
+                "BA"
+            ],
+            "reg_list": [
+                "R110343",
+                "R110354",
+                "R090891",
+                "R101255",
+                "D080474"
+            ]
+        },
+        "cameroon": {
+            "country_codes": [
+                "CM"
+            ],
+            "reg_list": [
+                "D090152"
+            ]
+        },
+        "canada": {
+            "country_codes": [
+                "CA"
+            ],
+            "reg_list": [
+                "R1585/17",
+                "R1772/17",
+                "R1781/17",
+                "R1586/17",
+                "D0037/17"
+            ]
+        },
+        "cariforum": {
+            "country_codes": [
+                "cariforum"
+            ],
+            "reg_list": [
+                "D0805/08"
+            ]
+        },
+        "chile": {
+            "country_codes": [
+                "CL"
+            ],
+            "reg_list": [
+                "D0792/06",
+                "R0610/09",
+                "D0979/02",
+                "R0312/03"
+            ]
+        },
+        "cotedivoire": {
+            "country_codes": [
+                "CI"
+            ],
+            "reg_list": [
+                "R161076"
+            ]
+        },
+        "egypt": {
+            "country_codes": [
+                "EG"
+            ],
+            "reg_list": [
+                "D100240",
+                "D040635",
+                "R100449",
+                "R071338"
+            ]
+        },
+        "esa": {
+            "country_codes": [
+                "esa"
+            ],
+            "reg_list": [
+                "D1923/17",
+                "D0196/12"
+            ]
+        },
+        "faroeislands": {
+            "country_codes": [
+                "FO"
+            ],
+            "reg_list": [
+                "R090054",
+                "R071381",
+                "R992471",
+                "D970126",
+                "D990456",
+                "D060561"
+            ]
+        },
+        "georgia": {
+            "country_codes": [
+                "GE"
+            ],
+            "reg_list": [
+                "D140494",
+                "R140989"
+            ]
+        },
+        "ghana": {
+            "country_codes": [
+                "GH"
+            ],
+            "reg_list": [
+                "D1850/16"
+            ]
+        },
+        "israel": {
+            "country_codes": [
+                "IL"
+            ],
+            "reg_list": [
+                "R1474/00",
+                "R1338/07",
+                "R1153/09",
+                "R1154/09",
+                "R1831/96",
+                "D0066/13"
+            ]
+        },
+        "jordan": {
+            "country_codes": [
+                "JO"
+            ],
+            "reg_list": [
+                "D060067",
+                "D020357",
+                "R060019"
+            ]
+        },
+        "kosovo": {
+            "country_codes": [
+                "kosovo"
+            ],
+            "reg_list": [
+                "R120374",
+                "R090891",
+                "R171466",
+                "D160342",
+                "R171464",
+                "R120374",
+                "R090891"
+            ]
+        },
+        "lebanon": {
+            "country_codes": [
+                "LB"
+            ],
+            "reg_list": [
+                "R030209",
+                "R060973",
+                "R961831",
+                "D060356"
+            ]
+        },
+        "macedonia": {
+            "country_codes": [
+                "MK"
+            ],
+            "reg_list": [
+                "R012597",
+                "R120374",
+                "R090891",
+                "R101255",
+                "D040239"
+            ]
+        },
+        "mexico": {
+            "country_codes": [
+                "MX"
+            ],
+            "reg_list": [
+                "R080821",
+                "D000415"
+            ]
+        },
+        "moldova": {
+            "country_codes": [
+                "MD"
+            ],
+            "reg_list": [
+                "D140492",
+                "R140988",
+                "R152080"
+            ]
+        },
+        "montenegro": {
+            "country_codes": [
+                "ME"
+            ],
+            "reg_list": [
+                "R080053",
+                "R080497",
+                "R101255",
+                "D100224"
+            ]
+        },
+        "morocco": {
+            "country_codes": [
+                "MA"
+            ],
+            "reg_list": [
+                "R120812",
+                "D000204",
+                "D120497",
+                "D030914"
+            ]
+        },
+        "pacific": {
+            "country_codes": [
+                "pacific"
+            ],
+            "reg_list": [
+                "D0729/09"
+            ]
+        },
+        "palestine": {
+            "country_codes": [
+                "PS"
+            ],
+            "reg_list": [
+                "D0430/97",
+                "D0824/11"
+            ]
+        },
+        "sadc": {
+            "country_codes": [
+                "SADC"
+            ],
+            "reg_list": [
+                "R2253/16",
+                "D1623/16",
+                "R0882/17"
+            ]
+        },
+        "serbia": {
+            "country_codes": [
+                "RS"
+            ],
+            "reg_list": [
+                "R150781",
+                "R090891",
+                "R101255",
+                "D100036",
+                "D130490",
+                "R110059",
+                "R120374"
+            ]
+        },
+        "south_korea": {
+            "country_codes": [
+                "KR"
+            ],
+            "reg_list": [
+                "R1093/11",
+                "D0265/11"
+            ]
+        },
+        "switzerland": {
+            "country_codes": [
+                "CH"
+            ],
+            "reg_list": [
+                "D0123/01",
+                "R2114/99",
+                "R0050/04",
+                "R1565/07",
+                "R0082/13",
+                "R1126/09",
+                "R1223/12",
+                "A0003/73",
+                "D0093/06",
+                "D0309/02",
+                "D0559/86",
+                "D0955/05"
+            ]
+        },
+        "tbc": {
+            "country_codes": [
+                "centralamerica"
+            ],
+            "reg_list": [
+                "D120734",
+                "R130974",
+                "R130975",
+                "R130976",
+                "R130977",
+                "R131011",
+                "R131012",
+                "R130922",
+                "R130923",
+                "R131366"
+            ]
+        },
+        "tunisia": {
+            "country_codes": [
+                "tunisia"
+            ],
+            "reg_list": [
+                "R010747",
+                "R061918",
+                "R060973",
+                "D980238",
+                "D000822"
+            ]
+        },
+        "turkey": {
+            "country_codes": [
+                "TR"
+            ],
+            "reg_list": [
+                "R070816",
+                "R061712",
+                "R090933",
+                "R141335",
+                "D960142",
+                "D980223",
+                "D960528"
+            ]
+        },
+        "ukraine": {
+            "country_codes": [
+                "UA"
+            ],
+            "reg_list": [
+                "R152076",
+                "R152077",
+                "R152078",
+                "R152079",
+                "R152081",
+                "R152405",
+                "D140295",
+                "R171566"
+            ]
+        }
+    },
+    "regulation_profiles": {
+        "ftas": {
+            "dest": "base_regulations_ftas.xml",
+            "source": "base_regulations_ftas.xlsm"
+        },
+        "generic": {
+            "dest": "base_regulations_generic.xml",
+            "source": "base_regulations_generic.xlsm"
+        },
+        "import_export": {
+            "dest": "base_regulations_import_export.xml",
+            "source": "base_regulations_import_export.xlsm"
+        },
+        "national_pandr": {
+            "dest": "base_regulations_national_pandr.xml",
+            "source": "base_regulations_national_pandr.xlsm"
+        },
+        "trade_remedies": {
+            "dest": "base_regulations_trade_remedies.xml",
+            "source": "base_regulations_trade_remedies.xlsm"
+        }
+    },
+    "remove_Meursing": 1,
+    "remove_SIVs": 1,
+    "xdbase": "tariff_staging"
+}

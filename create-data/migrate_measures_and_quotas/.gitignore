@@ -1,0 +1,6 @@
+*.log
+.orig
+__pycache__/
+.vscode/
+old/
+xml_out/

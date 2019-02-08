@@ -1,0 +1,1459 @@
+Commodity,Suffix,Start,End,Description,Indents
+31794,1000000000,80,1971-12-31 00:00:00,,CEREALS
+31795,1001000000,80,1972-01-01 00:00:00,,Wheat and meslin
+31804,1002000000,80,1972-01-01 00:00:00,,Rye
+31805,1003000000,80,1972-01-01 00:00:00,,Barley
+31815,1004000000,80,1972-01-01 00:00:00,,Oats
+31818,1005000000,80,1972-01-01 00:00:00,,Maize (corn)
+31819,1005100000,80,1972-01-01 00:00:00,,Seed
+31826,1005900000,80,1972-01-01 00:00:00,,Other
+31827,1006000000,80,1972-01-01 00:00:00,,Rice
+31828,1006100000,80,1972-01-01 00:00:00,,Rice in the husk (paddy or rough)
+31856,1006200000,80,1972-01-01 00:00:00,,Husked (brown) rice
+31858,1006201100,10,1989-01-01 00:00:00,,Parboiled
+31861,1006201500,10,1989-01-01 00:00:00,,Long grain
+31865,1006201700,80,1989-01-01 00:00:00,,Of a length/width ratio equal to or greater than 3
+31871,1006209200,10,1989-01-01 00:00:00,,Other
+31874,1006209600,10,1989-01-01 00:00:00,,Long grain
+31878,1006209800,80,1989-01-01 00:00:00,,Of a length/width ratio equal to or greater than 3
+31881,1006300000,80,1972-01-01 00:00:00,,"Semi-milled or wholly milled rice, whether or not polished or glazed"
+31886,1006302100,10,1972-01-01 00:00:00,,Semi-milled rice
+31887,1006302100,20,1989-01-01 00:00:00,,Parboiled
+31888,1006302100,80,1989-01-01 00:00:00,,Round grain
+31889,1006302300,80,1989-01-01 00:00:00,,Medium grain
+31890,1006302500,10,1989-01-01 00:00:00,,Long grain
+31891,1006302500,80,1989-01-01 00:00:00,,Of a length/width ratio greater than 2|but less than 3
+31894,1006302700,80,1989-01-01 00:00:00,,Of a length/width ratio equal to or greater than 3
+31897,1006304200,10,1989-01-01 00:00:00,,Other
+31898,1006304200,80,1989-01-01 00:00:00,,Round grain
+31899,1006304400,80,1989-01-01 00:00:00,,Medium grain
+31900,1006304600,10,1989-01-01 00:00:00,,Long grain
+31901,1006304600,80,1989-01-01 00:00:00,,Of a length/width ratio greater than 2|but less than 3
+31904,1006304800,80,1989-01-01 00:00:00,,Of a length/width ratio equal to or greater than 3
+31907,1006306100,10,1972-01-01 00:00:00,,Wholly milled rice
+31908,1006306100,20,1989-01-01 00:00:00,,Parboiled
+31909,1006306100,80,1989-01-01 00:00:00,,Round grain
+31910,1006306300,80,1989-01-01 00:00:00,,Medium grain
+31911,1006306500,10,1989-01-01 00:00:00,,Long grain
+31912,1006306500,80,1989-01-01 00:00:00,,Of a length/width ratio greater than 2|but less than 3
+31915,1006306700,80,1989-01-01 00:00:00,,Of a length/width ratio equal to or greater than 3
+31919,1006309200,10,1989-01-01 00:00:00,,Other
+31920,1006309200,80,1989-01-01 00:00:00,,Round grain
+31921,1006309400,80,1989-01-01 00:00:00,,Medium grain
+31922,1006309600,10,1989-01-01 00:00:00,,Long grain
+31923,1006309600,80,1989-01-01 00:00:00,,Of a length/width ratio greater than 2|but less than 3
+31926,1006309800,80,1989-01-01 00:00:00,,Of a length/width ratio equal to or greater than 3
+31932,1006400000,80,1972-01-01 00:00:00,,Broken rice
+31933,1007000000,80,1972-01-01 00:00:00,,Grain sorghum
+31936,1008000000,80,1972-01-01 00:00:00,,"Buckwheat, millet and canary seed; other cereals"
+31943,1100000000,80,1971-12-31 00:00:00,,PRODUCTS OF THE MILLING INDUSTRY; MALT; STARCHES; INULIN; WHEAT GLUTEN
+31944,1101000000,80,1972-01-01 00:00:00,,Wheat or meslin flour
+31945,1102000000,80,1972-01-01 00:00:00,,Cereal flours other than of wheat or meslin
+31947,1102200000,80,1972-01-01 00:00:00,,Maize (corn) flour
+31951,1102900000,80,1972-01-01 00:00:00,,Other
+31958,1103000000,80,1972-01-01 00:00:00,,"Cereal groats, meal and pellets"
+31959,1103110000,10,1972-01-01 00:00:00,,Groats and meal
+31960,1103110000,80,1972-01-01 00:00:00,,Of wheat
+31968,1103130000,80,1972-01-01 00:00:00,,Of maize (corn)
+31975,1103190000,80,1972-01-01 00:00:00,,Of other cereals
+31994,1104000000,80,1972-01-01 00:00:00,,"Cereal grains otherwise worked (for example, hulled, rolled, flaked, pearled, sliced or kibbled), except rice of heading|1006; germ of cereals, whole, rolled, flaked or ground"
+31999,1104120000,80,1972-01-01 00:00:00,,Of oats
+32002,1104190000,80,1972-01-01 00:00:00,,Of other cereals
+32006,1104199100,10,1972-01-01 00:00:00,,Other
+32018,1104220000,80,1972-01-01 00:00:00,,Of oats
+32025,1104230000,80,1972-01-01 00:00:00,,Of maize (corn)
+32029,1104290000,80,1972-01-01 00:00:00,,Of other cereals
+32057,1104300000,80,1972-01-01 00:00:00,,"Germ of cereals, whole, rolled, flaked or ground"
+32060,1105000000,80,1972-01-01 00:00:00,,"Flour, meal, powder, flakes, granules and pellets of potatoes"
+32063,1106000000,80,1972-01-01 00:00:00,,"Flour, meal and powder of the dried leguminous vegetables of heading|0713, of sago or of roots or tubers of heading|0714|or of the products of Chapter|8"
+31949,1102209000,80,1972-01-01 00:00:00,,Other
+32065,1106200000,80,1972-01-01 00:00:00,,Of sago or of roots or tubers of heading|0714
+32079,1106300000,80,1972-01-01 00:00:00,,Of the products of Chapter|8
+32081,1106309000,80,1972-01-01 00:00:00,,Other
+32084,1107000000,80,1972-01-01 00:00:00,,"Malt, whether or not roasted"
+32085,1107100000,80,1972-01-01 00:00:00,,Not roasted
+32086,1107101100,10,1972-01-01 00:00:00,,Of wheat
+32089,1107109100,10,1972-01-01 00:00:00,,Other
+32093,1108000000,80,1972-01-01 00:00:00,,Starches; inulin
+32094,1108110000,10,1972-01-01 00:00:00,,Starches
+32102,1108190000,80,1972-01-01 00:00:00,,Other starches
+32109,1200000000,80,1971-12-31 00:00:00,,"OIL SEEDS AND OLEAGINOUS FRUITS; MISCELLANEOUS GRAINS, SEEDS AND FRUIT; INDUSTRIAL OR MEDICINAL PLANTS; STRAW AND FODDER"
+32110,1201000000,80,1972-01-01 00:00:00,,"Soya beans, whether or not broken"
+32113,1202000000,80,1972-01-01 00:00:00,,"Groundnuts, not roasted or otherwise cooked, whether or not shelled or broken"
+32119,1204000000,80,1972-01-01 00:00:00,,"Linseed, whether or not broken"
+32122,1205000000,80,1972-01-01 00:00:00,,"Rape or colza seeds, whether or not broken"
+32125,1206000000,80,1972-01-01 00:00:00,,"Sunflower seeds, whether or not broken"
+32128,1206009100,10,1994-01-01 00:00:00,,Other
+32131,1207000000,80,1972-01-01 00:00:00,,"Other oil seeds and oleaginous fruits, whether or not broken"
+32141,1207400000,80,1972-01-01 00:00:00,,Sesamum seeds
+32144,1207500000,80,1972-01-01 00:00:00,,Mustard seeds
+32150,1207910000,10,1972-01-01 00:00:00,,Other
+32151,1207910000,80,1972-01-01 00:00:00,,Poppy seeds
+32157,1207990000,80,1972-01-01 00:00:00,,Other
+32161,1207999100,10,1972-01-01 00:00:00,,Other
+32166,1208000000,80,1972-01-01 00:00:00,,"Flours and meals of oil seeds or oleaginous fruits, other than those of mustard"
+32169,1209000000,80,1972-01-01 00:00:00,,"Seeds, fruit and spores, of a kind used for sowing"
+32173,1209210000,10,1972-01-01 00:00:00,,Seeds of forage plants
+32175,1209220000,80,1972-01-01 00:00:00,,Clover (Trifolium spp.) seeds
+32183,1209230000,80,1972-01-01 00:00:00,,Fescue seeds
+32191,1209250000,80,1972-01-01 00:00:00,,"Ryegrass (Lolium multiflorum Lam., Lolium perenne L.) seeds"
+32199,1209290000,80,1972-01-01 00:00:00,,Other
+32219,1209910000,10,1972-01-01 00:00:00,,Other
+32220,1209910000,80,1972-01-01 00:00:00,,Vegetable seeds
+32225,1209990000,80,1972-01-01 00:00:00,,Other
+32227,1209999100,10,1972-01-01 00:00:00,,Other
+32229,1209999900,80,1972-01-01 00:00:00,,Other
+32232,1210000000,80,1972-01-01 00:00:00,,"Hop cones, fresh or dried, whether or not ground, powdered or in the form of pellets; lupulin"
+32233,1210100000,80,1972-01-01 00:00:00,,"Hop cones, neither ground nor powdered nor in the form of pellets"
+32234,1210200000,80,1972-01-01 00:00:00,,"Hop cones, ground, powdered or in the form of pellets; lupulin"
+32235,1210201000,80,1992-01-01 00:00:00,,"Hop cones, ground, powdered or in the form of pellets, with higher lupulin content; lupulin"
+32236,1210209000,80,1992-01-01 00:00:00,,Other
+32237,1211000000,80,1972-01-01 00:00:00,,"Plants and parts of plants (including seeds and fruits), of a kind used primarily in perfumery, in pharmacy or for insecticidal, fungicidal or similar purposes, fresh, chilled, frozen or dried, whether or not cut, crushed or powdered"
+32240,1211900000,80,1972-01-01 00:00:00,,Other
+32251,1212000000,80,1972-01-01 00:00:00,,"Locust beans, seaweeds and other algae, sugar beet and sugar cane, fresh, chilled, frozen or dried, whether or not ground; fruit stones and kernels and other vegetable products (including unroasted chicory roots of the variety Cichorium intybus sativum) of a kind used primarily for human consumption, not elsewhere specified or included"
+32261,1212910000,10,1972-01-01 00:00:00,,Other
+32262,1212910000,80,1972-01-01 00:00:00,,Sugar beet
+32268,1212990000,80,1972-01-01 00:00:00,,Other
+32271,1213000000,80,1972-01-01 00:00:00,,"Cereal straw and husks, unprepared, whether or not chopped, ground, pressed or in the form of pellets"
+32272,1214000000,80,1972-01-01 00:00:00,,"Swedes, mangolds, fodder roots, hay, lucerne (alfalfa), clover, sainfoin, forage kale, lupines, vetches and similar forage products, whether or not in the form of pellets"
+32274,1214900000,80,1972-01-01 00:00:00,,Other
+32280,1300000000,80,1971-12-31 00:00:00,,"LAC; GUMS, RESINS AND OTHER VEGETABLE SAPS AND EXTRACTS"
+32281,1301000000,80,1972-01-01 00:00:00,,"Lac; natural gums, resins, gum-resins and oleoresins (for example, balsams)"
+32287,1302000000,80,1972-01-01 00:00:00,,"Vegetable saps and extracts; pectic substances, pectinates and pectates; agar-agar and other mucilages and thickeners, whether or not modified, derived from vegetable products"
+32288,1302110000,10,1972-01-01 00:00:00,,Vegetable saps and extracts
+32291,1302130000,80,1972-01-01 00:00:00,,Of hops
+32295,1302190000,80,1972-01-01 00:00:00,,Other
+32301,1302200000,80,1972-01-01 00:00:00,,"Pectic substances, pectinates and pectates"
+32302,1302201000,80,1972-01-01 00:00:00,,Dry
+32317,1302209000,80,1972-01-01 00:00:00,,Other
+32319,1302209011,10,1994-01-01 00:00:00,,Containing less than 5% by weight of added sugar
+32332,1302310000,10,1972-01-01 00:00:00,,"Mucilages and thickeners, whether or not modified, derived from vegetable products"
+32334,1302320000,80,1972-01-01 00:00:00,,"Mucilages and thickeners, whether or not modified, derived from locust beans, locust bean seeds or guar seeds"
+32336,1302329000,80,1972-01-01 00:00:00,,Of guar seeds
+32338,1400000000,80,1971-12-31 00:00:00,,VEGETABLE PLAITING MATERIALS; VEGETABLE PRODUCTS NOT ELSEWHERE SPECIFIED OR INCLUDED
+32339,1401000000,80,1972-01-01 00:00:00,,"Vegetable materials of a kind used primarily for plaiting (for example, bamboos, rattans, reeds, rushes, osier, raffia, cleaned, bleached or dyed cereal straw, and lime bark)"
+32351,1404000000,80,1972-01-01 00:00:00,,Vegetable products not elsewhere specified or included
+32354,1404900000,80,1972-01-01 00:00:00,,Other
+32355,1500000000,80,1971-12-31 00:00:00,,ANIMAL OR VEGETABLE FATS AND OILS AND THEIR CLEAVAGE PRODUCTS; PREPARED EDIBLE FATS; ANIMAL OR VEGETABLE WAXES
+32356,1501000000,80,1972-01-01 00:00:00,,"Pig fat (including lard) and poultry fat, other than that of heading|0209|or 1503"
+32361,1502000000,80,1972-01-01 00:00:00,,"Fats of bovine animals, sheep or goats, other than those of heading|1503"
+32367,1503000000,80,1972-01-01 00:00:00,,"Lard stearin, lard oil, oleostearin, oleo-oil and tallow oil, not emulsified or mixed or otherwise prepared"
+32368,1503001100,10,1972-01-01 00:00:00,,Lard stearin and oleostearin
+32373,1504000000,80,1972-01-01 00:00:00,,"Fats and oils and their fractions, of fish or marine mammals, whether or not refined, but not chemically modified"
+32374,1504100000,80,1972-01-01 00:00:00,,Fish-liver oils and their fractions
+32379,1504200000,80,1972-01-01 00:00:00,,"Fats and oils and their fractions, of fish, other than liver oils"
+32380,1504201000,80,1972-01-01 00:00:00,,Solid fractions
+32384,1504300000,80,1972-01-01 00:00:00,,"Fats and oils and their fractions, of marine mammals"
+32391,1505000000,80,1972-01-01 00:00:00,,Wool grease and fatty substances derived therefrom (including lanolin)
+32395,1507000000,80,1972-01-01 00:00:00,,"Soya-bean oil and its fractions, whether or not refined, but not chemically modified"
+32396,1507100000,80,1972-01-01 00:00:00,,"Crude oil, whether or not degummed"
+32399,1507900000,80,1972-01-01 00:00:00,,Other
+32404,1508000000,80,1972-01-01 00:00:00,,"Groundnut oil and its fractions, whether or not refined, but not chemically modified"
+32405,1508100000,80,1972-01-01 00:00:00,,Crude oil
+32408,1508900000,80,1972-01-01 00:00:00,,Other
+32411,1509000000,80,1972-01-01 00:00:00,,"Olive oil and its fractions, whether or not refined, but not chemically modified"
+32412,1509100000,80,1972-01-01 00:00:00,,Virgin
+32415,1509900000,80,1972-01-01 00:00:00,,Other
+32416,1510000000,80,1972-01-01 00:00:00,,"Other oils and their fractions, obtained solely from olives, whether or not refined, but not chemically modified, including blends of these oils or fractions with oils or fractions of heading|1509"
+32419,1511000000,80,1972-01-01 00:00:00,,"Palm oil and its fractions, whether or not refined, but not chemically modified"
+32420,1511100000,80,1972-01-01 00:00:00,,Crude oil
+32423,1511900000,80,1972-01-01 00:00:00,,Other
+32424,1511901100,10,1972-01-01 00:00:00,,Solid fractions
+32428,1511901900,80,1972-01-01 00:00:00,,Other
+32431,1511909100,10,1972-01-01 00:00:00,,Other
+32432,1511909100,80,1972-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+32434,1512000000,80,1972-01-01 00:00:00,,"Sunflower-seed, safflower or cotton-seed oil and fractions thereof, whether or not refined, but not chemically modified"
+32435,1512110000,10,1972-01-01 00:00:00,,Sunflower-seed or safflower oil and fractions thereof
+32436,1512110000,80,1972-01-01 00:00:00,,Crude oil
+32440,1512119100,10,1972-01-01 00:00:00,,Other
+32443,1512190000,80,1972-01-01 00:00:00,,Other
+32444,1512191000,80,1972-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+32448,1512210000,10,1972-01-01 00:00:00,,Cotton-seed oil and its fractions
+32449,1512210000,80,1972-01-01 00:00:00,,"Crude oil, whether or not gossypol has been removed"
+32452,1512290000,80,1972-01-01 00:00:00,,Other
+32455,1513000000,80,1972-01-01 00:00:00,,"Coconut (copra), palm kernel or babassu oil and fractions thereof, whether or not refined, but not chemically modified"
+32456,1513110000,10,1972-01-01 00:00:00,,Coconut (copra) oil and its fractions
+32457,1513110000,80,1972-01-01 00:00:00,,Crude oil
+32458,1513111000,80,1972-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+32459,1513119100,10,1972-01-01 00:00:00,,Other
+32462,1513190000,80,1972-01-01 00:00:00,,Other
+32463,1513191100,10,1972-01-01 00:00:00,,Solid fractions
+32470,1513193000,10,1972-01-01 00:00:00,,Other
+32471,1513193000,80,1972-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+32472,1513199100,10,1972-01-01 00:00:00,,Other
+32475,1513210000,10,1972-01-01 00:00:00,,Palm kernel or babassu oil and fractions thereof
+32476,1513210000,80,1972-01-01 00:00:00,,Crude oil
+32480,1513213000,10,1972-01-01 00:00:00,,Other
+32488,1513290000,80,1972-01-01 00:00:00,,Other
+32489,1513291100,10,1972-01-01 00:00:00,,Solid fractions
+32496,1513293000,10,1972-01-01 00:00:00,,Other
+32497,1513293000,80,1972-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+32500,1513295000,10,1972-01-01 00:00:00,,Other
+32505,1514000000,80,1972-01-01 00:00:00,,"Rape, colza or mustard oil and fractions thereof, whether or not refined, but not chemically modified"
+32514,1515000000,80,1972-01-01 00:00:00,,"Other fixed vegetable fats and oils (including jojoba oil) and their fractions, whether or not refined, but not chemically modified"
+32515,1515110000,10,1972-01-01 00:00:00,,Linseed oil and its fractions
+32517,1515190000,80,1972-01-01 00:00:00,,Other
+32520,1515210000,10,1972-01-01 00:00:00,,Maize (corn) oil and its fractions
+32521,1515210000,80,1972-01-01 00:00:00,,Crude oil
+32524,1515290000,80,1972-01-01 00:00:00,,Other
+32527,1515300000,80,1972-01-01 00:00:00,,Castor oil and its fractions
+32531,1515500000,80,1972-01-01 00:00:00,,Sesame oil and its fractions
+32532,1515501100,10,1972-01-01 00:00:00,,Crude oil
+32535,1515509100,10,1972-01-01 00:00:00,,Other
+32541,1515900000,80,1972-01-01 00:00:00,,Other
+32543,1515902100,10,1972-01-01 00:00:00,,Tobacco-seed oil and its fractions
+32544,1515902100,20,1972-01-01 00:00:00,,Crude oil
+32547,1515903100,10,1972-01-01 00:00:00,,Other
+32550,1515904000,10,1972-01-01 00:00:00,,Other oils and their fractions
+32551,1515904000,20,1972-01-01 00:00:00,,Crude oils
+32553,1515905100,10,1972-01-01 00:00:00,,Other
+32493,1513291900,80,1972-01-01 00:00:00,,Other
+32556,1515906000,10,1972-01-01 00:00:00,,Other
+32558,1515909100,10,1972-01-01 00:00:00,,Other
+32560,1515909900,80,1972-01-01 00:00:00,,"Solid, other; fluid"
+32561,1516000000,80,1972-01-01 00:00:00,,"Animal or vegetable fats and oils and their fractions, partly or wholly hydrogenated, inter-esterified, re-esterified or elaidinised, whether or not refined, but not further prepared"
+32562,1516100000,80,1972-01-01 00:00:00,,Animal fats and oils and their fractions
+32563,1516101000,80,1972-01-01 00:00:00,,In immediate packings of a net content not exceeding 1|kg
+32566,1516109000,80,1972-01-01 00:00:00,,Other
+32571,1516200000,80,1972-01-01 00:00:00,,Vegetable fats and oils and their fractions
+32573,1516209100,10,1972-01-01 00:00:00,,Other
+32580,1517000000,80,1972-01-01 00:00:00,,"Margarine; edible mixtures or preparations of animal or vegetable fats or oils or of fractions of different fats or oils of this chapter, other than edible fats or oils or their fractions of heading|1516"
+32581,1517100000,80,1972-01-01 00:00:00,,"Margarine, excluding liquid margarine"
+32583,1517109000,80,1972-01-01 00:00:00,,Other
+32584,1517900000,80,1972-01-01 00:00:00,,Other
+32586,1517909100,10,1972-01-01 00:00:00,,Other
+32589,1517909900,80,1972-01-01 00:00:00,,Other
+32590,1518000000,80,1972-01-01 00:00:00,,"Animal or vegetable fats and oils and their fractions, boiled, oxidised, dehydrated, sulphurised, blown, polymerised by heat in vacuum or in inert gas or otherwise chemically modified, excluding those of heading|1516; inedible mixtures or preparations of animal or vegetable fats or oils or of fractions of different fats or oils of this chapter, not elsewhere specified or included"
+32592,1518003100,10,1972-01-01 00:00:00,,"Fixed vegetable oils, fluid, mixed, for technical or industrial uses other than the manufacture of foodstuffs for human consumption"
+32605,1518009100,10,1993-01-01 00:00:00,,Other
+32606,1518009100,80,1993-01-01 00:00:00,,"Animal or vegetable fats and oils and their fractions, boiled, oxidised, dehydrated, sulphurised, blown, polymerised by heat in vacuum or in inert gas or otherwise chemically modified, excluding those of heading|1516"
+32607,1518009500,10,1993-01-01 00:00:00,,Other
+32555,1515905900,80,1972-01-01 00:00:00,,"Solid, other; fluid"
+32565,1516101090,80,1972-01-01 00:00:00,,Other
+32608,1518009500,80,1993-01-01 00:00:00,,Inedible mixtures or preparations of animal or of animal and vegetable fats and oils and their fractions
+32609,1518009900,80,1993-01-01 00:00:00,,Other
+32638,1521000000,80,1972-01-01 00:00:00,,"Vegetable waxes (other than triglycerides), beeswax, other insect waxes and spermaceti, whether or not refined or coloured"
+32642,1521900000,80,1972-01-01 00:00:00,,Other
+32644,1521909100,10,1972-01-01 00:00:00,,"Beeswax and other insect waxes, whether or not refined or coloured"
+32647,1522000000,80,1972-01-01 00:00:00,,Degras; residues resulting from the treatment of fatty substances or animal or vegetable waxes
+32649,1522003100,10,1972-01-01 00:00:00,,Residues resulting from the treatment of fatty substances or animal or vegetable waxes
+32650,1522003100,20,1972-01-01 00:00:00,,Containing oil having the characteristics of olive oil
+32653,1522009100,10,1972-01-01 00:00:00,,Other
+32656,1600000000,80,1971-12-31 00:00:00,,"PREPARATIONS OF MEAT, OF FISH OR OF CRUSTACEANS, MOLLUSCS OR OTHER AQUATIC INVERTEBRATES"
+32657,1601000000,80,1972-01-01 00:00:00,,"Sausages and similar products, of meat, meat offal or blood; food preparations based on these products"
+32658,1601001000,80,1972-01-01 00:00:00,,Of liver
+32661,1601009100,10,1972-01-01 00:00:00,,Other
+32662,1601009100,80,1972-01-01 00:00:00,,"Sausages, dry or for spreading, uncooked"
+32668,1601009900,80,1972-01-01 00:00:00,,Other
+32674,1602000000,80,1972-01-01 00:00:00,,"Other prepared or preserved meat, meat offal or blood"
+32678,1602200000,80,1972-01-01 00:00:00,,Of liver of any animal
+32686,1602310000,10,1972-01-01 00:00:00,,Of poultry of heading|0105
+32687,1602310000,80,1972-01-01 00:00:00,,Of turkeys
+32688,1602311100,10,1972-01-01 00:00:00,,Containing 57|% or more by weight of poultry meat or offal
+32693,1602390000,80,1972-01-01 00:00:00,,Other
+32699,1602410000,10,1972-01-01 00:00:00,,Of swine
+32700,1602410000,80,1972-01-01 00:00:00,,Hams and cuts thereof
+32703,1602420000,80,1972-01-01 00:00:00,,Shoulders and cuts thereof
+32706,1602490000,80,1972-01-01 00:00:00,,"Other, including mixtures"
+32707,1602491100,10,1972-01-01 00:00:00,,Of domestic swine
+32708,1602491100,20,1972-01-01 00:00:00,,"Containing by weight 80|% or more of meat or meat offal, of any kind, including fats of any kind or origin"
+32635,1520000000,80,1972-01-01 00:00:00,,"Glycerol, crude; glycerol waters and glycerol lyes"
+32712,1602491900,80,1972-01-01 00:00:00,,Other
+32716,1602500000,80,1972-01-01 00:00:00,,Of bovine animals
+32718,1602503100,10,1993-01-01 00:00:00,,Other
+32730,1602900000,80,1972-01-01 00:00:00,,"Other, including preparations of blood of any animal"
+32734,1602903100,10,1972-01-01 00:00:00,,Other
+32738,1602905100,10,1972-01-01 00:00:00,,Other
+32740,1602906100,10,1972-01-01 00:00:00,,Other
+32741,1602906100,20,1972-01-01 00:00:00,,Containing bovine meat or offal
+32753,1603000000,80,1972-01-01 00:00:00,,"Extracts and juices of meat, fish or crustaceans, molluscs or other aquatic invertebrates"
+32761,1604000000,80,1972-01-01 00:00:00,,Prepared or preserved fish; caviar and caviar substitutes prepared from fish eggs
+32762,1604110000,10,1972-01-01 00:00:00,,"Fish, whole or in pieces, but not minced"
+32763,1604110000,80,1972-01-01 00:00:00,,Salmon
+32768,1604120000,80,1972-01-01 00:00:00,,Herring
+32769,1604121000,80,1972-01-01 00:00:00,,"Fillets, raw, merely coated with batter or breadcrumbs, whether or not pre-fried in oil, frozen"
+32775,1604129100,10,1994-01-01 00:00:00,,Other
+32776,1604129100,80,1994-01-01 00:00:00,,In airtight containers
+32777,1604129900,80,1994-01-01 00:00:00,,Other
+32778,1604130000,80,1972-01-01 00:00:00,,"Sardines, sardinella and brisling or sprats"
+32782,1604131100,10,1993-01-01 00:00:00,,Sardines
+32783,1604131100,80,1993-01-01 00:00:00,,In olive oil
+32788,1604131900,80,1993-01-01 00:00:00,,Other
+32793,1604139000,80,1972-01-01 00:00:00,,Other
+32795,1604139091,10,1972-01-01 00:00:00,,Other
+32798,1604140000,80,1972-01-01 00:00:00,,"Tuna, skipjack and bonito (Sarda spp.)"
+32825,1604150000,80,1972-01-01 00:00:00,,Mackerel
+32829,1604151100,10,1993-01-01 00:00:00,,Of the species Scomber scombrus and Scomber japonicus
+32830,1604151100,80,1993-01-01 00:00:00,,Fillets
+32833,1604151900,80,1993-01-01 00:00:00,,Other
+32840,1604190000,80,1972-01-01 00:00:00,,Other
+32841,1604191000,80,1972-01-01 00:00:00,,"Salmonidae, other than salmon"
+32847,1604193100,10,1994-01-01 00:00:00,,"Fish of the genus Euthynnus, other than skipjack (Euthynnus (Katsuwonus) pelamis)"
+32855,1604199100,10,1972-01-01 00:00:00,,Other
+32856,1604199100,80,1972-01-01 00:00:00,,"Fillets, raw, merely coated with batter or breadcrumbs, whether or not pre-fried in oil, frozen"
+32861,1604199200,10,1993-01-01 00:00:00,,Other
+32863,1604199300,80,1993-01-01 00:00:00,,Coalfish (Pollachius virens)
+32872,1604200000,80,1972-01-01 00:00:00,,Other prepared or preserved fish
+32874,1604201000,10,1994-01-01 00:00:00,,Other
+32875,1604201000,80,1972-01-01 00:00:00,,Of salmon
+32881,1604203000,80,1972-01-01 00:00:00,,"Of Salmonidae, other than salmon"
+32885,1604205000,80,1972-01-01 00:00:00,,"Of sardines, bonito, mackerel of the species Scomber scombrus and Scomber japonicus, fish of the species Orcynopsis unicolor"
+32898,1604207000,80,1972-01-01 00:00:00,,"Of tuna, skipjack or other fish of the genus Euthynnus"
+32903,1604209000,80,1972-01-01 00:00:00,,Of other fish
+32824,1604149000,80,1972-01-01 00:00:00,,Bonito (Sarda spp.)
+32914,1605000000,80,1972-01-01 00:00:00,,"Crustaceans, molluscs and other aquatic invertebrates, prepared or preserved"
+32915,1605100000,80,1972-01-01 00:00:00,,Crab
+32956,1605300000,80,1972-01-01 00:00:00,,Lobster
+32962,1605400000,80,1972-01-01 00:00:00,,Other crustaceans
+32980,1700000000,80,1971-12-31 00:00:00,,SUGARS AND SUGAR CONFECTIONERY
+32981,1701000000,80,1972-01-01 00:00:00,,"Cane or beet sugar and chemically pure sucrose, in solid form"
+33002,1701120000,80,1972-01-01 00:00:00,,Beet sugar
+33009,1701910000,10,1972-01-01 00:00:00,,Other
+33011,1701990000,80,1972-01-01 00:00:00,,Other
+33018,1702000000,80,1972-01-01 00:00:00,,"Other sugars, including chemically pure lactose, maltose, glucose and fructose, in solid form; sugar syrups not containing added flavouring or colouring matter; artificial honey, whether or not mixed with natural honey; caramel"
+33022,1702200000,80,1972-01-01 00:00:00,,Maple sugar and maple syrup
+33023,1702201000,80,1972-01-01 00:00:00,,"Maple sugar in solid form, containing added flavouring or colouring matter"
+33024,1702209000,80,1972-01-01 00:00:00,,Other
+33025,1702300000,80,1972-01-01 00:00:00,,"Glucose and glucose syrup, not containing fructose or containing in the dry state less than 20|% by weight of fructose"
+33034,1702400000,80,1972-01-01 00:00:00,,"Glucose and glucose syrup, containing in the dry state at least 20|% but less than 50|% by weight of fructose, excluding invert sugar"
+33038,1702600000,80,1972-01-01 00:00:00,,"Other fructose and fructose syrup, containing in the dry state more than 50|% by weight of fructose, excluding invert sugar"
+33043,1702900000,80,1972-01-01 00:00:00,,"Other, including invert sugar and other sugar and sugar syrup blends containing in the dry state 50|% by weight of fructose"
+33044,1702901000,80,1972-01-01 00:00:00,,Chemically pure maltose
+33048,1702907100,10,1972-01-01 00:00:00,,Caramel
+33050,1702907500,10,1972-01-01 00:00:00,,Other
+33056,1703000000,80,1972-01-01 00:00:00,,Molasses resulting from the extraction or refining of sugar
+33059,1704000000,80,1972-01-01 00:00:00,,"Sugar confectionery (including white chocolate), not containing cocoa"
+33060,1704100000,80,1972-01-01 00:00:00,,"Chewing gum, whether or not sugar-coated"
+33067,1704900000,80,1972-01-01 00:00:00,,Other
+32964,1605400020,80,1992-01-01 00:00:00,,Norway lobsters (Nephrops norvegicus)
+33070,1704905100,10,1972-01-01 00:00:00,,Other
+33079,1704906500,10,1972-01-01 00:00:00,,Other
+33083,1704908100,10,1972-01-01 00:00:00,,Other
+33085,1704909900,80,1972-01-01 00:00:00,,Other
+33088,1800000000,80,1971-12-31 00:00:00,,COCOA AND COCOA PREPARATIONS
+33091,1803000000,80,1972-01-01 00:00:00,,"Cocoa paste, whether or not defatted"
+33096,1806000000,80,1972-01-01 00:00:00,,Chocolate and other food preparations containing cocoa
+33097,1806100000,80,1972-01-01 00:00:00,,"Cocoa powder, containing added sugar or other sweetening matter"
+33106,1806103000,80,1972-01-01 00:00:00,,Containing 65|% or more but less than 80|% by weight of sucrose (including invert sugar expressed as sucrose) or isoglucose expressed as sucrose
+33112,1806200000,80,1972-01-01 00:00:00,,"Other preparations in blocks, slabs or bars weighing more than 2|kg or in liquid, paste, powder, granular or other bulk form in containers or immediate packings, of a content exceeding 2|kg"
+33113,1806201000,80,1972-01-01 00:00:00,,Containing 31|% or more by weight of cocoa butter or containing a combined weight of 31|% or more of cocoa butter and milkfat
+33114,1806203000,80,1972-01-01 00:00:00,,"Containing a combined weight of 25|% or more, but less than 31|% of cocoa butter and milkfat"
+33115,1806205000,10,1972-01-01 00:00:00,,Other
+33116,1806205000,80,1972-01-01 00:00:00,,Containing 18|% or more by weight of cocoa butter
+33117,1806207000,80,1972-01-01 00:00:00,,Chocolate milk crumb
+33118,1806208000,80,1991-01-01 00:00:00,,Chocolate flavour coating
+33122,1806209500,80,1991-01-01 00:00:00,,Other
+33125,1806310000,10,1972-01-01 00:00:00,,"Other, in blocks, slabs or bars"
+33129,1806320000,80,1972-01-01 00:00:00,,Not filled
+33134,1806900000,80,1972-01-01 00:00:00,,Other
+33135,1806901100,10,1972-01-01 00:00:00,,Chocolate and chocolate products
+33069,1704903000,80,1972-01-01 00:00:00,,White chocolate
+33136,1806901100,20,1972-01-01 00:00:00,,"Chocolates (including pralines), whether or not filled"
+33139,1806903100,10,1972-01-01 00:00:00,,Other
+33143,1806906000,80,1972-01-01 00:00:00,,Spreads containing cocoa
+33146,1806907000,80,1972-01-01 00:00:00,,Preparations containing cocoa for making beverages
+33149,1806909000,80,1972-01-01 00:00:00,,Other
+33151,1806909011,10,1992-03-01 00:00:00,,In immediate packings of a net content not exceeding 1|kg
+33155,1806909091,10,1992-03-01 00:00:00,,Other
+33158,1900000000,80,1971-12-31 00:00:00,,"PREPARATIONS OF CEREALS, FLOUR, STARCH OR MILK; PASTRYCOOKS' PRODUCTS"
+33159,1901000000,80,1972-01-01 00:00:00,,"Malt extract; food preparations of flour, groats, meal, starch or malt extract, not containing cocoa or containing less than 40|% by weight of cocoa calculated on a totally defatted basis, not elsewhere specified or included; food preparations of goods of headings|0401|to 0404, not containing cocoa or containing less than 5|% by weight of cocoa calculated on a totally defatted basis, not elsewhere specified or included"
+33214,1901900000,80,1972-01-01 00:00:00,,Other
+33215,1901901100,10,1972-01-01 00:00:00,,Malt extract
+33275,1902000000,80,1972-01-01 00:00:00,,"Pasta, whether or not cooked or stuffed (with meat or other substances) or otherwise prepared, such as spaghetti, macaroni, noodles, lasagne, gnocchi, ravioli, cannelloni; couscous, whether or not prepared"
+33276,1902110000,10,1972-01-01 00:00:00,,"Uncooked pasta, not stuffed or otherwise prepared"
+33277,1902110000,80,1972-01-01 00:00:00,,Containing eggs
+33280,1902190000,80,1972-01-01 00:00:00,,Other
+33286,1902200000,80,1972-01-01 00:00:00,,"Stuffed pasta, whether or not cooked or otherwise prepared"
+33287,1902201000,80,1972-01-01 00:00:00,,"Containing more than 20|% by weight of fish, crustaceans, molluscs or other aquatic invertebrates"
+33137,1806901100,80,1972-01-01 00:00:00,,Containing alcohol
+33138,1806901900,80,1972-01-01 00:00:00,,Other
+33288,1902203000,80,1972-01-01 00:00:00,,"Containing more than 20|% by weight of sausages and the like, of meat and meat offal of any kind, including fats of any kind or origin"
+33289,1902209100,10,1972-01-01 00:00:00,,Other
+33290,1902209100,80,1972-01-01 00:00:00,,Cooked
+33291,1902209900,80,1972-01-01 00:00:00,,Other
+33292,1902300000,80,1972-01-01 00:00:00,,Other pasta
+33293,1902301000,80,1972-01-01 00:00:00,,Dried
+33294,1902309000,80,1972-01-01 00:00:00,,Other
+33295,1902400000,80,1972-01-01 00:00:00,,Couscous
+33298,1903000000,80,1972-01-01 00:00:00,,"Tapioca and substitutes therefor prepared from starch, in the form of flakes, grains, pearls, siftings or similar forms"
+33301,1904000000,80,1972-01-01 00:00:00,,"Prepared foods obtained by the swelling or roasting of cereals or cereal products (for example, corn flakes); cereals (other than maize (corn)) in grain form or in the form of flakes or other worked grains (except flour, groats and meal), pre-cooked or otherwise prepared, not elsewhere specified or included"
+33302,1904100000,80,1972-01-01 00:00:00,,Prepared foods obtained by the swelling or roasting of cereals or cereal products
+33306,1904900000,80,1972-01-01 00:00:00,,Other
+33311,1905000000,80,1972-01-01 00:00:00,,"Bread, pastry, cakes, biscuits and other bakers' wares, whether or not containing cocoa; communion wafers, empty cachets of a kind suitable for pharmaceutical use, sealing wafers, rice paper and similar products"
+33313,1905200000,80,1972-01-01 00:00:00,,Gingerbread and the like
+33352,1905400000,80,1972-01-01 00:00:00,,"Rusks, toasted bread and similar toasted products"
+33357,1905900000,80,1972-01-01 00:00:00,,Other
+33359,1905902000,80,1972-01-01 00:00:00,,"Communion wafers, empty cachets of a kind suitable for pharmaceutical use, sealing wafers, rice paper and similar products"
+33360,1905903000,10,1972-01-01 00:00:00,,Other
+54769,1101001100,10,1995-01-01 00:00:00,,Wheat flour
+54770,1104295100,10,1995-01-01 00:00:00,,Not otherwise worked than kibbled
+55121,1104298100,10,1995-01-01 00:00:00,,Other
+56353,1504109100,10,1995-01-01 00:00:00,,Other
+56356,1516209500,10,1995-01-01 00:00:00,,Other
+56358,1516209600,10,1995-01-01 00:00:00,,Other
+56359,1516209600,80,1995-01-01 00:00:00,,"Groundnut, cotton-seed, soya-bean or sunflower-seed oils; other oils containing less than 50|% by weight of free fatty acids and excluding palm kernel, illipe, coconut, colza, rapeseed or copaiba oils"
+56360,1516209800,80,1995-01-01 00:00:00,,Other
+57391,1901909100,10,1995-01-01 00:00:00,,Other
+57393,1901909900,80,1995-01-01 00:00:00,,Other
+57394,1902191000,80,1995-01-01 00:00:00,,Containing no common wheat flour or meal
+57395,1902199000,80,1995-01-01 00:00:00,,Other
+58472,1604139091,20,1995-01-01 00:00:00,,Brisling or sprats (Sprattus sprattus)
+58478,1604209030,10,1995-01-01 00:00:00,,Brisling or sprats (Sprattus sprattus)
+59486,1602320000,80,1996-01-01 00:00:00,,Of fowls of the species Gallus domesticus
+59487,1602321100,10,1996-01-01 00:00:00,,Containing 57|% or more by weight of poultry meat or offal
+59492,1602392100,10,1996-01-01 00:00:00,,Containing 57|% or more by weight of poultry meat or offal
+59499,1702110000,10,1996-01-01 00:00:00,,Lactose and lactose syrup
+54774,1101001100,80,1995-01-01 00:00:00,,Of durum wheat
+59502,1904200000,80,1996-01-01 00:00:00,,Prepared foods obtained from unroasted cereal flakes or from mixtures of unroasted cereal flakes and roasted cereal flakes or swelled cereals
+59504,1904209100,10,1996-01-01 00:00:00,,Other
+64886,1605309000,80,1997-01-01 00:00:00,,Other
+66970,1604205010,10,1997-01-01 00:00:00,,Of sardines
+70181,1604207030,10,1998-07-14 00:00:00,,of Bluefin tunas (thunnus thynnus)
+70547,1504301000,80,1999-01-01 00:00:00,,Solid fractions
+70621,1504301091,10,1999-01-01 00:00:00,,Other
+72915,1103200000,80,2002-01-01 00:00:00,,Pellets
+72923,1104120000,10,2002-01-01 00:00:00,,Rolled or flaked grains
+72924,1104196100,10,2002-01-01 00:00:00,,Of barley
+72927,1104220000,10,2002-01-01 00:00:00,,"Other worked grains (for example, hulled, pearled, sliced or kibbled)"
+72936,1205100000,80,2002-01-01 00:00:00,,Low erucic acid rape or colza seeds
+72969,1514110000,10,2002-01-01 00:00:00,,Low-erucic-acid rape or colza oil and its fractions
+72970,1514110000,80,2002-01-01 00:00:00,,Crude oil
+72973,1514190000,80,2002-01-01 00:00:00,,Other
+72976,1514910000,10,2002-01-01 00:00:00,,Other
+72977,1514910000,80,2002-01-01 00:00:00,,Crude oil
+72980,1514990000,80,2002-01-01 00:00:00,,Other
+72987,1905310000,10,2002-01-01 00:00:00,,Sweet biscuits; waffles and wafers
+72988,1905310000,80,2002-01-01 00:00:00,,Sweet biscuits
+72989,1905311100,10,2002-01-01 00:00:00,,Completely or partially coated or covered with chocolate or other preparations containing cocoa
+72992,1905313000,10,2002-01-01 00:00:00,,Other
+72994,1905319100,10,2002-01-01 00:00:00,,Other
+72997,1905320000,80,2002-01-01 00:00:00,,Waffles and wafers
+72998,1905321100,10,2002-01-01 00:00:00,,Other
+73001,1905329100,10,2002-01-01 00:00:00,,Other
+74321,1604207040,10,2001-07-01 00:00:00,,Of Atlantic bigeye tuna (Thunnus obesus)
+76874,1210201010,10,2003-07-01 00:00:00,,Hop powder
+76904,1210209010,10,2003-07-01 00:00:00,,Hop powder
+76908,1302130080,10,2003-07-01 00:00:00,,Extracts
+77186,1214909000,80,2004-01-01 00:00:00,,Other
+77187,1512199000,80,2004-01-01 00:00:00,,Other
+77190,1513211000,80,2004-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+77196,1905321100,20,2004-01-01 00:00:00,,Completely or partially coated or covered with chocolate or other preparations containing cocoa
+80642,1006201713,10,2004-04-01 00:00:00,,Aromatic rice
+82892,1104293000,80,2006-01-01 00:00:00,,Pearled
+86495,1212994100,10,2007-01-01 00:00:00,,Locust bean seeds
+88726,1704909991,10,2007-01-01 00:00:00,,Containing|70|% or more by weight of sucrose (including invert sugar expressed as sucrose)
+89254,1702305000,80,2008-01-01 00:00:00,,"In the form of white crystalline powder, whether or not agglomerated"
+89255,1702309000,80,2008-01-01 00:00:00,,Other
+89894,1702305000,10,2008-01-01 00:00:00,,Other
+92485,1704909911,10,2010-01-01 00:00:00,,Containing less than 70|% by weight of sucrose (including invert sugar expressed as sucrose)
+92839,1901909933,10,2010-06-01 00:00:00,,Containing 60|% or more by weight of sucrose (including invert sugar expressed as sucrose) or isoglucose expressed as sucrose
+92963,1516209821,10,2010-08-13 00:00:00,,"Blends containing by weight more than 20% of fatty-acid mono-alkyl esters and/or paraffinic gasoil obtained from synthesis and/or hydro-treatment, of non-fossil origin, commonly known as ""biodiesel"""
+92967,1518009121,10,2010-08-13 00:00:00,,"Blends containing by weight more than 20% of fatty-acid mono-alkyl esters and/or paraffinic gasoil obtained from synthesis and/or hydro-treatment, of non-fossil origin"
+92971,1518009921,10,2010-08-13 00:00:00,,"Blends containing by weight more than 20% of fatty-acid mono-alkyl esters and/or paraffinic gasoil obtained from synthesis and/or hydro-treatment, of non-fossil origin"
+93518,1604129911,10,2011-03-01 00:00:00,,"Spiced and/or vinegar-cured, in brine"
+93621,1604209011,10,2011-02-01 00:00:00,,Of herring
+94566,1001110000,10,2012-01-01 00:00:00,,Durum wheat
+94568,1001190000,80,2012-01-01 00:00:00,,Other
+94569,1001190012,10,2012-01-01 00:00:00,,High quality durum wheat
+94574,1001910000,10,2012-01-01 00:00:00,,Other
+94575,1001910000,80,2012-01-01 00:00:00,,Seed
+94577,1001912000,80,2012-01-01 00:00:00,,Common wheat and meslin
+94591,1001990000,80,2012-01-01 00:00:00,,Other
+94642,1003900000,80,2012-01-01 00:00:00,,Other
+94643,1003900020,10,2012-01-01 00:00:00,,For the manufacture of malt
+94647,1005101300,10,2012-01-01 00:00:00,,Hybrid
+94649,1007100000,80,2012-01-01 00:00:00,,Seed
+94655,1008210000,10,2012-01-01 00:00:00,,Millet
+94660,1103192000,80,2012-01-01 00:00:00,,Of rye or barley
+94661,1103202500,80,2012-01-01 00:00:00,,Of rye or barley
+94666,1104290400,10,2012-01-01 00:00:00,,Of barley
+94669,1104291700,80,2012-01-01 00:00:00,,"Hulled (shelled or husked), whether or not sliced or kibbled"
+94670,1104291700,10,2012-01-01 00:00:00,,Other
+94675,1202410000,10,2012-01-01 00:00:00,,Other
+94677,1207210000,10,2012-01-01 00:00:00,,Cotton seeds
+94683,1207700000,80,2012-01-01 00:00:00,,Melon seeds
+94684,1207992000,80,2012-01-01 00:00:00,,Seed
+94688,1207999600,80,2012-01-01 00:00:00,,Other
+94693,1209918000,80,2012-01-01 00:00:00,,Other
+94696,1212210000,10,2012-01-01 00:00:00,,Seaweeds and other algae
+94702,1212999500,80,2012-01-01 00:00:00,,Other
+94703,1501100000,80,2012-01-01 00:00:00,,Lard
+94704,1501200000,80,2012-01-01 00:00:00,,Other pig fat
+94711,1502100000,80,2012-01-01 00:00:00,,Tallow
+94713,1502900000,80,2012-01-01 00:00:00,,Other
+94718,1602318000,80,2012-01-01 00:00:00,,Other
+94721,1602398500,80,2012-01-01 00:00:00,,Other
+94725,1602909100,10,2012-01-01 00:00:00,,Other
+94729,1604199700,80,2012-01-01 00:00:00,,Other
+94735,1604320000,80,2012-01-01 00:00:00,,Caviar substitutes
+94742,1605210000,10,2012-01-01 00:00:00,,Shrimps and prawns
+94743,1605210000,80,2012-01-01 00:00:00,,Not in airtight containers
+94744,1605211000,80,2012-01-01 00:00:00,,In immediate packings of a net content not exceeding 2|kg
+94745,1605211020,10,2012-01-01 00:00:00,,"Of the ""Crangon"" variety"
+94749,1605211091,10,2012-01-01 00:00:00,,Other
+94750,1605211091,20,2012-01-01 00:00:00,,Shelled
+94754,1605219000,80,2012-01-01 00:00:00,,Other
+94755,1605219020,10,2012-01-01 00:00:00,,"Of the ""Crangon"" variety"
+94758,1605219040,10,2012-01-01 00:00:00,,Shrimps and prawns of the species Pandalus borealis
+94762,1605219091,10,2012-01-01 00:00:00,,Other
+94763,1605219091,20,2012-01-01 00:00:00,,Shelled
+94767,1605290000,80,2012-01-01 00:00:00,,Other
+94768,1605290020,10,2012-01-01 00:00:00,,"Of the ""Crangon"" variety"
+94773,1605290091,10,2012-01-01 00:00:00,,Other
+94774,1605290091,20,2012-01-01 00:00:00,,Shelled
+94778,1605510000,10,2012-01-01 00:00:00,,Molluscs
+94780,1605520000,80,2012-01-01 00:00:00,,"Scallops, including queen scallops"
+94782,1605590000,80,2012-01-01 00:00:00,,Other
+94786,1605530000,80,2012-01-01 00:00:00,,Mussels
+94733,1604199790,80,2012-01-01 00:00:00,,Other
+94787,1605531000,80,2012-01-01 00:00:00,,In airtight containers
+94791,1605539000,80,2012-01-01 00:00:00,,Other
+94795,1605610000,10,2012-01-01 00:00:00,,Other aquatic invertebrates
+94833,1701120000,10,2012-01-01 00:00:00,,Raw sugar not containing added flavouring or colouring matter
+94834,1701130000,80,2012-01-01 00:00:00,,Cane sugar specified in subheading note|2|to this chapter
+94835,1701140000,80,2012-01-01 00:00:00,,Other cane sugar
+95302,1604310000,10,2012-01-01 00:00:00,,Caviar and caviar substitutes
+96543,1605219055,10,2013-01-01 00:00:00,,Shrimps and prawns of the species Pandalus jordani
+96779,1211908600,80,2013-01-01 00:00:00,,Other
+94790,1605531090,80,2012-01-01 00:00:00,,Other
+97812,1605531010,10,2013-03-01 00:00:00,,Of the species Mytilus spp. or Perna spp.
+97813,1605539010,10,2013-03-01 00:00:00,,Of the species Mytilus spp. or Perna spp.
+98075,1604207050,10,2013-04-01 00:00:00,,Skipjack (Katsuwonus pelamis)
+98436,1901909939,10,2014-07-01 00:00:00,,Other
+98478,1302201013,10,2014-07-01 00:00:00,,Containing less than 5% by weight of added sugar
+98488,1605219060,10,2014-01-01 00:00:00,,Shrimps and prawns of the species Pandalus montagui
+98509,1001990013,10,2014-08-01 00:00:00,,High quality common wheat
+98815,1302329010,10,2015-02-26 00:00:00,,Intended for animal or human consumption
+98920,1604142100,10,2015-01-01 00:00:00,,Tuna and skipjack
+98921,1604142100,20,2015-01-01 00:00:00,,Skipjack
+98923,1604142600,10,2015-01-01 00:00:00,,Other
+98924,1604142600,80,2015-01-01 00:00:00,,Fillets known as 'loins'
+98926,1604143100,10,2015-01-01 00:00:00,,Yellowfin tuna (Thunnus albacares)
+98928,1604143600,10,2015-01-01 00:00:00,,Other
+98929,1604143600,80,2015-01-01 00:00:00,,Fillets known as 'loins'
+98935,1604144100,10,2015-01-01 00:00:00,,Other
+98936,1604144100,80,2015-01-01 00:00:00,,In vegetable oil
+98937,1604144600,10,2015-01-01 00:00:00,,Other
+98938,1604144600,80,2015-01-01 00:00:00,,Fillets known as 'loins'
+98939,1604144800,80,2015-01-01 00:00:00,,Other
+98943,1604144611,10,2015-01-01 00:00:00,,of Bluefin tunas (thunnus thynnus)
+98946,1604144621,10,2015-01-01 00:00:00,,Of Atlantic bigeye tuna (Thunnus obesus)
+99274,1604129191,10,2015-08-01 00:00:00,,Other
+99277,1604129111,10,2015-08-01 00:00:00,,Of the species Clupea harengus
+100361,1605219057,10,2016-09-01 00:00:00,,Other
+100933,1006107100,10,2017-01-01 00:00:00,,Long grain
+99924,1905902010,80,2016-02-01 00:00:00,,Rice paper
+100936,1006103000,10,2017-01-01 00:00:00,,Other
+100973,1509102000,80,2017-01-01 00:00:00,,Extra virgin olive oil
+100974,1509108000,80,2017-01-01 00:00:00,,Other
+102216,1006201713,20,2017-01-01 00:00:00,,Basmati rice
+102230,1006209813,20,2017-01-01 00:00:00,,Basmati rice
+102241,1006302712,10,2017-01-01 00:00:00,,In immediate packings of a net content not exceeding 5|kg
+102249,1006302722,10,2017-01-01 00:00:00,,In immediate packings of a net content exceeding 5|kg but not exceeding 20|kg
+102298,1006304822,10,2017-01-01 00:00:00,,In immediate packings of a net content exceeding 5|kg but not exceeding 20|kg
+102313,1006306722,10,2017-01-01 00:00:00,,In immediate packings of a net content exceeding 5|kg but not exceeding 20|kg
+102328,1006306792,10,2017-01-01 00:00:00,,Other
+102334,1006309822,10,2017-01-01 00:00:00,,In immediate packings of a net content exceeding 5|kg but not exceeding 20|kg
+102338,1006309892,10,2017-01-01 00:00:00,,Other
+100971,1211500000,80,2017-01-01 00:00:00,,Ephedra
+102344,1006304812,10,2017-01-01 00:00:00,,In immediate packings of a net content not exceeding 5|kg
+102345,1006304892,10,2017-01-01 00:00:00,,Other
+102346,1006309812,10,2017-01-01 00:00:00,,In immediate packings of a net content not exceeding 5|kg
+102354,1006306712,10,2017-01-01 00:00:00,,In immediate packings of a net content not exceeding 5|kg
+102367,1006302792,10,2017-01-01 00:00:00,,Other
+102498,1006209813,10,2004-01-01 00:00:00,,Aromatic rice
+102746,1006302712,20,2017-01-01 00:00:00,,Aromatic rice
+102747,1006302722,20,2017-01-01 00:00:00,,Aromatic rice
+102748,1006302792,20,2017-01-01 00:00:00,,Aromatic rice
+102749,1006304812,20,2017-01-01 00:00:00,,Aromatic rice
+102750,1006304822,20,2017-01-01 00:00:00,,Aromatic rice
+102751,1006304892,20,2017-01-01 00:00:00,,Aromatic rice
+102752,1006306712,20,2017-01-01 00:00:00,,Aromatic rice
+102753,1006306722,20,2017-01-01 00:00:00,,Aromatic rice
+102754,1006306792,20,2017-01-01 00:00:00,,Aromatic rice
+102755,1006309812,20,2017-01-01 00:00:00,,Aromatic rice
+102756,1006309822,20,2017-01-01 00:00:00,,Aromatic rice
+102757,1006309892,20,2017-01-01 00:00:00,,Aromatic rice
+103203,1604144692,10,2016-10-10 00:00:00,,Other
+103204,1604144692,20,2016-10-10 00:00:00,,For processing
+103206,1604144697,10,2016-10-10 00:00:00,,Other
+103207,1604207092,10,2016-10-10 00:00:00,,Other
+103208,1604207092,20,2016-10-10 00:00:00,,Preserved
+103210,1604207097,10,2016-10-10 00:00:00,,Other
+103328,1302201061,10,2017-09-21 00:00:00,,Containing 5% or more by weight of added sugar
+102339,1006309826,80,2017-01-01 00:00:00,,Other
+103332,1302201071,10,2017-09-21 00:00:00,,Other
+103337,1302209061,10,2017-09-21 00:00:00,,Containing 5% or more by weight of added sugar
+103343,1302209091,10,2017-09-21 00:00:00,,Other
+103346,1302201061,20,2017-09-21 00:00:00,,containing 65|% or more by net weight of added cane or beet sugar of subheadings 1701 91 to 1701 99
+103357,1806208012,10,2017-09-21 00:00:00,,Containing less than 70|% by weight of sucrose (including invert sugar expressed as sucrose)
+103361,1806208092,10,2017-09-21 00:00:00,,Containing|70|% or more by weight of sucrose (including invert sugar expressed as sucrose)
+103363,1806209512,10,2017-09-21 00:00:00,,Containing less than 70|% by weight of sucrose (including invert sugar expressed as sucrose)
+103366,1806209592,10,2017-09-21 00:00:00,,Containing|70|% or more by weight of sucrose (including invert sugar expressed as sucrose)
+103512,1605100011,10,2017-09-21 00:00:00,,In airtight cans
+103515,1605100091,10,2017-09-21 00:00:00,,Other
+103745,1302209061,20,2017-09-21 00:00:00,,containing 65|% or more by net weight of added cane or beet sugar of subheadings 1701 91 to 1701 99
+103818,1905907000,10,2018-01-01 00:00:00,,Other
+104032,1601001011,10,2018-05-01 00:00:00,,"Of animals of headings 0101 to 0104, excluding wild boars"
+104035,1601001091,10,2018-05-01 00:00:00,,Other
+104038,1601009911,10,2018-05-01 00:00:00,,"Of animals of headings 0101 to 0104, excluding wild boars"
+104041,1601009991,10,2018-05-01 00:00:00,,Other
+31822,1005101300,80,1972-01-01 00:00:00,,Three-cross hybrids
+31823,1005101500,80,1972-01-01 00:00:00,,Simple hybrids
+31825,1005109000,80,1972-01-01 00:00:00,,Other
+31829,1006101000,80,1972-01-01 00:00:00,,For sowing
+31859,1006201100,80,1989-01-01 00:00:00,,Round grain
+31860,1006201300,80,1989-01-01 00:00:00,,Medium grain
+31862,1006201500,80,1989-01-01 00:00:00,,Of a length/width ratio greater than 2|but less than 3
+31872,1006209200,80,1989-01-01 00:00:00,,Round grain
+31873,1006209400,80,1989-01-01 00:00:00,,Medium grain
+31875,1006209600,80,1989-01-01 00:00:00,,Of a length/width ratio greater than 2|but less than 3
+31937,1008100000,80,1972-01-01 00:00:00,,Buckwheat
+31939,1008300000,80,1972-01-01 00:00:00,,Canary seed
+31940,1008900000,80,1972-01-01 00:00:00,,Other cereals
+31948,1102201000,80,1972-01-01 00:00:00,,"Of a fat content not exceeding 1,5|% by weight"
+31952,1102901000,80,1972-01-01 00:00:00,,Barley flour
+31953,1102903000,80,1972-01-01 00:00:00,,Oat flour
+31954,1102909000,80,1972-01-01 00:00:00,,Other
+31962,1103111000,80,1994-01-01 00:00:00,,Durum wheat
+31966,1103119000,80,1972-01-01 00:00:00,,Common wheat and spelt
+31969,1103131000,80,1992-01-01 00:00:00,,"Of a fat content not exceeding 1,5|% by weight"
+31973,1103139000,80,1972-01-01 00:00:00,,Other
+31978,1103199000,80,1972-01-01 00:00:00,,Other
+32000,1104121000,80,1972-01-01 00:00:00,,Rolled
+32001,1104129000,80,1972-01-01 00:00:00,,Flaked
+32003,1104191000,80,1972-01-01 00:00:00,,Of wheat
+32004,1104193000,80,1972-01-01 00:00:00,,Of rye
+32005,1104195000,80,1972-01-01 00:00:00,,Of maize
+32007,1104199100,80,1972-01-01 00:00:00,,Flaked rice
+32008,1104199900,80,1972-01-01 00:00:00,,Other
+32023,1104225000,80,1972-01-01 00:00:00,,Pearled
+32058,1104301000,80,1972-01-01 00:00:00,,Of wheat
+32059,1104309000,80,1972-01-01 00:00:00,,Of other cereals
+32061,1105100000,80,1972-01-01 00:00:00,,"Flour, meal and powder"
+32062,1105200000,80,1972-01-01 00:00:00,,"Flakes, granules and pellets"
+32064,1106100000,80,1972-01-01 00:00:00,,Of the dried leguminous vegetables of heading|0713
+32066,1106201000,80,1972-01-01 00:00:00,,Denatured
+32069,1106209000,80,1992-01-01 00:00:00,,Other
+32080,1106301000,80,1972-01-01 00:00:00,,Of bananas
+32087,1107101100,80,1972-01-01 00:00:00,,In the form of flour
+32088,1107101900,80,1972-01-01 00:00:00,,Other
+32090,1107109100,80,1972-01-01 00:00:00,,In the form of flour
+32091,1107109900,80,1972-01-01 00:00:00,,Other
+32092,1107200000,80,1972-01-01 00:00:00,,Roasted
+32095,1108110000,80,1972-01-01 00:00:00,,Wheat starch
+32096,1108120000,80,1972-01-01 00:00:00,,Maize (corn) starch
+32097,1108130000,80,1972-01-01 00:00:00,,Potato starch
+32098,1108140000,80,1972-01-01 00:00:00,,Manioc (cassava) starch
+32103,1108191000,80,1972-01-01 00:00:00,,Rice starch
+32104,1108199000,80,1972-01-01 00:00:00,,Other
+32107,1108200000,80,1972-01-01 00:00:00,,Inulin
+32108,1109000000,80,1972-01-01 00:00:00,,"Wheat gluten, whether or not dried"
+32118,1203000000,80,1972-01-01 00:00:00,,Copra
+32120,1204001000,80,1972-01-01 00:00:00,,For sowing
+32121,1204009000,80,1972-01-01 00:00:00,,Other
+32126,1206001000,80,1972-01-01 00:00:00,,For sowing
+32129,1206009100,80,1994-01-01 00:00:00,,Shelled; in grey-and-white-striped shell
+32130,1206009900,80,1994-01-01 00:00:00,,Other
+32142,1207401000,80,1972-01-01 00:00:00,,Seed
+32143,1207409000,80,1972-01-01 00:00:00,,Other
+32145,1207501000,80,1972-01-01 00:00:00,,Seed
+32146,1207509000,80,1972-01-01 00:00:00,,Other
+32152,1207911000,80,1972-01-01 00:00:00,,Seed
+32153,1207919000,80,1972-01-01 00:00:00,,Other
+32162,1207999100,80,1972-01-01 00:00:00,,Hemp seeds
+32167,1208100000,80,1972-01-01 00:00:00,,Of soya beans
+32168,1208900000,80,1972-01-01 00:00:00,,Other
+32174,1209210000,80,1972-01-01 00:00:00,,Lucerne (alfalfa) seeds
+32179,1209221000,80,1994-01-01 00:00:00,,Red clover (Trifolium pratense L.)
+32181,1209228000,80,1994-01-01 00:00:00,,Other
+32185,1209231100,80,1990-01-01 00:00:00,,Meadow fescue (Festuca pratensis Huds.) seeds
+32186,1209231500,80,1990-01-01 00:00:00,,Red fescue (Festuca rubra L.) seeds
+32188,1209238000,80,1993-01-01 00:00:00,,Other
+32190,1209240000,80,1972-01-01 00:00:00,,Kentucky blue grass (Poa pratensis L.) seeds
+32422,1511109000,80,1972-01-01 00:00:00,,Other
+32195,1209251000,80,1994-01-01 00:00:00,,Italian ryegrass (including westerwolds) (Lolium multiflorum Lam.)
+32197,1209259000,80,1994-01-01 00:00:00,,Perennial ryegrass (Lolium perenne L.)
+32209,1209295000,80,1972-01-01 00:00:00,,Lupine seed
+32214,1209298000,80,1993-01-01 00:00:00,,Other
+32218,1209300000,80,1972-01-01 00:00:00,,Seeds of herbaceous plants cultivated principally for their flowers
+32226,1209991000,80,1972-01-01 00:00:00,,Forest-tree seeds
+32228,1209999100,80,1972-01-01 00:00:00,,"Seeds of plants cultivated principally for their flowers, other than those of subheading|1209|30"
+32230,1209999910,80,1972-01-01 00:00:00,,Seeds
+32231,1209999990,80,1972-01-01 00:00:00,,Other
+32239,1211200000,80,1972-01-01 00:00:00,,Ginseng roots
+32242,1211903000,80,1972-01-01 00:00:00,,Tonquin beans
+32273,1214100000,80,1972-01-01 00:00:00,,Lucerne (alfalfa) meal and pellets
+32275,1214901000,80,1972-01-01 00:00:00,,"Mangolds, swedes and other fodder roots"
+32283,1301200000,80,1972-01-01 00:00:00,,Gum Arabic
+32284,1301900000,80,1972-01-01 00:00:00,,Other
+32289,1302110000,80,1972-01-01 00:00:00,,Opium
+32290,1302120000,80,1972-01-01 00:00:00,,Of liquorice
+32320,1302209011,80,1994-01-01 00:00:00,,Pectates
+32333,1302310000,80,1972-01-01 00:00:00,,Agar-agar
+32335,1302321000,80,1972-01-01 00:00:00,,Of locust beans or locust bean seeds
+32337,1302390000,80,1972-01-01 00:00:00,,Other
+32340,1401100000,80,1972-01-01 00:00:00,,Bamboos
+32341,1401200000,80,1972-01-01 00:00:00,,Rattans
+32342,1401900000,80,1972-01-01 00:00:00,,Other
+32353,1404200000,80,1972-01-01 00:00:00,,Cotton linters
+32369,1503001100,80,1972-01-01 00:00:00,,For industrial uses
+32370,1503001900,80,1972-01-01 00:00:00,,Other
+32371,1503003000,80,1972-01-01 00:00:00,,Tallow oil for industrial uses other than the manufacture of foodstuffs for human consumption
+32372,1503009000,80,1972-01-01 00:00:00,,Other
+32375,1504101000,80,1972-01-01 00:00:00,,Of a vitamin|A content not exceeding 2|500|International Units per gram
+32381,1504201010,80,1972-01-01 00:00:00,,In immediate packings of a net capacity of 1|kg or less
+32382,1504201090,80,1972-01-01 00:00:00,,Other
+32383,1504209000,80,1972-01-01 00:00:00,,Other
+32390,1504309000,80,1972-01-01 00:00:00,,Other
+32394,1506000000,80,1972-01-01 00:00:00,,"Other animal fats and oils and their fractions, whether or not refined, but not chemically modified"
+32397,1507101000,80,1972-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+32398,1507109000,80,1972-01-01 00:00:00,,Other
+32400,1507901000,80,1972-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+32403,1507909000,80,1972-01-01 00:00:00,,Other
+32406,1508101000,80,1972-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+32407,1508109000,80,1972-01-01 00:00:00,,Other
+32409,1508901000,80,1972-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+32410,1508909000,80,1972-01-01 00:00:00,,Other
+32413,1509101000,80,1972-01-01 00:00:00,,Lampante olive oil
+32417,1510001000,80,1972-01-01 00:00:00,,Crude oils
+32418,1510009000,80,1972-01-01 00:00:00,,Other
+32421,1511101000,80,1972-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+32425,1511901100,80,1972-01-01 00:00:00,,In immediate packings of a net content not exceeding 1|kg
+32433,1511909900,80,1972-01-01 00:00:00,,Other
+32437,1512111000,80,1972-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+32441,1512119100,80,1972-01-01 00:00:00,,Sunflower-seed oil
+32442,1512119900,80,1972-01-01 00:00:00,,Safflower oil
+32450,1512211000,80,1972-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+32451,1512219000,80,1972-01-01 00:00:00,,Other
+32453,1512291000,80,1972-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+32454,1512299000,80,1972-01-01 00:00:00,,Other
+32460,1513119100,80,1972-01-01 00:00:00,,In immediate packings of a net content not exceeding 1|kg
+32461,1513119900,80,1972-01-01 00:00:00,,Other
+32464,1513191100,80,1972-01-01 00:00:00,,In immediate packings of a net content not exceeding 1|kg
+32467,1513191900,80,1972-01-01 00:00:00,,Other
+32473,1513199100,80,1972-01-01 00:00:00,,In immediate packings of a net content not exceeding 1|kg
+32474,1513199900,80,1972-01-01 00:00:00,,Other
+32481,1513213000,80,1972-01-01 00:00:00,,In immediate packings of a net content not exceeding 1|kg
+32482,1513219000,80,1993-01-01 00:00:00,,Other
+32490,1513291100,80,1972-01-01 00:00:00,,In immediate packings of a net content not exceeding 1|kg
+32501,1513295000,80,1972-01-01 00:00:00,,In immediate packings of a net content not exceeding 1|kg
+32516,1515110000,80,1972-01-01 00:00:00,,Crude oil
+32518,1515191000,80,1972-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+32519,1515199000,80,1972-01-01 00:00:00,,Other
+32522,1515211000,80,1972-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+32523,1515219000,80,1972-01-01 00:00:00,,Other
+32525,1515291000,80,1972-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+32526,1515299000,80,1972-01-01 00:00:00,,Other
+32528,1515301000,80,1972-01-01 00:00:00,,For the production of aminoundecanoic acid for use in the manufacture of synthetic textile fibres or of artificial plastic materials
+32529,1515309000,80,1972-01-01 00:00:00,,Other
+32533,1515501100,80,1972-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+32534,1515501900,80,1972-01-01 00:00:00,,Other
+32536,1515509100,80,1972-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+32537,1515509900,80,1972-01-01 00:00:00,,Other
+32545,1515902100,80,1972-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+32546,1515902900,80,1972-01-01 00:00:00,,Other
+32548,1515903100,80,1972-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+32549,1515903900,80,1972-01-01 00:00:00,,Other
+32552,1515904000,80,1972-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+32554,1515905100,80,1972-01-01 00:00:00,,"Solid, in immediate packings of a net content not exceeding 1|kg"
+32557,1515906000,80,1972-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+32559,1515909100,80,1972-01-01 00:00:00,,"Solid, in immediate packings of a net content not exceeding 1|kg"
+32564,1516101010,80,1972-01-01 00:00:00,,Of fish and of marine mammals
+32570,1516109090,80,1972-01-01 00:00:00,,Other
+32572,1516201000,80,1972-01-01 00:00:00,,"Hydrogenated castor oil, so called 'opal-wax'"
+32574,1516209100,80,1972-01-01 00:00:00,,In immediate packings of a net content not exceeding 1|kg
+32582,1517101000,80,1972-01-01 00:00:00,,"Containing, by weight, more than 10|% but not more than 15|% of milkfats"
+32585,1517901000,80,1972-01-01 00:00:00,,"Containing, by weight, more than 10|% but not more than 15|% of milkfats"
+32587,1517909100,80,1972-01-01 00:00:00,,"Fixed vegetable oils, fluid, mixed"
+32588,1517909300,80,1972-01-01 00:00:00,,Edible mixtures or preparations of a kind used as mould-release preparations
+32591,1518001000,80,1972-01-01 00:00:00,,Linoxyn
+32593,1518003100,80,1972-01-01 00:00:00,,Crude
+32594,1518003900,80,1972-01-01 00:00:00,,Other
+32639,1521100000,80,1972-01-01 00:00:00,,Vegetable waxes
+32643,1521901000,80,1972-01-01 00:00:00,,"Spermaceti, whether or not refined or coloured"
+32645,1521909100,80,1972-01-01 00:00:00,,Raw
+32646,1521909900,80,1972-01-01 00:00:00,,Other
+32648,1522001000,80,1972-01-01 00:00:00,,Degras
+32651,1522003100,80,1972-01-01 00:00:00,,Soapstocks
+32652,1522003900,80,1972-01-01 00:00:00,,Other
+32654,1522009100,80,1972-01-01 00:00:00,,Oil foots and dregs; soapstocks
+32655,1522009900,80,1972-01-01 00:00:00,,Other
+32675,1602100000,80,1972-01-01 00:00:00,,Homogenised preparations
+32683,1602209000,80,1972-01-01 00:00:00,,Other
+32689,1602311100,80,1972-01-01 00:00:00,,Containing exclusively uncooked turkey meat
+32690,1602311900,80,1972-01-01 00:00:00,,Other
+32701,1602411000,80,1972-01-01 00:00:00,,Of domestic swine
+32702,1602419000,80,1972-01-01 00:00:00,,Other
+32704,1602421000,80,1972-01-01 00:00:00,,Of domestic swine
+32705,1602429000,80,1972-01-01 00:00:00,,Other
+32709,1602491100,80,1972-01-01 00:00:00,,"Loins (excluding collars) and cuts thereof, including mixtures of loins or hams"
+32710,1602491300,80,1972-01-01 00:00:00,,"Collars and cuts thereof, including mixtures of collars and shoulders"
+32711,1602491500,80,1972-01-01 00:00:00,,"Other mixtures containing hams (legs), shoulders, loins or collars, and cuts thereof"
+32713,1602493000,80,1972-01-01 00:00:00,,"Containing by weight 40|% or more but less than 80|% of meat or meat offal, of any kind, including fats of any kind or origin"
+32714,1602495000,80,1972-01-01 00:00:00,,"Containing by weight less than 40|% of meat or meat offal, of any kind, including fats of any kind or origin"
+32715,1602499000,80,1972-01-01 00:00:00,,Other
+32717,1602501000,80,1972-01-01 00:00:00,,Uncooked; mixtures of cooked meat or offal and uncooked meat or offal
+32720,1602503100,80,1993-01-01 00:00:00,,"Corned beef, in airtight containers"
+32731,1602901000,80,1972-01-01 00:00:00,,Preparations of blood of any animal
+32735,1602903100,80,1972-01-01 00:00:00,,Of game or rabbit
+32739,1602905100,80,1972-01-01 00:00:00,,Containing meat or meat offal of domestic swine
+32742,1602906100,80,1972-01-01 00:00:00,,Uncooked; mixtures of cooked meat or offal and uncooked meat or offal
+32743,1602906900,80,1972-01-01 00:00:00,,Other
+32754,1603001000,80,1972-01-01 00:00:00,,In immediate packings of a net content of 1|kg or less
+32766,1604110030,80,1992-01-01 00:00:00,,Atlantic salmon (Salmo salar)
+32767,1604110090,80,1972-01-01 00:00:00,,Other
+32787,1604131190,80,1993-01-01 00:00:00,,Other
+32792,1604131990,80,1993-01-01 00:00:00,,Other
+32794,1604139010,80,1972-01-01 00:00:00,,"Fillets, raw, merely coated with batter or breadcrumbs, whether or not prefried in oil, deepfrozen"
+32796,1604139091,80,1972-01-01 00:00:00,,In airtight cans
+32797,1604139099,80,1972-01-01 00:00:00,,Other
+32836,1604159000,80,1972-01-01 00:00:00,,Of the species Scomber australasicus
+32839,1604160000,80,1972-01-01 00:00:00,,Anchovies
+32842,1604191010,80,1992-01-01 00:00:00,,Trout (Oncorhynchus mykiss)
+32843,1604191090,80,1992-01-01 00:00:00,,Other
+32848,1604193100,80,1994-01-01 00:00:00,,Fillets known as 'loins'
+32851,1604193900,80,1994-01-01 00:00:00,,Other
+32854,1604195000,80,1972-01-01 00:00:00,,Fish of the species Orcynopsis unicolor
+32860,1604199190,80,1994-05-24 00:00:00,,Other
+32862,1604199200,80,1993-01-01 00:00:00,,"Cod (Gadus morhua, Gadus ogac, Gadus macrocephalus)"
+32864,1604199310,80,1993-01-01 00:00:00,,Preserved smoked coalfish
+32865,1604199390,80,1993-01-01 00:00:00,,Other
+32866,1604199400,80,1993-01-01 00:00:00,,"Hake (Merluccius spp., Urophycis spp.)"
+32867,1604199500,80,1993-01-01 00:00:00,,Alaska pollack (Theragra chalcogramma) and pollack (Pollachius pollachius)
+32873,1604200500,80,1994-01-01 00:00:00,,Preparations of surimi
+32878,1604201030,80,1992-01-01 00:00:00,,Atlantic salmon (Salmo salar)
+32880,1604201090,80,1972-01-01 00:00:00,,Other
+32882,1604203010,80,1992-01-01 00:00:00,,Trout (Oncorhynchus mykiss)
+32883,1604203090,80,1992-01-01 00:00:00,,Other
+32884,1604204000,80,1972-01-01 00:00:00,,Of anchovies
+32892,1604205019,80,1972-01-01 00:00:00,,Other
+32895,1604205040,80,1992-01-01 00:00:00,,Of mackerel of the species Scomber scombrus
+32896,1604205050,80,1993-05-01 00:00:00,,Of mackerel of the species Scomber japonicus
+32897,1604205090,80,1972-01-01 00:00:00,,Other
+32905,1604209020,80,1972-01-01 00:00:00,,Preserved smoked coalfish
+32906,1604209030,80,1972-01-01 00:00:00,,In airtight cans
+32907,1604209040,80,1994-01-01 00:00:00,,of mackerel (Scomber australasicus)
+32908,1604209090,80,1972-01-01 00:00:00,,Other
+32965,1605400080,80,1992-01-01 00:00:00,,Other
+33003,1701121000,80,1972-01-01 00:00:00,,For refining
+33006,1701129000,80,1972-01-01 00:00:00,,Other
+33010,1701910000,80,1972-01-01 00:00:00,,Containing added flavouring or colouring matter
+33012,1701991000,80,1972-01-01 00:00:00,,White sugar
+33017,1701999000,80,1972-01-01 00:00:00,,Other
+33026,1702301000,80,1972-01-01 00:00:00,,Isoglucose
+33035,1702401000,80,1972-01-01 00:00:00,,Isoglucose
+33036,1702409000,80,1972-01-01 00:00:00,,Other
+33037,1702500000,80,1972-01-01 00:00:00,,Chemically pure fructose
+33039,1702601000,80,1972-01-01 00:00:00,,Isoglucose
+33045,1702903000,80,1972-01-01 00:00:00,,Isoglucose
+33046,1702905000,80,1972-01-01 00:00:00,,Maltodextrine and maltodextrine syrup
+33049,1702907100,80,1972-01-01 00:00:00,,Containing 50|% or more by weight of sucrose in the dry matter
+33051,1702907500,80,1972-01-01 00:00:00,,"In the form of powder, whether or not agglomerated"
+33052,1702907900,80,1972-01-01 00:00:00,,Other
+33057,1703100000,80,1972-01-01 00:00:00,,Cane molasses
+33058,1703900000,80,1972-01-01 00:00:00,,Other
+33068,1704901000,80,1972-01-01 00:00:00,,Liquorice extract containing more than 10|% by weight of sucrose but not containing other added substances
+33071,1704905100,80,1972-01-01 00:00:00,,"Pastes, including marzipan, in immediate packings of a net content of 1|kg or more"
+33077,1704905500,80,1972-01-01 00:00:00,,Throat pastilles and cough drops
+33078,1704906100,80,1972-01-01 00:00:00,,Sugar-coated (panned) goods
+33080,1704906500,80,1972-01-01 00:00:00,,"Gum confectionery and jelly confectionery, including fruit pastes in the form of sugar confectionery"
+33081,1704907100,80,1972-01-01 00:00:00,,"Boiled sweets, whether or not filled"
+33082,1704907500,80,1972-01-01 00:00:00,,"Toffees, caramels and similar sweets"
+33084,1704908100,80,1972-01-01 00:00:00,,Compressed tablets
+33089,1801000000,80,1972-01-01 00:00:00,,"Cocoa beans, whole or broken, raw or roasted"
+33090,1802000000,80,1972-01-01 00:00:00,,"Cocoa shells, husks, skins and other cocoa waste"
+33092,1803100000,80,1972-01-01 00:00:00,,Not defatted
+33093,1803200000,80,1972-01-01 00:00:00,,Wholly or partly defatted
+33094,1804000000,80,1972-01-01 00:00:00,,"Cocoa butter, fat and oil"
+33095,1805000000,80,1972-01-01 00:00:00,,"Cocoa powder, not containing added sugar or other sweetening matter"
+33109,1806109000,80,1972-01-01 00:00:00,,Containing 80|% or more by weight of sucrose (including invert sugar expressed as sucrose) or isoglucose expressed as sucrose
+33126,1806310000,80,1972-01-01 00:00:00,,Filled
+33130,1806321000,80,1972-01-01 00:00:00,,"With added cereal, fruit or nuts"
+33131,1806329000,80,1972-01-01 00:00:00,,Other
+33140,1806903100,80,1972-01-01 00:00:00,,Filled
+33141,1806903900,80,1972-01-01 00:00:00,,Not filled
+33142,1806905000,80,1972-01-01 00:00:00,,"Sugar confectionery and substitutes therefor made from sugar substitution products, containing cocoa"
+33144,1806906010,80,1972-01-01 00:00:00,,In immediate packings of a net content not exceeding 1|kg
+33145,1806906090,80,1972-01-01 00:00:00,,Other
+33147,1806907010,80,1972-01-01 00:00:00,,In immediate packings of a net content not exceeding 1|kg
+33148,1806907090,80,1972-01-01 00:00:00,,Other
+33152,1806909011,80,1992-03-01 00:00:00,,Containing less than 70|% by weight of sucrose (including invert sugar expressed as sucrose)
+33153,1806909019,80,1992-03-01 00:00:00,,Containing|70|% or more by weight of sucrose (including invert sugar expressed as sucrose)
+33156,1806909091,80,1992-03-01 00:00:00,,Containing less than 70|% by weight of sucrose (including invert sugar expressed as sucrose)
+33157,1806909099,80,1992-03-01 00:00:00,,Containing|70|% or more by weight of sucrose (including invert sugar expressed as sucrose)
+33160,1901100000,80,1972-01-01 00:00:00,,"Preparations suitable for infants or young children, put up for retail sale"
+33211,1901200000,80,1972-01-01 00:00:00,,Mixes and doughs for the preparation of bakers' wares of heading|1905
+33216,1901901100,80,1972-01-01 00:00:00,,With a dry extract content of 90|% or more by weight
+33217,1901901900,80,1972-01-01 00:00:00,,Other
+33296,1902401000,80,1972-01-01 00:00:00,,Unprepared
+33297,1902409000,80,1972-01-01 00:00:00,,Other
+33300,1903000090,80,1972-01-01 00:00:00,,Other
+33303,1904101000,80,1972-01-01 00:00:00,,Obtained from maize
+33304,1904103000,80,1972-01-01 00:00:00,,Obtained from rice
+33305,1904109000,80,1972-01-01 00:00:00,,Other
+33307,1904901000,80,1972-01-01 00:00:00,,Obtained from rice
+33312,1905100000,80,1972-01-01 00:00:00,,Crispbread
+33314,1905201000,80,1972-01-01 00:00:00,,Containing by weight less than 30|% of sucrose (including invert sugar expressed as sucrose)
+33315,1905203000,80,1972-01-01 00:00:00,,Containing by weight 30|% or more but less than 50|% of sucrose (including invert sugar expessed as sucrose)
+33316,1905209000,80,1972-01-01 00:00:00,,Containing by weight 50|% or more of sucrose (including invert sugar expressed as sucrose)
+33355,1905401000,80,1993-01-01 00:00:00,,Rusks
+33356,1905409000,80,1993-01-01 00:00:00,,Other
+33358,1905901000,80,1972-01-01 00:00:00,,Matzos
+33361,1905903000,80,1972-01-01 00:00:00,,"Bread, not containing added honey, eggs, cheese or fruit, and containing by weight in the dry matter state not more than 5|% of sugars and not more than 5|% of fat"
+33363,1905904500,80,1991-01-01 00:00:00,,Biscuits
+33374,1905905500,80,1991-01-01 00:00:00,,"Extruded or expanded products, savoury or salted"
+54771,1104295100,80,1995-01-01 00:00:00,,Of wheat
+54772,1104295500,80,1995-01-01 00:00:00,,Of rye
+54773,1104295900,80,1995-01-01 00:00:00,,Other
+54775,1101001500,80,1995-01-01 00:00:00,,Of common wheat and spelt
+54776,1101009000,80,1995-01-01 00:00:00,,Meslin flour
+54781,1104298100,80,1995-01-01 00:00:00,,Of wheat
+54782,1104298500,80,1995-01-01 00:00:00,,Of rye
+54785,1702908000,80,1995-01-01 00:00:00,,Inulin syrup
+55122,1104298900,80,1995-01-01 00:00:00,,Other
+55315,1515909999,80,1994-09-17 00:00:00,,Other
+56354,1504109100,80,1995-01-01 00:00:00,,Of halibut
+56355,1504109900,80,1995-01-01 00:00:00,,Other
+56357,1516209500,80,1995-01-01 00:00:00,,"Colza, linseed, rapeseed, sunflower-seed, illipe, karite, makore, touloucouna or babassu oils, for technical or industrial uses other than the manufacture of foodstuffs for human consumption"
+56446,1806101500,80,1995-01-01 00:00:00,,Containing no sucrose or containing less than 5|% by weight of sucrose (including invert sugar expressed as sucrose) or isoglucose expressed as sucrose
+56447,1806102000,80,1995-01-01 00:00:00,,Containing 5|% or more but less than 65|% by weight of sucrose (including invert sugar expressed as sucrose) or isoglucose expressed as sucrose
+57392,1901909100,80,1995-01-01 00:00:00,,"Containing no milkfats, sucrose, isoglucose, glucose or starch or containing less than 1,5|% milkfat, 5|% sucrose (including invert sugar) or isoglucose, 5|% glucose or starch, excluding food preparations in powder form of goods of headings|0401|to 0404"
+58473,1604139092,80,1995-01-01 00:00:00,,Other
+58490,1604209050,80,1995-01-01 00:00:00,,Lamprey
+58491,1604209035,80,1995-01-01 00:00:00,,Οther
+59482,1212912000,80,1996-01-01 00:00:00,,"Dried, whether or not ground"
+59483,1212918000,80,1996-01-01 00:00:00,,Other
+59484,1302190500,80,1996-01-01 00:00:00,,Vanilla oleoresin
+59488,1602321100,80,1996-01-01 00:00:00,,Uncooked
+59489,1602321900,80,1996-01-01 00:00:00,,Other
+59490,1602323000,80,1996-01-01 00:00:00,,Containing 25|% or more but less than 57|% by weight of poultry meat or offal
+59491,1602329000,80,1996-01-01 00:00:00,,Other
+59493,1602392100,80,1996-01-01 00:00:00,,Uncooked
+59494,1602392900,80,1996-01-01 00:00:00,,Other
+59500,1702110000,80,1996-01-01 00:00:00,,"Containing by weight 99|% or more lactose, expressed as anhydrous lactose, calculated on the dry matter"
+59501,1702190000,80,1996-01-01 00:00:00,,Other
+59503,1904201000,80,1996-01-01 00:00:00,,Preparation of the Müsli type based on unroasted cereal flakes
+72979,1514919000,80,2002-01-01 00:00:00,,Other
+59505,1904209100,80,1996-01-01 00:00:00,,Obtained from maize
+59506,1904209500,80,1996-01-01 00:00:00,,Obtained from rice
+59507,1904209900,80,1996-01-01 00:00:00,,Other
+64885,1605301000,80,1997-01-01 00:00:00,,"Lobster meat, cooked, for the manufacture of lobster butter or of lobster pastes, pâtés, soups or sauces"
+65766,1006400010,80,1996-11-05 00:00:00,,For the manufacture of food preparations of subheading 1901 10
+65767,1006400090,80,1996-11-05 00:00:00,,other
+66968,1604131120,80,1997-01-01 00:00:00,,Of the species Sardina pilchardus
+66969,1604131920,80,1997-01-01 00:00:00,,Of the species Sardina pilchardus
+66971,1604205010,80,1997-01-01 00:00:00,,Of the species Sardina pilchardus
+69161,1702609500,80,1998-01-01 00:00:00,,Other
+69163,1702608000,80,1998-01-01 00:00:00,,Inulin syrup
+69480,1302209020,80,1998-01-01 00:00:00,,Other
+70022,1604129990,80,1998-04-01 00:00:00,,Other
+70147,1605400030,80,1998-01-01 00:00:00,,"Freshwater crayfish cooked with dill, frozen"
+70192,1604207030,80,1998-07-14 00:00:00,,Preserved
+70194,1604207035,80,1998-07-14 00:00:00,,Other
+70196,1604207099,80,1998-07-14 00:00:00,,Other
+70548,1504301010,80,1999-01-01 00:00:00,,Of whale and sperm whale
+70622,1504301091,80,1999-01-01 00:00:00,,In immediate packings of a net capacity of 1|kg or less
+70623,1504301099,80,1999-01-01 00:00:00,,Other
+71140,1511901990,80,1999-11-01 00:00:00,,Other
+71141,1511909190,80,1999-11-01 00:00:00,,Other
+71142,1513111090,80,1999-11-01 00:00:00,,Other
+71143,1513193090,80,1999-11-01 00:00:00,,Other
+71145,1513293090,80,1999-11-01 00:00:00,,Other
+72144,1603008000,80,2001-01-01 00:00:00,,Other
+72352,1604199130,80,2000-10-11 00:00:00,,Of swordfish (Xiphias gladius)
+72370,1604209060,80,2000-10-11 00:00:00,,Swordfish (Xiphias gladius)
+72913,1103194000,80,2002-01-01 00:00:00,,Of oats
+72914,1103195000,80,2002-01-01 00:00:00,,Of rice
+72918,1103203000,80,2002-01-01 00:00:00,,Of oats
+72919,1103204000,80,2002-01-01 00:00:00,,Of maize
+72920,1103205000,80,2002-01-01 00:00:00,,Of rice
+72921,1103206000,80,2002-01-01 00:00:00,,Of wheat
+72922,1103209000,80,2002-01-01 00:00:00,,Other
+72925,1104196100,80,2002-01-01 00:00:00,,Rolled
+72926,1104196900,80,2002-01-01 00:00:00,,Flaked
+72931,1104290500,80,2002-01-01 00:00:00,,Pearled
+72937,1205101000,80,2002-01-01 00:00:00,,For sowing
+72938,1205109000,80,2002-01-01 00:00:00,,Other
+72939,1205900000,80,2002-01-01 00:00:00,,Other
+72960,1209100000,80,2002-01-01 00:00:00,,Sugar beet seeds
+72961,1209296000,80,2002-01-01 00:00:00,,Fodder beet seed (Beta vulgaris var. alba)
+72962,1211300000,80,2002-01-01 00:00:00,,Coca leaf
+72963,1211400000,80,2002-01-01 00:00:00,,Poppy straw
+72967,1505001000,80,2002-01-01 00:00:00,,"Wool grease, crude"
+72968,1505009000,80,2002-01-01 00:00:00,,Other
+72971,1514111000,80,2002-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+72972,1514119000,80,2002-01-01 00:00:00,,Other
+72974,1514191000,80,2002-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+72975,1514199000,80,2002-01-01 00:00:00,,Other
+72978,1514911000,80,2002-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+72981,1514991000,80,2002-01-01 00:00:00,,For technical or industrial uses other than the manufacture of foodstuffs for human consumption
+72982,1514999000,80,2002-01-01 00:00:00,,Other
+72985,1904300000,80,2002-01-01 00:00:00,,Bulgur wheat
+72986,1904908000,80,2002-01-01 00:00:00,,Other
+72990,1905311100,80,2002-01-01 00:00:00,,In immediate packings of a net content not exceeding 85|g
+72991,1905311900,80,2002-01-01 00:00:00,,Other
+72993,1905313000,80,2002-01-01 00:00:00,,Containing 8|% or more by weight of milkfats
+72995,1905319100,80,2002-01-01 00:00:00,,Sandwich biscuits
+72996,1905319900,80,2002-01-01 00:00:00,,Other
+72999,1905321100,80,2002-01-01 00:00:00,,In immediate packings of a net content not exceeding 85|g
+73000,1905321900,80,2002-01-01 00:00:00,,Other
+73002,1905329100,80,2002-01-01 00:00:00,,"Salted, whether or not filled"
+73003,1905329900,80,2002-01-01 00:00:00,,Other
+74322,1604207040,80,2001-07-01 00:00:00,,Preserved
+74323,1604207045,80,2001-07-01 00:00:00,,Other
+74420,1604205030,80,2001-07-01 00:00:00,,Of bonito (Sarda s.p.p.)
+75369,1902301010,80,2002-07-01 00:00:00,,"Transparent noodles, cut in pieces, obtained from beans (Vigna radiata (L.) Wilczek), not put up for retail sale"
+76085,1209913000,80,2003-01-01 00:00:00,,Salad beet seed or beetroot seed (Beta vulgaris var. conditiva)
+76285,1903000020,80,2003-01-01 00:00:00,,"Transparent noodles, cut in pieces, obtained from beans (Vigna radiata (L.) Wilczek), not put up for retail sale"
+76704,1515909992,80,2003-07-01 00:00:00,,"Vegetable oil, refined, containing by weight 35|% or more but not more than 50|% of arachidonic acid or 35|% or more but not more than 50|% of docosahexaenoic acid"
+76884,1210201010,80,2003-07-01 00:00:00,,"In individual packages where the weight does not exceed 1 kilogram, destined for sale to private individuals for their own use, for scientific and technical experiments, or for fairs covered by the special customs arrangements for fairs, with the description, weight and final destination indicated on the packaging"
+76894,1210201090,80,2003-07-01 00:00:00,,Other
+76905,1210209010,80,2003-07-01 00:00:00,,"In individual packages where the weight does not exceed 1 kilogram, destined for sale to private individuals for their own use, for scientific and technical experiments, or for fairs covered by the special customs arrangements for fairs, with the description weight and final destination indicated on the packaging"
+76906,1210209090,80,2003-07-01 00:00:00,,Other
+76907,1302130010,80,2003-07-01 00:00:00,,Saps
+76909,1302130080,80,2003-07-01 00:00:00,,"In individual packages where the weight does not exceed|300|g, destined for sale to private individuals for their own use, for scientific and technical experiments, or for fairs covered by the special customs arrangements for fairs, with the description, weight anf final utilization indicated on the packaging"
+76914,1302130090,80,2003-07-01 00:00:00,,Other
+76924,1210201099,80,2003-07-01 00:00:00,,Other
+76925,1210209099,80,2003-07-01 00:00:00,,Other
+76934,1210100010,80,2003-07-01 00:00:00,,"In individual packages where the weight does not exceed 1 kilogram, destined for sale to private individuals for their own use, for scientific and technical experiments, or for fairs covered by the special customs arrangements for fairs, with the description, weight and final destination indicated on the packaging"
+76944,1210100090,80,2003-07-01 00:00:00,,Other
+77188,1512199010,80,2004-01-01 00:00:00,,Sunflower-seed oil
+77189,1512199090,80,2004-01-01 00:00:00,,Safflower oil
+77191,1513211090,80,2004-01-01 00:00:00,,Other
+77192,1513299000,80,2004-01-01 00:00:00,,Other
+77194,1905320500,80,2004-01-01 00:00:00,,With a water content exceeding 10|% by weight
+80624,1006201713,80,2004-04-01 00:00:00,,"Of the varieties Basmati 370, Basmati 386 (India), Type-3 (Dhradun) (India), Taraori Basmati (HBC-19) (India), Basmati 217 (India), Ranbir Basmati (India), Kernel (Basmati) (Pakistan), Pusa Basmati, Super Basmati"
+80626,1006201718,80,2004-04-01 00:00:00,,Other
+80627,1006209813,80,2004-04-01 00:00:00,,"Of the varieties Basmati 370, Basmati 386 (India), Type-3 (Dhradun) (India), Taraori Basmati (HBC-19) (India), Basmati 217 (India), Ranbir Basmati (India), Kernel (Basmati) (Pakistan), Pusa Basmati, Super Basmati"
+80628,1006209818,80,2004-04-01 00:00:00,,Other
+81431,1702901010,80,2005-02-01 00:00:00,,For feeding purpose
+81439,1702901090,80,2005-02-01 00:00:00,,Other
+84415,1006302190,80,2006-02-01 00:00:00,,Other
+84418,1006302390,80,2006-02-01 00:00:00,,Other
+84420,1006302590,80,2006-02-01 00:00:00,,Other
+84423,1006304290,80,2006-02-01 00:00:00,,Other
+84425,1006304490,80,2006-02-01 00:00:00,,Other
+84428,1006304690,80,2006-02-01 00:00:00,,Other
+84432,1006306190,80,2006-02-01 00:00:00,,Other
+84433,1006306390,80,2006-02-01 00:00:00,,Other
+84436,1006306590,80,2006-02-01 00:00:00,,Other
+84440,1006309290,80,2006-02-01 00:00:00,,Other
+84441,1006309490,80,2006-02-01 00:00:00,,Other
+84444,1006309690,80,2006-02-01 00:00:00,,Other
+84454,1006302110,80,2006-02-01 00:00:00,,In immediate packings of a net content not exceeding 5|kg
+84455,1006302310,80,2006-02-01 00:00:00,,In immediate packings of a net content not exceeding 5|kg
+84456,1006302510,80,2006-02-01 00:00:00,,In immediate packings of a net content not exceeding 5|kg
+84458,1006304210,80,2006-02-01 00:00:00,,In immediate packings of a net content not exceeding 5|kg
+84459,1006304410,80,2006-02-01 00:00:00,,In immediate packings of a net content not exceeding 5|kg
+84460,1006304610,80,2006-02-01 00:00:00,,In immediate packings of a net content not exceeding 5|kg
+84462,1006306110,80,2006-02-01 00:00:00,,In immediate packings of a net content not exceeding 5|kg
+84463,1006306310,80,2006-02-01 00:00:00,,In immediate packings of a net content not exceeding 5|kg
+84464,1006306510,80,2006-02-01 00:00:00,,In immediate packings of a net content not exceeding 5|kg
+84466,1006309210,80,2006-02-01 00:00:00,,In immediate packings of a net content not exceeding 5|kg
+84467,1006309410,80,2006-02-01 00:00:00,,In immediate packings of a net content not exceeding 5|kg
+84468,1006309610,80,2006-02-01 00:00:00,,In immediate packings of a net content not exceeding 5|kg
+86191,1102905000,80,2007-01-01 00:00:00,,Rice flour
+86496,1212994100,80,2007-01-01 00:00:00,,"Not decorticated, crushed or ground"
+86497,1212994900,80,2007-01-01 00:00:00,,Other
+86534,1515901100,80,2007-01-01 00:00:00,,Tung oil; jojoba and oiticica oils; myrtle wax and Japan wax; their fractions
+86623,1517909910,80,2007-01-01 00:00:00,,"Vegetable oil, refined, containing by weight 25|% or more but not more than 50|% arachidonic acid or|12|% or more but not more than|65|% docosahexaenoic acid and standardized with high oleic sunflower oil (HOSO)"
+86624,1517909990,80,2007-01-01 00:00:00,,Other
+88724,1704909999,80,2007-01-01 00:00:00,,Other
+94580,1001919000,80,2012-01-01 00:00:00,,Other
+88725,1704909991,80,2007-01-01 00:00:00,,Halva and Loukhum
+89226,1602201000,80,2008-01-01 00:00:00,,Goose or duck liver
+89234,1602509500,80,2008-01-01 00:00:00,,Other
+89244,1602909900,80,2008-01-01 00:00:00,,Other
+89274,1702909500,80,2008-01-01 00:00:00,,Other
+89284,1704101000,80,2008-01-01 00:00:00,,Containing less than 60|% by weight of sucrose (including invert sugar expressed as sucrose)
+89285,1704109000,80,2008-01-01 00:00:00,,Containing 60|% or more by weight of sucrose (including invert sugar expressed as sucrose)
+89465,1601009110,80,2008-01-01 00:00:00,,"Of animals of headings 0101 to 0104, excluding wild boars"
+89475,1601009190,80,2008-01-01 00:00:00,,Other
+89484,1602491910,80,2008-01-01 00:00:00,,"Pork neck, dried in air, seasoned or not, whole, in pieces or thinly sliced"
+89494,1602491990,80,2008-01-01 00:00:00,,Other
+89904,1702305010,80,2008-01-01 00:00:00,,"Containing in the dry state, 99|% or more by weight of glucose"
+89905,1702309010,80,2008-01-01 00:00:00,,"Containing in the dry state, 99|% or more by weight of glucose"
+89906,1702305090,80,2008-01-01 00:00:00,,Other
+89907,1702309090,80,2008-01-01 00:00:00,,Other
+90017,1517109010,80,2008-01-01 00:00:00,,"Containing, by weight, not more than 10|% of milk fats"
+90018,1517109090,80,2008-01-01 00:00:00,,Other
+91224,1516209880,80,2009-03-13 00:00:00,,Other
+91226,1518009180,80,2009-03-13 00:00:00,,Other
+91228,1518009990,80,2009-03-13 00:00:00,,Other
+92486,1704909911,80,2010-01-01 00:00:00,,"Marshmallows, containing 45 % or less by weight of sugar (including invert sugar expressed as sucrose)"
+92487,1704909919,80,2010-01-01 00:00:00,,Other
+92494,1106309080,80,2010-01-01 00:00:00,,Other
+92555,1806103090,80,2010-06-01 00:00:00,,Other
+92563,1901909933,80,2010-06-01 00:00:00,,Containing less than 70|% of sucrose (including invert sugar expessed as sucrose)
+92635,1516209690,80,2010-07-01 00:00:00,,Other
+92754,1516209620,80,2010-07-01 00:00:00,,"Jojoba oil, hydrogenated and interesterified, without any further chemical modification and not subjected to any texturisation process"
+92838,1901909936,80,2010-06-01 00:00:00,,Other
+92855,1806103010,80,2010-06-01 00:00:00,,Containing 70|% or more by weight of sucrose (including invert sugar expressed as sucrose) or isoglucose expressed as sucrose
+92964,1516209821,80,2010-08-13 00:00:00,,Consigned from Canada
+92965,1516209829,80,2010-08-13 00:00:00,,Other
+92966,1516209830,80,2010-08-13 00:00:00,,"Blends containing by weight 20% or less of fatty-acid mono-alkyl esters and/or paraffinic gasoil obtained from synthesis and/or hydro-treatment, of non-fossil origin"
+92968,1518009121,80,2010-08-13 00:00:00,,Consigned from Canada
+92969,1518009129,80,2010-08-13 00:00:00,,Other
+92970,1518009130,80,2010-08-13 00:00:00,,"Blends containing by weight 20% or less of fatty-acid mono-alkyl esters and/or paraffinic gasoil obtained from synthesis and/or hydro-treatment, of non-fossil origin"
+92972,1518009921,80,2010-08-13 00:00:00,,Consigned from Canada
+92973,1518009929,80,2010-08-13 00:00:00,,Other
+92974,1518009930,80,2010-08-13 00:00:00,,"Blends containing by weight 20% or less of fatty-acid mono-alkyl esters and/or paraffinic gasoil obtained from synthesis and/or hydro-treatment, of non-fossil origin"
+93257,1106309030,80,2010-10-07 00:00:00,,"Of watermelon (egusi, Citrullus spp.) seeds"
+94637,1002100000,80,2012-01-01 00:00:00,,Seed
+93494,1006302120,80,2011-02-01 00:00:00,,In immediate packings of a net content exceeding 5|kg but not exceeding 20|kg
+93495,1006302320,80,2011-02-01 00:00:00,,In immediate packings of a net content exceeding 5|kg but not exceeding 20|kg
+93496,1006302520,80,2011-02-01 00:00:00,,In immediate packings of a net content exceeding 5|kg but not exceeding 20|kg
+93498,1006304220,80,2011-02-01 00:00:00,,In immediate packings of a net content exceeding 5|kg but not exceeding 20|kg
+93499,1006304420,80,2011-02-01 00:00:00,,In immediate packings of a net content exceeding 5|kg but not exceeding 20|kg
+93500,1006304620,80,2011-02-01 00:00:00,,In immediate packings of a net content exceeding 5|kg but not exceeding 20|kg
+93502,1006306120,80,2011-02-01 00:00:00,,In immediate packings of a net content exceeding 5|kg but not exceeding 20|kg
+93503,1006306320,80,2011-02-01 00:00:00,,In immediate packings of a net content exceeding 5|kg but not exceeding 20|kg
+93504,1006306520,80,2011-02-01 00:00:00,,In immediate packings of a net content exceeding 5|kg but not exceeding 20|kg
+93506,1006309220,80,2011-02-01 00:00:00,,In immediate packings of a net content exceeding 5|kg but not exceeding 20|kg
+93507,1006309420,80,2011-02-01 00:00:00,,In immediate packings of a net content exceeding 5|kg but not exceeding 20|kg
+93508,1006309620,80,2011-02-01 00:00:00,,In immediate packings of a net content exceeding 5|kg but not exceeding 20|kg
+93521,1604129911,80,2011-03-01 00:00:00,,"Preserved in barrels of at least 70|kg net drained weight, for processing"
+93522,1604129919,80,2011-03-01 00:00:00,,Other
+93546,1605309010,80,2011-02-01 00:00:00,,"Frozen lobster (Homarus americanus), in pieces, cooked"
+93547,1605309090,80,2011-02-01 00:00:00,,Other
+93550,1605309020,80,2011-02-01 00:00:00,,"Frozen lobster meat (Homarus americanus), cooked"
+93551,1605309030,80,2011-02-01 00:00:00,,"Prepared meals of lobster meat (Homarus americanus), including meals ready for consumption"
+93554,1604151110,80,2011-02-01 00:00:00,,Of the species Scomber scombrus
+93555,1604151190,80,2011-02-01 00:00:00,,Of the species Scomber japonicus
+93557,1604151910,80,2011-02-01 00:00:00,,Of the species Scomber scombrus
+93558,1604151990,80,2011-02-01 00:00:00,,Of the species Scomber japonicus
+93559,1604121010,80,2011-02-01 00:00:00,,Of the species Clupea harengus
+93561,1604129920,80,2011-02-01 00:00:00,,Of the species Clupea harengus
+93562,1604121090,80,2011-02-01 00:00:00,,Other
+93622,1604209011,80,2011-02-01 00:00:00,,Of the species Clupea harengus
+93623,1604209019,80,2011-02-01 00:00:00,,Other
+93807,1214909090,80,2011-07-07 00:00:00,,Other
+94567,1001110000,80,2012-01-01 00:00:00,,Seed
+94570,1001190012,80,2012-01-01 00:00:00,,"Durum wheat with - a specific weight in kg/hl greater than or equal to|80, - a maximum of 20,0|% of grains which have lost their vitreous aspect, - a maximum of 10,0|% of matter which is not quality wheat grains of unimpaired quality of which a maximum of 7,0|% of broken and/or shrivelled grains, a maximum of 2,0|% grains damaged by pests, a maximum of 5,0|% grains affected with fusariosis and/or mottled grains, a maximum of 0,5|% of sprouted grains, - a maximum of 1,0|% of miscellaneous impurities (Schwarzbesatz), - a Hagberg falling number of a minimum of|250"
+94571,1001190018,80,2012-01-01 00:00:00,,Other
+94576,1001911000,80,2012-01-01 00:00:00,,Spelt
+94578,1001912010,80,2012-01-01 00:00:00,,Meslin
+94579,1001912020,80,2012-01-01 00:00:00,,Common wheat
+94638,1002900000,80,2012-01-01 00:00:00,,Other
+94639,1004100000,80,2012-01-01 00:00:00,,Seed
+94640,1004900000,80,2012-01-01 00:00:00,,Other
+94641,1003100000,80,2012-01-01 00:00:00,,Seed
+94644,1003900020,80,2012-01-01 00:00:00,,"with the following quality criteria: - specific weight 60,5 kg/hl or more, - damaged grains 1|% or less, - moisture content 13,5|% or less, - sound, fair and merchantable barley 96|% or more, to be used for the manufacture of beer aged in vats containing beechwood "
+94645,1003900030,80,2012-01-01 00:00:00,,Other
+94646,1003900090,80,2012-01-01 00:00:00,,Other
+94648,1005101800,80,2012-01-01 00:00:00,,Other
+94650,1007101000,80,2012-01-01 00:00:00,,Hybrids
+94651,1007109000,80,2012-01-01 00:00:00,,Other
+94652,1007900000,80,2012-01-01 00:00:00,,Other
+94653,1008210000,80,2012-01-01 00:00:00,,Seed
+94654,1008290000,80,2012-01-01 00:00:00,,Other
+94656,1008600000,80,2012-01-01 00:00:00,,Triticale
+94657,1008500000,80,2012-01-01 00:00:00,,Quinoa (Chenopodium quinoa)
+94658,1008400000,80,2012-01-01 00:00:00,,Fonio (Digitaria spp.)
+94659,1102907000,80,2012-01-01 00:00:00,,Rye flour
+94662,1104224000,80,2012-01-01 00:00:00,,"Hulled (shelled or husked), whether or not sliced or kibbled"
+94663,1104229500,80,2012-01-01 00:00:00,,Other
+94664,1104234000,80,2012-01-01 00:00:00,,"Hulled (shelled or husked), whether or not sliced or kibbled; pearled"
+94665,1104239800,80,2012-01-01 00:00:00,,Other
+94667,1104290400,80,2012-01-01 00:00:00,,"Hulled (shelled or husked), whether or not sliced or kibbled"
+94668,1104290800,80,2012-01-01 00:00:00,,Other
+94671,1201100000,80,2012-01-01 00:00:00,,Seed
+94672,1201900000,80,2012-01-01 00:00:00,,Other
+94673,1202410000,80,2012-01-01 00:00:00,,In shell
+94674,1202300000,80,2012-01-01 00:00:00,,Seed
+94676,1202420000,80,2012-01-01 00:00:00,,"Shelled, whether or not broken"
+94678,1207210000,80,2012-01-01 00:00:00,,Seed
+94679,1207290000,80,2012-01-01 00:00:00,,Other
+94680,1207100000,80,2012-01-01 00:00:00,,Palm nuts and kernels
+94681,1207300000,80,2012-01-01 00:00:00,,Castor oil seeds
+94682,1207600000,80,2012-01-01 00:00:00,,Safflower (Carthamus tinctorius) seeds
+94686,1207992010,80,2012-01-01 00:00:00,,Hemp seeds
+94687,1207992090,80,2012-01-01 00:00:00,,Other
+94689,1207999610,80,2012-01-01 00:00:00,,Pumpkin seeds (Cucurbita pepo L. convar. citrullinia Greb. var. styriaca and Cucurbita pepo L. var. oleifera Pietsch)
+94691,1207999690,80,2012-01-01 00:00:00,,Other
+94692,1209294500,80,2012-01-01 00:00:00,,"Timothy grass seed; vetch seed; seeds of the genus Poa (Poa palustris L., Poa trivialis L.); cocksfoot grass (Dactylis glomerata L.); bent grass (Agrostis)"
+94694,1209918010,80,2012-01-01 00:00:00,,Seeds
+94695,1209918090,80,2012-01-01 00:00:00,,Other
+94697,1212210000,80,2012-01-01 00:00:00,,Fit for human consumption
+94698,1212290000,80,2012-01-01 00:00:00,,Other
+94699,1212920000,80,2012-01-01 00:00:00,,Locust beans (carob)
+94700,1212930000,80,2012-01-01 00:00:00,,Sugar cane
+94701,1212940000,80,2012-01-01 00:00:00,,Chicory roots
+94705,1501101000,80,2012-01-01 00:00:00,,For industrial uses other than the manufacture of foodstuffs for human consumption
+94706,1501201000,80,2012-01-01 00:00:00,,For industrial uses other than the manufacture of foodstuffs for human consumption
+94707,1501109000,80,2012-01-01 00:00:00,,Other
+94708,1501209000,80,2012-01-01 00:00:00,,Other
+94710,1501900000,80,2012-01-01 00:00:00,,Other
+94712,1502101000,80,2012-01-01 00:00:00,,For industrial uses other than the manufacture of foodstuffs for human consumption
+94714,1502901000,80,2012-01-01 00:00:00,,For industrial uses other than the manufacture of foodstuffs for human consumption
+94715,1502909000,80,2012-01-01 00:00:00,,Other
+94716,1502109000,80,2012-01-01 00:00:00,,Other
+94719,1602318010,80,2012-01-01 00:00:00,,Containing 25|% or more but less than 57|% by weight of poultry meat or offal
+94720,1602318090,80,2012-01-01 00:00:00,,Other
+94726,1602909100,80,2012-01-01 00:00:00,,Of sheep
+94727,1602909500,80,2012-01-01 00:00:00,,Of goats
+94728,1604170000,80,2012-01-01 00:00:00,,Eels
+94730,1604199720,80,2012-01-01 00:00:00,,Swordfish (Xiphias gladius)
+94731,1604199730,80,2012-01-01 00:00:00,,Mackerel (Scomber colias)
+94732,1604199740,80,2012-01-01 00:00:00,,"Frigate tuna, Frigate mackerel (Auxis thazard, Auxis rochei)"
+94734,1604310000,80,2012-01-01 00:00:00,,Caviar
+94737,1604320090,80,2012-01-01 00:00:00,,Other
+94746,1605211020,80,2012-01-01 00:00:00,,shelled and frozen
+94747,1605211030,80,2012-01-01 00:00:00,,Other
+94748,1605211040,80,2012-01-01 00:00:00,,"Shrimps and prawns of the species Pandalus borealis, shelled, boiled and frozen, but not otherwise prepared"
+94751,1605211091,80,2012-01-01 00:00:00,,Frozen
+94752,1605211096,80,2012-01-01 00:00:00,,Other
+94753,1605211099,80,2012-01-01 00:00:00,,Other
+94756,1605219020,80,2012-01-01 00:00:00,,shelled and frozen
+94757,1605219030,80,2012-01-01 00:00:00,,Other
+94759,1605219040,80,2012-01-01 00:00:00,,"shelled, boiled and frozen, but not otherwise prepared"
+94760,1605219045,80,2012-01-01 00:00:00,,cooked and peeled for processing
+94761,1605219049,80,2012-01-01 00:00:00,,Other
+94764,1605219091,80,2012-01-01 00:00:00,,Frozen
+94765,1605219096,80,2012-01-01 00:00:00,,Other
+94766,1605219099,80,2012-01-01 00:00:00,,Other
+94769,1605290020,80,2012-01-01 00:00:00,,shelled and frozen
+94770,1605290030,80,2012-01-01 00:00:00,,Other
+94771,1605290040,80,2012-01-01 00:00:00,,"Shrimps and prawns of the species Pandalus borealis, shelled, boiled and frozen, but not otherwise prepared"
+94772,1605290050,80,2012-01-01 00:00:00,,"Shrimps and prawns of the species Pandalus borealis, cooked and peeled for processing"
+94775,1605290091,80,2012-01-01 00:00:00,,Frozen
+94776,1605290096,80,2012-01-01 00:00:00,,Other
+94777,1605290099,80,2012-01-01 00:00:00,,Other
+94779,1605510000,80,2012-01-01 00:00:00,,Oysters
+94781,1605520020,80,2012-01-01 00:00:00,,Coquilles St. Jacques (Pecten maximus)
+94783,1605590010,80,2012-01-01 00:00:00,,Common whelk (Buccinum Undatum)
+94784,1605590090,80,2012-01-01 00:00:00,,Other
+94785,1605520090,80,2012-01-01 00:00:00,,Other
+94788,1605531010,80,2012-01-01 00:00:00,,"Frozen mussels (Mytilus edulis), cooked, whether or not in shell"
+94789,1605531020,80,2012-01-01 00:00:00,,"Prepared or preserved mussels (Mytilus edulis), and meals containing mussels (Mytilus edulis), including meals ready for consumption"
+94792,1605539010,80,2012-01-01 00:00:00,,"Frozen mussels (Mytilus edulis), cooked, whether or not in shell"
+94793,1605539020,80,2012-01-01 00:00:00,,"Prepared or preserved mussels (Mytilus edulis), and meals containing mussels (Mytilus edulis), including meals ready for consumption"
+94794,1605539090,80,2012-01-01 00:00:00,,Other
+94796,1605610000,80,2012-01-01 00:00:00,,Sea cucumbers
+94797,1605620000,80,2012-01-01 00:00:00,,Sea urchins
+94798,1605630000,80,2012-01-01 00:00:00,,Jellyfish
+94799,1605690000,80,2012-01-01 00:00:00,,Other
+94800,1605540000,80,2012-01-01 00:00:00,,Cuttlefish and squid
+94801,1605550000,80,2012-01-01 00:00:00,,Octopus
+94802,1605560000,80,2012-01-01 00:00:00,,"Clams, cockles and arkshells"
+94803,1605570000,80,2012-01-01 00:00:00,,Abalone
+94804,1605580000,80,2012-01-01 00:00:00,,"Snails, other than sea snails"
+94836,1701131000,80,2012-01-01 00:00:00,,For refining
+94837,1701141000,80,2012-01-01 00:00:00,,For refining
+94838,1701139000,80,2012-01-01 00:00:00,,Other
+94839,1701149000,80,2012-01-01 00:00:00,,Other
+96249,1207700010,80,2012-01-01 00:00:00,,"Watermelon (egusi, Citrullus spp.) seeds"
+96250,1207700090,80,2012-01-01 00:00:00,,Other
+96442,1212999590,80,2012-04-01 00:00:00,,Other
+96443,1212999510,80,2012-04-01 00:00:00,,Bee pollen
+96444,1213000010,80,2012-04-01 00:00:00,,Straw
+96445,1213000090,80,2012-04-01 00:00:00,,Other
+96446,1214909020,80,2012-04-01 00:00:00,,Hay
+96544,1605219055,80,2013-01-01 00:00:00,,Cooked and peeled for processing
+96546,1605290060,80,2013-01-01 00:00:00,,"Shrimps and prawns of the species Pandalus jordani, cooked and peeled for processing"
+96617,1001990094,80,2012-05-24 00:00:00,,Other
+96618,1001990092,80,2012-05-24 00:00:00,,Meslin
+96780,1211908610,80,2013-01-01 00:00:00,,"Curry leaves (Bergera koenigii, Syn.: Murraya koenigii)"
+96781,1211908620,80,2013-01-01 00:00:00,,"Basil (holy, sweet) (fresh or chilled)"
+96782,1211908630,80,2013-01-01 00:00:00,,Mint (fresh or chilled)
+96783,1211908690,80,2013-01-01 00:00:00,,Other
+96785,1302197000,80,2013-01-01 00:00:00,,Other
+96988,1605531095,80,2013-03-01 00:00:00,,Other
+96989,1605539095,80,2013-03-01 00:00:00,,Other
+97258,1602398590,80,2013-01-01 00:00:00,,Other
+97259,1602398510,80,2013-01-01 00:00:00,,"Processed meat, containing 25% or more by weight of poultry meat or offal"
+97428,1518009510,80,2013-01-30 00:00:00,,"Blends containing fatty-acid mono-alkyl esters and/or paraffinic gasoil obtained from synthesis and/or hydro-treatment, of non-fossil origin"
+97429,1518009590,80,2013-01-30 00:00:00,,Other
+98073,1604207050,80,2013-04-01 00:00:00,,Preserved
+98074,1604207055,80,2013-04-01 00:00:00,,Other
+98376,1404900090,80,2014-04-01 00:00:00,,Other
+98437,1901909990,80,2014-07-01 00:00:00,,Other
+98438,1901909939,80,2014-07-01 00:00:00,,"Preparation in powder form containing by weight: -|15|% or more but not more than 35|% of| wheat derived Maltodextrin, -|15|% or more but not more than 35|% of whey (milk serum), -|10|% or more but not more than 30|% of refined, bleached, deodorised and non-hydrogenated sunflower oil, -|10|% or more but not more than 30|% of blended, aged spray dried cheese, -|5|% or more but not more than 15|% of buttermilk and -|0,1|% or more but not more than 10|% of sodium caseinate, disodium phosphate, lactic acid "
+98442,1902301080,80,2014-04-01 00:00:00,,Other
+98443,1404900010,80,2014-04-01 00:00:00,,Betel leaves (Piper betle L.)
+98448,1103192010,80,2014-04-23 00:00:00,,Of barley
+98449,1103192090,80,2014-04-23 00:00:00,,Other
+98454,1103202510,80,2014-04-23 00:00:00,,Of rye
+98455,1103202590,80,2014-04-23 00:00:00,,Of barley
+98479,1302201013,80,2014-07-01 00:00:00,,Pectates
+98480,1302201015,80,2014-07-01 00:00:00,,Other
+98487,1605211050,80,2014-01-01 00:00:00,,"Shrimps and prawns of the species Pandalus montagui, shelled, boiled and frozen, but not otherwise prepared"
+98489,1605219060,80,2014-01-01 00:00:00,,"shelled, boiled and frozen, but not otherwise prepared"
+98490,1605219065,80,2014-01-01 00:00:00,,Other
+98491,1605290045,80,2014-01-01 00:00:00,,"Shrimps and prawns of the species Pandalus montagui, shelled, boiled and frozen, but not otherwise prepared"
+98492,1605290055,80,2014-01-01 00:00:00,,"Shrimps and prawns of the species Pandalus montagui, cooked and peeled for processing"
+98493,1001990060,80,2014-08-01 00:00:00,,Spelt
+98495,1001990050,80,2014-08-01 00:00:00,,Low quality common wheat
+98497,1001990015,80,2014-08-01 00:00:00,,Other
+98502,1001990013,80,2014-08-01 00:00:00,,"With: - a specific weight in kg/hl greater than or equal to|78, - a maximum of 10,0|% of matter which is not quality wheat grains of unimpaired quality, of which a maximum of 7,0|% of broken and/or shrivelled grains, a maximum of 2,0|% grains damaged by pests, a maximum of 0,5|% sprouted grains, - a maximum of 1,0|% of miscellaneous impurities (Schwarzbesatz), - a Hagberg falling number of a minimum of|230, - a protein content (13,5|% moisture content) of a minimum of|14,6|%"
+98558,1001990040,80,2014-08-01 00:00:00,,Medium quality common wheat
+98674,1516109010,80,2015-01-01 00:00:00,,Of fish and of marine mammals
+98797,1515909920,80,2014-09-03 00:00:00,,Hazelnut oil
+98807,1106309040,80,2014-09-03 00:00:00,,Of hazelnuts
+98808,1106309050,80,2014-09-03 00:00:00,,Of pistachios
+98817,1302329019,80,2015-02-26 00:00:00,,Other
+98818,1302329099,80,2015-02-26 00:00:00,,Other
+98922,1604142100,80,2015-01-01 00:00:00,,In vegetable oil
+98925,1604142800,80,2015-01-01 00:00:00,,Other
+98927,1604143100,80,2015-01-01 00:00:00,,In vegetable oil
+98934,1604143800,80,2015-01-01 00:00:00,,Other
+98940,1604144110,80,2015-01-01 00:00:00,,Bluefin tunas (Thunnus thynnus)
+98941,1604144120,80,2015-01-01 00:00:00,,Atlantic bigeye tuna (Thunnus obesus)
+98942,1604144190,80,2015-01-01 00:00:00,,Other
+98944,1604144611,80,2015-01-01 00:00:00,,For processing
+98945,1604144619,80,2015-01-01 00:00:00,,Other
+98947,1604144621,80,2015-01-01 00:00:00,,For processing
+98948,1604144629,80,2015-01-01 00:00:00,,Other
+98951,1604144699,80,2015-01-01 00:00:00,,Other
+98952,1604142610,80,2015-01-01 00:00:00,,For processing
+98953,1604143610,80,2015-01-01 00:00:00,,For processing
+98954,1604142690,80,2015-01-01 00:00:00,,Other
+98955,1604143690,80,2015-01-01 00:00:00,,Other
+98956,1604144810,80,2015-01-01 00:00:00,,Bluefin tunas (Thunnus thynnus)
+98958,1604144890,80,2015-01-01 00:00:00,,Other
+98959,1604144820,80,2015-01-01 00:00:00,,Atlantic bigeye tuna (Thunnus obesus)
+99268,1302329010,80,2015-02-26 00:00:00,,Consigned from India
+99272,1604129111,80,2015-08-01 00:00:00,,"Spiced and/or vinegar-cured, in brine"
+99273,1604129191,80,2015-08-01 00:00:00,,"Spiced and/or vinegar-cured, in brine"
+99275,1604129199,80,2015-08-01 00:00:00,,Other
+99276,1604129119,80,2015-08-01 00:00:00,,Other
+99386,1604320020,80,2016-01-01 00:00:00,,"Hard fish roes, washed, cleaned of adherent organs and simply salted or in brine, for processing of caviar substitutes"
+102894,1604144130,80,2016-10-10 00:00:00,,Albacore tuna (Thunnus alalunga)
+99731,1511901920,80,2016-01-01 00:00:00,,"For the manufacture of: -|industrial monocarboxylic fatty acids of subheading 3823|19|10, -|methyl esters of fatty acids of heading 2915|or 2916, -|fatty alcohols of subheadings 2905|17, 2905|19|and 3823|70|used for the manufacture of cosmetics, washing products or pharmaceutical products, -|fatty alcohols of subheading 2905|16, pure or mixed, used for the manufacture of cosmetics, washing products or pharmaceutical products, -|stearic acid of subheading 3823|11|00, -|goods of heading 3401, or -|fatty acids with high purity of heading 2915 "
+99732,1511909120,80,2016-01-01 00:00:00,,"For the manufacture of: -|industrial monocarboxylic fatty acids of subheading 3823|19|10, -|methyl esters of fatty acids of heading 2915|or 2916, -|fatty alcohols of subheadings 2905|17, 2905|19|and 3823|70|used for the manufacture of cosmetics, washing products or pharmaceutical products, -|fatty alcohols of subheading 2905|16, pure or mixed, used for the manufacture of cosmetics, washing products or pharmaceutical products, -|stearic acid of subheading 3823|11|00, -|goods of heading 3401, or -|fatty acids with high purity of heading 2915 "
+99733,1513111020,80,2016-01-01 00:00:00,,"for the manufacture of: -|industrial monocarboxylic fatty acids of subheading 3823|19|10, -|methyl esters of fatty acids of heading 2915|or 2916, -|fatty alcohols of subheadings 2905|17, 2905|19|and 3823|70|used for the manufacture of cosmetics, washing products or pharmaceutical products, -|fatty alcohols of subheading 2905|16, pure or mixed, used for the manufacture of cosmetics, washing products or pharmaceutical products, -|stearic acid of subheading 3823|11|00, -|goods of heading 3401, or -|fatty acids with high purity of heading 2915 "
+99734,1513193020,80,2016-01-01 00:00:00,,"For the manufacture of: -|industrial monocarboxylic fatty acids of subheading 3823|19|10, -|methyl esters of fatty acids of heading 2915|or 2916, -|fatty alcohols of subheadings 2905|17, 2905|19|and 3823|70|used for the manufacture of cosmetics, washing products or pharmaceutical products, -|fatty alcohols of subheading 2905|16, pure or mixed, used for the manufacture of cosmetics, washing products or pharmaceutical products, -|stearic acid of subheading 3823|11|00, -|goods of heading 3401, or -|fatty acids with high purity of heading 2915 "
+99735,1513211020,80,2016-01-01 00:00:00,,"Palm kernel oil for the manufacture of: -|industrial monocarboxylic fatty acids of subheading 3823|19|10, -|methyl esters of fatty acids of heading 2915|or 2916, -|fatty alcohols of subheadings 2905|17, 2905|19|and 3823|70|used for the manufacture of cosmetics, washing products or pharmaceutical products, -|fatty alcohols of subheading 2905|16, pure or mixed, used for the manufacture of cosmetics, washing products or pharmaceutical products, -|stearic acid of subheading 3823|11|00, -|goods of heading 3401, or -|fatty acids with high purity of heading 2915 "
+99736,1513293020,80,2016-01-01 00:00:00,,"Palm kernel oil for the manufacture of: -|industrial monocarboxylic fatty acids of subheading 3823|19|10, -|methyl esters of fatty acids of heading 2915|or 2916, -|fatty alcohols of subheadings 2905|17, 2905|19|and 3823|70|used for the manufacture of cosmetics, washing products or pharmaceutical products, -|fatty alcohols of subheading 2905|16, pure or mixed, used for the manufacture of cosmetics, washing products or pharmaceutical products, -|stearic acid of subheading 3823|11|00, -|goods of heading 3401, or -|fatty acids with high purity of heading 2915 "
+99846,1605219062,80,2016-01-01 00:00:00,,cooked and peeled for processing
+99925,1905902090,80,2016-02-01 00:00:00,,Other
+100077,1512191090,80,2016-07-01 00:00:00,,Other
+102896,1604144697,80,2016-10-10 00:00:00,,Albacore tuna (Thunnus alalunga)
+103775,1902209120,80,2017-09-21 00:00:00,,Containing rice
+100078,1512191010,80,2016-07-01 00:00:00,,Refined safflower oil (CAS RN 8001-23-8) for use in the manufacture of - conjugated linoleic acid of heading 3823 or - ethyl- or methyl esters of linoleic acid of heading 2916 
+100362,1605219057,80,2016-09-01 00:00:00,,Frozen
+100363,1605219058,80,2016-09-01 00:00:00,,Other
+100931,1006103000,80,2017-01-01 00:00:00,,Round grain
+100932,1006105000,80,2017-01-01 00:00:00,,Medium grain
+100934,1006107100,80,2017-01-01 00:00:00,,Of a length/width ratio greater than 2|but less than 3
+100935,1006107900,80,2017-01-01 00:00:00,,Of a length/width ratio equal to or greater than 3
+100972,1302140000,80,2017-01-01 00:00:00,,Of ephedra
+100975,1604180000,80,2017-01-01 00:00:00,,Shark fins
+102217,1006201791,80,2017-01-01 00:00:00,,Other
+102218,1006201799,80,2017-01-01 00:00:00,,Other
+102232,1006209891,80,2017-01-01 00:00:00,,Other
+102236,1006209899,80,2017-01-01 00:00:00,,Other
+102245,1006302716,80,2017-01-01 00:00:00,,Other
+102246,1006302712,80,2017-01-01 00:00:00,,Basmati rice
+102247,1006302714,80,2017-01-01 00:00:00,,Other
+102255,1006302722,80,2017-01-01 00:00:00,,Basmati rice
+102256,1006302724,80,2017-01-01 00:00:00,,Other
+102257,1006302726,80,2017-01-01 00:00:00,,Other
+102260,1006302792,80,2017-01-01 00:00:00,,Basmati rice
+102261,1006302794,80,2017-01-01 00:00:00,,Other
+102262,1006302796,80,2017-01-01 00:00:00,,Other
+102265,1006304812,80,2017-01-01 00:00:00,,Basmati rice
+102266,1006304814,80,2017-01-01 00:00:00,,Other
+102267,1006304816,80,2017-01-01 00:00:00,,Other
+102300,1006304822,80,2017-01-01 00:00:00,,Basmati rice
+102301,1006304824,80,2017-01-01 00:00:00,,Other
+102302,1006304826,80,2017-01-01 00:00:00,,Other
+102305,1006304892,80,2017-01-01 00:00:00,,Basmati rice
+102306,1006304894,80,2017-01-01 00:00:00,,Other
+102307,1006304896,80,2017-01-01 00:00:00,,Other
+102310,1006306712,80,2017-01-01 00:00:00,,Basmati rice
+102311,1006306714,80,2017-01-01 00:00:00,,Other
+102312,1006306716,80,2017-01-01 00:00:00,,Other
+102315,1006306722,80,2017-01-01 00:00:00,,Basmati rice
+102316,1006306724,80,2017-01-01 00:00:00,,Other
+102317,1006306726,80,2017-01-01 00:00:00,,Other
+102324,1006306792,80,2017-01-01 00:00:00,,Basmati rice
+102325,1006306794,80,2017-01-01 00:00:00,,Other
+102327,1006306796,80,2017-01-01 00:00:00,,Other
+102331,1006309812,80,2017-01-01 00:00:00,,Basmati rice
+102332,1006309814,80,2017-01-01 00:00:00,,Other
+102333,1006309816,80,2017-01-01 00:00:00,,Other
+102336,1006309822,80,2017-01-01 00:00:00,,Basmati rice
+102337,1006309824,80,2017-01-01 00:00:00,,Other
+102340,1006309894,80,2017-01-01 00:00:00,,Other
+102341,1006309896,80,2017-01-01 00:00:00,,Other
+102343,1006309892,80,2017-01-01 00:00:00,,Basmati rice
+102370,1509102010,80,2017-01-01 00:00:00,,In containers holding 5 litres or less
+102492,1509900010,80,2017-01-01 00:00:00,,In containers holding 5 litres or less
+102493,1509108010,80,2017-01-01 00:00:00,,In containers holding 5 litres or less
+102758,1509102090,80,2017-01-01 00:00:00,,Other
+102760,1509108090,80,2017-01-01 00:00:00,,Other
+102761,1509900090,80,2017-01-01 00:00:00,,Other
+103774,1902203020,80,2017-09-21 00:00:00,,Containing rice
+102897,1604144692,80,2016-10-10 00:00:00,,Albacore tuna (Thunnus alalunga)
+102898,1604144830,80,2016-10-10 00:00:00,,Albacore tuna (Thunnus alalunga)
+102899,1604207092,80,2016-10-10 00:00:00,,Albacore tuna (Thunnus alalunga)
+102900,1604207097,80,2016-10-10 00:00:00,,Albacore tuna (Thunnus alalunga)
+103191,1005900020,80,2017-04-24 00:00:00,,"Flint maize of specific weight equal to or more than 75,5 kg/hl, with a vitreous grain content equal to or more than 92% by weight and with a maximum flotation index 26 and intended for processing"
+103192,1005900090,80,2017-04-24 00:00:00,,Other
+103197,1001190020,80,2017-05-20 00:00:00,,Medium quality durum wheat
+103198,1001190030,80,2017-05-20 00:00:00,,Low quality durum wheat
+103205,1604144694,80,2016-10-10 00:00:00,,Other
+103209,1604207094,80,2016-10-10 00:00:00,,Other
+103238,1104291750,80,2017-10-01 00:00:00,,Of rye
+103239,1104293050,80,2017-10-01 00:00:00,,Of rye
+103330,1302201061,80,2017-09-21 00:00:00,,Pectates
+103333,1302201071,80,2017-09-21 00:00:00,,Pectates
+103335,1302201069,80,2017-09-21 00:00:00,,Other
+103336,1302201079,80,2017-09-21 00:00:00,,Other
+103339,1302209061,80,2017-09-21 00:00:00,,Pectates
+103340,1302209069,80,2017-09-21 00:00:00,,Other
+103342,1302209091,80,2017-09-21 00:00:00,,Pectates
+103344,1302209099,80,2017-09-21 00:00:00,,Other
+103348,1806201090,80,2017-09-21 00:00:00,,Other
+103350,1806203090,80,2017-09-21 00:00:00,,Other
+103354,1806205090,80,2017-09-21 00:00:00,,Other
+103356,1806207090,80,2017-09-21 00:00:00,,Other
+103359,1806208019,80,2017-09-21 00:00:00,,Other
+103362,1806208099,80,2017-09-21 00:00:00,,Other
+103365,1806209519,80,2017-09-21 00:00:00,,Other
+103368,1806209599,80,2017-09-21 00:00:00,,Other
+103407,1902110020,80,2017-09-21 00:00:00,,Containing rice
+103408,1902110090,80,2017-09-21 00:00:00,,Other
+103410,1902191090,80,2017-09-21 00:00:00,,Other
+103412,1902199090,80,2017-09-21 00:00:00,,Other
+103414,1902201090,80,2017-09-21 00:00:00,,Other
+103416,1902203090,80,2017-09-21 00:00:00,,Other
+103418,1902209190,80,2017-09-21 00:00:00,,Other
+103420,1902209990,80,2017-09-21 00:00:00,,Other
+103423,1902309090,80,2017-09-21 00:00:00,,Other
+103513,1605100011,80,2017-09-21 00:00:00,,Cancer pagurus
+103514,1605100019,80,2017-09-21 00:00:00,,Other
+103516,1605100091,80,2017-09-21 00:00:00,,Cancer pagurus
+103517,1605100099,80,2017-09-21 00:00:00,,Other
+103750,1806208012,80,2017-09-21 00:00:00,,"containing 65|% or more by net weight of added cane or beet sugar of subheadings 1701 91 to 1701 99, for the preparation of chocolate beverages"
+103751,1806208092,80,2017-09-21 00:00:00,,"containing 70% or more by net weight of added cane or beet sugar of subheadings 1701 91 to 1701 99, for the preparation of chocolate beverages"
+103752,1806209512,80,2017-09-21 00:00:00,,"containing 65|% or more by net weight of added cane or beet sugar of subheadings 1701 91 to 1701 99, for the preparation of chocolate beverages"
+103753,1806209592,80,2017-09-21 00:00:00,,"containing 70% or more by net weight of added cane or beet sugar of subheadings 1701 91 to 1701 99, for the preparation of chocolate beverages"
+103771,1902191020,80,2017-09-21 00:00:00,,Containing rice
+103772,1902199020,80,2017-09-21 00:00:00,,Containing rice
+103773,1902201020,80,2017-09-21 00:00:00,,Containing rice
+103776,1902209920,80,2017-09-21 00:00:00,,Containing rice
+103777,1902301020,80,2017-09-21 00:00:00,,Containing rice
+103778,1902309020,80,2017-09-21 00:00:00,,Containing rice
+103785,1806203020,80,2017-09-21 00:00:00,,"containing 65|% or more by net weight of added cane or beet sugar of subheadings 1701 91 to 1701 99, for the preparation of chocolate beverages"
+103787,1806201020,80,2017-09-21 00:00:00,,"containing 65|% or more by net weight of added cane or beet sugar of subheadings 1701 91 to 1701 99, for the preparation of chocolate beverages"
+103789,1806205020,80,2017-09-21 00:00:00,,"containing 65% or more by net weight of added cane or beet sugar of subheadings 1701 91 to 1701 99, for the preparation of chocolate beverages"
+103791,1806207020,80,2017-09-21 00:00:00,,"containing 65|% or more by net weight of added cane or beet sugar of subheadings 1701 91 to 1701 99, for the preparation of chocolate beverages"
+103816,1104291790,80,2017-10-01 00:00:00,,Other
+103817,1104293090,80,2017-10-01 00:00:00,,Other
+103819,1905907000,80,2018-01-01 00:00:00,,"Containing 5|% or more, by weight, of sucrose, invert sugar or isoglucose"
+103820,1905908000,80,2018-01-01 00:00:00,,Other
+104033,1601001011,80,2018-05-01 00:00:00,,Sausages
+104034,1601001019,80,2018-05-01 00:00:00,,Other
+104036,1601001091,80,2018-05-01 00:00:00,,Sausages
+104037,1601001099,80,2018-05-01 00:00:00,,Other
+104039,1601009911,80,2018-05-01 00:00:00,,Sausages
+104040,1601009919,80,2018-05-01 00:00:00,,Other
+104042,1601009991,80,2018-05-01 00:00:00,,Sausages
+104043,1601009999,80,2018-05-01 00:00:00,,Other
+104101,1702201090,80,2018-10-01 00:00:00,,Other
+104102,1702201010,80,2018-10-01 00:00:00,,for animal feeding
+104103,1702209090,80,2018-10-01 00:00:00,,Other
+104104,1702209010,80,2018-10-01 00:00:00,,for animal feeding

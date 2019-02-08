@@ -1,0 +1,7 @@
+dump/
+log/
+xml_in/
+xml_out/
+loading reports/
+__pycache__/
+DIT progress update/

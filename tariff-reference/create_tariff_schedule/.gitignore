@@ -1,0 +1,8 @@
+*.log
+.orig
+__pycache__/
+.vscode/
+intellij/
+.idea/
+sunday safe/
+landport/

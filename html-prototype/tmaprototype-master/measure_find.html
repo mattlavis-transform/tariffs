@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <title>Tariff Management Application - Find a measure</title>
+
+    <!--[if gt IE 8]><!--><link href="https://assets.trade-tariff.service.gov.uk/tariff/govuk-template-e35981be025be5acc30ca86c82a171fe06fa3580b5b52044abf5df9bb7273e17.css" media="screen" rel="stylesheet" /><!--<![endif]-->
+    <!--[if IE 6]><link href="https://assets.trade-tariff.service.gov.uk/tariff/govuk-template-ie6-9ea8f2161855bd23b3216b9c1f38053de00694d577d4025504749df2480d65ca.css" media="screen" rel="stylesheet" /><![endif]-->
+    <!--[if IE 7]><link href="https://assets.trade-tariff.service.gov.uk/tariff/govuk-template-ie7-2d92b88fb60a715c6093ba5db5e0e5392851b21d7c8f9f0de4aec9bfcfc3b14a.css" media="screen" rel="stylesheet" /><![endif]-->
+    <!--[if IE 8]><link href="https://assets.trade-tariff.service.gov.uk/tariff/govuk-template-ie8-33ec829004a8f979e20ac3426a3864b27d2de8e1781fdce81d986bc87ce46332.css" media="screen" rel="stylesheet" /><![endif]-->
+    <link href="https://assets.trade-tariff.service.gov.uk/tariff/govuk-template-print-1076519521c2fffbbf75ab3b0d3b32ee2d96ac7e9778f1cdfac1771eefd1a1c0.css" media="print" rel="stylesheet" />
+
+    <!--[if IE 8]><link href="https://assets.trade-tariff.service.gov.uk/tariff/fonts-ie8-ca74eee30b797b0df76a57f96ae6f21f89790c426518a179af0eceae43d438ec.css" media="all" rel="stylesheet" /><![endif]-->
+    <!--[if gte IE 9]><!--><link href="https://assets.trade-tariff.service.gov.uk/tariff/fonts-5ff8c53913434afd0072a480d7cfca67cace4c8d03f6ef96b78a4455728ce745.css" media="all" rel="stylesheet" /><!--<![endif]-->
+    <!--[if lt IE 9]><script src="https://assets.trade-tariff.service.gov.uk/tariff/ie-75db9d4df4993de5335d6e49013362743a78107245bcf6543337a0ecc0a95b41.js"></script><![endif]-->
+
+    <link rel="shortcut icon" href="https://assets.trade-tariff.service.gov.uk/tariff/favicon-8d811b8c3badbc0b0e2f6e25d3660a96cc0cca7993e6f32e98785f205fc40907.ico" type="image/x-icon" />
+    <link rel="mask-icon" href="https://assets.trade-tariff.service.gov.uk/tariff/gov.uk_logotype_crown-a0097118fe9226ce1ffde1ccfeb86c61be3607915046196c99f68b9548485ad3.svg" color="#0b0c0c">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://assets.trade-tariff.service.gov.uk/tariff/apple-touch-icon-152x152-55dd2af7a53abb7dd14ba6a3c6c3fc786c57a074ba809f6dd767e186955a87e1.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://assets.trade-tariff.service.gov.uk/tariff/apple-touch-icon-120x120-92580784afc35143f96b8cf5614e221427fdea444aeb13d912c879e884af7336.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://assets.trade-tariff.service.gov.uk/tariff/apple-touch-icon-76x76-9b193f39cde53b92ba555efed856bcd103d6d1dc650919eb9f29dbe5f442cfb0.png">
+    <link rel="apple-touch-icon-precomposed" href="https://assets.trade-tariff.service.gov.uk/tariff/apple-touch-icon-60x60-0af0a7cf886701647210f13b661e607b7223bc3221b6d275718a89af79b3e7b9.png">
+
+    <meta name="theme-color" content="#0b0c0c" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="https://assets.trade-tariff.service.gov.uk/tariff/opengraph-image-a1f7d89ffd0782738b1aeb0da37842d8bd0addbd724b8e58c3edbc7287cc11de.png">
+
+      <link rel='alternate' type='application/json' href='https://www.trade-tariff.service.gov.uk/trade-tariff/sections.json' title='Section list in JSON format' />
+  <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.trade-tariff.service.gov.uk/tariff/application-e5441c13a40ff5486641a0a3e84b1b02b41a8721b4df0c74ef5c52ded0136c24.css" /><!--<![endif]-->
+  <!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.trade-tariff.service.gov.uk/tariff/application-ie6-0f491c437034bccb1753973989d38b495441cbea6f79aac7b0b0f986fc18a378.css" /><![endif]-->
+  <!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.trade-tariff.service.gov.uk/tariff/application-ie7-dbd32816263ba4c20f50af444355069874aed1612688e735b7ff239e221016a4.css" /><![endif]-->
+  <!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.trade-tariff.service.gov.uk/tariff/application-ie8-344c9b0a031926355439f9c77614b1dee1c4f8d91b8ed69dec217eba2b305e7d.css" /><![endif]-->
+  <link rel="stylesheet" media="print" href="https://assets.trade-tariff.service.gov.uk/tariff/tariff-print-eed68e53ad68229ab7beb3cb1844193b9abf0d30292324bf8807da749dc3840d.css" />
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="wuKnxA2vDZIA6vTB77M8UqX//JIW9pV6ghNmjwkmIaqObMJmvHozSjdsrP8lRluncGe9dU2a3Vc6rUcSZB35dQ==" />
+
+  <meta name="x-section-name" content="Business" />
+  <meta name="x-section-link" content="/browse/business" />
+  <meta name="x-section-format" content="trade-tariff" />
+  <meta name="format-detection" content="telephone=no">
+
+
+  <meta name="govuk:section" content="business and self-employed">
+
+  <link rel="search" type="application/opensearchdescription+xml" href="https://www.trade-tariff.service.gov.uk/trade-tariff/opensearch.xml" title="Trade Tariff Search" />
+<link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-958be5810ae2fa11fba6bc815193f49b2f0868639649c975d08e12d6cfe50a5e.css" />
+<link rel="stylesheet" media="screen" href="/css/local.css" />
+
+
+  </head>
+
+  <body>
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink">Skip to main content</a>
+      </div>
+    </div>
+
+    <header role="banner" id="global-header" class="with-proposition">
+      <div class="header-wrapper">
+        <div class="header-global" style="width:70%">
+          <div class="header-logo">
+            <a href="/" title="Go to the GOV.UK homepage" id="logo" class="content">
+              <img style="margin-right:20px" src="https://assets.trade-tariff.service.gov.uk/tariff/gov.uk_logotype_crown_invert_trans-203e1db49d3eff430d7dc450ce723c1002542fe1d2bce661b6d8571f14c1043c.png" width="36" height="32" alt="">Tariff Management Application
+            </a>
+          </div>
+
+        </div>
+		<div class="tma_header">
+			<ul>
+				<li><a href="#">Help</a></li>
+				<li><a href="#">Sign out</a></li>
+			</ul>
+		</div>
+
+      </div>
+    </header>
+<!-- GLOBAL HEADER ENDS HERE //-->
+
+
+<!-- CONTENT STARTS HERE //-->
+<div id="global-header-bar"></div>
+
+	<div id="wrapper" class="tariff service">
+    <div class="phase-banner">
+        <p>
+            <strong class="phase-tag">ALPHA</strong>
+            <span>This is a new service – your <a href="mailto:matt.lavis@digital.trade.gov.uk">feedback</a> will help us to improve it.</span>
+        </p>
+    </div>
+		<main id="content" role="main">
+			<div class="govuk-breadcrumbs nmb">
+				<ol>
+					<li><a href="/">Home</a></li>
+					<li>Measures</li>
+				</ol>
+			</div>
+			<header>
+				<h1 class="heading-large">Find a measure</h1>
+				<p class="font-xsmall">Enter criteria to help locate a measure</p>
+			</header>
+
+			<form style="margin-top:32px" action="measure_search_results.html" method="post">
+				<div class="form-group">
+					<label class="form-label">Select the measure type</label>
+					<select class="form-control form-control-1-3 font-xsmall">
+						<option value="0">--select measure type series--</option>
+            <option value="F">F - Additional duty on sugar, flour</option>
+<option value="D">D - Anti-dumping or countervailing duties</option>
+<option value="C">C - Applicable duty</option>
+<option value="J">J - Countervailing charge</option>
+<option value="B">B - Entry into free circulation or exportation subject to conditions</option>
+<option value="A">A - Importation and/or exportation prohibited</option>
+<option value="E">E - Levies, export refunds and other agricultural amounts</option>
+<option value="N">N - Posterior surveillance</option>
+<option value="S">S - Supplementary amount</option>
+<option value="O">O - Supplementary unit</option>
+<option value="M">M - Unit price, standard import value, representative price (poultry, sugar)</option>
+
+					</select>
+					<select class="form-control form-control-1-3 font-xsmall">
+						<option value="0">--select measure type--</option>
+            <option value="695">695 - Additional duties</option>
+<option value="652">652 - Additional duty based on cif price</option>
+<option value="674">674 - Agricultural component</option>
+<option value="119">119 - Airworthiness tariff suspension</option>
+<option value="673">673 - Amount of additional duty on flour</option>
+<option value="564">564 - Anti-dumping or countervailing registration</option>
+<option value="570">570 - Anti-dumping/countervailing duty - Control</option>
+<option value="555">555 - Anti-dumping/countervailing duty - Pending collection</option>
+<option value="565">565 - Anti-dumping/countervailing review</option>
+<option value="566">566 - Anti-dumping/countervailing statistic</option>
+<option value="115">115 - Autonomous suspension under end-use</option>
+<option value="112">112 - Autonomous tariff suspension</option>
+<option value="447">447 - Confidential Export Monitoring</option>
+<option value="431">431 - Control of particulars of the declaration (suspicious net weight/supplementary unit)</option>
+<option value="430">430 - Control of particulars of the declaration (suspicious value/net weight or value/supplementary unit)</option>
+<option value="719">719 - Control on illegal, unreported and unregulated fishing</option>
+<option value="106">106 - Customs Union Duty</option>
+<option value="147">147 - Customs Union Quota</option>
+<option value="464">464 - Declaration of subheading submitted to end-use provisions</option>
+<option value="485">485 - Declaration of subheading submitted to restrictions (export)</option>
+<option value="481">481 - Declaration of subheading submitted to restrictions (import)</option>
+<option value="482">482 - Declaration of subheading submitted to restrictions (net weight/supplementary unit)</option>
+<option value="552">552 - Definitive anti-dumping duty</option>
+<option value="554">554 - Definitive countervailing duty</option>
+<option value="420">420 - Entry into free circulation (prior surveillance)</option>
+<option value="722">722 - Entry into free circulation (restriction - feed and food)</option>
+<option value="478">478 - Export authorization (Dual use)</option>
+<option value="709">709 - Export control</option>
+<option value="751">751 - Export control - Waste</option>
+<option value="749">749 - Export control of mercury</option>
+<option value="718">718 - Export control on luxury goods</option>
+<option value="717">717 - Export control on restricted goods and technologies</option>
+<option value="278">278 - Export prohibition</option>
+<option value="706">706 - Goods for torture and repression, export prohibition</option>
+<option value="708">708 - Goods for torture and repression, export restriction</option>
+<option value="707">707 - Import control</option>
+<option value="714">714 - Import control</option>
+<option value="760">760 - Import control</option>
+<option value="710">710 - Import control - CITES</option>
+<option value="712">712 - Import control - IAS</option>
+<option value="755">755 - Import control - waste</option>
+<option value="724">724 - Import control of fluorinated greenhouse gases</option>
+<option value="748">748 - Import control of mercury</option>
+<option value="713">713 - Import control on genetically modified organisms (GMO) and products containing GMOs</option>
+<option value="728">728 - Import control on luxury goods</option>
+<option value="711">711 - Import control on restricted goods and technologies</option>
+<option value="746">746 - Import control on seal products</option>
+<option value="277">277 - Import prohibition</option>
+<option value="105">105 - Non preferential duty under end-use</option>
+<option value="122">122 - Non preferential tariff quota</option>
+<option value="123">123 - Non preferential tariff quota under end-use</option>
+<option value="561">561 - Notice of initiation of an anti-dumping or countervailing proceeding</option>
+<option value="145">145 - Preference under end-use</option>
+<option value="143">143 - Preferential tariff quota</option>
+<option value="146">146 - Preferential tariff quota under end-use</option>
+<option value="551">551 - Provisional anti-dumping duty</option>
+<option value="489">489 - Representative price</option>
+<option value="465">465 - Restriction on entry into free circulation</option>
+<option value="475">475 - Restriction on entry into free circulation</option>
+<option value="467">467 - Restriction on export</option>
+<option value="476">476 - Restriction on export</option>
+<option value="651">651 - Security based on representative price</option>
+<option value="490">490 - Standard import value</option>
+<option value="110">110 - Supplementary unit import</option>
+<option value="562">562 - Suspended anti-dumping or countervailing duty</option>
+<option value="117">117 - Suspension - goods for certain categories of ships, boats and other vessels and for drilling or production platforms</option>
+<option value="142">142 - Tariff preference</option>
+<option value="103">103 - Third country duty</option>
+<option value="410">410 - Veterinary control</option>
+
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label class="form-label">Select the regulation that generates this measure</label>
+					<select class="form-control form-control-1-3 font-xsmall">
+						<option value="0">--start typing--</option>
+            <option value="A730003">A730003</option>
+<option value="A850001">A850001</option>
+<option value="A950001">A950001</option>
+<option value="C060303">C060303</option>
+<option value="C140136">C140136</option>
+<option value="C170199">C170199</option>
+<option value="D000002">D000002</option>
+<option value="D000204">D000204</option>
+<option value="D000415">D000415</option>
+<option value="D000822">D000822</option>
+<option value="D010108">D010108</option>
+<option value="D010123">D010123</option>
+<option value="D010140">D010140</option>
+<option value="D020134">D020134</option>
+<option value="D020245">D020245</option>
+<option value="D020309">D020309</option>
+<option value="D020357">D020357</option>
+<option value="D020606">D020606</option>
+<option value="D020979">D020979</option>
+<option value="D030465">D030465</option>
+<option value="D030899">D030899</option>
+<option value="D030914">D030914</option>
+<option value="D040138">D040138</option>
+<option value="D040239">D040239</option>
+<option value="D040368">D040368</option>
+<option value="D040635">D040635</option>
+<option value="D040776">D040776</option>
+<option value="D040859">D040859</option>
+<option value="D050045">D050045</option>
+<option value="D050394">D050394</option>
+<option value="D050690">D050690</option>
+<option value="D050955">D050955</option>
+<option value="D060022">D060022</option>
+<option value="D060067">D060067</option>
+<option value="D060093">D060093</option>
+<option value="D060232">D060232</option>
+<option value="D060356">D060356</option>
+<option value="D060561">D060561</option>
+<option value="D060772">D060772</option>
+<option value="D060792">D060792</option>
+<option value="D070138">D070138</option>
+<option value="D070275">D070275</option>
+<option value="D070658">D070658</option>
+<option value="D080260">D080260</option>
+<option value="D080474">D080474</option>
+<option value="D080805">D080805</option>
+<option value="D090048">D090048</option>
+<option value="D090152">D090152</option>
+<option value="D090332">D090332</option>
+<option value="D090729">D090729</option>
+<option value="D090855">D090855</option>
+<option value="D090867">D090867</option>
+<option value="D100036">D100036</option>
+<option value="D100224">D100224</option>
+<option value="D100240">D100240</option>
+<option value="D110122">D110122</option>
+<option value="D110265">D110265</option>
+<option value="D110304">D110304</option>
+<option value="D110818">D110818</option>
+<option value="D110824">D110824</option>
+<option value="D110876">D110876</option>
+<option value="D110884">D110884</option>
+<option value="D120196">D120196</option>
+<option value="D120497">D120497</option>
+<option value="D120734">D120734</option>
+<option value="D120735">D120735</option>
+<option value="D130066">D130066</option>
+<option value="D130092">D130092</option>
+<option value="D130490">D130490</option>
+<option value="D130755">D130755</option>
+<option value="D140088">D140088</option>
+<option value="D140223">D140223</option>
+<option value="D140284">D140284</option>
+<option value="D140295">D140295</option>
+<option value="D140461">D140461</option>
+<option value="D140492">D140492</option>
+<option value="D140494">D140494</option>
+<option value="D140512">D140512</option>
+<option value="D151764">D151764</option>
+<option value="D152362">D152362</option>
+<option value="D160342">D160342</option>
+<option value="D161623">D161623</option>
+<option value="D161850">D161850</option>
+<option value="D162369">D162369</option>
+<option value="D170001">D170001</option>
+<option value="D170037">D170037</option>
+<option value="D170322">D170322</option>
+<option value="D171923">D171923</option>
+<option value="D171924">D171924</option>
+<option value="D791031">D791031</option>
+<option value="D860559">D860559</option>
+<option value="D880598">D880598</option>
+<option value="D900680">D900680</option>
+<option value="D930186">D930186</option>
+<option value="D930690">D930690</option>
+<option value="D940001">D940001</option>
+<option value="D960142">D960142</option>
+<option value="D960528">D960528</option>
+<option value="D970126">D970126</option>
+<option value="D970430">D970430</option>
+<option value="D970447">D970447</option>
+<option value="D971401">D971401</option>
+<option value="D980115">D980115</option>
+<option value="D980223">D980223</option>
+<option value="D980238">D980238</option>
+<option value="D980366">D980366</option>
+<option value="D980684">D980684</option>
+<option value="D990456">D990456</option>
+<option value="D990492">D990492</option>
+<option value="I040097">I040097</option>
+<option value="I050195">I050195</option>
+<option value="I060186">I060186</option>
+<option value="I090291">I090291</option>
+<option value="I140299">I140299</option>
+<option value="I140433">I140433</option>
+<option value="I140457">I140457</option>
+<option value="I160336">I160336</option>
+<option value="I160373">I160373</option>
+<option value="I160461">I160461</option>
+<option value="I170041">I170041</option>
+<option value="I170067">I170067</option>
+<option value="I170117">I170117</option>
+<option value="I170122">I170122</option>
+<option value="I170200">I170200</option>
+<option value="I170251">I170251</option>
+<option value="I170264">I170264</option>
+<option value="I170290">I170290</option>
+<option value="I170353">I170353</option>
+<option value="I170377">I170377</option>
+<option value="I170416">I170416</option>
+<option value="I170438">I170438</option>
+<option value="I180031">I180031</option>
+<option value="I180034">I180034</option>
+<option value="I990294">I990294</option>
+<option value="I990298">I990298</option>
+<option value="IYY9999">IYY9999</option>
+<option value="J170334">J170334</option>
+<option value="R000032">R000032</option>
+<option value="R001362">R001362</option>
+<option value="R002388">R002388</option>
+<option value="R010747">R010747</option>
+<option value="R012031">R012031</option>
+<option value="R012133">R012133</option>
+<option value="R012433">R012433</option>
+<option value="R012535">R012535</option>
+<option value="R012559">R012559</option>
+<option value="R012597">R012597</option>
+<option value="R020660">R020660</option>
+<option value="R021147">R021147</option>
+<option value="R021686">R021686</option>
+<option value="R021832">R021832</option>
+<option value="R022368">R022368</option>
+<option value="R030209">R030209</option>
+<option value="R030312">R030312</option>
+<option value="R031210">R031210</option>
+<option value="R031472">R031472</option>
+<option value="R031784">R031784</option>
+<option value="R031789">R031789</option>
+<option value="R031984">R031984</option>
+<option value="R040050">R040050</option>
+<option value="R041140">R041140</option>
+<option value="R041810">R041810</option>
+<option value="R042094">R042094</option>
+<option value="R050111">R050111</option>
+<option value="R051236">R051236</option>
+<option value="R051460">R051460</option>
+<option value="R051653">R051653</option>
+<option value="R051719">R051719</option>
+<option value="R052172">R052172</option>
+<option value="R060019">R060019</option>
+<option value="R060426">R060426</option>
+<option value="R060711">R060711</option>
+<option value="R060765">R060765</option>
+<option value="R060838">R060838</option>
+<option value="R060847">R060847</option>
+<option value="R060899">R060899</option>
+<option value="R060928">R060928</option>
+<option value="R060937">R060937</option>
+<option value="R060969">R060969</option>
+<option value="R060970">R060970</option>
+<option value="R060972">R060972</option>
+<option value="R060973">R060973</option>
+<option value="R061013">R061013</option>
+<option value="R061368">R061368</option>
+<option value="R061549">R061549</option>
+<option value="R061712">R061712</option>
+<option value="R061742">R061742</option>
+<option value="R061916">R061916</option>
+<option value="R061918">R061918</option>
+<option value="R061930">R061930</option>
+<option value="R061979">R061979</option>
+<option value="R070129">R070129</option>
+<option value="R070218">R070218</option>
+<option value="R070341">R070341</option>
+<option value="R070501">R070501</option>
+<option value="R070533">R070533</option>
+<option value="R070536">R070536</option>
+<option value="R070539">R070539</option>
+<option value="R070580">R070580</option>
+<option value="R070616">R070616</option>
+<option value="R070759">R070759</option>
+<option value="R070816">R070816</option>
+<option value="R070834">R070834</option>
+<option value="R070880">R070880</option>
+<option value="R071214">R071214</option>
+<option value="R071220">R071220</option>
+<option value="R071375">R071375</option>
+<option value="R071381">R071381</option>
+<option value="R071385">R071385</option>
+<option value="R071475">R071475</option>
+<option value="R071518">R071518</option>
+<option value="R071523">R071523</option>
+<option value="R071565">R071565</option>
+<option value="R080052">R080052</option>
+<option value="R080053">R080053</option>
+<option value="R080065">R080065</option>
+<option value="R080066">R080066</option>
+<option value="R080113">R080113</option>
+<option value="R080412">R080412</option>
+<option value="R080431">R080431</option>
+<option value="R080497">R080497</option>
+<option value="R080555">R080555</option>
+<option value="R080821">R080821</option>
+<option value="R080972">R080972</option>
+<option value="R081005">R081005</option>
+<option value="R081031">R081031</option>
+<option value="R081067">R081067</option>
+<option value="R081295">R081295</option>
+<option value="R090054">R090054</option>
+<option value="R090116">R090116</option>
+<option value="R090437">R090437</option>
+<option value="R090438">R090438</option>
+<option value="R090442">R090442</option>
+<option value="R090539">R090539</option>
+<option value="R090610">R090610</option>
+<option value="R090803">R090803</option>
+<option value="R090891">R090891</option>
+<option value="R090933">R090933</option>
+<option value="R090948">R090948</option>
+<option value="R091005">R091005</option>
+<option value="R091126">R091126</option>
+<option value="R091153">R091153</option>
+<option value="R091154">R091154</option>
+<option value="R100192">R100192</option>
+<option value="R100449">R100449</option>
+<option value="R100640">R100640</option>
+<option value="R100861">R100861</option>
+<option value="R101085">R101085</option>
+<option value="R101099">R101099</option>
+<option value="R101228">R101228</option>
+<option value="R101238">R101238</option>
+<option value="R101255">R101255</option>
+<option value="R110059">R110059</option>
+<option value="R110230">R110230</option>
+<option value="R110284">R110284</option>
+<option value="R110321">R110321</option>
+<option value="R110333">R110333</option>
+<option value="R110343">R110343</option>
+<option value="R110354">R110354</option>
+<option value="R110620">R110620</option>
+<option value="R110791">R110791</option>
+<option value="R110799">R110799</option>
+<option value="R111006">R111006</option>
+<option value="R111093">R111093</option>
+<option value="R111253">R111253</option>
+<option value="R111273">R111273</option>
+<option value="R111331">R111331</option>
+<option value="R111336">R111336</option>
+<option value="R111344">R111344</option>
+<option value="R111352">R111352</option>
+<option value="R111354">R111354</option>
+<option value="R120014">R120014</option>
+<option value="R120036">R120036</option>
+<option value="R120102">R120102</option>
+<option value="R120157">R120157</option>
+<option value="R120168">R120168</option>
+<option value="R120191">R120191</option>
+<option value="R120258">R120258</option>
+<option value="R120264">R120264</option>
+<option value="R120267">R120267</option>
+<option value="R120325">R120325</option>
+<option value="R120349">R120349</option>
+<option value="R120374">R120374</option>
+<option value="R120480">R120480</option>
+<option value="R120481">R120481</option>
+<option value="R120509">R120509</option>
+<option value="R120514">R120514</option>
+<option value="R120558">R120558</option>
+<option value="R120585">R120585</option>
+<option value="R120626">R120626</option>
+<option value="R120642">R120642</option>
+<option value="R120649">R120649</option>
+<option value="R120672">R120672</option>
+<option value="R120795">R120795</option>
+<option value="R120796">R120796</option>
+<option value="R120812">R120812</option>
+<option value="R120927">R120927</option>
+<option value="R120978">R120978</option>
+<option value="R121039">R121039</option>
+<option value="R121153">R121153</option>
+<option value="R121218">R121218</option>
+<option value="R121223">R121223</option>
+<option value="R121231">R121231</option>
+<option value="R121232">R121232</option>
+<option value="R121235">R121235</option>
+<option value="R121246">R121246</option>
+<option value="R121269">R121269</option>
+<option value="R130078">R130078</option>
+<option value="R130082">R130082</option>
+<option value="R130157">R130157</option>
+<option value="R130214">R130214</option>
+<option value="R130215">R130215</option>
+<option value="R130217">R130217</option>
+<option value="R130302">R130302</option>
+<option value="R130372">R130372</option>
+<option value="R130401">R130401</option>
+<option value="R130404">R130404</option>
+<option value="R130405">R130405</option>
+<option value="R130412">R130412</option>
+<option value="R130430">R130430</option>
+<option value="R130461">R130461</option>
+<option value="R130501">R130501</option>
+<option value="R130502">R130502</option>
+<option value="R130508">R130508</option>
+<option value="R130512">R130512</option>
+<option value="R130593">R130593</option>
+<option value="R130624">R130624</option>
+<option value="R130695">R130695</option>
+<option value="R130697">R130697</option>
+<option value="R130740">R130740</option>
+<option value="R130741">R130741</option>
+<option value="R130743">R130743</option>
+<option value="R130748">R130748</option>
+<option value="R130861">R130861</option>
+<option value="R130871">R130871</option>
+<option value="R130875">R130875</option>
+<option value="R130922">R130922</option>
+<option value="R130923">R130923</option>
+<option value="R130924">R130924</option>
+<option value="R130952">R130952</option>
+<option value="R130974">R130974</option>
+<option value="R130975">R130975</option>
+<option value="R130976">R130976</option>
+<option value="R130977">R130977</option>
+<option value="R131001">R131001</option>
+<option value="R131011">R131011</option>
+<option value="R131012">R131012</option>
+<option value="R131215">R131215</option>
+<option value="R131259">R131259</option>
+<option value="R131308">R131308</option>
+<option value="R131325">R131325</option>
+<option value="R131326">R131326</option>
+<option value="R131332">R131332</option>
+<option value="R131343">R131343</option>
+<option value="R131366">R131366</option>
+<option value="R131387">R131387</option>
+<option value="R131388">R131388</option>
+<option value="R140190">R140190</option>
+<option value="R140191">R140191</option>
+<option value="R140307">R140307</option>
+<option value="R140323">R140323</option>
+<option value="R140360">R140360</option>
+<option value="R140471">R140471</option>
+<option value="R140489">R140489</option>
+<option value="R140493">R140493</option>
+<option value="R140494">R140494</option>
+<option value="R140517">R140517</option>
+<option value="R140704">R140704</option>
+<option value="R140705">R140705</option>
+<option value="R140718">R140718</option>
+<option value="R140722">R140722</option>
+<option value="R140747">R140747</option>
+<option value="R140775">R140775</option>
+<option value="R140803">R140803</option>
+<option value="R140833">R140833</option>
+<option value="R140885">R140885</option>
+<option value="R140976">R140976</option>
+<option value="R140988">R140988</option>
+<option value="R140989">R140989</option>
+<option value="R140999">R140999</option>
+<option value="R141021">R141021</option>
+<option value="R141078">R141078</option>
+<option value="R141101">R141101</option>
+<option value="R141206">R141206</option>
+<option value="R141283">R141283</option>
+<option value="R141313">R141313</option>
+<option value="R141323">R141323</option>
+<option value="R141335">R141335</option>
+<option value="R141341">R141341</option>
+<option value="R141346">R141346</option>
+<option value="R141379">R141379</option>
+<option value="R141382">R141382</option>
+<option value="R150050">R150050</option>
+<option value="R150082">R150082</option>
+<option value="R150083">R150083</option>
+<option value="R150084">R150084</option>
+<option value="R150110">R150110</option>
+<option value="R150175">R150175</option>
+<option value="R150309">R150309</option>
+<option value="R150525">R150525</option>
+<option value="R150735">R150735</option>
+<option value="R150776">R150776</option>
+<option value="R150781">R150781</option>
+<option value="R150831">R150831</option>
+<option value="R150865">R150865</option>
+<option value="R150936">R150936</option>
+<option value="R150943">R150943</option>
+<option value="R150949">R150949</option>
+<option value="R150982">R150982</option>
+<option value="R151019">R151019</option>
+<option value="R151350">R151350</option>
+<option value="R151394">R151394</option>
+<option value="R151429">R151429</option>
+<option value="R151518">R151518</option>
+<option value="R151519">R151519</option>
+<option value="R151607">R151607</option>
+<option value="R151754">R151754</option>
+<option value="R151821">R151821</option>
+<option value="R151846">R151846</option>
+<option value="R151850">R151850</option>
+<option value="R151934">R151934</option>
+<option value="R151952">R151952</option>
+<option value="R151953">R151953</option>
+<option value="R151963">R151963</option>
+<option value="R152076">R152076</option>
+<option value="R152077">R152077</option>
+<option value="R152078">R152078</option>
+<option value="R152079">R152079</option>
+<option value="R152080">R152080</option>
+<option value="R152081">R152081</option>
+<option value="R152229">R152229</option>
+<option value="R152265">R152265</option>
+<option value="R152272">R152272</option>
+<option value="R152384">R152384</option>
+<option value="R152385">R152385</option>
+<option value="R152405">R152405</option>
+<option value="R152420">R152420</option>
+<option value="R152447">R152447</option>
+<option value="R152448">R152448</option>
+<option value="R152449">R152449</option>
+<option value="R160024">R160024</option>
+<option value="R160032">R160032</option>
+<option value="R160044">R160044</option>
+<option value="R160226">R160226</option>
+<option value="R160306">R160306</option>
+<option value="R160387">R160387</option>
+<option value="R160388">R160388</option>
+<option value="R160443">R160443</option>
+<option value="R160670">R160670</option>
+<option value="R160675">R160675</option>
+<option value="R160676">R160676</option>
+<option value="R160703">R160703</option>
+<option value="R160704">R160704</option>
+<option value="R160874">R160874</option>
+<option value="R161024">R161024</option>
+<option value="R161036">R161036</option>
+<option value="R161046">R161046</option>
+<option value="R161047">R161047</option>
+<option value="R161050">R161050</option>
+<option value="R161051">R161051</option>
+<option value="R161076">R161076</option>
+<option value="R161077">R161077</option>
+<option value="R161159">R161159</option>
+<option value="R161160">R161160</option>
+<option value="R161167">R161167</option>
+<option value="R161219">R161219</option>
+<option value="R161237">R161237</option>
+<option value="R161246">R161246</option>
+<option value="R161247">R161247</option>
+<option value="R161328">R161328</option>
+<option value="R161422">R161422</option>
+<option value="R161443">R161443</option>
+<option value="R161733">R161733</option>
+<option value="R161821">R161821</option>
+<option value="R161969">R161969</option>
+<option value="R162081">R162081</option>
+<option value="R162106">R162106</option>
+<option value="R162107">R162107</option>
+<option value="R162253">R162253</option>
+<option value="R162293">R162293</option>
+<option value="R162389">R162389</option>
+<option value="R162390">R162390</option>
+<option value="R170094">R170094</option>
+<option value="R170109">R170109</option>
+<option value="R170120">R170120</option>
+<option value="R170160">R170160</option>
+<option value="R170186">R170186</option>
+<option value="R170220">R170220</option>
+<option value="R170271">R170271</option>
+<option value="R170284">R170284</option>
+<option value="R170336">R170336</option>
+<option value="R170366">R170366</option>
+<option value="R170367">R170367</option>
+<option value="R170421">R170421</option>
+<option value="R170422">R170422</option>
+<option value="R170648">R170648</option>
+<option value="R170659">R170659</option>
+<option value="R170724">R170724</option>
+<option value="R170750">R170750</option>
+<option value="R170754">R170754</option>
+<option value="R170763">R170763</option>
+<option value="R170804">R170804</option>
+<option value="R170852">R170852</option>
+<option value="R170882">R170882</option>
+<option value="R170892">R170892</option>
+<option value="R170942">R170942</option>
+<option value="R170967">R170967</option>
+<option value="R170968">R170968</option>
+<option value="R170969">R170969</option>
+<option value="R171019">R171019</option>
+<option value="R171085">R171085</option>
+<option value="R171092">R171092</option>
+<option value="R171133">R171133</option>
+<option value="R171134">R171134</option>
+<option value="R171141">R171141</option>
+<option value="R171142">R171142</option>
+<option value="R171146">R171146</option>
+<option value="R171159">R171159</option>
+<option value="R171171">R171171</option>
+<option value="R171187">R171187</option>
+<option value="R171188">R171188</option>
+<option value="R171263">R171263</option>
+<option value="R171325">R171325</option>
+<option value="R171348">R171348</option>
+<option value="R171464">R171464</option>
+<option value="R171466">R171466</option>
+<option value="R171482">R171482</option>
+<option value="R171509">R171509</option>
+<option value="R171514">R171514</option>
+<option value="R171548">R171548</option>
+<option value="R171566">R171566</option>
+<option value="R171570">R171570</option>
+<option value="R171578">R171578</option>
+<option value="R171585">R171585</option>
+<option value="R171586">R171586</option>
+<option value="R171759">R171759</option>
+<option value="R171772">R171772</option>
+<option value="R171781">R171781</option>
+<option value="R171795">R171795</option>
+<option value="R171835">R171835</option>
+<option value="R171836">R171836</option>
+<option value="R171925">R171925</option>
+<option value="R171957">R171957</option>
+<option value="R171993">R171993</option>
+<option value="R171994">R171994</option>
+<option value="R171997">R171997</option>
+<option value="R172058">R172058</option>
+<option value="R172062">R172062</option>
+<option value="R172063">R172063</option>
+<option value="R172179">R172179</option>
+<option value="R172200">R172200</option>
+<option value="R172206">R172206</option>
+<option value="R172207">R172207</option>
+<option value="R172213">R172213</option>
+<option value="R172230">R172230</option>
+<option value="R172268">R172268</option>
+<option value="R172298">R172298</option>
+<option value="R172300">R172300</option>
+<option value="R172310">R172310</option>
+<option value="R172466">R172466</option>
+<option value="R172467">R172467</option>
+<option value="R180028">R180028</option>
+<option value="R180049">R180049</option>
+<option value="R180127">R180127</option>
+<option value="R180140">R180140</option>
+<option value="R180163">R180163</option>
+<option value="R180186">R180186</option>
+<option value="R722840">R722840</option>
+<option value="R722842">R722842</option>
+<option value="R731691">R731691</option>
+<option value="R760102">R760102</option>
+<option value="R782216">R782216</option>
+<option value="R810139">R810139</option>
+<option value="R872658">R872658</option>
+<option value="R892886">R892886</option>
+<option value="R903491">R903491</option>
+<option value="R912587">R912587</option>
+<option value="R913254">R913254</option>
+<option value="R922505">R922505</option>
+<option value="R930054">R930054</option>
+<option value="R932551">R932551</option>
+<option value="R940517">R940517</option>
+<option value="R943115">R943115</option>
+<option value="R943281">R943281</option>
+<option value="R951359">R951359</option>
+<option value="R951600">R951600</option>
+<option value="R952448">R952448</option>
+<option value="R953009">R953009</option>
+<option value="R953050">R953050</option>
+<option value="R953061">R953061</option>
+<option value="R960440">R960440</option>
+<option value="R961734">R961734</option>
+<option value="R961831">R961831</option>
+<option value="R970088">R970088</option>
+<option value="R970196">R970196</option>
+<option value="R971153">R971153</option>
+<option value="R972008">R972008</option>
+<option value="R972086">R972086</option>
+<option value="R972216">R972216</option>
+<option value="R972308">R972308</option>
+<option value="R982261">R982261</option>
+<option value="R990194">R990194</option>
+<option value="R991506">R991506</option>
+<option value="R992114">R992114</option>
+<option value="R992204">R992204</option>
+<option value="R992471">R992471</option>
+
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label class="form-label">Enter the commodity code to which the measure applies</label>
+					<input type="text" maxlength="10" class="form-control form-control-1-4 font-xsmall"></input>
+				</div>
+
+				<div class="form-group">
+					<label class="form-label">Enter the additional code to which the measure applies</label>
+					<input type="text" maxlength="4" class="form-control form-control-1-4 font-xsmall"></input>
+				</div>
+
+				<div class="form-group">
+					<div class="column-half nopad">
+						<label class="form-label">Validity start date between</label>
+						<select class="form-control form-control-1-4 font-xsmall">
+							<option value="0">Day</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+						</select>
+						<select class="form-control form-control-1-4 font-xsmall">
+							<option value="0">Month</option>
+              <option value="1">Jan</option>
+              <option value="2">Feb</option>
+              <option value="3">Mar</option>
+              <option value="4">Apr</option>
+              <option value="5">May</option>
+              <option value="6">Jun</option>
+              <option value="7">Jul</option>
+              <option value="8">Aug</option>
+              <option value="9">Sep</option>
+              <option value="10">Oct</option>
+              <option value="11">Nov</option>
+              <option value="12">Dec</option>
+						</select>
+						<select class="form-control form-control-1-4 font-xsmall">
+							<option value="0">Year</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+              <option value="2009">2009</option>
+              <option value="2008">2008</option>
+              <option value="2007">2007</option>
+              <option value="2006">2006</option>
+              <option value="2005">2005</option>
+              <option value="2004">2004</option>
+              <option value="2003">2003</option>
+              <option value="2002">2002</option>
+              <option value="2001">2001</option>
+              <option value="2000">2000</option>
+              <option value="1999">1999</option>
+              <option value="1998">1998</option>
+              <option value="1997">1997</option>
+              <option value="1996">1996</option>
+              <option value="1995">1995</option>
+              <option value="1994">1994</option>
+              <option value="1993">1993</option>
+              <option value="1992">1992</option>
+              <option value="1991">1991</option>
+              <option value="1990">1990</option>
+              <option value="1989">1989</option>
+              <option value="1988">1988</option>
+              <option value="1987">1987</option>
+              <option value="1986">1986</option>
+              <option value="1985">1985</option>
+              <option value="1984">1984</option>
+              <option value="1983">1983</option>
+              <option value="1982">1982</option>
+              <option value="1981">1981</option>
+              <option value="1980">1980</option>
+              <option value="1979">1979</option>
+              <option value="1978">1978</option>
+              <option value="1977">1977</option>
+              <option value="1976">1976</option>
+              <option value="1975">1975</option>
+              <option value="1974">1974</option>
+              <option value="1973">1973</option>
+              <option value="1972">1972</option>
+						</select>
+						<p><label class="form-label">and</label></p>
+						<select class="form-control form-control-1-4 font-xsmall">
+							<option value="0">Day</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+						</select>
+						<select class="form-control form-control-1-4 font-xsmall">
+							<option value="0">Month</option>
+              <option value="1">Jan</option>
+              <option value="2">Feb</option>
+              <option value="3">Mar</option>
+              <option value="4">Apr</option>
+              <option value="5">May</option>
+              <option value="6">Jun</option>
+              <option value="7">Jul</option>
+              <option value="8">Aug</option>
+              <option value="9">Sep</option>
+              <option value="10">Oct</option>
+              <option value="11">Nov</option>
+              <option value="12">Dec</option>
+						</select>
+						<select class="form-control form-control-1-4 font-xsmall">
+							<option value="0">Year</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+              <option value="2009">2009</option>
+              <option value="2008">2008</option>
+              <option value="2007">2007</option>
+              <option value="2006">2006</option>
+              <option value="2005">2005</option>
+              <option value="2004">2004</option>
+              <option value="2003">2003</option>
+              <option value="2002">2002</option>
+              <option value="2001">2001</option>
+              <option value="2000">2000</option>
+              <option value="1999">1999</option>
+              <option value="1998">1998</option>
+              <option value="1997">1997</option>
+              <option value="1996">1996</option>
+              <option value="1995">1995</option>
+              <option value="1994">1994</option>
+              <option value="1993">1993</option>
+              <option value="1992">1992</option>
+              <option value="1991">1991</option>
+              <option value="1990">1990</option>
+              <option value="1989">1989</option>
+              <option value="1988">1988</option>
+              <option value="1987">1987</option>
+              <option value="1986">1986</option>
+              <option value="1985">1985</option>
+              <option value="1984">1984</option>
+              <option value="1983">1983</option>
+              <option value="1982">1982</option>
+              <option value="1981">1981</option>
+              <option value="1980">1980</option>
+              <option value="1979">1979</option>
+              <option value="1978">1978</option>
+              <option value="1977">1977</option>
+              <option value="1976">1976</option>
+              <option value="1975">1975</option>
+              <option value="1974">1974</option>
+              <option value="1973">1973</option>
+              <option value="1972">1972</option>
+						</select>
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					<label class="form-label">Regulation status</label>
+					<input type="checkbox"></input><label class="form-label2">Draft</label><br />
+					<input type="checkbox"></input><label class="form-label2">Live</label>
+				</div>
+
+
+				<div class="form-group">
+					<label class="form-label">Select the geographical area to which this measure applies
+					<span class="form-hint">Please select one or more geographical areas from the list below. If you need to select multiple
+geographical areas, please use the Shift key and click on multiple geographical areas</span></label>
+					<select class="form-control form-control-1-2 font-xsmall">
+						<option value="0">-- Select a geographical area --</option>
+            <option value="1031">ACP AFRIC. CARIB. PACIFIC.</option>
+            <option value="AF">Afghanistan</option>
+            <option value="1099">AL, BA, CS</option>
+            <option value="1099">AL, BA, HR</option>
+            <option value="1099">AL, BA, HR, MK, YU</option>
+            <option value="1099">AL, BA, HR, YU</option>
+            <option value="1099">AL, BA, ME, XK, XS</option>
+            <option value="1099">AL, BA, XK, XM, XS</option>
+            <option value="1099">AL, BA, YU</option>
+            <option value="AL">Albania</option>
+            <option value="DZ">Algeria</option>
+            <option value="1009">All destinations - export refund</option>
+            <option value="1008">All third countries</option>
+            <option value="AD">Andorra</option>
+            <option value="AO">Angola</option>
+            <option value="AG">Antigua and Barbuda</option>
+            <option value="AR">Argentina</option>
+            <option value="AM">Armenia</option>
+            <option value="AW">Aruba</option>
+            <option value="AU">Australia</option>
+            <option value="AT">Austria</option>
+            <option value="AZ">Azerbaijan</option>
+            <option value="2037">BA, HR</option>
+            <option value="2037">BA, HR, XJ</option>
+            <option value="2037">BA, HR, XJ, SI</option>
+            <option value="2034">BA,XJ,HR,SI</option>
+            <option value="BH">Bahrain</option>
+            <option value="BD">Bangladesh</option>
+            <option value="BB">Barbados</option>
+            <option value="BY">Belarus</option>
+            <option value="BZ">Belize</option>
+            <option value="BJ">Benin</option>
+            <option value="BT">Bhutan</option>
+            <option value="BO">Bolivia</option>
+            <option value="BA">Bosnia and Herzegovina</option>
+            <option value="BW">Botswana</option>
+            <option value="BR">Brazil</option>
+            <option value="BN">Brunei</option>
+            <option value="BG">Bulgaria</option>
+            <option value="BF">Burkina Faso</option>
+            <option value="KH">Cambodia (Kampuchea)</option>
+            <option value="CM">Cameroon</option>
+            <option value="CA">Canada</option>
+            <option value="XB">Canary Islands</option>
+            <option value="2050">Canary Islands, Ceuta, Melilla</option>
+            <option value="CV">Cape Verde</option>
+            <option value="1033">CARIFORUM</option>
+            <option value="2200">Central America</option>
+            <option value="2301">Certain handicraft products (Handicrafts)</option>
+            <option value="XC">Ceuta</option>
+            <option value="XC">Ceuta and Melilla</option>
+            <option value="CL">Chile</option>
+            <option value="CN">China</option>
+            <option value="CS">Code not used</option>
+            <option value="XK">Code not used</option>
+            <option value="XM">Code not used</option>
+            <option value="CO">Colombia</option>
+            <option value="9A24">Commonwealth of Independent States</option>
+            <option value="CG">Congo (Republic of)</option>
+            <option value="CD">Congo, Democratic Republic of</option>
+            <option value="CR">Costa Rica</option>
+            <option value="1045">Countries covered by Reg 1447/2004 (farmed salmon")"</option>
+            <option value="1025">Countries covered by Reg 1694/2002 (safeguard measures)</option>
+            <option value="1018">Countries covered by Reg 1964/2003</option>
+            <option value="1045">Countries covered by Reg 206/2005 (farmed salmon")"</option>
+            <option value="1018">Countries covered by Reg 658/2004</option>
+            <option value="1020">Countries excluded from Reg. 1694/2002 (Safeguard Steel)</option>
+            <option value="1015">Countries excluded from Reg. 1964/2003</option>
+            <option value="1015">Countries excluded from Reg. 658/2004</option>
+            <option value="2501">Countries not members of the WTO</option>
+            <option value="1501">Countries of destination for export of hydrochloric acid and sulphuric acid</option>
+            <option value="1500">Countries of destination for export of methylethyl ketone, toluene, acetone and ethyl ether</option>
+            <option value="HR">Croatia</option>
+            <option value="CU">Cuba</option>
+            <option value="CY">Cyprus</option>
+            <option value="CS">Czech and Slovak Rep.</option>
+            <option value="CZ">Czech rep.</option>
+            <option value="DO">Dominican Republic</option>
+            <option value="1034">Eastern and Southern Africa States</option>
+            <option value="1032">Economic Partnership Agreements</option>
+            <option value="EC">Ecuador</option>
+            <option value="EG">Egypt</option>
+            <option value="SV">El Salvador</option>
+            <option value="1030">Eligible countries, GSP (General System of Preferences)</option>
+            <option value="GQ">Equatorial Guinea</option>
+            <option value="1011">ERGA OMNES</option>
+            <option value="1011">ERGA OMNES-CEE</option>
+            <option value="1003">Erga omnes excluding least developed countries</option>
+            <option value="1003">Erga omnes excluding the least developed countries (LDC) and the ACP countries</option>
+            <option value="EE">Estonia</option>
+            <option value="ET">Ethiopia</option>
+            <option value="1007">EU-Switzerland agreement: re-imported goods</option>
+            <option value="EU">European Community</option>
+            <option value="2012">European Economic Area</option>
+            <option value="EU">European Union</option>
+            <option value="2035">EX-SOVIET UNION</option>
+            <option value="9F04">Export refund Sector 10</option>
+            <option value="9F09">Export refund Sector 10</option>
+            <option value="9W01">Export refund Sector 15</option>
+            <option value="9W02">Export refund Sector 15</option>
+            <option value="9W03">Export refund Sector 15</option>
+            <option value="9024">Export refund Sector 2 Destination 4 (article 36 R99/800)</option>
+            <option value="9B03">Export refund Sector 5</option>
+            <option value="9B08">Export refund Sector 5</option>
+            <option value="9B09">Export refund Sector 5</option>
+            <option value="9061">Export refund Sector 6 Destination 01</option>
+            <option value="9V01">Export refund Sector 7</option>
+            <option value="9V02">Export refund Sector 7</option>
+            <option value="9E01">Export refund Sector 8</option>
+            <option value="9E03">Export refund Sector 8</option>
+            <option value="9L02">Export Refund Sector 9</option>
+            <option value="9092">Export refund Sector 9 Destination 097</option>
+            <option value="9E09">Export refund Sector Eggs - E09</option>
+            <option value="9E10">Export refund Sector Eggs - E10</option>
+            <option value="9L04">Export refund Sector Milk and Milk products - L04</option>
+            <option value="9V03">Export refund Sector Poultrymeat - V03</option>
+            <option value="910X">Export refund, Sector 10, Destination F01</option>
+            <option value="910Y">Export refund, Sector 10, Destination F02</option>
+            <option value="910Z">Export refund, Sector 10, Destination F03</option>
+            <option value="910D">Export refund, Sector 10, Destination F04</option>
+            <option value="910A">Export refund, Sector 10, Destination F07</option>
+            <option value="910A">Export refund, Sector 10, Destination F09</option>
+            <option value="9151">Export refund, Sector 15, Destination 01</option>
+            <option value="9152">Export refund, Sector 15, Destination 02</option>
+            <option value="9153">Export refund, Sector 15, Destination 03</option>
+            <option value="9R02">Export refund, Sector 2</option>
+            <option value="9R03">Export refund, Sector 2</option>
+            <option value="9022">Export refund, Sector 2, Destination 2</option>
+            <option value="9023">Export refund, Sector 2, Destination 2</option>
+            <option value="9052">Export refund, Sector 5, Destination 02</option>
+            <option value="9053">Export refund, Sector 5, Destination 03</option>
+            <option value="9058">Export refund, Sector 5, Destination 08</option>
+            <option value="9059">Export refund, Sector 5, Destination 09</option>
+            <option value="9072">Export refund, Sector 7, Destination 02</option>
+            <option value="9073">Export refund, Sector 7, Destination 03</option>
+            <option value="9083">Export refund, Sector 8, Destination 03</option>
+            <option value="9085">Export refund, Sector 8, Destination 05</option>
+            <option value="9093">Export refund, Sector 9, Destination 098</option>
+            <option value="9091">Export refund, Sector 9, Destination 099</option>
+            <option value="9L08">Export refund, Sector Milk and Milk products, group L08</option>
+            <option value="9P02">Export refunds for processed agricultural products containing eggs, Destination 02</option>
+            <option value="9P03">Export refunds for processed agricultural products containing eggs, Destination 03</option>
+            <option value="FK">Falkland Islands</option>
+            <option value="FO">Faroe Islands</option>
+            <option value="YU">Federal Republic of Yugoslavia</option>
+            <option value="YF">Federal Republic of Yugoslavia (Serbia and Montenegro)</option>
+            <option value="FJ">Fiji</option>
+            <option value="FI">Finland</option>
+            <option value="XM">Former Yugoslav Republic of Macedonia</option>
+            <option value="PF">French Polynesia</option>
+            <option value="GM">Gambia</option>
+            <option value="GE">Georgia</option>
+            <option value="DE">Germany</option>
+            <option value="GH">Ghana</option>
+            <option value="GL">Greenland</option>
+            <option value="1030">GSP - General System of Preferences</option>
+            <option value="2005">GSP (R 01/2501) - Annex I Column H</option>
+            <option value="2020">GSP (R 01/2501) - General arrangements</option>
+            <option value="2005">GSP (R 08/732) - Annex I Column D</option>
+            <option value="2020">GSP (R 08/732) - General arrangements</option>
+            <option value="2005">GSP (R 12/978) - Annex IV</option>
+            <option value="2020">GSP (R 12/978) - General arrangements</option>
+            <option value="2022">GSP (R03/0815 - Art. 1(1)) - MX</option>
+            <option value="2023">GSP (R03/0815 - Art. 1(1)) - TN</option>
+            <option value="2021">GSP (R03/0815 - Art.1(1)) - MA</option>
+            <option value="2027">GSP + (incentive arrangement for sustainable development and good governance)</option>
+            <option value="2010">GSP LEAST DEVELOPED COUNTRIES</option>
+            <option value="2027">GSP(R 01/2501) - Annex I Column I</option>
+            <option value="2027">GSP+ (incentive arrangement for sustainable development and good governance)</option>
+            <option value="2027">GT, HN, SV, NI, CR, PA, BO, CO, EC, PE, VE</option>
+            <option value="GT">Guatemala</option>
+            <option value="GN">Guinea</option>
+            <option value="GY">Guyana</option>
+            <option value="HT">Haiti</option>
+            <option value="2070">HANDI</option>
+            <option value="D010">Home Office - Precursor Drugs Licensing - Exports</option>
+            <option value="D063">Home Office - Precursor Drugs Licensing - Exports</option>
+            <option value="D064">Home Office - Precursor Drugs Licensing - Exports</option>
+            <option value="D065">Home Office - Precursor Drugs Licensing - Exports</option>
+            <option value="HN">Honduras</option>
+            <option value="HK">Hong Kong</option>
+            <option value="HU">Hungary</option>
+            <option value="IS">Iceland</option>
+            <option value="IN">India</option>
+            <option value="ID">Indonesia</option>
+            <option value="IR">Iran, Islamic Republic of</option>
+            <option value="IQ">Iraq</option>
+            <option value="IL">Israel</option>
+            <option value="CI">Ivory Coast</option>
+            <option value="JM">Jamaica</option>
+            <option value="JP">Japan</option>
+            <option value="JO">Jordan</option>
+            <option value="KZ">Kazakhstan</option>
+            <option value="KE">Kenya</option>
+            <option value="KR">Korea, Republic of (South Korea)</option>
+            <option value="XK">Kosovo</option>
+            <option value="XK">Kosovo (As defined by United Nations Security Council Resolution 1244 of 10 June 1999)</option>
+            <option value="KW">Kuwait</option>
+            <option value="KG">Kyrgyzstan</option>
+            <option value="LA">Laos</option>
+            <option value="LV">Latvia</option>
+            <option value="LB">Lebanon</option>
+            <option value="LR">Liberia</option>
+            <option value="LY">Libya</option>
+            <option value="LI">Liechtenstein</option>
+            <option value="LT">Lithuania</option>
+            <option value="2100">LOOMS</option>
+            <option value="MO">Macao</option>
+            <option value="MK">Macedonia (Former Yugoslav Republic of)</option>
+            <option value="MG">Madagascar</option>
+            <option value="1054">MAGHREB (DZ; MA; TN)</option>
+            <option value="MW">Malawi</option>
+            <option value="MY">Malaysia</option>
+            <option value="MV">Maldives</option>
+            <option value="MT">Malta</option>
+            <option value="MU">Mauritius</option>
+            <option value="XL">Melilla</option>
+            <option value="2500">MEMBER COUNTRIES OF GATT</option>
+            <option value="2500">Member countries of WTO</option>
+            <option value="MX">Mexico</option>
+            <option value="MD">Moldova, Republic of</option>
+            <option value="MN">Mongolia</option>
+            <option value="ME">Montenegro</option>
+            <option value="XM">Montenegro</option>
+            <option value="MS">Montserrat</option>
+            <option value="MA">Morocco</option>
+            <option value="MZ">Mozambique</option>
+            <option value="1056">MULTIFIBRE ARRANGEMENTS</option>
+            <option value="MM">Myanmar</option>
+            <option value="NA">Namibia</option>
+            <option value="NR">Nauru</option>
+            <option value="NP">Nepal</option>
+            <option value="AN">Netherlands Antilles</option>
+            <option value="NC">New Caledonia and dependencies</option>
+            <option value="NZ">New Zealand</option>
+            <option value="NI">Nicaragua</option>
+            <option value="NG">Nigeria</option>
+            <option value="3000">Non-cooperating countries in fighting illegal, unreported and unregulated fishing</option>
+            <option value="KP">North Korea (Democratic People’s Republic of Korea)</option>
+            <option value="NO">Norway</option>
+            <option value="PS">Occupied palestinian Territory</option>
+            <option value="XI">Occupied territories</option>
+            <option value="2080">OCTs (Overseas Countries and Territories)</option>
+            <option value="1014">OECD</option>
+            <option value="OM">Oman</option>
+            <option value="PK">Pakistan</option>
+            <option value="PA">Panama</option>
+            <option value="PG">Papua New Guinea</option>
+            <option value="PY">Paraguay</option>
+            <option value="PE">Peru</option>
+            <option value="2028">PHC (CZ, SK, HU, PL)</option>
+            <option value="PH">Philippines</option>
+            <option value="PL">Poland</option>
+            <option value="PT">Portugal</option>
+            <option value="QA">Qatar</option>
+            <option value="2019">R 02/560 - Annex IV - excluded countries (GSP)</option>
+            <option value="RO">Romania</option>
+            <option value="2036">RP. SERBIA, MONTENEGRO</option>
+            <option value="RU">Russian Federation</option>
+            <option value="RW">Rwanda</option>
+            <option value="1035">SADC EPA</option>
+            <option value="SM">San Marino</option>
+            <option value="ST">São Tomé and Principe</option>
+            <option value="SA">Saudi Arabia</option>
+            <option value="SN">Senegal</option>
+            <option value="XS">Serbia</option>
+            <option value="CS">Serbia and Montenegro</option>
+            <option value="SC">Seychelles and dependencies</option>
+            <option value="SL">Sierra Leone</option>
+            <option value="2300">Silk or cotton handloom products</option>
+            <option value="SG">Singapore</option>
+            <option value="SK">Slovakia</option>
+            <option value="SI">Slovenia</option>
+            <option value="SO">Somalia</option>
+            <option value="ZA">South Africa</option>
+            <option value="SS">South Sudan</option>
+            <option value="SU">Soviet Union</option>
+            <option value="ES">Spain (excluding XB, XC)</option>
+            <option value="ES">Spain (excluding XC XL)</option>
+            <option value="2060">SPAIN (INCLUDING XB, XC)</option>
+            <option value="2029">SPG-AMF-C</option>
+            <option value="2020">SPG-C</option>
+            <option value="2020">SPG-SPGA-SPGE (R96/1256)</option>
+            <option value="2015">SPG-SPGC-BA,XJ,HR,SI (R94/3281)</option>
+            <option value="2024">SPG - (R01/2501 - art. 8) - MD, LK</option>
+            <option value="2020">SPG -SPGA-SPGE (R98/2820)</option>
+            <option value="2015">SPG -SPGC - BA,MK,HR,AL (R98/2820)</option>
+            <option value="2015">SPG -SPGC - BA,XM,HR (R98/2820)</option>
+            <option value="2015">SPG -SPGC - BA,XM,HR, AL (R98/2820)</option>
+            <option value="2015">SPG -SPGC -MK (R98/2820)</option>
+            <option value="2015">SPG -SPGC (R 98/2820)</option>
+            <option value="2005">SPG (R96/1256 - ANNEX IV)</option>
+            <option value="2005">SPG (R96/1256, R94/3281) ANNEX IV</option>
+            <option value="2005">SPG (R98/2820 - ANNEX IV)</option>
+            <option value="2010">SPGC (ANNEXES IV AND V) R98/2820</option>
+            <option value="2010">SPGC (R94/3281 - Annex IV-V)</option>
+            <option value="LK">Sri Lanka</option>
+            <option value="KN">St Kitts and Nevis</option>
+            <option value="PM">St Pierre and Miquelon</option>
+            <option value="VC">St Vincent and the Grenadines</option>
+            <option value="2130">STATE-TRADING COUNT.</option>
+            <option value="1005">Statistical surveillance</option>
+            <option value="SD">Sudan</option>
+            <option value="SR">Suriname</option>
+            <option value="SZ">Swaziland</option>
+            <option value="SE">Sweden</option>
+            <option value="CH">Switzerland</option>
+            <option value="CH">Switzerland and Liechtenstein</option>
+            <option value="SY">Syria</option>
+            <option value="TW">Taiwan</option>
+            <option value="TJ">Tajikistan</option>
+            <option value="TZ">Tanzania, United Republic of</option>
+            <option value="3500">Territories not included in the customs territory</option>
+            <option value="TH">Thailand</option>
+            <option value="XJ">The former Yugoslavian Republic of Macedonia</option>
+            <option value="TG">Togo</option>
+            <option value="TT">Trinidad and Tobago</option>
+            <option value="TN">Tunisia</option>
+            <option value="TR">Turkey</option>
+            <option value="TM">Turkmenistan</option>
+            <option value="TC">Turks and Caicos Islands</option>
+            <option value="UG">Uganda</option>
+            <option value="UA">Ukraine</option>
+            <option value="AE">United Arab Emirates</option>
+            <option value="US">United States of America</option>
+            <option value="UY">Uruguay</option>
+            <option value="UZ">Uzbekistan</option>
+            <option value="VE">Venezuela</option>
+            <option value="9A97">Victuallina and destinations treated as exports from the Community (R2009/612)</option>
+            <option value="9A97">Victuallina and destinations treated as exports from the Community (R99/800)</option>
+            <option value="9A97">Victualling and destinations treated as exports from the European Union (Reg. 612/2009)</option>
+            <option value="VN">Viet Nam</option>
+            <option value="1098">Western Balkan countries (AL, BA, ME, MK, XK, XS)</option>
+            <option value="YE">Yemen</option>
+            <option value="YU">Yougoslavie</option>
+            <option value="XJ">Yugosl. Macedonia</option>
+            <option value="YU">Yugoslavia</option>
+            <option value="ZR">Zaire</option>
+            <option value="ZM">Zambia</option>
+            <option value="ZW">Zimbabwe</option>
+
+					</select>
+				</div>
+
+
+				<div class="form-group">
+					<label class="form-label">Enter the order number (for a quota)</label>
+					<input type="text" maxlength="6" class="form-control form-control-1-4 font-xsmall"></input>
+          <p class="font-xsmall">If you need to use more quota-specific criteria in your search, then please
+          use the <a href="quota_find.html">find a quota</a> capability.</p>
+				</div>
+
+
+				<div class="form-group">
+					<label class="form-label">Enter keywords
+					<span class="form-hint">If you know the ID of the measure, then you can enter the ID in the box below. Alternatively,
+enter any other keyword(s) to help locate the regulation</span></label>
+					<textarea class="form-control form-control-3-4 font-xsmall" name="textarea" id="textarea" rows="5"></textarea>
+
+
+				</div>
+				<div class="form-group">
+					<button class="button" type="submit" id="signin">Search</button>
+				</div>
+			</form>
+
+
+		</main>
+  </div>
+
+<!-- CONTENT ENDS HERE //-->
+<!-- GLOBAL FOOTER STARTS HERE //-->
+    <footer class="group js-footer" id="footer" role="contentinfo">
+
+      <div class="footer-wrapper" style="margin-top:0px;padding-top:0px;">
+        <div class="footer-meta">
+          <div class="footer-meta-inner">
+              <h2 class="visuallyhidden">Support links</h2>
+				<ul>
+				<li><a href="#">Terms and conditions</a></li>
+				<li><a href="#">Cookies</a></li>
+				<li>Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a>
+				</li>
+				</ul>
+
+
+            <div class="open-government-licence">
+              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
+                <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+            </div>
+          </div>
+
+          <div class="copyright">
+            <a href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">© Crown copyright</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+    <script src="https://assets.trade-tariff.service.gov.uk/tariff/govuk-template-c4f303154d2a238bdda4d5cf1ebd8d4487822e4cbc3e4c83e743da869443ce72.js"></script>
+
+      <script src="https://assets.trade-tariff.service.gov.uk/tariff/application-eda8092be34c7c33e020a1b074f040e41864966931bcec781b9a9ce9df4d4ecb.js"></script>
+
+
+    <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+  </body>
+</html>

@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <title>Tariff Management Application - Create additional code</title>
+
+    <!--[if gt IE 8]><!--><link href="https://assets.trade-tariff.service.gov.uk/tariff/govuk-template-e35981be025be5acc30ca86c82a171fe06fa3580b5b52044abf5df9bb7273e17.css" media="screen" rel="stylesheet" /><!--<![endif]-->
+    <!--[if IE 6]><link href="https://assets.trade-tariff.service.gov.uk/tariff/govuk-template-ie6-9ea8f2161855bd23b3216b9c1f38053de00694d577d4025504749df2480d65ca.css" media="screen" rel="stylesheet" /><![endif]-->
+    <!--[if IE 7]><link href="https://assets.trade-tariff.service.gov.uk/tariff/govuk-template-ie7-2d92b88fb60a715c6093ba5db5e0e5392851b21d7c8f9f0de4aec9bfcfc3b14a.css" media="screen" rel="stylesheet" /><![endif]-->
+    <!--[if IE 8]><link href="https://assets.trade-tariff.service.gov.uk/tariff/govuk-template-ie8-33ec829004a8f979e20ac3426a3864b27d2de8e1781fdce81d986bc87ce46332.css" media="screen" rel="stylesheet" /><![endif]-->
+    <link href="https://assets.trade-tariff.service.gov.uk/tariff/govuk-template-print-1076519521c2fffbbf75ab3b0d3b32ee2d96ac7e9778f1cdfac1771eefd1a1c0.css" media="print" rel="stylesheet" />
+
+    <!--[if IE 8]><link href="https://assets.trade-tariff.service.gov.uk/tariff/fonts-ie8-ca74eee30b797b0df76a57f96ae6f21f89790c426518a179af0eceae43d438ec.css" media="all" rel="stylesheet" /><![endif]-->
+    <!--[if gte IE 9]><!--><link href="https://assets.trade-tariff.service.gov.uk/tariff/fonts-5ff8c53913434afd0072a480d7cfca67cace4c8d03f6ef96b78a4455728ce745.css" media="all" rel="stylesheet" /><!--<![endif]-->
+    <!--[if lt IE 9]><script src="https://assets.trade-tariff.service.gov.uk/tariff/ie-75db9d4df4993de5335d6e49013362743a78107245bcf6543337a0ecc0a95b41.js"></script><![endif]-->
+
+    <link rel="shortcut icon" href="https://assets.trade-tariff.service.gov.uk/tariff/favicon-8d811b8c3badbc0b0e2f6e25d3660a96cc0cca7993e6f32e98785f205fc40907.ico" type="image/x-icon" />
+    <link rel="mask-icon" href="https://assets.trade-tariff.service.gov.uk/tariff/gov.uk_logotype_crown-a0097118fe9226ce1ffde1ccfeb86c61be3607915046196c99f68b9548485ad3.svg" color="#0b0c0c">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://assets.trade-tariff.service.gov.uk/tariff/apple-touch-icon-152x152-55dd2af7a53abb7dd14ba6a3c6c3fc786c57a074ba809f6dd767e186955a87e1.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://assets.trade-tariff.service.gov.uk/tariff/apple-touch-icon-120x120-92580784afc35143f96b8cf5614e221427fdea444aeb13d912c879e884af7336.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://assets.trade-tariff.service.gov.uk/tariff/apple-touch-icon-76x76-9b193f39cde53b92ba555efed856bcd103d6d1dc650919eb9f29dbe5f442cfb0.png">
+    <link rel="apple-touch-icon-precomposed" href="https://assets.trade-tariff.service.gov.uk/tariff/apple-touch-icon-60x60-0af0a7cf886701647210f13b661e607b7223bc3221b6d275718a89af79b3e7b9.png">
+
+    <meta name="theme-color" content="#0b0c0c" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="https://assets.trade-tariff.service.gov.uk/tariff/opengraph-image-a1f7d89ffd0782738b1aeb0da37842d8bd0addbd724b8e58c3edbc7287cc11de.png">
+
+      <link rel='alternate' type='application/json' href='https://www.trade-tariff.service.gov.uk/trade-tariff/sections.json' title='Section list in JSON format' />
+  <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.trade-tariff.service.gov.uk/tariff/application-e5441c13a40ff5486641a0a3e84b1b02b41a8721b4df0c74ef5c52ded0136c24.css" /><!--<![endif]-->
+  <!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.trade-tariff.service.gov.uk/tariff/application-ie6-0f491c437034bccb1753973989d38b495441cbea6f79aac7b0b0f986fc18a378.css" /><![endif]-->
+  <!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.trade-tariff.service.gov.uk/tariff/application-ie7-dbd32816263ba4c20f50af444355069874aed1612688e735b7ff239e221016a4.css" /><![endif]-->
+  <!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.trade-tariff.service.gov.uk/tariff/application-ie8-344c9b0a031926355439f9c77614b1dee1c4f8d91b8ed69dec217eba2b305e7d.css" /><![endif]-->
+  <link rel="stylesheet" media="print" href="https://assets.trade-tariff.service.gov.uk/tariff/tariff-print-eed68e53ad68229ab7beb3cb1844193b9abf0d30292324bf8807da749dc3840d.css" />
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="wuKnxA2vDZIA6vTB77M8UqX//JIW9pV6ghNmjwkmIaqObMJmvHozSjdsrP8lRluncGe9dU2a3Vc6rUcSZB35dQ==" />
+
+  <meta name="x-section-name" content="Business" />
+  <meta name="x-section-link" content="/browse/business" />
+  <meta name="x-section-format" content="trade-tariff" />
+  <meta name="format-detection" content="telephone=no">
+
+
+  <meta name="govuk:section" content="business and self-employed">
+
+  <link rel="search" type="application/opensearchdescription+xml" href="https://www.trade-tariff.service.gov.uk/trade-tariff/opensearch.xml" title="Trade Tariff Search" />
+<link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-958be5810ae2fa11fba6bc815193f49b2f0868639649c975d08e12d6cfe50a5e.css" />
+<link rel="stylesheet" media="screen" href="/css/local.css" />
+<script type="text/javascript" src="/js/measure_create_scripts.js"></script>
+
+  </head>
+
+  <body>
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink">Skip to main content</a>
+      </div>
+    </div>
+
+    <header role="banner" id="global-header" class="with-proposition">
+      <div class="header-wrapper">
+        <div class="header-global" style="width:70%">
+          <div class="header-logo">
+            <a href="/" title="Go to the GOV.UK homepage" id="logo" class="content">
+              <img style="margin-right:20px" src="https://assets.trade-tariff.service.gov.uk/tariff/gov.uk_logotype_crown_invert_trans-203e1db49d3eff430d7dc450ce723c1002542fe1d2bce661b6d8571f14c1043c.png" width="36" height="32" alt="">Tariff Management Application
+            </a>
+          </div>
+
+        </div>
+		<div class="tma_header">
+			<ul>
+				<li><a href="#">Help</a></li>
+				<li><a href="#">Sign out</a></li>
+			</ul>
+		</div>
+
+      </div>
+    </header>
+<!-- GLOBAL HEADER ENDS HERE //-->
+
+
+<!-- CONTENT STARTS HERE //-->
+<div id="global-header-bar"></div>
+
+	<div id="wrapper" class="tariff service">
+    <div class="phase-banner">
+        <p>
+            <strong class="phase-tag">ALPHA</strong>
+            <span>This is a new service – your <a href="mailto:matt.lavis@digital.trade.gov.uk">feedback</a> will help us to improve it.</span>
+        </p>
+    </div>
+		<main id="content" role="main">
+			<div class="govuk-breadcrumbs nmb">
+				<ol>
+					<li><a href="/">Home</a></li>
+          <li><a href="measure_find.html">Measures</a></li>
+          <li>Create measure</li>
+				</ol>
+			</div>
+			<header>
+				<h1 class="heading-large">Create measure</h1>
+
+
+			</header>
+
+			<form action="#" method="post" class="mt1">
+
+        <!--
+		<div class="form-group">
+          <h2 class="heading-small">Optionally provide a group name for these measures</h2>
+          <span class="form-hint">Providing a group name will help you locate these measures again in future. You will be able to
+filter your workbasket using this group name.</span>
+          <input type="text" maxlength="100" class="form-control form-control-1-2 font-xsmall" value=""></input>
+        </div>//-->
+
+				<div class="form-group">
+          <h2 class="heading-small">Specify the regulation that gives legal force to this measure</h2>
+            <label><span class="form-hint">Start typing in the field to see available regulations. If the regulation you need is not in the list,
+you can <a href="regulation_create.html">add a new regulation</a> here.</span>
+          </label>
+					<select class="form-control form-control-1-3 font-xsmall">
+						<option value="0">--start typing--</option>
+            <option value="A730003">A730003</option>
+<option value="A850001">A850001</option>
+<option value="A950001">A950001</option>
+<option value="C060303">C060303</option>
+<option value="C140136">C140136</option>
+<option value="C170199">C170199</option>
+<option value="D000002">D000002</option>
+<option value="D000204">D000204</option>
+<option value="D000415">D000415</option>
+<option value="D000822">D000822</option>
+<option value="D010108">D010108</option>
+<option value="D010123">D010123</option>
+<option value="D010140">D010140</option>
+<option value="D020134">D020134</option>
+<option value="D020245">D020245</option>
+<option value="D020309">D020309</option>
+<option value="D020357">D020357</option>
+<option value="D020606">D020606</option>
+<option value="D020979">D020979</option>
+<option value="D030465">D030465</option>
+<option value="D030899">D030899</option>
+<option value="D030914">D030914</option>
+<option value="D040138">D040138</option>
+<option value="D040239">D040239</option>
+<option value="D040368">D040368</option>
+<option value="D040635">D040635</option>
+<option value="D040776">D040776</option>
+<option value="D040859">D040859</option>
+<option value="D050045">D050045</option>
+<option value="D050394">D050394</option>
+<option value="D050690">D050690</option>
+<option value="D050955">D050955</option>
+<option value="D060022">D060022</option>
+<option value="D060067">D060067</option>
+<option value="D060093">D060093</option>
+<option value="D060232">D060232</option>
+<option value="D060356">D060356</option>
+<option value="D060561">D060561</option>
+<option value="D060772">D060772</option>
+<option value="D060792">D060792</option>
+<option value="D070138">D070138</option>
+<option value="D070275">D070275</option>
+<option value="D070658">D070658</option>
+<option value="D080260">D080260</option>
+<option value="D080474">D080474</option>
+<option value="D080805">D080805</option>
+<option value="D090048">D090048</option>
+<option value="D090152">D090152</option>
+<option value="D090332">D090332</option>
+<option value="D090729">D090729</option>
+<option value="D090855">D090855</option>
+<option value="D090867">D090867</option>
+<option value="D100036">D100036</option>
+<option value="D100224">D100224</option>
+<option value="D100240">D100240</option>
+<option value="D110122">D110122</option>
+<option value="D110265">D110265</option>
+<option value="D110304">D110304</option>
+<option value="D110818">D110818</option>
+<option value="D110824">D110824</option>
+<option value="D110876">D110876</option>
+<option value="D110884">D110884</option>
+<option value="D120196">D120196</option>
+<option value="D120497">D120497</option>
+<option value="D120734">D120734</option>
+<option value="D120735">D120735</option>
+<option value="D130066">D130066</option>
+<option value="D130092">D130092</option>
+<option value="D130490">D130490</option>
+<option value="D130755">D130755</option>
+<option value="D140088">D140088</option>
+<option value="D140223">D140223</option>
+<option value="D140284">D140284</option>
+<option value="D140295">D140295</option>
+<option value="D140461">D140461</option>
+<option value="D140492">D140492</option>
+<option value="D140494">D140494</option>
+<option value="D140512">D140512</option>
+<option value="D151764">D151764</option>
+<option value="D152362">D152362</option>
+<option value="D160342">D160342</option>
+<option value="D161623">D161623</option>
+<option value="D161850">D161850</option>
+<option value="D162369">D162369</option>
+<option value="D170001">D170001</option>
+<option value="D170037">D170037</option>
+<option value="D170322">D170322</option>
+<option value="D171923">D171923</option>
+<option value="D171924">D171924</option>
+<option value="D791031">D791031</option>
+<option value="D860559">D860559</option>
+<option value="D880598">D880598</option>
+<option value="D900680">D900680</option>
+<option value="D930186">D930186</option>
+<option value="D930690">D930690</option>
+<option value="D940001">D940001</option>
+<option value="D960142">D960142</option>
+<option value="D960528">D960528</option>
+<option value="D970126">D970126</option>
+<option value="D970430">D970430</option>
+<option value="D970447">D970447</option>
+<option value="D971401">D971401</option>
+<option value="D980115">D980115</option>
+<option value="D980223">D980223</option>
+<option value="D980238">D980238</option>
+<option value="D980366">D980366</option>
+<option value="D980684">D980684</option>
+<option value="D990456">D990456</option>
+<option value="D990492">D990492</option>
+<option value="I040097">I040097</option>
+<option value="I050195">I050195</option>
+<option value="I060186">I060186</option>
+<option value="I090291">I090291</option>
+<option value="I140299">I140299</option>
+<option value="I140433">I140433</option>
+<option value="I140457">I140457</option>
+<option value="I160336">I160336</option>
+<option value="I160373">I160373</option>
+<option value="I160461">I160461</option>
+<option value="I170041">I170041</option>
+<option value="I170067">I170067</option>
+<option value="I170117">I170117</option>
+<option value="I170122">I170122</option>
+<option value="I170200">I170200</option>
+<option value="I170251">I170251</option>
+<option value="I170264">I170264</option>
+<option value="I170290">I170290</option>
+<option value="I170353">I170353</option>
+<option value="I170377">I170377</option>
+<option value="I170416">I170416</option>
+<option value="I170438">I170438</option>
+<option value="I180031">I180031</option>
+<option value="I180034">I180034</option>
+<option value="I990294">I990294</option>
+<option value="I990298">I990298</option>
+<option value="IYY9999">IYY9999</option>
+<option value="J170334">J170334</option>
+<option value="R000032">R000032</option>
+<option value="R001362">R001362</option>
+<option value="R002388">R002388</option>
+<option value="R010747">R010747</option>
+<option value="R012031">R012031</option>
+<option value="R012133">R012133</option>
+<option value="R012433">R012433</option>
+<option value="R012535">R012535</option>
+<option value="R012559">R012559</option>
+<option value="R012597">R012597</option>
+<option value="R020660">R020660</option>
+<option value="R021147">R021147</option>
+<option value="R021686">R021686</option>
+<option value="R021832">R021832</option>
+<option value="R022368">R022368</option>
+<option value="R030209">R030209</option>
+<option value="R030312">R030312</option>
+<option value="R031210">R031210</option>
+<option value="R031472">R031472</option>
+<option value="R031784">R031784</option>
+<option value="R031789">R031789</option>
+<option value="R031984">R031984</option>
+<option value="R040050">R040050</option>
+<option value="R041140">R041140</option>
+<option value="R041810">R041810</option>
+<option value="R042094">R042094</option>
+<option value="R050111">R050111</option>
+<option value="R051236">R051236</option>
+<option value="R051460">R051460</option>
+<option value="R051653">R051653</option>
+<option value="R051719">R051719</option>
+<option value="R052172">R052172</option>
+<option value="R060019">R060019</option>
+<option value="R060426">R060426</option>
+<option value="R060711">R060711</option>
+<option value="R060765">R060765</option>
+<option value="R060838">R060838</option>
+<option value="R060847">R060847</option>
+<option value="R060899">R060899</option>
+<option value="R060928">R060928</option>
+<option value="R060937">R060937</option>
+<option value="R060969">R060969</option>
+<option value="R060970">R060970</option>
+<option value="R060972">R060972</option>
+<option value="R060973">R060973</option>
+<option value="R061013">R061013</option>
+<option value="R061368">R061368</option>
+<option value="R061549">R061549</option>
+<option value="R061712">R061712</option>
+<option value="R061742">R061742</option>
+<option value="R061916">R061916</option>
+<option value="R061918">R061918</option>
+<option value="R061930">R061930</option>
+<option value="R061979">R061979</option>
+<option value="R070129">R070129</option>
+<option value="R070218">R070218</option>
+<option value="R070341">R070341</option>
+<option value="R070501">R070501</option>
+<option value="R070533">R070533</option>
+<option value="R070536">R070536</option>
+<option value="R070539">R070539</option>
+<option value="R070580">R070580</option>
+<option value="R070616">R070616</option>
+<option value="R070759">R070759</option>
+<option value="R070816">R070816</option>
+<option value="R070834">R070834</option>
+<option value="R070880">R070880</option>
+<option value="R071214">R071214</option>
+<option value="R071220">R071220</option>
+<option value="R071375">R071375</option>
+<option value="R071381">R071381</option>
+<option value="R071385">R071385</option>
+<option value="R071475">R071475</option>
+<option value="R071518">R071518</option>
+<option value="R071523">R071523</option>
+<option value="R071565">R071565</option>
+<option value="R080052">R080052</option>
+<option value="R080053">R080053</option>
+<option value="R080065">R080065</option>
+<option value="R080066">R080066</option>
+<option value="R080113">R080113</option>
+<option value="R080412">R080412</option>
+<option value="R080431">R080431</option>
+<option value="R080497">R080497</option>
+<option value="R080555">R080555</option>
+<option value="R080821">R080821</option>
+<option value="R080972">R080972</option>
+<option value="R081005">R081005</option>
+<option value="R081031">R081031</option>
+<option value="R081067">R081067</option>
+<option value="R081295">R081295</option>
+<option value="R090054">R090054</option>
+<option value="R090116">R090116</option>
+<option value="R090437">R090437</option>
+<option value="R090438">R090438</option>
+<option value="R090442">R090442</option>
+<option value="R090539">R090539</option>
+<option value="R090610">R090610</option>
+<option value="R090803">R090803</option>
+<option value="R090891">R090891</option>
+<option value="R090933">R090933</option>
+<option value="R090948">R090948</option>
+<option value="R091005">R091005</option>
+<option value="R091126">R091126</option>
+<option value="R091153">R091153</option>
+<option value="R091154">R091154</option>
+<option value="R100192">R100192</option>
+<option value="R100449">R100449</option>
+<option value="R100640">R100640</option>
+<option value="R100861">R100861</option>
+<option value="R101085">R101085</option>
+<option value="R101099">R101099</option>
+<option value="R101228">R101228</option>
+<option value="R101238">R101238</option>
+<option value="R101255">R101255</option>
+<option value="R110059">R110059</option>
+<option value="R110230">R110230</option>
+<option value="R110284">R110284</option>
+<option value="R110321">R110321</option>
+<option value="R110333">R110333</option>
+<option value="R110343">R110343</option>
+<option value="R110354">R110354</option>
+<option value="R110620">R110620</option>
+<option value="R110791">R110791</option>
+<option value="R110799">R110799</option>
+<option value="R111006">R111006</option>
+<option value="R111093">R111093</option>
+<option value="R111253">R111253</option>
+<option value="R111273">R111273</option>
+<option value="R111331">R111331</option>
+<option value="R111336">R111336</option>
+<option value="R111344">R111344</option>
+<option value="R111352">R111352</option>
+<option value="R111354">R111354</option>
+<option value="R120014">R120014</option>
+<option value="R120036">R120036</option>
+<option value="R120102">R120102</option>
+<option value="R120157">R120157</option>
+<option value="R120168">R120168</option>
+<option value="R120191">R120191</option>
+<option value="R120258">R120258</option>
+<option value="R120264">R120264</option>
+<option value="R120267">R120267</option>
+<option value="R120325">R120325</option>
+<option value="R120349">R120349</option>
+<option value="R120374">R120374</option>
+<option value="R120480">R120480</option>
+<option value="R120481">R120481</option>
+<option value="R120509">R120509</option>
+<option value="R120514">R120514</option>
+<option value="R120558">R120558</option>
+<option value="R120585">R120585</option>
+<option value="R120626">R120626</option>
+<option value="R120642">R120642</option>
+<option value="R120649">R120649</option>
+<option value="R120672">R120672</option>
+<option value="R120795">R120795</option>
+<option value="R120796">R120796</option>
+<option value="R120812">R120812</option>
+<option value="R120927">R120927</option>
+<option value="R120978">R120978</option>
+<option value="R121039">R121039</option>
+<option value="R121153">R121153</option>
+<option value="R121218">R121218</option>
+<option value="R121223">R121223</option>
+<option value="R121231">R121231</option>
+<option value="R121232">R121232</option>
+<option value="R121235">R121235</option>
+<option value="R121246">R121246</option>
+<option value="R121269">R121269</option>
+<option value="R130078">R130078</option>
+<option value="R130082">R130082</option>
+<option value="R130157">R130157</option>
+<option value="R130214">R130214</option>
+<option value="R130215">R130215</option>
+<option value="R130217">R130217</option>
+<option value="R130302">R130302</option>
+<option value="R130372">R130372</option>
+<option value="R130401">R130401</option>
+<option value="R130404">R130404</option>
+<option value="R130405">R130405</option>
+<option value="R130412">R130412</option>
+<option value="R130430">R130430</option>
+<option value="R130461">R130461</option>
+<option value="R130501">R130501</option>
+<option value="R130502">R130502</option>
+<option value="R130508">R130508</option>
+<option value="R130512">R130512</option>
+<option value="R130593">R130593</option>
+<option value="R130624">R130624</option>
+<option value="R130695">R130695</option>
+<option value="R130697">R130697</option>
+<option value="R130740">R130740</option>
+<option value="R130741">R130741</option>
+<option value="R130743">R130743</option>
+<option value="R130748">R130748</option>
+<option value="R130861">R130861</option>
+<option value="R130871">R130871</option>
+<option value="R130875">R130875</option>
+<option value="R130922">R130922</option>
+<option value="R130923">R130923</option>
+<option value="R130924">R130924</option>
+<option value="R130952">R130952</option>
+<option value="R130974">R130974</option>
+<option value="R130975">R130975</option>
+<option value="R130976">R130976</option>
+<option value="R130977">R130977</option>
+<option value="R131001">R131001</option>
+<option value="R131011">R131011</option>
+<option value="R131012">R131012</option>
+<option value="R131215">R131215</option>
+<option value="R131259">R131259</option>
+<option value="R131308">R131308</option>
+<option value="R131325">R131325</option>
+<option value="R131326">R131326</option>
+<option value="R131332">R131332</option>
+<option value="R131343">R131343</option>
+<option value="R131366">R131366</option>
+<option value="R131387">R131387</option>
+<option value="R131388">R131388</option>
+<option value="R140190">R140190</option>
+<option value="R140191">R140191</option>
+<option value="R140307">R140307</option>
+<option value="R140323">R140323</option>
+<option value="R140360">R140360</option>
+<option value="R140471">R140471</option>
+<option value="R140489">R140489</option>
+<option value="R140493">R140493</option>
+<option value="R140494">R140494</option>
+<option value="R140517">R140517</option>
+<option value="R140704">R140704</option>
+<option value="R140705">R140705</option>
+<option value="R140718">R140718</option>
+<option value="R140722">R140722</option>
+<option value="R140747">R140747</option>
+<option value="R140775">R140775</option>
+<option value="R140803">R140803</option>
+<option value="R140833">R140833</option>
+<option value="R140885">R140885</option>
+<option value="R140976">R140976</option>
+<option value="R140988">R140988</option>
+<option value="R140989">R140989</option>
+<option value="R140999">R140999</option>
+<option value="R141021">R141021</option>
+<option value="R141078">R141078</option>
+<option value="R141101">R141101</option>
+<option value="R141206">R141206</option>
+<option value="R141283">R141283</option>
+<option value="R141313">R141313</option>
+<option value="R141323">R141323</option>
+<option value="R141335">R141335</option>
+<option value="R141341">R141341</option>
+<option value="R141346">R141346</option>
+<option value="R141379">R141379</option>
+<option value="R141382">R141382</option>
+<option value="R150050">R150050</option>
+<option value="R150082">R150082</option>
+<option value="R150083">R150083</option>
+<option value="R150084">R150084</option>
+<option value="R150110">R150110</option>
+<option value="R150175">R150175</option>
+<option value="R150309">R150309</option>
+<option value="R150525">R150525</option>
+<option value="R150735">R150735</option>
+<option value="R150776">R150776</option>
+<option value="R150781">R150781</option>
+<option value="R150831">R150831</option>
+<option value="R150865">R150865</option>
+<option value="R150936">R150936</option>
+<option value="R150943">R150943</option>
+<option value="R150949">R150949</option>
+<option value="R150982">R150982</option>
+<option value="R151019">R151019</option>
+<option value="R151350">R151350</option>
+<option value="R151394">R151394</option>
+<option value="R151429">R151429</option>
+<option value="R151518">R151518</option>
+<option value="R151519">R151519</option>
+<option value="R151607">R151607</option>
+<option value="R151754">R151754</option>
+<option value="R151821">R151821</option>
+<option value="R151846">R151846</option>
+<option value="R151850">R151850</option>
+<option value="R151934">R151934</option>
+<option value="R151952">R151952</option>
+<option value="R151953">R151953</option>
+<option value="R151963">R151963</option>
+<option value="R152076">R152076</option>
+<option value="R152077">R152077</option>
+<option value="R152078">R152078</option>
+<option value="R152079">R152079</option>
+<option value="R152080">R152080</option>
+<option value="R152081">R152081</option>
+<option value="R152229">R152229</option>
+<option value="R152265">R152265</option>
+<option value="R152272">R152272</option>
+<option value="R152384">R152384</option>
+<option value="R152385">R152385</option>
+<option value="R152405">R152405</option>
+<option value="R152420">R152420</option>
+<option value="R152447">R152447</option>
+<option value="R152448">R152448</option>
+<option value="R152449">R152449</option>
+<option value="R160024">R160024</option>
+<option value="R160032">R160032</option>
+<option value="R160044">R160044</option>
+<option value="R160226">R160226</option>
+<option value="R160306">R160306</option>
+<option value="R160387">R160387</option>
+<option value="R160388">R160388</option>
+<option value="R160443">R160443</option>
+<option value="R160670">R160670</option>
+<option value="R160675">R160675</option>
+<option value="R160676">R160676</option>
+<option value="R160703">R160703</option>
+<option value="R160704">R160704</option>
+<option value="R160874">R160874</option>
+<option value="R161024">R161024</option>
+<option value="R161036">R161036</option>
+<option value="R161046">R161046</option>
+<option value="R161047">R161047</option>
+<option value="R161050">R161050</option>
+<option value="R161051">R161051</option>
+<option value="R161076">R161076</option>
+<option value="R161077">R161077</option>
+<option value="R161159">R161159</option>
+<option value="R161160">R161160</option>
+<option value="R161167">R161167</option>
+<option value="R161219">R161219</option>
+<option value="R161237">R161237</option>
+<option value="R161246">R161246</option>
+<option value="R161247">R161247</option>
+<option value="R161328">R161328</option>
+<option value="R161422">R161422</option>
+<option value="R161443">R161443</option>
+<option value="R161733">R161733</option>
+<option value="R161821">R161821</option>
+<option value="R161969">R161969</option>
+<option value="R162081">R162081</option>
+<option value="R162106">R162106</option>
+<option value="R162107">R162107</option>
+<option value="R162253">R162253</option>
+<option value="R162293">R162293</option>
+<option value="R162389">R162389</option>
+<option value="R162390">R162390</option>
+<option value="R170094">R170094</option>
+<option value="R170109">R170109</option>
+<option value="R170120">R170120</option>
+<option value="R170160">R170160</option>
+<option value="R170186">R170186</option>
+<option value="R170220">R170220</option>
+<option value="R170271">R170271</option>
+<option value="R170284">R170284</option>
+<option value="R170336">R170336</option>
+<option value="R170366">R170366</option>
+<option value="R170367">R170367</option>
+<option value="R170421">R170421</option>
+<option value="R170422">R170422</option>
+<option value="R170648">R170648</option>
+<option value="R170659">R170659</option>
+<option value="R170724">R170724</option>
+<option value="R170750">R170750</option>
+<option value="R170754">R170754</option>
+<option value="R170763">R170763</option>
+<option value="R170804">R170804</option>
+<option value="R170852">R170852</option>
+<option value="R170882">R170882</option>
+<option value="R170892">R170892</option>
+<option value="R170942">R170942</option>
+<option value="R170967">R170967</option>
+<option value="R170968">R170968</option>
+<option value="R170969">R170969</option>
+<option value="R171019">R171019</option>
+<option value="R171085">R171085</option>
+<option value="R171092">R171092</option>
+<option value="R171133">R171133</option>
+<option value="R171134">R171134</option>
+<option value="R171141">R171141</option>
+<option value="R171142">R171142</option>
+<option value="R171146">R171146</option>
+<option value="R171159">R171159</option>
+<option value="R171171">R171171</option>
+<option value="R171187">R171187</option>
+<option value="R171188">R171188</option>
+<option value="R171263">R171263</option>
+<option value="R171325">R171325</option>
+<option value="R171348">R171348</option>
+<option value="R171464">R171464</option>
+<option value="R171466">R171466</option>
+<option value="R171482">R171482</option>
+<option value="R171509">R171509</option>
+<option value="R171514">R171514</option>
+<option value="R171548">R171548</option>
+<option value="R171566">R171566</option>
+<option value="R171570">R171570</option>
+<option value="R171578">R171578</option>
+<option value="R171585">R171585</option>
+<option value="R171586">R171586</option>
+<option value="R171759">R171759</option>
+<option value="R171772">R171772</option>
+<option value="R171781">R171781</option>
+<option value="R171795">R171795</option>
+<option value="R171835">R171835</option>
+<option value="R171836">R171836</option>
+<option value="R171925">R171925</option>
+<option value="R171957">R171957</option>
+<option value="R171993">R171993</option>
+<option value="R171994">R171994</option>
+<option value="R171997">R171997</option>
+<option value="R172058">R172058</option>
+<option value="R172062">R172062</option>
+<option value="R172063">R172063</option>
+<option value="R172179">R172179</option>
+<option value="R172200">R172200</option>
+<option value="R172206">R172206</option>
+<option value="R172207">R172207</option>
+<option value="R172213">R172213</option>
+<option value="R172230">R172230</option>
+<option value="R172268">R172268</option>
+<option value="R172298">R172298</option>
+<option value="R172300">R172300</option>
+<option value="R172310">R172310</option>
+<option value="R172466">R172466</option>
+<option value="R172467">R172467</option>
+<option value="R180028">R180028</option>
+<option value="R180049">R180049</option>
+<option value="R180127">R180127</option>
+<option value="R180140">R180140</option>
+<option value="R180163">R180163</option>
+<option value="R180186">R180186</option>
+<option value="R722840">R722840</option>
+<option value="R722842">R722842</option>
+<option value="R731691">R731691</option>
+<option value="R760102">R760102</option>
+<option value="R782216">R782216</option>
+<option value="R810139">R810139</option>
+<option value="R872658">R872658</option>
+<option value="R892886">R892886</option>
+<option value="R903491">R903491</option>
+<option value="R912587">R912587</option>
+<option value="R913254">R913254</option>
+<option value="R922505">R922505</option>
+<option value="R930054">R930054</option>
+<option value="R932551">R932551</option>
+<option value="R940517">R940517</option>
+<option value="R943115">R943115</option>
+<option value="R943281">R943281</option>
+<option value="R951359">R951359</option>
+<option value="R951600">R951600</option>
+<option value="R952448">R952448</option>
+<option value="R953009">R953009</option>
+<option value="R953050">R953050</option>
+<option value="R953061">R953061</option>
+<option value="R960440">R960440</option>
+<option value="R961734">R961734</option>
+<option value="R961831">R961831</option>
+<option value="R970088">R970088</option>
+<option value="R970196">R970196</option>
+<option value="R971153">R971153</option>
+<option value="R972008">R972008</option>
+<option value="R972086">R972086</option>
+<option value="R972216">R972216</option>
+<option value="R972308">R972308</option>
+<option value="R982261">R982261</option>
+<option value="R990194">R990194</option>
+<option value="R991506">R991506</option>
+<option value="R992114">R992114</option>
+<option value="R992204">R992204</option>
+<option value="R992471">R992471</option>
+					</select>
+				</div>
+
+        <div class="form-group">
+          <h2 class="heading-small">Select the type of measure to create</h2>
+					<label class="form-label">Filter by measure type series first to shorten the list of types shown.
+          Further options will be displayed once you have selected a measure type from the boxes below.</label>
+
+
+					<select id="objMeasureTypeSeries" class="form-control form-control-1-3 font-xsmall" onchange="javascript:makeMeasureTypeDependent()" placeholder="--select measure type series--">
+						<option value="0">--select measure type series--</option>
+            <option value="A">A - Importation and/or exportation prohibited</option>
+            <option value="B">B - Entry into free circulation or exportation subject to conditions</option>
+            <option value="C">C - Applicable duty</option>
+            <option value="D">D - Anti-dumping or countervailing duties</option>
+            <option value="E">E - Levies, export refunds and other agricultural amounts</option>
+            <option value="F">F - Additional duty on sugar, flour</option>
+            <option value="J" style="display:none">J - Countervailing charge</option>
+            <option value="M">M - Unit price, standard import value, representative price (poultry, sugar)</option>
+            <option value="N">N - Posterior surveillance</option>
+            <option value="S">S - Supplementary amount</option>
+            <option value="O">O - Supplementary unit</option>
+					</select>
+
+
+					<select id="objMeasureType" class="form-control form-control-1-3 font-xsmall" placeholder="--select measure type--" onchange="drawPageBasedOnMeasureType();">
+						<option value="0">--select measure type--</option>
+            <option value="103">103 - Third country duty</option>
+            <option value="105">105 - Non preferential duty under end-use</option>
+            <option value="106">106 - Customs Union Duty</option>
+            <option value="109">109 - Supplementary unit</option>
+            <option value="110">110 - Supplementary unit import</option>
+            <option value="112">112 - Autonomous tariff suspension</option>
+            <option value="115">115 - Autonomous suspension under end-use</option>
+            <option value="117">117 - Suspension - goods for certain categories of ships, boats and other vessels and for drilling or production platforms</option>
+            <option value="119">119 - Airworthiness tariff suspension</option>
+            <option value="122">122 - Non preferential tariff quota</option>
+            <option value="123">123 - Non preferential tariff quota under end-use</option>
+            <option value="141">141 - Preferential suspension</option>
+            <option value="142">142 - Tariff preference</option>
+            <option value="143">143 - Preferential tariff quota</option>
+            <option value="145">145 - Preference under end-use</option>
+            <option value="146">146 - Preferential tariff quota under end-use</option>
+            <option value="147">147 - Customs Union Quota</option>
+            <option value="277">277 - Import prohibition</option>
+            <option value="278">278 - Export prohibition</option>
+            <option value="410">410 - Veterinary control</option>
+            <option value="420">420 - Entry into free circulation (prior surveillance)</option>
+            <option value="430">430 - Control of particulars of the declaration (suspicious value/net weight or value/supplementary unit)</option>
+            <option value="431">431 - Control of particulars of the declaration (suspicious net weight/supplementary unit)</option>
+            <option value="442">442 - Confidential Import Monitoring</option>
+            <option value="447">447 - Confidential Export Monitoring</option>
+            <option value="464">464 - Declaration of subheading submitted to end-use provisions</option>
+            <option value="465">465 - Restriction on entry into free circulation</option>
+            <option value="467">467 - Restriction on export</option>
+            <option value="473">473 - Export authorization</option>
+            <option value="474">474 - Entry into free circulation (quantitative limitation)</option>
+            <option value="475">475 - Restriction on entry into free circulation</option>
+            <option value="476">476 - Restriction on export</option>
+            <option value="478">478 - Export authorization (Dual use)</option>
+            <option value="479">479 - Export control on dangerous chemicals</option>
+            <option value="481">481 - Declaration of subheading submitted to restrictions (import)</option>
+            <option value="482">482 - Declaration of subheading submitted to restrictions (net weight/supplementary unit)</option>
+            <option value="483">483 - Declaration of subheading submitted to restrictions (value)</option>
+            <option value="485">485 - Declaration of subheading submitted to restrictions (export)</option>
+            <option value="489">489 - Representative price</option>
+            <option value="490">490 - Standard import value</option>
+            <option value="552">552 - Definitive anti-dumping duty</option>
+            <option value="554">554 - Definitive countervailing duty</option>
+            <option value="555">555 - Anti-dumping/countervailing duty - Pending collection</option>
+            <option value="561">561 - Notice of initiation of an anti-dumping or countervailing proceeding</option>
+            <option value="562">562 - Suspended anti-dumping or countervailing duty</option>
+            <option value="564">564 - Anti-dumping or countervailing registration</option>
+            <option value="565">565 - Anti-dumping/countervailing review</option>
+            <option value="566">566 - Anti-dumping/countervailing statistic</option>
+            <option value="570">570 - Anti-dumping/countervailing duty - Control</option>
+            <option value="651">651 - Security based on representative price</option>
+            <option value="652">652 - Additional duty based on cif price</option>
+            <option value="653">653 - Security based on representative price, reduced under the benefit of a tariff quota</option>
+            <option value="654">654 - Additional duty based on CIF price, reduced under the benefit of a tariff quota</option>
+            <option value="695">695 - Additional duties</option>
+            <option value="705">705 - Import prohibition on goods for torture and repression</option>
+            <option value="706">706 - Goods for torture and repression, export prohibition</option>
+            <option value="707">707 - Import control</option>
+            <option value="708">708 - Goods for torture and repression, export restriction</option>
+            <option value="709">709 - Export control</option>
+            <option value="710">710 - Import control - CITES</option>
+            <option value="711">711 - Import control on restricted goods and technologies</option>
+            <option value="712">712 - Import control - IAS</option>
+            <option value="713">713 - Import control on genetically modified organisms (GMO) and products containing GMOs</option>
+            <option value="714">714 - Import control</option>
+            <option value="715">715 - Export control - CITES</option>
+            <option value="716">716 - Export control measure for fish</option>
+            <option value="717">717 - Export control on restricted goods and technologies</option>
+            <option value="718">718 - Export control on luxury goods</option>
+            <option value="719">719 - Control on illegal, unreported and unregulated fishing</option>
+            <option value="722">722 - Entry into free circulation (restriction - feed and food)</option>
+            <option value="724">724 - Import control of fluorinated greenhouse gases</option>
+            <option value="725">725 - Export control on ozone-depleting substances</option>
+            <option value="728">728 - Import control on luxury goods</option>
+            <option value="730">730 - Compliance with the pre-export checks requirements</option>
+            <option value="735">735 - Export control on cultural goods</option>
+            <option value="740">740 - Export control on cat and dog fur</option>
+            <option value="745">745 - Import control on cat and dog fur</option>
+            <option value="746">746 - Import control on seal products</option>
+            <option value="747">747 - Import control of timber and timber products subject to the FLEGT licensing scheme</option>
+            <option value="748">748 - Import control of mercury</option>
+            <option value="749">749 - Export control of mercury</option>
+            <option value="750">750 - Import control of organic products</option>
+            <option value="751">751 - Export control - Waste</option>
+            <option value="755">755 - Import control - waste</option>
+            <option value="760">760 - Import control</option>
+
+					</select>
+				</div>
+
+<div id="blockQuota" style="display:none;">
+        <div class="form-group">
+          <h2 class="heading-small">Configure the quota</h2>
+					<label class="form-label">Order number
+              <span class="form-hint">This is the code an importer would need to enter into their customs declaration to benefit from this tariff quota.</span>
+          </label>
+          <input type="text" maxlength="6" class="form-control form-control-1-4 font-xsmall" value=""></input>
+				</div>
+
+        <div class="form-group">
+					<label class="form-label">Initial status</label>
+          <select class="form-control form-control-1-3 font-xsmall">
+						<option value="0">--select quota initial status--</option>
+					</select>
+				</div>
+
+        <div class="form-group">
+					<label class="form-label">Criticality threshold (%)</label>
+          <input type="text" maxlength="6" class="form-control form-control-1-4 font-xsmall" value=""></input>
+				</div>
+
+
+        <div class="form-group">
+					<label class="form-label">Description<span class="form-hint">This field is optional but will help you locate your quota at a later date</span></label>
+					<textarea class="form-control form-control-3-4 font-xsmall" name="textarea" id="textarea" rows="3"></textarea>
+				</div>
+
+        <div class="form-group">
+			<h2 class="heading-small">Set the quota opening balance</h2>
+			<div class="pull-left w23">
+				<label class="form-label">Quota period</label>
+				<select class="form-control font-xsmall" style="width:auto;margin-right:1em;" name="quotaperiod" id="quotaperiod" onchange="javascript:selectQuotaPeriodOptions();">
+					<option value="0">--Select quota period--</option>
+					<option value="1" selected>Annual</option>
+					<option value="2">Bi-Annual</option>
+					<option value="3">Quarterly</option>
+					<option value="4">Monthly</option>
+				</select>
+			</div>
+			<div class="pull-left">
+				<label class="form-label">Starting on</label>
+				<select class="form-control font-xsmall pull-left" style="width:auto;margin-right:1em">
+					<option value="0">Day</option>
+					<option value="1">1</option>
+				</select>
+				<select class="form-control font-xsmall pull-left" style="width:auto;margin-right:1em">
+					<option value="0">Month</option>
+					<option value="1">Jan</option>
+				</select>
+				<select class="form-control font-xsmall pull-left" style="width:auto;margin-right:1em">
+					<option value="0">Year</option>
+					<option value="1">2019</option>
+				</select>
+				<div style="clear:both"></div>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+
+
+		<div class="form-group" id="quotaBalanceAnnual">
+			<div class="pull-left w23">
+				<label class="form-label">Amount (year)</label>
+				<input type="text" maxlength="12" class="form-control font-xsmall" value=""></input>
+			</div>
+			<div class="pull-left" style="width:35%;margin-right:1em;">
+				<label class="form-label">Measurement unit</label>
+				<select class="form-control font-xsmall" style="width:100%">
+					<option value="0">-Please select-</option>
+					<option value="KMT">KMT - Kilometre</option>
+					<option value="KNI">KNI - Kilogram of nitrogen</option>
+					<option value="KNS">KNS - Kilogram of hydrogen peroxide</option>
+					<option value="KPH">KPH - Kilogram of potassium hydroxide (caustic potash)</option>
+					<option value="KPO">KPO - Kilogram of potassium oxide</option>
+					<option value="KPP">KPP - Kilogram of diphosphorus pentaoxide</option>
+					<option value="KSD">KSD - Kilogram of substance 90 % dry</option>
+					<option value="KSH">KSH - Kilogram of sodium hydroxide (caustic soda)</option>
+					<option value="KUR">KUR - Kilogram of uranium</option>
+					<option value="LPA">LPA - Litre pure (100%) alcohol</option>
+					<option value="LTR">LTR - Litre</option>
+					<option value="MIL">MIL - 1000 items</option>
+					<option value="MPR">MPR - 1000 pairs (used for statistical surveillance)</option>
+					<option value="MTK">MTK - Square metre</option>
+					<option value="MTQ">MTQ - Cubic meter</option>
+					<option value="MTR">MTR - Metre</option>
+					<option value="MWH">MWH - 1000 kilowatt hours</option>
+					<option value="NAR">NAR - Number of items</option>
+					<option value="NCL">NCL - Number of cells</option>
+					<option value="NPR">NPR - Number of pairs</option>
+					<option value="TJO">TJO - Terajoule (gross calorific value)</option>
+					<option value="TNE">TNE - Tonne</option>
+					<option value="WAT">WAT - Number of Watt</option>
+				</select>
+			</div>
+			<div class="pull-left" style="width:35%"">
+				<label class="form-label">Measurement unit qualifier</label>
+				<select class="form-control font-xsmall" style="width:100%">
+					<option value="0">-Please select-</option>
+					<option value="A">A - Total alcohol</option>
+					<option value="B">B - per flask</option>
+					<option value="C">C - 1 000</option>
+					<option value="D">D - Per 1% by weight of sucrose or extractable sugar</option>
+					<option value="E">E - net of drained weight</option>
+					<option value="F">F - of common wheat</option>
+					<option value="G">G - Gross</option>
+					<option value="H">H - Hydrogen peroxide (H2O2)</option>
+					<option value="I">I - of biodiesel content</option>
+					<option value="J">J - of fuel content (usually in form of tallow, stearin, paraffin wax or other waxes, including the wick)</option>
+					<option value="K">K - of bioethanol content</option>
+					<option value="L">L - of live weight</option>
+					<option value="M">M - net of dry matter</option>
+					<option value="N">N - Net</option>
+					<option value="P">P - of lactic matter</option>
+					<option value="R">R - of the standard quality</option>
+					<option value="S">S - of sugar with a yield in white sugar of 92%</option>
+					<option value="T">T - of dry lactic matter</option>
+					<option value="X">X - Hectolitre</option>
+					<option value="Z">Z - per 1% by weight of sucrose</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group" id="quotaBalanceBiannual" style="display:none">
+			<div class="pull-left w23">
+				<label class="form-label">Amount (1<sup>st</sup> half)</label>
+				<input type="text" maxlength="12" class="form-control font-xsmall" value=""></input>
+			</div>
+			<div class="pull-left w23">
+				<label class="form-label">Amount (2<sup>nd</sup> half)</label>
+				<input type="text" maxlength="12" class="form-control font-xsmall" value=""></input>
+			</div>
+		</div>
+		
+		<div class="form-group" id="quotaBalanceQuarterly" style="display:none">
+			<div class="pull-left" style="width:auto;margin-right:1em">
+				<label class="form-label">Q1</label>
+				<input type="text" maxlength="12" class="form-control font-xsmall" value=""></input>
+			</div>
+			<div class="pull-left" style="width:auto;margin-right:1em">
+				<label class="form-label">Q2</label>
+				<input type="text" maxlength="12" class="form-control font-xsmall" value=""></input>
+			</div>
+			<div class="pull-left" style="width:auto;margin-right:1em">
+				<label class="form-label">Q3</label>
+				<input type="text" maxlength="12" class="form-control font-xsmall" value=""></input>
+			</div>
+			<div class="pull-left" style="width:auto;margin-right:1em">
+				<label class="form-label">Q4</label>
+				<input type="text" maxlength="12" class="form-control font-xsmall" value=""></input>
+			</div>
+		</div>
+		
+		<div class="form-group" id="quotaBalanceMonthly" style="display:none">
+			<div class="pull-left" style="width:auto;margin-right:1em;margin-top:1em">
+				<label class="form-label">Month 1</label>
+				<input type="text" maxlength="12" class="form-control font-xsmall" value=""></input>
+			</div>
+			<div class="pull-left" style="width:auto;margin-right:1em;margin-top:1em">
+				<label class="form-label">Month 2</label>
+				<input type="text" maxlength="12" class="form-control font-xsmall" value=""></input>
+			</div>
+			<div class="pull-left" style="width:auto;margin-right:1em;margin-top:1em">
+				<label class="form-label">Month 3</label>
+				<input type="text" maxlength="12" class="form-control font-xsmall" value=""></input>
+			</div>
+			<div class="pull-left" style="width:auto;margin-right:1em;margin-top:1em">
+				<label class="form-label">Month 4</label>
+				<input type="text" maxlength="12" class="form-control font-xsmall" value=""></input>
+			</div>
+			<div class="pull-left" style="width:auto;margin-right:1em;margin-top:1em">
+				<label class="form-label">Month 5</label>
+				<input type="text" maxlength="12" class="form-control font-xsmall" value=""></input>
+			</div>
+			<div class="pull-left" style="width:auto;margin-right:1em;margin-top:1em">
+				<label class="form-label">Month 6</label>
+				<input type="text" maxlength="12" class="form-control font-xsmall" value=""></input>
+			</div>
+			<div class="pull-left" style="width:auto;margin-right:1em;margin-top:1em">
+				<label class="form-label">Month 7</label>
+				<input type="text" maxlength="12" class="form-control font-xsmall" value=""></input>
+			</div>
+			<div class="pull-left" style="width:auto;margin-right:1em;margin-top:1em">
+				<label class="form-label">Month 8</label>
+				<input type="text" maxlength="12" class="form-control font-xsmall" value=""></input>
+			</div>
+			<div class="pull-left" style="width:auto;margin-right:1em;margin-top:1em">
+				<label class="form-label">Month 9</label>
+				<input type="text" maxlength="12" class="form-control font-xsmall" value=""></input>
+			</div>
+			<div class="pull-left" style="width:auto;margin-right:1em;margin-top:1em">
+				<label class="form-label">Month 10</label>
+				<input type="text" maxlength="12" class="form-control font-xsmall" value=""></input>
+			</div>
+			<div class="pull-left" style="width:auto;margin-right:1em;margin-top:1em">
+				<label class="form-label">Month 11</label>
+				<input type="text" maxlength="12" class="form-control font-xsmall" value=""></input>
+			</div>
+			<div class="pull-left" style="width:auto;margin-right:1em;margin-top:1em">
+				<label class="form-label">Month 12</label>
+				<input type="text" maxlength="12" class="form-control font-xsmall" value=""></input>
+			</div>
+		</div>
+		
+		<div class="form-group" id="quotaBalanceMeasurementUnits" style="display:none">
+			<div class="pull-left" style="width:35%;margin-right:1em;">
+				<label class="form-label">Measurement unit</label>
+				<select class="form-control font-xsmall" style="width:100%">
+					<option value="0">-Please select-</option>
+					<option value="KMT">KMT - Kilometre</option>
+					<option value="KNI">KNI - Kilogram of nitrogen</option>
+					<option value="KNS">KNS - Kilogram of hydrogen peroxide</option>
+					<option value="KPH">KPH - Kilogram of potassium hydroxide (caustic potash)</option>
+					<option value="KPO">KPO - Kilogram of potassium oxide</option>
+					<option value="KPP">KPP - Kilogram of diphosphorus pentaoxide</option>
+					<option value="KSD">KSD - Kilogram of substance 90 % dry</option>
+					<option value="KSH">KSH - Kilogram of sodium hydroxide (caustic soda)</option>
+					<option value="KUR">KUR - Kilogram of uranium</option>
+					<option value="LPA">LPA - Litre pure (100%) alcohol</option>
+					<option value="LTR">LTR - Litre</option>
+					<option value="MIL">MIL - 1000 items</option>
+					<option value="MPR">MPR - 1000 pairs (used for statistical surveillance)</option>
+					<option value="MTK">MTK - Square metre</option>
+					<option value="MTQ">MTQ - Cubic meter</option>
+					<option value="MTR">MTR - Metre</option>
+					<option value="MWH">MWH - 1000 kilowatt hours</option>
+					<option value="NAR">NAR - Number of items</option>
+					<option value="NCL">NCL - Number of cells</option>
+					<option value="NPR">NPR - Number of pairs</option>
+					<option value="TJO">TJO - Terajoule (gross calorific value)</option>
+					<option value="TNE">TNE - Tonne</option>
+					<option value="WAT">WAT - Number of Watt</option>
+				</select>
+			</div>
+			<div class="pull-left" style="width:35%"">
+				<label class="form-label">Measurement unit qualifier</label>
+				<select class="form-control font-xsmall" style="width:100%">
+					<option value="0">-Please select-</option>
+					<option value="A">A - Total alcohol</option>
+					<option value="B">B - per flask</option>
+					<option value="C">C - 1 000</option>
+					<option value="D">D - Per 1% by weight of sucrose or extractable sugar</option>
+					<option value="E">E - net of drained weight</option>
+					<option value="F">F - of common wheat</option>
+					<option value="G">G - Gross</option>
+					<option value="H">H - Hydrogen peroxide (H2O2)</option>
+					<option value="I">I - of biodiesel content</option>
+					<option value="J">J - of fuel content (usually in form of tallow, stearin, paraffin wax or other waxes, including the wick)</option>
+					<option value="K">K - of bioethanol content</option>
+					<option value="L">L - of live weight</option>
+					<option value="M">M - net of dry matter</option>
+					<option value="N">N - Net</option>
+					<option value="P">P - of lactic matter</option>
+					<option value="R">R - of the standard quality</option>
+					<option value="S">S - of sugar with a yield in white sugar of 92%</option>
+					<option value="T">T - of dry lactic matter</option>
+					<option value="X">X - Hectolitre</option>
+					<option value="Z">Z - per 1% by weight of sucrose</option>
+				</select>
+			</div>
+		</div>
+
+			
+	</div>
+
+<div class="form-group" id="blockOrigin" style="display:none">
+  <h2 class="heading-small">Select the origin the measure will apply to</h2>
+  <label class="form-label">You can specify a single country or region, or a pre-defined group of countries, or select
+  ‘Erga Omnes’ to apply the measure to all origins. If the area group you need is not in the list,
+  you can add <a href="geographical_area_create.html">add a new geographical area</a> from here.</label>
+
+  <div class="multiple-choice mt1">
+    <input type="radio" id="radGeographicalArea01" name="radGeographicalArea" onclick="javascript:geoClick(1);" />
+    <select id="geo1" disabled class="form-control form-control-1-4 font-xsmall" placeholder="--Select a country or region--">
+      <option value="0">--Select a country or region--</option>
+      <option value="AF">AF - Afghanistan</option>
+      <option value="AL">AL - Albania</option>
+      <option value="DZ">DZ - Algeria</option>
+      <option value="AS">AS - American Samoa</option>
+      <option value="AD">AD - Andorra</option>
+      <option value="AO">AO - Angola</option>
+      <option value="AI">AI - Anguilla</option>
+      <option value="AQ">AQ - Antarctica</option>
+      <option value="AG">AG - Antigua and Barbuda</option>
+      <option value="AR">AR - Argentina</option>
+      <option value="AM">AM - Armenia</option>
+      <option value="AW">AW - Aruba</option>
+      <option value="AU">AU - Australia</option>
+      <option value="AT">AT - Austria</option>
+      <option value="AZ">AZ - Azerbaijan</option>
+      <option value="XA">XA - Azores</option>
+      <option value="BS">BS - Bahamas</option>
+      <option value="BH">BH - Bahrain</option>
+      <option value="BD">BD - Bangladesh</option>
+      <option value="BB">BB - Barbados</option>
+      <option value="BY">BY - Belarus</option>
+      <option value="BE">BE - Belgium</option>
+      <option value="BZ">BZ - Belize</option>
+      <option value="BJ">BJ - Benin</option>
+      <option value="BM">BM - Bermuda</option>
+    </select>
+  </div>
+
+  <div class="multiple-choice mt1">
+    <input type="radio" id="radGeographicalArea02" name="radGeographicalArea" onclick="javascript:geoClick(2);" />
+    <select id="geo2" disabled class="form-control form-control-1-4 font-xsmall" placeholder="--Select a group of countries--">
+      <option value="0">--Select a group of countries--</option>
+      <option value="1008">1008 - All third countries</option>
+      <option value="9A23">9A23 - APEC countries (Asia-Pacific economic cooperation)</option>
+      <option value="9A14">9A14 - ASEAN countries (Association of South-East Asian Nations)</option>
+      <option value="9A34">9A34 - Asia</option>
+      <option value="1033">1033 - CARIFORUM</option>
+      <option value="KY">KY - Cayman Islands</option>
+      <option value="9A18">9A18 - CEEC countries (Central and eastern European Countries)</option>
+      <option value="CF">CF - Central African Republic</option>
+      <option value="2200">2200 - Central America</option>
+      <option value="9A32">9A32 - Central America and the Antilles</option>
+      <option value="2301">2301 - Certain handicraft products (Handicrafts)</option>
+      <option value="9A24">9A24 - Commonwealth of Independent States</option>
+      <option value="QU">QU - Countries and territories not specified</option>
+      <option value="1011">1011 - Erga Omnes</option>
+    </select>
+  </div>
+
+  <div class="form-group indent mt1" id="geo2Exclude" style="display:none">
+    <label for="txtExclude" class="font-xsmall">If you want to exclude countries from this measure, enter them here:</label><br />
+    <input type="text" maxlength="100" class="form-control form-control-1-2 font-xsmall" value=""></input>
+    <p class="font-xsmall"><a onclick="return (false);" href="#">Add another exclusion</a></p>
+  </div>
+
+  <div class="multiple-choice mt1">
+    <input type="radio" id="radGeographicalArea03" name="radGeographicalArea" onclick="javascript:geoClick(3);" />
+    <label for="radGeographicalArea03" id="lblGeo3" class="grey font-xsmall">Erga Omnes (all origins)</label>
+  </div>
+
+  <div class="form-group indent mt1" id="geo3Exclude" style="display:none">
+    <label for="txtExclude" class="font-xsmall">If you want to exclude countries from this measure, enter them here:</label><br />
+    <input type="text" maxlength="100" class="form-control form-control-1-2 font-xsmall" value=""></input>
+    <p class="font-xsmall"><a onclick="return (false);" href="#">Add another exclusion</a></p>
+  </div>
+<!-- The div below ends blockOrigin //-->
+</div>
+
+
+<div id="blockValidityDates" style="display:none;">
+  <h2 class="heading-small">Specify the measure’s validity period</h2>
+  <div class="form-group">
+		<label class="form-label">Start date<span class="form-hint">The measure will take effect (once approved) from this date.</span></label>
+    <div class="form-group">
+      <div class="nopad" style="width:50%">
+        <select class="form-control form-control-1-4 font-xsmall">
+          <option value="0">Day</option>
+          <option value="1">1</option>
+        </select>
+        <select class="form-control form-control-1-4 font-xsmall">
+          <option value="0">Month</option>
+          <option value="1">Jan</option>
+        </select>
+        <select class="form-control form-control-1-4 font-xsmall">
+          <option value="0">Year</option>
+          <option value="1">2019</option>
+        </select>
+      </div>
+    </div>
+
+		<label class="form-label">End date<span class="form-hint">By default this is set to the end date of the regulation giving force to this measure. You can optionally bring it forward, but it cannot be later than the regulation’s end date.</span></label>
+    <div class="form-group">
+      <div class="nopad" style="width:50%">
+        <select class="form-control form-control-1-4 font-xsmall">
+          <option value="0">Day</option>
+          <option value="1">1</option>
+        </select>
+        <select class="form-control form-control-1-4 font-xsmall">
+          <option value="0">Month</option>
+          <option value="1">Jan</option>
+        </select>
+        <select class="form-control form-control-1-4 font-xsmall">
+          <option value="0">Year</option>
+          <option value="1">2019</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <!-- The div below ends blockValidityDates //-->
+</div>
+
+
+
+
+<div id="blockGoods" style="display:none;">
+  <h2 class="heading-small">Specify the goods the measure will apply to</h2>
+  <div class="form-group">
+		<label class="form-label">Goods nomenclature code<span class="form-hint">Enter the goods nomenclature code here. If you don’t know which code you need,
+      you can find it via the <a href="https://trade-tariff.service.gov.uk" target="_blank">Trade Tariff service</a>.
+      You may optionally leave this field blank if you are providing a Meursing additional code below.</span></label>
+      <input type="text" name="txtCommodityCode" id="txtCommodityCode" maxlength="10" onkeyup="javascript:updateCommodityCode();" class="form-control form-control-1-2 font-xsmall" value=""></input>
+      <p class="font-xsmall" id="txtCommodityCodeDescription">Code description will appear here once you enter a goods code above.</p>
+  </div>
+
+  <div class="form-group">
+		<label class="form-label">Additional code<span class="form-hint">You can optionally specify an additional code here. If you do not provide a goods nomenclature code above, then you must provide a Meursing additional code here.</span></label>
+    <input type="text" name="txtAdditionalCode" id="txtAdditionalCode" maxlength="10" onkeyup="javascript:updateAdditionalCode();" class="form-control form-control-1-2 font-xsmall" value=""></input>
+    <p class="font-xsmall" id="txtAdditionalCodeDescription">Code description will appear here once you enter an additional code above.</p>
+  </div>
+
+  <!-- The div below ends blockGoods //-->
+</div>
+
+
+
+
+<div id="blockDuties" style="display:none;">
+	<h2 class="heading-small">Specify duties</h2>
+	<p class="font-xsmall">Select the required duty expression. You will then be shown further fields according to the expression selected. You can add further duties via the 'add another' link.</p>
+
+	<div class="w23" id="panelDutyExpression">
+		<div class="form-group mt1">
+			<label class="form-label">Duty expression</label>
+			<select id="optDutyExpression" class="form-control font-xsmall conditionSelect" onchange="javascript:showDutyExpressions();" placeholder="--Select condition code--">
+				<option value="0">— Select the type of duty to charge —</option>
+				<option value="01">01 % (ad valorem)</option>
+				<option value="01b">01 Specific duty rate</option>
+				<option value="02">02 Minus %</option>
+				<option value="02b">02 Minus amount</option>
+				<option value="04">04 Plus %</option>
+				<option value="04b">04 Plus amount</option>
+				<option value="06">06 Supplementary amount</option>
+				<option value="07">07 Levy</option>
+				<option value="09">09 Reduced Levy</option>
+				<option value="11">11 Variable component</option>
+				<option value="12">12 Agricultural component</option>
+				<option value="13">13 Reduced variable component</option>
+				<option value="14">14 Reduced agricultural component</option>
+				<option value="15">15 Minimum</option>
+				<option value="17">17 Maximum</option>
+				<option value="21">21 Additional duty on sugar (amount)</option>
+				<option value="23">23 Additional duty on sugar (%)</option>
+				<option value="25">25 Reduced additional duty on sugar</option>
+				<option value="27">27 Additional duty on flour</option>
+				<option value="29">29 Reduced additional duty on flour</option>
+				<option value="31">31 Accession compensatory amount</option>
+				<option value="33">33 Plus accession compensatory amount</option>
+				<option value="36">36 Minus % CIF</option>
+				<!--<option value="40">40 Export refunds for cereals</option>
+				<option value="41">41 Export refunds for rice</option>
+				<option value="42">42 Export refunds for eggs</option>
+				<option value="43">43 Export refunds for sugar</option>
+				<option value="44">44 Export refunds for milk products</option>
+				<option value="99">99 Supplementary unit</option>//-->
+			</select>
+
+		</div>
+	</div>
+
+	<div class="w23" id="panelDutyExpression2" style="display:none">
+		<div class="form-group mt1">
+			<label class="form-label" id="lblDutyExpression2"></label>
+			<input type="text" name="txtDutyExpression2" id="txtDutyExpression2" maxlength="10" class="form-control font-xsmall conditionInput" value="" style="width:100%"></input>
+
+		</div>
+	</div>
+
+	<div class="wPer" id="panelPer" style="display:none">
+		<p style="font-size:16px">per</p>
+	</div>
+
+	<div class="w23" id="panelMeasurementUnit" style="display:none">
+		<div class="form-group mt1">
+			<label class="form-label" id="lblDutyExpression2">Measurement unit</label>
+			<input type="text" name="txtDutyExpression2" id="txtDutyExpression2" maxlength="10" class="form-control font-xsmall conditionInput" value="" style="width:100%"></input>
+
+		</div>
+	</div>
+
+	<div class="w23" id="panelMeasurementUnitQualifier" style="display:none">
+		<div class="form-group mt1">
+			<label class="form-label" id="lblDutyExpression2">Unit qualifier</label>
+			<input type="text" name="txtDutyExpression2" id="txtDutyExpression2" maxlength="10" class="form-control font-xsmall conditionInput" value="" style="width:100%"></input>
+
+		</div>
+	</div>
+
+	<p class="font-xsmall mt1" style="clear:both"><a href="#" onclick="return (false);">Add another duty expression</a></p>
+  <!-- The div below ends blockDuties //-->
+</div>
+<div style="clear:both"></div>
+
+
+
+
+<div id="blockConditions" style="display:none;">
+  <h2 class="heading-small">Specify conditions</h2>
+  <div class="w23" id="conCondition">
+    <label class="form-label">Condition<span class="form-hint xxxsmall-hint">You can optionally specify conditions that will determine the customs
+      treatment of the goods this measure applies to.</span></label>
+      <select id="optConditionCode" class="form-control font-xsmall conditionSelect" onchange="javascript:showConditions();" placeholder="--Select condition code--">
+		<option value="0">--Select condition code--</option>
+        <option value="A">A - Presentation of an anti-dumping/countervailing document</option>
+        <option value="B">B - Presentation of a certificate/licence/document</option>
+        <option value="C">C - Presentation of a certificate/licence/document</option>
+        <option value="D">D - Intended for processing</option>
+        <option value="E1">E - The quantity declared is equal to or less than the specified maximum</option>
+        <option value="E2">E - The price per unit declared is equal or less than the specified maximum</option>
+        <option value="E3">E - Presentation of the required document</option>
+        <option value="F">F - The net free at frontier price before duty must be equal to or greater than the minimum price (see components)</option>
+        <option value="G">G - The CIF price plus the duty to be paid/ton must be equal to or greater than the minimum price (see components)</option>
+        <option value="H">H - Presentation of a certificate/licence/document</option>
+        <option value="I1">I - The quantity declared is equal or less than the specified maximum</option>
+        <option value="I2">I - The price per unit declared is equal or less than the specified maximum</option>
+        <option value="I3">I - Presentation of the required document</option>
+        <option value="K">K - Also applicable simultaneously with tariff quota shown in the field certificates</option>
+        <option value="L">L - CIF price must be higher than the minimum price (see components)</option>
+        <option value="M1">M - Declared price must be equal to or greater than the minimum price (see components)</option>
+        <option value="M2">M - Declared price must be equal to or greater than the reference price (see components)</option>
+        <option value="N">N - The CIF price before duty must be equal to or greater than the minimum price (see components)</option>
+        <option value="P">P - Only particular ingredients are eligible for export refund</option>
+        <option value="Q">Q - Presentation of an endorsed certificate/licence</option>
+        <option value="R">R - Ratio net weight/supplementary unit is equal to or higher than the condition amount</option>
+        <option value="S">S - Lodgement of a security</option>
+        <option value="U">U - Ratio declared value/supplementary unit" should be higher than the condition amount</option>
+        <option value="V">V - Import price must be equal to or greater than the entry price (see components)</option>
+        <option value="W">W - Washington Convention</option>
+        <option value="Y">Y - Other conditions</option>
+        <option value="Z">Z - Presentation of more than one certificate</option>
+
+      </select>
+  </div>
+
+  <div class="w23" id="objConditionCertificateType" style="display:none">
+    <label class="form-label">Certificate type<span class="form-hint xxxsmall-hint">Select the type of certificate required, or select ‘no certificate presented’ to define the action for that case.</span></label>
+    <select id="optConditionActionCertificateType" class="form-control font-xsmall conditionSelect" onchange="document.getElementById('txtCertificate').focus();">
+		<option value="9">9 - National Document</option>
+		<option value="A">A - Certificate of authenticity</option>
+		<option value="C">C - Other certificates</option>
+		<option value="D">D - Anti-dumping/countervailing document</option>
+		<option value="E">E - Export certificate/licence/document from country of origin</option>
+		<option value="H">H - HANDI, LOOMS certificate</option>
+		<option value="I">I - Surveillance certificate/licence/ document issued by one of the Member States</option>
+		<option value="K">K - Tariff quota</option>
+		<option value="L">L - Import certificate/licence/document</option>
+		<option value="N">N - UN/EDIFACT certificates</option>
+		<option value="P">P - Ingredients</option>
+		<option value="R">R - Export refunds</option>
+		<option value="T">T - T-Document</option>
+		<option value="U">U - Certificate of origin</option>
+		<option value="X">X - Export licence</option>
+		<option value="Y">Y - Particular provisions</option>
+		<option value="Z">Z - More certificates</option>
+	</select>
+  </div>
+
+  <div class="w23" id="objConditionCertificate" style="display:none">
+    <label class="form-label">Certificate<span class="form-hint xxxsmall-hint">Begin typing the certificate description, or enter the certificate code, then select the required certificate.</span></label>
+    <input type="text" name="txtCertificate" id="txtCertificate" maxlength="10" class="form-control font-xsmall conditionInput" value="" style="width:100%"></input>
+  </div>
+
+  <div class="w23" id="objConditionMaxPrice" style="display:none">
+    <label class="form-label">Maximum price per unit<span class="form-hint xxxsmall-hint">Specify the maximum price per unit at or below which this condition will apply.</span></label>
+    <input type="text" name="txtMaximumPricePerUnit" id="txtMaximumPricePerUnit" maxlength="10" class="form-control font-xsmall conditionInput" value=""></input>
+  </div>
+
+  <div class="w23" id="objConditionMinPrice" style="display:none">
+    <label class="form-label">Minimum price per unit<span class="form-hint xxxsmall-hint">Specify the minimum price per unit at or below which this condition will apply.</span></label>
+    <input type="text" name="txtMinimumPricePerUnit" id="txtMinimumPricePerUnit" maxlength="10" class="form-control font-xsmall conditionInput" value=""></input>
+  </div>
+
+  <div class="w23" id="objConditionReferencePrice" style="display:none">
+    <label class="form-label">Reference price per unit<span class="form-hint xxxsmall-hint">Specify the reference price (in €) at or above which this condition will apply</span></label>
+    <input type="text" name="txtReferenceimumPricePerUnit" id="txtReferenceimumPricePerUnit" maxlength="10" class="form-control font-xsmall conditionInput" value=""></input>
+  </div>
+
+  <div class="w23" id="objConditionMaxQuantity" style="display:none">
+    <label class="form-label">Maximum quantity<span class="form-hint xxxsmall-hint">Specify the maximum quantity at or below which this condition will apply.</span></label>
+    <input type="text" name="txtMaximumQuantity" id="txtMaximumQuantity" maxlength="10" class="form-control font-xsmall conditionInput" value=""></input>
+  </div>
+
+  <div class="w23" id="objConditionMinQuantity" style="display:none">
+    <label class="form-label">Minimum quantity<span class="form-hint xxxsmall-hint">Specify the Minimum quantity at or below which this condition will apply.</span></label>
+    <input type="text" name="txtMinimumQuantity" id="txtMinimumQuantity" Minlength="10" class="form-control font-xsmall conditionInput" value=""></input>
+  </div>
+
+  <div class="w23" id="objConditionRatio" style="display:none">
+    <label class="form-label">Ratio<span class="form-hint xxxsmall-hint">Specify the ratio at or above which this condition will apply.</span></label>
+    <input type="text" name="txtRatio" id="txtRatio" maxlength="10" class="form-control font-xsmall conditionInput" value=""></input>
+  </div>
+
+  <div class="w23" id="objConditionEntryPrice" style="display:none">
+    <label class="form-label">Entry price<span class="form-hint xxxsmall-hint">Specify the entry price (in €) at or above which this condition will apply.</span></label>
+    <input type="text" name="txtEntryPrice" id="txtEntryPrice" maxlength="10" class="form-control font-xsmall conditionInput" value=""></input>
+  </div>
+
+  <div class="w23" id="objConditionActionCertificate" style="display:none">
+    <label class="form-label">Action<span class="form-hint xxxsmall-hint">Define the action to take when the specified certificate (or no certificate) is presented.</span></label>
+    <select id="optConditionActionCertificate" class="form-control font-xsmall conditionSelect">
+	  <option valie="00">-- Select the action to apply</option>
+      <option value="01">01 - Apply the amount of the action (see components)</option>
+      <option value="02">02 - Apply the difference between the amount of the action (see components) and the price at import</option>
+      <option value="03">03 - Apply the difference between the amount of the action (see components) and CIF price</option>
+      <option value="04">04 - The entry into free circulation is not allowed</option>
+      <option value="05">05 - Export is not allowed</option>
+      <option value="06">06 - Import is not allowed</option>
+      <option value="07">07 - Measure not applicable</option>
+      <option value="08">08 - Declared subheading not allowed</option>
+      <option value="09">09 - Import/export not allowed after control</option>
+      <option value="10">10 - Declaration to be corrected  - box 33, 37, 38, 41 or 46 incorrect</option>
+      <option value="11">11 - Apply the difference between the amount of the action (see components) and the free at frontier price before duty</option>
+      <option value="12">12 - Apply the difference between the amount of the action (see components) and the CIF price before duty</option>
+      <option value="13">13 - Apply the difference between the amount of the action (see components) and the CIF price augmented with the duty to be paid per tonne</option>
+      <option value="14">14 - The exemption/reduction of the anti-dumping duty is not applicable</option>
+      <option value="15">15 - Apply the difference between the amount of the action (see components) and the price augmented with the countervailing duty (3,8%)</option>
+      <option value="16">16 - Export refund not applicable</option>
+      <option value="24">24 - Entry into free circulation allowed</option>
+      <option value="25">25 - Export allowed</option>
+      <option value="26">26 - Import allowed</option>
+      <option value="27">27 - Apply the mentioned duty</option>
+      <option value="28">28 - Declared subheading allowed</option>
+      <option value="29">29 - Import/export allowed after control</option>
+      <option value="30">30 - Suspicious case</option>
+      <option value="34">34 - Apply exemption/reduction of the anti-dumping duty</option>
+      <option value="36">36 - Apply export refund</option>
+
+    </select>
+  </div>
+
+
+  <div class="w23" id="objConditionActionGeneric" style="display:none">
+    <label class="form-label">Action<span class="form-hint xxxsmall-hint">Define the action to take if the condition is met.</span></label>
+    <select id="optConditionActionGeneric" class="form-control font-xsmall conditionSelect">
+      <option value="01">01 - Apply the amount of the action (see components)</option>
+      <option value="02">02 - Apply the difference between the amount of the action (see components) and the price at import</option>
+      <option value="03">03 - Apply the difference between the amount of the action (see components) and CIF price</option>
+      <option value="04">04 - The entry into free circulation is not allowed</option>
+      <option value="05">05 - Export is not allowed</option>
+      <option value="06">06 - Import is not allowed</option>
+      <option value="07">07 - Measure not applicable</option>
+      <option value="08">08 - Declared subheading not allowed</option>
+      <option value="09">09 - Import/export not allowed after control</option>
+      <option value="10">10 - Declaration to be corrected  - box 33, 37, 38, 41 or 46 incorrect</option>
+      <option value="11">11 - Apply the difference between the amount of the action (see components) and the free at frontier price before duty</option>
+      <option value="12">12 - Apply the difference between the amount of the action (see components) and the CIF price before duty</option>
+      <option value="13">13 - Apply the difference between the amount of the action (see components) and the CIF price augmented with the duty to be paid per tonne</option>
+      <option value="14">14 - The exemption/reduction of the anti-dumping duty is not applicable</option>
+      <option value="15">15 - Apply the difference between the amount of the action (see components) and the price augmented with the countervailing duty (3,8%)</option>
+      <option value="16">16 - Export refund not applicable</option>
+      <option value="24">24 - Entry into free circulation allowed</option>
+      <option value="25">25 - Export allowed</option>
+      <option value="26">26 - Import allowed</option>
+      <option value="27">27 - Apply the mentioned duty</option>
+      <option value="28">28 - Declared subheading allowed</option>
+      <option value="29">29 - Import/export allowed after control</option>
+      <option value="30">30 - Suspicious case</option>
+      <option value="34">34 - Apply exemption/reduction of the anti-dumping duty</option>
+      <option value="36">36 - Apply export refund</option>
+
+    </select>
+  </div>
+  <div style="clear:both"></div>
+
+
+  <p class="font-xsmall mt1" style="clear:both"><a href="#" onclick="return (false);">Add another condition</a></p>
+  <div style="clear:both"></div>
+<!-- The div below ends blockConditions //-->
+</div>
+
+<div id="blockFootnotes" style="display:none;">
+  <h2 class="heading-small mt2">Add footnotes</h2>
+  <div class="form-group">
+		<label class="form-label">Footnote type<!--<span class="form-hint">Lorem ipsum</span>//--></label>
+
+      <select id="objFootnoteType" class="form-control font-xsmall" placeholder="--Select the footnote type to use--">
+        <option value="0" disabled>--Select the footnote type to use--</option>
+        <option value="CA">CA - Additional nomenclature - CADD</option>
+        <option value="CD">CD - Conditions</option>
+        <option value="CG">CG - Cultural goods</option>
+        <option value="CO">CO - Conditions</option>
+        <option value="DU">DU - Dual use goods</option>
+        <option value="EU">EU - End use</option>
+        <option value="IS">IS - Invasive alien species</option>
+        <option value="MG">MG - Military goods and technologies</option>
+        <option value="MH">MH - Meursing table</option>
+        <option value="MX">MX - Export refund measure</option>
+        <option value="NC">NC - Combined Nomenclature</option>
+        <option value="NM">NM - CN measure</option>
+        <option value="NX">NX - Export Refund Nomenclature</option>
+        <option value="OZ">OZ - Ozone-depleting substances</option>
+        <option value="PB">PB - Publication</option>
+        <option value="PN">PN - See annex</option>
+        <option value="TM">TM - Taric Measure</option>
+        <option value="TN">TN - Taric Nomenclature</option>
+        <option value="TP">TP - Dynamic footnote</option>
+        <option value="TR">TR - Torture and repression</option>
+        <option value="WR">WR - Wine reference</option>
+      </select>
+
+
+  </div>
+
+  <div class="form-group">
+		<label class="form-label">Footnote<span class="form-hint">Start typing your footnote in the field below. Matching or similar footnotes (within the type above) will be listed below - select one to re-use it, or continue typing to create a new one.</span></label>
+
+    <textarea class="form-control form-control-3-4 font-xsmall" name="textarea" id="textarea" rows="5"></textarea>
+
+    <p class="mt1 font-xsmall"><a href="footnote_create.html">Add another footnote</a></p>
+
+  </div>
+
+  <!-- The div below ends blocFootnotes //-->
+</div>
+
+
+
+
+
+
+<div id="blockButtons" style="display:none;">
+	<div class="form-group" id="blockButtons">
+    <button class="button" type="submit" id="signin">Create measure</button>
+    <button class="button" type="submit" id="signin">Cancel</button>
+  </div>
+</div>
+			</form>
+
+
+		</main>
+  </div>
+
+<!-- CONTENT ENDS HERE //-->
+<!-- GLOBAL FOOTER STARTS HERE //-->
+    <footer class="group js-footer" id="footer" role="contentinfo">
+
+      <div class="footer-wrapper" style="margin-top:0px;padding-top:0px;">
+        <div class="footer-meta">
+          <div class="footer-meta-inner">
+              <h2 class="visuallyhidden">Support links</h2>
+				<ul>
+				<li><a href="#">Terms and conditions</a></li>
+				<li><a href="#">Cookies</a></li>
+				<li>Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a>
+				</li>
+				</ul>
+
+
+            <div class="open-government-licence">
+              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
+                <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+            </div>
+          </div>
+
+          <div class="copyright">
+            <a href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">© Crown copyright</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+    <script src="https://assets.trade-tariff.service.gov.uk/tariff/govuk-template-c4f303154d2a238bdda4d5cf1ebd8d4487822e4cbc3e4c83e743da869443ce72.js"></script>
+
+      <script src="https://assets.trade-tariff.service.gov.uk/tariff/application-eda8092be34c7c33e020a1b074f040e41864966931bcec781b9a9ce9df4d4ecb.js"></script>
+
+
+    <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+  </body>
+</html>
