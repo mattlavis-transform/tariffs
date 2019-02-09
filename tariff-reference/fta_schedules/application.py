@@ -96,11 +96,10 @@ class application(object):
 		# Write the document and ZIP it up
 		my_document.print_tariffs()
 		my_document.print_quotas()
+		my_document.create_core()
 		my_document.write()
 		print ("\nPROCESS COMPLETE - file written to " + my_document.FILENAME + "\n")
 			
-
-
 	def clear(self): 
 		# for windows 
 		if name == 'nt': 
@@ -270,6 +269,10 @@ class application(object):
 		# Soft horizontal line for putting dividers into the quota table
 		fHorizLineSoft = open(os.path.join(self.COMPONENT_DIR, "horiz_line_soft.xml"), "r") 
 		self.sHorizLineSoftXML = fHorizLineSoft.read()
+
+		# core.xml that contains document information
+		fCore = open(os.path.join(self.COMPONENT_DIR, "core.xml"), "r") 
+		self.sCoreXML = fCore.read()
 
 
 	def getSivs(self):

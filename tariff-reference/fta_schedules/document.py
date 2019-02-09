@@ -489,6 +489,23 @@ class document(object):
 
 		self.document_xml = self.document_xml.replace("{QUOTA TABLE GOES HERE}", quota_xml)
 
+	def create_core(self):
+		s = g.app.sCoreXML
+		a = 1
+		s = s.replace("{COUNTRY_NAME}",		g.app.country_name)
+		s = s.replace("{AGREEMENT_NAME}",	g.app.agreement_name)
+		s = s.replace("{AGREEMENT_DATE}",	g.app.agreement_date_long)
+		s = s.replace("{VERSION}",			g.app.version)
+		s = s.replace("{DATE}",				g.app.agreement_date_short)
+
+		FILENAME	= os.path.join(g.app.DOCPROPS_DIR, "core.xml")
+		file = codecs.open(FILENAME, "w", "utf-8")
+		file.write(s)
+		file.close() 
+
+
+
+
 	def write(self):
 		app = g.app
 		###########################################################################
