@@ -286,13 +286,14 @@
         },
         "esa": {
             "produce_schedule": "No",
-            "notes": "There are no quotas associated with this geo. area. Using the individual countries: Comoros ??, Madagascar, Mauritius, the Seychelles, Zambia and Zimbabwe",
+            "notes": "There are no quotas associated with this geo. area. Using the individual countries: Comoros ??, Madagascar, Mauritius, the Seychelles, Zambia and Zimbabwe; adding MU (Mauritius to the base)",
             "country_name": "ESA",
             "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and ESA countries",
-            "agreement_date": "05/02/2019",
+            "agreement_date": "21/02/2019",
             "version": "1.0",
             "country_codes": [
-                "1034"
+                "1034",
+				"MU"
             ],
             "table_per_country": 0,
             "reg_list": [
@@ -341,6 +342,22 @@
             "version": "1.0",
             "country_codes": [
                 "1034"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "D1923/17",
+                "D0196/12"
+            ]
+        },
+        "namibia": {
+            "produce_schedule": "Yes",
+            "country_name": "Namibia",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and SADC countries - Namibia",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "1035",
+				"NA"
             ],
             "table_per_country": 0,
             "reg_list": [
@@ -757,6 +774,30 @@
             "country_codes": [
                 "2200",
                 "NI"
+            ],
+            "table_per_country": 1,
+            "reg_list": [
+                "D120734",
+                "R130974",
+                "R130975",
+                "R130976",
+                "R130977",
+                "R131011",
+                "R131012",
+                "R130922",
+                "R130923",
+                "R131366"
+            ]
+        },
+        "guatemala": {
+            "produce_schedule": "Yes",
+            "country_name": "Guatemala",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Central America - Guatemala",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "2200",
+                "GT"
             ],
             "table_per_country": 1,
             "reg_list": [

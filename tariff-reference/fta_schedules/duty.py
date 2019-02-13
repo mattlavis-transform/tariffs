@@ -1,8 +1,11 @@
+import sys
+import glob as g
 import functions
 
 class duty(object):
 	def __init__(self, commodity_code, additional_code_type_id, additional_code_id, measure_type_id, duty_expression_id,
-	duty_amount, monetary_unit_code, measurement_unit_code, measurement_unit_qualifier_code, measure_sid, quota_order_number_id, geographical_area_id):
+	duty_amount, monetary_unit_code, measurement_unit_code, measurement_unit_qualifier_code, measure_sid,
+	quota_order_number_id, geographical_area_id, validity_start_date, validity_end_date, is_siv):
 		self.commodity_code                  	= functions.mstr(commodity_code)
 		self.additional_code_type_id         	= functions.mstr(additional_code_type_id)
 		self.additional_code_id              	= functions.mstr(additional_code_id)
@@ -17,6 +20,9 @@ class duty(object):
 		self.quota_order_number_id				= quota_order_number_id
 		self.siv_duty							= False
 		self.geographical_area_id				= geographical_area_id
+		self.validity_start_date				= validity_start_date
+		self.validity_end_date					= validity_end_date
+		self.is_siv								= is_siv
 		
 		self.getDutyString()
 
@@ -66,7 +72,7 @@ class duty(object):
 					if self.measurement_unit_qualifier_code != "":
 						self.duty_string += " / " + self.getQualifier()
 
-		elif self.duty_expression_id == "17": #MAX
+		elif self.duty_expression_id in ("17", "35"): #MAX
 			if self.monetary_unit_code == "":
 				self.duty_string += "MAX {0:1.2f}".format(self.duty_amount) + "%"
 			else:
@@ -82,15 +88,11 @@ class duty(object):
 		elif self.duty_expression_id == "27":
 			self.duty_string += " + FD"
 
-		if self.duty_string == "":
-			self.siv_duty = True
-			if self.geographical_area_id == "MA" and self.commodity_code == "0702000000":
-				self.duty_string = "Entry Price - 39.77% + Specific 100%"
-			else:
-				self.duty_string = "Entry Price - 0% + Specific 100%"
-			# 3.5|2047140|0702000000
-			# The duty will be 0% for all SIV-related measures, except for Moroccan tomatoes
-			# print ("Must be Entry price", self.commodity_code, self.duty_string)
+		if self.is_siv == True:
+			self.duty_string = "Entry Price - " + "{0:1.2f}".format(self.duty_amount) + "% + Specific 100%"
+			print ("Entry price", self.duty_string, self.commodity_code)
+
+			# Need to overlay the %age calculation for SIVs
 
 	def getMeasurementUnit(self, s):
 		if s == "ASV":

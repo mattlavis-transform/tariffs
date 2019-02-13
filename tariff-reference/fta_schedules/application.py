@@ -9,7 +9,7 @@ from datetime import datetime
 import functions as f
 from partial_temporary_stop import partial_temporary_stop
 from document import document
-
+from hierarchy import hierarchy
 
 class application(object):
 	def __init__(self):
@@ -75,6 +75,7 @@ class application(object):
 			except:
 				print ("No country scope parameter found - ending")
 				sys.exit()
+				#pass
 		
 		self.get_country_list()
 		self.geo_ids = f.list_to_sql(self.country_codes)
@@ -274,25 +275,26 @@ class application(object):
 		fCore = open(os.path.join(self.COMPONENT_DIR, "core.xml"), "r") 
 		self.sCoreXML = fCore.read()
 
-
-	def getSivs(self):
+	def get_siv_products(self):
 		# Be aware that this is deliberately using old data, meaning that 
 		# in reality, the duty charged will be zero
-		sql = """SELECT DISTINCT m.goods_nomenclature_item_id
-		FROM measures m, measure_conditions mc
-		WHERE m.measure_sid = mc.measure_sid
-		AND m.validity_start_date > '2018-01-01'
-		AND mc.condition_code = 'V'
-		ORDER BY m.goods_nomenclature_item_id
+		print (" - Getting SIV products")
+		sql = """SELECT DISTINCT(goods_nomenclature_item_id) FROM measures m, measure_conditions mc
+		WHERE m.measure_sid = mc.measure_sid AND mc.condition_code = 'V'
+		AND m.validity_end_date >= '2018-01-01' ORDER BY 1
 		"""
 		cur = self.conn.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
+		self.siv_clause = ""
 		for r in rows:
 			self.siv_list.append(r[0])
+			self.siv_clause += "'" + r[0] + "', "
+		self.siv_clause = self.siv_clause.strip()
+		self.siv_clause = self.siv_clause.strip(",")
+		#print (self.siv_clause)
+		#sys.exit()
 		
-		self.siv_list.append("0707000510")
-		self.siv_list.append("0707000520")
 			
 	def getSeasonal(self):
 		sFileName = os.path.join(self.SOURCE_DIR, "seasonal_commodities.csv")
@@ -394,3 +396,37 @@ class application(object):
 			s = seasonal_small(goods_nomenclature_item_id, geographical_area_id, extent, duty)
 			self.seasonal_fta_duties.append(s)
 
+	def get_mfn_duty(self, goods_nomenclature_item_id, validity_start_date, validity_end_date):
+		productline_suffix = "80"
+		sql = """SELECT goods_nomenclature_item_id, producline_suffix as productline_suffix, number_indents,
+		description FROM ml.goods_nomenclature_export('""" + goods_nomenclature_item_id + """') WHERE producline_suffix = '80';"""
+		#print (sql)
+		cur = self.conn.cursor()
+		cur.execute(sql)
+		rows = cur.fetchall()
+		for row in rows:
+			number_indents = row[2]
+			description = row[3]
+			print (number_indents)
+			hier = hierarchy(goods_nomenclature_item_id, productline_suffix, number_indents, description)
+			hier.get_hierarchy("up")
+			clause = ""
+			for o in hier.ar_hierarchies:
+				print (o.goods_nomenclature_item_id, o.productline_suffix)
+				if o.productline_suffix == "80":
+					clause += "'" + o.goods_nomenclature_item_id + "', "
+			clause = clause.strip()
+			clause = clause.strip(",")
+			print (clause)
+
+		sql = """SELECT * FROM measures WHERE goods_nomenclature_item_id IN (""" + clause + """) AND measure_type_id IN ('103', '105')
+		AND validity_start_date < '2019_03_29' AND (validity_end_date >= '2019_03_29' OR validity_end_date IS NULL)"""
+		#print (sql)
+
+	def list_to_where_clause_numeric(self, my_list):
+		s = ""
+		for obj in my_list:
+			s += str(obj) + ", "
+		s = s.strip()
+		s = s.strip(",")
+		return (s)

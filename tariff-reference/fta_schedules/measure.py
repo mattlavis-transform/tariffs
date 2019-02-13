@@ -39,6 +39,7 @@ class measure(object):
 		self.measure_count          		= 0
 		self.measure_type_count     		= 0
 		self.seasonal_list					= []
+		self.is_siv							= False
 
 		self.special_list = []
 
@@ -60,6 +61,10 @@ class measure(object):
 		self.additional_code_list = []
 
 		for d in self.duty_list:
+			"""
+			if d.is_siv == True:
+				print ("I have found an SIV in combine_duties on product ", self.commodity_code)
+			"""
 			d.geographical_area_id = self.geographical_area_id
 			self.measure_type_list.append(d.measure_type_id)
 			self.measure_list.append(d.measure_sid)
@@ -73,10 +78,16 @@ class measure(object):
 		self.measure_type_count = len(measure_type_list_unique)
 		self.additional_code_count = len(additional_code_list_unique)
 		
+		for d in self.duty_list:
+			self.combined_duty += d.duty_string + " "
+		"""
 		if self.measure_count == 1 and self.measure_type_count == 1 and self.additional_code_count == 1:
 			for d in self.duty_list:
 				self.combined_duty += d.duty_string + " "
+			if d.is_siv == True:
+				print ("I have found an SIV")
 		else:
+			print ("I should never show", self.measure_count)
 			if self.measure_type_count > 1:
 				#print ("MTOMT")
 				#self.combined_duty = "More than one measure type"
@@ -96,6 +107,7 @@ class measure(object):
 						if d.additional_code_id == "550":
 							self.combined_duty += d.duty_string + " "
 	
+		"""
 		self.combined_duty = self.combined_duty.replace("  ", " ")
 		self.combined_duty = self.combined_duty.strip()
 

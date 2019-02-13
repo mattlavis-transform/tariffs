@@ -7,8 +7,8 @@
 	<dc:description/>
 	<cp:lastModifiedBy>Department for International Trade - Trade Policy Group</cp:lastModifiedBy>
 	<cp:revision>1</cp:revision>
-	<dcterms:created xsi:type="dcterms:W3CDTF">{DATE}</dcterms:created>
-	<dcterms:modified xsi:type="dcterms:W3CDTF">{DATE}</dcterms:modified>
+	<dcterms:created xsi:type="dcterms:W3CDTF">2018-10-02T15:43:00Z</dcterms:created>
+	<dcterms:modified xsi:type="dcterms:W3CDTF">2018-10-02T15:43:00Z</dcterms:modified>
 <!--
 	<dcterms:modified xsi:type="dcterms:W3CDTF">2018-10-02T15:43:00Z</dcterms:modified>
 //-->

@@ -13,6 +13,7 @@ from duty        import duty
 from quota_order_number import quota_order_number
 from quota_definition import quota_definition
 from measure import measure
+from measure_condition import measure_condition
 from commodity import commodity
 from quota_commodity import quota_commodity
 from quota_balance import quota_balance
@@ -29,13 +30,16 @@ class document(object):
 		self.wide_duty					= False
 
 		print ("Creating FTA document for " + g.app.country_name + "\n")
+		g.app.get_siv_products()
 
 		self.document_xml = ""
 		
 	def get_duties(self, instrument_type):
+		print (" - Getting duties for " + instrument_type)
 		app = g.app
 		###############################################################
 		# Get the duties
+		self.measure_list = []
 		if instrument_type == "preferences":
 			measure_type_list = "'142', '145'"
 		else:
@@ -45,7 +49,8 @@ class document(object):
 			sql = """SELECT m.goods_nomenclature_item_id, m.additional_code_type_id, m.additional_code_id,
 			m.measure_type_id, mc.duty_expression_id, mc.duty_amount, mc.monetary_unit_code,
 			mc.measurement_unit_code, mc.measurement_unit_qualifier_code, m.measure_sid, m.ordernumber,
-			m.validity_start_date, m.validity_end_date, m.geographical_area_id
+			m.validity_start_date, m.validity_end_date, m.geographical_area_id,
+			m.validity_start_date, m.validity_end_date
 			FROM ml.v5_2019 m LEFT OUTER JOIN measure_components mc ON m.measure_sid = mc.measure_sid
 			WHERE (m.measure_type_id IN (""" + measure_type_list + """)
 			AND m.geographical_area_id IN (""" + g.app.geo_ids + """)
@@ -56,7 +61,8 @@ class document(object):
 			sql = """SELECT m.goods_nomenclature_item_id, m.additional_code_type_id, m.additional_code_id,
 			m.measure_type_id, mc.duty_expression_id, mc.duty_amount, mc.monetary_unit_code,
 			mc.measurement_unit_code, mc.measurement_unit_qualifier_code, m.measure_sid, m.ordernumber,
-			m.validity_start_date, m.validity_end_date, m.geographical_area_id
+			m.validity_start_date, m.validity_end_date, m.geographical_area_id,
+			m.validity_start_date, m.validity_end_date
 			FROM ml.v5_2019 m LEFT OUTER JOIN measure_components mc ON m.measure_sid = mc.measure_sid
 			WHERE m.measure_type_id IN (""" + measure_type_list + """)
 			AND m.geographical_area_id IN (""" + g.app.geo_ids + """)
@@ -86,10 +92,19 @@ class document(object):
 			measure_sid						= f.mstr(row[9])
 			quota_order_number_id			= f.mstr(row[10])
 			geographical_area_id			= f.mstr(row[13])
+			validity_start_date				= f.mstr(row[14])
+			validity_end_date				= f.mstr(row[15])
 
-			oDuty = duty(commodity_code, additional_code_type_id, additional_code_id, measure_type_id, duty_expression_id, duty_amount, monetary_unit_code, measurement_unit_code, measurement_unit_qualifier_code, measure_sid, quota_order_number_id, geographical_area_id)
+			if duty_amount is None:
+				is_siv = True
+			else:
+				is_siv = False
+
+			oDuty = duty(commodity_code, additional_code_type_id, additional_code_id, measure_type_id, duty_expression_id,
+			duty_amount, monetary_unit_code, measurement_unit_code, measurement_unit_qualifier_code,
+			measure_sid, quota_order_number_id, geographical_area_id, validity_start_date, validity_end_date, is_siv)
 			self.duty_list.append(oDuty)
-		
+			self.measure_list.append(measure_sid)
 
 	def get_quota_order_numbers(self):
 		app = g.app
@@ -364,7 +379,7 @@ class document(object):
 					# which should avoid this eventuality.
 					qon.validity_start_date				= datetime.strptime("2019-03-29", "%Y-%m-%d")
 					qon.validity_end_date               = datetime.strptime("2019-12-31", "%Y-%m-%d")
-					print (qon.quota_order_number_id)
+					print ("No quota definitions found for quota", str(qon.quota_order_number_id))
 					qon.initial_volume                  = ""
 					qon.volume_yx						= ""
 					qon.measurement_unit_code           = ""
@@ -428,7 +443,7 @@ class document(object):
 							try:
 								row_string = row_string.replace("{QUOTA_OPEN_DATE_2019}",	datetime.strftime(qon.validity_start_date_2019, '%d/%m/%Y'))
 							except:
-								print (qon.quota_order_number_id)
+								print ("here" . qon.quota_order_number_id)
 							row_string = row_string.replace("{QUOTA_CLOSE_DATE_2019}",	datetime.strftime(qon.validity_end_date_2019, '%d/%m/%Y'))
 							row_string = row_string.replace("{QUOTA_OPEN_DATE}",		datetime.strftime(qon.validity_start_date, '%d/%m'))
 							row_string = row_string.replace("{QUOTA_CLOSE_DATE}",		datetime.strftime(qon.validity_end_date, '%d/%m'))
@@ -545,10 +560,14 @@ class document(object):
 			WHERE m.geographical_area_id IN (""" + g.app.geo_ids + """) AND m.measure_type_id IN ('142', '145')
 			ORDER BY goods_nomenclature_item_id, validity_start_date ASC"""
 
+		#print ("print_tariffs", sql)
+		#sys.exit()
+		
 		cur = app.conn.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
 		measure_list = []
+		measure_sid_list = []
 		for row in rows:
 			measure_sid				= row[0]
 			commodity_code			= row[1]
@@ -558,6 +577,41 @@ class document(object):
 
 			my_measure = measure(measure_sid, commodity_code, "", validity_start_date, validity_end_date, geographical_area_id)
 			measure_list.append (my_measure)
+			measure_sid_list.append (measure_sid)
+
+
+		# Step 1b - Get all of the SIV rates and get ready to apply them
+		self.measure_condition_list = []
+		clause = g.app.list_to_where_clause_numeric(measure_sid_list)
+		#print (clause)
+		sql = """
+		SELECT measure_sid, mcc.duty_amount FROM measure_conditions mc, measure_condition_components mcc
+		WHERE mc.measure_condition_sid = mcc.measure_condition_sid
+		AND condition_code = 'V'
+		AND mcc.duty_expression_id = '01'
+		AND mcc.duty_amount != 0
+		AND measure_sid IN (""" + clause + """)
+		ORDER BY measure_sid
+		"""
+		cur = g.app.conn.cursor()
+		cur.execute(sql)
+		rows = cur.fetchall()
+		for row in rows:
+			measure_sid				= row[0]
+			condition_duty_amount	= row[1]
+			mc = measure_condition(0, measure_sid, "V", 1, condition_duty_amount, "", "", "", "", "", "")
+			self.measure_condition_list.append (mc)
+
+		for m in measure_list:
+			if len(m.duty_list) == 0:
+				#print (m.commodity_code)
+				for mc in self.measure_condition_list:
+					if mc.measure_sid == m.measure_sid:
+						#print ("Match found for a measure where there is no duty")
+						d = duty(m.commodity_code, "", "", "", "01", mc.condition_duty_amount, "", "", "", mc.measure_sid, "", "", "", "", True)
+						d.is_siv = True
+						m.duty_list.append(d)
+						break
 
 
 		# Step 2 - Having loaded all of the measures from the database, cycle through the list of duties (components) previously
