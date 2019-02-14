@@ -21,6 +21,7 @@ class quota_definition(object):
 		self.formatted_initial_volume			= ""
 		self.formatted_volume_yx				= ""
 		self.addendum							= ""
+		self.scope								= ""
 
 	def format_volumes(self):
 		self.formatted_initial_volume	= self.format_volume(self.initial_volume)

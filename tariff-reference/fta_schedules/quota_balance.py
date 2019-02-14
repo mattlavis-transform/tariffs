@@ -7,7 +7,7 @@ import functions as f
 import glob as g
 
 class quota_balance(object):
-	def __init__(self, quota_order_number_id, country, method, y1_balance, yx_balance, yx_start, measurement_unit_code, origin_quota, addendum):
+	def __init__(self, quota_order_number_id, country, method, y1_balance, yx_balance, yx_start, measurement_unit_code, origin_quota, addendum, scope):
 		self.quota_order_number_id	= quota_order_number_id
 		self.country				= country
 		self.method					= method
@@ -17,6 +17,7 @@ class quota_balance(object):
 		self.yx_end					= self.addYear(self.yx_start)
 		self.measurement_unit_code	= measurement_unit_code.strip()
 		self.addendum				= addendum.strip()
+		self.scope					= scope.strip()
 
 		if origin_quota == "Y":
 			origin_quota = "Yes"

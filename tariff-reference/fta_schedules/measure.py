@@ -6,8 +6,6 @@ import functions as f
 import glob as g
 from duty import duty
 
-#app = g.app
-
 class measure(object):
 	def __init__(self, measure_sid, commodity_code, quota_order_number_id, validity_start_date, validity_end_date, geographical_area_id):
 		# Get parameters from instantiator
@@ -19,14 +17,24 @@ class measure(object):
 
 		self.validity_start_day		= datetime.strftime(self.validity_start_date, "%d")
 		self.validity_start_month	= datetime.strftime(self.validity_start_date, "%m")
+		self.validity_start_year	= datetime.strftime(self.validity_start_date, "%Y")
+		
 		if self.validity_end_date is not None:
 			self.extent = (self.validity_end_date - self.validity_start_date).days + 1
 			self.validity_end_day		= datetime.strftime(self.validity_end_date, "%d")
 			self.validity_end_month		= datetime.strftime(self.validity_end_date, "%m")
+			self.validity_end_year		= datetime.strftime(self.validity_end_date, "%Y")
+			self.period_start			= str(self.validity_start_day).zfill(2) + "/" + str(self.validity_start_month).zfill(2) 
+			self.period_end				= str(self.validity_end_day).zfill(2) + "/" + str(self.validity_end_month).zfill(2)
+			self.period					= self.period_start + " to " + self.period_end
 		else:
 			self.extent = -1
 			self.validity_end_day		= 0
 			self.validity_end_month		= 0
+			self.validity_end_year		= 0
+			self.period_start			= ""
+			self.period_end				= ""
+			self.period					= ""
 
 		self.geographical_area_id			= geographical_area_id
 
@@ -35,23 +43,31 @@ class measure(object):
 		self.duty_list              		= []
 		self.suppress						= False
 		self.marked							= False
-		self.significant_children   		= False
 		self.measure_count          		= 0
 		self.measure_type_count     		= 0
 		self.seasonal_list					= []
 		self.is_siv							= False
 
-		self.special_list = []
 
-	def season(self):
+
+
+	def xml_without_dates(self):
+		return "<w:r><w:t>" + self.combined_duty + "</w:t></w:r>"
+
+
+
+	def xml_with_dates(self):
 		whitespace = "<w:tab/>"
 		s = "<w:r><w:t>"
-		s += self.validity_start_day.zfill(2) + "/" + self.validity_start_month.zfill(2)
-		s += " to "
-		s += self.validity_end_day.zfill(2) + "/" + self.validity_end_month.zfill(2)
+		s += self.period
+		#s += str(self.validity_start_day).zfill(2) + "/" + str(self.validity_start_month).zfill(2)
+		#s += " to "
+		#s += str(self.validity_end_day).zfill(2) + "/" + str(self.validity_end_month).zfill(2)
 		s += "</w:t></w:r><w:r>" + whitespace + "<w:t>" + self.combined_duty + "</w:t></w:r>"
 		s += "<w:r><w:br/></w:r>"
 		return (s)
+
+
 
 	def combine_duties(self):
 		self.combined_duty      = ""

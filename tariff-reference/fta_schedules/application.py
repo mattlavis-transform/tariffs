@@ -10,6 +10,7 @@ import functions as f
 from partial_temporary_stop import partial_temporary_stop
 from document import document
 from hierarchy import hierarchy
+from mfn_duty import mfn_duty
 
 class application(object):
 	def __init__(self):
@@ -75,28 +76,29 @@ class application(object):
 			except:
 				print ("No country scope parameter found - ending")
 				sys.exit()
-				#pass
 		
 		self.get_country_list()
 		self.geo_ids = f.list_to_sql(self.country_codes)
 
 	def create_document(self):
-		# Create the quotas table
+		# Create the document
 		my_document = document()
+		my_document.check_for_quotas()
+		self.readTemplates(my_document.has_quotas)
+		
+		# Create the measures table
+		my_document.get_duties("preferences")
+		my_document.print_tariffs()
+
+		# Create the quotas table
 		my_document.get_duties("quotas")
 		my_document.get_quota_order_numbers()
 		my_document.get_quota_balances_from_csv()
 		my_document.get_quota_measures()
 		my_document.get_quota_definitions()
-
-		# Create the measures table
-		#my_document.has_quotas = False
-		self.readTemplates(my_document.has_quotas)
-		my_document.get_duties("preferences")
-
-		# Write the document and ZIP it up
-		my_document.print_tariffs()
 		my_document.print_quotas()
+
+		# Personalise and write the document
 		my_document.create_core()
 		my_document.write()
 		print ("\nPROCESS COMPLETE - file written to " + my_document.FILENAME + "\n")
@@ -275,26 +277,6 @@ class application(object):
 		fCore = open(os.path.join(self.COMPONENT_DIR, "core.xml"), "r") 
 		self.sCoreXML = fCore.read()
 
-	def get_siv_products(self):
-		# Be aware that this is deliberately using old data, meaning that 
-		# in reality, the duty charged will be zero
-		print (" - Getting SIV products")
-		sql = """SELECT DISTINCT(goods_nomenclature_item_id) FROM measures m, measure_conditions mc
-		WHERE m.measure_sid = mc.measure_sid AND mc.condition_code = 'V'
-		AND m.validity_end_date >= '2018-01-01' ORDER BY 1
-		"""
-		cur = self.conn.cursor()
-		cur.execute(sql)
-		rows = cur.fetchall()
-		self.siv_clause = ""
-		for r in rows:
-			self.siv_list.append(r[0])
-			self.siv_clause += "'" + r[0] + "', "
-		self.siv_clause = self.siv_clause.strip()
-		self.siv_clause = self.siv_clause.strip(",")
-		#print (self.siv_clause)
-		#sys.exit()
-		
 			
 	def getSeasonal(self):
 		sFileName = os.path.join(self.SOURCE_DIR, "seasonal_commodities.csv")
@@ -430,3 +412,37 @@ class application(object):
 		s = s.strip()
 		s = s.strip(",")
 		return (s)
+
+	def get_mfs_for_siv_products(self):
+		print (" - Getting MFNs for SIV products")
+
+		sql = """SELECT DISTINCT m.goods_nomenclature_item_id, mcc.duty_amount, m.validity_start_date, m.validity_end_date FROM measures m, measure_conditions mc, measure_condition_components mcc
+		WHERE mcc.measure_condition_sid = mc.measure_condition_sid
+		AND m.measure_sid = mc.measure_sid
+		AND mcc.duty_expression_id = '01'
+		AND (m.validity_start_date > '2018-01-01')
+		AND mc.condition_code = 'V'
+		AND m.measure_type_id IN ('103', '105')
+		AND m.geographical_area_id = '1011'
+		ORDER BY m.goods_nomenclature_item_id, m.validity_start_date
+		"""
+		cur = self.conn.cursor()
+		cur.execute(sql)
+		rows = cur.fetchall()
+		self.mfn_list = []
+		for r in rows:
+			goods_nomenclature_item_id	= r[0]
+			duty_amount					= r[1]
+			validity_start_date			= r[2]
+			validity_end_date			= r[3]
+			mfn = mfn_duty(goods_nomenclature_item_id, duty_amount, validity_start_date, validity_end_date)
+			self.mfn_list.append(mfn)
+
+	def get_mfn_rate(self, commodity_code, validity_start_date, validity_end_date):
+		mfn_rate = 0.0
+		for mfn in self.mfn_list:
+			if commodity_code == mfn.commodity_code:
+				if validity_start_date == mfn.validity_start_date:
+					mfn_rate = mfn.duty_amount
+					break
+		return (mfn_rate)

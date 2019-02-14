@@ -27,16 +27,6 @@ class duty(object):
 		self.getDutyString()
 
 	def getDutyString(self):
-		# This bit of code removes the Meursing data from the duty expressions
-		# This will be artifically re-inserted from an external data source,
-		# i.e. not from data that is stored in the database (check meursing_products.csv in /source folder)
-		# Confirmed 24/01/19 by Daren Timson-Hunt and David Owen that this will not be needed on the Tariff
-		# but should be used in the reference documents in order to back up the legislation
-		
-		#if self.duty_expression_id in ('12', '13', '14', '21', '23', '25', '27', '29'):
-		#	self.duty_string = ""
-		#	return
-
 		self.duty_string = ""
 
 		if self.duty_expression_id == "01":
@@ -59,9 +49,6 @@ class duty(object):
 					if self.measurement_unit_qualifier_code != "":
 						self.duty_string += " / " + self.getQualifier()
 
-		elif self.duty_expression_id == "12":
-			self.duty_string += " + AC"
-
 		elif self.duty_expression_id == "15":
 			if self.monetary_unit_code == "":
 				self.duty_string += "MIN {0:1.2f}".format(self.duty_amount) + "%"
@@ -82,17 +69,54 @@ class duty(object):
 					if self.measurement_unit_qualifier_code != "":
 						self.duty_string += " / " + self.getQualifier()
 
-		elif self.duty_expression_id == "21":
+		elif self.duty_expression_id in ("12"):
+			self.duty_string += " + AC"
+
+		elif self.duty_expression_id in ("14"):
+			self.duty_string += " + ACR"
+
+		elif self.duty_expression_id in ("21"):
 			self.duty_string += " + SD"
 
-		elif self.duty_expression_id == "27":
+		elif self.duty_expression_id in ("25"):
+			self.duty_string += " + SDR"
+
+		elif self.duty_expression_id in ("27"):
 			self.duty_string += " + FD"
 
-		if self.is_siv == True:
-			self.duty_string = "Entry Price - " + "{0:1.2f}".format(self.duty_amount) + "% + Specific 100%"
-			print ("Entry price", self.duty_string, self.commodity_code)
+		elif self.duty_expression_id in ("29"):
+			self.duty_string += " + FDR"
 
-			# Need to overlay the %age calculation for SIVs
+		else:
+			print ("Found an unexpected DE", self.duty_expression_id)
+
+		if self.is_siv == True:
+			# Still need to get the MFN duty for the same time period to work out the specific percentage
+			# The phrase required here is:
+			# 
+			# Entry Price - 6.40% + Specific 100%
+			# 
+			# where the calculation is "((My advalorem) / (MFN ad valorem)) * 100"
+			# where the "My advalorem" is zero, then this will always be zero
+			# but, in the example of Israel, where, on product 0805 10 24, there is a variable ad valorem
+			# including 6.4, against a 3rd country duty (MFN) of 16%, so the 1st percentage is
+			# (6.4 / 16) * 100 = 40%
+			#try:
+			if self.duty_amount > 0:
+				mfn_rate = g.app.get_mfn_rate(self.commodity_code, self.validity_start_date, self.validity_end_date)
+				if mfn_rate != 0.0:
+					my_duty = (self.duty_amount / mfn_rate) * 100
+				else:
+					my_duty = 0
+			else:
+				my_duty = 0
+				
+			self.duty_string = "Entry Price - " + "{0:1.2f}".format(my_duty) + "% + Specific 100%" # + " (" + str(self.duty_amount) + ")"
+			#except:
+			#	print ("Error", self.commodity_code)
+			#	sys.exit()
+
+
 
 	def getMeasurementUnit(self, s):
 		if s == "ASV":

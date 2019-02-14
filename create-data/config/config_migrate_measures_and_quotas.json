@@ -449,11 +449,12 @@
             "produce_schedule": "Yes",
             "country_name": "Israel",
             "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Israel",
-            "agreement_date": "05/02/2019",
+            "agreement_date": "21/02/2019",
             "version": "1.0",
             "country_codes": [
                 "IL"
             ],
+            "meursing_reduction": "85%",
             "table_per_country": 0,
             "reg_list": [
                 "R1474/00",
@@ -645,9 +646,9 @@
         },
         "palestine": {
             "produce_schedule": "Yes",
-            "country_name": "Palestine",
-            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Palestine",
-            "agreement_date": "05/02/2019",
+            "country_name": "the Palestinian Authority",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and the Palestinian Authority",
+            "agreement_date": "21/02/2019",
             "version": "1.0",
             "country_codes": [
                 "PS"
@@ -721,6 +722,9 @@
                 "CH",
                 "x1007"
             ],
+			"additional_measures": [
+				3231905
+			],			
             "table_per_country": 0,
             "reg_list": [
                 "D0123/01",
