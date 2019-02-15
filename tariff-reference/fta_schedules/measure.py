@@ -128,11 +128,15 @@ class measure(object):
 		self.combined_duty = self.combined_duty.strip()
 
 		# Now add in the Meursing components
+		if "ACR" in self.combined_duty or "SDR" in self.combined_duty or "FDR" in self.combined_duty:
+			self.combined_duty = "CAD - " + self.combined_duty + ") 100%"
+			self.combined_duty = self.combined_duty.replace(" + ", " + (", 1)
+			self.combined_duty = self.combined_duty.replace("ACR", "XYZ")
+
+		# Now add in the Meursing components
 		if "AC" in self.combined_duty or "SD" in self.combined_duty or "FD" in self.combined_duty:
 			self.combined_duty = "CAD - " + self.combined_duty + ") 100%"
 			self.combined_duty = self.combined_duty.replace(" + ", " + (", 1)
-			#pos = self.combined_duty(" + ")
-			#if pos > -1:
 
 	def get_commodity_seasonal_duties(self):
 		for obj in g.app.seasonal_fta_duties:

@@ -94,6 +94,7 @@ class document(object):
 		AND m.geographical_area_id IN (""" + g.app.geo_ids + """)
 		) ORDER BY m.goods_nomenclature_item_id, validity_start_date DESC, mc.duty_expression_id
 		"""
+		print (sql)
 		cur = g.app.conn.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
@@ -232,7 +233,7 @@ class document(object):
 
 
 	def get_quota_measures(self):
-		print (len(self.commodity_list))
+		#print (len(self.commodity_list))
 		# Get the measures - in order to get the commodity codes and the duties
 		# Just get the commodities and add to an array
 		sql = """
@@ -533,8 +534,9 @@ class document(object):
 							row_string = row_string.replace("{2019_QUOTA_VOLUME}",		str(qon.initial_volume).strip() + " (2019)")
 							insert_divider = True
 
-						#if qon.quota_order_number_id == "092115":
-						#	print ("Duty string", comm.duty_string)
+						if qon.quota_order_number_id == "091375":
+							print ("Duty string", comm.duty_string)
+						
 						
 						if comm.duty_string != last_duty:
 							row_string = row_string.replace("{PREFERENTIAL_DUTY_RATE}",	comm.duty_string)
@@ -542,22 +544,27 @@ class document(object):
 						else:
 							row_string = row_string.replace("{PREFERENTIAL_DUTY_RATE}",	"")
 
+						row_string = row_string.replace("{PREFERENTIAL_DUTY_RATE}",	comm.duty_string)
+
+
 						if insert_divider == True:
 							row_string = row_string.replace("<w:tc>", "<w:tc>\n" + g.app.sHorizLineXML)
 						elif insert_duty_divider == True:
-							#row_string = row_string.replace("<w:tc>", "<w:tc>\n" + g.app.sHorizLineSoftXML)
+							row_string = row_string.replace("<w:tc>", "<w:tc>\n" + g.app.sHorizLineSoftXML)
 							pass
 
 						if (last_order_number == qon.quota_order_number_id):
 							# Test code - replace the Origin quota cell with a merged cell
 							row_string = re.sub("<!-- Begin quota number cell //-->.*<!-- End quota number cell //-->", '<!-- Begin quota number cell //-->\n<w:tc><w:tcPr><w:vMerge/></w:tcPr><w:p><w:pPr><w:pStyle w:val="NormalinTable"/></w:pPr><w:r><w:t></w:t></w:r></w:p></w:tc>\n<!-- End quota number cell //-->', row_string, flags=re.DOTALL)
 							row_string = re.sub("<!-- Begin origin quota cell //-->.*<!-- End origin quota cell //-->", '<!-- Begin origin quota cell //-->\n<w:tc><w:tcPr><w:vMerge/></w:tcPr><w:p><w:pPr><w:pStyle w:val="NormalinTable"/></w:pPr><w:r><w:t></w:t></w:r></w:p></w:tc>\n<!-- End origin quota cell //-->', row_string, flags=re.DOTALL)
-							row_string = re.sub("<!-- Begin Preferential Quota Duty Rate cell //-->.*<!-- End Preferential Quota Duty Rate cell //-->", '<!-- Begin Preferential Quota Duty Rate cell //-->\n<w:tc><w:tcPr><w:vMerge/></w:tcPr><w:p><w:pPr><w:pStyle w:val="NormalinTable"/></w:pPr><w:r><w:t></w:t></w:r></w:p></w:tc>\n<!-- End Preferential Quota Duty Rate cell //-->', row_string, flags=re.DOTALL)
 							row_string = re.sub("<!-- Begin Quota Volume cell //-->.*<!-- End Quota Volume cell //-->", '<!-- Begin Quota Volume cell //-->\n<w:tc><w:tcPr><w:vMerge/></w:tcPr><w:p><w:pPr><w:pStyle w:val="NormalinTable"/></w:pPr><w:r><w:t></w:t></w:r></w:p></w:tc>\n<!-- End Quota Volume cell //-->', row_string, flags=re.DOTALL)
 							row_string = re.sub("<!-- Begin Quota Open Date cell //-->.*<!-- End Quota Open Date cell //-->", '<!-- Begin Quota Open Date cell //-->\n<w:tc><w:tcPr><w:vMerge/></w:tcPr><w:p><w:pPr><w:pStyle w:val="NormalinTable"/></w:pPr><w:r><w:t></w:t></w:r></w:p></w:tc>\n<!-- End Quota Open Date cell //-->', row_string, flags=re.DOTALL)
 							row_string = re.sub("<!-- Begin Quota Close Date cell //-->.*<!-- End Quota Close Date cell //-->", '<!-- Begin Quota Close Date cell //-->\n<w:tc><w:tcPr><w:vMerge/></w:tcPr><w:p><w:pPr><w:pStyle w:val="NormalinTable"/></w:pPr><w:r><w:t></w:t></w:r></w:p></w:tc>\n<!-- End Quota Close Date cell //-->', row_string, flags=re.DOTALL)
 							row_string = re.sub("<!-- Begin Quota Close Date cell //-->.*<!-- End Quota Close Date cell //-->", '<!-- Begin Quota Close Date cell //-->\n<w:tc><w:tcPr><w:vMerge/></w:tcPr><w:p><w:pPr><w:pStyle w:val="NormalinTable"/></w:pPr><w:r><w:t></w:t></w:r></w:p></w:tc>\n<!-- End Quota Close Date cell //-->', row_string, flags=re.DOTALL)
 							pass
+
+						if (last_duty == comm.duty_string):
+							row_string = re.sub("<!-- Begin Preferential Quota Duty Rate cell //-->.*<!-- End Preferential Quota Duty Rate cell //-->", '<!-- Begin Preferential Quota Duty Rate cell //-->\n<w:tc><w:tcPr><w:vMerge/></w:tcPr><w:p><w:pPr><w:pStyle w:val="NormalinTable"/></w:pPr><w:r><w:t></w:t></w:r></w:p></w:tc>\n<!-- End Preferential Quota Duty Rate cell //-->', row_string, flags=re.DOTALL)
 
 						last_order_number = qon.quota_order_number_id
 						last_duty = comm.duty_string
@@ -570,7 +577,7 @@ class document(object):
 
 		quota_xml = ""
 		sTableXML = g.app.sQuotaTableXML
-		width_list = [9, 9, 14, 16, 16, 10, 10, 16]
+		width_list = [8, 7, 11, 22, 16, 10, 10, 16]
 
 		sTableXML = sTableXML.replace("{WIDTH_QUOTA_NUMBER}", 					str(width_list[0]))
 		sTableXML = sTableXML.replace("{WIDTH_ORIGIN_QUOTA}",					str(width_list[1]))
