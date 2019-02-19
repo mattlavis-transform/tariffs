@@ -1181,6 +1181,8 @@ class application(object):
 			FROM ml.v5_2019 m WHERE geographical_area_id IN (""" + my_geo_ids + """)
 			AND measure_type_id IN (""" + my_measure_types + """) ORDER BY measure_sid
 			"""
+			print (sql)
+			sys.exit()
 
 		elif self.scope == "quotas":
 			sql = """SELECT measure_sid, ordernumber, measure_type_id, validity_start_date, validity_end_date,

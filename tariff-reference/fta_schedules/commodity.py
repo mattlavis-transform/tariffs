@@ -20,7 +20,7 @@ class commodity(object):
 		# Check if the measure is exactly a year long; in which case only a single measure
 		# can be shown - it cannot be seasonal
 		for measure in self.measure_list:
-			if measure.extent not in(365, -1) :
+			if measure.extent not in(365, 366, -1) :
 				is_all_full_year = False
 
 			if measure.extent == -1:
@@ -87,6 +87,7 @@ class commodity(object):
 			# that have the same duty and combine
 			self.measure_list.reverse()
 			measure_count = len(self.measure_list)
+
 			if measure_count > 1:
 				for i in range(measure_count - 2, -1, -1):
 					m1 = self.measure_list[i]
@@ -96,14 +97,23 @@ class commodity(object):
 					if (delta == 1) and (m1.combined_duty == m2.combined_duty):
 						m1.period_end	= m2.period_end
 						m1.period		= m1.period_start + " to " + m1.period_end
+						m1.validity_end_date = m2.validity_end_date
+						m1.extent = (m1.validity_end_date - m1.validity_start_date).days + 1
+
 						self.measure_list.pop(i + 1)
 
 
 			# A final check that this concatenation of measures has not actually generated a single measure
-			# This is the case with product 0702000000 for Palestine
+			# This is the case with product 0702000000 for Palestine, also Canada
 			measure_count = len(self.measure_list)
+			
 			if measure_count == 1:
-				self.duty_string = measure.xml_without_dates() + self.duty_string
+				m = self.measure_list[0]
+				
+				if m.extent in (365, 366, -1):
+					self.duty_string = m.xml_without_dates() + self.duty_string
+				else:
+					self.duty_string = m.xml_with_dates() + self.duty_string
 			else:
 				for measure in self.measure_list:
 					self.duty_string += measure.xml_with_dates()

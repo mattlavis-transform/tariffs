@@ -11,6 +11,7 @@ from partial_temporary_stop import partial_temporary_stop
 from document import document
 from hierarchy import hierarchy
 from mfn_duty import mfn_duty
+from meursing_component import meursing_component
 
 class application(object):
 	def __init__(self):
@@ -35,6 +36,7 @@ class application(object):
 		self.country_codes			= ""
 		self.siv_data_list			= []
 		self.seasonal_fta_duties	= []
+		self.meursing_components		= []
 		
 		self.partial_temporary_stops	= []
 
@@ -83,6 +85,7 @@ class application(object):
 	def create_document(self):
 		# Create the document
 		my_document = document()
+		self.get_meursing_components()
 		my_document.check_for_quotas()
 		self.readTemplates(my_document.has_quotas)
 		
@@ -446,3 +449,26 @@ class application(object):
 					mfn_rate = mfn.duty_amount
 					break
 		return (mfn_rate)
+
+	def get_meursing_components(self):
+		sql = "SELECT AVG(duty_amount) FROM ml.meursing_components WHERE geographical_area_id = '1011'"
+		cur = self.conn.cursor()
+		cur.execute(sql)
+		row = cur.fetchone()
+		self.erga_omnes_average = row[0]
+
+
+	def get_meursing_percentage(self, reduction_indicator, geographical_area_id):
+		# Get the Erga Omnes Meursing average
+		sql = """
+		SELECT AVG(duty_amount) FROM ml.meursing_components WHERE geographical_area_id = '""" + geographical_area_id + """' AND reduction_indicator = """ + str(reduction_indicator)
+		cur = self.conn.cursor()
+		cur.execute(sql)
+		row = cur.fetchone()
+		reduced_average = row[0]
+		#print (reduction_indicator)
+		try:
+			reduction = round((reduced_average / self.erga_omnes_average) * 100)
+		except:
+			reduction = 100
+		return (reduction)

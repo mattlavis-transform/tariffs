@@ -7,13 +7,14 @@ import glob as g
 from duty import duty
 
 class measure(object):
-	def __init__(self, measure_sid, commodity_code, quota_order_number_id, validity_start_date, validity_end_date, geographical_area_id):
+	def __init__(self, measure_sid, commodity_code, quota_order_number_id, validity_start_date, validity_end_date, geographical_area_id, reduction_indicator):
 		# Get parameters from instantiator
 		self.measure_sid					= measure_sid
 		self.commodity_code               	= commodity_code
 		self.quota_order_number_id			= quota_order_number_id
 		self.validity_start_date			= validity_start_date
 		self.validity_end_date				= validity_end_date
+		self.reduction_indicator			= reduction_indicator
 
 		self.validity_start_day		= datetime.strftime(self.validity_start_date, "%d")
 		self.validity_start_month	= datetime.strftime(self.validity_start_date, "%m")
@@ -129,12 +130,16 @@ class measure(object):
 
 		# Now add in the Meursing components
 		if "ACR" in self.combined_duty or "SDR" in self.combined_duty or "FDR" in self.combined_duty:
-			self.combined_duty = "CAD - " + self.combined_duty + ") 100%"
+			#print ("Reduction indicator", self.reduction_indicator)
+			meursing_percentage = g.app.get_meursing_percentage(self.reduction_indicator, self.geographical_area_id)
+			self.combined_duty = "CAD - " + self.combined_duty + ") " + str(meursing_percentage) + "%"
 			self.combined_duty = self.combined_duty.replace(" + ", " + (", 1)
-			self.combined_duty = self.combined_duty.replace("ACR", "XYZ")
+			self.combined_duty = self.combined_duty.replace("ACR", "AC")
+			self.combined_duty = self.combined_duty.replace("FDR", "FD")
+			self.combined_duty = self.combined_duty.replace("SDR", "SD")
 
 		# Now add in the Meursing components
-		if "AC" in self.combined_duty or "SD" in self.combined_duty or "FD" in self.combined_duty:
+		elif "AC" in self.combined_duty or "SD" in self.combined_duty or "FD" in self.combined_duty:
 			self.combined_duty = "CAD - " + self.combined_duty + ") 100%"
 			self.combined_duty = self.combined_duty.replace(" + ", " + (", 1)
 

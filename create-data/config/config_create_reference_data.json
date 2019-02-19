@@ -12,6 +12,10 @@
             "dest": "base_regulations_import_export.xml",
             "source": "base_regulations_import_export.xlsm"
         },
+        "import_export2": {
+            "dest": "base_regulations_import_export2.xml",
+            "source": "base_regulations_import_export2.xlsm"
+        },
         "national_pandr": {
             "dest": "base_regulations_national_pandr.xml",
             "source": "base_regulations_national_pandr.xlsm"

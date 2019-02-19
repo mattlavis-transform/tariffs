@@ -10,7 +10,7 @@ class profile_23505_measure_type_description(object):
 		description				= app.getValue(oMessage, ".//oub:description", True)
 
 		if update_type == "20":
-			app.doprint ("Deleting meaasure type description " + str(measure_type_id))
+			app.doprint ("Deleting meure type description " + str(measure_type_id))
 			cur = app.conn.cursor()
 			try:
 				cur.execute("DELETE FROM measure_type_descriptions_oplog WHERE measure_type_id = %s", (measure_type_id,))
@@ -22,13 +22,13 @@ class profile_23505_measure_type_description(object):
 		else:
 			if update_type == "1":		# UPDATE
 				operation = "U"
-				app.doprint ("Updating meaasure type description " + str(measure_type_id))
+				app.doprint ("Updating measure type description " + str(measure_type_id))
 			elif update_type == "2":	# DELETE
 				operation = "D"
-				app.doprint ("Deleting meaasure type description " + str(measure_type_id))
+				app.doprint ("Deleting measure type description " + str(measure_type_id))
 			else:						# INSERT
 				operation = "C"
-				app.doprint ("Creating meaasure type description " + str(measure_type_id))
+				app.doprint ("Creating measure type description " + str(measure_type_id))
 
 			cur = app.conn.cursor()
 			try:

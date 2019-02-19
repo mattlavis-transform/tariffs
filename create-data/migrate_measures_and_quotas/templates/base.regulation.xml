@@ -11,8 +11,8 @@
             <oub:base.regulation.role>[BASE_REGULATION_ROLE]</oub:base.regulation.role>
             <oub:base.regulation.id>[BASE_REGULATION_ID]</oub:base.regulation.id>
             <oub:published.date>[PUBLISHED_DATE]</oub:published.date>
-            <oub:officialjournal.number>[OFFICIALJOURNAL.NUMBER]</oub:officialjournal.number>
-            <oub:officialjournal.page>[OFFICIALJOURNAL.PAGE]</oub:officialjournal.page>
+            <oub:officialjournal.number>1</oub:officialjournal.number>
+            <oub:officialjournal.page>1</oub:officialjournal.page>
             <oub:validity.start.date>[VALIDITY_START_DATE]</oub:validity.start.date>
             <oub:validity.end.date>[VALIDITY_END_DATE]</oub:validity.end.date>
             <oub:effective.end.date>[EFFECTIVE_END_DATE]</oub:effective.end.date>

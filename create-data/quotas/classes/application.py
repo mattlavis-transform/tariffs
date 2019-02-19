@@ -1,0 +1,281 @@
+import xml.etree.ElementTree as ET
+import xmlschema
+import psycopg2
+import sys
+import shutil
+import csv
+import os
+import json
+from os import system, name
+import re
+import codecs
+from datetime import datetime
+from datetime import timedelta
+
+# Custom code
+
+from classes.progressbar import ProgressBar
+from classes.quota_order_number import quota_order_number
+from classes.quota_order_number_origin import quota_order_number_origin
+from classes.quota_definition import quota_definition
+from classes.measure import measure
+import classes.functions as fn
+
+class application(object):
+	def __init__(self):
+		self.clear()
+
+		self.BASE_DIR				= os.path.dirname(os.path.abspath(__file__))
+		self.BASE_DIR				= os.path.join(self.BASE_DIR,	"..")
+		self.SCHEMA_DIR				= os.path.join(self.BASE_DIR,	"xsd")
+		self.TEMPLATE_DIR			= os.path.join(self.BASE_DIR,	"templates")
+		self.CSV_DIR				= os.path.join(self.BASE_DIR,	"csv")
+		self.SOURCE_DIR 			= os.path.join(self.BASE_DIR,	"source")
+		self.XML_OUT_DIR			= os.path.join(self.BASE_DIR,	"xml_out")
+		self.XML_REPORT_DIR			= os.path.join(self.BASE_DIR,	"xml_report")
+		self.TEMP_DIR				= os.path.join(self.BASE_DIR,	"temp")
+		self.TEMP_FILE				= os.path.join(self.TEMP_DIR,	"temp.xml")
+		self.LOG_DIR				= os.path.join(self.BASE_DIR,	"log")
+		self.IMPORT_LOG_DIR			= os.path.join(self.LOG_DIR,	"import")
+		self.LOG_FILE				= os.path.join(self.LOG_DIR,	"log.csv")
+		self.MERGE_DIR				= os.path.join(self.BASE_DIR,	"..")
+		self.MERGE_DIR				= os.path.join(self.MERGE_DIR,	"migrate_reference_data")
+		self.MERGE_DIR				= os.path.join(self.MERGE_DIR,	"xml")
+		self.DUMP_DIR				= os.path.join(self.BASE_DIR,	"dump")
+
+		self.CONFIG_DIR				= os.path.join(self.BASE_DIR, "..")
+		self.CONFIG_DIR				= os.path.join(self.CONFIG_DIR, "config")
+		self.CONFIG_FILE			= os.path.join(self.CONFIG_DIR, "config_common.json")
+		self.CONFIG_FILE_LOCAL		= os.path.join(self.CONFIG_DIR, "config_migrate_measures_and_quotas.json")
+
+		self.SOURCE_DIR				= os.path.join(self.BASE_DIR, "source")
+		self.QUOTA_DIR				= os.path.join(self.SOURCE_DIR, "quotas")
+		self.BALANCE_FILE			= os.path.join(self.QUOTA_DIR, "quota_volume_master.csv")
+		self.QUOTA_DESCRIPTION_FILE	= os.path.join(self.QUOTA_DIR, "quota definitions.csv")
+		self.MFN_COMPONENTS_FILE	= os.path.join(self.SOURCE_DIR, "mfn_components.csv")
+		self.TEMPLATE_DIR			= os.path.join(self.BASE_DIR, "templates")
+
+		self.DBASE = "tariff_dev"
+
+		self.envelope_id            = "100000001"
+		self.sequence_id            = 1
+		self.content				= ""
+		self.namespaces = {'oub': 'urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0', 'env': 'urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0', } # add more as needed
+
+		self.measure_list				= []
+		self.quota_definition_list		= []
+		self.quota_order_number_list	= []
+
+		self.connect()
+		self.get_minimum_sids()
+		self.get_templates()
+		self.transaction_id = 100000
+		self.message_id = 1
+		self.debug = True
+
+		if len(sys.argv) > 1:
+			self.output_profile = sys.argv[1]
+			print (self.output_profile)
+			self.output_filename = self.output_profile.strip() + ".xml"
+		else:
+			print ("No profile specified")
+			sys.exit()
+
+
+	def get_templates(self):
+		filename = os.path.join(self.TEMPLATE_DIR, "quota.order.number.xml")
+		file = open(filename, "r") 
+		self.template_quota_order_number = file.read() 
+
+		filename = os.path.join(self.TEMPLATE_DIR, "quota.definition.xml")
+		file = open(filename, "r") 
+		self.template_quota_definition = file.read() 
+
+		filename = os.path.join(self.TEMPLATE_DIR, "quota.order.number.origin.xml")
+		file = open(filename, "r") 
+		self.template_quota_order_number_origin = file.read() 
+
+		filename = os.path.join(self.TEMPLATE_DIR, "quota.order.number.origin.exclusion.xml")
+		file = open(filename, "r") 
+		self.template_quota_order_number_origin_exclusion = file.read() 
+
+		filename = os.path.join(self.TEMPLATE_DIR, "measure.xml")
+		file = open(filename, "r") 
+		self.template_measure = file.read() 
+
+		filename = os.path.join(self.TEMPLATE_DIR, "measure.component.xml")
+		file = open(filename, "r") 
+		self.template_measure_component = file.read() 
+
+		filename = os.path.join(self.TEMPLATE_DIR, "measure.excluded.geographical.area.xml")
+		file = open(filename, "r") 
+		self.template_measure_excluded_geographical_area = file.read() 
+
+
+	def write_xml(self):
+		xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
+		xml += '<env:envelope xmlns="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" id="ENV">\n'
+		
+		# Write the quotas
+		for qon in self.quota_order_number_list:
+			xml += qon.xml()
+
+		# Write the measures
+		for qon in self.quota_order_number_list:
+			xml += qon.measure_xml()
+
+		xml += '</env:envelope>'
+		file = open(self.output_filename, "w") 
+		file.write(xml) 
+		file.close() 
+
+
+	def get_measures_from_csv(self):
+		self.quota_order_number_list = []
+		my_file = "C:\\projects\\tariff\\create-data\\quotas\\csv\\quota_commodities.csv"
+		with open(my_file) as csv_file:
+			csv_reader = csv.reader(csv_file, delimiter = ",")
+			for row in csv_reader:
+				if (len(row) > 0):
+					goods_nomenclature_item_id	= row[0]
+					quota_order_number_id		= row[1]
+					duty						= row[2]
+					monetary_unit				= row[3]
+					measurement_unit			= row[4]
+					measurement_unit_qualifier	= row[5]
+
+					obj = measure(goods_nomenclature_item_id, quota_order_number_id, duty, monetary_unit, measurement_unit, measurement_unit_qualifier)
+
+					self.measure_list.append(obj)
+
+	def get_quota_order_numbers_from_csv(self):
+		self.quota_order_number_list = []
+		my_file = "C:\\projects\\tariff\\create-data\\quotas\\csv\\quota_order_numbers.csv"
+		with open(my_file) as csv_file:
+			csv_reader = csv.reader(csv_file, delimiter = ",")
+			for row in csv_reader:
+				if (len(row) > 0):
+					quota_order_number_id	= row[0]
+					regulation_id 			= row[1]
+					measure_type_id	 		= row[2]
+					origin_string			= row[3]
+					origin_exclusion_string = row[4]
+					validity_start_date		= row[5]
+					subject					= row[6]
+
+					obj = quota_order_number(quota_order_number_id, regulation_id, measure_type_id, origin_string,
+					origin_exclusion_string, validity_start_date, subject)
+
+					self.quota_order_number_list.append(obj)
+
+	def get_quota_definitions_from_csv(self):
+		self.quota_definition_list = []
+		my_file = "C:\\projects\\tariff\\create-data\\quotas\\csv\\quota_definitions.csv"
+		with open(my_file) as csv_file:
+			csv_reader = csv.reader(csv_file, delimiter = ",")
+			for row in csv_reader:
+				if (len(row) > 0):
+					quota_order_number_id			= row[0]
+					validity_start_date				= row[1]
+					validity_end_date				= row[2]
+					initial_volume 					= row[3]
+					measurement_unit_code			= row[4]
+					maximum_precision				= row[5]
+					critical_state					= row[6]
+					critical_threshold				= row[7]
+					monetary_unit_code				= row[8]
+					measurement_unit_qualifier_code	= row[9]
+					blocking_period_start			= row[10]
+					blocking_period_end				= row[11]
+
+					obj = quota_definition(quota_order_number_id, validity_start_date, validity_end_date, initial_volume,
+					measurement_unit_code, maximum_precision, critical_state, critical_threshold, monetary_unit_code,
+					measurement_unit_qualifier_code, blocking_period_start, blocking_period_end)
+
+					self.quota_definition_list.append(obj)
+
+
+
+	def get_minimum_sids(self):
+		with open(self.CONFIG_FILE, 'r') as f:
+			my_dict = json.load(f)
+		
+		self.min_list = my_dict['minimum_sids']
+
+		self.last_additional_code_description_period_sid	= self.larger(self.get_scalar("SELECT MAX(additional_code_description_period_sid) FROM additional_code_description_periods_oplog;"), self.min_list['additional.code.description.periods']) + 1
+		self.last_additional_code_sid						= self.larger(self.get_scalar("SELECT MAX(additional_code_sid) FROM additional_codes_oplog;"), self.min_list['additional.codes']) + 1
+
+		self.last_certificate_description_period_sid		= self.larger(self.get_scalar("SELECT MAX(certificate_description_period_sid) FROM certificate_description_periods_oplog;"), self.min_list['certificate.description.periods']) + 1
+		self.last_footnote_description_period_sid			= self.larger(self.get_scalar("SELECT MAX(footnote_description_period_sid) FROM footnote_description_periods_oplog;"), self.min_list['footnote.description.periods']) + 1
+		self.last_geographical_area_description_period_sid	= self.larger(self.get_scalar("SELECT MAX(geographical_area_description_period_sid) FROM geographical_area_description_periods_oplog;"), self.min_list['geographical.area.description.periods']) + 1
+		self.last_geographical_area_sid						= self.larger(self.get_scalar("SELECT MAX(geographical_area_sid) FROM geographical_areas_oplog;"), self.min_list['geographical.areas']) + 1
+
+		self.last_goods_nomenclature_sid					= self.larger(self.get_scalar("SELECT MAX(goods_nomenclature_sid) FROM goods_nomenclatures_oplog;"), self.min_list['goods.nomenclature']) + 1
+		self.last_goods_nomenclature_indent_sid				= self.larger(self.get_scalar("SELECT MAX(goods_nomenclature_indent_sid) FROM goods_nomenclature_indents_oplog;"), self.min_list['goods.nomenclature.indents']) + 1
+		self.last_goods_nomenclature_description_period_sid	= self.larger(self.get_scalar("SELECT MAX(goods_nomenclature_description_period_sid) FROM goods_nomenclature_description_periods_oplog;"), self.min_list['goods.nomenclature.description.periods']) + 1
+
+		self.last_measure_sid								= self.larger(self.get_scalar("SELECT MAX(measure_sid) FROM measures_oplog;"), self.min_list['measures']) + 1
+		self.last_measure_condition_sid						= self.larger(self.get_scalar("SELECT MAX(measure_condition_sid) FROM measure_conditions_oplog"), self.min_list['measure.conditions']) + 1
+
+		self.last_quota_order_number_sid					= self.larger(self.get_scalar("SELECT MAX(quota_order_number_sid) FROM quota_order_numbers_oplog"), self.min_list['quota.order.numbers']) + 1
+		self.last_quota_order_number_origin_sid				= self.larger(self.get_scalar("SELECT MAX(quota_order_number_origin_sid) FROM quota_order_number_origins_oplog"), self.min_list['quota.order.number.origins']) + 1
+		self.last_quota_definition_sid						= self.larger(self.get_scalar("SELECT MAX(quota_definition_sid) FROM quota_definitions_oplog"), self.min_list['quota.definitions']) + 1
+		self.last_quota_suspension_period_sid				= self.larger(self.get_scalar("SELECT MAX(quota_suspension_period_sid) FROM quota_suspension_periods_oplog"), self.min_list['quota.suspension.periods']) + 1
+		self.last_quota_blocking_period_sid					= self.larger(self.get_scalar("SELECT MAX(quota_blocking_period_sid) FROM quota_blocking_periods_oplog"), self.min_list['quota.blocking.periods']) + 1
+
+
+		#print (self.last_measure_sid)
+		#sys.exit()
+
+	def larger(self, a, b):
+		if a > b:
+			return a
+		else:
+			return b
+
+	def get_scalar(self, sql):
+		cur = self.conn.cursor()
+		cur.execute(sql)
+		rows = cur.fetchall()
+		#l = list(rows)
+		return (rows[0][0])
+
+
+	def d(self, s, include_indent = True):
+		if self.debug:
+			if include_indent:
+				s = "- " + s
+			else:
+				s = "\n" + s.upper()
+			print (s)
+
+	def clear(self):
+		# for windows
+		if name == 'nt':
+			_ = system('cls')
+		# for mac and linux(here, os.name is 'posix')
+		else:
+			_ = system('clear')
+
+	def connect(self):
+		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password=zanzibar")
+
+	def validate(self):
+		fname = self.output_filename
+		msg = "Validating the XML file against the Taric 3 schema"
+		self.d(msg, False)
+		schema_path = os.path.join(self.SCHEMA_DIR, "envelope.xsd")
+		my_schema = xmlschema.XMLSchema(schema_path)
+
+		try:
+			if my_schema.is_valid(fname):
+				self.d("The file validated successfully")
+				success = True
+			else:
+				self.d("The file did not validate")
+				success = False
+		except:
+			self.d("The file did not validate and crashed the validator")
+			success = False
+		if not(success):
+			my_schema.validate(fname)

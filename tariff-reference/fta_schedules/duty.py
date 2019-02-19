@@ -5,7 +5,7 @@ import functions
 class duty(object):
 	def __init__(self, commodity_code, additional_code_type_id, additional_code_id, measure_type_id, duty_expression_id,
 	duty_amount, monetary_unit_code, measurement_unit_code, measurement_unit_qualifier_code, measure_sid,
-	quota_order_number_id, geographical_area_id, validity_start_date, validity_end_date, is_siv):
+	quota_order_number_id, geographical_area_id, validity_start_date, validity_end_date, reduction_indicator, is_siv):
 		self.commodity_code                  	= functions.mstr(commodity_code)
 		self.additional_code_type_id         	= functions.mstr(additional_code_type_id)
 		self.additional_code_id              	= functions.mstr(additional_code_id)
@@ -22,6 +22,7 @@ class duty(object):
 		self.geographical_area_id				= geographical_area_id
 		self.validity_start_date				= validity_start_date
 		self.validity_end_date					= validity_end_date
+		self.reduction_indicator				= reduction_indicator
 		self.is_siv								= is_siv
 		
 		self.getDutyString()

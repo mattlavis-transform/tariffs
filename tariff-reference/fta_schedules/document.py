@@ -85,16 +85,18 @@ class document(object):
 		# Get the duties (i.e the measure components)
 		# Add this back in for Switzerland ( OR m.measure_sid = 3231905)
 		sql = """
-		SELECT m.goods_nomenclature_item_id, m.additional_code_type_id, m.additional_code_id,
+		SELECT DISTINCT m.goods_nomenclature_item_id, m.additional_code_type_id, m.additional_code_id,
 		m.measure_type_id, mc.duty_expression_id, mc.duty_amount, mc.monetary_unit_code,
 		mc.measurement_unit_code, mc.measurement_unit_qualifier_code, m.measure_sid, m.ordernumber,
-		m.validity_start_date, m.validity_end_date, m.geographical_area_id
-		FROM ml.v5_2019 m LEFT OUTER JOIN measure_components mc ON m.measure_sid = mc.measure_sid
+		m.validity_start_date, m.validity_end_date, m.geographical_area_id, m.reduction_indicator
+		FROM goods_nomenclatures gn, ml.v5_2019 m LEFT OUTER JOIN measure_components mc ON m.measure_sid = mc.measure_sid
 		WHERE (m.measure_type_id IN (""" + measure_type_list + """)
 		AND m.geographical_area_id IN (""" + g.app.geo_ids + """)
+		AND m.goods_nomenclature_item_id = gn.goods_nomenclature_item_id
+		AND gn.validity_end_date IS NULL AND gn.producline_suffix = '80'
 		) ORDER BY m.goods_nomenclature_item_id, validity_start_date DESC, mc.duty_expression_id
 		"""
-		print (sql)
+		#print (sql)
 		cur = g.app.conn.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
@@ -124,6 +126,7 @@ class document(object):
 			validity_start_date				= row[11]
 			validity_end_date				= row[12]
 			geographical_area_id			= f.mstr(row[13])
+			reduction_indicator				= row[14]
 
 			# Hypothesis would be that the only reason why the duty amount is None is when
 			# there is a "V" code attached to the measure
@@ -143,11 +146,11 @@ class document(object):
 			#sys.exit()
 			obj_duty = duty(commodity_code, additional_code_type_id, additional_code_id, measure_type_id, duty_expression_id,
 			duty_amount, monetary_unit_code, measurement_unit_code, measurement_unit_qualifier_code,
-			measure_sid, quota_order_number_id, geographical_area_id, validity_start_date, validity_end_date, is_siv)
+			measure_sid, quota_order_number_id, geographical_area_id, validity_start_date, validity_end_date, reduction_indicator, is_siv)
 			self.duty_list.append(obj_duty)
 
 			if measure_sid not in temp_measure_list:
-				obj_measure = measure(measure_sid, commodity_code, quota_order_number_id, validity_start_date, validity_end_date, geographical_area_id)
+				obj_measure = measure(measure_sid, commodity_code, quota_order_number_id, validity_start_date, validity_end_date, geographical_area_id, reduction_indicator)
 				self.measure_list.append(obj_measure)
 				temp_measure_list.append(measure_sid)
 
@@ -238,7 +241,7 @@ class document(object):
 		# Just get the commodities and add to an array
 		sql = """
 		SELECT DISTINCT measure_sid, goods_nomenclature_item_id, ordernumber, validity_start_date,
-		validity_end_date, geographical_area_id FROM ml.v5_2019 m
+		validity_end_date, geographical_area_id, reduction_indicator FROM ml.v5_2019 m
 		WHERE measure_type_id IN ('143', '146') AND geographical_area_id IN (""" + g.app.geo_ids + """)
 		ORDER BY goods_nomenclature_item_id, measure_sid
 		"""
@@ -257,8 +260,9 @@ class document(object):
 			validity_start_date			= row[3]
 			validity_end_date			= row[4]
 			geographical_area_id		= row[5]
+			reduction_indicator			= row[6]
 
-			my_measure = measure(measure_sid, goods_nomenclature_item_id, quota_order_number_id, validity_start_date, validity_end_date, geographical_area_id)
+			my_measure = measure(measure_sid, goods_nomenclature_item_id, quota_order_number_id, validity_start_date, validity_end_date, geographical_area_id, reduction_indicator)
 			self.measure_list.append (my_measure)
 		
 		# Step 2 - Having loaded all of the measures from the database, cycle through the list of duties (components)
@@ -345,7 +349,7 @@ class document(object):
 
 		my_order_numbers = f.list_to_sql(self.q)
 		sql = """SELECT * FROM quota_definitions WHERE quota_order_number_id IN (""" + my_order_numbers + """)
-		AND validity_start_date >= '2018-01-01' ORDER BY quota_order_number_id"""
+		AND validity_start_date >= '2018-01-01' ORDER BY quota_order_number_id, validity_start_date DESC"""
 		cur = g.app.conn.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
@@ -427,7 +431,7 @@ class document(object):
 				for qb in self.balance_list:
 					if qb.quota_order_number_id == qon.quota_order_number_id:
 						qon.validity_start_date_2019 = qb.validity_start_date_2019
-						qon.validity_end_date_2019 = qb.validity_end_date_2019
+						#qon.validity_end_date_2019 = qb.validity_end_date_2019
 						break
 
 	def print_quotas(self):
@@ -470,6 +474,10 @@ class document(object):
 				else:
 					qon.validity_start_date				= qon.quota_definition_list[0].validity_start_date
 					qon.validity_end_date               = qon.quota_definition_list[0].validity_end_date
+					qon.validity_end_date_2019          = qon.quota_definition_list[0].validity_end_date
+
+
+
 					qon.initial_volume                  = qon.quota_definition_list[0].formatted_initial_volume
 					qon.volume_yx						= qon.quota_definition_list[0].formatted_volume_yx
 					qon.addendum						= qon.quota_definition_list[0].addendum
@@ -477,6 +485,8 @@ class document(object):
 					qon.measurement_unit_code           = qon.quota_definition_list[0].measurement_unit_code
 					qon.monetary_unit_code              = qon.quota_definition_list[0].monetary_unit_code
 					qon.measurement_unit_qualifier_code = qon.quota_definition_list[0].measurement_unit_qualifier_code
+
+					#print (qon.quota_order_number_id, qon.validity_start_date, qon.validity_end_date)
 
 				last_order_number	= "00.0000"
 				last_duty			= "-1"
@@ -513,6 +523,11 @@ class document(object):
 							
 						else:
 							qon.format_order_number()
+
+							# Final fixes to the 2019 dates
+							#print (qon.quota_order_number_id, qon.validity_start_date_2019, qon.validity_end_date_2019, (qon.validity_end_date_2019 - qon.validity_start_date_2019).days)
+
+
 							if qon.suspended:
 								row_string = row_string.replace("{QUOTA_ORDER_NUMBER}",		qon.quota_order_number_id_formatted + " (suspended)")
 							else:
@@ -528,15 +543,15 @@ class document(object):
 								row_string = row_string.replace("{QUOTA_OPEN_DATE_2019}",	datetime.strftime(qon.validity_start_date_2019, '%d/%m/%Y'))
 							except:
 								print ("here" . qon.quota_order_number_id)
+
+							#print (datetime.strftime(qon.validity_end_date, '%d/%m'))
+
 							row_string = row_string.replace("{QUOTA_CLOSE_DATE_2019}",	datetime.strftime(qon.validity_end_date_2019, '%d/%m/%Y'))
 							row_string = row_string.replace("{QUOTA_OPEN_DATE}",		datetime.strftime(qon.validity_start_date, '%d/%m'))
 							row_string = row_string.replace("{QUOTA_CLOSE_DATE}",		datetime.strftime(qon.validity_end_date, '%d/%m'))
 							row_string = row_string.replace("{2019_QUOTA_VOLUME}",		str(qon.initial_volume).strip() + " (2019)")
 							insert_divider = True
 
-						if qon.quota_order_number_id == "091375":
-							print ("Duty string", comm.duty_string)
-						
 						
 						if comm.duty_string != last_duty:
 							row_string = row_string.replace("{PREFERENTIAL_DUTY_RATE}",	comm.duty_string)
