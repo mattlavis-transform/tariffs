@@ -671,12 +671,13 @@ class document(object):
 
 		table_content = ""
 		for c in self.commodity_list:
-			row_string = g.app.sTableRowXML
-			row_string = row_string.replace("{COMMODITY}",   c.commodity_code_formatted)
-			if c.duty_string[-18:] == "<w:r><w:br/></w:r>":
-				c.duty_string = c.duty_string[:-18]
-			row_string = row_string.replace("{DUTY}", c.duty_string)
-			table_content += row_string
+			if c.suppress == False:
+				row_string = g.app.sTableRowXML
+				row_string = row_string.replace("{COMMODITY}",   c.commodity_code_formatted)
+				if c.duty_string[-18:] == "<w:r><w:br/></w:r>":
+					c.duty_string = c.duty_string[:-18]
+				row_string = row_string.replace("{DUTY}", c.duty_string)
+				table_content += row_string
 
 		###########################################################################
 		## Write the main document

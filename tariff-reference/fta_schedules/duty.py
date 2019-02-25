@@ -34,7 +34,7 @@ class duty(object):
 			if self.monetary_unit_code == "":
 				self.duty_string += "{0:1.2f}".format(self.duty_amount) + "%"
 			else:
-				self.duty_string += "{0:1.2f}".format(self.duty_amount) + " " + self.monetary_unit_code
+				self.duty_string += "{0:1.3f}".format(self.duty_amount) + " " + self.monetary_unit_code
 				if self.measurement_unit_code != "":
 					self.duty_string += " / " + self.getMeasurementUnit(self.measurement_unit_code)
 					if self.measurement_unit_qualifier_code != "":
@@ -44,7 +44,7 @@ class duty(object):
 			if self.monetary_unit_code == "":
 				self.duty_string += "+ {0:1.2f}".format(self.duty_amount) + "%"
 			else:
-				self.duty_string += "+ {0:1.2f}".format(self.duty_amount) + " " + self.monetary_unit_code
+				self.duty_string += "+ {0:1.3f}".format(self.duty_amount) + " " + self.monetary_unit_code
 				if self.measurement_unit_code != "":
 					self.duty_string += " / " + self.getMeasurementUnit(self.measurement_unit_code)
 					if self.measurement_unit_qualifier_code != "":
@@ -54,7 +54,7 @@ class duty(object):
 			if self.monetary_unit_code == "":
 				self.duty_string += "MIN {0:1.2f}".format(self.duty_amount) + "%"
 			else:
-				self.duty_string += "MIN {0:1.2f}".format(self.duty_amount) + " " + self.monetary_unit_code
+				self.duty_string += "MIN {0:1.3f}".format(self.duty_amount) + " " + self.monetary_unit_code
 				if self.measurement_unit_code != "":
 					self.duty_string += " / " + self.getMeasurementUnit(self.measurement_unit_code)
 					if self.measurement_unit_qualifier_code != "":
@@ -64,7 +64,7 @@ class duty(object):
 			if self.monetary_unit_code == "":
 				self.duty_string += "MAX {0:1.2f}".format(self.duty_amount) + "%"
 			else:
-				self.duty_string += "MAX {0:1.2f}".format(self.duty_amount) + " " + self.monetary_unit_code
+				self.duty_string += "MAX {0:1.3f}".format(self.duty_amount) + " " + self.monetary_unit_code
 				if self.measurement_unit_code != "":
 					self.duty_string += " / " + self.getMeasurementUnit(self.measurement_unit_code)
 					if self.measurement_unit_qualifier_code != "":

@@ -187,16 +187,19 @@ class application(object):
 				if len(row) > 0:
 					goods_nomenclature_item_id		= row[0]
 					duty_expression_id				= row[1]
-					duty_amount						= row[2]
+					duty_amount						= float(row[2])
 					monetary_unit_code				= row[3]
 					measurement_unit_code			= row[4]
 					measurement_unit_qualifier_code	= row[5]
+
+					# print (type(duty_amount))
 
 					measure_sid						= -1
 
 					obj = measure_component(measure_sid, duty_expression_id, duty_amount, monetary_unit_code,
 					measurement_unit_code, measurement_unit_qualifier_code, goods_nomenclature_item_id)
 					self.mfn_master_list.append (obj)
+		# sys.exit()
 
 
 	def get_config(self):
@@ -205,6 +208,8 @@ class application(object):
 			my_dict = json.load(f)
 
 		self.remove_SIVs 			= fn.mbool2(my_dict['remove_SIVs'])
+		#print ("remove SIVs", self.remove_SIVs)
+		#sys.exit()
 		self.remove_Meursing 		= fn.mbool2(my_dict['remove_Meursing'])
 		self.critical_date			= datetime.strptime(my_dict['critical_date'], '%Y-%m-%d')
 		self.critical_date_plus_one	= self.critical_date + timedelta(days = 1)
@@ -1168,6 +1173,9 @@ class application(object):
 		#if self.country_limit != "":
 		#	country_clause = " AND geographical_area_id = '" + self.country_limit + "' "
 
+		#print ("function get_measures", self.scope)
+		#sys.exit()
+
 		if self.scope == "country":
 			my_geo_ids = self.list_to_sql(self.country_codes)
 			my_measure_types = self.list_to_sql(self.preferential_measure_list)
@@ -1178,11 +1186,11 @@ class application(object):
 			measure_generating_regulation_id, justification_regulation_role, justification_regulation_id,
 			stopped_flag, geographical_area_sid, goods_nomenclature_sid,
 			additional_code_sid, export_refund_nomenclature_sid
-			FROM ml.v5_2019 m WHERE geographical_area_id IN (""" + my_geo_ids + """)
+			FROM ml.get_current_measures m WHERE geographical_area_id IN (""" + my_geo_ids + """)
 			AND measure_type_id IN (""" + my_measure_types + """) ORDER BY measure_sid
 			"""
 			print (sql)
-			sys.exit()
+			#sys.exit()
 
 		elif self.scope == "quotas":
 			sql = """SELECT measure_sid, ordernumber, measure_type_id, validity_start_date, validity_end_date,
@@ -1191,7 +1199,7 @@ class application(object):
 			measure_generating_regulation_id, justification_regulation_role, justification_regulation_id,
 			stopped_flag, geographical_area_sid, goods_nomenclature_sid,
 			additional_code_sid, export_refund_nomenclature_sid
-			FROM ml.v5_2019 m WHERE ordernumber IS NOT NULL
+			FROM ml.get_current_measures m WHERE ordernumber IS NOT NULL
 			ORDER BY measure_sid
 			"""
 
@@ -1202,7 +1210,7 @@ class application(object):
 			measure_generating_regulation_id, justification_regulation_role, justification_regulation_id,
 			stopped_flag, geographical_area_sid, goods_nomenclature_sid,
 			additional_code_sid, export_refund_nomenclature_sid
-			FROM ml.v5_2019 m
+			FROM ml.get_current_measures m
 			WHERE measure_type_id IN (""" + self.list_to_string(self.measure_type_list) + """)
 			""" + country_clause + """
 			ORDER BY measure_sid
@@ -1228,16 +1236,15 @@ class application(object):
 			measure_generating_regulation_id, justification_regulation_role, justification_regulation_id,
 			stopped_flag, geographical_area_sid, m.goods_nomenclature_sid,
 			additional_code_sid, export_refund_nomenclature_sid
-			FROM ml.v5_2019 m, ml.goods_nomenclatures gn
+			FROM ml.get_current_measures m, ml.goods_nomenclatures gn
 			WHERE m.goods_nomenclature_item_id = gn.goods_nomenclature_item_id
 			AND (gn.validity_end_date IS NULL OR gn.validity_end_date > CURRENT_DATE) """ + clause + country_clause + """
 			ORDER BY measure_sid
 			"""
 
-			#print (sql)
-			#sys.exit()
 
 		# Write the data retrieved to a CSV - just for debug purposes, this is actually not required
+		
 		cur = self.conn.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
@@ -1345,6 +1352,8 @@ class application(object):
 		measurement_unit_code, measurement_unit_qualifier_code FROM measure_components
 		WHERE measure_sid IN (""" + self.measure_clause + """)
 		ORDER BY measure_sid, duty_expression_id"""
+		#print ("get_measure_components", sql)
+		#sys.exit()
 		cur = self.conn.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
@@ -1376,7 +1385,7 @@ class application(object):
 
 				measure_component_object = measure_component(measure_sid, duty_expression_id, duty_amount,
 				monetary_unit_code, measurement_unit_code, measurement_unit_qualifier_code)
-				self.measure_component_list.append(measure_component_object)
+				#self.measure_component_list.append(measure_component_object)
 
 		
 		self.d("Assigning measure components to measures")
@@ -1653,7 +1662,9 @@ class application(object):
 
 			# Here we capture all of the measure condition components (V type)
 			# and compile a "duty list", from which we find the ad valorem that we are interested in
-			# Actually for MFNs, these should just be deleted, not replaced - all products with SIVs on them are "0"-rated
+			# For MFNs, these should just be deleted, not replaced - all products with SIVs on them are "0"-rated
+			# This script is no longer used on MFNs
+
 			for mc in obj.measure_condition_list:
 				if mc.condition_code == "V":
 					for mcc in obj.measure_condition_component_list:
@@ -1694,7 +1705,7 @@ class application(object):
 						duty_amount_last = da
 
 					if all_match == True:
-						print ("Creating a new component")
+						#print ("Creating a new component")
 						new_component = measure_component(obj.measure_sid, "01", duty_amount_last, "", "", "", obj.goods_nomenclature_item_id)
 						mc_found = False
 						for mc in obj.measure_component_list:
@@ -1703,20 +1714,64 @@ class application(object):
 								break
 						if mc_found == False:
 							obj.measure_component_list.append (new_component)
+							print ("Adding an SIV replacement measure for: ", obj.goods_nomenclature_item_id, obj.validity_start_date, obj.measure_sid)
 
 		print ("\n")
 		#sys.exit()
 
 
 
+	def get_goods_nomenclature_sid(self, goods_nomenclature_item_id):
+		return (1)
 
 	def restart_measures(self):
+		# These are the new measures which did not previously exist
+		# These need to 
+		# - Create measures
+		# - Create measure components
+		
+		dealt_with_list = []
+		for obj in self.enddated_measure_list:
+			if obj.goods_nomenclature_item_id == "0201100000":
+				print ("Found in end dated list")
+			dealt_with_list.append (obj.goods_nomenclature_item_id)
+		
+		
+		for obj in self.recreated_measure_list:
+			if obj.goods_nomenclature_item_id == "0201100000":
+				print ("Found in recreated list")
+			dealt_with_list.append (obj.goods_nomenclature_item_id)
+		
+		"""
+		for mfn in self.mfn_master_list:
+			if mfn.goods_nomenclature_item_id not in dealt_with_list:
+				#print (mfn.goods_nomenclature_item_id)
+				validity_start_date = datetime.strptime("2019-03-30", "%Y-%m-%d")
+				
+				goods_nomenclature_sid = self.get_goods_nomenclature_sid(mfn.goods_nomenclature_item_id)
+
+				m = measure(-1, "", "103", validity_start_date, None, "1011", mfn.goods_nomenclature_item_id, "", "", None, 1, "M1900010", None, None, 0, 400, goods_nomenclature_sid, None, None)
+				
+				mc = measure_component(-1, mfn.duty_expression_id, mfn.duty_amount, mfn.monetary_unit_code, mfn.measurement_unit_code, mfn.measurement_unit_qualifier_code, mfn.goods_nomenclature_item_id)
+				
+				m.measure_component_list.append(mc)
+
+				self.recreated_measure_list.append (m)
+		"""
+				
+			
+		#sys.exit()
+
 		if self.action_string == "restart":
 			self.content += "\n<!-- RESTARTS //-->\n\n"
 			self.d("Writing script to restart end-dated measures", False)
 			p = ProgressBar(len(self.enddated_measure_list), sys.stdout)
 			cnt = 1
+			#print ("How many", str(len(self.enddated_measure_list)))
 			for obj in self.enddated_measure_list:
+				#print (obj.goods_nomenclature_item_id)
+				#if obj.goods_nomenclature_item_id == "2009611000":
+				#	print ("found")
 				p.print_progress(cnt)
 				cnt += 1
 				obj.action = "restart"

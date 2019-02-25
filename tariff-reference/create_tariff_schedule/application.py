@@ -1,6 +1,7 @@
 import psycopg2
 import sys
 import os
+from os import system, name 
 import csv
 import json
 
@@ -38,6 +39,7 @@ class application(object):
 		self.CONFIG_FILE_LOCAL	= os.path.join(self.CONFIG_DIR, "config_migrate_measures_and_quotas.json")
 
 		self.get_config()
+		self.get_suspension_specials()
 
 		# Define the parameters - document type
 		try:
@@ -73,12 +75,24 @@ class application(object):
 		if (self.sDocumentType != "classification" and self.sDocumentType != "schedule"):
 			self.sDocumentType = "schedule"
 
+		self.clear()
+
+	def clear(self): 
+		# for windows 
+		if name == 'nt': 
+			_ = system('cls') 
+		# for mac and linux(here, os.name is 'posix') 
+		else: 
+			_ = system('clear')
+
+
 	def get_config(self):
 		# Get global config items
 		with open(self.CONFIG_FILE, 'r') as f:
 			my_dict = json.load(f)
 
 		self.DBASE					= my_dict['dbase']
+		self.DBASE = "tariff_staging"
 
 		# Get local config items
 		#with open(self.CONFIG_FILE_LOCAL, 'r') as f2:
@@ -302,6 +316,23 @@ class application(object):
 			temp = list(reader)
 		for i in temp:
 			self.generalrelief_list.append(i[0])
+
+	def get_suspension_specials(self):
+		self.suspension_specials = []
+		self.suspension_specials.append("3814009020")
+		self.suspension_specials.append("3814009040")
+		self.suspension_specials.append("3814009071")
+		self.suspension_specials.append("3814009079")
+		self.suspension_specials.append("3814009099")
+		self.suspension_specials.append("7019120002")
+		self.suspension_specials.append("7019120005")
+		self.suspension_specials.append("7019120006")
+		self.suspension_specials.append("7019120019")
+		self.suspension_specials.append("7019120022")
+		self.suspension_specials.append("7019120025")
+		self.suspension_specials.append("7019120026")
+		self.suspension_specials.append("7019120039")
+
 
 	def getAuthorisedUse(self):
 		sql = """SELECT DISTINCT goods_nomenclature_item_id FROM ml.v5_2019 m WHERE measure_type_id = '105';"""

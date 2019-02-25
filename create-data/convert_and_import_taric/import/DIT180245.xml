@@ -266,6 +266,33 @@
     </env:app.message>
   </env:transaction>
   <env:transaction id="16376499">
+    <env:app.message id="47">
+      <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
+        <oub:record>
+          <oub:transaction.id>16376499</oub:transaction.id>
+          <oub:record.code>430</oub:record.code>
+          <oub:subrecord.code>00</oub:subrecord.code>
+          <oub:record.sequence.number>14</oub:record.sequence.number>
+          <oub:update.type>2</oub:update.type>
+          <oub:measure>
+            <oub:measure.sid>3650776</oub:measure.sid>
+            <oub:measure.type>143</oub:measure.type>
+            <oub:geographical.area>NO</oub:geographical.area>
+            <oub:goods.nomenclature.item.id>1604129919</oub:goods.nomenclature.item.id>
+            <oub:ordernumber>090750</oub:ordernumber>
+            <oub:validity.start.date>2019-05-01</oub:validity.start.date>
+            <oub:measure.generating.regulation.role>4</oub:measure.generating.regulation.role>
+            <oub:measure.generating.regulation.id>R1816070</oub:measure.generating.regulation.id>
+            <oub:validity.end.date>2020-04-30</oub:validity.end.date>
+            <oub:justification.regulation.role>4</oub:justification.regulation.role>
+            <oub:justification.regulation.id>R1816070</oub:justification.regulation.id>
+            <oub:stopped.flag>0</oub:stopped.flag>
+            <oub:geographical.area.sid>252</oub:geographical.area.sid>
+            <oub:goods.nomenclature.sid>93522</oub:goods.nomenclature.sid>
+          </oub:measure>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
     <env:app.message id="49">
       <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
         <oub:record>
@@ -470,6 +497,33 @@
     </env:app.message>
   </env:transaction>
   <env:transaction id="16376506">
+    <env:app.message id="71">
+      <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
+        <oub:record>
+          <oub:transaction.id>16376506</oub:transaction.id>
+          <oub:record.code>430</oub:record.code>
+          <oub:subrecord.code>00</oub:subrecord.code>
+          <oub:record.sequence.number>26</oub:record.sequence.number>
+          <oub:update.type>2</oub:update.type>
+          <oub:measure>
+            <oub:measure.sid>3650775</oub:measure.sid>
+            <oub:measure.type>143</oub:measure.type>
+            <oub:geographical.area>NO</oub:geographical.area>
+            <oub:goods.nomenclature.item.id>1604129911</oub:goods.nomenclature.item.id>
+            <oub:ordernumber>090750</oub:ordernumber>
+            <oub:validity.start.date>2019-05-01</oub:validity.start.date>
+            <oub:measure.generating.regulation.role>4</oub:measure.generating.regulation.role>
+            <oub:measure.generating.regulation.id>R1816070</oub:measure.generating.regulation.id>
+            <oub:validity.end.date>2020-04-30</oub:validity.end.date>
+            <oub:justification.regulation.role>4</oub:justification.regulation.role>
+            <oub:justification.regulation.id>R1816070</oub:justification.regulation.id>
+            <oub:stopped.flag>0</oub:stopped.flag>
+            <oub:geographical.area.sid>252</oub:geographical.area.sid>
+            <oub:goods.nomenclature.sid>93521</oub:goods.nomenclature.sid>
+          </oub:measure>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
     <env:app.message id="73">
       <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
         <oub:record>

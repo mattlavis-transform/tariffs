@@ -11043,45 +11043,6 @@
       </oub:transmission>
     </env:app.message>
   </env:transaction>
-  <env:transaction id="90381972">
-    <env:app.message id="181">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90381972</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>181</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202779</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>99499</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>2917198025</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="182">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90381972</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>182</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202779</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>99499</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>2917198025</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>n-Dodecelylsuccinic acid anhydride (CAS RN 19780-11-1) with: - a Gardner colour index level of not more than 1, - a transmission at 500 nm of 98% or more for a 10% solution by weight in toluene, for use in the manufacture of automotive coatings</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
   <env:transaction id="90381973">
     <env:app.message id="182">
       <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
@@ -11233,45 +11194,6 @@
             <oub:goods.nomenclature.item.id>2918290080</oub:goods.nomenclature.item.id>
             <oub:productline.suffix>80</oub:productline.suffix>
             <oub:description>Pentaerythritol tetrakis(3-(3.5-di-tert-butyl-4-hydroxyphenyl)propionate) (CAS RN 6683-19-8) - with a sieve passing fraction at a mesh width of 250 μm of more than 75 % by weight and at a mesh width of 500 μm of more than 99 % by weight, and - a melting point of 110 °C or more, but not more than 125 °C, for use in the manufacture of PVC processing stabiliser-one packs based on powder mixtures (powders or press granulates)</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
-  <env:transaction id="90381977">
-    <env:app.message id="186">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90381977</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>186</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202784</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>81609</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>2921511920</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="187">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90381977</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>187</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202784</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>81609</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>2921511920</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Toluene diamine (TDA), containing by weight: - 72% or more but not more than 82% of 4-methyl-m-phenylenediamine, and - 17% or more but not more than 22% of 2-methyl-m-phenylenediamine, and - not more than 0.23% of residual tar whether or not containing 7% or less of water</oub:description>
           </oub:goods.nomenclature.description>
         </oub:record>
       </oub:transmission>
@@ -11662,84 +11584,6 @@
             <oub:goods.nomenclature.item.id>2931900015</oub:goods.nomenclature.item.id>
             <oub:productline.suffix>80</oub:productline.suffix>
             <oub:description>Methylcyclopentadienyl manganese tricarbonyl containing not more than 4.9% by weight of cyclopentadienyl manganese tricarbonyl (CAS RN 12108-13-3)</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
-  <env:transaction id="90381988">
-    <env:app.message id="197">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90381988</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>197</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202795</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>104026</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>2933399966</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="198">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90381988</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>198</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202795</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>104026</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>2933399966</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Fluazinam (ISO) (CAS RN 79622-59-6), with a purity by weight of 98.5 % or more</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
-  <env:transaction id="90381989">
-    <env:app.message id="198">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90381989</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>198</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202796</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>97975</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>2934999013</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="199">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90381989</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>199</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202796</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>97975</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>2934999013</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Buprofezin (ISO) of a purity by weight of 98.5% or more (CAS RN 953030-84-7)</oub:description>
           </oub:goods.nomenclature.description>
         </oub:record>
       </oub:transmission>
@@ -12720,45 +12564,6 @@
       </oub:transmission>
     </env:app.message>
   </env:transaction>
-  <env:transaction id="90382015">
-    <env:app.message id="224">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382015</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>224</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202822</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>38157</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>3505105020</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="225">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382015</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>225</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202822</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>38157</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>3505105020</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>O-(2-Hydroxyethyl)-derivative of hydrolysed maize starch (CAS RN 9005-27-0)</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
   <env:transaction id="90382016">
     <env:app.message id="225">
       <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
@@ -12871,45 +12676,6 @@
             <oub:goods.nomenclature.item.id>3707100045</oub:goods.nomenclature.item.id>
             <oub:productline.suffix>80</oub:productline.suffix>
             <oub:description>Photosensitive emulsion consisting of cyclised polyisoprene containing: - 55% or more but not more than 75% by weight of xylene and - 12% or more but not more than 18% by weight of ethylbenzene</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
-  <env:transaction id="90382019">
-    <env:app.message id="228">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382019</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>228</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202826</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>103558</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>3801900020</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="229">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382019</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>229</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202826</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>103558</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>3801900020</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Pitch coated graphite based powder with: - an average particle size of 10.8 µm or more but not more than 13.0 µm, - an iron content of less than 40 ppm, - a copper content of less than 5 ppm, - a nickel content of less than 5 ppm, - an average surface area (N2 atmosphere) of 3.0 m$2/g or more but not more than 4.36 m$2/g, and - a magnetic metal impurity of less than 0.3 ppm</oub:description>
           </oub:goods.nomenclature.description>
         </oub:record>
       </oub:transmission>
@@ -13378,45 +13144,6 @@
             <oub:goods.nomenclature.item.id>3811210014</oub:goods.nomenclature.item.id>
             <oub:productline.suffix>80</oub:productline.suffix>
             <oub:description>Dispersing agent : - containing polyisobutene succinimide derived from reaction products of polyethylenepolyamines with polyisobutenyl succinic anhydride (CAS RN 147880-09-9), - containing 35% or more but not more than 55% by weight of mineral oils, - with a chlorine content by weight of not more than 0.05%, - having a total base number of less than 15, used in the manufacture of blends of additives for lubricating oils</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
-  <env:transaction id="90382032">
-    <env:app.message id="241">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382032</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>241</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202839</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>98357</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>3811210017</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="242">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382032</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>242</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202839</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>98357</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>3811210017</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Additives containing: - mainly sulphurised diisobutylene, - calcium sulphonate, - dialkylaminoalkyl polyisobutylene succinate, and - mineral oils, for use in the manufacture of lubricating oils</oub:description>
           </oub:goods.nomenclature.description>
         </oub:record>
       </oub:transmission>
@@ -14002,45 +13729,6 @@
             <oub:goods.nomenclature.item.id>3811290055</oub:goods.nomenclature.item.id>
             <oub:productline.suffix>80</oub:productline.suffix>
             <oub:description>Additives consisting of reaction products of diphenylamine and branched nonenes containing by weight: - 28 % or more, but not more than 55 % of 4-monononyldiphenylamine, - 45 % or more, but not more than 65 % of 4.4′-dinonyldiphenylamine, and - not more than 5 % of 2.4-dinonyldiphenylamine and 2.4′-dinonyldiphenylamine, used for the manufacture of lubricating oils</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
-  <env:transaction id="90382048">
-    <env:app.message id="257">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382048</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>257</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202855</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>98368</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>3811290060</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="258">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382048</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>258</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202855</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>98368</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>3811290060</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Additives containing: - mainly sulphurised diisobutylene, - calcium sulphonate, and - dialkylaminoalkyl polyisobutylene succinate for use in the manufacture of lubricating oils</oub:description>
           </oub:goods.nomenclature.description>
         </oub:record>
       </oub:transmission>
@@ -14904,45 +14592,6 @@
       </oub:transmission>
     </env:app.message>
   </env:transaction>
-  <env:transaction id="90382071">
-    <env:app.message id="280">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382071</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>280</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202878</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>101935</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>3824999275</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="281">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382071</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>281</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202878</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>101935</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>3824999275</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Aqueous solution of polymers and ammonia consisting of: - 0.1% or more but not more than 0.5% by weight of ammonia (CAS RN 1336-21-6) and - 0.3% or more but not more than 10% by weight of polycarboxylate (linear polymers of acrylic acid)</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
   <env:transaction id="90382072">
     <env:app.message id="281">
       <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
@@ -15138,45 +14787,6 @@
       </oub:transmission>
     </env:app.message>
   </env:transaction>
-  <env:transaction id="90382077">
-    <env:app.message id="286">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382077</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>286</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202884</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>102016</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>3824999675</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="287">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382077</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>287</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202884</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>102016</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>3824999675</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Hollow spheres of fused aluminosilicate containing 65-80% amorphous aluminosilicate, with the following characteristics: - a melting point of between 1 600 °C and 1 800 °C, - a density of 0.6 - 0.8g/cm$3, for use in the manufacture of particle filters in motor vehicles</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
   <env:transaction id="90382078">
     <env:app.message id="287">
       <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
@@ -15333,84 +14943,6 @@
       </oub:transmission>
     </env:app.message>
   </env:transaction>
-  <env:transaction id="90382082">
-    <env:app.message id="291">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382082</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>291</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202889</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>100082</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>3901101040</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="292">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382082</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>292</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202889</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>100082</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>3901101040</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Linear low-density polyethylene (LLDPE) (CAS RN 9002-88-4) in the form of powder, with - not more than 5% by weight of comonomer, - a melt flow rate of 15g/10 min or more, but not more than 60g/10 min and - a density of 0.922g/cm$3 or more, but not more than 0.928g/cm$3</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
-  <env:transaction id="90382083">
-    <env:app.message id="292">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382083</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>292</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202890</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>70028</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>3901109020</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="293">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382083</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>293</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202890</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>70028</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>3901109020</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Polyethylene, in the form of granules, of a specific gravity of 0.925 (± 0.0015), a melt flow index of 0.3g/10 min (± 0.05g/10 min), for the manufacture of blown films of a haze value not more than 6% and an elongation at break (MD/TD) of 210/340</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
   <env:transaction id="90382084">
     <env:app.message id="293">
       <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
@@ -15445,45 +14977,6 @@
             <oub:goods.nomenclature.item.id>3901201000</oub:goods.nomenclature.item.id>
             <oub:productline.suffix>80</oub:productline.suffix>
             <oub:description>Polyethylene in one of the forms mentioned in note 6(b) to this chapter, of a specific gravity of 0.958 or more at 23 °C, containing: - 50 mg/kg or less of aluminium, - 2 mg/kg or less of calcium, - 2 mg/kg or less of chromium, - 2 mg/kg or less of iron, - 2 mg/kg or less of nickel, - 2 mg/kg or less of titanium and - 8 mg/kg or less of vanadium, for the manufacture of chlorosulphonated polyethylene</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
-  <env:transaction id="90382085">
-    <env:app.message id="294">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382085</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>294</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202892</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>65308</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>3901209010</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="295">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382085</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>295</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202892</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>65308</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>3901209010</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Polyethylene, in one of the forms mentioned in note 6 (b) to Chapter 39, of a specific gravity of 0.945 or more but not more than 0.985, for the manufacture of films for typewriter ribbon or similar ribbon</oub:description>
           </oub:goods.nomenclature.description>
         </oub:record>
       </oub:transmission>
@@ -15562,162 +15055,6 @@
             <oub:goods.nomenclature.item.id>3901908053</oub:goods.nomenclature.item.id>
             <oub:productline.suffix>80</oub:productline.suffix>
             <oub:description>Copolymer of ethylene and acrylic acid (CAS RN 9010-77-9) with - an acrylic acid content of 18.5% or more but not more than 49.5% by weight (ASTM D4094), and - a melt flow rate of 14g/10 min (MFR 125 °C/2.16kg, ASTM D1238) or more</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
-  <env:transaction id="90382088">
-    <env:app.message id="297">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382088</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>297</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202895</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>102072</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>3901908057</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="298">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382088</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>298</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202895</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>102072</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>3901908057</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Octene linear low-density polyethylene (LLDPE) in the form of pellets used in the co-extrusion processing of films for flexible food packaging with: - 10% or more but not more than 20% by weight of octene, - a melt flow ratio of 9.0 or more, but not more than 10.0 (using ASTM D1238 10.0/2.16), - a melt index (190°C/2.16kg) of 0.4g / 10 min or more but not more than 0.6g / 10 min, - a density (ASTM D4703) of 0.909g/cm$3 or more, but not more than 0.913g/cm$3, - a gel area per 24.6 cm$3 of not more than 20 mm$2; and - an anti-oxidant level not exceeding 240 ppm</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
-  <env:transaction id="90382089">
-    <env:app.message id="298">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382089</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>298</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202896</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>102071</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>3901908063</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="299">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382089</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>299</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202896</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>102071</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>3901908063</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Octene linear low-density polyethylene (LLDPE) produced by a Ziegler-Natta catalyst method in the form of pellets with: - more than 10% but not more than 20% by weight of copolymer, - a melt flow rate (MFR 190°C/2.16kg) of 0.7g / 10 min or more but not more than 0.9g / 10 min, and - a density (ASTM D4703) of 0.911g/cm$3 or more, but not more than 0.913g/cm$3 for use in the co-extrusion processing of films for flexible food packaging</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
-  <env:transaction id="90382090">
-    <env:app.message id="299">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382090</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>299</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202897</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>102070</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>3901908065</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="300">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382090</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>300</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202897</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>102070</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>3901908065</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Linear low-density polyethylene ( LLDPE) (CAS RN 9002-88-4) in the form of powder, with - more than 5%, but not more than 8% by weight of comonomer, - a melt flow rate of 15g/10 min or more, but not more than 60g/10 min and - a density of 0.922g/cm$3 or more, but not more than 0.928g/cm$3</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
-  <env:transaction id="90382091">
-    <env:app.message id="300">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382091</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>300</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202898</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>102067</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>3901908080</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="301">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382091</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>301</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202898</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>102067</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>3901908080</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Block copolymer of ethylene with octene in the form of pellets: - with a specific gravity of 0.862 or more, but not more than 0.865, - able to stretch to at least 200% its original length, - with a hysteresis of 50% (±10%), - with permanent deformation of not more than 20%, for use in the manufacture of napkin liners for babies</oub:description>
           </oub:goods.nomenclature.description>
         </oub:record>
       </oub:transmission>
@@ -15913,45 +15250,6 @@
             <oub:goods.nomenclature.item.id>3902902000</oub:goods.nomenclature.item.id>
             <oub:productline.suffix>80</oub:productline.suffix>
             <oub:description>Polybut-1-ene, a copolymer of but-1-ene with ethylene containing by weight 10% or less of ethylene, or a blend of polybut-1-ene with polyethylene and/or polypropylene containing by weight 10% or less of polyethylene and/or 25% or less of polypropylene, in one of the forms mentioned in note 6(b) to this chapter</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
-  <env:transaction id="90382097">
-    <env:app.message id="306">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382097</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>306</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202904</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>90752</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>3903110010</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="307">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382097</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>307</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202904</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>90752</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>3903110010</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>White expandable polystyrene beads with a thermal conductivity of not more than 0.034 W/mK at a density of 14.0kg/m$3 (± 1.5kg/m$3), containing 50% recycled material</oub:description>
           </oub:goods.nomenclature.description>
         </oub:record>
       </oub:transmission>
@@ -16386,45 +15684,6 @@
       </oub:transmission>
     </env:app.message>
   </env:transaction>
-  <env:transaction id="90382109">
-    <env:app.message id="318">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382109</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>318</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202916</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>93002</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>3904698093</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="319">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382109</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>319</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202916</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>93002</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>3904698093</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Copolymer of ethylene with chlorotrifluoroethylene, in one of the forms mentioned in note 6 (b) to Chapter 39</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
   <env:transaction id="90382110">
     <env:app.message id="319">
       <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
@@ -16581,45 +15840,6 @@
       </oub:transmission>
     </env:app.message>
   </env:transaction>
-  <env:transaction id="90382114">
-    <env:app.message id="323">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382114</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>323</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202921</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>90756</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>3906909015</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="324">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382114</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>324</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202921</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>90756</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>3906909015</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Photosensitive resin consisting of modified acrylate, acrylic monomer, catalyst (photoinitiator) and stabiliser</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
   <env:transaction id="90382115">
     <env:app.message id="324">
       <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
@@ -16659,45 +15879,6 @@
       </oub:transmission>
     </env:app.message>
   </env:transaction>
-  <env:transaction id="90382116">
-    <env:app.message id="325">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382116</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>325</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202923</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>91157</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>3906909035</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="326">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382116</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>326</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202923</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>91157</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>3906909035</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>White powder of 1.2-ethanediol dimethacrylate-methyl methacrylate copolymer of a particle size of not more than 18 µm, insoluble in water</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
   <env:transaction id="90382117">
     <env:app.message id="326">
       <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
@@ -16732,45 +15913,6 @@
             <oub:goods.nomenclature.item.id>3906909050</oub:goods.nomenclature.item.id>
             <oub:productline.suffix>80</oub:productline.suffix>
             <oub:description>Polymers of esters of acrylic acid with one or more of the following monomers in the chain: - chloromethyl vinyl ether, - chloroethyl vinyl ether, - chloromethylstyrene, - vinyl chloroacetate, - methacrylic acid, - butenedioic acid monobutyl ester, containing by weight not more than 5% of each of the monomeric units, in one of the forms mentioned in note 6 (b) to Chapter 39</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
-  <env:transaction id="90382118">
-    <env:app.message id="327">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382118</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>327</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202925</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>98280</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>3906909087</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="328">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382118</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>328</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202925</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>98280</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>3906909087</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Aqueous solution of polymers and ammonia consisting of: - 0.1% or more but not more than 0.5% by weight of ammonia (CAS RN 1336-21-6) and - 0.3% or more but not more than 10% by weight of polycarboxylate (linear polymers of acrylic acid)</oub:description>
           </oub:goods.nomenclature.description>
         </oub:record>
       </oub:transmission>
@@ -16888,45 +16030,6 @@
             <oub:goods.nomenclature.item.id>3907300040</oub:goods.nomenclature.item.id>
             <oub:productline.suffix>80</oub:productline.suffix>
             <oub:description>Epoxide resin, containing by weight 70% or more of silicon dioxide, for the encapsulation of goods of headings 8533, 8535, 8536, 8541, 8542 or 8548</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
-  <env:transaction id="90382122">
-    <env:app.message id="331">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382122</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>331</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202929</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>84672</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>3907300050</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="332">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382122</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>332</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202929</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>84672</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>3907300050</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Liquid epoxide resin of 2-propenenitrile/1.3-butadiene-epoxide copolymer, not containing any solvent, with: - a zinc borate hydrate content of not more than 40% by weight, - a diantimony trioxide content of not more than 5% by weight</oub:description>
           </oub:goods.nomenclature.description>
         </oub:record>
       </oub:transmission>
@@ -17595,84 +16698,6 @@
       </oub:transmission>
     </env:app.message>
   </env:transaction>
-  <env:transaction id="90382140">
-    <env:app.message id="349">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382140</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>349</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202947</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>91848</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>3920102510</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="350">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382140</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>350</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202947</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>91848</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>3920102510</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Film of a thickness of not more than 0.20 mm, of a blend of polyethylene and a copolymer of ethylene with oct-1-ene, embossed in a regular rhomboidal pattern, for coating both sides of a layer of unvulcanised rubber</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
-  <env:transaction id="90382141">
-    <env:app.message id="350">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382141</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>350</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202948</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>65438</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>3920108920</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="351">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382141</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>351</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202948</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>65438</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>3920108920</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Film of a thickness of not more than 0.20 mm, of a blend of polyethylene and a copolymer of ethylene with oct-1-ene, embossed in a regular rhomboidal pattern, for coating both sides of a layer of unvulcanised rubber</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
   <env:transaction id="90382142">
     <env:app.message id="351">
       <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
@@ -18058,45 +17083,6 @@
             <oub:goods.nomenclature.item.id>3920992845</oub:goods.nomenclature.item.id>
             <oub:productline.suffix>80</oub:productline.suffix>
             <oub:description>Transparent polyurethane film metallised on one side: - with a gloss of more than 90 degrees according to ASTM D2457 - covered on the metalised side with a heat bonding adhesive layer consisting of polyethylene/polypropylene copolymer - covered on the other side with a protective poly(ethylene terephthalate) film - with a total thickness of more than 204 µm but not more than 244 µm</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
-  <env:transaction id="90382152">
-    <env:app.message id="361">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382152</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>361</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202959</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>97641</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>3920992855</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="362">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382152</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>362</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202959</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>97641</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>3920992855</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Thermoplastic polyurethane film extruded, with : - not self-adhesive, - an index of yellow lower of more than 1.0 but not more than 2.5 for 10 mm stacked films (as determined by test method ASTM E 313-10), - a light transmission higher to 87% for 10 mm stacked films (as determined by test method ASTM D 1003-11), - a total thickness of 0.38 mm or more, but not more than 7.6 mm, - a width of 99 cm or more, but not more than 305 cm, of a kind used in the production of laminated safety glass</oub:description>
           </oub:goods.nomenclature.description>
         </oub:record>
       </oub:transmission>
@@ -19389,45 +18375,6 @@
       </oub:transmission>
     </env:app.message>
   </env:transaction>
-  <env:transaction id="90382186">
-    <env:app.message id="395">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382186</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>395</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>202993</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>103895</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>5603149050</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="396">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382186</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>396</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>202993</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>103895</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>5603149050</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Non-woven fabric of microfibres, composed of polyester fibres with a uniform cross section with: - a weight of more than 150g/m$2, - a denier of 0.06 or more but not more than 0.50 den, - containing by weight 74% or more of polyethylene terephthalate</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
   <env:transaction id="90382187">
     <env:app.message id="396">
       <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
@@ -19740,45 +18687,6 @@
       </oub:transmission>
     </env:app.message>
   </env:transaction>
-  <env:transaction id="90382195">
-    <env:app.message id="404">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382195</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>404</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>203002</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>81652</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>7007192010</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="405">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382195</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>405</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>203002</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>81652</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>7007192010</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Glass plate of a diagonal size of 81.28 cm (± 1.5 cm) or more, but not more than 185.42 cm (± 1.5 cm), consisting of tempered glass; provided either with a mesh film and a near-infrared absorbing film or a sputtered conductive layer, with optional additional anti-reflex layer on one or both sides, for use in the manufacture of products falling within heading 8528</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
   <env:transaction id="90382196">
     <env:app.message id="405">
       <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
@@ -19813,45 +18721,6 @@
             <oub:goods.nomenclature.item.id>7007198012</oub:goods.nomenclature.item.id>
             <oub:productline.suffix>10</oub:productline.suffix>
             <oub:description>Solar glass consisting of tempered soda-lime-flat-glass, with an iron content of less than 300 ppm, a solar transmittance of more than 88% (measured according to AM1.5 300-2500 nm), a resistance to heat up to 250° C (measured according to EN 12150), a resistance to thermal shocks of Δ 150 K (measured according to EN 12150) and having a mechanical strength of 90 N/mm 2 or more (measured according to EN 1288-3)</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
-  <env:transaction id="90382197">
-    <env:app.message id="406">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382197</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>406</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>203004</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>81651</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>7007290010</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="407">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382197</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>407</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>203004</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>81651</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>7007290010</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Glass plate of a diagonal size of 81.28 cm (± 1.5 cm) or more, but not more than 185.42 cm (± 1.5 cm), consisting of 2 sandwich plates laminated together; provided either with a mesh film and a near-infrared absorbing film or a sputtered conductive layer, with optional additional anti-reflex layer on one or both sides</oub:description>
           </oub:goods.nomenclature.description>
         </oub:record>
       </oub:transmission>
@@ -24186,45 +23055,6 @@
       </oub:transmission>
     </env:app.message>
   </env:transaction>
-  <env:transaction id="90382309">
-    <env:app.message id="518">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382309</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>518</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>203116</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>91179</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>7604210010</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="519">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382309</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>519</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>203116</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>91179</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>7604210010</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Profiles made of aluminium alloy conforming to EN standard AW-6063 T5 - anodised - whether or not lacquered - with a wall thickness of 0.5 mm (± 1.2%) or more but not more than 0.8 mm (± 1.2%) for use in the manufacture of goods of heading 8302</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
   <env:transaction id="90382310">
     <env:app.message id="519">
       <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
@@ -24259,45 +23089,6 @@
             <oub:goods.nomenclature.item.id>7604291040</oub:goods.nomenclature.item.id>
             <oub:productline.suffix>80</oub:productline.suffix>
             <oub:description>Bars and rods of aluminium alloys containing by weight : - 0.25% or more but not more than 7% of zinc, and - 1% or more but not more than 3% of magnesium, and - 1% or more but not more than 5% of copper, and - not more than 1% of manganese consistent with the material specifications AMS QQ-A-225, of a kind used in aerospace industry (inter alia conforming NADCAP and AS9100) and obtained by rolling mill process</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
-  <env:transaction id="90382311">
-    <env:app.message id="520">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382311</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>520</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>203118</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>91181</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>7604299030</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="521">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382311</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>521</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>203118</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>91181</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>7604299030</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Profiles made of aluminium alloy conforming to EN standard AW-6063 T5 - anodised - whether or not lacquered - with a wall thickness of 0.5 mm (± 1.2%) or more but not more than 0.8 mm (± 1.2%) for use in the manufacture of goods of heading 8302</oub:description>
           </oub:goods.nomenclature.description>
         </oub:record>
       </oub:transmission>
@@ -26448,45 +25239,6 @@
       </oub:transmission>
     </env:app.message>
   </env:transaction>
-  <env:transaction id="90382367">
-    <env:app.message id="576">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382367</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>576</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>203174</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>58681</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>8501109954</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="577">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382367</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>577</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>203174</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>58681</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>8501109954</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>DC motor, brushless, with an external diameter of not more than 25.4 mm, a rated speed of 2,260 (±15%) rpm or 5,420 (±15%) rpm, a supply voltage of 1.5 V or 3 V</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
   <env:transaction id="90382368">
     <env:app.message id="577">
       <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
@@ -27496,45 +26248,6 @@
             <oub:goods.nomenclature.item.id>9002110035</oub:goods.nomenclature.item.id>
             <oub:productline.suffix>80</oub:productline.suffix>
             <oub:description>Infrared optical unit composed of - a silicon lens with a diameter of 29 mm (± 0.05 mm) and - a monocrystalline calcium fluoride lens with a diameter of 26 mm (± 0.05 mm), assembled on a machined aluminium alloy support, of kind a used for thermal imaging cameras</oub:description>
-          </oub:goods.nomenclature.description>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-  </env:transaction>
-  <env:transaction id="90382394">
-    <env:app.message id="603">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382394</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>10</oub:subrecord.code>
-          <oub:record.sequence.number>603</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description.period>
-            <oub:goods.nomenclature.description.period.sid>203201</oub:goods.nomenclature.description.period.sid>
-            <oub:goods.nomenclature.sid>96952</oub:goods.nomenclature.sid>
-            <oub:validity.start.date>2019-03-30</oub:validity.start.date>
-            <oub:goods.nomenclature.item.id>9002110040</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-          </oub:goods.nomenclature.description.period>
-        </oub:record>
-      </oub:transmission>
-    </env:app.message>
-    <env:app.message id="604">
-      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
-        <oub:record>
-          <oub:transaction.id>90382394</oub:transaction.id>
-          <oub:record.code>400</oub:record.code>
-          <oub:subrecord.code>15</oub:subrecord.code>
-          <oub:record.sequence.number>604</oub:record.sequence.number>
-          <oub:update.type>3</oub:update.type>
-          <oub:goods.nomenclature.description>
-            <oub:goods.nomenclature.description.period.sid>203201</oub:goods.nomenclature.description.period.sid>
-            <oub:language.id>EN</oub:language.id>
-            <oub:goods.nomenclature.sid>96952</oub:goods.nomenclature.sid>
-            <oub:goods.nomenclature.item.id>9002110040</oub:goods.nomenclature.item.id>
-            <oub:productline.suffix>80</oub:productline.suffix>
-            <oub:description>Lenses • measuring not more than 125 mm x 65 mm x 65 mm, • with a resolution of 125 lines/mm or better, and • with a zoom ratio of 16 times of a kind used for the production of visualisers or live image cameras</oub:description>
           </oub:goods.nomenclature.description>
         </oub:record>
       </oub:transmission>

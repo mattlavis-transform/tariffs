@@ -252,6 +252,21 @@
                 "R0312/03"
             ]
         },
+        "tpa": {
+            "produce_schedule": "Yes",
+            "country_name": "Transitional Protection Arrangement",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Cote d'Ivoire",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "CI",
+                "1032"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R161076"
+            ]
+        },
         "cotedivoire": {
             "produce_schedule": "Yes",
             "country_name": "Cote d'Ivoire",

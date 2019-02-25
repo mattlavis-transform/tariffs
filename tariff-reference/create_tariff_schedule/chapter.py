@@ -6,6 +6,7 @@ import codecs
 from application import application
 from duty        import duty
 from commodity   import commodity
+from hierarchy   import hierarchy
 
 app = f.app
 
@@ -41,7 +42,7 @@ class chapter(object):
 		###############################################################
 		# Get the table of classifications
 		# Relevant to just the schedule
-		sql = """SELECT goods_nomenclature_item_id, producline_suffix, /*validity_start_date, validity_end_date, */ description, number_indents, leaf FROM ml.goods_nomenclature_export_2019('""" + self.chapter_string + """%') ORDER BY 1, 2"""
+		sql = """SELECT DISTINCT goods_nomenclature_item_id, producline_suffix, /*validity_start_date, validity_end_date, */ description, number_indents, leaf FROM ml.goods_nomenclature_export_brexit('""" + self.chapter_string + """%') ORDER BY 1, 2"""
 
 		#print (sql)
 		#sys.exit()
@@ -57,106 +58,142 @@ class chapter(object):
 			number_indents    = f.mnum(rw[3])
 			leaf              = f.mnum(rw[4])
 
-			oCommodity = commodity(commodity_code, description, productline_suffix, number_indents, leaf)
-			commodity_list.append (oCommodity)
+			my_commodity = commodity(commodity_code, description, productline_suffix, number_indents, leaf)
+			commodity_list.append (my_commodity)
 
-		for oCommodity in commodity_list:
+		for my_commodity in commodity_list:
 			# Start with the duties
 			for d in self.duty_list:
-				if oCommodity.commodity_code == d.commodity_code:
-					if oCommodity.product_line_suffix == "80":
-						oCommodity.duty_list.append(d)
-						oCommodity.assigned = True
+				#print (my_commodity.commodity_code_formatted)
+				if my_commodity.commodity_code == d.commodity_code:
+					if 2 > 1:
+					#if my_commodity.product_line_suffix == "80":
+						my_commodity.duty_list.append(d)
+						my_commodity.assigned = True
 
-			oCommodity.combineDuties()
+			my_commodity.combineDuties()
+
+		#sys.exit()
 
 
 		###########################################################################
 		## Get exceptions
 		###########################################################################
 		if app.sDocumentType == "schedule":
-			for oCommodity in commodity_list:
-				oCommodity.checkforSIV()
-				oCommodity.checkforVessel()
-				oCommodity.checkforCivilAir()
-				oCommodity.checkforAirworthiness()
-				oCommodity.checkforAircraft()
-				oCommodity.checkforPharmaceuticals()
-				oCommodity.checkforITA()
-				oCommodity.checkforMixture()
-				oCommodity.checkforSpecials()
-				oCommodity.checkforAuthorisedUse()
-				oCommodity.checkforGeneralRelief()
-				self.seasonal_records += oCommodity.checkforSeasonal()
+			for my_commodity in commodity_list:
+				my_commodity.checkforSIV()
+				my_commodity.checkforVessel()
+				my_commodity.checkforCivilAir()
+				my_commodity.checkforAirworthiness()
+				my_commodity.checkforAircraft()
+				my_commodity.checkforPharmaceuticals()
+				#my_commodity.checkforITA()
+				#my_commodity.checkforMixture()
+				my_commodity.checkforSpecials()
+				my_commodity.checkforAuthorisedUse()
+				my_commodity.checkforGeneralRelief()
+				self.seasonal_records += my_commodity.checkforSeasonal()
 
-		###########################################################################
-		## Inherit duties down the commodity hierarchy
-		###########################################################################
-
+		#####################################################################
+		## Inherit up
+		#####################################################################
 		commodity_count = len(commodity_list)
-		inherit_duties = True
-		if inherit_duties:
-			commodity_count = len(commodity_list)
-			for i in range(0, commodity_count):
-				comm1 = commodity_list[i]
-				if len(comm1.combined_duty) != "":
-					for j in range(i + 1, commodity_count):
-						comm2 = commodity_list[j]
-						if comm2.iIndents == (comm1.iIndents + 1):
-							if comm1.commodity_code == "0709910000":
-								pass
-								#print ("Inheriting from ", comm1.commodity_code, " (", comm1.product_line_suffix, ") -> ", comm2.commodity_code, " (", comm2.product_line_suffix, ")")
-							if comm2.combined_duty == "":
-								comm2.combined_duty		= comm1.combined_duty
-								comm2.notes_list		= comm1.notes_list
-						elif comm2.iIndents <= comm1.iIndents:
-								break
+
+		# Okay, so this does the following
+		# Loop through all 12 hierarchical tiers, starting at the bottom, which is where all of the MFN duties
+		# are set. For each of those hierarchical tiers (indents), loop through the full set of commodities
+		# finding any commodities whose indents match, then compare those child duties with each other:
+		# if all of the duties are the same, then inherit the combined duties up to the parent
+		# Rinse and repeat as you go higher up the hierarchical levels
+
+		for indent in range(12, -1, -1):
+			#print (indent)
+			for loop1 in range(0, commodity_count):
+				my_commodity = commodity_list[loop1]
+				if my_commodity.iIndents == indent:
+					for loop2 in range(loop1, -1, -1):
+						antecedent = commodity_list[loop2]
+						if antecedent.iIndents == (my_commodity.iIndents - 1):
+							antecedent.child_duty_list.append(my_commodity.combined_duty)
+							break
+
+			for loop1 in range(0, commodity_count):
+				my_commodity = commodity_list[loop1]
+				if my_commodity.iIndents == indent:
+					if len(my_commodity.child_duty_list) > 0:
+						my_set = set(my_commodity.child_duty_list)
+						if len(my_set) == 1:
+							my_commodity.combined_duty = my_commodity.child_duty_list[0]
+							#print ("Setting at a higher level", my_commodity.commodity_code, my_commodity.combined_duty)
+							# need to check this works - am passing up blanks at times
+
+		#sys.exit()
 
 		###########################################################################
 		## Check for row suppression
 		###########################################################################
-		# Complex content suppression
-		commodity_count = len(commodity_list)
-		for i in range(0, commodity_count):
-			comm1 = commodity_list[i]
-			if comm1.suppress_row == False and comm1.leaf == False and comm1.assigned == False:
-				#print ("Up in the air", comm1.commodity_code)
-				for j in range (i + 1, commodity_count):
-					comm2 = commodity_list[j]
-					if comm2.iIndents > comm1.iIndents:
-						if comm2.combined_duty != comm1.combined_duty and comm2.combined_duty != "":
-							comm1.significant_children = True
-							break
-					elif comm2.iIndents <= comm1.iIndents:
+		
+		# We should only be suppressing rows if they have 10 significant digits and their duty
+		# is identical to the parent
+		
+		for loop1 in range(0, commodity_count):
+			my_commodity = commodity_list[loop1]
+			if my_commodity.significant_digits == 2:
+				my_commodity.suppress_row = True
+			elif my_commodity.significant_digits == 10:
+				for loop2 in range(loop1 - 1 , -1, -1):
+					antecedent = commodity_list[loop2]
+					if antecedent.iIndents == (my_commodity.iIndents - 1):
+						my_set = set(antecedent.child_duty_list)
+						if len(my_set) == 1: # and antecedent.product_line_suffix == "80":
+							if my_commodity.commodity_code not in (app.suspension_specials):
+								my_commodity.suppress_row = True
 						break
 
-		for oCommodity in commodity_list:
-			oCommodity.combineNotes()
-			oCommodity.checkForRowSuppression() # Basic leaf suppressio
+
+		###########################################################################
+		## Finally, before we print, check if the duty should be suppresses
+		## Hypothesis is that the duty will be suppressed if the children all
+		## have the same duties, but only if they are suppresses
+		###########################################################################
+		for loop1 in range(0, commodity_count):
+			my_commodity = commodity_list[loop1]
+			if my_commodity.product_line_suffix != "80":
+				my_commodity.suppress_duty = True
+			elif len(set(my_commodity.child_duty_list)) == 1:
+				if my_commodity.child_duty_list[0] == my_commodity.combined_duty:
+					children_suppressed = False
+					for loop2 in range(loop1 + 1, commodity_count):
+						successor_commodity = commodity_list[loop2]
+						if successor_commodity.iIndents == my_commodity.iIndents + 1:
+							if successor_commodity.suppress_row == True:
+								children_suppressed = True
+						elif successor_commodity.iIndents <= my_commodity.iIndents:
+							break
+					if children_suppressed == False:
+						my_commodity.suppress_duty = True
+
+
 
 		###########################################################################
 		## Output the rows to buffer
 		###########################################################################
 
 		table_content = ""
-		for oCommodity in commodity_list:
-			if oCommodity.suppress_row == False:
-				oCommodity.checkForDutySuppression()
+		for my_commodity in commodity_list:
+			if my_commodity.suppress_row == False:
+				my_commodity.checkforMixture()
+				my_commodity.combine_notes()
 				row_string = app.sTableRowXML
-				row_string = row_string.replace("{COMMODITY}",   oCommodity.commodity_code_formatted)
-				row_string = row_string.replace("{DESCRIPTION}", oCommodity.description + " : " + oCommodity.product_line_suffix)
-				# DEBUG FOR ODD CHARACTERS IN OUTPUT
-				if "$" in oCommodity.description or "!" in oCommodity.description:
-					print (oCommodity.commodity_code_formatted, oCommodity.description)
-				
-				row_string = row_string.replace("{INDENT}",      oCommodity.indent_string)
-				#print ("SD", f.app.suppress_duties)
-				if f.app.suppress_duties == False:
-					row_string = row_string.replace("{DUTY}", f.surround(oCommodity.combined_duty))
+				row_string = row_string.replace("{COMMODITY}",   	my_commodity.commodity_code_formatted)
+				row_string = row_string.replace("{DESCRIPTION}",	my_commodity.description)
+				row_string = row_string.replace("{INDENT}",      	my_commodity.indent_string)
+				if my_commodity.suppress_duty == True:
+					row_string = row_string.replace("{DUTY}",       f.surround(""))
+					row_string = row_string.replace("{NOTES}",      "")
 				else:
-					row_string = row_string.replace("{DUTY}", f.surround("TBC"))
-				row_string = row_string.replace("{DUTY}",        f.surround(oCommodity.combined_duty))
-				row_string = row_string.replace("{NOTES}",       oCommodity.notes_string)
+					row_string = row_string.replace("{DUTY}",       f.surround(my_commodity.combined_duty))
+					row_string = row_string.replace("{NOTES}",      my_commodity.notes_string)
 				table_content += row_string
 			
 		###########################################################################
@@ -184,12 +221,8 @@ class chapter(object):
 			sOut += f.fmtMarkdown(self.chapter_notes)
 
 		sTableXML = app.sTableXML
-		if self.seasonal_records > 0:
-			self.wide_duty = True
-		if self.wide_duty == True:
-			width_list = [800, 1350, 1050, 1800]
-		else:
-			width_list = [800, 1350, 1050, 1800]
+		width_list = [650, 1150, 1080, 2120]
+
 		sTableXML = sTableXML.replace("{WIDTH_CLASSIFICATION}", str(width_list[0]))
 		sTableXML = sTableXML.replace("{WIDTH_DUTY}",			str(width_list[1]))
 		sTableXML = sTableXML.replace("{WIDTH_NOTES}",			str(width_list[2]))
@@ -395,8 +428,10 @@ class chapter(object):
 		FROM measure_components mc, ml.v5_brexit_day m
 		WHERE mc.measure_sid = m.measure_sid
 		AND LEFT(m.goods_nomenclature_item_id, 2) = '""" + self.chapter_string + """'
-		AND m.measure_type_id IN ('103', '105')
+		AND m.measure_type_id IN ('103', '105') AND m.validity_start_date >= '2019-03-30'
 		ORDER BY m.goods_nomenclature_item_id, m.measure_type_id, m.measure_sid, mc.duty_expression_id"""
+
+		# print (sql)
 
 		cur = app.conn.cursor()
 		cur.execute(sql)

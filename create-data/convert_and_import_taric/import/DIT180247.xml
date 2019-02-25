@@ -28873,26 +28873,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5525">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385772</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1391</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3667997</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385773">
             <env:app.message id="5527">
@@ -28919,26 +28899,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>28385</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5529">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385773</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1393</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3667998</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -28971,26 +28931,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5533">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385774</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1395</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3667999</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385775">
             <env:app.message id="5535">
@@ -29017,26 +28957,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>93930</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5537">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385775</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1397</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668000</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -29069,26 +28989,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5541">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385776</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1399</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668001</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385777">
             <env:app.message id="5543">
@@ -29115,26 +29015,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>95158</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5545">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385777</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1401</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668002</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -29167,26 +29047,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5549">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385778</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1403</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668003</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385779">
             <env:app.message id="5551">
@@ -29213,26 +29073,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>95187</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5553">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385779</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1405</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668004</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -29265,26 +29105,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5557">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385780</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1407</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668005</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385781">
             <env:app.message id="5559">
@@ -29311,26 +29131,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>94137</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5561">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385781</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1409</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668006</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -29363,26 +29163,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5565">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385782</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1411</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668007</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385783">
             <env:app.message id="5567">
@@ -29409,26 +29189,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>94929</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5569">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385783</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1413</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668008</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -29461,26 +29221,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5573">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385784</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1415</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668009</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385785">
             <env:app.message id="5575">
@@ -29507,26 +29247,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>95111</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5577">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385785</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1417</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668010</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -29559,26 +29279,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5581">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385786</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1419</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668011</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385787">
             <env:app.message id="5583">
@@ -29605,26 +29305,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>95137</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5585">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385787</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1421</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668012</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -29657,26 +29337,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5589">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385788</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1423</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668013</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385789">
             <env:app.message id="5591">
@@ -29703,26 +29363,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>95176</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5593">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385789</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1425</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668014</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -29755,26 +29395,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5597">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385790</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1427</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668015</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385791">
             <env:app.message id="5599">
@@ -29801,26 +29421,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>95328</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5601">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385791</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1429</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668016</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -29853,26 +29453,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5605">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385792</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1431</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668017</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385793">
             <env:app.message id="5607">
@@ -29899,26 +29479,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>95636</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5609">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385793</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1433</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668018</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -29951,26 +29511,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5613">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385794</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1435</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668019</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385795">
             <env:app.message id="5615">
@@ -29997,26 +29537,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>95892</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5617">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385795</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1437</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668020</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -30049,26 +29569,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5621">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385796</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1439</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668021</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385797">
             <env:app.message id="5623">
@@ -30095,26 +29595,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>86041</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5625">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385797</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1441</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668022</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -30147,26 +29627,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5629">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385798</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1443</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668023</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385799">
             <env:app.message id="5631">
@@ -30193,26 +29653,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>86048</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5633">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385799</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1445</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668024</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -30245,26 +29685,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5637">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385800</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1447</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668025</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385801">
             <env:app.message id="5639">
@@ -30291,26 +29711,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>86370</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5641">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385801</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1449</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668026</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -30343,26 +29743,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5645">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385802</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1451</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668027</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385803">
             <env:app.message id="5647">
@@ -30389,26 +29769,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>72464</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5649">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385803</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1453</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668028</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -30441,26 +29801,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5653">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385804</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1455</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668029</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385805">
             <env:app.message id="5655">
@@ -30487,26 +29827,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>72466</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5657">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385805</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1457</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668030</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -30539,26 +29859,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5661">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385806</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1459</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668031</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385807">
             <env:app.message id="5663">
@@ -30585,26 +29885,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>96065</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5665">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385807</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1461</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668032</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -30637,26 +29917,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5669">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385808</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1463</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668033</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385809">
             <env:app.message id="5671">
@@ -30683,26 +29943,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>96091</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5673">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385809</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1465</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668034</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -30735,26 +29975,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5677">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385810</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1467</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668035</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385811">
             <env:app.message id="5679">
@@ -30781,26 +30001,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>96114</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5681">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385811</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1469</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668036</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -30833,26 +30033,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5685">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385812</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1471</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668037</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385813">
             <env:app.message id="5687">
@@ -30879,26 +30059,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>72474</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5689">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385813</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1473</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668038</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -30931,26 +30091,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5693">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385814</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1475</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668039</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385815">
             <env:app.message id="5695">
@@ -30977,26 +30117,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>100674</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5697">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385815</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1477</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668040</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -31029,26 +30149,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5701">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385816</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1479</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668041</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385817">
             <env:app.message id="5703">
@@ -31075,26 +30175,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>100677</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5705">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385817</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1481</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668042</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -31127,26 +30207,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5709">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385818</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1483</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668043</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385819">
             <env:app.message id="5711">
@@ -31173,26 +30233,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>77176</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5713">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385819</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1485</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668044</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -31225,26 +30265,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5717">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385820</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1487</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668045</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385821">
             <env:app.message id="5719">
@@ -31271,26 +30291,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>77179</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5721">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385821</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1489</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668046</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>3</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -34817,26 +33817,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5909">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385824</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1671</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668047</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385825">
             <env:app.message id="5911">
@@ -34863,26 +33843,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>92048</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5913">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385825</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1673</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668048</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -34915,26 +33875,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5917">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385826</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1675</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668049</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385827">
             <env:app.message id="5919">
@@ -34961,26 +33901,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>92060</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5921">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385827</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1677</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668050</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -35013,26 +33933,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5925">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385828</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1679</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668051</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385829">
             <env:app.message id="5927">
@@ -35059,26 +33959,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>92072</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5929">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385829</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1681</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668052</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -35111,26 +33991,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5933">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385830</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1683</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668053</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385831">
             <env:app.message id="5935">
@@ -35157,26 +34017,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>92092</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5937">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385831</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1685</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668054</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -35209,26 +34049,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5941">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385832</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1687</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668055</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385833">
             <env:app.message id="5943">
@@ -35255,26 +34075,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>92105</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5945">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385833</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1689</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668056</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -35307,26 +34107,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5949">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385834</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1691</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668057</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385835">
             <env:app.message id="5951">
@@ -35353,26 +34133,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>92111</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5953">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385835</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1693</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668058</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -35405,26 +34165,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5957">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385836</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1695</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668059</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385837">
             <env:app.message id="5959">
@@ -35451,26 +34191,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>101119</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5961">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385837</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1697</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668060</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -35503,26 +34223,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5965">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385838</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1699</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668061</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385839">
             <env:app.message id="5967">
@@ -35549,26 +34249,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>101125</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5969">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385839</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1701</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668062</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -35601,26 +34281,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5973">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385840</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1703</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668063</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385841">
             <env:app.message id="5975">
@@ -35647,26 +34307,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>101137</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5977">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385841</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1705</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668064</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -35699,26 +34339,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5981">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385842</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1707</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668065</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385843">
             <env:app.message id="5983">
@@ -35745,26 +34365,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>101144</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5985">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385843</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1709</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668066</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -35797,26 +34397,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5989">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385844</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1711</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668067</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385845">
             <env:app.message id="5991">
@@ -35843,26 +34423,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>101157</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="5993">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385845</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1713</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668068</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -35895,26 +34455,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="5997">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385846</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1715</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668069</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385847">
             <env:app.message id="5999">
@@ -35941,26 +34481,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>101170</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="6001">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385847</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1717</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668070</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -35993,26 +34513,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="6005">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385848</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1719</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668071</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385849">
             <env:app.message id="6007">
@@ -36039,26 +34539,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>92195</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="6009">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385849</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1721</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668072</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -36091,26 +34571,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="6013">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385850</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1723</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668073</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385851">
             <env:app.message id="6015">
@@ -36137,26 +34597,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>92202</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="6017">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385851</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1725</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668074</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -36189,26 +34629,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="6021">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385852</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1727</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668075</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385853">
             <env:app.message id="6023">
@@ -36235,26 +34655,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>92215</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="6025">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385853</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1729</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668076</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -36287,26 +34687,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="6029">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385854</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1731</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668077</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385855">
             <env:app.message id="6031">
@@ -36333,26 +34713,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>92222</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="6033">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385855</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1733</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668078</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -36385,26 +34745,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="6037">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385856</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1735</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668079</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385857">
             <env:app.message id="6039">
@@ -36431,26 +34771,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>92235</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="6041">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385857</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1737</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668080</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>
@@ -36483,26 +34803,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             </oub:record>
             </oub:transmission>
             </env:app.message>
-            <env:app.message id="6045">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385858</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1739</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668081</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
             </env:transaction>
             <env:transaction id="16385859">
             <env:app.message id="6047">
@@ -36529,26 +34829,6 @@ JO L 338/36 of 21.12.2011</oub:description>
             <oub:geographical.area.sid>88</oub:geographical.area.sid>
             <oub:goods.nomenclature.sid>92242</oub:goods.nomenclature.sid>
             </oub:measure>
-            </oub:record>
-            </oub:transmission>
-            </env:app.message>
-            <env:app.message id="6049">
-            <oub:transmission xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0">
-            <oub:record>
-            <oub:transaction.id>16385859</oub:transaction.id>
-            <oub:record.code>430</oub:record.code>
-            <oub:subrecord.code>25</oub:subrecord.code>
-            <oub:record.sequence.number>1741</oub:record.sequence.number>
-            <oub:update.type>3</oub:update.type>
-            <oub:measure.partial.temporary.stop>
-            <oub:measure.sid>3668082</oub:measure.sid>
-            <oub:validity.start.date>2019-01-01</oub:validity.start.date>
-            <oub:validity.end.date>2019-03-29</oub:validity.end.date>
-            <oub:partial.temporary.stop.regulation.id>R1714640</oub:partial.temporary.stop.regulation.id>
-            <oub:partial.temporary.stop.regulation.officialjournal.number>L 209</oub:partial.temporary.stop.regulation.officialjournal.number>
-            <oub:partial.temporary.stop.regulation.officialjournal.page>4</oub:partial.temporary.stop.regulation.officialjournal.page>
-            <oub:abrogation.regulation.id>I1900030</oub:abrogation.regulation.id>
-            </oub:measure.partial.temporary.stop>
             </oub:record>
             </oub:transmission>
             </env:app.message>

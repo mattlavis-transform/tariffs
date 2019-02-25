@@ -36,6 +36,12 @@ Use the following format:
 
 `py migrate_measures.py c r switzerland P1900340 `
 
+`py migrate_measures.py c r palestine P1900110 `
+
+`py migrate_measures.py c r fiji P1900080 `
+
+`py migrate_measures.py c r papuanewguinea P1900080 `
+
 which:
 
 - migrates measures (*the script*) - **argument 0**

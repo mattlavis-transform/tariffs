@@ -1,17 +1,20 @@
 import sys
 import functions
 from measure import period
+from datetime import datetime
 
 class commodity(object):
 	def __init__(self, commodity_code):
 		self.commodity_code	= functions.mstr(commodity_code)
 		self.measure_list	= []
 		self.duty_string	= ""
+		self.suppress = False
 
 		self.formatCommodityCode()
 
 
 	def resolve_measures(self):
+		date_brexit = datetime.strptime("2019-03-30", "%Y-%m-%d") # '%m/%d/%y %H:%M:%S')
 		self.duty_string = ""
 
 		is_all_full_year	= True
@@ -20,11 +23,12 @@ class commodity(object):
 		# Check if the measure is exactly a year long; in which case only a single measure
 		# can be shown - it cannot be seasonal
 		for measure in self.measure_list:
-			if measure.extent not in(365, 366, -1) :
+			if measure.extent not in(365, 366, 730, 731, 1095, 1096, 1460, 1461, 1825, 1826, 2190, 2191, -1) :
 				is_all_full_year = False
 
 			if measure.extent == -1:
 				is_infinite = True
+
 
 		# If the measure is a full year measure, then we should only show one measure
 		# under all circumstances; therefore remove all but the 1st item in the list
@@ -36,6 +40,13 @@ class commodity(object):
 					self.measure_list.pop()
 			for m in self.measure_list:
 				self.duty_string += m.xml_without_dates()
+
+			#if self.commodity_code == "0210111100":
+			if is_all_full_year:
+				if self.measure_list[0].validity_end_date != None:
+					if self.measure_list[0].validity_end_date < date_brexit:
+						self.suppress = True
+						#print ("found an old record - kill it", self.commodity_code)
 		
 		else:
 			self.measure_list.reverse()
@@ -108,6 +119,9 @@ class commodity(object):
 			measure_count = len(self.measure_list)
 			
 			if measure_count == 1:
+				if m.validity_end_date < date_brexit:
+					print ("Found a single measure that ends before Brexit", self.commodity_code)
+					self.suppress = True
 				m = self.measure_list[0]
 				
 				if m.extent in (365, 366, -1):

@@ -33,6 +33,7 @@ for i in range(2, row_count + 1):
 	if DATE == "":
 		DATE = "30/03/2019"
 
+	#print ("Here")
 	obj = goods_nomenclature(GOODS_NOMENCLATURE_ITEM_ID, PRODUCTLINE_SUFFIX, DESCRIPTION, GOODS_NOMENCLATURE_SID, DATE, GOODS_NOMENCLATURE_DESCRIPTION_PERIOD_SID, "update", app)
 	app.goods_nomenclature_list.append(obj)
 
@@ -54,8 +55,10 @@ env = app.envelope_XML
 env = env.replace("{ENVELOPE_ID}", str(app.base_envelope_id))
 out = ""
 for obj in app.goods_nomenclature_list:
-	obj.writeXML(app)
-	out += obj.xml
+	if 2 > 1:
+	#if obj.still_exists:
+		obj.writeXML(app)
+		out += obj.xml
 
 out = env.replace("{BODY}", out)
 filename = os.path.join(app.XML_DIR, "goods_nomenclature.xml")

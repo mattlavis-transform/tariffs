@@ -4,6 +4,7 @@ import os
 import csv
 import re
 import common.functions as fn
+import common.objects as o
 from unidecode import unidecode
 
 class goods_nomenclature(object):
@@ -18,6 +19,26 @@ class goods_nomenclature(object):
 
 		self.get_goods_nomenclature_sid(app)
 		self.increment_description_period_sid(app)
+		
+		self.check_still_exists()
+
+	def check_still_exists(self):
+		sql = """SELECT validity_end_date FROM goods_nomenclatures WHERE producline_suffix = '""" + self.productline_suffix + """' AND
+		goods_nomenclature_item_id = '""" + self.goods_nomenclature_item_id + """' ORDER BY validity_end_date DESC;"""
+		#print (sql)
+		cur = o.app.conn.cursor()
+		cur.execute(sql)
+		rows = cur.fetchall()
+		#print ("Here")
+		for row in rows:
+			self.validity_end_date = row[0]
+			if self.validity_end_date != None:
+				print (row[0])
+				self.still_exists = False
+			else:
+				self.still_exists = True
+		
+		#sys.exit()
 
 	def get_goods_nomenclature_sid(self, app):
 		self.goods_nomenclature_sid = -1

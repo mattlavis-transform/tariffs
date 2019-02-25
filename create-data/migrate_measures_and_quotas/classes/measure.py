@@ -62,6 +62,7 @@ class measure(object):
 		# Get action required on this measure
 		# The action string is specified in the arguments to the script
 		app = g.app
+		#print (self.validity_end_date)
 		if app.action_string == "terminate":
 			if self.validity_start_date < app.critical_date:
 				if self.validity_end_date == None:					# Starts before Brexit, but has no end date, therefore needs stopping @ Brexit (and not restarting)
@@ -262,6 +263,9 @@ class measure(object):
 				if mfn.goods_nomenclature_item_id == self.goods_nomenclature_item_id:
 					duty_expression_id				= mfn.duty_expression_id
 					duty_amount						= mfn.duty_amount
+					if mfn.duty_amount == -1:
+						return ("")
+						break
 					monetary_unit_code				= mfn.monetary_unit_code
 					measurement_unit_code			= mfn.measurement_unit_code
 					measurement_unit_qualifier_code = mfn.measurement_unit_qualifier_code

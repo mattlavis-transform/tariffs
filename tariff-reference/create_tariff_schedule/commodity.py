@@ -22,21 +22,23 @@ class commodity(object):
 		self.notes_string			= ""
 		self.duty_list              = []
 		self.suppress_row			= False
+		self.suppress_duty			= False
 		self.indent_string          = ""
 		self.significant_children   = False
 		self.measure_count          = 0
 		self.measure_type_count     = 0
 		self.formatDescription()
-		self.getSignificantFigures()
+		self.get_significant_digits()
 		self.getIndentString()
 		self.formatCommodityCode()
+		self.child_duty_list = []
 
 		self.special_list = []
 
-	def combineNotes(self):
-		if len(self.notes_list) > 1:
-			print ("More than one note", self.commodity_code)
-			sys.exit()
+	def combine_notes(self):
+		#if len(self.notes_list) > 1:
+			#print ("More than one note", self.commodity_code)
+			#sys.exit()
 		if len(self.notes_list) == 0:
 			self.notes_string = "<w:r><w:t></w:t></w:r>"
 		else:
@@ -132,6 +134,8 @@ class commodity(object):
 					self.suppress_row = False
 
 
+
+
 	def formatDescription(self):
 		self.description = str(self.description)
 		self.description = self.description.replace("|", " ")
@@ -157,7 +161,9 @@ class commodity(object):
 		if (self.iIndents < 2): # Make it bold
 			self.description = "<w:rPr><w:b/></w:rPr>" + self.description
 
-	def getSignificantFigures(self):
+
+
+	def get_significant_digits(self):
 		if self.commodity_code[-8:] == '00000000':
 			self.significant_digits = 2
 		elif self.commodity_code[-6:] == '000000':
@@ -178,7 +184,8 @@ class commodity(object):
 		if self.product_line_suffix != "80":
 			self.commodity_code_formatted = ""
 		else:
-			if self.leaf == 1:
+			if 1 > 2:
+			#if self.leaf == 1:
 				if s[8:10] == "00":
 					self.commodity_code_formatted = s[0:4] + ' ' + s[4:6] + ' ' + s[6:8]
 				else:
@@ -259,10 +266,13 @@ class commodity(object):
 		my_subheading	= self.commodity_code[0:4]
 		right_chars		= self.commodity_code[-2:]
 		if (my_chapter in ('02', '10', '11') or my_subheading in ('0904', '0910')) and right_chars == "00":
-			self.notes_list.append("Mixture rule; non-mixture: " + self.combined_duty)
-			self.combined_duty = "Formula"
-			self.assigned = True
-			self.special_list.append("mixture")
+			if self.combined_duty == "":
+				pass
+			else:
+				self.notes_list.append("Mixture rule; non-mixture: " + self.combined_duty)
+				self.combined_duty = "Formula"
+				self.assigned = True
+				self.special_list.append("mixture")
 
 	def checkforSpecials(self):
 		#print ("Checking for specials")
@@ -288,12 +298,6 @@ class commodity(object):
 		if self.commodity_code in app.authoriseduse_list:
 			if self.product_line_suffix == "80":
 				if len(self.special_list) == 0:
-					"""
-					self.notes_list.append("Authorised use applies")
-					self.combined_duty += " *"
-					self.assigned = True
-					self.special_list.append("authoriseduse")
-					"""
 					if len(self.notes_list) != 0:
 						print (self.notes_list)
 					self.notes_list.append("Code reserved for authorised use; the duty rate is specified under regulations made under section 19 of the Taxation (Cross-border Trade) Act 2018")
