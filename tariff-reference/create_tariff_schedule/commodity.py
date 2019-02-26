@@ -201,6 +201,7 @@ class commodity(object):
 					self.commodity_code_formatted = s[0:4] + ' ' + s[4:6] + ' ' + s[6:8] + ' ' + s[8:10]
 
 	def checkforSIV(self):
+		return
 		if self.commodity_code in app.siv_list:
 			if self.product_line_suffix == "80":
 				self.combined_duty = "Formula"
