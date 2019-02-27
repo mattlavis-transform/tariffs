@@ -103,6 +103,8 @@ class duty(object):
 			# including 6.4, against a 3rd country duty (MFN) of 16%, so the 1st percentage is
 			# (6.4 / 16) * 100 = 40%
 			#try:
+			if self.duty_amount == None:
+				self.duty_amount = 0
 			if self.duty_amount > 0:
 				mfn_rate = g.app.get_mfn_rate(self.commodity_code, self.validity_start_date, self.validity_end_date)
 				if mfn_rate != 0.0:

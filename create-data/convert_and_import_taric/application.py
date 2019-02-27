@@ -323,32 +323,31 @@ class application(object):
 
 					# 37000	QUOTA DEFINITION
 					# We actually do want to delete quota definitions
-					if 1 > 0:
-						if record_code == "370" and sub_record_code == "00" and update_type in ("1", "3"):
-							validity_start_date		= self.getDateValue(oMessage, ".//oub:validity.start.date")
-							validity_end_date		= self.getDateValue(oMessage, ".//oub:validity.end.date")
-							quota_definition_sid	=  self.getValue(oMessage, ".//oub:quota.definition.sid")
+					if record_code == "370" and sub_record_code == "00" and update_type in ("1", "3"):
+						validity_start_date		= self.getDateValue(oMessage, ".//oub:validity.start.date")
+						validity_end_date		= self.getDateValue(oMessage, ".//oub:validity.end.date")
+						quota_definition_sid	=  self.getValue(oMessage, ".//oub:quota.definition.sid")
+						
+						# Action - remove the quota definition message node if the quota definition does not start
+						# until after the critical date
+						if validity_start_date >= self.critical_date:
+							quota_order_definition_list.append (quota_definition_sid)
+							oTransaction.remove (oMessage)
+							self.register_update("370", "00", "delete", update_type_string, quota_definition_sid, xml_file, "Delete instruction to create quota order definition " + quota_definition_sid)
+						else:
+							# Action - insert the end date on the quota definition, if the end date is blank
+							# Not sure if this is possible, but here for completion
+							if validity_end_date == "":
+								oElement = self.getNode(oMessage, ".//oub:quota.definition")
+								self.add_edit_node(oElement, "oub:validity.end.date", "oub:validity.start.date", datetime.strftime(self.critical_date, "%Y-%m-%d"))
+								self.register_update("370", "00", "update", update_type_string, quota_definition_sid, xml_file, "Insert an end date for a quota definition which was otherwise un-end dated for definition " + quota_definition_sid)
 							
-							# Action - remove the quota definition message node if the quota definition does not start
-							# until after the critical date
-							if validity_start_date >= self.critical_date:
-								quota_order_definition_list.append (quota_definition_sid)
-								oTransaction.remove (oMessage)
-								self.register_update("370", "00", "delete", update_type_string, quota_definition_sid, xml_file, "Delete instruction to create quota order definition " + quota_definition_sid)
-							else:
-								# Action - insert the end date on the quota definition, if the end date is blank
-								# Not sure if this is possible, but here for completion
-								if validity_end_date == "":
-									oElement = self.getNode(oMessage, ".//oub:quota.definition")
-									self.add_edit_node(oElement, "oub:validity.end.date", "oub:validity.start.date", datetime.strftime(self.critical_date, "%Y-%m-%d"))
-									self.register_update("370", "00", "update", update_type_string, quota_definition_sid, xml_file, "Insert an end date for a quota definition which was otherwise un-end dated for definition " + quota_definition_sid)
-								
-								# Action - update the end date, if the end date is later than the critical date
-								# and the start date is before the critical date, i.e. straddles
-								elif validity_end_date >= self.critical_date:
-									oElement = self.getNode(oMessage, ".//oub:quota.definition")
-									self.setNode(oElement, "oub:validity.end.date", datetime.strftime(self.critical_date, "%Y-%m-%d"))
-									self.register_update("370", "00", "update", update_type_string, quota_definition_sid, xml_file, "Update an explicit quota definition end date to the critical date for quota definition " + quota_definition_sid)
+							# Action - update the end date, if the end date is later than the critical date
+							# and the start date is before the critical date, i.e. straddles
+							elif validity_end_date >= self.critical_date:
+								oElement = self.getNode(oMessage, ".//oub:quota.definition")
+								self.setNode(oElement, "oub:validity.end.date", datetime.strftime(self.critical_date, "%Y-%m-%d"))
+								self.register_update("370", "00", "update", update_type_string, quota_definition_sid, xml_file, "Update an explicit quota definition end date to the critical date for quota definition " + quota_definition_sid)
 
 					# 43000	MEASURE
 					measure_count = 0

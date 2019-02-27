@@ -676,13 +676,14 @@
         },
         "sadc": {
             "produce_schedule": "Yes",
+            "notes": "Exclude S. Africa",
             "country_name": "SADC",
-            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and SADC countries",
+            "agreement_name": "Economic Partnership Agreement between the United Kingdom of Great Britain and Northern Ireland on the one part, and the Southern African Customs Union and Mozambique on the other part ",
             "agreement_date": "05/02/2019",
             "version": "1.0",
             "country_codes": [
                 "1035",
-                "ZA"
+                "NA"
             ],
             "table_per_country": 1,
             "reg_list": [
@@ -1034,8 +1035,8 @@
         },
         "southafrica": {
             "produce_schedule": "Yes",
-            "country_name": "Ukraine",
-            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Ukraine",
+            "country_name": "South Africa",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and South Africa",
             "agreement_date": "05/02/2019",
             "version": "1.0",
             "country_codes": [

@@ -39,6 +39,7 @@ class commodity(object):
 		#if len(self.notes_list) > 1:
 			#print ("More than one note", self.commodity_code)
 			#sys.exit()
+		self.notes_list.sort(reverse = True)
 		if len(self.notes_list) == 0:
 			self.notes_string = "<w:r><w:t></w:t></w:r>"
 		else:
@@ -270,8 +271,12 @@ class commodity(object):
 			if self.combined_duty == "":
 				pass
 			else:
-				self.notes_list.append("Mixture rule; non-mixture: " + self.combined_duty)
-				self.combined_duty = "Formula"
+				if self.combined_duty == "AU":
+					self.notes_list.append("Mixture rule; non-mixture")
+					self.combined_duty = "<w:r><w:t>Formula</w:t></w:r><w:r><w:br/><w:t>AU</w:t></w:r>"
+				else:
+					self.notes_list.append("Mixture rule; non-mixture: " + self.combined_duty)
+					self.combined_duty = "Formula"
 				self.assigned = True
 				self.special_list.append("mixture")
 

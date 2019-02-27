@@ -91,6 +91,8 @@ class application(object):
 			my_dict = json.load(f)
 
 		self.DBASE					= my_dict['dbase']
+		#print (self.DBASE)
+		#sys.exit()
 
 		# Get local config items
 		with open(self.CONFIG_FILE_LOCAL, 'r') as f:
