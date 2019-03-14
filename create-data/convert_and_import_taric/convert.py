@@ -21,10 +21,25 @@ if (len(sys.argv) > 3):
 else:
 	sMerge2 = ""
 	
-if (len(sys.argv) > 3):
-	sMerge3 = sys.argv[3]
+if (len(sys.argv) > 4):
+	sMerge3 = sys.argv[4]
 else:
 	sMerge3 = ""
 	
-app.endDateEUMeasures(sXMLFile, sMerge1, sMerge2, sMerge3)
+if (len(sys.argv) > 5):
+	sMerge4 = sys.argv[5]
+else:
+	sMerge4 = ""
+	
+if (len(sys.argv) > 6):
+	sMerge5 = sys.argv[6]
+else:
+	sMerge5 = ""
+	
+if (len(sys.argv) > 7):
+	sMerge6 = sys.argv[7]
+else:
+	sMerge6 = ""
+	
+app.endDateEUMeasures(sXMLFile, sMerge1, sMerge2, sMerge3, sMerge4, sMerge5, sMerge6)
 app.generateMetadata()

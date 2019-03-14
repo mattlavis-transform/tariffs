@@ -1,0 +1,2119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<env:envelope xmlns="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" id="5000">
+	<env:transaction id="90160750">
+		<env:app.message id="72">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90160750</oub:transaction.id>
+					<oub:record.code>250</oub:record.code>
+					<oub:subrecord.code>10</oub:subrecord.code>
+					<oub:record.sequence.number>72</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:geographical.area.description>
+						<oub:geographical.area.description.period.sid>10035</oub:geographical.area.description.period.sid>
+						<oub:language.id>EN</oub:language.id>
+						<oub:geographical.area.sid>62</oub:geographical.area.sid>
+						<oub:geographical.area.id>2005</oub:geographical.area.id>
+						<oub:description>GSP - LDC Arrangement</oub:description>
+					</oub:geographical.area.description>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90160751">
+		<env:app.message id="74">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90160751</oub:transaction.id>
+					<oub:record.code>250</oub:record.code>
+					<oub:subrecord.code>10</oub:subrecord.code>
+					<oub:record.sequence.number>74</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:geographical.area.description>
+						<oub:geographical.area.description.period.sid>10036</oub:geographical.area.description.period.sid>
+						<oub:language.id>EN</oub:language.id>
+						<oub:geographical.area.sid>217</oub:geographical.area.sid>
+						<oub:geographical.area.id>2020</oub:geographical.area.id>
+						<oub:description>GSP - General Arrangement</oub:description>
+					</oub:geographical.area.description>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90160752">
+		<env:app.message id="76">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90160752</oub:transaction.id>
+					<oub:record.code>250</oub:record.code>
+					<oub:subrecord.code>10</oub:subrecord.code>
+					<oub:record.sequence.number>76</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:geographical.area.description>
+						<oub:geographical.area.description.period.sid>10037</oub:geographical.area.description.period.sid>
+						<oub:language.id>EN</oub:language.id>
+						<oub:geographical.area.sid>51</oub:geographical.area.sid>
+						<oub:geographical.area.id>2027</oub:geographical.area.id>
+						<oub:description>GSP - Enhanced Arrangement</oub:description>
+					</oub:geographical.area.description>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566537">
+		<env:app.message id="14986">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566537</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>14986</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150620</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999223</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101897</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="14987">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566537</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>14987</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150620</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566538">
+		<env:app.message id="14988">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566538</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>14988</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150621</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999225</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>102882</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="14989">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566538</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>14989</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150621</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566539">
+		<env:app.message id="14990">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566539</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>14990</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150622</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999226</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>103560</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="14991">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566539</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>14991</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150622</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566540">
+		<env:app.message id="14992">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566540</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>14992</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150623</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999227</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>102975</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="14993">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566540</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>14993</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150623</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566541">
+		<env:app.message id="14994">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566541</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>14994</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150624</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999228</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>103561</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="14995">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566541</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>14995</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150624</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566542">
+		<env:app.message id="14996">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566542</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>14996</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150625</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999229</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>103562</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="14997">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566542</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>14997</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150625</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566543">
+		<env:app.message id="14998">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566543</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>14998</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150626</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999230</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>102976</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="14999">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566543</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>14999</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150626</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566544">
+		<env:app.message id="15000">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566544</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15000</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150627</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999232</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101898</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15001">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566544</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15001</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150627</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566545">
+		<env:app.message id="15002">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566545</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15002</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150628</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999233</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101899</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15003">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566545</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15003</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150628</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566546">
+		<env:app.message id="15004">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566546</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15004</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150629</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999235</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101901</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15005">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566546</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15005</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150629</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566547">
+		<env:app.message id="15006">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566547</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15006</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150630</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999236</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101902</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15007">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566547</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15007</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150630</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566548">
+		<env:app.message id="15008">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566548</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15008</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150631</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999237</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101903</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15009">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566548</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15009</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150631</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566549">
+		<env:app.message id="15010">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566549</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15010</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150632</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999239</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101904</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15011">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566549</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15011</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150632</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566550">
+		<env:app.message id="15012">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566550</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15012</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150633</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999240</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>103038</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15013">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566550</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15013</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150633</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566551">
+		<env:app.message id="15014">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566551</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15014</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150634</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999242</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101905</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15015">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566551</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15015</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150634</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566553">
+		<env:app.message id="15018">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566553</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15018</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150636</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999246</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101908</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15019">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566553</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15019</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150636</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566554">
+		<env:app.message id="15020">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566554</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15020</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150637</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999247</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101909</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15021">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566554</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15021</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150637</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566555">
+		<env:app.message id="15022">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566555</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15022</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150638</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999249</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101911</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15023">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566555</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15023</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150638</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566557">
+		<env:app.message id="15026">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566557</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15026</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150640</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999251</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101913</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15027">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566557</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15027</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150640</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566559">
+		<env:app.message id="15030">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566559</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15030</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150642</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999254</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101915</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15031">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566559</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15031</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150642</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566560">
+		<env:app.message id="15032">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566560</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15032</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150643</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999255</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101916</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15033">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566560</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15033</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150643</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566561">
+		<env:app.message id="15034">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566561</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15034</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150644</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999256</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101917</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15035">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566561</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15035</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150644</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566562">
+		<env:app.message id="15036">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566562</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15036</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150645</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999257</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101918</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15037">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566562</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15037</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150645</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566563">
+		<env:app.message id="15038">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566563</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15038</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150646</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999259</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101920</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15039">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566563</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15039</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150646</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566564">
+		<env:app.message id="15040">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566564</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15040</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150647</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999260</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101921</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15041">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566564</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15041</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150647</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566565">
+		<env:app.message id="15042">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566565</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15042</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150648</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999261</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101922</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15043">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566565</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15043</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150648</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566566">
+		<env:app.message id="15044">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566566</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15044</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150649</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999263</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101923</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15045">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566566</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15045</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150649</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566567">
+		<env:app.message id="15046">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566567</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15046</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150650</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999264</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101924</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15047">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566567</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15047</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150650</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566568">
+		<env:app.message id="15048">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566568</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15048</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150651</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999265</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101925</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15049">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566568</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15049</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150651</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566571">
+		<env:app.message id="15054">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566571</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15054</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150655</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999268</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101929</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15055">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566571</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15055</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150655</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566572">
+		<env:app.message id="15056">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566572</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15056</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150656</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999269</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101930</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15057">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566572</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15057</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150656</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566573">
+		<env:app.message id="15058">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566573</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15058</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150657</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999270</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101931</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15059">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566573</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15059</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150657</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566574">
+		<env:app.message id="15060">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566574</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15060</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150658</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999272</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101932</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15061">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566574</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15061</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150658</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566575">
+		<env:app.message id="15062">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566575</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15062</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150659</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999276</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101936</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15063">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566575</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15063</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150659</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566577">
+		<env:app.message id="15066">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566577</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15066</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150661</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999278</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101938</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15067">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566577</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15067</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150661</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566578">
+		<env:app.message id="15068">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566578</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15068</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150662</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999280</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101940</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15069">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566578</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15069</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150662</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566579">
+		<env:app.message id="15070">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566579</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15070</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150663</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999282</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101942</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15071">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566579</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15071</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150663</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566580">
+		<env:app.message id="15072">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566580</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15072</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150664</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999284</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101944</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15073">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566580</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15073</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150664</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90566583">
+		<env:app.message id="15078">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566583</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15078</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5150667</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>3824999288</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>101948</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="15079">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90566583</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>15079</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5150667</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	
+	
+	<env:transaction id="90569944">
+		<env:app.message id="21800">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90569944</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>21800</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5155967</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>7019400011</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>98238</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="21801">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90569944</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>21801</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5155967</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90569945">
+		<env:app.message id="21802">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90569945</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>21802</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5155968</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>7019400019</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>98239</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="21803">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90569945</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>21803</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5155968</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90569946">
+		<env:app.message id="21804">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90569946</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>21804</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5155970</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>7019400021</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>98241</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="21805">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90569946</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>21805</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5155970</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90569947">
+		<env:app.message id="21806">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90569947</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>21806</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5155971</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>7019400029</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>98242</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="21807">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90569947</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>21807</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5155971</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>	
+
+
+	<env:transaction id="90570916">
+		<env:app.message id="23744">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90570916</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>23744</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5157620</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>7325991020</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>92730</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="23745">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90570916</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>23745</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5157620</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>	
+	
+	
+	<env:transaction id="90571112">
+		<env:app.message id="24136">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90571112</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>24136</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5157930</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>7607119047</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>102764</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="24137">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90571112</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>24137</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5157930</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90571113">
+		<env:app.message id="24138">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90571113</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>24138</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5157931</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>7607119057</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>102765</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="24139">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90571113</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>24139</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5157931</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90571114">
+		<env:app.message id="24140">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90571114</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>24140</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5157932</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>7607119060</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>99216</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="24141">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90571114</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>24141</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5157932</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90573074">
+		<env:app.message id="28060">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90573074</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>28060</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5160981</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>8516900010</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>50045</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="28061">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90573074</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>28061</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5160981</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90573077">
+		<env:app.message id="28066">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90573077</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>28066</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5160985</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>8516900070</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>97548</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="28067">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90573077</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>28067</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5160985</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90573078">
+		<env:app.message id="28068">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90573078</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>28068</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure>
+						<oub:measure.sid>5160986</oub:measure.sid>
+						<oub:measure.type>103</oub:measure.type>
+						<oub:geographical.area>1011</oub:geographical.area>
+						<oub:goods.nomenclature.item.id>8516900080</oub:goods.nomenclature.item.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:measure.generating.regulation.role>1</oub:measure.generating.regulation.role>
+						<oub:measure.generating.regulation.id>M1900010</oub:measure.generating.regulation.id>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:geographical.area.sid>400</oub:geographical.area.sid>
+						<oub:goods.nomenclature.sid>99179</oub:goods.nomenclature.sid>
+					</oub:measure>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+		<env:app.message id="28069">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90573078</oub:transaction.id>
+					<oub:record.code>430</oub:record.code>
+					<oub:subrecord.code>05</oub:subrecord.code>
+					<oub:record.sequence.number>28069</oub:record.sequence.number>
+					<oub:update.type>1</oub:update.type>
+					<oub:measure.component>
+						<oub:measure.sid>5160986</oub:measure.sid>
+						<oub:duty.expression.id>01</oub:duty.expression.id>
+						<oub:duty.amount>0</oub:duty.amount>
+					</oub:measure.component>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+</env:envelope>

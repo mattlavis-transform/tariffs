@@ -232,6 +232,7 @@ class application(object):
 		self.sTier5BulletXML = self.sTier5BulletXML.replace("#", bullet)
 		self.sTier6BulletXML = self.sTier6BulletXML.replace("#", bullet)
 		self.sTier7BulletXML = self.sTier7BulletXML.replace("#", bullet)
+		self.sTier8BulletXML = self.sTier8BulletXML.replace("#", bullet)
 
 
 		# New for authorised use
@@ -458,6 +459,7 @@ class application(object):
 		ORDER BY 2
 		LIMIT 10000
 		"""
+		print (sql)
 
 		measure_list_string = ""
 		cur = self.conn.cursor()

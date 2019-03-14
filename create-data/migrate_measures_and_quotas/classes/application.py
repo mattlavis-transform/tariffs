@@ -214,7 +214,7 @@ class application(object):
 		self.critical_date			= datetime.strptime(my_dict['critical_date'], '%Y-%m-%d')
 		self.critical_date_plus_one	= self.critical_date + timedelta(days = 1)
 		self.DBASE					= my_dict['dbase']
-		self.DBASE					= "tariff_eu" # Always defaulting to the EU database, as this is what we will be migrating
+		#self.DBASE					= "tariff_eu" # Always defaulting to the EU database, as this is what we will be migrating
 		self.DBASE_MIGRATE_MEASURES = my_dict['dbase_migrate_measures']
 		
 		self.connect()
@@ -280,9 +280,10 @@ class application(object):
 		# These are special cases that allow for shortcuts across multiple measure types
 		self.credibility_list			= ['430', '431', '485', '481', '482', '483']
 		self.mfn_list					= ['103', '105']
+		self.wto_quota_list				= ['122', '123', '653', '654']
 		self.supplementary_list			= ['109', '110']
 		self.suspension_list			= ['112', '115', '117', '119', '141']
-		self.omit_measure_types_list	= self.credibility_list + self.supplementary_list + self.suspension_list
+		self.omit_measure_types_list	= self.credibility_list + self.supplementary_list + self.suspension_list + self.wto_quota_list
 
 
 		if "quota" in sys.argv[0]:	# quotas
@@ -391,6 +392,9 @@ class application(object):
 
 			elif self.measure_type_string in ("supp", "supplementaryunits", "supp"):		# supplementary units
 				self.measure_type_list = self.supplementary_list
+
+			elif self.measure_type_string in ("quota", "quotas", "wto_quotas", "wto", "q"):							# quotas
+				self.measure_type_list = self.wto_quota_list
 
 			elif self.measure_type_string in ("mfn"):										# MFNs
 				self.measure_type_list = self.mfn_list
@@ -1173,9 +1177,10 @@ class application(object):
 		#if self.country_limit != "":
 		#	country_clause = " AND geographical_area_id = '" + self.country_limit + "' "
 
-		#print ("function get_measures", self.scope)
+		print ("function get_measures", self.scope)
 		#sys.exit()
 
+		
 		if self.scope == "country":
 			my_geo_ids = self.list_to_sql(self.country_codes)
 			my_measure_types = self.list_to_sql(self.preferential_measure_list)
@@ -1189,8 +1194,6 @@ class application(object):
 			FROM ml.get_current_measures m WHERE geographical_area_id IN (""" + my_geo_ids + """)
 			AND measure_type_id IN (""" + my_measure_types + """) ORDER BY measure_sid
 			"""
-			print (sql)
-			#sys.exit()
 
 		elif self.scope == "quotas":
 			sql = """SELECT measure_sid, ordernumber, measure_type_id, validity_start_date, validity_end_date,
@@ -1215,6 +1218,8 @@ class application(object):
 			""" + country_clause + """
 			ORDER BY measure_sid
 			"""
+			#print (sql)
+			#sys.exit()
 
 		elif self.scope == "regulation":
 			if len(self.regulation_string) == 7:
@@ -1714,7 +1719,7 @@ class application(object):
 								break
 						if mc_found == False:
 							obj.measure_component_list.append (new_component)
-							print ("Adding an SIV replacement measure for: ", obj.goods_nomenclature_item_id, obj.validity_start_date, obj.measure_sid)
+							#print ("Adding an SIV replacement measure for: ", obj.goods_nomenclature_item_id, obj.validity_start_date, obj.measure_sid)
 
 		print ("\n")
 		#sys.exit()

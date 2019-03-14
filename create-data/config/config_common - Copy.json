@@ -1,0 +1,29 @@
+{
+    "critical_date": "2019-03-29",
+    "dbase": "tariff_cds",
+    "dbase_migrate_measures": "tariff_staging",
+    "dbase_uktt": "bit_zesty",
+    "debug": 1,
+    "last_transaction_id": 90597679,
+    "meursing_list": "12, 13, 14, 21, 25, 27, 29",
+    "minimum_sids": {
+        "additional.code.description.periods": 20000,
+        "additional.codes": 20000,
+        "certificate.description.periods": 10000,
+        "footnote.description.periods": 200000,
+        "geographical.area.description.periods": 10000,
+        "geographical.areas": 10000,
+        "goods.nomenclature": 200000,
+        "goods.nomenclature.description.periods": 205057,
+        "goods.nomenclature.indents": 200000,
+        "measure.conditions": 2088744,
+        "measures": 5182881,
+        "quota.blocking.periods": 1000,
+        "quota.definitions": 20000,
+        "quota.order.number.origins": 10000,
+        "quota.order.numbers": 10000,
+        "quota.suspension.periods": 1000
+    },
+    "remove_Meursing": 0,
+    "remove_SIVs": 1
+}

@@ -9,6 +9,7 @@ class quota_order_number_origin(object):
 		self.geographical_area_id   		= geographical_area_id
 		self.validity_start_date    		= validity_start_date
 		self.quota_order_number_origin_sid	= -1 # Temp -- g.app.last_quota_order_number_origin_sid
+		self.quota_order_number_id			= ""
 		self.exclusion_list = []
 
 		self.get_geography()

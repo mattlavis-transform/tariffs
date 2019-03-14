@@ -25,14 +25,16 @@ class measure(object):
 		# Get the goods nomenclature SID
 		sql = """SELECT goods_nomenclature_sid FROM goods_nomenclatures WHERE producline_suffix = '80'
 		AND goods_nomenclature_item_id = '""" + self.goods_nomenclature_item_id + """' ORDER BY validity_start_date DESC LIMIT 1"""
+		#print (sql)
 		cur = g.app.conn.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
 		if len(rows) > 0:
 			self.goods_nomenclature_sid = rows[0][0]
 		else:
-			print ("Error - incorrect goods nomenclature item ID")
-			sys.exit()
+			print ("Error - incorrect goods nomenclature item ID - ", self.goods_nomenclature_item_id)
+			self.goods_nomenclature_sid = -1
+			#sys.exit()
 
 		
 		# Initialised
@@ -59,6 +61,9 @@ class measure(object):
 		pass
 
 	def xml(self):
+		if self.goods_nomenclature_sid == -1:
+			return ""
+
 		s = g.app.template_measure
 		s = s.replace("[TRANSACTION_ID]",         			str(g.app.transaction_id))
 		s = s.replace("[MESSAGE_ID]",             			str(g.app.message_id))

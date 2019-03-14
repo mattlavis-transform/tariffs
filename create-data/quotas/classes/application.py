@@ -14,11 +14,12 @@ from datetime import timedelta
 
 # Custom code
 
-from classes.progressbar import ProgressBar
-from classes.quota_order_number import quota_order_number
-from classes.quota_order_number_origin import quota_order_number_origin
-from classes.quota_definition import quota_definition
-from classes.measure import measure
+from classes.progressbar							import ProgressBar
+from classes.quota_order_number						import quota_order_number
+from classes.quota_order_number_origin				import quota_order_number_origin
+from classes.quota_order_number_origin_exclusion	import quota_order_number_origin_exclusion
+from classes.quota_definition						import quota_definition
+from classes.measure								import measure
 import classes.functions as fn
 
 class application(object):
@@ -55,7 +56,7 @@ class application(object):
 		self.MFN_COMPONENTS_FILE	= os.path.join(self.SOURCE_DIR, "mfn_components.csv")
 		self.TEMPLATE_DIR			= os.path.join(self.BASE_DIR, "templates")
 
-		self.DBASE = "tariff_dev"
+		self.DBASE = "tariff_staging"
 
 		self.envelope_id            = "100000001"
 		self.sequence_id            = 1
@@ -76,7 +77,7 @@ class application(object):
 		if len(sys.argv) > 1:
 			self.output_profile = sys.argv[1]
 			print (self.output_profile)
-			self.output_filename = self.output_profile.strip() + ".xml"
+			self.output_filename = os.path.join(self.XML_OUT_DIR, "quotas_" + self.output_profile.strip() + ".xml")
 		else:
 			print ("No profile specified")
 			sys.exit()
@@ -132,7 +133,7 @@ class application(object):
 
 	def get_measures_from_csv(self):
 		self.quota_order_number_list = []
-		my_file = "C:\\projects\\tariff\\create-data\\quotas\\csv\\quota_commodities.csv"
+		my_file = os.path.join(self.CSV_DIR, "quota_commodities.csv")
 		with open(my_file) as csv_file:
 			csv_reader = csv.reader(csv_file, delimiter = ",")
 			for row in csv_reader:
@@ -144,13 +145,14 @@ class application(object):
 					measurement_unit			= row[4]
 					measurement_unit_qualifier	= row[5]
 
-					obj = measure(goods_nomenclature_item_id, quota_order_number_id, duty, monetary_unit, measurement_unit, measurement_unit_qualifier)
-
-					self.measure_list.append(obj)
+					if (goods_nomenclature_item_id != "goods nomenclature") and (goods_nomenclature_item_id != ""):
+						obj = measure(goods_nomenclature_item_id, quota_order_number_id, duty, monetary_unit, measurement_unit, measurement_unit_qualifier)
+						self.measure_list.append(obj)
 
 	def get_quota_order_numbers_from_csv(self):
+		# Think about countries other than China
 		self.quota_order_number_list = []
-		my_file = "C:\\projects\\tariff\\create-data\\quotas\\csv\\quota_order_numbers.csv"
+		my_file = os.path.join(self.CSV_DIR, "quota_order_numbers.csv")
 		with open(my_file) as csv_file:
 			csv_reader = csv.reader(csv_file, delimiter = ",")
 			for row in csv_reader:
@@ -162,15 +164,87 @@ class application(object):
 					origin_exclusion_string = row[4]
 					validity_start_date		= row[5]
 					subject					= row[6]
+					try:
+						status = row[7]
+					except:
+						status = "New"
 
 					obj = quota_order_number(quota_order_number_id, regulation_id, measure_type_id, origin_string,
-					origin_exclusion_string, validity_start_date, subject)
+					origin_exclusion_string, validity_start_date, subject, status)
 
 					self.quota_order_number_list.append(obj)
 
+
+	def compare_order_number_origins(self):
+		for obj in self.quota_order_number_list:
+			try:
+				obj.origin_list.sort(key=lambda x: x.geographical_area_id, reverse = False)
+			except:
+				print (obj.quota_order_number_id)
+				sys.exit()
+
+			obj.actual_origin_string = ""
+			for origin in obj.origin_list:
+				obj.actual_origin_string += " " + origin.geographical_area_id
+			obj.actual_origin_string = obj.actual_origin_string.strip()
+
+			match_count = 0
+
+			my_origin = obj.origin_list
+			db_match_list = []
+			for db_origin in self.db_origin_list:
+				#print (db_origin.quota_order_number_id, db_origin.geographical_area_id)
+				if db_origin.quota_order_number_id == obj.quota_order_number_id:
+					db_match_list.append (db_origin.geographical_area_id)
+
+			db_match_list.sort()
+			matched = True
+			db_match_string = ""
+
+			# First, check that all the quota order numbers match
+			# We do not care about exchanging 1008 for 1011, though we shoudl stick with
+			# what is already there
+			
+			if len(obj.origin_list) == 1 and obj.origin_list[0] == "1011":
+				if len(db_match_list == 1):
+					if db_match_list[0] == "1008":
+						obj.origin_list[0] == "1008"
+			
+			for item in db_match_list:
+				db_match_string += " " + item
+				if item not in obj.actual_origin_string:
+					matched = False
+					match_fail = item
+			
+
+			for item in obj.origin_list:
+				if item.geographical_area_id not in db_match_list:
+					matched = False
+					match_fail = item.geographical_area_id
+
+			
+
+			db_match_string = db_match_string.strip()
+
+			if matched == False:
+				if obj.quota_order_number_id[0:3] != "094":
+					pass
+					#print ("Incomplete match on ", obj.quota_order_number_id, "in the Word doc it says", obj.actual_origin_string, "versus in the DB", db_match_string, "failure =", match_fail)
+
+
+		for obj in self.quota_order_number_list:
+			exclusion_string = obj.origin_exclusion_string.strip()
+			if (exclusion_string != ""):
+				for db_exclusion in self.db_origin_exclusion_list:
+					if db_exclusion.quota_order_number_id == obj.quota_order_number_id:
+						print (obj.quota_order_number_id, "Match")
+
+		#sys.exit()
+
+
 	def get_quota_definitions_from_csv(self):
 		self.quota_definition_list = []
-		my_file = "C:\\projects\\tariff\\create-data\\quotas\\csv\\quota_definitions.csv"
+		my_file = os.path.join(self.CSV_DIR, "quota_definitions.csv")
 		with open(my_file) as csv_file:
 			csv_reader = csv.reader(csv_file, delimiter = ",")
 			for row in csv_reader:
@@ -193,7 +267,6 @@ class application(object):
 					measurement_unit_qualifier_code, blocking_period_start, blocking_period_end)
 
 					self.quota_definition_list.append(obj)
-
 
 
 	def get_minimum_sids(self):
@@ -222,10 +295,6 @@ class application(object):
 		self.last_quota_definition_sid						= self.larger(self.get_scalar("SELECT MAX(quota_definition_sid) FROM quota_definitions_oplog"), self.min_list['quota.definitions']) + 1
 		self.last_quota_suspension_period_sid				= self.larger(self.get_scalar("SELECT MAX(quota_suspension_period_sid) FROM quota_suspension_periods_oplog"), self.min_list['quota.suspension.periods']) + 1
 		self.last_quota_blocking_period_sid					= self.larger(self.get_scalar("SELECT MAX(quota_blocking_period_sid) FROM quota_blocking_periods_oplog"), self.min_list['quota.blocking.periods']) + 1
-
-
-		#print (self.last_measure_sid)
-		#sys.exit()
 
 	def larger(self, a, b):
 		if a > b:
@@ -279,3 +348,50 @@ class application(object):
 			success = False
 		if not(success):
 			my_schema.validate(fname)
+
+	def get_all_origins_from_db(self):
+		self.db_origin_list = []
+		sql = """SELECT qono.quota_order_number_origin_sid, qon.quota_order_number_id,
+		qon.quota_order_number_id, geographical_area_id
+		FROM quota_order_number_origins qono, quota_order_numbers qon
+		WHERE qon.quota_order_number_sid = qono.quota_order_number_sid
+		AND qon.validity_end_date IS NULL
+		AND qono.validity_end_date IS NULL ORDER BY 2, 3"""
+		cur = self.conn.cursor()
+		cur.execute(sql)
+		rows = cur.fetchall()
+		for row in rows:
+			quota_order_number_origin_sid	= row[0]
+			quota_order_number_id			= row[1]
+			quota_order_number_sid			= row[2]
+			geographical_area_id			= row[3]
+
+			qono = quota_order_number_origin(quota_order_number_sid, geographical_area_id, "")
+			qono.quota_order_number_id = quota_order_number_id
+			self.db_origin_list.append (qono)
+		
+		print (len(self.db_origin_list))
+
+		self.db_origin_exclusion_list = []
+		sql = """SELECT quota_order_number_id, qon.quota_order_number_sid, excluded_geographical_area_sid,
+		gad.geographical_area_id, gad.description /*, qonoe.* */
+		FROM quota_order_number_origin_exclusions qonoe, quota_order_number_origins qono,
+		quota_order_numbers qon, geographical_area_descriptions gad
+		WHERE qono.quota_order_number_origin_sid = qonoe.quota_order_number_origin_sid
+		AND qon.quota_order_number_sid = qono.quota_order_number_sid
+		AND gad.geographical_area_sid = qonoe.excluded_geographical_area_sid
+		ORDER BY 1, 3"""
+		cur = self.conn.cursor()
+		cur.execute(sql)
+		rows = cur.fetchall()
+		for row in rows:
+			quota_order_number_id			= row[0]
+			quota_order_number_sid			= row[1]
+			excluded_geographical_area_sid	= row[2]
+			geographical_area_id			= row[3]
+			description						= row[4]
+			qonoe = quota_order_number_origin_exclusion(quota_order_number_sid, geographical_area_id) # (quota_order_number_sid, geographical_area_id, "")
+			qonoe.quota_order_number_id				= quota_order_number_id
+			qonoe.excluded_geographical_area_sid	= excluded_geographical_area_sid
+			qonoe.description						= description
+			self.db_origin_exclusion_list.append (qonoe)

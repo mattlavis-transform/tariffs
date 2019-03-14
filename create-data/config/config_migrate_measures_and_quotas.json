@@ -50,9 +50,26 @@
         "trade_remedies2": "regulation_migrations_remedies2.csv"
     },
     "measure_types":{
-        "preferential":["142", "145", "143", "146"]
+        "preferential":["142", "145", "143", "146", "106", "147"]
     },
     "country_profiles": {
+        "tps": {
+            "produce_schedule": "Yes",
+            "country_name": "1032 Transitional Protection Scheme",
+            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Albania",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "1032"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R090891",
+                "D090332",
+                "R061742",
+                "R061916"
+            ]
+        },
         "albania": {
             "produce_schedule": "Yes",
             "country_name": "Albania",
@@ -89,7 +106,7 @@
         "andean": {
             "produce_schedule": "No",
             "country_name": "Andean",
-            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Andean countries: Colombia, Ecuador and Peru",
+            "agreement_name": "TRADE AGREEMENT BETWEEN THE UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND, OF THE ONE PART, AND THE REPUBLIC OF COLOMBIA, THE REPUBLIC OF ECUADOR AND THE REPUBLIC OF PERU, OF THE OTHER PART",
             "agreement_date": "05/02/2019",
             "version": "1.0",
             "country_codes": [
@@ -185,7 +202,7 @@
         "cameroon": {
             "produce_schedule": "Yes",
             "country_name": "Cameroon",
-            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Cameroon",
+            "agreement_name": "Interim agreement with a view to an Economic Partnership Agreement between the United Kingdom of Great Britain and Northern Ireland, of the one part, and the Central Africa Party, of the other part",
             "agreement_date": "05/02/2019",
             "version": "1.0",
             "country_codes": [
@@ -199,7 +216,7 @@
         "canada": {
             "produce_schedule": "Yes",
             "country_name": "Canada",
-            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Canada",
+            "agreement_name": "Agreement between the Government of the United Kingdom of Great Britain and Northern Ireland and the Government of Canada on Trade",
             "agreement_date": "05/02/2019",
             "version": "1.0",
             "country_codes": [
@@ -224,7 +241,7 @@
         "cariforum": {
             "produce_schedule": "Yes",
             "country_name": "CARIFORUM",
-            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and CARIFORUM",
+            "agreement_name": "Economic Partnership Agreement between the CARIFORUM States, of the one part, and the United Kingdom of Great Britain and Northern Ireland, of the other part",
             "agreement_date": "05/02/2019",
             "version": "1.0",
             "country_codes": [
@@ -270,7 +287,7 @@
         "cotedivoire": {
             "produce_schedule": "Yes",
             "country_name": "Cote d'Ivoire",
-            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Cote d'Ivoire",
+            "agreement_name": "Stepping Stone Economic Partnership Agreement between Côte d'Ivoire, of the one part, and the United Kingdom of Great Britain and Northern Ireland, of the other part",
             "agreement_date": "05/02/2019",
             "version": "1.0",
             "country_codes": [
@@ -303,7 +320,7 @@
             "produce_schedule": "No",
             "notes": "There are no quotas associated with this geo. area. Using the individual countries: Comoros ??, Madagascar, Mauritius, the Seychelles, Zambia and Zimbabwe; adding MU (Mauritius to the base)",
             "country_name": "ESA",
-            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and ESA countries",
+            "agreement_name": "Agreement establishing an Economic Partnership Agreement between the Eastern and Southern African States, on the one part, and the United Kingdom of Great Britain and Northern Ireland, on the other part",
             "agreement_date": "21/02/2019",
             "version": "1.0",
             "country_codes": [
@@ -415,7 +432,7 @@
         "faroeislands": {
             "produce_schedule": "Yes",
             "country_name": "Faroe Islands",
-            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Faroe Islands",
+            "agreement_name": "Free Trade Agreement between the United Kingdom of Great Britain and Northern Ireland and the Kingdom of Denmark in respect of the Faroe Islands",
             "agreement_date": "05/02/2019",
             "version": "1.0",
             "country_codes": [
@@ -449,7 +466,7 @@
         "ghana": {
             "produce_schedule": "Yes",
             "country_name": "Ghana",
-            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Ghana",
+            "agreement_name": "Trade Partnership Agreement between the United Kingdom of Great Britain and Northern Ireland and Ghana TBC  ",
             "agreement_date": "05/02/2019",
             "version": "1.0",
             "country_codes": [
@@ -463,7 +480,7 @@
         "israel": {
             "produce_schedule": "Yes",
             "country_name": "Israel",
-            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Israel",
+            "agreement_name": "Trade and Partnership Agreement between the Government of the United Kingdom of Great Britain and Northern Ireland and the Government of the State of Israel",
             "agreement_date": "21/02/2019",
             "version": "1.0",
             "country_codes": [
@@ -554,7 +571,7 @@
         "mexico": {
             "produce_schedule": "Yes",
             "country_name": "Mexico",
-            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Mexico",
+            "agreement_name": "Economics Partnership, Political Coordination and Corporation Agreement between the United Kingdom of Great Britain and Northern Ireland and the United Mexican States",
             "agreement_date": "05/02/2019",
             "version": "1.0",
             "country_codes": [
@@ -619,7 +636,7 @@
         "pacific": {
             "produce_schedule": "No",
             "country_name": "Pacific",
-            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Pacific States (Fiji and Papua New Guinea)",
+            "agreement_name": "Interim Partnership Agreement between the United Kingdom of Great Britain and Northern Ireland of the one part, and the Pacific States, of the other part",
             "agreement_date": "05/02/2019",
             "version": "1.0",
             "country_codes": [
@@ -662,7 +679,7 @@
         "palestine": {
             "produce_schedule": "Yes",
             "country_name": "the Palestinian Authority",
-            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and the Palestinian Authority",
+            "agreement_name": "Interim Political, Trade and Partnership Agreement between the United Kingdom of Great Britain and Northern Ireland, of the one part, and the Palestine Liberation Organization (PLO) for the benefit of the Palestinian Authority of the West Bank and the Gaza Strip, of the other part",
             "agreement_date": "21/02/2019",
             "version": "1.0",
             "country_codes": [
@@ -716,7 +733,7 @@
         "southkorea": {
             "produce_schedule": "Yes",
             "country_name": "South Korea",
-            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and South Korea",
+            "agreement_name": "Free trade Agreement between the United Kingdom of Great Britain and Northern Ireland, of the one part, and the Republic of Korea, of the other part",
             "agreement_date": "05/02/2019",
             "version": "1.0",
             "country_codes": [
@@ -980,7 +997,7 @@
         "liechtenstein": {
             "produce_schedule": "No",
             "country_name": "Liechtenstein",
-            "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and the European Economic Area - Liechtenstein",
+            "agreement_name": "Additional Agreement between the United Kingdom of Great Britain and Northern Ireland, the Swiss Confederation and the Principality of Liechtenstein extending to the Principality of Liechtenstein the provisions of the Agreement between the European Economic Community and the Swiss Confederation of 22 July 1972 and of the Agreement between the European Community and the Swiss Confederation on trade in agricultural products, as incorporated into and modified in the Trade Agreement between the United Kingdom of Great Britain and Northern Ireland and the Swiss Confederation",
             "agreement_date": "05/02/2019",
             "version": "1.0",
             "country_codes": [

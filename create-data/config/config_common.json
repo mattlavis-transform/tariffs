@@ -1,10 +1,10 @@
 {
     "critical_date": "2019-03-29",
     "dbase": "tariff_staging",
-    "dbase_migrate_measures": "tariff_eu",
+    "dbase_migrate_measures": "tariff_staging",
     "dbase_uktt": "bit_zesty",
     "debug": 1,
-    "last_transaction_id": 90586673,
+    "last_transaction_id": 90597678,
     "meursing_list": "12, 13, 14, 21, 25, 27, 29",
     "minimum_sids": {
         "additional.code.description.periods": 20000,
@@ -16,8 +16,8 @@
         "goods.nomenclature": 200000,
         "goods.nomenclature.description.periods": 205057,
         "goods.nomenclature.indents": 200000,
-        "measure.conditions": 2088003,
-        "measures": 5180786,
+        "measure.conditions": 2089088,
+        "measures": 5193097,
         "quota.blocking.periods": 1000,
         "quota.definitions": 20000,
         "quota.order.number.origins": 10000,

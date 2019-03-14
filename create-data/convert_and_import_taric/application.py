@@ -154,6 +154,7 @@ class application(object):
 		self.log_list_string			= []
 		self.log_list					= []
 
+		my_script = sys.argv[0]
 		self.get_config()
 		self.get_minimum_sids()
 
@@ -174,11 +175,21 @@ class application(object):
 				self.log_list_string.append (s2)
 
 	def get_config(self):
-		# Get global config items
-		with open(self.CONFIG_FILE, 'r') as f:
-			my_dict = json.load(f)
+		my_script = sys.argv[0]
+		if my_script == "import_dev.py":
+			self.DBASE = "tariff_dev"
+		elif my_script == "import_staging.py":
+			self.DBASE = "tariff_staging"
+		elif my_script == "import_cds.py":
+			self.DBASE = "tariff_cds"
+		elif my_script == "import_eu.py":
+			self.DBASE = "tariff_eu"
+		else:
+			# Get global config items
+			with open(self.CONFIG_FILE, 'r') as f:
+				my_dict = json.load(f)
 
-		self.DBASE					= my_dict['dbase']
+			self.DBASE					= my_dict['dbase']
 
 		# Get local config items
 		with open(self.CONFIG_FILE_LOCAL, 'r') as f2:
@@ -217,7 +228,7 @@ class application(object):
 		self.last_quota_blocking_period_sid					= self.larger(self.get_scalar("SELECT MAX(quota_blocking_period_sid) FROM quota_blocking_periods_oplog"), min_list['quota.blocking.periods']) + 1
 
 
-	def endDateEUMeasures(self, xml_file, sMerge1 = "", sMerge2 = "", sMerge3 = ""):
+	def endDateEUMeasures(self, xml_file, sMerge1 = "", sMerge2 = "", sMerge3 = "", sMerge4 = "", sMerge5 = "", sMerge6 = ""):
 		self.convertFilename(xml_file)
 		self.d("Creating converted file for " + self.output_filename, False)
 
@@ -254,26 +265,61 @@ class application(object):
 					update_type			= oMessage.find(".//oub:update.type", self.namespaces).text
 					update_type_string	= action_list[int(update_type) - 1]
 					
-					# 28500	BASE REGULATIONS - Just capture the data in a log: do not do anything with the data
-					if record_code == "285" and sub_record_code == "00" and update_type == "3":
+					# 27500	COMPLETE ABROGATION REGULATIONS - Delete everything
+					if record_code == "275" and sub_record_code == "00": # and update_type == "3":
+						#regulation_id		= self.getValue(oMessage, ".//oub:base.regulation.id")
+						#information_text	= self.getValue(oMessage, ".//oub:information.text")
+						#reg = regulation(regulation_id, information_text, "base")
+						#self.new_regulation_list.append(reg)
+						oTransaction.remove (oMessage)
+
+					# 28000	EXPLICIT ABROGATION REGULATIONS - Delete everything
+					if record_code == "280" and sub_record_code == "00": # and update_type == "3":
+						#regulation_id		= self.getValue(oMessage, ".//oub:base.regulation.id")
+						#information_text	= self.getValue(oMessage, ".//oub:information.text")
+						#reg = regulation(regulation_id, information_text, "base")
+						#self.new_regulation_list.append(reg)
+						oTransaction.remove (oMessage)
+
+					# 28500	BASE REGULATIONS - Now delete all of these
+					if record_code == "285" and sub_record_code == "00": # and update_type == "3":
 						regulation_id		= self.getValue(oMessage, ".//oub:base.regulation.id")
 						information_text	= self.getValue(oMessage, ".//oub:information.text")
 						reg = regulation(regulation_id, information_text, "base")
-						self.new_regulation_list.append(reg)
+						#self.new_regulation_list.append(reg)
+						oTransaction.remove (oMessage)
 
-					# 29000	MODIFICATION REGULATIONS - Just capture the data in a log: do not do anything with the data
-					if record_code == "290" and sub_record_code == "00" and update_type == "3":
+					# 29000	MODIFICATION REGULATIONS - Now delete all of these
+					if record_code == "290" and sub_record_code == "00": # and update_type == "3":
 						regulation_id		= self.getValue(oMessage, ".//oub:modification.regulation.id")
 						information_text	= self.getValue(oMessage, ".//oub:information.text")
 						reg = regulation(regulation_id, information_text, "modification")
-						self.new_regulation_list.append(reg)
+						#self.new_regulation_list.append(reg)
+						oTransaction.remove (oMessage)
 
-					# 29500	PROROGATION REGULATIONS - Just capture the data in a log: do not do anything with the data
-					if record_code == "295" and sub_record_code == "00" and update_type == "3":
+					# 29500	PROROGATION REGULATIONS - Now delete all of these
+					if record_code == "295" and sub_record_code == "00": # and update_type == "3":
 						regulation_id		= self.getValue(oMessage, ".//oub:prorogation.regulation.id")
 						information_text	= self.getValue(oMessage, ".//oub:information.text")
 						reg = regulation(regulation_id, information_text, "prorogation")
-						self.new_regulation_list.append(reg)
+						#self.new_regulation_list.append(reg)
+						oTransaction.remove (oMessage)
+
+					# 30000	FULL TEMPORARY STOP REGULATIONS - Now delete all of these
+					if record_code == "300" and sub_record_code == "00": # and update_type == "3":
+						#regulation_id		= self.getValue(oMessage, ".//oub:prorogation.regulation.id")
+						#information_text	= self.getValue(oMessage, ".//oub:information.text")
+						#reg = regulation(regulation_id, information_text, "prorogation")
+						#self.new_regulation_list.append(reg)
+						oTransaction.remove (oMessage)
+
+					# 30500	REGULATION REPLACEMENTS - Now delete all of these
+					if record_code == "305" and sub_record_code == "00": # and update_type == "3":
+						#regulation_id		= self.getValue(oMessage, ".//oub:prorogation.regulation.id")
+						#information_text	= self.getValue(oMessage, ".//oub:information.text")
+						#reg = regulation(regulation_id, information_text, "prorogation")
+						#self.new_regulation_list.append(reg)
+						oTransaction.remove (oMessage)
 
 					# 36000	QUOTA ORDER NUMBER
 					# We will always be loading quota order numbers
@@ -351,6 +397,10 @@ class application(object):
 
 					# 43000	MEASURE
 					measure_count = 0
+					if record_code == "430": #  and sub_record_code == "00":
+						oTransaction.remove (oMessage)
+
+					"""
 					if record_code == "430" and sub_record_code == "00":
 						measure_count += 1
 						validity_start_date					= self.getDateValue(oMessage, ".//oub:validity.start.date")
@@ -391,22 +441,9 @@ class application(object):
 								
 								self.register_update("430", "00", "update", update_type_string, measure_sid, xml_file, "Update a measure that starts before EU Exit and ends after EU Exit to end on the critical date - measure_sid: " + measure_sid)
 
-						"""
-						
-						This causes failures, as seen in file DIT180242.xml
-						It removed the measure but not the subsidiary components
-
-						elif update_type in ("2"):
-							if validity_start_date > self.critical_date:
-								oTransaction.remove (oMessage)
-								measure_list.append(measure_sid)
-								self.register_update("430", "00", "delete", update_type_string, measure_sid, xml_file, "Delete instruction for measure that would have started after EU Exit with measure.sid of " + measure_sid)
-						"""
-							
-
 
 					# 43025	MEASURE PARTIAL TEMPORARY STOP
-					if record_code == "430" and sub_record_code == "25" and update_type in ("1", "3"):
+					if record_code == "430" and sub_record_code == "25" # and update_type in ("1", "3"):
 						oElement = self.getNode(oMessage, ".//oub:measure.partial.temporary.stop")
 						validity_start_date	= self.getDateValue(oMessage, ".//oub:validity.start.date")
 						validity_end_date	= self.getDateValue(oMessage, ".//oub:validity.end.date")
@@ -423,7 +460,7 @@ class application(object):
 							self.add_edit_node(oElement, "oub:validity.end.date",		 "oub:validity.start.date", datetime.strftime(self.critical_date, "%Y-%m-%d"))
 							self.add_edit_node(oElement, "oub:abrogation.regulation.id", "oub:partial.temporary.stop.regulation.officialjournal.page", self.abrogation_regulation_id)
 							self.register_update("430", "25", "delete", update_type_string, measure_sid, xml_file, "End date a partial temporary stop beginning before EU Exit with no end date measure.sid of " + measure_sid)
-
+					"""
 
 			########################################## PHASE 2 ########################################
 			# Second loop through the transactions = needed once the list variables have been populated
@@ -642,6 +679,7 @@ class application(object):
 										pass
 									break
 
+					"""
 					# 43005	MEASURE COMPONENT
 					if record_code == "430" and sub_record_code == "05":
 						if update_type in ("1", "3"):
@@ -746,11 +784,12 @@ class application(object):
 										oTransaction.remove (oMessage)
 										self.register_update("430", "25", "delete", update_type_string, measure_sid, xml_file, "Delete partial temporary stop for deleted measure with sid " + measure_sid)
 										break
-
+					"""
 			# The third pass through looks at measure condition components
 			# This removes meaure condition components that are created as a result of the measure conditions that have already been 
 			# removed in the 2nd pass.
 
+			"""
 			for oTransaction in root.findall('.//env:transaction', self.namespaces):
 				for oMessage in oTransaction.findall('.//env:app.message', self.namespaces):
 					record_code			= oMessage.find(".//oub:record.code", self.namespaces).text
@@ -785,6 +824,7 @@ class application(object):
 										self.register_update("430", "11", "delete", update_type_string, measure_condition_sid, xml_file, "Delete measure condition component for deleted measure condition with sid " + measure_condition_sid)
 										break
 
+			"""
 			# Loop through the transactions, looking for empty transactions, where the sub messages have all been deleted
 			# If found, then delete them all
 			self.d("Delete all empty transaction nodes")
@@ -855,6 +895,12 @@ class application(object):
 				filenames.append (os.path.join(self.MERGE_DIR, sMerge2))
 			if sMerge3 != "":
 				filenames.append (os.path.join(self.MERGE_DIR, sMerge3))
+			if sMerge4 != "":
+				filenames.append (os.path.join(self.MERGE_DIR, sMerge4))
+			if sMerge5 != "":
+				filenames.append (os.path.join(self.MERGE_DIR, sMerge5))
+			if sMerge6 != "":
+				filenames.append (os.path.join(self.MERGE_DIR, sMerge6))
 		else:
 			if sMerge2 == "":
 				sys.exit()
@@ -1153,7 +1199,6 @@ class application(object):
 				sys.exit()
 
 		# Check that this file has not already been imported
-		
 		sql = "SELECT import_file FROM ml.import_files WHERE import_file = '" + xml_file + "'"
 		cur = self.conn.cursor()
 		cur.execute(sql)

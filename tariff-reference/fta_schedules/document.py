@@ -194,6 +194,8 @@ class document(object):
 		# Get unique order numbers
 		sql = """SELECT DISTINCT ordernumber FROM ml.v5_2019 m WHERE m.measure_type_id IN ('143', '146')
 		AND m.geographical_area_id IN (""" + g.app.geo_ids + """) ORDER BY 1"""
+		#print (sql)
+		#sys.exit()
 		cur = g.app.conn.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
@@ -327,6 +329,12 @@ class document(object):
 				addendum				= balance[14].strip()
 				scope					= balance[15].strip()
 
+				"""
+				if quota_order_number_id == "094901":
+					print ("Found in blaance file")
+					sys.exit()
+				"""
+
 				if measurement_unit_code == "KGM":
 					measurement_unit_code = "KGM"
 
@@ -442,6 +450,7 @@ class document(object):
 		table_content = ""
 
 		for qon in self.quota_order_number_list:
+
 			# Check balance info has been provided, if not then do not display
 			balance_found = False
 			for bal in self.balance_list:
@@ -502,7 +511,7 @@ class document(object):
 									comm.suppress = True
 
 
-					comm.suppress = False
+					#comm.suppress = False
 					if comm.suppress == False:
 						insert_divider = False
 						insert_duty_divider = False

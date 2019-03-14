@@ -442,12 +442,32 @@ class application(object):
 			self.mfn_list.append(mfn)
 
 	def get_mfn_rate(self, commodity_code, validity_start_date, validity_end_date):
+		"""
+		for mfn in self.mfn_list:
+			if commodity_code == "0805290011":
+				print (mfn.duty_amount)
+			print (mfn.commodity_code, mfn.duty_amount)
+		sys.exit()
+		"""
 		mfn_rate = 0.0
+		found = False
 		for mfn in self.mfn_list:
 			if commodity_code == mfn.commodity_code:
 				if validity_start_date == mfn.validity_start_date:
 					mfn_rate = mfn.duty_amount
+					found = True
 					break
+		if found == False:
+			#print ("Error matching SIVs on", commodity_code, " for date", validity_start_date)
+			if commodity_code[8:10] != "00":
+				commodity_code = commodity_code[0:8] + "00"
+				#print (commodity_code)
+				#sys.exit()
+				mfn_rate = self.get_mfn_rate(commodity_code, validity_start_date, validity_end_date)
+			elif commodity_code[6:10] != "0000":
+				commodity_code = commodity_code[0:6] + "00"
+				mfn_rate = self.get_mfn_rate(commodity_code, validity_start_date, validity_end_date)
+				#pass
 		return (mfn_rate)
 
 	def get_meursing_components(self):

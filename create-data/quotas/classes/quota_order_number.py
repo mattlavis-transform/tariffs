@@ -7,7 +7,7 @@ from classes.quota_order_number_origin import quota_order_number_origin
 from classes.quota_order_number_origin_exclusion import quota_order_number_origin_exclusion
 
 class quota_order_number(object):
-	def __init__(self, quota_order_number_id, regulation_id, measure_type_id, origin_string, origin_exclusion_string, validity_start_date, subject):
+	def __init__(self, quota_order_number_id, regulation_id, measure_type_id, origin_string, origin_exclusion_string, validity_start_date, subject, status):
 		self.quota_order_number_id      = quota_order_number_id
 		self.regulation_id              = regulation_id
 		self.measure_type_id    	    = measure_type_id
@@ -15,6 +15,14 @@ class quota_order_number(object):
 		self.origin_exclusion_string    = origin_exclusion_string
 		self.validity_start_date    	= validity_start_date
 		self.subject		            = subject
+		self.status		            	= status
+
+		self.cleanse_subject()
+
+		if status == "Y" or status == "New":
+			status = "New"
+		else:
+			status = "Existing"
 
 		self.trim_measure_type()
 
@@ -26,6 +34,10 @@ class quota_order_number(object):
 
 		self.assign_definitions()
 		self.assign_measures()
+
+	def cleanse_subject(self):
+		self.subject = self.subject.replace("<", "&lt;")
+		self.subject = self.subject.replace(">", "&gt;")
 
 	def trim_measure_type(self):
 		space_pos = self.measure_type_id.find(" ")
@@ -59,6 +71,7 @@ class quota_order_number(object):
 		# Check if any of these are a geographical area code (type 1)
 		# If so, then this is suitable for exclusions (which are attached to the origin)
 		for geographical_area_id in self.origins:
+			#print (geographical_area_id)
 			obj_quota_order_number_origin = quota_order_number_origin(self.quota_order_number_sid, geographical_area_id, self.validity_start_date)
 			if obj_quota_order_number_origin.geographical_code == "1":
 				for geographical_area_id2 in self.origin_exclusions:
@@ -68,9 +81,6 @@ class quota_order_number(object):
 
 
 			self.origin_list.append (obj_quota_order_number_origin)
-
-
-
 
 
 	def check_existence(self):
@@ -90,6 +100,12 @@ class quota_order_number(object):
 			self.quota_order_number_sid = g.app.last_quota_order_number_sid
 
 	def xml(self):
+		#if self.status == "Existing":
+		#	return ("")
+
+		if self.quota_order_number_id[0:3] == "094":
+			return ("")
+
 		s = ""
 		if self.exists == False:
 			s = g.app.template_quota_order_number
@@ -107,12 +123,12 @@ class quota_order_number(object):
 			g.app.transaction_id +=1
 
 
-		for obj in self.origin_list:
-			g.app.last_quota_order_number_origin_sid += 1
-			obj.quota_order_number_origin_sid = g.app.last_quota_order_number_origin_sid
-			obj.quota_order_number_sid = self.quota_order_number_sid
-			obj.description = self.subject
-			s += obj.xml()
+			for obj in self.origin_list:
+				g.app.last_quota_order_number_origin_sid += 1
+				obj.quota_order_number_origin_sid = g.app.last_quota_order_number_origin_sid
+				obj.quota_order_number_sid = self.quota_order_number_sid
+				obj.description = self.subject
+				s += obj.xml()
 
 		for obj in self.quota_definition_list:
 			obj.quota_order_number_sid = self.quota_order_number_sid

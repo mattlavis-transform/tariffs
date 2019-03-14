@@ -1,0 +1,1577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<env:envelope xmlns="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" id="ENV">
+	<env:transaction id="100000">
+		<env:app.message id="1">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100000</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>1</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20058</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090919</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>2472</oub:quota.order.number.sid>
+						<oub:volume>77000.00</oub:volume>
+						<oub:initial.volume>77000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090919 for geography CH : Switzerland on hams of domestic swine, in brine, boneless, enclosed in a bladder or in an artificial gut
+meat of domestic swine, boneless, from chop, smoked
+sausages and similar products, of meat, meat offal or blood; food preparations based on these products, of animals of headings, excluding wild boars
+pork neck, dried in air, seasoned or not, whole, in pieces or thinly sliced
+ from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100001">
+		<env:app.message id="2">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100001</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>2</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20059</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090919</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>2472</oub:quota.order.number.sid>
+						<oub:volume>102000.00</oub:volume>
+						<oub:initial.volume>102000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090919 for geography CH : Switzerland on hams of domestic swine, in brine, boneless, enclosed in a bladder or in an artificial gut
+meat of domestic swine, boneless, from chop, smoked
+sausages and similar products, of meat, meat offal or blood; food preparations based on these products, of animals of headings, excluding wild boars
+pork neck, dried in air, seasoned or not, whole, in pieces or thinly sliced
+ from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100002">
+		<env:app.message id="3">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100002</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>3</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20060</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090921</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>397</oub:quota.order.number.sid>
+						<oub:volume>163000.00</oub:volume>
+						<oub:initial.volume>163000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090921 for geography CH : Switzerland on seed potatoes, fresh or chilled from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100003">
+		<env:app.message id="4">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100003</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>4</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20061</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090921</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>397</oub:quota.order.number.sid>
+						<oub:volume>215000.00</oub:volume>
+						<oub:initial.volume>215000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090921 for geography CH : Switzerland on seed potatoes, fresh or chilled from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100004">
+		<env:app.message id="5">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100004</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>5</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20062</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090922</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>399</oub:quota.order.number.sid>
+						<oub:volume>41000.00</oub:volume>
+						<oub:initial.volume>41000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090922 for geography CH : Switzerland on tomatoes, fresh or chilled from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100005">
+		<env:app.message id="6">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100005</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>6</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20063</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090922</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>399</oub:quota.order.number.sid>
+						<oub:volume>54000.00</oub:volume>
+						<oub:initial.volume>54000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090922 for geography CH : Switzerland on tomatoes, fresh or chilled from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100006">
+		<env:app.message id="7">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100006</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>7</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20064</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090923</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>401</oub:quota.order.number.sid>
+						<oub:volume>204000.00</oub:volume>
+						<oub:initial.volume>204000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090923 for geography CH : Switzerland on onions, fresh or chilled from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100007">
+		<env:app.message id="8">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100007</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>8</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20065</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090923</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>401</oub:quota.order.number.sid>
+						<oub:volume>269000.00</oub:volume>
+						<oub:initial.volume>269000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090923 for geography CH : Switzerland on onions, fresh or chilled from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100008">
+		<env:app.message id="9">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100008</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>9</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20066</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090924</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>403</oub:quota.order.number.sid>
+						<oub:volume>224000.00</oub:volume>
+						<oub:initial.volume>224000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090924 for geography CH : Switzerland on cabbages and the like, fresh or chilled from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100009">
+		<env:app.message id="10">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100009</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>10</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20067</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090924</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>403</oub:quota.order.number.sid>
+						<oub:volume>295000.00</oub:volume>
+						<oub:initial.volume>295000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090924 for geography CH : Switzerland on cabbages and the like, fresh or chilled from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100010">
+		<env:app.message id="11">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100010</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>11</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20068</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090925</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>405</oub:quota.order.number.sid>
+						<oub:volume>122000.00</oub:volume>
+						<oub:initial.volume>122000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090925 for geography CH : Switzerland on lettuce and chicory, fresh or chilled from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100011">
+		<env:app.message id="12">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100011</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>12</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20069</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090925</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>405</oub:quota.order.number.sid>
+						<oub:volume>161000.00</oub:volume>
+						<oub:initial.volume>161000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090925 for geography CH : Switzerland on lettuce and chicory, fresh or chilled from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100012">
+		<env:app.message id="13">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100012</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>13</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20070</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090926</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>407</oub:quota.order.number.sid>
+						<oub:volume>204000.00</oub:volume>
+						<oub:initial.volume>204000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090926 for geography CH : Switzerland on carrots and turnips, fresh or chilled from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100013">
+		<env:app.message id="14">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100013</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>14</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20071</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090926</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>407</oub:quota.order.number.sid>
+						<oub:volume>269000.00</oub:volume>
+						<oub:initial.volume>269000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090926 for geography CH : Switzerland on carrots and turnips, fresh or chilled from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100014">
+		<env:app.message id="15">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100014</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>15</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20072</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090927</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>409</oub:quota.order.number.sid>
+						<oub:volume>122000.00</oub:volume>
+						<oub:initial.volume>122000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090927 for geography CH : Switzerland on edible root vegetables, fresh or chilled from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100015">
+		<env:app.message id="16">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100015</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>16</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20073</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090927</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>409</oub:quota.order.number.sid>
+						<oub:volume>161000.00</oub:volume>
+						<oub:initial.volume>161000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090927 for geography CH : Switzerland on edible root vegetables, fresh or chilled from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100016">
+		<env:app.message id="17">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100016</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>17</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20074</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090928</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>411</oub:quota.order.number.sid>
+						<oub:volume>41000.00</oub:volume>
+						<oub:initial.volume>41000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090928 for geography CH : Switzerland on cucumbers, fresh or chilled from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100017">
+		<env:app.message id="18">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100017</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>18</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20075</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090928</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>411</oub:quota.order.number.sid>
+						<oub:volume>54000.00</oub:volume>
+						<oub:initial.volume>54000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090928 for geography CH : Switzerland on cucumbers, fresh or chilled from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100018">
+		<env:app.message id="19">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100018</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>19</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20076</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090929</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>413</oub:quota.order.number.sid>
+						<oub:volume>41000.00</oub:volume>
+						<oub:initial.volume>41000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090929 for geography CH : Switzerland on beans, fresh or chilled from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100019">
+		<env:app.message id="20">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100019</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>20</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20077</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090929</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>413</oub:quota.order.number.sid>
+						<oub:volume>54000.00</oub:volume>
+						<oub:initial.volume>54000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090929 for geography CH : Switzerland on beans, fresh or chilled from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100020">
+		<env:app.message id="21">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100020</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>21</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20078</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090930</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>415</oub:quota.order.number.sid>
+						<oub:volume>20000.00</oub:volume>
+						<oub:initial.volume>20000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090930 for geography CH : Switzerland on aubergines, fresh or chilled from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100021">
+		<env:app.message id="22">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100021</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>22</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20079</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090930</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>415</oub:quota.order.number.sid>
+						<oub:volume>27000.00</oub:volume>
+						<oub:initial.volume>27000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090930 for geography CH : Switzerland on aubergines, fresh or chilled from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100022">
+		<env:app.message id="23">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100022</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>23</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20080</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090931</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>417</oub:quota.order.number.sid>
+						<oub:volume>20000.00</oub:volume>
+						<oub:initial.volume>20000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090931 for geography CH : Switzerland on celery, fresh or chilled from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100023">
+		<env:app.message id="24">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100023</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>24</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20081</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090931</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>417</oub:quota.order.number.sid>
+						<oub:volume>27000.00</oub:volume>
+						<oub:initial.volume>27000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090931 for geography CH : Switzerland on celery, fresh or chilled from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100024">
+		<env:app.message id="25">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100024</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>25</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20082</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090932</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>419</oub:quota.order.number.sid>
+						<oub:volume>41000.00</oub:volume>
+						<oub:initial.volume>41000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090932 for geography CH : Switzerland on spinach, fresh or chilled from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100025">
+		<env:app.message id="26">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100025</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>26</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20083</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090932</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>419</oub:quota.order.number.sid>
+						<oub:volume>54000.00</oub:volume>
+						<oub:initial.volume>54000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090932 for geography CH : Switzerland on spinach, fresh or chilled from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100026">
+		<env:app.message id="27">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100026</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>27</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20084</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090933</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>421</oub:quota.order.number.sid>
+						<oub:volume>41000.00</oub:volume>
+						<oub:initial.volume>41000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090933 for geography CH : Switzerland on salad vegetables, fresh or chilled from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100027">
+		<env:app.message id="28">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100027</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>28</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20085</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090933</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>421</oub:quota.order.number.sid>
+						<oub:volume>54000.00</oub:volume>
+						<oub:initial.volume>54000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090933 for geography CH : Switzerland on salad vegetables, fresh or chilled from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100028">
+		<env:app.message id="29">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100028</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>29</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20086</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090934</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>423</oub:quota.order.number.sid>
+						<oub:volume>41000.00</oub:volume>
+						<oub:initial.volume>41000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090934 for geography CH : Switzerland on fennel, fresh or chilled from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100029">
+		<env:app.message id="30">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100029</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>30</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20087</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090934</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>423</oub:quota.order.number.sid>
+						<oub:volume>54000.00</oub:volume>
+						<oub:initial.volume>54000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090934 for geography CH : Switzerland on fennel, fresh or chilled from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100030">
+		<env:app.message id="31">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100030</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>31</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20088</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090935</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>425</oub:quota.order.number.sid>
+						<oub:volume>41000.00</oub:volume>
+						<oub:initial.volume>41000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090935 for geography CH : Switzerland on courgettes, fresh or chilled from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100031">
+		<env:app.message id="32">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100031</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>32</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20089</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090935</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>425</oub:quota.order.number.sid>
+						<oub:volume>54000.00</oub:volume>
+						<oub:initial.volume>54000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090935 for geography CH : Switzerland on courgettes, fresh or chilled from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100032">
+		<env:app.message id="33">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100032</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>33</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20090</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090936</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>427</oub:quota.order.number.sid>
+						<oub:volume>41000.00</oub:volume>
+						<oub:initial.volume>41000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090936 for geography CH : Switzerland on other vegetables, fresh or chilled from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100033">
+		<env:app.message id="34">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100033</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>34</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20091</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090936</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>427</oub:quota.order.number.sid>
+						<oub:volume>54000.00</oub:volume>
+						<oub:initial.volume>54000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090936 for geography CH : Switzerland on other vegetables, fresh or chilled from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100034">
+		<env:app.message id="35">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100034</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>35</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20092</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090937</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>429</oub:quota.order.number.sid>
+						<oub:volume>122000.00</oub:volume>
+						<oub:initial.volume>122000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090937 for geography CH : Switzerland on apples, other than cider apples, fresh from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100035">
+		<env:app.message id="36">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100035</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>36</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20093</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090937</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>429</oub:quota.order.number.sid>
+						<oub:volume>161000.00</oub:volume>
+						<oub:initial.volume>161000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090937 for geography CH : Switzerland on apples, other than cider apples, fresh from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100036">
+		<env:app.message id="37">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100036</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>37</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20094</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090938</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>431</oub:quota.order.number.sid>
+						<oub:volume>122000.00</oub:volume>
+						<oub:initial.volume>122000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090938 for geography CH : Switzerland on pears and quinces, fresh from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100037">
+		<env:app.message id="38">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100037</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>38</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20095</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090938</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>431</oub:quota.order.number.sid>
+						<oub:volume>161000.00</oub:volume>
+						<oub:initial.volume>161000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090938 for geography CH : Switzerland on pears and quinces, fresh from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100038">
+		<env:app.message id="39">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100038</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>39</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20096</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090939</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>433</oub:quota.order.number.sid>
+						<oub:volume>20000.00</oub:volume>
+						<oub:initial.volume>20000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090939 for geography CH : Switzerland on apricots, fresh from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100039">
+		<env:app.message id="40">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100039</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>40</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20097</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090939</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>433</oub:quota.order.number.sid>
+						<oub:volume>27000.00</oub:volume>
+						<oub:initial.volume>27000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090939 for geography CH : Switzerland on apricots, fresh from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100040">
+		<env:app.message id="41">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100040</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>41</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20098</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090940</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>435</oub:quota.order.number.sid>
+						<oub:volume>61000.00</oub:volume>
+						<oub:initial.volume>61000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090940 for geography CH : Switzerland on sweet cherries, fresh from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100041">
+		<env:app.message id="42">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100041</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>42</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20099</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090940</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>435</oub:quota.order.number.sid>
+						<oub:volume>81000.00</oub:volume>
+						<oub:initial.volume>81000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090940 for geography CH : Switzerland on sweet cherries, fresh from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100042">
+		<env:app.message id="43">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100042</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>43</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20100</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090941</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>437</oub:quota.order.number.sid>
+						<oub:volume>41000.00</oub:volume>
+						<oub:initial.volume>41000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090941 for geography CH : Switzerland on plums and sloes, fresh from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100043">
+		<env:app.message id="44">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100043</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>44</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20101</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090941</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>437</oub:quota.order.number.sid>
+						<oub:volume>54000.00</oub:volume>
+						<oub:initial.volume>54000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090941 for geography CH : Switzerland on plums and sloes, fresh from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100044">
+		<env:app.message id="45">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100044</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>45</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20102</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090942</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>439</oub:quota.order.number.sid>
+						<oub:volume>4000.00</oub:volume>
+						<oub:initial.volume>4000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090942 for geography CH : Switzerland on raspberries, fresh from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100045">
+		<env:app.message id="46">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100045</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>46</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20103</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090942</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>439</oub:quota.order.number.sid>
+						<oub:volume>5000.00</oub:volume>
+						<oub:initial.volume>5000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090942 for geography CH : Switzerland on raspberries, fresh from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100046">
+		<env:app.message id="47">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100046</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>47</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20104</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090943</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>441</oub:quota.order.number.sid>
+						<oub:volume>4000.00</oub:volume>
+						<oub:initial.volume>4000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090943 for geography CH : Switzerland on blackberries, mulberries and loganberries, fresh from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100047">
+		<env:app.message id="48">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100047</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>48</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20105</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090943</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>441</oub:quota.order.number.sid>
+						<oub:volume>5000.00</oub:volume>
+						<oub:initial.volume>5000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090943 for geography CH : Switzerland on blackberries, mulberries and loganberries, fresh from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100048">
+		<env:app.message id="49">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100048</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>49</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20106</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090944</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>443</oub:quota.order.number.sid>
+						<oub:volume>200.00</oub:volume>
+						<oub:initial.volume>200.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090944 for geography CH : Switzerland on flour, meal and powder of bananas from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100049">
+		<env:app.message id="50">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100049</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>50</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20107</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090944</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>443</oub:quota.order.number.sid>
+						<oub:volume>270.00</oub:volume>
+						<oub:initial.volume>270.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090944 for geography CH : Switzerland on flour, meal and powder of bananas from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100050">
+		<env:app.message id="51">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100050</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>51</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20108</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090945</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>445</oub:quota.order.number.sid>
+						<oub:volume>122000.00</oub:volume>
+						<oub:initial.volume>122000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090945 for geography CH : Switzerland on potatoes from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100051">
+		<env:app.message id="52">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100051</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>52</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20109</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090945</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>445</oub:quota.order.number.sid>
+						<oub:volume>161000.00</oub:volume>
+						<oub:initial.volume>161000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090945 for geography CH : Switzerland on potatoes from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100052">
+		<env:app.message id="53">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100052</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>53</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20110</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090946</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>447</oub:quota.order.number.sid>
+						<oub:volume>20000.00</oub:volume>
+						<oub:initial.volume>20000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090946 for geography CH : Switzerland on cherries from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100053">
+		<env:app.message id="54">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100053</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>54</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20111</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090946</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>447</oub:quota.order.number.sid>
+						<oub:volume>27000.00</oub:volume>
+						<oub:initial.volume>27000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090946 for geography CH : Switzerland on cherries from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100054">
+		<env:app.message id="55">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100054</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>55</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20112</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090948</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>450</oub:quota.order.number.sid>
+						<oub:volume>8000.00</oub:volume>
+						<oub:initial.volume>8000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090948 for geography CH : Switzerland on strawberries from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100055">
+		<env:app.message id="56">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100055</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>56</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20113</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090948</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>450</oub:quota.order.number.sid>
+						<oub:volume>11000.00</oub:volume>
+						<oub:initial.volume>11000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090948 for geography CH : Switzerland on strawberries from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100056">
+		<env:app.message id="57">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100056</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>57</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20114</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090950</oub:quota.order.number.id>
+						<oub:validity.start.date>2019-03-30</oub:validity.start.date>
+						<oub:validity.end.date>2019-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>451</oub:quota.order.number.sid>
+						<oub:volume>12000.00</oub:volume>
+						<oub:initial.volume>12000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090950 for geography CH : Switzerland on chard or white beet and cardoons from 2019-03-30 to 2019-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="100057">
+		<env:app.message id="58">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>100057</oub:transaction.id>
+					<oub:record.code>370</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>58</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:quota.definition>
+						<oub:quota.definition.sid>20115</oub:quota.definition.sid>
+						<oub:quota.order.number.id>090950</oub:quota.order.number.id>
+						<oub:validity.start.date>2020-01-01</oub:validity.start.date>
+						<oub:validity.end.date>2020-12-31</oub:validity.end.date>
+						<oub:quota.order.number.sid>451</oub:quota.order.number.sid>
+						<oub:volume>16000.00</oub:volume>
+						<oub:initial.volume>16000.00</oub:initial.volume>
+						<oub:measurement.unit.code>KGM</oub:measurement.unit.code>
+						<oub:maximum.precision>3</oub:maximum.precision>
+						<oub:critical.state>N</oub:critical.state>
+						<oub:critical.threshold>90</oub:critical.threshold>
+						<oub:description>FCFS Quota number 090950 for geography CH : Switzerland on chard or white beet and cardoons from 2020-01-01 to 2020-12-31</oub:description>
+					</oub:quota.definition>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+</env:envelope>

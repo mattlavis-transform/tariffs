@@ -41,6 +41,8 @@ class quota_definition(object):
 		if self.action == "truncate":
 			self.validity_end_date = app.critical_date
 			self.update_type = "1"
+			if self.description == None:
+				self.description = ""
 			if len(self.description) > 440:
 				self.description = self.description[:440] + " ... definition truncated by DIT TAP script"
 			else:

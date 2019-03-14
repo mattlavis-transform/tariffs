@@ -42,9 +42,11 @@ class chapter(object):
 		###############################################################
 		# Get the table of classifications
 		# Relevant to just the schedule
-		sql = """SELECT DISTINCT goods_nomenclature_item_id, producline_suffix, /*validity_start_date, validity_end_date, */ description, number_indents, leaf FROM ml.goods_nomenclature_export_brexit('""" + self.chapter_string + """%') ORDER BY 1, 2"""
+		sql = """SELECT DISTINCT goods_nomenclature_item_id, producline_suffix,
+		description, number_indents, leaf FROM ml.goods_nomenclature_export_brexit('""" + self.chapter_string + """%')
+		ORDER BY 1, 2"""
 
-		#print (sql)
+		print (sql)
 		#sys.exit()
 
 		cur = app.conn.cursor()
@@ -123,11 +125,15 @@ class chapter(object):
 					if len(my_commodity.child_duty_list) > 0:
 						my_set = set(my_commodity.child_duty_list)
 						if len(my_set) == 1:
-							my_commodity.combined_duty = my_commodity.child_duty_list[0]
-							#print ("Setting at a higher level", my_commodity.commodity_code, my_commodity.combined_duty)
-							# need to check this works - am passing up blanks at times
+							if my_commodity.combined_duty != "AU":
+								my_commodity.combined_duty = my_commodity.child_duty_list[0]
+								#print ("Setting at a higher level", my_commodity.commodity_code, my_commodity.combined_duty)
+								# need to check this works - am passing up blanks at times
 
 		#sys.exit()
+		for my_commodity in commodity_list:
+			if my_commodity.commodity_code == "8708701000":
+				print (my_commodity.combined_duty)
 
 		###########################################################################
 		## Check for row suppression
@@ -135,6 +141,7 @@ class chapter(object):
 		
 		# We should only be suppressing rows if they have 10 significant digits and their duty
 		# is identical to the parent
+		
 		
 		for loop1 in range(0, commodity_count):
 			my_commodity = commodity_list[loop1]
