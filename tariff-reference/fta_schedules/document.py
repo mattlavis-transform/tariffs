@@ -73,6 +73,7 @@ class document(object):
 		AND m.validity_start_date < '2019-12-31' AND m.validity_end_date >= '2018-01-01'
 		ORDER BY measure_sid;
 		"""
+		# print (sql)
 		cur = g.app.conn.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
@@ -82,6 +83,22 @@ class document(object):
 			mc = measure_condition(0, measure_sid, "V", 1, condition_duty_amount, "", "", "", "", "", "")
 			self.measure_condition_list.append (mc)
 
+		# Now get the country exclusions
+		exclusion_list = []
+		if g.app.exclusion_check != "":
+			sql = """SELECT m.measure_sid FROM measure_excluded_geographical_areas mega, ml.v5_2019 m
+			WHERE m.measure_sid = mega.measure_sid
+			AND excluded_geographical_area = '""" + g.app.exclusion_check + """'
+			ORDER BY validity_start_date DESC"""
+			cur = g.app.conn.cursor()
+			cur.execute(sql)
+			rows = cur.fetchall()
+			for row in rows:
+				measure_sid = row[0]
+				exclusion_list.append (measure_sid)
+		
+
+		
 		# Get the duties (i.e the measure components)
 		# Add this back in for Switzerland ( OR m.measure_sid = 3231905)
 		sql = """
@@ -96,7 +113,7 @@ class document(object):
 		AND gn.validity_end_date IS NULL AND gn.producline_suffix = '80'
 		) ORDER BY m.goods_nomenclature_item_id, validity_start_date DESC, mc.duty_expression_id
 		"""
-		#print (sql)
+
 		cur = g.app.conn.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
@@ -111,62 +128,62 @@ class document(object):
 		self.quota_order_number_list	= []
 
 		for row in rows:
-			commodity_code					= f.mstr(row[0])
-			additional_code_type_id			= f.mstr(row[1])
-			additional_code_id				= f.mstr(row[2])
-			measure_type_id					= f.mstr(row[3])
-			duty_expression_id				= row[4]
-			duty_amount						= row[5]
-			monetary_unit_code				= f.mstr(row[6])
-			monetary_unit_code				= monetary_unit_code.replace("EUR", "€")
-			measurement_unit_code			= f.mstr(row[7])
-			measurement_unit_qualifier_code = f.mstr(row[8])
 			measure_sid						= row[9]
-			quota_order_number_id			= f.mstr(row[10])
-			validity_start_date				= row[11]
-			validity_end_date				= row[12]
-			geographical_area_id			= f.mstr(row[13])
-			reduction_indicator				= row[14]
+			if measure_sid not in (exclusion_list):
+				commodity_code					= f.mstr(row[0])
+				additional_code_type_id			= f.mstr(row[1])
+				additional_code_id				= f.mstr(row[2])
+				measure_type_id					= f.mstr(row[3])
+				duty_expression_id				= row[4]
+				duty_amount						= row[5]
+				monetary_unit_code				= f.mstr(row[6])
+				monetary_unit_code				= monetary_unit_code.replace("EUR", "€")
+				measurement_unit_code			= f.mstr(row[7])
+				measurement_unit_qualifier_code = f.mstr(row[8])
+				quota_order_number_id			= f.mstr(row[10])
+				validity_start_date				= row[11]
+				validity_end_date				= row[12]
+				geographical_area_id			= f.mstr(row[13])
+				reduction_indicator				= row[14]
 
-			# Hypothesis would be that the only reason why the duty amount is None is when
-			# there is a "V" code attached to the measure
-			#if ((duty_amount is None) and (duty_expression_id == "01")):
-			if duty_amount is None and duty_expression_id is None:
-				is_siv = True
-				for mc in self.measure_condition_list:
-					#print (mc.measure_sid, measure_sid)
-					if mc.measure_sid == measure_sid:
-						duty_expression_id = "01"
-						duty_amount = mc.condition_duty_amount
-						#break
-			else:
-				is_siv = False
+				# Hypothesis would be that the only reason why the duty amount is None is when
+				# there is a "V" code attached to the measure
+				#if ((duty_amount is None) and (duty_expression_id == "01")):
+				if duty_amount is None and duty_expression_id is None:
+					is_siv = True
+					for mc in self.measure_condition_list:
+						#print (mc.measure_sid, measure_sid)
+						if mc.measure_sid == measure_sid:
+							duty_expression_id = "01"
+							duty_amount = mc.condition_duty_amount
+							#break
+				else:
+					is_siv = False
 
 
-			#sys.exit()
-			obj_duty = duty(commodity_code, additional_code_type_id, additional_code_id, measure_type_id, duty_expression_id,
-			duty_amount, monetary_unit_code, measurement_unit_code, measurement_unit_qualifier_code,
-			measure_sid, quota_order_number_id, geographical_area_id, validity_start_date, validity_end_date, reduction_indicator, is_siv)
-			self.duty_list.append(obj_duty)
+				obj_duty = duty(commodity_code, additional_code_type_id, additional_code_id, measure_type_id, duty_expression_id,
+				duty_amount, monetary_unit_code, measurement_unit_code, measurement_unit_qualifier_code,
+				measure_sid, quota_order_number_id, geographical_area_id, validity_start_date, validity_end_date, reduction_indicator, is_siv)
+				self.duty_list.append(obj_duty)
 
-			if measure_sid not in temp_measure_list:
-				obj_measure = measure(measure_sid, commodity_code, quota_order_number_id, validity_start_date, validity_end_date, geographical_area_id, reduction_indicator)
-				self.measure_list.append(obj_measure)
-				temp_measure_list.append(measure_sid)
+				if measure_sid not in temp_measure_list:
+					obj_measure = measure(measure_sid, commodity_code, quota_order_number_id, validity_start_date, validity_end_date, geographical_area_id, reduction_indicator)
+					self.measure_list.append(obj_measure)
+					temp_measure_list.append(measure_sid)
 
-			if commodity_code not in temp_commodity_list:
-				obj_commodity = commodity(commodity_code)
-				self.commodity_list.append(obj_commodity)
-				temp_commodity_list.append(commodity_code)
+				if commodity_code not in temp_commodity_list:
+					obj_commodity = commodity(commodity_code)
+					self.commodity_list.append(obj_commodity)
+					temp_commodity_list.append(commodity_code)
 
-			if quota_order_number_id not in temp_quota_order_number_list:
-				if quota_order_number_id != "":
-					obj_quota_order_number = quota_order_number(quota_order_number_id)
-					self.quota_order_number_list.append(obj_quota_order_number)
-					temp_quota_order_number_list.append(quota_order_number_id)
+				if quota_order_number_id not in temp_quota_order_number_list:
+					if quota_order_number_id != "":
+						obj_quota_order_number = quota_order_number(quota_order_number_id)
+						self.quota_order_number_list.append(obj_quota_order_number)
+						temp_quota_order_number_list.append(quota_order_number_id)
 
-			#temp_commodity_list.append(commodity_code)
-			#temp_quota_order_number_list.append(commodityquota_order_number_id_code)
+				#temp_commodity_list.append(commodity_code)
+				#temp_quota_order_number_list.append(commodityquota_order_number_id_code)
 
 		# Loop through the measures and assign duties to them
 		for m in self.measure_list:
@@ -194,8 +211,7 @@ class document(object):
 		# Get unique order numbers
 		sql = """SELECT DISTINCT ordernumber FROM ml.v5_2019 m WHERE m.measure_type_id IN ('143', '146')
 		AND m.geographical_area_id IN (""" + g.app.geo_ids + """) ORDER BY 1"""
-		#print (sql)
-		#sys.exit()
+
 		cur = g.app.conn.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
@@ -295,8 +311,6 @@ class document(object):
 		for my_commodity in quota_commodity_list:
 			for my_measure in self.measure_list:
 				if (my_measure.commodity_code == my_commodity.commodity_code) and (my_measure.quota_order_number_id == my_commodity.quota_order_number_id):
-					#if my_measure.quota_order_number_id == "092115":
-					#	print ("092115 found", my_measure.combined_duty)
 					my_commodity.measure_list.append(my_measure)
 
 		for my_commodity in quota_commodity_list:
@@ -328,12 +342,6 @@ class document(object):
 				origin_quota			= balance[13].strip()
 				addendum				= balance[14].strip()
 				scope					= balance[15].strip()
-
-				"""
-				if quota_order_number_id == "094901":
-					print ("Found in blaance file")
-					sys.exit()
-				"""
 
 				if measurement_unit_code == "KGM":
 					measurement_unit_code = "KGM"
@@ -382,15 +390,20 @@ class document(object):
 			critical_threshold, monetary_unit_code, measurement_unit_qualifier_code)
 			
 			if len(self.balance_list) > 0:
+				found_matching_balance = False
 				for qb in self.balance_list:
-					if qb.quota_order_number_id == qd.quota_order_number_id:
-						qd.initial_volume = int(qb.y1_balance)
-						qd.volume_yx	= int(qb.yx_balance)
+					if str(qb.quota_order_number_id) == str(qd.quota_order_number_id):
+						found_matching_balance = True
+						#print (qd.quota_order_number_id)
+						qd.initial_volume = f.mnum(qb.y1_balance)
+						qd.volume_yx	= f.mnum(qb.yx_balance)
 						qd.addendum		= qb.addendum
 						qd.scope		= qb.scope
 						qd.format_volumes()
 						break
 
+			if found_matching_balance == False:
+				print ("Matching balance not found", qd.quota_order_number_id)
 			qd.format_volumes()
 			self.quota_definition_list.append(qd)
 
@@ -471,9 +484,9 @@ class document(object):
 					# entries, or this is a licensed quota, that we have somehow missed beforehand? Check get_quota_definitions
 					# which should avoid this eventuality.
 					qon.validity_start_date				= datetime.strptime("2019-03-29", "%Y-%m-%d")
-					qon.validity_end_date               = datetime.strptime("2019-12-31", "%Y-%m-%d")
+					qon.validity_end_date				= datetime.strptime("2019-12-31", "%Y-%m-%d")
 					print ("No quota definitions found for quota", str(qon.quota_order_number_id))
-					qon.initial_volume                  = ""
+					qon.initial_volume					= ""
 					qon.volume_yx						= ""
 					qon.addendum						= ""
 					qon.scope							= ""
@@ -487,12 +500,12 @@ class document(object):
 
 
 
-					qon.initial_volume                  = qon.quota_definition_list[0].formatted_initial_volume
+					qon.initial_volume					= qon.quota_definition_list[0].formatted_initial_volume
 					qon.volume_yx						= qon.quota_definition_list[0].formatted_volume_yx
 					qon.addendum						= qon.quota_definition_list[0].addendum
 					qon.scope							= qon.quota_definition_list[0].scope
-					qon.measurement_unit_code           = qon.quota_definition_list[0].measurement_unit_code
-					qon.monetary_unit_code              = qon.quota_definition_list[0].monetary_unit_code
+					qon.measurement_unit_code			= qon.quota_definition_list[0].measurement_unit_code
+					qon.monetary_unit_code				= qon.quota_definition_list[0].monetary_unit_code
 					qon.measurement_unit_qualifier_code = qon.quota_definition_list[0].measurement_unit_qualifier_code
 
 					#print (qon.quota_order_number_id, qon.validity_start_date, qon.validity_end_date)
@@ -548,17 +561,22 @@ class document(object):
 							else:
 								row_string = row_string.replace("{QUOTA_VOLUME}",			qon.volume_yx)
 							
-							try:
-								row_string = row_string.replace("{QUOTA_OPEN_DATE_2019}",	datetime.strftime(qon.validity_start_date_2019, '%d/%m/%Y'))
-							except:
-								print ("here" . qon.quota_order_number_id)
-
-							#print (datetime.strftime(qon.validity_end_date, '%d/%m'))
-
-							row_string = row_string.replace("{QUOTA_CLOSE_DATE_2019}",	datetime.strftime(qon.validity_end_date_2019, '%d/%m/%Y'))
 							row_string = row_string.replace("{QUOTA_OPEN_DATE}",		datetime.strftime(qon.validity_start_date, '%d/%m'))
 							row_string = row_string.replace("{QUOTA_CLOSE_DATE}",		datetime.strftime(qon.validity_end_date, '%d/%m'))
-							row_string = row_string.replace("{2019_QUOTA_VOLUME}",		str(qon.initial_volume).strip() + " (2019)")
+							
+							if qon.initial_volume[0] == "0":
+								row_string = row_string.replace("{2019_QUOTA_VOLUME}",		"")
+								row_string = row_string.replace("{QUOTA_OPEN_DATE_2019}",	"")
+								row_string = row_string.replace("{QUOTA_CLOSE_DATE_2019}",	"")
+								row_string = row_string.replace("<!--OPT//--><w:r><w:br/></w:r><!--OPT//-->",		"")
+								row_string = re.sub("<!--19VStart//-->.*<!--19VEnd//-->", "", row_string, flags=re.DOTALL)
+								row_string = re.sub("<!--19VStartb//-->.*<!--19VEndb//-->", "", row_string, flags=re.DOTALL)
+								row_string = re.sub("<!--19VStartc//-->.*<!--19VEndc//-->", "", row_string, flags=re.DOTALL)
+							else:
+								row_string = row_string.replace("{2019_QUOTA_VOLUME}", str(qon.initial_volume).strip() + " (2019)")
+								row_string = row_string.replace("{QUOTA_OPEN_DATE_2019}",	datetime.strftime(qon.validity_start_date_2019, '%d/%m/%Y'))
+								row_string = row_string.replace("{QUOTA_CLOSE_DATE_2019}",	datetime.strftime(qon.validity_end_date_2019, '%d/%m/%Y'))
+							
 							insert_divider = True
 
 						

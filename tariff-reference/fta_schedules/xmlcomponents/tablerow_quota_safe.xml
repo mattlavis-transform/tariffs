@@ -66,6 +66,7 @@
 					<w:tcPr>
 						<w:vMerge w:val="restart"/>
 					</w:tcPr>
+					<!--19VStart//-->
 					<w:p>
 						<w:pPr>
 							<w:pStyle w:val="NormalinTable"/>
@@ -73,7 +74,12 @@
 						<w:r>
 							<w:t>{2019_QUOTA_VOLUME}</w:t>
 						</w:r>
-						<!--OPT//--><w:r><w:br/></w:r><!--OPT//-->
+					</w:p>
+					<!--19VEnd//-->
+					<w:p>
+						<w:pPr>
+							<w:pStyle w:val="NormalinTable"/>
+						</w:pPr>
 						<w:r>
 							<w:t>{QUOTA_VOLUME}</w:t>
 						</w:r>

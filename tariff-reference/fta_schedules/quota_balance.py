@@ -36,8 +36,9 @@ class quota_balance(object):
 				d2 = d1 + timedelta(days = -1)
 				d2 = d2 + relativedelta(years = 1)
 		except:
-			print ("An error has occurred: cannot work out date / time of quota", self.quota_order_number_id)
-			sys.exit()
+			#print ("An error has occurred: cannot work out date / time of quota", self.quota_order_number_id)
+			#sys.exit()
+			pass
 		return (d2)
 
 	def getY1Dates(self):

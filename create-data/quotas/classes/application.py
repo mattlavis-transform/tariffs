@@ -130,6 +130,79 @@ class application(object):
 		file.write(xml) 
 		file.close() 
 
+	def get_commodities_from_db(self):
+		self.measure_list = []
+		clause = ""
+		#qon = quota_order_number("094204")
+		#self.quota_order_number_list.append(qon)
+		for q in self.quota_order_number_list:
+			clause += "'" + q.quota_order_number_id + "', "
+		clause = clause.strip()
+		clause = clause.strip(",")
+		print (self.DBASE)
+		
+		sql = """SELECT m.measure_sid, m.goods_nomenclature_item_id, m.measure_type_id, mc.duty_expression_id,
+		mc.duty_amount, mc.monetary_unit_code, mc.measurement_unit_code, mc.measurement_unit_qualifier_code,
+		ordernumber
+		FROM ml.v5_2019 m, goods_nomenclatures gn, measure_components mc
+		WHERE gn.goods_nomenclature_item_id = m.goods_nomenclature_item_id
+		AND m.measure_sid = mc.measure_sid AND gn.producline_suffix = '80'
+		AND gn.validity_end_date IS NULL AND ordernumber IN (""" + clause + """)
+		ORDER BY ordernumber, measure_sid"""
+		
+		#print (sql)
+		cur = self.conn.cursor()
+		cur.execute(sql)
+		rows = cur.fetchall()
+		for row in rows:
+			measure_sid						= row[0]
+			goods_nomenclature_item_id		= row[1]
+			measure_type_id					= row[2]
+			duty_expression_id				= row[3]
+			duty_amount						= row[4]
+			monetary_unit_code				= fn.mstr(row[5])
+			measurement_unit_code			= fn.mstr(row[6])
+			measurement_unit_qualifier_code	= fn.mstr(row[7])
+			quota_order_number_id			= row[8]
+
+			m = measure(goods_nomenclature_item_id, quota_order_number_id, duty_amount, monetary_unit_code,	measurement_unit_code, measurement_unit_qualifier_code, measure_sid)
+			self.measure_list.append (m)
+		
+		line = ""
+
+
+		file = open("commodities.txt", "w")
+		old_order_number = ""
+		old_comm_code = ""
+		for m in self.measure_list:
+			if old_order_number != m.quota_order_number_id:
+				line = "\n\n" + m.quota_order_number_id + "\n======\n"
+				file.write(line)
+			if ((m.goods_nomenclature_item_id != old_comm_code) or (m.goods_nomenclature_item_id == old_comm_code) and (old_order_number != m.quota_order_number_id)):
+				line = m.goods_nomenclature_item_id + ";\n"
+				file.write(line)
+
+			old_comm_code = m.goods_nomenclature_item_id
+			old_order_number = m.quota_order_number_id
+		file.close()
+
+		file = open("duties.txt", "w") 
+		old_order_number = ""
+		old_comm_code = ""
+		for m in self.measure_list:
+			if old_order_number != m.quota_order_number_id:
+				line = "\n\n" + m.quota_order_number_id + "\n======\n"
+				file.write(line)
+			if ((m.goods_nomenclature_item_id != old_comm_code) or (m.goods_nomenclature_item_id == old_comm_code) and (old_order_number != m.quota_order_number_id)):
+				line = m.goods_nomenclature_item_id + " - " + m.duty_string() + ";\n"
+				file.write(line)
+			
+			old_comm_code = m.goods_nomenclature_item_id
+			old_order_number = m.quota_order_number_id
+		file.close()
+
+		sys.exit()
+
 
 	def get_measures_from_csv(self):
 		self.quota_order_number_list = []
@@ -327,6 +400,7 @@ class application(object):
 			_ = system('clear')
 
 	def connect(self):
+		self.DBASE = "tariff_staging"
 		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password=zanzibar")
 
 	def validate(self):

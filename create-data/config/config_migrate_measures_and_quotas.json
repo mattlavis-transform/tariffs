@@ -53,14 +53,52 @@
         "preferential":["142", "145", "143", "146", "106", "147"]
     },
     "country_profiles": {
-        "tps": {
+        "gsp": {
             "produce_schedule": "Yes",
-            "country_name": "1032 Transitional Protection Scheme",
+            "country_name": "All GSP",
+            "agreement_name": "n/a",
+            "agreement_date": "n/a",
+            "version": "1.0",
+            "country_codes": [
+                "2020",
+                "2027",
+                "2005",
+                "1032"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R090891",
+                "D090332",
+                "R061742",
+                "R061916"
+            ]
+        },
+        "tpm": {
+            "produce_schedule": "Yes",
+            "country_name": "1032 Transitional Protection Measure",
             "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Albania",
             "agreement_date": "05/02/2019",
             "version": "1.0",
             "country_codes": [
                 "1032"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "R090891",
+                "D090332",
+                "R061742",
+                "R061916"
+            ]
+        },
+        "subcontinent": {
+            "produce_schedule": "No",
+            "country_name": "India and Pakistan",
+            "agreement_name": "n/a",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "IN",
+                "PK"
             ],
             "table_per_country": 0,
             "reg_list": [
@@ -620,7 +658,7 @@
             "produce_schedule": "Yes",
             "country_name": "Morocco",
             "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Morocco",
-            "agreement_date": "05/02/2019",
+            "agreement_date": "2/03/2019",
             "version": "1.0",
             "country_codes": [
                 "MA"
@@ -774,6 +812,76 @@
                 "D0955/05"
             ]
         },
+        "balkans": {
+            "produce_schedule": "No",
+            "country_name": "Andorra",
+            "agreement_name": "Dummy",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "1098"
+            ],
+            "table_per_country": 1,
+            "reg_list": [
+                "Dummy"
+            ]
+        },
+        "cambodia": {
+            "produce_schedule": "No",
+            "country_name": "Cambodia",
+            "agreement_name": "Dummy",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "KH"
+            ],
+            "table_per_country": 1,
+            "reg_list": [
+                "Dummy"
+            ]
+        },
+        "andorra": {
+            "produce_schedule": "No",
+            "country_name": "Andorra",
+            "agreement_name": "Dummy",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "AD"
+            ],
+            "table_per_country": 1,
+            "reg_list": [
+                "Dummy"
+            ]
+        },
+        "syria": {
+            "produce_schedule": "No",
+            "country_name": "Syria",
+            "agreement_name": "Dummy",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "SY"
+            ],
+            "table_per_country": 1,
+            "reg_list": [
+                "Dummy"
+            ]
+        },
+        "capeverde": {
+            "produce_schedule": "No",
+            "country_name": "Cape Verde",
+            "agreement_name": "Dummy",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "CV"
+            ],
+            "table_per_country": 1,
+            "reg_list": [
+                "Dummy"
+            ]
+        },
         "centralamerica": {
             "produce_schedule": "No",
             "country_name": "Central America",
@@ -781,12 +889,7 @@
             "agreement_date": "05/02/2019",
             "version": "1.0",
             "country_codes": [
-                "2200",
-                "CR",
-                "HO",
-                "NI",
-                "PA",
-                "SV"
+                "2200"
             ],
             "table_per_country": 1,
             "reg_list": [
@@ -950,7 +1053,7 @@
             "produce_schedule": "Yes",
             "country_name": "Tunisia",
             "agreement_name": "Agreement between the United Kingdom of Great Britain and Northern Ireland and Tunisia",
-            "agreement_date": "05/02/2019",
+            "agreement_date": "22/03/2019",
             "version": "1.0",
             "country_codes": [
                 "TN"
@@ -974,6 +1077,7 @@
                 "2012",
                 "NO"
             ],
+			"exclusion_check": "NO",
             "table_per_country": 0,
             "reg_list": [
                 "test"
@@ -986,9 +1090,11 @@
             "agreement_date": "05/02/2019",
             "version": "1.0",
             "country_codes": [
+                "2014",
                 "2012",
                 "IS"
             ],
+			"exclusion_check": "IS",
             "table_per_country": 0,
             "reg_list": [
                 "test"
@@ -1048,6 +1154,34 @@
                 "R152405",
                 "D140295",
                 "R171566"
+            ]
+        },
+        "ch_imports": {
+            "produce_schedule": "Yes",
+            "country_name": "Swiss re-imports",
+            "agreement_name": "Dummy",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "1007"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "dummy"
+            ]
+        },
+        "ca_imports": {
+            "produce_schedule": "Yes",
+            "country_name": "Canada re-imports",
+            "agreement_name": "Dummy",
+            "agreement_date": "05/02/2019",
+            "version": "1.0",
+            "country_codes": [
+                "1006"
+            ],
+            "table_per_country": 0,
+            "reg_list": [
+                "dummy"
             ]
         },
         "southafrica": {

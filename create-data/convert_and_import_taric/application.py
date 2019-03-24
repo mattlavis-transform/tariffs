@@ -136,7 +136,6 @@ class application(object):
 
 		self.IMPORT_PROFILE_DIR	= os.path.join(self.CONFIG_DIR, "import_profile")
 
-		self.critical_date				= datetime.strptime("2019-03-29", '%Y-%m-%d')
 		self.namespaces 				= {'oub': 'urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0', 'env': 'urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0', } # add more as needed
 		self.envelope_id				= ""
 		self.sDivider					= ""
@@ -175,6 +174,13 @@ class application(object):
 				self.log_list_string.append (s2)
 
 	def get_config(self):
+		# Get global config items
+		with open(self.CONFIG_FILE, 'r') as f:
+			my_dict = json.load(f)
+		critical_date = my_dict['critical_date']
+		self.critical_date	= datetime.strptime(critical_date, '%Y-%m-%d')
+		self.DBASE			= my_dict['dbase']
+		
 		my_script = sys.argv[0]
 		if my_script == "import_dev.py":
 			self.DBASE = "tariff_dev"
@@ -184,12 +190,7 @@ class application(object):
 			self.DBASE = "tariff_cds"
 		elif my_script == "import_eu.py":
 			self.DBASE = "tariff_eu"
-		else:
-			# Get global config items
-			with open(self.CONFIG_FILE, 'r') as f:
-				my_dict = json.load(f)
 
-			self.DBASE					= my_dict['dbase']
 
 		# Get local config items
 		with open(self.CONFIG_FILE_LOCAL, 'r') as f2:
@@ -228,7 +229,7 @@ class application(object):
 		self.last_quota_blocking_period_sid					= self.larger(self.get_scalar("SELECT MAX(quota_blocking_period_sid) FROM quota_blocking_periods_oplog"), min_list['quota.blocking.periods']) + 1
 
 
-	def endDateEUMeasures(self, xml_file, sMerge1 = "", sMerge2 = "", sMerge3 = "", sMerge4 = "", sMerge5 = "", sMerge6 = ""):
+	def endDateEUMeasures(self, xml_file, sMerge1 = "", sMerge2 = "", sMerge3 = "", sMerge4 = "", sMerge5 = "", sMerge6 = "", sMerge7 = "", sMerge8 = "", sMerge9 = "", sMerge10 = ""):
 		self.convertFilename(xml_file)
 		self.d("Creating converted file for " + self.output_filename, False)
 
@@ -420,7 +421,7 @@ class application(object):
 								self.register_update("430", "00", "delete", update_type_string, measure_sid, xml_file, "Delete instruction for measure that would have started after EU Exit with measure.sid of " + measure_sid)
 							
 							# Action - if the measure begins before EU Exit, but the end date is empty,
-							# then insert an end date, which is the 29th March.
+							# then insert an end date (i.e the critical date - to be determined)
 							# This also requires a justification regulation ID and role to be added
 							elif validity_end_date == "":
 								oElement = self.getNode(oMessage, ".//oub:measure")
@@ -432,7 +433,7 @@ class application(object):
 								self.register_update("430", "00", "update", update_type_string, measure_sid, xml_file, "Update a measure with no end date to end on the critical date - measure_sid " + measure_sid)
 							
 							# Action - if the measure begins before EU Exit, but the end date is after EU Exit and is fixed,
-							# then alter the end date to be the 29th March.
+							# then alter the end date to be the critical date - to be determined)
 							elif validity_end_date >= self.critical_date:
 								oElement = self.getNode(oMessage, ".//oub:measure")
 								self.setNode(oElement, "oub:validity.end.date", datetime.strftime(self.critical_date, "%Y-%m-%d"))
@@ -901,6 +902,14 @@ class application(object):
 				filenames.append (os.path.join(self.MERGE_DIR, sMerge5))
 			if sMerge6 != "":
 				filenames.append (os.path.join(self.MERGE_DIR, sMerge6))
+			if sMerge7 != "":
+				filenames.append (os.path.join(self.MERGE_DIR, sMerge7))
+			if sMerge8 != "":
+				filenames.append (os.path.join(self.MERGE_DIR, sMerge8))
+			if sMerge9 != "":
+				filenames.append (os.path.join(self.MERGE_DIR, sMerge9))
+			if sMerge10 != "":
+				filenames.append (os.path.join(self.MERGE_DIR, sMerge10))
 		else:
 			if sMerge2 == "":
 				sys.exit()

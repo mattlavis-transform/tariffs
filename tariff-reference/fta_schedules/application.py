@@ -58,6 +58,8 @@ class application(object):
 		self.BALANCE_DIR		= os.path.join(self.BALANCE_DIR, "source")
 		self.BALANCE_DIR		= os.path.join(self.BALANCE_DIR, "quotas")
 		self.BALANCE_FILE		= os.path.join(self.BALANCE_DIR, "quota_volume_master.csv")
+		#print (self.BALANCE_FILE)
+		#sys.exit()
 
 		# For the word model folders
 		self.MODEL_DIR			= os.path.join(self.BASE_DIR, "model")
@@ -120,6 +122,7 @@ class application(object):
 			my_dict = json.load(f)
 
 		self.DBASE					= my_dict['dbase']
+		self.DBASE = "tariff_eu"
 
 		# Get local config items
 		with open(self.CONFIG_FILE_LOCAL, 'r') as f:
@@ -128,6 +131,7 @@ class application(object):
 		self.all_country_profiles = my_dict['country_profiles']
 
 		# Connect to the database
+		#print (self.DBASE)
 		self.connect()
 
 	def get_country_list(self):
@@ -136,6 +140,18 @@ class application(object):
 		except:
 			print ("Country profile does not exist")
 			sys.exit()
+		
+		# Get exclusions
+		try:
+			self.exclusion_check = self.all_country_profiles[self.country_profile]["exclusion_check"]
+		except:
+			self.exclusion_check = ""
+			pass
+
+		#print (self.exclusion_check)
+		#sys.exit()
+		
+		# Get agreement name
 		self.agreement_name			= self.all_country_profiles[self.country_profile]["agreement_name"]
 
 		self.agreement_date_short	= self.all_country_profiles[self.country_profile]["agreement_date"]

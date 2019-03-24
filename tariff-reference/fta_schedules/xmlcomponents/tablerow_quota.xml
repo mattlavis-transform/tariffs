@@ -66,6 +66,7 @@
 					<w:tcPr>
 						<w:vMerge w:val="restart"/>
 					</w:tcPr>
+					<!--19VStart//-->
 					<w:p>
 						<w:pPr>
 							<w:pStyle w:val="NormalinTable"/>
@@ -74,6 +75,7 @@
 							<w:t>{2019_QUOTA_VOLUME}</w:t>
 						</w:r>
 					</w:p>
+					<!--19VEnd//-->
 					<w:p>
 						<w:pPr>
 							<w:pStyle w:val="NormalinTable"/>
@@ -89,6 +91,7 @@
 					<w:tcPr>
 						<w:vMerge w:val="restart"/>
 					</w:tcPr>
+					<!--19VStartb//-->
 					<w:p>
 						<w:pPr>
 							<w:pStyle w:val="NormalinTable"/>
@@ -96,18 +99,25 @@
 						<w:r>
 							<w:t>{QUOTA_OPEN_DATE_2019}</w:t>
 						</w:r>
-						<!--OPT//--><w:r><w:br/></w:r><!--OPT//-->
+					</w:p>
+					<!--19VEndb//-->
+					<w:p>
+						<w:pPr>
+							<w:pStyle w:val="NormalinTable"/>
+						</w:pPr>
 						<w:r>
 							<w:t>{QUOTA_OPEN_DATE}</w:t>
 						</w:r>
 					</w:p>
 				</w:tc>
 <!-- End Quota Open Date cell //-->
+
 <!-- Begin Quota Close Date cell //-->
 				<w:tc>
 					<w:tcPr>
 						<w:vMerge w:val="restart"/>
 					</w:tcPr>
+					<!--19VStartc//-->
 					<w:p>
 						<w:pPr>
 							<w:pStyle w:val="NormalinTable"/>
@@ -115,26 +125,16 @@
 						<w:r>
 							<w:t>{QUOTA_CLOSE_DATE_2019}</w:t>
 						</w:r>
-						<!--OPT//--><w:r><w:br/></w:r><!--OPT//-->
+					</w:p>
+					<!--19VEndc//-->
+					<w:p>
+						<w:pPr>
+							<w:pStyle w:val="NormalinTable"/>
+						</w:pPr>
 						<w:r>
 							<w:t>{QUOTA_CLOSE_DATE}</w:t>
 						</w:r>
 					</w:p>
 				</w:tc>
 <!-- End Quota Close Date cell //-->
-<!-- Begin 2019 Quota Volume cell //-->
-<!--
-				<w:tc>
-					<w:p>
-						<w:pPr>
-							<w:pStyle w:val="NormalinTable"/>
-						</w:pPr>
-						<w:r>
-							<w:t>{2019_QUOTA_VOLUME}</w:t>
-						</w:r>
-					</w:p>
-				</w:tc>
-//-->
-<!-- End 2019 Quota Volume cell //-->
-
 			</w:tr>

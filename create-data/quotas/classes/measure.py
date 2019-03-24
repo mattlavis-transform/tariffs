@@ -8,7 +8,7 @@ from classes.measure_component import measure_component
 
 class measure(object):
 	def __init__(self, goods_nomenclature_item_id, quota_order_number_id, duty_amount, monetary_unit_code,
-	measurement_unit_code, measurement_unit_qualifier_code):
+	measurement_unit_code, measurement_unit_qualifier_code, measure_sid = -1):
 		# from parameters
 		self.goods_nomenclature_item_id 		= goods_nomenclature_item_id
 		self.quota_order_number_id    			= quota_order_number_id
@@ -49,13 +49,46 @@ class measure(object):
 		self.export_refund_nomenclature_sid		= ""
 
 		self.measure_component_list = []
-		self.measure_sid = -1 # This is temporary
+		#self.measure_sid = -1 # This is temporary
+		self.measure_sid = measure_sid
 
 		obj = measure_component(self.measure_sid, self.duty_amount, self.monetary_unit_code, self.measurement_unit_code, self.measurement_unit_qualifier_code)
 		self.measure_component_list.append(obj)
 
 		#print ("In measure init", g.app.last_measure_sid)
 		#sys.exit()
+
+	def duty_string(self):
+		if self.monetary_unit_code == "":
+			return str(self.duty_amount) + "%"
+		else:
+			out = "€"
+			out += format(self.duty_amount, "^0.3f")
+			if self.measurement_unit_code != "":
+				out += " per " + self.fmt_mu()
+			
+			if self.measurement_unit_qualifier_code != "":
+				out += " (" + self.fmt_muq() + ")"
+			
+			return (out)
+
+	def fmt_muq(self):
+		if self.measurement_unit_qualifier_code == "E":
+			return ("net of drained weight")
+		else:
+			return ("blah blah blah")
+	
+	def fmt_mu(self):
+		if self.measurement_unit_code == "TNE":
+			return ("1000kg")
+		elif self.measurement_unit_code == "DTN":
+			return ("100kg")
+		elif self.measurement_unit_code == "DAP":
+			return ("Decatonne, corrected according to polarisation")
+		elif self.measurement_unit_code == "HLT":
+			return ("hl")
+		else:
+			return self.measurement_unit_code
 
 	def transfer_sid(self):
 		pass

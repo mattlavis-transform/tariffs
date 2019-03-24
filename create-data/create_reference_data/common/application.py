@@ -44,6 +44,7 @@ class application(object):
 		self.goods_nomenclature_list	= []
 		self.certificate_type_list		= []
 		self.geographical_area_list		= []
+		self.membership_list			= []
 		self.certificates_list			= []
 		self.base_regulations_list		= []
 		self.regulation_groups_list		= []
@@ -159,8 +160,8 @@ class application(object):
 
 		self.last_transaction_id	= my_dict['last_transaction_id']
 		self.DBASE					= my_dict['dbase']
-		self.DBASE = "tariff_eu"
-		print (self.DBASE)
+		#self.DBASE = "tariff_eu"
+		#print (self.DBASE)
 		#sys.exit()
 		self.debug					= my_dict['debug']
 		self.connect()
@@ -290,6 +291,11 @@ class application(object):
 		filename = os.path.join(self.TEMPLATE_DIR, "goods.nomenclature.description.update.xml")
 		handle = open(filename, "r")
 		self.update_goods_nomenclature_description_XML = handle.read()
+
+		# Get memberships XML
+		filename = os.path.join(self.TEMPLATE_DIR, "membership.xml")
+		handle = open(filename, "r")
+		self.membership_XML = handle.read()
 
 	def writeResults(self):
 		t_in = ""

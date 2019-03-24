@@ -31,14 +31,14 @@ class geographical_area(object):
 				out = app.insert_geographical_area_XML
 			else:
 				pass
-			
+
 			self.description = fn.cleanse(self.description)
 			out = out.replace("{GEOGRAPHICAL_AREA_SID}", self.geographical_area_sid)
 			out = out.replace("{GEOGRAPHICAL_AREA_ID}", self.geographical_area_id)
 			out = out.replace("{GEOGRAPHICAL_AREA_CODE}", self.geographical_area_code)
 			out = out.replace("{DESCRIPTION}", self.description)
 			out = out.replace("{VALIDITY_START_DATE}", "2019-03-30")
-			out = out.replace("{GEOGRAPHICAL_AREA_DESCRIPTION_PERIOD_SID}", str(app.base_geographical_area_description_period_sid))
+			out = out.replace("{GEOGRAPHICAL_AREA_DESCRIPTION_PERIOD_SID}", str(app.last_geographical_area_description_period_sid))
 			out = out.replace("{TRANSACTION_ID}", str(app.transaction_id))
 			out = out.replace("{MESSAGE_ID1}", str(app.message_id))
 			out = out.replace("{MESSAGE_ID2}", str(app.message_id + 1))
@@ -49,10 +49,10 @@ class geographical_area(object):
 
 			self.xml = out
 
-			app.base_geographical_area_description_period_sid	+= 1
+			app.last_geographical_area_description_period_sid	+= 1
 			app.transaction_id 				+= 1
 			if self.type == "update":
 				app.message_id 					+= 2
 			else:
 				app.message_id 					+= 3
-	
+

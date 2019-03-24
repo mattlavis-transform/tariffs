@@ -8,6 +8,10 @@
             "dest": "base_regulations_generic.xml",
             "source": "base_regulations_generic.xlsm"
         },
+        "generic2": {
+            "dest": "base_regulations_generic2.xml",
+            "source": "base_regulations_generic2.xlsm"
+        },
         "import_export": {
             "dest": "base_regulations_import_export.xml",
             "source": "base_regulations_import_export.xlsm"

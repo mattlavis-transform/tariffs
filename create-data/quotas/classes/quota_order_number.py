@@ -19,7 +19,7 @@ class quota_order_number(object):
 
 		self.cleanse_subject()
 
-		if status == "Y" or status == "New":
+		if status == "Y" or status == "New" or status == "Yes":
 			status = "New"
 		else:
 			status = "Existing"

@@ -97,16 +97,22 @@ def zipdir(archivename):
 				z.write(absfn, zfn)
 
 def mstr(x):
-	if x is None:
+	try:
+		if x is None:
+			return ""
+		else:
+			return str(x)
+	except:
 		return ""
-	else:
-		return str(x)
 
 def mnum(x):
-	if x is None:
-		return ""
-	else:
-		return int(x)
+	try:
+		if x is None:
+			return 0
+		else:
+			return int(x)
+	except:
+		return 0
 
 def debug(x):
 	if g.app.debug:

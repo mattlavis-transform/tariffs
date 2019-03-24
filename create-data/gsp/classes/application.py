@@ -20,6 +20,7 @@ from classes.quota_order_number_origin import quota_order_number_origin
 from classes.quota_definition import quota_definition
 from classes.measure import measure
 from classes.geographical_area import geographical_area
+from classes.goods_nomenclature import goods_nomenclature
 from classes.measure_excluded_geographical_area import measure_excluded_geographical_area
 import classes.functions as fn
 
@@ -128,8 +129,9 @@ class application(object):
 		file.write(xml)
 		# Write the measures
 		for m in self.measure_list:
-			xml = m.xml()
-			file.write(xml)
+			if m.goods_nomenclature_item_id in self.valid_goods_nomenclature_list:
+				xml = m.xml()
+				file.write(xml)
 
 		xml = '</env:envelope>'
 		file.write(xml)
@@ -139,6 +141,7 @@ class application(object):
 
 	def get_measures_from_csv(self):
 		self.measure_list = []
+		self.goods_nomenclature_list = []
 		my_file = os.path.join(self.CSV_DIR, "gsp_" + self.output_profile + ".csv")
 		with open(my_file) as csv_file:
 			csv_reader = csv.reader(csv_file, delimiter = ",")
@@ -149,9 +152,9 @@ class application(object):
 					duty_amount					= row[2]
 
 					if (goods_nomenclature_item_id != "goods nomenclature") and (goods_nomenclature_item_id != ""):
-						#print (goods_nomenclature_item_id, geographical_area_id)
 						obj = measure(geographical_area_id, goods_nomenclature_item_id, duty_amount)
 						self.measure_list.append(obj)
+						self.goods_nomenclature_list.append(goods_nomenclature_item_id)
 
 	def associate_exclusions(self):
 		if self.output_profile == "2020":
@@ -345,10 +348,28 @@ class application(object):
 		jsonFile.write(json.dumps(data, indent=4, sort_keys=True))
 		jsonFile.close()
 
-
 	def get_nomenclature_dates(self):
 		clause = ""
 		for m in self.measure_list:
 			clause += "'" + m.goods_nomenclature_item_id + "', "
-		print (clause)
-		sys.exit()
+
+		clause = clause.strip()
+		clause = clause.strip(",")
+		sql = """SELECT goods_nomenclature_item_id, validity_start_date, validity_end_date FROM goods_nomenclatures
+		WHERE goods_nomenclature_item_id IN (""" + clause + """) AND validity_end_date IS NULL ORDER BY 1"""
+		#print (sql)
+		cur = self.conn.cursor()
+		cur.execute(sql)
+		rows = cur.fetchall()
+		if len(rows) > 0:
+			self.goods_nomenclature_list		= []
+			self.valid_goods_nomenclature_list	= []
+			for rw in rows:
+				goods_nomenclature_item_id	= rw[0]
+				validity_start_date			= rw[1]
+				validity_end_date			= rw[2]
+				g = goods_nomenclature(goods_nomenclature_item_id, "80", validity_start_date, validity_end_date)
+				self.goods_nomenclature_list.append (g)
+				self.valid_goods_nomenclature_list.append (goods_nomenclature_item_id)
+
+		#sys.exit()

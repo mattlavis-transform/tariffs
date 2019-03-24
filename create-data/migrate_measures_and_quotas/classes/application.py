@@ -283,6 +283,7 @@ class application(object):
 		self.wto_quota_list				= ['122', '123', '653', '654']
 		self.supplementary_list			= ['109', '110']
 		self.suspension_list			= ['112', '115', '117', '119', '141']
+		self.surveillance_list			= ['442', '447']
 		self.omit_measure_types_list	= self.credibility_list + self.supplementary_list + self.suspension_list + self.wto_quota_list
 
 
@@ -390,7 +391,7 @@ class application(object):
 			if self.measure_type_string in ("credibility", "credibilitychecks", "cred"):	# credibility checks
 				self.measure_type_list = self.credibility_list
 
-			elif self.measure_type_string in ("supp", "supplementaryunits", "supp"):		# supplementary units
+			elif self.measure_type_string in ("supp", "supplementaryunits", "sup"):		# supplementary units
 				self.measure_type_list = self.supplementary_list
 
 			elif self.measure_type_string in ("quota", "quotas", "wto_quotas", "wto", "q"):							# quotas
@@ -401,6 +402,16 @@ class application(object):
 
 			elif self.measure_type_string in ("suspension", "suspensions", "susp"):			# suspensions
 				self.measure_type_list = self.suspension_list
+
+			elif self.measure_type_string in ("surveillance", "surv"):			# surveillance
+				self.measure_type_list = self.surveillance_list
+
+			else:
+				self.measure_type_list = []
+				self.measure_type_list.append(self.measure_type_string)
+
+		#print (self.measure_type_list)
+		#sys.exit()
 
 		# Get the future regulation ID
 		if (len(sys.argv) > 4):
