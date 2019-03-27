@@ -625,7 +625,7 @@ def getMeasurementUnit(s):
 	else:
 		return s
 	
-conn = psycopg2.connect("dbname=trade_tariff_1809 user=postgres password=zanzibar")
+conn = psycopg2.connect("dbname=trade_tariff_1809 user=postgres password" + self.p)
 
 sSQL = """SELECT DISTINCT m.ordernumber FROM measures m WHERE m.validity_start_date > (CURRENT_DATE - 365) ORDER BY 1;"""
 cur = conn.cursor()

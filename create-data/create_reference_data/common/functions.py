@@ -31,9 +31,9 @@ def fmtDate(d):
 	return d
 
 def cleanse(s):
+	s = s.replace("&", "and")
 	s = s.replace("<", "&lt;")
 	s = s.replace(">", "&gt;")
-	#s = s.replace("&", "&amp;")
 	s = s.replace('"', "&quot;")
 	s = s.replace("'", "&apos;")
 	s = s.replace("º", "o")
@@ -45,4 +45,3 @@ def cleanse(s):
 	s = unidecode(str(s))
 	"""
 	return (s)
-

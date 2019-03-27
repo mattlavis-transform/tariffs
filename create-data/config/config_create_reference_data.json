@@ -1,5 +1,9 @@
 {
     "regulation_profiles": {
+        "complete": {
+            "dest": "base_regulations_complete.xml",
+            "source": "base_regulations_complete.xlsm"
+        },
         "ftas": {
             "dest": "base_regulations_ftas.xml",
             "source": "base_regulations_ftas.xlsm"

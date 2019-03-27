@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<env:envelope xmlns="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" id="5000">
+	<env:transaction id="90000110">
+		<env:app.message id="1">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90000110</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>1</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>I1900350</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>1970-01-01</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>n/a|n/a|Regulation for all measures of type 350 (Animal Health Certificate)</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90000111">
+		<env:app.message id="2">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90000111</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>2</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>I1900351</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>1970-01-01</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>n/a|n/a|Regulation for all measures of type 351 (Health and Safety Executive Import Licensing Firearms and Ammunition)</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90000112">
+		<env:app.message id="3">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90000112</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>3</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>I1900352</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>1970-01-01</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>n/a|n/a|Regulation for all measures of type 352 (Attestation Document (horticulture and potatoes))</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90000113">
+		<env:app.message id="4">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90000113</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>4</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>I1900353</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>1970-01-01</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>n/a|n/a|Regulation for all measures of type 353 (DCMS Open General Export Licence)</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90000114">
+		<env:app.message id="5">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90000114</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>5</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>I1900354</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>1970-01-01</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>n/a|n/a|Regulation for all measures of type 354 (Home Office Controlled Drugs (export))</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90000115">
+		<env:app.message id="6">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90000115</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>6</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>I1900355</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>1970-01-01</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>n/a|n/a|Regulation for all measures of type 355 (HMI Conformity Certificate (fruit and veg) issued in UK)</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90000116">
+		<env:app.message id="7">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90000116</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>7</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>I1900356</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>1970-01-01</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>n/a|n/a|Regulation for all measures of type 356 (Common Veterinary Entry Document (CVED))</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90000117">
+		<env:app.message id="8">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90000117</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>8</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>I1900357</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>1970-01-01</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>n/a|n/a|Regulation for all measures of type 357 (Certificate of Conformity)</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90000118">
+		<env:app.message id="9">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90000118</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>9</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>I1900358</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>1970-01-01</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>n/a|n/a|Regulation for all measures of type 358 (Home Office pre-cursor chemical authorisation)</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90000119">
+		<env:app.message id="10">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90000119</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>10</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>I1900359</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>1970-01-01</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>n/a|n/a|Regulation for all measures of type 359 (Health and Safety Executive (imports))</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90000120">
+		<env:app.message id="11">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90000120</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>11</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>I1900360</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>1970-01-01</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>n/a|n/a|Regulation for all measures of type 360 (Phytosanitary Certificate (import))</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90000121">
+		<env:app.message id="12">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90000121</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>12</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>I1900361</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>1970-01-01</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>n/a|n/a|Regulation for all measures of type 361 (Home Office Pre-cursor chemicals)</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90000122">
+		<env:app.message id="13">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90000122</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>13</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>I1900362</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>1970-01-01</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>n/a|n/a|Regulation for all measures of type 362 (Home Office Controlled Drugs (import))</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+	<env:transaction id="90000123">
+		<env:app.message id="14">
+			<oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+				<oub:record>
+					<oub:transaction.id>90000123</oub:transaction.id>
+					<oub:record.code>285</oub:record.code>
+					<oub:subrecord.code>00</oub:subrecord.code>
+					<oub:record.sequence.number>14</oub:record.sequence.number>
+					<oub:update.type>3</oub:update.type>
+					<oub:base.regulation>
+						<oub:base.regulation.role>1</oub:base.regulation.role>
+						<oub:base.regulation.id>I1900363</oub:base.regulation.id>
+						<oub:published.date>2019-01-01</oub:published.date>
+						<oub:validity.start.date>1970-01-01</oub:validity.start.date>
+						<oub:community.code>1</oub:community.code>
+						<oub:regulation.group.id>MLA</oub:regulation.group.id>
+						<oub:replacement.indicator>0</oub:replacement.indicator>
+						<oub:stopped.flag>0</oub:stopped.flag>
+						<oub:information.text>n/a|n/a|Regulation for all measures of type 363 (Quarantine Release Certificate)</oub:information.text>
+						<oub:approved.flag>1</oub:approved.flag>
+					</oub:base.regulation>
+				</oub:record>
+			</oub:transmission>
+		</env:app.message>
+	</env:transaction>
+</env:envelope>

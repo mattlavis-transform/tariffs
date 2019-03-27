@@ -91,8 +91,9 @@ class application(object):
 		with open(self.CONFIG_FILE, 'r') as f:
 			my_dict = json.load(f)
 
-		self.DBASE					= my_dict['dbase']
+		self.DBASE	= my_dict['dbase']
 		self.DBASE = "tariff_staging"
+		self.p				= my_dict['p']
 
 		# Get local config items
 		#with open(self.CONFIG_FILE_LOCAL, 'r') as f2:
@@ -103,7 +104,7 @@ class application(object):
 		self.connect()
 
 	def connect(self):
-		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password=zanzibar")
+		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password" + self.p)
 
 	def shutDown(self):
 		self.conn.close()

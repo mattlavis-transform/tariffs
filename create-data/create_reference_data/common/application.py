@@ -160,6 +160,7 @@ class application(object):
 
 		self.last_transaction_id	= my_dict['last_transaction_id']
 		self.DBASE					= my_dict['dbase']
+		self.p						= my_dict['p']
 		#self.DBASE = "tariff_eu"
 		#print (self.DBASE)
 		#sys.exit()
@@ -184,7 +185,7 @@ class application(object):
 			_ = system('clear')
 
 	def connect(self):
-		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password=zanzibar")
+		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password" + self.p)
 
 	def getTemplates(self):
 		# Get envelope XML

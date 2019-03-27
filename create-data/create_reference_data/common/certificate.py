@@ -4,15 +4,16 @@ import os
 import csv
 import re
 import common.functions as fn
+import common.objects as o
 from unidecode import unidecode
 
 class certificate(object):
-	def __init__(self, certificate_type_code, certificate_code, description_old, description, certificate_description_period_sid, type):
+	def __init__(self, certificate_type_code, certificate_code, description_old, description, validity_start_date, type):
 		self.certificate_type_code				= fn.mstr(certificate_type_code).upper()
 		self.certificate_code					= fn.mstr(certificate_code)
 		self.description_old	    			= fn.mstr(description_old)
 		self.description		    			= fn.mstr(description)
-		self.certificate_description_period_sid	= fn.mstr(certificate_description_period_sid)
+		self.validity_start_date				= fn.mdate(validity_start_date)
 		self.type				    			= fn.mstr(type)
 		self.needs_change	        			= False
 		self.cnt = 0
@@ -25,6 +26,10 @@ class certificate(object):
 		else:
 			self.same = True
 
+		self.get_next_certificate_description_period_sid()
+
+	def get_next_certificate_description_period_sid(self):
+		self.certificate_description_period_sid = o.app.last_certificate_description_period_sid
 
 	def writeXML(self, app):
 		if not(self.same):
@@ -40,9 +45,9 @@ class certificate(object):
 			out = out.replace("[CERTIFICATE_TYPE_CODE]",				self.certificate_type_code)
 			out = out.replace("[CERTIFICATE_CODE]",						self.certificate_code)
 			out = out.replace("[DESCRIPTION]",							self.description)
-			out = out.replace("[VALIDITY_START_DATE]",					"2019-03-29")
+			out = out.replace("[VALIDITY_START_DATE]",					self.validity_start_date)
 			out = out.replace("[VALIDITY_END_DATE]",					"")
-			out = out.replace("[CERTIFICATE_DESCRIPTION_PERIOD_SID]",	self.certificate_description_period_sid)
+			out = out.replace("[CERTIFICATE_DESCRIPTION_PERIOD_SID]",	str(self.certificate_description_period_sid))
 			out = out.replace("[TRANSACTION_ID]",						str(app.transaction_id))
 			out = out.replace("[MESSAGE_ID1]",							str(app.message_id))
 			out = out.replace("[MESSAGE_ID2]",							str(app.message_id + 1))
@@ -62,6 +67,7 @@ class certificate(object):
 				app.message_id 					+= 2
 			else:
 				app.message_id 					+= 3
+			o.app.last_certificate_description_period_sid += 1
 	
 	def resolve(self, app):
 		s = self.description

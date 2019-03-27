@@ -325,6 +325,7 @@ class application(object):
 
 		self.DBASE					= my_dict['dbase_uktt']
 		self.DBASE_STAGING			= my_dict['dbase']
+		self.p						= my_dict['p']
 		self.debug              	= fn.mbool2(my_dict['debug'])
 
 	def get_scalar(self, sql):
@@ -1107,10 +1108,10 @@ class application(object):
 
 
 	def connect(self):
-		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password=zanzibar")
+		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password" + self.p)
 
 	def connect_staging(self):
-		self.conn_staging = psycopg2.connect("dbname=" + self.DBASE_STAGING + " user=postgres password=zanzibar")
+		self.conn_staging = psycopg2.connect("dbname=" + self.DBASE_STAGING + " user=postgres password" + self.p)
 
 	def get_templates(self):
 		# Get template - envelope

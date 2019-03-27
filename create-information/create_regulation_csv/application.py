@@ -22,8 +22,8 @@ from commodity	import commodity
 
 class application(object):
 	def __init__(self):
-		self.conn = psycopg2.connect("dbname=trade_tariff_181212b user=postgres password=zanzibar")
-		#self.conn = psycopg2.connect("dbname=trade_tariff_181119 user=postgres password=zanzibar")
+		self.conn = psycopg2.connect("dbname=trade_tariff_181212b user=postgres password" + self.p)
+		#self.conn = psycopg2.connect("dbname=trade_tariff_181119 user=postgres password" + self.p)
 		self.BASE_DIR				= os.path.dirname(os.path.abspath(__file__))
 		self.EXCEL_DIR				= os.path.join(self.BASE_DIR,		"excel")
 		self.COMMODITY_DIR			= os.path.join(self.BASE_DIR,		"commodities")

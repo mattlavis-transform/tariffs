@@ -90,6 +90,7 @@ class application(object):
 			my_dict = json.load(f)
 
 		self.transaction_id	= my_dict['last_transaction_id']
+		self.p				= my_dict['p']
 
 	def get_templates(self):
 		filename = os.path.join(self.TEMPLATE_DIR, "quota.order.number.xml")
@@ -295,7 +296,7 @@ class application(object):
 			_ = system('clear')
 
 	def connect(self):
-		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password=zanzibar")
+		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password" + self.p)
 
 	def validate(self):
 		fname = self.output_filename

@@ -237,7 +237,7 @@ class application(object):
 		self.DBASE					= my_dict['dbase']
 		self.DBASE					= "tariff_eu" # Always defaulting to the EU database, as this is what we will be migrating
 		self.DBASE_MIGRATE_MEASURES = my_dict['dbase_migrate_measures']
-		
+		self.p						= my_dict['p']
 		self.connect()
 		self.debug              	= fn.mbool2(my_dict['debug'])
 		self.last_transaction_id	= my_dict['last_transaction_id']
@@ -1846,7 +1846,7 @@ class application(object):
 			_ = system('clear')
 
 	def connect(self):
-		self.conn = psycopg2.connect("dbname=" + self.DBASE_MIGRATE_MEASURES + " user=postgres password=zanzibar")
+		self.conn = psycopg2.connect("dbname=" + self.DBASE_MIGRATE_MEASURES + " user=postgres password" + self.p)
 
 	def generate_xml_report(self):
 		self.d("Generating an XML report", False)

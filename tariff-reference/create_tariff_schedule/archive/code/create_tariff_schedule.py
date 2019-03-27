@@ -13,7 +13,7 @@ from zipfile import ZipFile, ZIP_DEFLATED
 import os
 import sys
 
-conn = psycopg2.connect("dbname=trade_tariff_1809 user=postgres password=zanzibar")
+conn = psycopg2.connect("dbname=trade_tariff_1809 user=postgres password" + self.p)
 
 def zipdir(basedir, archivename):
 	assert os.path.isdir(basedir)

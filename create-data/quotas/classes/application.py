@@ -401,7 +401,7 @@ class application(object):
 
 	def connect(self):
 		self.DBASE = "tariff_staging"
-		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password=zanzibar")
+		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password" + self.p)
 
 	def validate(self):
 		fname = self.output_filename

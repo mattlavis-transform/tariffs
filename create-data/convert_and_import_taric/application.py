@@ -180,6 +180,7 @@ class application(object):
 		critical_date = my_dict['critical_date']
 		self.critical_date	= datetime.strptime(critical_date, '%Y-%m-%d')
 		self.DBASE			= my_dict['dbase']
+		self.p				= my_dict['p']
 		
 		my_script = sys.argv[0]
 		if my_script == "import_dev.py":
@@ -1186,7 +1187,7 @@ class application(object):
 			_ = system('clear')
 
 	def connect(self):
-		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password=zanzibar")
+		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password" + self.p)
 
 	def doprint(self, s):
 		self.log_handle.write ("Message " + str(self.message_count) + " - " + s + "\n")
