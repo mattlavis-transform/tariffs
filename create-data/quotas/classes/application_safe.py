@@ -1781,7 +1781,7 @@ class application(object):
 			_ = system('clear')
 
 	def connect(self):
-		self.conn = psycopg2.connect("dbname=" + self.DBASE_MIGRATE_MEASURES + " user=postgres password" + self.p)
+		self.conn = psycopg2.connect("dbname=" + self.DBASE_MIGRATE_MEASURES + " user=postgres password=" + self.p)
 
 	def generate_xml_report(self):
 		self.d("Generating an XML report", False)

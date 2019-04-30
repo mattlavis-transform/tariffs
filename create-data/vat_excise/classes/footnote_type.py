@@ -18,7 +18,8 @@ class footnote_type(object):
 		# We only want to transfer footnote types across
 		# if we are giving ED the UK national P&R, otherwise we need to convert footnotes
 		# to an alphabetic format
-		if app.vat_excise == False and app.retain == True:
+		#if app.vat_excise == False and app.retain == True:
+		if 1 > 2:
 			s = app.template_footnote_type
 			s = s.replace("[TRANSACTION_ID]",              str(app.transaction_id))
 			s = s.replace("[MESSAGE_ID1]",                 str(app.sequence_id))

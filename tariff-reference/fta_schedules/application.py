@@ -12,6 +12,7 @@ from document import document
 from hierarchy import hierarchy
 from mfn_duty import mfn_duty
 from meursing_component import meursing_component
+from local_siv import local_siv
 
 class application(object):
 	def __init__(self):
@@ -90,7 +91,41 @@ class application(object):
 		self.get_meursing_components()
 		my_document.check_for_quotas()
 		self.readTemplates(my_document.has_quotas)
+
+		# Get commodities where there is a local SIV
+		#print (self.geo_ids)
 		
+		sql = """
+		SELECT DISTINCT m.goods_nomenclature_item_id, m.validity_start_date, mc.condition_duty_amount,
+		mc.condition_monetary_unit_code, mc.condition_measurement_unit_code
+		FROM ml.v5_2019 m, measure_conditions mc, measure_condition_components mcm
+		WHERE mc.measure_sid = m.measure_sid
+		AND mc.measure_condition_sid = mcm.measure_condition_sid
+		AND mc.condition_code = 'V' AND geographical_area_id IN (""" + self.geo_ids + """) AND mcm.duty_amount != 0
+		ORDER BY 1, 2 DESC, 3 DESC
+		"""
+
+		cur = self.conn.cursor()
+		cur.execute(sql)
+		rows = cur.fetchall()
+
+		self.local_sivs						= []
+		self.local_sivs_commodities_only	= []
+
+		for rw in rows:
+			goods_nomenclature_item_id		= rw[0]
+			validity_start_date				= rw[1]
+			condition_duty_amount			= rw[2]
+			condition_monetary_unit_code	= rw[3]
+			condition_measurement_unit_code	= rw[4]
+
+			obj = local_siv(goods_nomenclature_item_id, validity_start_date, condition_duty_amount, condition_monetary_unit_code, condition_measurement_unit_code)
+			self.local_sivs.append(obj)
+			self.local_sivs_commodities_only.append(goods_nomenclature_item_id)
+		#print (len(self.local_sivs))
+		#sys.exit()
+		
+
 		# Create the measures table
 		my_document.get_duties("preferences")
 		my_document.print_tariffs()
@@ -164,7 +199,7 @@ class application(object):
 		self.country_name			= self.all_country_profiles[self.country_profile]["country_name"]
 
 	def connect(self):
-		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password" + self.p)
+		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password=" + self.p)
 
 	def shutDown(self):
 		self.conn.close()

@@ -7,16 +7,19 @@ class quota_order_number_origin(object):
 	def __init__(self, quota_order_number_sid, geographical_area_id, validity_start_date):
 		self.quota_order_number_sid 		= quota_order_number_sid
 		self.geographical_area_id   		= geographical_area_id
+
 		self.validity_start_date    		= validity_start_date
 		self.quota_order_number_origin_sid	= -1 # Temp -- g.app.last_quota_order_number_origin_sid
 		self.quota_order_number_id			= ""
 		self.exclusion_list = []
 
+		print (self.geographical_area_id)
 		self.get_geography()
 
 	def get_geography(self):
 		sql = """SELECT geographical_area_sid, geographical_code FROM geographical_areas WHERE
 		geographical_area_id = '""" + self.geographical_area_id + """' ORDER BY validity_start_date DESC LIMIT 1"""
+		#print (sql)
 		cur = g.app.conn.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
@@ -24,7 +27,7 @@ class quota_order_number_origin(object):
 			self.geographical_area_sid	= rows[0][0]
 			self.geographical_code		= rows[0][1] # 1 is a group and can therefore have exclusions
 		else:
-			print ("Missing geography", self.geographical_area_id, sql)
+			print ("In QON Missing geography", self.geographical_area_id, sql)
 			sys.exit()
 
 	def xml(self):

@@ -7,11 +7,13 @@ from classes.measure_component import measure_component
 #from classes.measure_excluded_geographical_area import measure_excluded_geographical_area
 
 class measure(object):
-	def __init__(self, goods_nomenclature_item_id, quota_order_number_id, duty_amount, monetary_unit_code,
-	measurement_unit_code, measurement_unit_qualifier_code, measure_sid = -1):
+	def __init__(self, goods_nomenclature_item_id, quota_order_number_id, origin_identifier, duty_amount,
+						monetary_unit_code, measurement_unit_code, measurement_unit_qualifier_code,
+						start_date_override, end_date_override, measure_sid = -1):
 		# from parameters
 		self.goods_nomenclature_item_id 		= goods_nomenclature_item_id
 		self.quota_order_number_id    			= quota_order_number_id
+		self.origin_identifier    				= origin_identifier
 		self.duty_amount		        		= duty_amount
 		self.monetary_unit_code      			= monetary_unit_code
 		self.measurement_unit_code      		= measurement_unit_code
@@ -38,8 +40,8 @@ class measure(object):
 
 		
 		# Initialised
-		self.justification_regulation_id		= ""
-		self.justification_regulation_role		= ""
+		self.justification_regulation_id		= "" # self.measure_generating_regulation_id
+		self.justification_regulation_role		= "1"
 		self.measure_generating_regulation_role	= 1
 		self.stopped_flag						= "0"
 		self.additional_code_type_id			= ""
@@ -180,6 +182,7 @@ class measure(object):
 		s = s.replace("\t\t\t\t\t\t<oub:export.refund.nomenclature.sid></oub:export.refund.nomenclature.sid>\n", "")
 
 		g.app.message_id += 1
+		#print (g.app.last_measure_sid)
 		
 		self.component_content = ""
 		self.condition_content = ""
@@ -219,4 +222,7 @@ class measure(object):
 		s = s.replace("[EXCLUDED]\n", 				self.exclusion_content)
 		s = s.replace("[FOOTNOTES]\n", 				self.footnote_content)
 		s = s.replace("[PTS]\n",	 				self.pts_content)
+
+		#g.app.last_measure_sid = self.measure_sid
+
 		return (s)

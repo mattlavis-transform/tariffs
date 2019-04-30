@@ -119,12 +119,27 @@ class duty(object):
 			else:
 				my_duty = 0
 				
-			self.duty_string = "Entry Price - " + "{0:1.2f}".format(my_duty) + "% + Specific 100%" # + " (" + str(self.duty_amount) + ")"
+			if self.commodity_code in g.app.local_sivs_commodities_only and g.app.country_profile == "morocco":
+				self.duty_string = "Entry Price - 0% + Specific 100% Rebased price €" + "{0:1.2f}".format(my_duty) + " Rebased Price P"
+				self.duty_string = "Entry Price - " + "{0:1.2f}".format(my_duty) + "% + Specific 100%" + self.get_rebase() # " Rebased Price P"
+			else:
+				self.duty_string = "Entry Price - " + "{0:1.2f}".format(my_duty) + "% + Specific 100%"
 			#except:
 			#	print ("Error", self.commodity_code)
 			#	sys.exit()
 
 
+	def get_rebase(self):
+		out = ""
+		print (self.commodity_code)
+		for obj in g.app.local_sivs:
+			if obj.goods_nomenclature_item_id == self.commodity_code:
+				if self.validity_start_date == obj.validity_start_date:
+					print ("Found a match")
+					print (self.validity_start_date)
+					out = " Rebased Price " + str(obj.condition_duty_amount) + " € / " + self.getMeasurementUnit(obj.condition_measurement_unit_code) #  " € / tonne"
+					break
+		return (out)
 
 	def getMeasurementUnit(self, s):
 		if s == "ASV":

@@ -24,12 +24,14 @@ class application(object):
 		self.OUT_DIR			= os.path.join(temp, "xml_out")
 		self.OUT_DIR			= os.path.join(temp, "xml_out")
 		self.TEMPLATE_DIR		= os.path.join(self.BASE_DIR, "templates")
-		self.SCHEMA_DIR			= os.path.join(self.BASE_DIR, "xsd")
 		self.SOURCE_DIR			= os.path.join(self.BASE_DIR, "source")
 		self.CONFIG_DIR			= os.path.join(self.BASE_DIR, "..")
 		self.CONFIG_DIR			= os.path.join(self.CONFIG_DIR, "config")
 		self.CONFIG_FILE		= os.path.join(self.CONFIG_DIR, "config_common.json")
 		self.CONFIG_FILE_LOCAL	= os.path.join(self.CONFIG_DIR, "config_create_reference_data.json")
+
+		self.SCHEMA_DIR				= os.path.join(self.BASE_DIR, "..")
+		self.SCHEMA_DIR				= os.path.join(self.SCHEMA_DIR, "xsd")
 
 		# The XML export directory
 		temp				= os.path.join(self.BASE_DIR, '..')
@@ -185,7 +187,7 @@ class application(object):
 			_ = system('clear')
 
 	def connect(self):
-		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password" + self.p)
+		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password=" + self.p)
 
 	def getTemplates(self):
 		# Get envelope XML

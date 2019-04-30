@@ -40,7 +40,6 @@ class application(object):
 
 		self.BASE_DIR				= os.path.dirname(os.path.abspath(__file__))
 		self.BASE_DIR				= os.path.join(self.BASE_DIR,	"..")
-		self.SCHEMA_DIR				= os.path.join(self.BASE_DIR,	"xsd")
 		self.TEMPLATE_DIR			= os.path.join(self.BASE_DIR,	"templates")
 		self.CSV_DIR				= os.path.join(self.BASE_DIR,	"csv")
 		self.SOURCE_DIR 			= os.path.join(self.BASE_DIR,	"source")
@@ -60,6 +59,9 @@ class application(object):
 		self.CONFIG_DIR				= os.path.join(self.CONFIG_DIR, "config")
 		self.CONFIG_FILE			= os.path.join(self.CONFIG_DIR, "config_common.json")
 		self.CONFIG_FILE_LOCAL		= os.path.join(self.CONFIG_DIR, "config_migrate_measures_and_quotas.json")
+
+		self.SCHEMA_DIR				= os.path.join(self.BASE_DIR, "..")
+		self.SCHEMA_DIR				= os.path.join(self.SCHEMA_DIR, "xsd")
 
 		self.SOURCE_DIR				= os.path.join(self.BASE_DIR, "source")
 		self.QUOTA_DIR				= os.path.join(self.SOURCE_DIR, "quotas")
@@ -1846,7 +1848,7 @@ class application(object):
 			_ = system('clear')
 
 	def connect(self):
-		self.conn = psycopg2.connect("dbname=" + self.DBASE_MIGRATE_MEASURES + " user=postgres password" + self.p)
+		self.conn = psycopg2.connect("dbname=" + self.DBASE_MIGRATE_MEASURES + " user=postgres password=" + self.p)
 
 	def generate_xml_report(self):
 		self.d("Generating an XML report", False)

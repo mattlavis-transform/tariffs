@@ -1,0 +1,3472 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<taric3TransactionsLogData xmlns="http://www.eurodyn.com/Tariff/services/Taric3TransactionsLog/request/v03">
+    <headerData>
+        <envelopeId>190036</envelopeId>
+        <fileName>DIT190036.xml</fileName>
+        <userName>TARIFFUSER</userName>
+        <nationalFlag>T</nationalFlag>
+    </headerData>
+    <validTransactionData>
+        <validTransaction>
+            <transacationId>16565950</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565952</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565953</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565954</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565955</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565956</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565957</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565958</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565959</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565960</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565961</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565962</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565963</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565964</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565965</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565966</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565967</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565968</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565969</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565970</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565971</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565972</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565973</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565974</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565975</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16565976</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16566292</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16566293</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16566294</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16566295</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567826</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567827</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567828</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567829</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567830</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567831</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567832</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567833</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567834</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567835</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567836</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567837</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567838</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567839</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567840</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567841</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567842</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567843</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567844</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567845</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567846</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567847</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567848</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567849</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567850</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567851</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567852</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567853</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567854</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567855</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567856</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567857</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567858</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567859</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567860</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567861</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567862</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567863</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567864</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567865</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567866</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567867</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567868</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567869</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567870</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16567871</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568165</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568202</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568203</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568204</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568205</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568206</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568207</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568208</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568209</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568210</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568211</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568212</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568213</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568214</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568215</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568216</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568217</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568218</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568219</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568220</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568221</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568222</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568223</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568224</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568225</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568226</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568227</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568228</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568229</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568230</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568231</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568232</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568233</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568234</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568235</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568236</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568237</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568238</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568239</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568240</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568241</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568242</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568243</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568244</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568245</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568246</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568247</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568248</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16568249</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070552</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070553</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070554</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070555</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070556</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070557</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070558</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070559</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070560</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070561</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070562</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070563</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070564</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070565</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070566</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070567</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070568</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070569</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070570</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070571</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070572</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070573</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070574</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070575</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070576</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070577</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070578</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070579</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070580</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070581</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070582</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070583</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070584</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070585</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070586</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070587</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070588</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070589</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070590</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070591</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070592</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070593</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070594</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070595</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070596</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070597</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070598</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070599</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070600</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070601</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070602</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070603</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070604</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070605</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070606</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070607</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070608</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070609</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070610</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070611</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070612</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070613</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070614</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070615</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070616</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070617</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070618</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070619</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070620</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070621</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070622</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070623</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070624</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070625</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070626</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070627</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070628</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070629</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070630</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070631</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070632</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070633</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070634</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070635</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070636</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070637</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070638</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070639</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070640</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070641</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070642</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070643</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070644</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070645</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070646</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070647</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070648</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070649</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070650</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070651</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070652</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070653</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070654</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070655</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070656</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070657</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070658</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070659</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070660</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070661</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070662</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070663</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070664</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070665</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070666</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070667</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070668</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070669</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070670</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070671</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070672</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070673</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070674</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070675</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070676</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070677</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070678</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070679</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070680</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070681</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070682</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070683</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070684</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070685</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070686</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070687</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070688</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070689</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070690</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070691</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070692</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070693</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070694</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070695</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070696</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070697</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070698</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070699</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070700</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070701</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070702</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070703</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070704</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070705</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070706</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070707</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070708</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070709</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070710</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070711</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070712</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070713</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070714</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070715</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070716</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070717</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070718</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070719</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070720</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070721</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070722</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070724</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070725</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070726</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070727</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070728</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070729</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070730</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070731</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070733</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070734</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070735</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070736</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070738</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070739</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070740</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070741</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070742</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070743</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070744</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070745</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070746</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070747</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070750</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070751</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070752</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070753</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070754</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070755</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070756</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070757</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070758</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070759</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070760</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070761</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070762</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070763</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070764</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070765</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070766</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070767</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070768</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070769</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070770</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070771</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070772</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070773</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070774</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070776</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070777</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070778</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070780</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070781</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070782</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070783</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070784</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070785</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070786</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070787</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070788</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070789</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070790</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070791</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070793</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070794</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070795</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070796</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070797</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070798</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070799</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070800</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070801</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070802</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070803</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070804</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070805</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070806</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070807</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070809</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070810</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070811</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070812</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070813</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070814</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070815</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070816</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070817</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070818</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070819</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070820</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070821</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070822</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070823</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070824</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070825</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070826</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070827</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070828</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070829</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070830</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070832</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070833</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070834</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070835</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070836</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070838</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070839</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070840</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070841</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070844</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070846</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070847</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070852</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070853</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070854</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070855</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070856</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070858</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070859</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070860</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070861</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070862</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070863</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070864</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070865</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070866</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070867</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070868</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070870</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070871</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070872</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070873</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070875</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070877</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070879</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070880</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070881</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070883</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070884</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070885</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070886</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070887</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070888</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070889</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070890</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070891</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070892</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070893</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070894</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070895</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070896</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070897</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070898</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070899</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070902</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070903</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070904</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070905</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070906</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070907</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070908</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070909</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070910</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070911</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070913</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070914</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070915</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070916</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070917</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070918</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070919</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070920</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070921</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070922</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070923</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070924</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070925</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070926</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070927</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070928</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070929</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070930</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070931</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070932</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070933</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070934</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070935</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070936</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070937</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070938</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070939</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070940</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070941</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070942</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070943</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070944</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070945</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070947</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070948</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070949</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070950</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070951</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070952</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070953</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070954</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070956</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070958</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070959</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070960</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070961</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070962</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070963</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070964</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070965</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070966</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070967</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070968</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070969</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070970</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070971</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070972</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070973</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070974</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070975</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070976</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070977</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070978</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070979</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070980</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070981</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070982</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070983</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070984</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070985</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070986</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070987</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070988</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070989</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070990</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070991</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070992</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070993</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070994</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070995</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070996</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070997</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070998</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90070999</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071000</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071001</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071002</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071003</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071004</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071005</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071006</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071007</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071008</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071009</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071010</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071011</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071012</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071013</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071014</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071015</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071016</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071017</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071018</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071019</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071020</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071021</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071022</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071023</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071024</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071025</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071026</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071027</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071028</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071029</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071030</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071031</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071032</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071033</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071034</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071035</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071036</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071037</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071038</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071039</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071040</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071041</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071042</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071043</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071044</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071045</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071046</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071047</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071048</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071049</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071050</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071051</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071052</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071053</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071054</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071055</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071056</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071057</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071058</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071059</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071060</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071061</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071062</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071063</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071064</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071065</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071066</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071067</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071068</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071070</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071072</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071073</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071074</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071075</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071076</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071077</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071078</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071079</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071080</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071081</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071082</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071083</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071084</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071085</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071086</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071087</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071088</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071089</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071090</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071091</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071092</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071093</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071094</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071095</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071096</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071097</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071098</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071099</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071100</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071101</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071102</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071103</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071104</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071105</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071106</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071107</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071108</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071109</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071110</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071111</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071112</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071113</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071114</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071115</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071116</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071117</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071118</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071119</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071120</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071121</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071122</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071123</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071124</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071125</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071126</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071128</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071129</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071130</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071131</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071132</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071133</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071134</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071135</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071136</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071137</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071138</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071139</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071140</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071141</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071142</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071143</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071144</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071145</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071146</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071147</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071148</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071149</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071150</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071151</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071152</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071153</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071155</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071156</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071157</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071158</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071159</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071160</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071161</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071162</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071163</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071164</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90071165</transacationId>
+        </validTransaction>
+    </validTransactionData>
+    <invalidTransactionData>
+        <invalidTransaction>
+            <transacationId>90070723</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 2903391910; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070723</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200788"/>
+                    <recordInfo key="goods.nomenclature.sid" value="98317"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="2903391910"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070723</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200788"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="98317"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="2903391910"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="1-Bromo-2-methylpropane (CAS RN 78-77-3) with a purity not less than 99.0% and containing not more than: - 0.25% of Sec-butyl bromide - 0.06% of n-butyl bromide - 0.06% of n-propyl bromide"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070732</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 2917198025; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070732</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200797"/>
+                    <recordInfo key="goods.nomenclature.sid" value="99499"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="2917198025"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070732</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200797"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="99499"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="2917198025"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="n-Dodecelylsuccinic acid anhydride (CAS RN 19780-11-1) with: - a Gardner colour index level of not more than 1, - a transmission at 500 nm of 98% or more for a 10% solution by weight in toluene, for use in the manufacture of automotive coatings"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070737</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 2921511920; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070737</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200802"/>
+                    <recordInfo key="goods.nomenclature.sid" value="81609"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="2921511920"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070737</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200802"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="81609"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="2921511920"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Toluene diamine (TDA), containing by weight: - 72% or more but not more than 82% of 4-methyl-m-phenylenediamine, and - 17% or more but not more than 22% of 2-methyl-m-phenylenediamine, and - not more than 0.23% of residual tar whether or not containing 7% or less of water"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070748</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 2933399966; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070748</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200813"/>
+                    <recordInfo key="goods.nomenclature.sid" value="104026"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="2933399966"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070748</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200813"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="104026"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="2933399966"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Fluazinam (ISO) (CAS RN 79622-59-6), with a purity by weight of 98.5 % or more"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070749</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 2934999013; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070749</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200814"/>
+                    <recordInfo key="goods.nomenclature.sid" value="97975"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="2934999013"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070749</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200814"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="97975"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="2934999013"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Buprofezin (ISO) of a purity by weight of 98.5% or more (CAS RN 953030-84-7)"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070775</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 3505105020; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070775</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200840"/>
+                    <recordInfo key="goods.nomenclature.sid" value="38157"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3505105020"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070775</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200840"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="38157"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3505105020"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="O-(2-Hydroxyethyl)-derivative of hydrolysed maize starch (CAS RN 9005-27-0)"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070779</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 3801900020; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070779</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200844"/>
+                    <recordInfo key="goods.nomenclature.sid" value="103558"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3801900020"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070779</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200844"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="103558"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3801900020"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Pitch coated graphite based powder with: - an average particle size of 10.8 µm or more but not more than 13.0 µm, - an iron content of less than 40 ppm, - a copper content of less than 5 ppm, - a nickel content of less than 5 ppm, - an average surface area (N2 atmosphere) of 3.0 m$2/g or more but not more than 4.36 m$2/g, and - a magnetic metal impurity of less than 0.3 ppm"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070792</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 3811210017; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070792</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200857"/>
+                    <recordInfo key="goods.nomenclature.sid" value="98357"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3811210017"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070792</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200857"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="98357"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3811210017"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Additives containing: - mainly sulphurised diisobutylene, - calcium sulphonate, - dialkylaminoalkyl polyisobutylene succinate, and - mineral oils, for use in the manufacture of lubricating oils"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070808</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 3811290060; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070808</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200873"/>
+                    <recordInfo key="goods.nomenclature.sid" value="98368"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3811290060"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070808</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200873"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="98368"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3811290060"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Additives containing: - mainly sulphurised diisobutylene, - calcium sulphonate, and - dialkylaminoalkyl polyisobutylene succinate for use in the manufacture of lubricating oils"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070831</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 3824999275; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070831</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200896"/>
+                    <recordInfo key="goods.nomenclature.sid" value="101935"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3824999275"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070831</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200896"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="101935"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3824999275"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Aqueous solution of polymers and ammonia consisting of: - 0.1% or more but not more than 0.5% by weight of ammonia (CAS RN 1336-21-6) and - 0.3% or more but not more than 10% by weight of polycarboxylate (linear polymers of acrylic acid)"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070837</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 3824999675; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070837</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200902"/>
+                    <recordInfo key="goods.nomenclature.sid" value="102016"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3824999675"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070837</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200902"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="102016"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3824999675"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Hollow spheres of fused aluminosilicate containing 65-80% amorphous aluminosilicate, with the following characteristics: - a melting point of between 1 600 °C and 1 800 °C, - a density of 0.6 - 0.8g/cm$3, for use in the manufacture of particle filters in motor vehicles"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070842</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 3901101040; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070842</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200907"/>
+                    <recordInfo key="goods.nomenclature.sid" value="100082"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3901101040"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070842</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200907"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="100082"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3901101040"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Linear low-density polyethylene (LLDPE) (CAS RN 9002-88-4) in the form of powder, with - not more than 5% by weight of comonomer, - a melt flow rate of 15g/10 min or more, but not more than 60g/10 min and - a density of 0.922g/cm$3 or more, but not more than 0.928g/cm$3"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070843</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 3901109020; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070843</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200908"/>
+                    <recordInfo key="goods.nomenclature.sid" value="70028"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3901109020"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070843</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200908"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="70028"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3901109020"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Polyethylene, in the form of granules, of a specific gravity of 0.925 (± 0.0015), a melt flow index of 0.3g/10 min (± 0.05g/10 min), for the manufacture of blown films of a haze value not more than 6% and an elongation at break (MD/TD) of 210/340"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070845</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 3901209010; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070845</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200910"/>
+                    <recordInfo key="goods.nomenclature.sid" value="65308"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3901209010"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070845</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200910"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="65308"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3901209010"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Polyethylene, in one of the forms mentioned in note 6 (b) to Chapter 39, of a specific gravity of 0.945 or more but not more than 0.985, for the manufacture of films for typewriter ribbon or similar ribbon"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070848</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 3901908057; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070848</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200913"/>
+                    <recordInfo key="goods.nomenclature.sid" value="102072"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3901908057"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070848</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200913"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="102072"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3901908057"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Octene linear low-density polyethylene (LLDPE) in the form of pellets used in the co-extrusion processing of films for flexible food packaging with: - 10% or more but not more than 20% by weight of octene, - a melt flow ratio of 9.0 or more, but not more than 10.0 (using ASTM D1238 10.0/2.16), - a melt index (190°C/2.16kg) of 0.4g / 10 min or more but not more than 0.6g / 10 min, - a density (ASTM D4703) of 0.909g/cm$3 or more, but not more than 0.913g/cm$3, - a gel area per 24.6 cm$3 of not more than 20 mm$2; and - an anti-oxidant level not exceeding 240 ppm"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070849</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 3901908063; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070849</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200914"/>
+                    <recordInfo key="goods.nomenclature.sid" value="102071"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3901908063"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070849</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200914"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="102071"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3901908063"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Octene linear low-density polyethylene (LLDPE) produced by a Ziegler-Natta catalyst method in the form of pellets with: - more than 10% but not more than 20% by weight of copolymer, - a melt flow rate (MFR 190°C/2.16kg) of 0.7g / 10 min or more but not more than 0.9g / 10 min, and - a density (ASTM D4703) of 0.911g/cm$3 or more, but not more than 0.913g/cm$3 for use in the co-extrusion processing of films for flexible food packaging"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070850</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 3901908065; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070850</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200915"/>
+                    <recordInfo key="goods.nomenclature.sid" value="102070"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3901908065"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070850</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200915"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="102070"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3901908065"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Linear low-density polyethylene ( LLDPE) (CAS RN 9002-88-4) in the form of powder, with - more than 5%, but not more than 8% by weight of comonomer, - a melt flow rate of 15g/10 min or more, but not more than 60g/10 min and - a density of 0.922g/cm$3 or more, but not more than 0.928g/cm$3"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070851</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 3901908080; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070851</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200916"/>
+                    <recordInfo key="goods.nomenclature.sid" value="102067"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3901908080"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070851</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200916"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="102067"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3901908080"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Block copolymer of ethylene with octene in the form of pellets: - with a specific gravity of 0.862 or more, but not more than 0.865, - able to stretch to at least 200% its original length, - with a hysteresis of 50% (±10%), - with permanent deformation of not more than 20%, for use in the manufacture of napkin liners for babies"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070857</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 3903110010; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070857</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200922"/>
+                    <recordInfo key="goods.nomenclature.sid" value="90752"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3903110010"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070857</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200922"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="90752"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3903110010"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="White expandable polystyrene beads with a thermal conductivity of not more than 0.034 W/mK at a density of 14.0kg/m$3 (± 1.5kg/m$3), containing 50% recycled material"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070869</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 3904698093; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070869</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200934"/>
+                    <recordInfo key="goods.nomenclature.sid" value="93002"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3904698093"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070869</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200934"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="93002"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3904698093"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Copolymer of ethylene with chlorotrifluoroethylene, in one of the forms mentioned in note 6 (b) to Chapter 39"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070874</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 3906909015; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070874</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200939"/>
+                    <recordInfo key="goods.nomenclature.sid" value="90756"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3906909015"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070874</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200939"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="90756"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3906909015"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Photosensitive resin consisting of modified acrylate, acrylic monomer, catalyst (photoinitiator) and stabiliser"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070876</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 3906909035; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070876</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200941"/>
+                    <recordInfo key="goods.nomenclature.sid" value="91157"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3906909035"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070876</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200941"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="91157"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3906909035"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="White powder of 1.2-ethanediol dimethacrylate-methyl methacrylate copolymer of a particle size of not more than 18 µm, insoluble in water"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070878</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 3906909087; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070878</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200943"/>
+                    <recordInfo key="goods.nomenclature.sid" value="98280"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3906909087"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070878</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200943"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="98280"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3906909087"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Aqueous solution of polymers and ammonia consisting of: - 0.1% or more but not more than 0.5% by weight of ammonia (CAS RN 1336-21-6) and - 0.3% or more but not more than 10% by weight of polycarboxylate (linear polymers of acrylic acid)"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070882</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 3907300050; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070882</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200947"/>
+                    <recordInfo key="goods.nomenclature.sid" value="84672"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3907300050"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070882</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200947"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="84672"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3907300050"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Liquid epoxide resin of 2-propenenitrile/1.3-butadiene-epoxide copolymer, not containing any solvent, with: - a zinc borate hydrate content of not more than 40% by weight, - a diantimony trioxide content of not more than 5% by weight"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070900</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 3920102510; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070900</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200965"/>
+                    <recordInfo key="goods.nomenclature.sid" value="91848"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3920102510"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070900</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200965"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="91848"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3920102510"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Film of a thickness of not more than 0.20 mm, of a blend of polyethylene and a copolymer of ethylene with oct-1-ene, embossed in a regular rhomboidal pattern, for coating both sides of a layer of unvulcanised rubber"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070901</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 3920108920; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070901</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200966"/>
+                    <recordInfo key="goods.nomenclature.sid" value="65438"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3920108920"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070901</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200966"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="65438"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3920108920"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Film of a thickness of not more than 0.20 mm, of a blend of polyethylene and a copolymer of ethylene with oct-1-ene, embossed in a regular rhomboidal pattern, for coating both sides of a layer of unvulcanised rubber"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070912</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 3920992855; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070912</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200977"/>
+                    <recordInfo key="goods.nomenclature.sid" value="97641"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3920992855"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070912</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="200977"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="97641"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="3920992855"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Thermoplastic polyurethane film extruded, with : - not self-adhesive, - an index of yellow lower of more than 1.0 but not more than 2.5 for 10 mm stacked films (as determined by test method ASTM E 313-10), - a light transmission higher to 87% for 10 mm stacked films (as determined by test method ASTM D 1003-11), - a total thickness of 0.38 mm or more, but not more than 7.6 mm, - a width of 99 cm or more, but not more than 305 cm, of a kind used in the production of laminated safety glass"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070946</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 5603149050; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070946</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="201011"/>
+                    <recordInfo key="goods.nomenclature.sid" value="103895"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="5603149050"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070946</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="201011"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="103895"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="5603149050"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Non-woven fabric of microfibres, composed of polyester fibres with a uniform cross section with: - a weight of more than 150g/m$2, - a denier of 0.06 or more but not more than 0.50 den, - containing by weight 74% or more of polyethylene terephthalate"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070955</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 7007192010; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070955</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="201020"/>
+                    <recordInfo key="goods.nomenclature.sid" value="81652"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="7007192010"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070955</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="201020"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="81652"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="7007192010"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Glass plate of a diagonal size of 81.28 cm (± 1.5 cm) or more, but not more than 185.42 cm (± 1.5 cm), consisting of tempered glass; provided either with a mesh film and a near-infrared absorbing film or a sputtered conductive layer, with optional additional anti-reflex layer on one or both sides, for use in the manufacture of products falling within heading 8528"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90070957</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 7007290010; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90070957</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="201022"/>
+                    <recordInfo key="goods.nomenclature.sid" value="81651"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="7007290010"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90070957</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="201022"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="81651"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="7007290010"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Glass plate of a diagonal size of 81.28 cm (± 1.5 cm) or more, but not more than 185.42 cm (± 1.5 cm), consisting of 2 sandwich plates laminated together; provided either with a mesh film and a near-infrared absorbing film or a sputtered conductive layer, with optional additional anti-reflex layer on one or both sides"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90071069</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 7604210010; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90071069</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="201134"/>
+                    <recordInfo key="goods.nomenclature.sid" value="91179"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="7604210010"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90071069</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="201134"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="91179"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="7604210010"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Profiles made of aluminium alloy conforming to EN standard AW-6063 T5 - anodised - whether or not lacquered - with a wall thickness of 0.5 mm (± 1.2%) or more but not more than 0.8 mm (± 1.2%) for use in the manufacture of goods of heading 8302"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90071071</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 7604299030; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90071071</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="201136"/>
+                    <recordInfo key="goods.nomenclature.sid" value="91181"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="7604299030"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90071071</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="201136"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="91181"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="7604299030"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Profiles made of aluminium alloy conforming to EN standard AW-6063 T5 - anodised - whether or not lacquered - with a wall thickness of 0.5 mm (± 1.2%) or more but not more than 0.8 mm (± 1.2%) for use in the manufacture of goods of heading 8302"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90071127</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 8501109954; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90071127</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="201192"/>
+                    <recordInfo key="goods.nomenclature.sid" value="58681"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="8501109954"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90071127</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="201192"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="58681"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="8501109954"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="DC motor, brushless, with an external diameter of not more than 25.4 mm, a rated speed of 2,260 (±15%) rpm or 5,420 (±15%) rpm, a supply voltage of 1.5 V or 3 V"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90071154</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>NIG12</code>
+                    <description>At least one description is mandatory.The start date of the first description period must be equal to the start date of the nomenclature.No two associated description periods may have the same start date.The start date must be less than or equal to the end date of the nomenclature.</description>
+                    <ruleInvalidEntityMessage>[ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ] [ Goods nomenclature item - [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Goods nomenclature ID: 9002110040; [ Goods nomenclature description period - [ Goods nomenclature description period - Start date: 2019-03-30 ]Product line suffix: 80 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90071154</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="201219"/>
+                    <recordInfo key="goods.nomenclature.sid" value="96952"/>
+                    <recordInfo key="validity.start.date" value="2019-03-30"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="9002110040"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90071154</transactionId>
+                    <recordCode>400</recordCode>
+                    <subRecordCode>15</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="goods.nomenclature.description.period.sid" value="201219"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="goods.nomenclature.sid" value="96952"/>
+                    <recordInfo key="goods.nomenclature.item.id" value="9002110040"/>
+                    <recordInfo key="productline.suffix" value="80"/>
+                    <recordInfo key="description" value="Lenses • measuring not more than 125 mm x 65 mm x 65 mm, • with a resolution of 125 lines/mm or better, and • with a zoom ratio of 16 times of a kind used for the production of visualisers or live image cameras"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+    </invalidTransactionData>
+    <processSummary>
+        <operationStartDate>2019-04-04T14:07:00</operationStartDate>
+        <operationEndDate>2019-04-04T14:07:42</operationEndDate>
+        <totalTransmissions>1773</totalTransmissions>
+        <totalTransactionsProcessed>739</totalTransactionsProcessed>
+        <totalErroneousTransactions>34</totalErroneousTransactions>
+    </processSummary>
+    <statisticalData>
+        <recordStatistics>
+            <recordCode>290</recordCode>
+            <subRecordCode>00</subRecordCode>
+            <addedRecords>1</addedRecords>
+            <updatedRecords>1</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>2</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>305</recordCode>
+            <subRecordCode>00</subRecordCode>
+            <addedRecords>1</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>1</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>370</recordCode>
+            <subRecordCode>00</subRecordCode>
+            <addedRecords>0</addedRecords>
+            <updatedRecords>1</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>1</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>370</recordCode>
+            <subRecordCode>10</subRecordCode>
+            <addedRecords>1</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>1</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>375</recordCode>
+            <subRecordCode>00</subRecordCode>
+            <addedRecords>281</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>281</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>375</recordCode>
+            <subRecordCode>05</subRecordCode>
+            <addedRecords>1</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>1</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>375</recordCode>
+            <subRecordCode>10</subRecordCode>
+            <addedRecords>1</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>1</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>375</recordCode>
+            <subRecordCode>15</subRecordCode>
+            <addedRecords>1</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>1</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>375</recordCode>
+            <subRecordCode>20</subRecordCode>
+            <addedRecords>1</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>1</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>400</recordCode>
+            <subRecordCode>05</subRecordCode>
+            <addedRecords>3</addedRecords>
+            <updatedRecords>1</updatedRecords>
+            <deletedRecords>2</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>6</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>400</recordCode>
+            <subRecordCode>10</subRecordCode>
+            <addedRecords>614</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>34</erroneousRecords>
+            <totalRecords>614</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>400</recordCode>
+            <subRecordCode>15</subRecordCode>
+            <addedRecords>614</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>34</erroneousRecords>
+            <totalRecords>614</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>430</recordCode>
+            <subRecordCode>00</subRecordCode>
+            <addedRecords>48</addedRecords>
+            <updatedRecords>70</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>118</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>430</recordCode>
+            <subRecordCode>05</subRecordCode>
+            <addedRecords>48</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>48</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>430</recordCode>
+            <subRecordCode>15</subRecordCode>
+            <addedRecords>35</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>35</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>430</recordCode>
+            <subRecordCode>20</subRecordCode>
+            <addedRecords>48</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>48</totalRecords>
+        </recordStatistics>
+    </statisticalData>
+    <processResult>1</processResult>
+</taric3TransactionsLogData>

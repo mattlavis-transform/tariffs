@@ -51,6 +51,9 @@ class application(object):
 		self.CONFIG_FILE			= os.path.join(self.CONFIG_DIR, "config_common.json")
 		self.CONFIG_FILE_LOCAL		= os.path.join(self.CONFIG_DIR, "config_migrate_measures_and_quotas.json")
 
+		self.SCHEMA_DIR				= os.path.join(self.BASE_DIR, "..")
+		self.SCHEMA_DIR				= os.path.join(self.SCHEMA_DIR, "xsd")
+
 		self.SOURCE_DIR				= os.path.join(self.BASE_DIR, "source")
 		self.QUOTA_DIR				= os.path.join(self.SOURCE_DIR, "quotas")
 		self.BALANCE_FILE			= os.path.join(self.QUOTA_DIR, "quota_volume_master.csv")
@@ -69,8 +72,8 @@ class application(object):
 		self.quota_definition_list		= []
 		self.quota_order_number_list	= []
 
-		self.connect()
 		self.get_config()
+		self.connect()
 		self.get_minimum_sids()
 		self.get_templates()
 		self.message_id = 1
@@ -88,6 +91,10 @@ class application(object):
 	def get_config(self):
 		with open(self.CONFIG_FILE, 'r') as f:
 			my_dict = json.load(f)
+
+		critical_date = my_dict['critical_date']
+		self.critical_date	= datetime.strptime(critical_date, '%Y-%m-%d')
+		self.critical_date_plus_one	= self.critical_date + timedelta(days = 1)
 
 		self.transaction_id	= my_dict['last_transaction_id']
 		self.p				= my_dict['p']
@@ -146,16 +153,23 @@ class application(object):
 		my_file = os.path.join(self.CSV_DIR, self.output_profile + ".csv")
 		with open(my_file) as csv_file:
 			csv_reader = csv.reader(csv_file, delimiter = ",")
+			next(csv_reader)
 			for row in csv_reader:
 				if (len(row) > 0):
-					geographical_area_id		= row[0]
-					goods_nomenclature_item_id	= row[1]
-					duty_amount					= row[2]
+					goods_nomenclature_item_id	= row[0]
+					regulation_id				= row[1]
+					geographical_area_id		= row[2]
 					measure_type_id				= row[3]
-					regulation_id				= row[4]
+					ad_valorem					= row[4]
+					specific1					= row[5]
+					ceiling						= row[6]
+					minimum						= row[7]
+					specific2					= row[8]
+					date_from					= row[9]
+					date_to						= row[10]
 
 					if (goods_nomenclature_item_id != "goods nomenclature") and (goods_nomenclature_item_id != ""):
-						obj = measure(geographical_area_id, goods_nomenclature_item_id, duty_amount, measure_type_id, regulation_id)
+						obj = measure(goods_nomenclature_item_id, regulation_id, geographical_area_id, measure_type_id, ad_valorem, specific1, ceiling, minimum, specific2, date_from, date_to)
 						self.measure_list.append(obj)
 						self.goods_nomenclature_list.append(goods_nomenclature_item_id)
 
@@ -218,8 +232,7 @@ class application(object):
 					self.quota_definition_list.append(obj)
 
 	def get_geographical_areas(self):
-		sql = """SELECT geographical_area_id, geographical_area_sid FROM geographical_areas
-		WHERE geographical_area_id IN ('1011', '2020', '2027', '2005', '1032', 'IN', 'ID', 'KE');"""
+		sql = """SELECT geographical_area_id, geographical_area_sid FROM geographical_areas;"""
 		cur = self.conn.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
@@ -298,7 +311,7 @@ class application(object):
 			_ = system('clear')
 
 	def connect(self):
-		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password" + self.p)
+		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password=" + self.p)
 
 	def validate(self):
 		fname = self.output_filename
@@ -346,6 +359,8 @@ class application(object):
 		jsonFile.close()						# Close the JSON file
 
 		data["last_transaction_id"] = self.transaction_id
+		data["minimum_sids"]["measures"] = self.last_measure_sid
+		data["minimum_sids"]["measure.conditions"] = self.last_measure_condition_sid
 
 		jsonFile = open(self.CONFIG_FILE, "w+")
 		jsonFile.write(json.dumps(data, indent=4, sort_keys=True))

@@ -28,7 +28,6 @@ class application(object):
 
 		self.BASE_DIR				= os.path.dirname(os.path.abspath(__file__))
 		self.BASE_DIR				= os.path.join(self.BASE_DIR,	"..")
-		self.SCHEMA_DIR				= os.path.join(self.BASE_DIR,	"xsd")
 		self.TEMPLATE_DIR			= os.path.join(self.BASE_DIR,	"templates")
 		self.CSV_DIR				= os.path.join(self.BASE_DIR,	"csv")
 		self.SOURCE_DIR 			= os.path.join(self.BASE_DIR,	"source")
@@ -49,6 +48,9 @@ class application(object):
 		self.CONFIG_FILE			= os.path.join(self.CONFIG_DIR, "config_common.json")
 		self.CONFIG_FILE_LOCAL		= os.path.join(self.CONFIG_DIR, "config_migrate_measures_and_quotas.json")
 
+		self.SCHEMA_DIR				= os.path.join(self.BASE_DIR, "..")
+		self.SCHEMA_DIR				= os.path.join(self.SCHEMA_DIR, "xsd")
+
 		self.SOURCE_DIR				= os.path.join(self.BASE_DIR, "source")
 		self.QUOTA_DIR				= os.path.join(self.SOURCE_DIR, "quotas")
 		self.BALANCE_FILE			= os.path.join(self.QUOTA_DIR, "quota_volume_master.csv")
@@ -67,6 +69,7 @@ class application(object):
 		self.quota_definition_list		= []
 		self.quota_order_number_list	= []
 
+		self.get_config()
 		self.connect()
 		self.get_minimum_sids()
 		self.get_templates()
@@ -81,6 +84,13 @@ class application(object):
 		else:
 			print ("No profile specified")
 			sys.exit()
+
+
+	def get_config(self):
+		with open(self.CONFIG_FILE, 'r') as f:
+			my_dict = json.load(f)
+		
+		self.p = my_dict['p']
 
 
 	def get_templates(self):
@@ -165,6 +175,16 @@ class application(object):
 			measurement_unit_qualifier_code	= fn.mstr(row[7])
 			quota_order_number_id			= row[8]
 
+			measure_sid						= -1
+			goods_nomenclature_item_id		= row[0]
+			quota_order_number_id			= row[1]
+			measure_type_id					= "122" # row[2]
+			#duty_expression_id				= row[1]
+			duty_amount						= row[2]
+			monetary_unit_code				= fn.mstr(row[3])
+			measurement_unit_code			= fn.mstr(row[4])
+			measurement_unit_qualifier_code	= fn.mstr(row[5])
+
 			m = measure(goods_nomenclature_item_id, quota_order_number_id, duty_amount, monetary_unit_code,	measurement_unit_code, measurement_unit_qualifier_code, measure_sid)
 			self.measure_list.append (m)
 		
@@ -211,15 +231,23 @@ class application(object):
 			csv_reader = csv.reader(csv_file, delimiter = ",")
 			for row in csv_reader:
 				if (len(row) > 0):
-					goods_nomenclature_item_id	= row[0]
-					quota_order_number_id		= row[1]
-					duty						= row[2]
-					monetary_unit				= row[3]
-					measurement_unit			= row[4]
-					measurement_unit_qualifier	= row[5]
+					goods_nomenclature_item_id		= row[0]
+					quota_order_number_id			= row[1]
+					origin_identifier				= row[2]
+					duty_amount						= row[3]
+					monetary_unit_code				= row[4]
+					measurement_unit_code			= row[5]
+					measurement_unit_qualifier_code	= row[6]
+					#start_date_override				= row[7]
+					#end_date_override				= row[8]
+					
+					start_date_override				= ""
+					end_date_override				= ""
+					
 
 					if (goods_nomenclature_item_id != "goods nomenclature") and (goods_nomenclature_item_id != ""):
-						obj = measure(goods_nomenclature_item_id, quota_order_number_id, duty, monetary_unit, measurement_unit, measurement_unit_qualifier)
+						obj = measure(goods_nomenclature_item_id, quota_order_number_id, origin_identifier, duty_amount,
+						monetary_unit_code, measurement_unit_code, measurement_unit_qualifier_code, start_date_override, end_date_override)
 						self.measure_list.append(obj)
 
 	def get_quota_order_numbers_from_csv(self):
@@ -232,17 +260,19 @@ class application(object):
 				if (len(row) > 0):
 					quota_order_number_id	= row[0]
 					regulation_id 			= row[1]
-					measure_type_id	 		= row[2]
-					origin_string			= row[3]
-					origin_exclusion_string = row[4]
-					validity_start_date		= row[5]
-					subject					= row[6]
+					method					= row[2]
+					measure_type_id	 		= row[3]
+					origin_string			= row[4]
+					origin_exclusion_string = row[5]
+					validity_start_date		= row[6]
+					subject					= row[7]
+					#method = ""
 					try:
-						status = row[7]
+						status = row[8]
 					except:
 						status = "New"
 
-					obj = quota_order_number(quota_order_number_id, regulation_id, measure_type_id, origin_string,
+					obj = quota_order_number(quota_order_number_id, regulation_id, method, measure_type_id, origin_string,
 					origin_exclusion_string, validity_start_date, subject, status)
 
 					self.quota_order_number_list.append(obj)
@@ -305,13 +335,14 @@ class application(object):
 					#print ("Incomplete match on ", obj.quota_order_number_id, "in the Word doc it says", obj.actual_origin_string, "versus in the DB", db_match_string, "failure =", match_fail)
 
 
+		"""
 		for obj in self.quota_order_number_list:
 			exclusion_string = obj.origin_exclusion_string.strip()
 			if (exclusion_string != ""):
 				for db_exclusion in self.db_origin_exclusion_list:
 					if db_exclusion.quota_order_number_id == obj.quota_order_number_id:
 						print (obj.quota_order_number_id, "Match")
-
+		"""
 		#sys.exit()
 
 
@@ -323,8 +354,29 @@ class application(object):
 			for row in csv_reader:
 				if (len(row) > 0):
 					quota_order_number_id			= row[0]
+					measure_type					= row[1]
+					quota_method					= row[2]
+					validity_start_date				= row[3]
+					validity_end_date				= row[4]
+					length							= row[5]
+					initial_volume 					= row[6]
+					measurement_unit_code			= row[7]
+					maximum_precision				= row[8]
+					critical_state					= row[9]
+					critical_threshold				= row[10]
+					monetary_unit_code				= row[11]
+					measurement_unit_qualifier_code	= row[12]
+					blocking_period_start			= "" # row[13]
+					blocking_period_end				= "" # row[14]
+					origin_identifier							= row[15]
+
+					"""
+					quota_order_number_id			= row[0]
+					measure_type					= "122"
+					quota_method					= "FCFS"
 					validity_start_date				= row[1]
 					validity_end_date				= row[2]
+					length							= -1
 					initial_volume 					= row[3]
 					measurement_unit_code			= row[4]
 					maximum_precision				= row[5]
@@ -332,12 +384,15 @@ class application(object):
 					critical_threshold				= row[7]
 					monetary_unit_code				= row[8]
 					measurement_unit_qualifier_code	= row[9]
-					blocking_period_start			= row[10]
-					blocking_period_end				= row[11]
+					blocking_period_start			= "" # row[13]
+					blocking_period_end				= "" # row[14]
+					origin_identifier				= ""
+					"""
 
-					obj = quota_definition(quota_order_number_id, validity_start_date, validity_end_date, initial_volume,
+
+					obj = quota_definition(quota_order_number_id, measure_type, quota_method, validity_start_date, validity_end_date, length, initial_volume,
 					measurement_unit_code, maximum_precision, critical_state, critical_threshold, monetary_unit_code,
-					measurement_unit_qualifier_code, blocking_period_start, blocking_period_end)
+					measurement_unit_qualifier_code, blocking_period_start, blocking_period_end, origin_identifier)
 
 					self.quota_definition_list.append(obj)
 
@@ -401,7 +456,7 @@ class application(object):
 
 	def connect(self):
 		self.DBASE = "tariff_staging"
-		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password" + self.p)
+		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password=" + self.p)
 
 	def validate(self):
 		fname = self.output_filename
@@ -438,7 +493,10 @@ class application(object):
 			quota_order_number_origin_sid	= row[0]
 			quota_order_number_id			= row[1]
 			quota_order_number_sid			= row[2]
-			geographical_area_id			= row[3]
+			geographical_area_id			= row[3].strip()
+			if geographical_area_id == "":
+				print ("blank")
+				sys.exit()
 
 			qono = quota_order_number_origin(quota_order_number_sid, geographical_area_id, "")
 			qono.quota_order_number_id = quota_order_number_id
@@ -469,3 +527,17 @@ class application(object):
 			qonoe.excluded_geographical_area_sid	= excluded_geographical_area_sid
 			qonoe.description						= description
 			self.db_origin_exclusion_list.append (qonoe)
+
+	def set_config(self):
+		jsonFile = open(self.CONFIG_FILE, "r")	# Open the JSON file for reading
+		data = json.load(jsonFile)				# Read the JSON into the buffer
+		jsonFile.close()						# Close the JSON file
+
+		data["last_transaction_id"] = self.transaction_id
+		data["minimum_sids"]["measures"] = self.last_measure_sid
+		data["minimum_sids"]["measure.conditions"] = self.last_measure_condition_sid
+
+		jsonFile = open(self.CONFIG_FILE, "w+")
+		jsonFile.write(json.dumps(data, indent=4, sort_keys=True))
+		jsonFile.close()
+

@@ -26,13 +26,14 @@ class footnote(object):
 		s = s.replace("[RECORD_SEQUENCE_NUMBER3]",     str(app.sequence_id + 2))
 		s = s.replace("[UPDATE_TYPE]",                 "3")
 
-		if not (g.app.retain):
+		#if not (g.app.retain):
+		if 1 > 0:
 			app.last_footnote_description_period_sid += 1
 			self.footnote_description_period_sid = app.last_footnote_description_period_sid
 			if self.footnote_type_id == '04':
 				self.footnote_type_id = 'FM'
 				self.footnote_id = '99' + self.footnote_id
-				self.validity_start_date = "2019-03-30"
+				self.validity_start_date = g.app.critical_date_plus_one.strftime('%Y-%m-%d')
 
 		s = s.replace("[FOOTNOTE_TYPE_ID]",                 f.mstr(self.footnote_type_id))
 		s = s.replace("[FOOTNOTE_ID]",                      f.mstr(self.footnote_id))

@@ -7,9 +7,10 @@ from classes.quota_order_number_origin import quota_order_number_origin
 from classes.quota_order_number_origin_exclusion import quota_order_number_origin_exclusion
 
 class quota_order_number(object):
-	def __init__(self, quota_order_number_id, regulation_id, measure_type_id, origin_string, origin_exclusion_string, validity_start_date, subject, status):
+	def __init__(self, quota_order_number_id, regulation_id, method, measure_type_id, origin_string, origin_exclusion_string, validity_start_date, subject, status):
 		self.quota_order_number_id      = quota_order_number_id
 		self.regulation_id              = regulation_id
+		self.method			              = method
 		self.measure_type_id    	    = measure_type_id
 		self.origin_string              = origin_string
 		self.origin_exclusion_string    = origin_exclusion_string
@@ -71,16 +72,16 @@ class quota_order_number(object):
 		# Check if any of these are a geographical area code (type 1)
 		# If so, then this is suitable for exclusions (which are attached to the origin)
 		for geographical_area_id in self.origins:
-			#print (geographical_area_id)
-			obj_quota_order_number_origin = quota_order_number_origin(self.quota_order_number_sid, geographical_area_id, self.validity_start_date)
-			if obj_quota_order_number_origin.geographical_code == "1":
-				for geographical_area_id2 in self.origin_exclusions:
-					obj_quota_order_number_origin_exclusion = quota_order_number_origin_exclusion(obj_quota_order_number_origin.quota_order_number_origin_sid, geographical_area_id2)
-					obj_quota_order_number_origin.exclusion_list.append (obj_quota_order_number_origin_exclusion)
+			if geographical_area_id != "":
+				obj_quota_order_number_origin = quota_order_number_origin(self.quota_order_number_sid, geographical_area_id, self.validity_start_date)
+				if obj_quota_order_number_origin.geographical_code == "1":
+					for geographical_area_id2 in self.origin_exclusions:
+						obj_quota_order_number_origin_exclusion = quota_order_number_origin_exclusion(obj_quota_order_number_origin.quota_order_number_origin_sid, geographical_area_id2)
+						obj_quota_order_number_origin.exclusion_list.append (obj_quota_order_number_origin_exclusion)
 
 
 
-			self.origin_list.append (obj_quota_order_number_origin)
+				self.origin_list.append (obj_quota_order_number_origin)
 
 
 	def check_existence(self):
@@ -141,6 +142,7 @@ class quota_order_number(object):
 		# Loop through all order numbers origins (geographies), then each definition, then each commodity code
 		s = ""
 		i = 1
+		#print ("here")
 		for o in self.origin_list:
 			for d in self.quota_definition_list:
 				for m in self.measure_list:
@@ -150,6 +152,7 @@ class quota_order_number(object):
 					m.geographical_area_id = o.geographical_area_id
 					m.geographical_area_sid = o.geographical_area_sid
 					m.measure_generating_regulation_id = self.regulation_id
+					m.justification_regulation_id = self.regulation_id					
 					m.measure_type_id = self.measure_type_id_trimmed
 					m.validity_start_date = d.validity_start_date
 					m.validity_end_date = d.validity_end_date

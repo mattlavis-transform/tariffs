@@ -4,14 +4,57 @@ import datetime
 import sys
 
 class measure_component(object):
-	def __init__(self, measure_sid, duty_amount, monetary_unit_code, measurement_unit_code, measurement_unit_qualifier_code):
+	def __init__(self, measure_sid, duty_string, component_type, duty_expression_id):
 		# from parameters
-		self.measure_sid  			    		= measure_sid
-		self.duty_expression_id  			    = "01"
+		self.measure_sid		= measure_sid
+		self.duty_string		= duty_string
+		self.component_type		= component_type
+		self.duty_expression_id	= duty_expression_id
+
+		self.parse()
+
+		"""
 		self.duty_amount  			    		= duty_amount
 		self.monetary_unit_code  			    = monetary_unit_code
 		self.measurement_unit_code  			= measurement_unit_code
 		self.measurement_unit_qualifier_code    = measurement_unit_qualifier_code
+		"""
+
+	def parse(self):
+		self.duty_string = self.duty_string.replace("MAX", "")
+		self.duty_string = self.duty_string.replace("%", "")
+		self.duty_string = self.duty_string.strip()
+		
+		if "EUR" in self.duty_string:
+			self.monetary_unit_code = "EUR"
+			pos = self.duty_string.find("EUR")
+			self.duty_amount = self.duty_string[0:pos]
+			remainder = self.duty_string[pos:]
+			remainder = remainder.replace("EUR", "").strip()
+			if remainder in ("HLT", "/ hl"):
+				self.measurement_unit_code  			= "HLT"
+				self.measurement_unit_qualifier_code    = ""
+			elif remainder in ("/ 100 kg", "/ 100 KG"):
+				self.measurement_unit_code  			= "DTN"
+				self.measurement_unit_qualifier_code    = ""
+			elif remainder in ("/ 100 kg / net drained wt"):
+				self.measurement_unit_code  			= "DTN"
+				self.measurement_unit_qualifier_code    = "E"
+			elif remainder in ("ASV X"):
+				self.measurement_unit_code  			= "ASV"
+				self.measurement_unit_qualifier_code    = "X"
+			else:
+				print (self.duty_string)
+				sys.exit()
+
+		else:
+			self.duty_amount  			    		= self.duty_string
+			self.monetary_unit_code  			    = ""
+			self.measurement_unit_code  			= ""
+			self.measurement_unit_qualifier_code    = ""
+
+
+
 
 	def xml(self):
 		# Get duty amounts for special cases

@@ -8,7 +8,7 @@ import codecs
 import re
 import functions
 
-conn = psycopg2.connect("dbname=trade_tariff_1809 user=postgres password" + self.p)
+conn = psycopg2.connect("dbname=trade_tariff_1809 user=postgres password=" + self.p)
 
 functions.getAllMeasurementUnitQualifiers(app)
 

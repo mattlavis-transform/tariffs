@@ -91,7 +91,7 @@ file.close()
 		
 def create_excel(regulation_id):
 	# Connect to database
-	conn = psycopg2.connect("dbname=trade_tariff_June18 user=postgres password" + self.p)
+	conn = psycopg2.connect("dbname=trade_tariff_June18 user=postgres password=" + self.p)
 	#regulation_id = "R120978"
 	path = "C:\\projects\\writeexcel\\output\\"
 	output_path = path + regulation_id + ".xlsx"

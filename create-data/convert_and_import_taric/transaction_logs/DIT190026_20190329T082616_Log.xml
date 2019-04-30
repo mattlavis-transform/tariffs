@@ -1,0 +1,2773 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<taric3TransactionsLogData xmlns="http://www.eurodyn.com/Tariff/services/Taric3TransactionsLog/request/v03">
+    <headerData>
+        <envelopeId>190026</envelopeId>
+        <fileName>DIT190026.xml</fileName>
+        <userName>TARIFFMS</userName>
+        <nationalFlag>T</nationalFlag>
+    </headerData>
+    <validTransactionData>
+        <validTransaction>
+            <transacationId>16529815</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529867</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529868</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529869</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529870</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529871</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529872</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529873</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529874</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529875</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529876</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529877</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529878</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529879</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529880</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529881</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529882</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529883</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529884</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529885</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529886</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529887</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529888</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529889</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529890</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529891</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529892</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529893</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529894</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529895</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529896</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529897</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529898</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529899</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529900</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529901</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529902</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529903</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529904</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529905</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529906</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529907</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529908</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529909</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529962</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529963</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529964</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529965</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529966</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529967</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529968</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529969</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529970</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529971</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529973</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529974</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529975</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529976</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529977</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529978</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529979</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529980</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529981</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529982</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529983</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529984</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529985</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529986</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529987</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529988</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529989</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529990</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529991</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529992</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529993</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529994</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529995</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529996</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529997</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529998</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16529999</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16530000</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16530001</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16530002</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16530003</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16530004</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16530005</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>16530006</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000000</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000001</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000002</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000003</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000004</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000005</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000006</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000007</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000008</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000009</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000010</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000011</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000012</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000013</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000014</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000015</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000016</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000017</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000018</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000019</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000020</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000021</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000022</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000023</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000024</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000025</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000026</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000027</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000028</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000029</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000030</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000031</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000032</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000033</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000034</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000035</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000036</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000037</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000038</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000039</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000040</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000041</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000042</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000043</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000044</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000045</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000046</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000047</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000048</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000049</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000050</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000051</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000052</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000053</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000054</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000055</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000056</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000057</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000058</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000059</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000060</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000061</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000062</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000063</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000064</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000065</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000066</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000067</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000068</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000069</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000070</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000071</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000072</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000073</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000074</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000075</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000076</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000077</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000078</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000079</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000080</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000081</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000082</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000083</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000084</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000085</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000086</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000087</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000088</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000089</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000090</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000091</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000092</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000093</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000094</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000095</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000096</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000097</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000098</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000099</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000100</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000101</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000102</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000103</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000104</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000105</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000106</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000107</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000108</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000109</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000110</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000111</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000112</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000113</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000114</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000115</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000116</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000117</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000118</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000119</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000120</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000121</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000122</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000123</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000124</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000125</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000126</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000127</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000128</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000129</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000130</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000131</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000132</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000133</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000134</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000135</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000136</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000137</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000138</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000139</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000140</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000141</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000142</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000143</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000144</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000145</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000146</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000147</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000148</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000149</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000150</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000151</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000152</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000153</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000154</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000155</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000156</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000157</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000158</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000159</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000160</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000161</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000162</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000163</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000164</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000165</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000166</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000167</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000168</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000169</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000170</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000171</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000172</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000173</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000174</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000175</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000176</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000177</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000178</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000179</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000180</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000181</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000182</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000183</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000184</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000185</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000186</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000187</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000188</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000189</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000190</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000191</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000192</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000193</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000194</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000195</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000196</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000197</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000198</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000199</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000200</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000201</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000202</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000203</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000204</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000205</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000206</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000207</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000208</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000209</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000210</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000211</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000212</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000213</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000214</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000215</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000216</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000217</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000218</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000219</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000220</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000221</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000222</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000223</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000224</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000225</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000226</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000227</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000228</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000229</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000230</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000231</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000232</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000233</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000234</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000235</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000236</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000237</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000238</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000239</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000240</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000241</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000242</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000243</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000244</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000245</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000246</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000247</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000248</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000249</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000250</transacationId>
+        </validTransaction>
+        <validTransaction>
+            <transacationId>90000251</transacationId>
+        </validTransaction>
+    </validTransactionData>
+    <invalidTransactionData>
+        <invalidTransaction>
+            <transacationId>90000256</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CET1</code>
+                    <description>The type of the certificate must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate type - [ Certificate type - Certificate type ID: 9 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000256</transactionId>
+                    <recordCode>110</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="validity.start.date" value="1970-01-01"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000256</transactionId>
+                    <recordCode>110</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="description" value="National Document"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000329</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 001 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000329</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="001"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000329</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="001"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000329</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="001"/>
+                    <recordInfo key="description" value="Declaration of preferential origin on an invoice or other commercial document"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000330</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 002 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000330</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="002"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000330</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="002"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000330</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="002"/>
+                    <recordInfo key="description" value="Movement certificate EUR-MED"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000331</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 003 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000331</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="003"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000331</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="003"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000331</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="003"/>
+                    <recordInfo key="description" value="EUR-MED declaration of preferential origin on an invoice or other commercial document"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000332</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 004 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000332</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="004"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000332</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="004"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000332</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="004"/>
+                    <recordInfo key="description" value="E.Certificates of origin for steel"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000333</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 100 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000333</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="100"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000333</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="100"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000333</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="100"/>
+                    <recordInfo key="description" value="Firearms: Open individual licence or Specific individual licence. Nuclear materials open individual licence or specific individual licence"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000334</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 101 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000334</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="101"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000334</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="101"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000334</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="101"/>
+                    <recordInfo key="description" value="Chemical weapons:Pre cursor chemicals"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000335</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 102 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000335</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="102"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000335</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="102"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000335</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="102"/>
+                    <recordInfo key="description" value="Standard individual Transhipment Licence, open general transhipment Licence"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000336</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 103 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000336</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="103"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000336</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="103"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000336</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="103"/>
+                    <recordInfo key="description" value="Detonation resistance test (DRT) HSE certificate of exemption"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000337</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 104 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000337</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="104"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000337</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="104"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000337</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="104"/>
+                    <recordInfo key="description" value="Standard individual Export Licence: military goods and dual use goods subject to UK export controls."/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000338</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 105 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000338</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="105"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000338</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="105"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000338</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="105"/>
+                    <recordInfo key="description" value="Standard individual Export Licence: radio active sources. Open individual Export Licence: radio active sources. Open general Export Licence: radio active sources"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000339</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 106 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000339</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="106"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000339</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="106"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000339</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="106"/>
+                    <recordInfo key="description" value="Authorisation for torture goods"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000340</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 107 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000340</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="107"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000340</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="107"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000340</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="107"/>
+                    <recordInfo key="description" value="UK Standard individual Export Licence (form C). Objects of cultural interest (Control) order. UK open general Licence. UK Open individual Licence"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000341</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 108 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000341</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="108"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000341</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="108"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000341</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="108"/>
+                    <recordInfo key="description" value="EU Specific Open Licence. EU General Open Licence"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000342</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 111 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000342</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="111"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000342</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="111"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000342</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="111"/>
+                    <recordInfo key="description" value="Home Office open individual licence for drugs precursor chemicals"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000343</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 112 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000343</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="112"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000343</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="112"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000343</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="112"/>
+                    <recordInfo key="description" value="Drugs Precursor Chemicals Individual Licence"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000344</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 113 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000344</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="113"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000344</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="113"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000344</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="113"/>
+                    <recordInfo key="description" value="Controlled Drugs Individual Licence"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000345</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 114 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000345</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="114"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000345</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="114"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000345</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="114"/>
+                    <recordInfo key="description" value="Controlled Drugs Open Individual Licence"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000346</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 115 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000346</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="115"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000346</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="115"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000346</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="115"/>
+                    <recordInfo key="description" value="Quarantine Release Certificate"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000347</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 116 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000347</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="116"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000347</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="116"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000347</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="116"/>
+                    <recordInfo key="description" value="Rabies Import Licence"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000348</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 118 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000348</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="118"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000348</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="118"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000348</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="118"/>
+                    <recordInfo key="description" value="Import permit for harp and hooded seal skins"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000349</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 119 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000349</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="119"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000349</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="119"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000349</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="119"/>
+                    <recordInfo key="description" value="Letter headed Licence for importation of hares"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000350</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 120 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000350</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="120"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000350</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="120"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000350</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="120"/>
+                    <recordInfo key="description" value="Importation of animal pathogens Licence under the Importation of Animal pathogens Order 1980 (IAPO)"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000351</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 200 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000351</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="200"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000351</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="200"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000351</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="200"/>
+                    <recordInfo key="description" value="Declaration of particulars relating to valuation methods 2,3,4a,4b, 5 and 6"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000352</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 300 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000352</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="300"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000352</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="300"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000352</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="300"/>
+                    <recordInfo key="description" value="(T2) Air Manifest. Air Simplified Procedure"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000353</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: 578 ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000353</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="578"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000353</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="578"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000353</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="578"/>
+                    <recordInfo key="description" value="Form C578 ï¿½ Undertaking to produce Form C105A within 14 days"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000354</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: AID ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000354</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="AID"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000354</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="AID"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000354</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="AID"/>
+                    <recordInfo key="description" value="Evidence required by CPC instructions for claiming relief from all charges except VAT"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000355</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: AIE ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000355</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="AIE"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000355</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="AIE"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000355</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="AIE"/>
+                    <recordInfo key="description" value="Evidence required by CPC instructions, relief from Excise duty"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000356</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: AIV ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000356</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="AIV"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000356</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="AIV"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000356</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="AIV"/>
+                    <recordInfo key="description" value="Evidence required by CPC instructions for claiming relief from VAT"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000357</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: CLM ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000357</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="CLM"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000357</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="CLM"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000357</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="CLM"/>
+                    <recordInfo key="description" value="RPA Claim Reference and claim type (box C9 on form C88 {cap})"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000358</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: DCR ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000358</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="DCR"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000358</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="DCR"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000358</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="DCR"/>
+                    <recordInfo key="description" value="Declaration of UCR and UCR part"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000359</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: DCS ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000359</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="DCS"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000359</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="DCS"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000359</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="DCS"/>
+                    <recordInfo key="description" value="Declaration of UCR and UCR part when recording multiple DUCR/Parts on supplementary declarations"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000360</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: ING ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000360</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="ING"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000360</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="ING"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000360</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="ING"/>
+                    <recordInfo key="description" value="RPA Ingredient details (Box C44 on form C88 {cap} CIE)"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000361</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: MCR ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000361</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="MCR"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000361</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="MCR"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000361</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="MCR"/>
+                    <recordInfo key="description" value="Master unique consignment reference"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000362</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: RCP ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000362</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="RCP"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000362</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="RCP"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000362</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="RCP"/>
+                    <recordInfo key="description" value="RPA recipe code (Box C44 on form C88 {cap})"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000363</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: SDC ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000363</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="SDC"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000363</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="SDC"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000363</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="SDC"/>
+                    <recordInfo key="description" value="RPA Supplementary Declaration (SD) codes and (where appropriate) associated percentages"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+        <invalidTransaction>
+            <transacationId>90000364</transacationId>
+            <violatedRuleData>
+                <violatedRule>
+                    <code>CE2</code>
+                    <description>The combination certificate type and certificate code must be unique.</description>
+                    <ruleInvalidEntityMessage>[ Certificate - [ Certificate - Certificate type ID: 9; [ Certificate - Certificate ID: WKS ]</ruleInvalidEntityMessage>
+                </violatedRule>
+            </violatedRuleData>
+            <invalidTransmissionData>
+                <invalidTransmission>
+                    <transactionId>90000364</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>00</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="WKS"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000364</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>05</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="WKS"/>
+                    <recordInfo key="validity.start.date" value="1971-12-31"/>
+                </invalidTransmission>
+                <invalidTransmission>
+                    <transactionId>90000364</transactionId>
+                    <recordCode>205</recordCode>
+                    <subRecordCode>10</subRecordCode>
+                    <operation>3</operation>
+                    <recordInfo key="certificate.description.period.sid" value="10001"/>
+                    <recordInfo key="language.id" value="EN"/>
+                    <recordInfo key="certificate.type.code" value="9"/>
+                    <recordInfo key="certificate.code" value="WKS"/>
+                    <recordInfo key="description" value="Box 22 has been completed with 'GB' and the goods have been invoiced in more than one currency, or a fixed rate of exchange, as stipulated in the contract of sale, is being used"/>
+                </invalidTransmission>
+            </invalidTransmissionData>
+        </invalidTransaction>
+    </invalidTransactionData>
+    <processSummary>
+        <operationStartDate>2019-03-28T10:25:01</operationStartDate>
+        <operationEndDate>2019-03-28T10:26:15</operationEndDate>
+        <totalTransmissions>803</totalTransmissions>
+        <totalTransactionsProcessed>377</totalTransactionsProcessed>
+        <totalErroneousTransactions>37</totalErroneousTransactions>
+    </processSummary>
+    <statisticalData>
+        <recordStatistics>
+            <recordCode>100</recordCode>
+            <subRecordCode>00</subRecordCode>
+            <addedRecords>3</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>3</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>100</recordCode>
+            <subRecordCode>05</subRecordCode>
+            <addedRecords>3</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>3</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>110</recordCode>
+            <subRecordCode>00</subRecordCode>
+            <addedRecords>1</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>1</erroneousRecords>
+            <totalRecords>1</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>110</recordCode>
+            <subRecordCode>05</subRecordCode>
+            <addedRecords>1</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>1</erroneousRecords>
+            <totalRecords>1</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>120</recordCode>
+            <subRecordCode>00</subRecordCode>
+            <addedRecords>3</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>3</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>120</recordCode>
+            <subRecordCode>05</subRecordCode>
+            <addedRecords>3</addedRecords>
+            <updatedRecords>4</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>7</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>205</recordCode>
+            <subRecordCode>00</subRecordCode>
+            <addedRecords>36</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>36</erroneousRecords>
+            <totalRecords>36</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>205</recordCode>
+            <subRecordCode>05</subRecordCode>
+            <addedRecords>36</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>36</erroneousRecords>
+            <totalRecords>36</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>205</recordCode>
+            <subRecordCode>10</subRecordCode>
+            <addedRecords>36</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>36</erroneousRecords>
+            <totalRecords>36</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>235</recordCode>
+            <subRecordCode>00</subRecordCode>
+            <addedRecords>19</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>19</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>235</recordCode>
+            <subRecordCode>05</subRecordCode>
+            <addedRecords>19</addedRecords>
+            <updatedRecords>14</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>33</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>250</recordCode>
+            <subRecordCode>05</subRecordCode>
+            <addedRecords>40</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>40</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>250</recordCode>
+            <subRecordCode>10</subRecordCode>
+            <addedRecords>40</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>40</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>285</recordCode>
+            <subRecordCode>00</subRecordCode>
+            <addedRecords>169</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>169</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>375</recordCode>
+            <subRecordCode>00</subRecordCode>
+            <addedRecords>166</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>166</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>375</recordCode>
+            <subRecordCode>05</subRecordCode>
+            <addedRecords>2</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>2</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>375</recordCode>
+            <subRecordCode>15</subRecordCode>
+            <addedRecords>3</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>3</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>430</recordCode>
+            <subRecordCode>00</subRecordCode>
+            <addedRecords>44</addedRecords>
+            <updatedRecords>43</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>87</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>430</recordCode>
+            <subRecordCode>05</subRecordCode>
+            <addedRecords>44</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>44</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>430</recordCode>
+            <subRecordCode>15</subRecordCode>
+            <addedRecords>30</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>30</totalRecords>
+        </recordStatistics>
+        <recordStatistics>
+            <recordCode>430</recordCode>
+            <subRecordCode>20</subRecordCode>
+            <addedRecords>44</addedRecords>
+            <updatedRecords>0</updatedRecords>
+            <deletedRecords>0</deletedRecords>
+            <erroneousRecords>0</erroneousRecords>
+            <totalRecords>44</totalRecords>
+        </recordStatistics>
+    </statisticalData>
+    <processResult>1</processResult>
+</taric3TransactionsLogData>

@@ -33,7 +33,7 @@ class goods_nomenclature(object):
 		for row in rows:
 			self.validity_end_date = row[0]
 			if self.validity_end_date != None:
-				print (row[0])
+				#print (row[0])
 				self.still_exists = False
 			else:
 				self.still_exists = True

@@ -4,14 +4,17 @@ import datetime
 import sys
 
 class quota_definition(object):
-	def __init__(self, quota_order_number_id, validity_start_date, validity_end_date, initial_volume,
-		measurement_unit_code, maximum_precision, critical_state, critical_threshold, monetary_unit_code,
-		measurement_unit_qualifier_code, blocking_period_start, blocking_period_end):
+	def __init__(self, quota_order_number_id, measure_type, quota_method, validity_start_date, validity_end_date, length, initial_volume,
+					measurement_unit_code, maximum_precision, critical_state, critical_threshold, monetary_unit_code,
+					measurement_unit_qualifier_code, blocking_period_start, blocking_period_end, origin_identifier):
 
 		# from parameters
 		self.quota_order_number_id  			= quota_order_number_id
+		self.measure_type  						= measure_type
+		self.quota_method  						= quota_method
 		self.validity_start_date    			= validity_start_date
 		self.validity_end_date      			= validity_end_date
+		self.length      						= length
 		self.volume      						= initial_volume
 		self.initial_volume      				= initial_volume
 		self.measurement_unit_code  			= measurement_unit_code
@@ -22,6 +25,7 @@ class quota_definition(object):
 		self.measurement_unit_qualifier_code	= measurement_unit_qualifier_code
 		self.blocking_period_start      		= blocking_period_start
 		self.blocking_period_end		      	= blocking_period_end
+		self.origin_identifier 					= origin_identifier
 
 		self.description = ""
 		self.quota_order_number_sid = 0

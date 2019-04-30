@@ -530,6 +530,7 @@ class document(object):
 						insert_duty_divider = False
 						row_string = g.app.sQuotaTableRowXML
 						row_string = row_string.replace("{COMMODITY_CODE}",   		comm.commodity_code_formatted)
+						#row_string = row_string.replace("{COMMODITY_CODE}",   		comm.commodity_code)
 
 						if (last_order_number == qon.quota_order_number_id):
 							row_string = row_string.replace("{QUOTA_ORDER_NUMBER}",		"")
@@ -701,6 +702,7 @@ class document(object):
 			if c.suppress == False:
 				row_string = g.app.sTableRowXML
 				row_string = row_string.replace("{COMMODITY}",   c.commodity_code_formatted)
+				#row_string = row_string.replace("{COMMODITY}",   c.commodity_code)
 				if c.duty_string[-18:] == "<w:r><w:br/></w:r>":
 					c.duty_string = c.duty_string[:-18]
 				row_string = row_string.replace("{DUTY}", c.duty_string)

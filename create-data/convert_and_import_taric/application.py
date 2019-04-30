@@ -110,7 +110,6 @@ class application(object):
 		self.clear()
 
 		self.BASE_DIR			= os.path.dirname(os.path.abspath(__file__))
-		self.SCHEMA_DIR			= os.path.join(self.BASE_DIR,	"xsd")
 		self.TEMPLATE_DIR		= os.path.join(self.BASE_DIR,	"templates")
 		self.XML_IN_DIR			= os.path.join(self.BASE_DIR,	"xml_in")
 		self.IMPORT_DIR			= os.path.join(self.BASE_DIR,	"import")
@@ -133,6 +132,9 @@ class application(object):
 		self.CONFIG_DIR			= os.path.join(self.CONFIG_DIR, "config")
 		self.CONFIG_FILE		= os.path.join(self.CONFIG_DIR, "config_common.json")
 		self.CONFIG_FILE_LOCAL	= os.path.join(self.CONFIG_DIR, "config_convert_and_import_taric_files.json")
+
+		self.SCHEMA_DIR				= os.path.join(self.BASE_DIR, "..")
+		self.SCHEMA_DIR				= os.path.join(self.SCHEMA_DIR, "xsd")
 
 		self.IMPORT_PROFILE_DIR	= os.path.join(self.CONFIG_DIR, "import_profile")
 
@@ -230,7 +232,7 @@ class application(object):
 		self.last_quota_blocking_period_sid					= self.larger(self.get_scalar("SELECT MAX(quota_blocking_period_sid) FROM quota_blocking_periods_oplog"), min_list['quota.blocking.periods']) + 1
 
 
-	def endDateEUMeasures(self, xml_file, sMerge1 = "", sMerge2 = "", sMerge3 = "", sMerge4 = "", sMerge5 = "", sMerge6 = "", sMerge7 = "", sMerge8 = "", sMerge9 = "", sMerge10 = ""):
+	def endDateEUMeasures(self, xml_file, sMerge1 = "", sMerge2 = "", sMerge3 = "", sMerge4 = "", sMerge5 = "", sMerge6 = "", sMerge7 = "", sMerge8 = "", sMerge9 = "", sMerge10 = "", sMerge11 = "", sMerge12 = "", sMerge13 = "", sMerge14 = "", sMerge15 = "", sMerge16 = "", sMerge17 = "", sMerge18 = "", sMerge19 = "", sMerge20 = ""):
 		self.convertFilename(xml_file)
 		self.d("Creating converted file for " + self.output_filename, False)
 
@@ -268,38 +270,46 @@ class application(object):
 					update_type_string	= action_list[int(update_type) - 1]
 					
 					# 27500	COMPLETE ABROGATION REGULATIONS - Delete everything
-					if record_code == "275" and sub_record_code == "00": # and update_type == "3":
-						#regulation_id		= self.getValue(oMessage, ".//oub:base.regulation.id")
-						#information_text	= self.getValue(oMessage, ".//oub:information.text")
-						#reg = regulation(regulation_id, information_text, "base")
-						#self.new_regulation_list.append(reg)
-						oTransaction.remove (oMessage)
-
-					# 28000	EXPLICIT ABROGATION REGULATIONS - Delete everything
-					if record_code == "280" and sub_record_code == "00": # and update_type == "3":
-						#regulation_id		= self.getValue(oMessage, ".//oub:base.regulation.id")
-						#information_text	= self.getValue(oMessage, ".//oub:information.text")
-						#reg = regulation(regulation_id, information_text, "base")
-						#self.new_regulation_list.append(reg)
-						oTransaction.remove (oMessage)
-
-					# 28500	BASE REGULATIONS - Now delete all of these
-					if record_code == "285" and sub_record_code == "00": # and update_type == "3":
+					# There are none of these anyway
+					if record_code == "275" and sub_record_code == "00" and update_type == "3":
 						regulation_id		= self.getValue(oMessage, ".//oub:base.regulation.id")
 						information_text	= self.getValue(oMessage, ".//oub:information.text")
 						reg = regulation(regulation_id, information_text, "base")
-						#self.new_regulation_list.append(reg)
+						self.new_regulation_list.append(reg)
 						oTransaction.remove (oMessage)
 
-					# 29000	MODIFICATION REGULATIONS - Now delete all of these
-					if record_code == "290" and sub_record_code == "00": # and update_type == "3":
+					# 28000	EXPLICIT ABROGATION REGULATIONS
+					if record_code == "280" and sub_record_code == "00" and update_type == "3":
+						regulation_id		= self.getValue(oMessage, ".//oub:explicit.abrogation.regulation.id")
+						information_text	= self.getValue(oMessage, ".//oub:information.text")
+						abrogation_date		= self.getDateValue(oMessage, ".//oub:abrogation.date")
+						if abrogation_date  > self.critical_date:
+							reg = regulation(regulation_id, information_text, "base")
+							self.new_regulation_list.append(reg)
+							oTransaction.remove (oMessage)
+
+					# 28500	BASE REGULATIONS - delete all of these if they start after Brexit
+					if record_code == "285" and sub_record_code == "00" and update_type == "3":
+						regulation_id		= self.getValue(oMessage, ".//oub:base.regulation.id")
+						information_text	= self.getValue(oMessage, ".//oub:information.text")
+						validity_start_date	= self.getDateValue(oMessage, ".//oub:validity.start.date")
+						if validity_start_date  > self.critical_date:
+							reg = regulation(regulation_id, information_text, "base")
+							self.new_regulation_list.append(reg)
+							oTransaction.remove (oMessage)
+
+					# 29000	MODIFICATION REGULATIONS - delete all of these if they start after Brexit
+					if record_code == "290" and sub_record_code == "00" and update_type == "3":
 						regulation_id		= self.getValue(oMessage, ".//oub:modification.regulation.id")
 						information_text	= self.getValue(oMessage, ".//oub:information.text")
-						reg = regulation(regulation_id, information_text, "modification")
-						#self.new_regulation_list.append(reg)
-						oTransaction.remove (oMessage)
+						validity_start_date	= self.getDateValue(oMessage, ".//oub:validity.start.date")
+						if validity_start_date  > self.critical_date:
+							reg = regulation(regulation_id, information_text, "modification")
+							self.new_regulation_list.append(reg)
+							oTransaction.remove (oMessage)
 
 					# 29500	PROROGATION REGULATIONS - Now delete all of these
+					# There are none of these left, so don't worry
 					if record_code == "295" and sub_record_code == "00": # and update_type == "3":
 						regulation_id		= self.getValue(oMessage, ".//oub:prorogation.regulation.id")
 						information_text	= self.getValue(oMessage, ".//oub:information.text")
@@ -308,6 +318,7 @@ class application(object):
 						oTransaction.remove (oMessage)
 
 					# 30000	FULL TEMPORARY STOP REGULATIONS - Now delete all of these
+					# There are none of these left, do don't worry
 					if record_code == "300" and sub_record_code == "00": # and update_type == "3":
 						#regulation_id		= self.getValue(oMessage, ".//oub:prorogation.regulation.id")
 						#information_text	= self.getValue(oMessage, ".//oub:information.text")
@@ -316,12 +327,15 @@ class application(object):
 						oTransaction.remove (oMessage)
 
 					# 30500	REGULATION REPLACEMENTS - Now delete all of these
+					# There is only one of these - we need to let it through, as the regulation
+					# in question starts before Brexit
 					if record_code == "305" and sub_record_code == "00": # and update_type == "3":
 						#regulation_id		= self.getValue(oMessage, ".//oub:prorogation.regulation.id")
 						#information_text	= self.getValue(oMessage, ".//oub:information.text")
 						#reg = regulation(regulation_id, information_text, "prorogation")
 						#self.new_regulation_list.append(reg)
-						oTransaction.remove (oMessage)
+						#oTransaction.remove (oMessage)
+						pass
 
 					# 36000	QUOTA ORDER NUMBER
 					# We will always be loading quota order numbers
@@ -354,6 +368,7 @@ class application(object):
 								pass
 								# Action - insert the end date on the quota order number origin if the end date is blank
 								# I do not believe this is necessary, hence commented out
+								# 28/03/19 agreed
 								"""
 								if validity_end_date == "":
 									self.register_update("360", "10", "update", update_type_string, sid, xml_file, "Insert an end date for a quota order number origin which was otherwise un-end dated for origin " + sid)
@@ -399,10 +414,11 @@ class application(object):
 
 					# 43000	MEASURE
 					measure_count = 0
+					"""
 					if record_code == "430": #  and sub_record_code == "00":
 						oTransaction.remove (oMessage)
-
 					"""
+
 					if record_code == "430" and sub_record_code == "00":
 						measure_count += 1
 						validity_start_date					= self.getDateValue(oMessage, ".//oub:validity.start.date")
@@ -445,7 +461,8 @@ class application(object):
 
 
 					# 43025	MEASURE PARTIAL TEMPORARY STOP
-					if record_code == "430" and sub_record_code == "25" # and update_type in ("1", "3"):
+					# There are none of these left, so don't worry
+					if record_code == "430" and sub_record_code == "25" and update_type in ("1", "3"):
 						oElement = self.getNode(oMessage, ".//oub:measure.partial.temporary.stop")
 						validity_start_date	= self.getDateValue(oMessage, ".//oub:validity.start.date")
 						validity_end_date	= self.getDateValue(oMessage, ".//oub:validity.end.date")
@@ -462,7 +479,6 @@ class application(object):
 							self.add_edit_node(oElement, "oub:validity.end.date",		 "oub:validity.start.date", datetime.strftime(self.critical_date, "%Y-%m-%d"))
 							self.add_edit_node(oElement, "oub:abrogation.regulation.id", "oub:partial.temporary.stop.regulation.officialjournal.page", self.abrogation_regulation_id)
 							self.register_update("430", "25", "delete", update_type_string, measure_sid, xml_file, "End date a partial temporary stop beginning before EU Exit with no end date measure.sid of " + measure_sid)
-					"""
 
 			########################################## PHASE 2 ########################################
 			# Second loop through the transactions = needed once the list variables have been populated
@@ -479,6 +495,7 @@ class application(object):
 						# Search for quota order number origin exclusions
 						# If found in the same file, where they match to a quota order number origin that has been removed,
 						# then remove the quota order number origin exclusion
+						# There are none of these left anyway, so it doesn't matter
 						if record_code == "360" and sub_record_code == "15" and update_type in ("1", "3"):
 							removed_node = False
 							quota_order_number_origin_sid = oMessage.find(".//oub:quota.order.number.origin.sid", self.namespaces).text
@@ -503,6 +520,7 @@ class application(object):
 						# Additional action needed - will need to look for any quota associations and events for any definitions
 						# that have been stripped, and get rid of them too
 						# 37005	QUOTA ASSOCIATION
+						# There are no associations left - yay
 						if record_code == "370" and sub_record_code == "05" and update_type in ("1", "3"):
 							main_quota_definition_sid	= self.getValue(oMessage, ".//oub:main.quota.definition.sid")
 							sub_quota_definition_sid	= self.getValue(oMessage, ".//oub:sub.quota.definition.sid")
@@ -544,6 +562,7 @@ class application(object):
 									break
 
 						# 37015	QUOTA SUSPENSION PERIOD
+						# There are none of these left, yay
 						if record_code == "370" and sub_record_code == "15" and update_type in ("1", "3"):
 							quota_suspension_period_sid	= self.getValue(oMessage, ".//oub:quota.suspension.period.sid")
 							quota_definition_sid		= self.getValue(oMessage, ".//oub:quota.definition.sid")
@@ -681,7 +700,6 @@ class application(object):
 										pass
 									break
 
-					"""
 					# 43005	MEASURE COMPONENT
 					if record_code == "430" and sub_record_code == "05":
 						if update_type in ("1", "3"):
@@ -786,12 +804,11 @@ class application(object):
 										oTransaction.remove (oMessage)
 										self.register_update("430", "25", "delete", update_type_string, measure_sid, xml_file, "Delete partial temporary stop for deleted measure with sid " + measure_sid)
 										break
-					"""
+
 			# The third pass through looks at measure condition components
 			# This removes meaure condition components that are created as a result of the measure conditions that have already been 
 			# removed in the 2nd pass.
 
-			"""
 			for oTransaction in root.findall('.//env:transaction', self.namespaces):
 				for oMessage in oTransaction.findall('.//env:app.message', self.namespaces):
 					record_code			= oMessage.find(".//oub:record.code", self.namespaces).text
@@ -826,7 +843,7 @@ class application(object):
 										self.register_update("430", "11", "delete", update_type_string, measure_condition_sid, xml_file, "Delete measure condition component for deleted measure condition with sid " + measure_condition_sid)
 										break
 
-			"""
+
 			# Loop through the transactions, looking for empty transactions, where the sub messages have all been deleted
 			# If found, then delete them all
 			self.d("Delete all empty transaction nodes")
@@ -911,6 +928,26 @@ class application(object):
 				filenames.append (os.path.join(self.MERGE_DIR, sMerge9))
 			if sMerge10 != "":
 				filenames.append (os.path.join(self.MERGE_DIR, sMerge10))
+			if sMerge11 != "":
+				filenames.append (os.path.join(self.MERGE_DIR, sMerge11))
+			if sMerge12 != "":
+				filenames.append (os.path.join(self.MERGE_DIR, sMerge12))
+			if sMerge13 != "":
+				filenames.append (os.path.join(self.MERGE_DIR, sMerge13))
+			if sMerge14 != "":
+				filenames.append (os.path.join(self.MERGE_DIR, sMerge14))
+			if sMerge15 != "":
+				filenames.append (os.path.join(self.MERGE_DIR, sMerge15))
+			if sMerge16 != "":
+				filenames.append (os.path.join(self.MERGE_DIR, sMerge16))
+			if sMerge17 != "":
+				filenames.append (os.path.join(self.MERGE_DIR, sMerge17))
+			if sMerge18 != "":
+				filenames.append (os.path.join(self.MERGE_DIR, sMerge18))
+			if sMerge19 != "":
+				filenames.append (os.path.join(self.MERGE_DIR, sMerge19))
+			if sMerge20 != "":
+				filenames.append (os.path.join(self.MERGE_DIR, sMerge20))
 		else:
 			if sMerge2 == "":
 				sys.exit()
@@ -973,10 +1010,16 @@ class application(object):
 		try:
 			if my_schema.is_valid(s):
 				self.d("The file validated successfully")
+				success = True
 			else:
 				self.d("The file did not validate")
+				success = False
 		except:
 			self.d("The file did not validate and crashed the validator")
+			success = False
+		
+		if success == False:
+			my_schema.validate(s)
 
 	def validateMetadata(self):
 		self.d("Validating the metadata XML file against the metadata schema")
@@ -1187,7 +1230,7 @@ class application(object):
 			_ = system('clear')
 
 	def connect(self):
-		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password" + self.p)
+		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password=" + self.p)
 
 	def doprint(self, s):
 		self.log_handle.write ("Message " + str(self.message_count) + " - " + s + "\n")

@@ -9,7 +9,7 @@ from commodity import commodity
 
 class application(object):
 	def __init__(self):
-		self.conn = psycopg2.connect("dbname=trade_tariff_181212b user=postgres password" + self.p)
+		self.conn = psycopg2.connect("dbname=trade_tariff_181212b user=postgres password=" + self.p)
 		self.BASE_DIR	= os.path.dirname(os.path.abspath(__file__))
 		self.CSV_DIR	= os.path.join(self.BASE_DIR, "csv")
 		self.MFN_DIR	= os.path.join(self.BASE_DIR, "mfn")

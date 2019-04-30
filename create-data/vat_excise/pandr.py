@@ -22,7 +22,6 @@ app.get_measure_conditions()
 app.get_measure_footnotes()
 app.get_measure_excluded_geographical_areas()
 
-
 app.write_footnote_types()                  # Only produce for facsimile UK P&R, and facsimile VAT and excise
 app.write_certificate_types()               # Always produce for P&R; not required for VAT - there are no certificate types for VAT & excise
 app.write_regulation_groups()

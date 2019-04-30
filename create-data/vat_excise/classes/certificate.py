@@ -16,8 +16,8 @@ class certificate(object):
 	def xml(self):
 		app = g.app
 
-		if app.retain == False and app.vat_excise == False:
-			return ""
+		#if app.retain == False and app.vat_excise == False:
+		#	return ""
 		
 		if app.retain == False:
 			self.certificate_description_period_sid = app.last_certificate_description_period_sid

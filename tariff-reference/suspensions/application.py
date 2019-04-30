@@ -117,7 +117,7 @@ class application(object):
 		self.country_name			= self.all_country_profiles[self.country_profile]["country_name"]
 
 	def connect(self):
-		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password" + self.p)
+		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password=" + self.p)
 
 	def shutDown(self):
 		self.conn.close()

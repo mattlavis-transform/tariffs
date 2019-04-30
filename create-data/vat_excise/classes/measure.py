@@ -45,7 +45,7 @@ class measure(object):
 				self.validity_end_date = datetime.strftime(self.validity_end_date, "%Y-%m-%dT%H:%M:%S")
 		
 		if not(g.app.retain) and not(g.app.vat_excise):
-			self.validity_start_date	= "2019-03-30"
+			self.validity_start_date	= g.app.critical_date_plus_one.strftime('%Y-%m-%d')
 			self.validity_end_date		= ""
 
 	def csv(self):

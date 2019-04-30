@@ -184,7 +184,8 @@ def getMeasurementUnit(s):
 	elif s == "KUR":
 		return "kg U"
 	elif s == "LPA":
-		return "l alc. 100%"
+		#return "l alc. 100%"
+		return "l (expressed in equivalent of pure alcohol)"
 	elif s == "LTR":
 		return "l"
 	elif s == "MIL":

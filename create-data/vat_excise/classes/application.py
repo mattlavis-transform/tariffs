@@ -38,7 +38,10 @@ class application(object):
 		self.CONFIG_DIR			= os.path.join(self.CONFIG_DIR, "config")
 		self.CONFIG_FILE		= os.path.join(self.CONFIG_DIR, "config_common.json")
 		self.CONFIG_FILE_LOCAL	= os.path.join(self.CONFIG_DIR, "config_vat_excise.json")
-		self.SCHEMA_DIR			= os.path.join(self.BASE_DIR,	"xsd")
+
+		self.SCHEMA_DIR			= os.path.join(self.BASE_DIR, 	"..")
+		self.SCHEMA_DIR			= os.path.join(self.SCHEMA_DIR, 	"xsd")
+
 		self.TEMPLATE_DIR		= os.path.join(self.BASE_DIR,	"templates")
 		self.SOURCE_DIR 		= os.path.join(self.BASE_DIR,	"source")
 		self.XML_OUT_DIR		= os.path.join(self.BASE_DIR,	"xml_out")
@@ -327,6 +330,8 @@ class application(object):
 		self.DBASE_STAGING			= my_dict['dbase']
 		self.p						= my_dict['p']
 		self.debug              	= fn.mbool2(my_dict['debug'])
+		self.critical_date			= datetime.strptime(my_dict['critical_date'], '%Y-%m-%d')
+		self.critical_date_plus_one	= self.critical_date + timedelta(days = 1)
 
 	def get_scalar(self, sql):
 		self.connect_staging()
@@ -662,6 +667,7 @@ class application(object):
 			self.measure_types_list.append(b)
 			
 	def get_footnotes(self):
+		#print ("in get_footnotes")
 		self.d("Getting footnotes")
 		if self.vat_excise == True:
 			if self.vat == True:
@@ -706,6 +712,7 @@ class application(object):
 			AND (m.validity_end_date > CURRENT_DATE OR m.validity_end_date IS NULL))
 			"""
 		#print ("footnotes", sql)
+		#sys.exit()
 		cur = self.conn.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
@@ -756,18 +763,21 @@ class application(object):
 		else: # Prohibitions and restrictions (P & R)
 			sql = """
 			SELECT measure_sid, m.measure_type_id, m.geographical_area_id, m.goods_nomenclature_item_id, m.additional_code_type_id, m.additional_code_id, m.ordernumber, m.reduction_indicator, m.validity_start_date, m.measure_generating_regulation_role, m.measure_generating_regulation_id, m.validity_end_date, m.justification_regulation_role, m.justification_regulation_id, m.stopped_flag, m.geographical_area_sid, m.goods_nomenclature_sid, m.additional_code_sid, m.export_refund_nomenclature_sid
-			FROM measures m, measure_types mt
+			FROM measures m, measure_types mt, goods_nomenclatures gn
 			WHERE m.national = True
 			AND m.measure_type_id = mt.measure_type_id
 			AND measure_type_series_id IN ('B')
 			AND m.validity_start_date < CURRENT_DATE
 			AND (m.validity_end_date > CURRENT_DATE OR m.validity_end_date IS NULL)
+			AND gn.goods_nomenclature_item_id = m.goods_nomenclature_item_id
+			AND gn.producline_suffix = '80'
 			AND m.goods_nomenclature_item_id != '2939799000'
 			AND m.goods_nomenclature_item_id != '0303894500'
 			AND NOT (m.goods_nomenclature_item_id = '0307810000' AND m.measure_type_id = 'AHC')
 			AND NOT (m.goods_nomenclature_item_id = '0307119000' AND m.measure_type_id = 'AHC')
 			AND NOT (m.goods_nomenclature_item_id = '0307119000' AND m.measure_type_id = 'AHC')
 			AND NOT (m.goods_nomenclature_item_id = '0307710000' AND m.measure_type_id = 'AHC')
+			AND gn.validity_end_date IS NULL
 			ORDER BY m.measure_type_id, m.goods_nomenclature_item_id, m.validity_start_date DESC
 			"""
 		#print ("measures", sql)
@@ -1108,10 +1118,10 @@ class application(object):
 
 
 	def connect(self):
-		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password" + self.p)
+		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password=" + self.p)
 
 	def connect_staging(self):
-		self.conn_staging = psycopg2.connect("dbname=" + self.DBASE_STAGING + " user=postgres password" + self.p)
+		self.conn_staging = psycopg2.connect("dbname=" + self.DBASE_STAGING + " user=postgres password=" + self.p)
 
 	def get_templates(self):
 		# Get template - envelope

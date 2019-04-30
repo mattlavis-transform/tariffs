@@ -5,7 +5,7 @@ import sys
 #from application import application
 import functions as f
 
-conn = psycopg2.connect("dbname=trade_tariff_181212b user=postgres password" + self.p)
+conn = psycopg2.connect("dbname=trade_tariff_181212b user=postgres password=" + self.p)
 
 sSQL = """SELECT DISTINCT regulation_id FROM ml.v5_2019 as m WHERE regulation_id > 'IYY9999' AND regulation_id != 'IYY9999' ORDER BY 1"""
 cur = conn.cursor()

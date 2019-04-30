@@ -30,7 +30,6 @@ class application(object):
 
 		self.BASE_DIR				= os.path.dirname(os.path.abspath(__file__))
 		self.BASE_DIR				= os.path.join(self.BASE_DIR,	"..")
-		self.SCHEMA_DIR				= os.path.join(self.BASE_DIR,	"xsd")
 		self.TEMPLATE_DIR			= os.path.join(self.BASE_DIR,	"templates")
 		self.CSV_DIR				= os.path.join(self.BASE_DIR,	"csv")
 		self.SOURCE_DIR 			= os.path.join(self.BASE_DIR,	"source")
@@ -51,6 +50,9 @@ class application(object):
 		self.CONFIG_FILE			= os.path.join(self.CONFIG_DIR, "config_common.json")
 		self.CONFIG_FILE_LOCAL		= os.path.join(self.CONFIG_DIR, "config_migrate_measures_and_quotas.json")
 
+		self.SCHEMA_DIR				= os.path.join(self.BASE_DIR, "..")
+		self.SCHEMA_DIR				= os.path.join(self.SCHEMA_DIR, "xsd")
+
 		self.SOURCE_DIR				= os.path.join(self.BASE_DIR, "source")
 		self.QUOTA_DIR				= os.path.join(self.SOURCE_DIR, "quotas")
 		self.BALANCE_FILE			= os.path.join(self.QUOTA_DIR, "quota_volume_master.csv")
@@ -69,8 +71,8 @@ class application(object):
 		self.quota_definition_list		= []
 		self.quota_order_number_list	= []
 
-		self.connect()
 		self.get_config()
+		self.connect()
 		self.get_minimum_sids()
 		self.get_templates()
 		self.message_id = 1
@@ -296,7 +298,7 @@ class application(object):
 			_ = system('clear')
 
 	def connect(self):
-		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password" + self.p)
+		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password=" + self.p)
 
 	def validate(self):
 		fname = self.output_filename
@@ -344,6 +346,8 @@ class application(object):
 		jsonFile.close()						# Close the JSON file
 
 		data["last_transaction_id"] = self.transaction_id
+		data["minimum_sids"]["measures"] = self.last_measure_sid
+		data["minimum_sids"]["measure.conditions"] = self.last_measure_condition_sid
 
 		jsonFile = open(self.CONFIG_FILE, "w+")
 		jsonFile.write(json.dumps(data, indent=4, sort_keys=True))
