@@ -28,12 +28,16 @@ class document(object):
 		self.wide_duty					= False
 
 		print ("Creating FTA document for " + g.app.country_name + "\n")
-		g.app.get_mfns_for_siv_products()
+		# g.app.get_mfns_for_siv_products()
 
 		self.document_xml = ""
 		
 
 	def check_for_quotas(self):
+		# The important thing to decide here is - does this agreement have quotas
+		# If so, then we will use the complete template with the quota table and intro text
+		# Otherwise, we will use the template without the quota table
+
 		sql = """SELECT DISTINCT ordernumber FROM ml.v5_2019 m WHERE m.measure_type_id IN ('143', '146')
 		AND m.geographical_area_id IN (""" + g.app.geo_ids + """) ORDER BY 1"""
 		cur = g.app.conn.cursor()
@@ -236,17 +240,7 @@ class document(object):
 		quota_order_number_list_flattened = quota_order_number_list_flattened.strip()
 		quota_order_number_list_flattened = quota_order_number_list_flattened.strip(",")
 
-		# Get the partial temporary stops, so that we can omit the suspended measures
-		"""
-		if quota_order_number_list_flattened != "":
-			g.app.getPartialTemporaryStops(quota_order_number_list_flattened)
-
-		for qon in self.quota_order_number_list:
-			for mpts in app.partial_temporary_stops:
-				if mpts.quota_order_number_id == qon.quota_order_number_id:
-					qon.suspended = True
-		"""
-
+		# Write the CSV file
 		filename = os.path.join(g.app.CSV_DIR, g.app.country_profile + "_quotas.csv")
 		file = codecs.open(filename, "w", "utf-8")
 		file.write(csv_text)
@@ -652,8 +646,6 @@ class document(object):
 		file.close() 
 
 
-
-
 	def write(self):
 		###########################################################################
 		## WRITE document.xml
@@ -670,10 +662,6 @@ class document(object):
 		self.FILENAME = g.app.country_profile + "_annex.docx"
 		self.word_filename = os.path.join(g.app.OUTPUT_DIR, self.FILENAME)
 		f.zipdir(self.word_filename)
-
-
-
-
 
 
 	def print_tariffs(self):
