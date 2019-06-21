@@ -50,11 +50,8 @@ class measure(object):
 		self.is_siv							= False
 
 
-
-
 	def xml_without_dates(self):
 		return "<w:r><w:t>" + self.combined_duty + "</w:t></w:r>"
-
 
 
 	def xml_with_dates(self):
@@ -69,7 +66,6 @@ class measure(object):
 		return (s)
 
 
-
 	def combine_duties(self):
 		self.combined_duty      = ""
 
@@ -78,10 +74,6 @@ class measure(object):
 		self.additional_code_list = []
 
 		for d in self.duty_list:
-			"""
-			if d.is_siv == True:
-				print ("I have found an SIV in combine_duties on product ", self.commodity_code)
-			"""
 			d.geographical_area_id = self.geographical_area_id
 			self.measure_type_list.append(d.measure_type_id)
 			self.measure_list.append(d.measure_sid)
@@ -97,34 +89,7 @@ class measure(object):
 		
 		for d in self.duty_list:
 			self.combined_duty += d.duty_string + " "
-		"""
-		if self.measure_count == 1 and self.measure_type_count == 1 and self.additional_code_count == 1:
-			for d in self.duty_list:
-				self.combined_duty += d.duty_string + " "
-			if d.is_siv == True:
-				print ("I have found an SIV")
-		else:
-			print ("I should never show", self.measure_count)
-			if self.measure_type_count > 1:
-				#print ("MTOMT")
-				#self.combined_duty = "More than one measure type"
-				if "105" in measure_type_list_unique:
-					for d in self.duty_list:
-						if d.measure_type_id == "105":
-							self.combined_duty += d.duty_string + " "
-			elif self.additional_code_count > 1:
-				#print ("ADD CODES")
-				#self.combined_duty = "More than one additional code"
-				if "500" in additional_code_list_unique:
-					for d in self.duty_list:
-						if d.additional_code_id == "500":
-							self.combined_duty += d.duty_string + " "
-				if "550" in additional_code_list_unique:
-					for d in self.duty_list:
-						if d.additional_code_id == "550":
-							self.combined_duty += d.duty_string + " "
-	
-		"""
+
 		self.combined_duty = self.combined_duty.replace("  ", " ")
 		self.combined_duty = self.combined_duty.strip()
 

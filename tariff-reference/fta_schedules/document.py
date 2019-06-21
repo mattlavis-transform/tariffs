@@ -28,7 +28,7 @@ class document(object):
 		self.wide_duty					= False
 
 		print ("Creating FTA document for " + g.app.country_name + "\n")
-		# g.app.get_mfns_for_siv_products()
+		# g.app.get_mfns_for_eps_products()
 
 		self.document_xml = ""
 		

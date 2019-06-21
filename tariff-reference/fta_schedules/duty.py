@@ -119,7 +119,7 @@ class duty(object):
 			else:
 				my_duty = 0
 				
-			if self.commodity_code in g.app.local_sivs_commodities_only and g.app.country_profile == "morocco":
+			if self.commodity_code in g.app.local_eps_commodities_only and g.app.country_profile == "morocco":
 				#self.duty_string = "Entry Price - 0% + Specific 100% Rebased price €" + "{0:1.2f}".format(my_duty) + " Rebased Price P"
 				self.duty_string = "Entry Price - " + "{0:1.2f}".format(my_duty) + "% + Specific 100%" + self.get_rebase() # " Rebased Price P"
 			else:
@@ -131,7 +131,7 @@ class duty(object):
 	def get_rebase(self):
 		out = ""
 		print (self.commodity_code)
-		for obj in g.app.local_sivs:
+		for obj in g.app.local_eps:
 			if obj.goods_nomenclature_item_id == self.commodity_code:
 				if self.validity_start_date == obj.validity_start_date:
 					print ("Found a match")

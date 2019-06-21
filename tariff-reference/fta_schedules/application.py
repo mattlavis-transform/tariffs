@@ -7,12 +7,11 @@ import json
 from datetime import datetime
 
 import functions as f
-from partial_temporary_stop import partial_temporary_stop
 from document import document
 from hierarchy import hierarchy
 from mfn_duty import mfn_duty
 from meursing_component import meursing_component
-from local_siv import local_siv
+from local_eps import local_eps
 
 class application(object):
 	def __init__(self):
@@ -28,7 +27,6 @@ class application(object):
 		self.generalrelief_list		= []
 		self.authoriseduse_list		= []
 		self.seasonal_list			= []
-		self.special_list			= []
 		self.section_chapter_list	= []
 		self.lstFootnotes			= []
 		self.lstFootnotesUnique		= []
@@ -39,8 +37,6 @@ class application(object):
 		self.seasonal_fta_duties	= []
 		self.meursing_components		= []
 		
-		self.partial_temporary_stops	= []
-
 		self.BASE_DIR			= os.path.dirname(os.path.abspath(__file__))
 		self.SOURCE_DIR			= os.path.join(self.BASE_DIR, "source")
 		self.CSV_DIR			= os.path.join(self.BASE_DIR, "csv")
@@ -59,8 +55,6 @@ class application(object):
 		self.BALANCE_DIR		= os.path.join(self.BALANCE_DIR, "source")
 		self.BALANCE_DIR		= os.path.join(self.BALANCE_DIR, "quotas")
 		self.BALANCE_FILE		= os.path.join(self.BALANCE_DIR, "quota_volume_master.csv")
-		#print (self.BALANCE_FILE)
-		#sys.exit()
 
 		# For the word model folders
 		self.MODEL_DIR			= os.path.join(self.BASE_DIR, "model")
@@ -72,20 +66,18 @@ class application(object):
 
 		self.get_config()
 
-		# Unless we are running a sequence, find the country code
-		if "sequence" in sys.argv[0]:
-			return
-		else:
-			try:
-				self.country_profile = sys.argv[1]
-			except:
-				print ("No country scope parameter found - ending")
-				sys.exit()
+		# Find the country code
+		try:
+			self.country_profile = sys.argv[1]
+		except:
+			print ("No country scope parameter found - ending")
+			sys.exit()
 		
 		self.get_country_list()
 		self.geo_ids = f.list_to_sql(self.country_codes)
 		self.get_meursing_components_for_erga_omnes()
-		self.get_mfns_for_siv_products()
+		self.get_mfns_for_eps_products()
+		self.get_local_eps()
 
 
 	def create_document(self):
@@ -94,34 +86,6 @@ class application(object):
 		my_document.check_for_quotas()
 		self.readTemplates(my_document.has_quotas)
 
-		# Get commodities where there is a local SIV
-		sql = """
-		SELECT DISTINCT m.goods_nomenclature_item_id, m.validity_start_date, mc.condition_duty_amount,
-		mc.condition_monetary_unit_code, mc.condition_measurement_unit_code
-		FROM ml.v5_2019 m, measure_conditions mc, measure_condition_components mcm
-		WHERE mc.measure_sid = m.measure_sid
-		AND mc.measure_condition_sid = mcm.measure_condition_sid
-		AND mc.condition_code = 'V' AND geographical_area_id IN (""" + self.geo_ids + """) AND mcm.duty_amount != 0
-		ORDER BY 1, 2 DESC, 3 DESC
-		"""
-
-		cur = self.conn.cursor()
-		cur.execute(sql)
-		rows = cur.fetchall()
-
-		self.local_sivs						= []
-		self.local_sivs_commodities_only	= []
-
-		for rw in rows:
-			goods_nomenclature_item_id		= rw[0]
-			validity_start_date				= rw[1]
-			condition_duty_amount			= rw[2]
-			condition_monetary_unit_code	= rw[3]
-			condition_measurement_unit_code	= rw[4]
-
-			obj = local_siv(goods_nomenclature_item_id, validity_start_date, condition_duty_amount, condition_monetary_unit_code, condition_measurement_unit_code)
-			self.local_sivs.append(obj)
-			self.local_sivs_commodities_only.append(goods_nomenclature_item_id)
 
 		# Create the measures table
 		my_document.get_duties("preferences")
@@ -138,7 +102,7 @@ class application(object):
 		# Personalise and write the document
 		my_document.create_core()
 		my_document.write()
-		print ("\nPROCESS COMPLETE - file written to " + my_document.FILENAME + "\n")
+		print ("\nPROCESS COMPLETE - File written to " + my_document.FILENAME + "\n")
 			
 	def clear(self): 
 		# for windows 
@@ -263,8 +227,39 @@ class application(object):
 		fCore = open(os.path.join(self.COMPONENT_DIR, "core.xml"), "r") 
 		self.sCoreXML = fCore.read()
 
+	def get_local_eps(self):
+		# Get all commodities where there is an Entry Price System-related measure
+		# This is a candidate for moving over to the EU database
+		sql = """
+		SELECT DISTINCT m.goods_nomenclature_item_id, m.validity_start_date, mc.condition_duty_amount,
+		mc.condition_monetary_unit_code, mc.condition_measurement_unit_code
+		FROM ml.v5_2019 m, measure_conditions mc, measure_condition_components mcm
+		WHERE mc.measure_sid = m.measure_sid
+		AND mc.measure_condition_sid = mcm.measure_condition_sid
+		AND mc.condition_code = 'V' AND geographical_area_id IN (""" + self.geo_ids + """) AND mcm.duty_amount != 0
+		ORDER BY 1, 2 DESC, 3 DESC
+		"""
+
+		cur = self.conn.cursor()
+		cur.execute(sql)
+		rows = cur.fetchall()
+
+		self.local_eps					= []
+		self.local_eps_commodities_only	= []
+
+		for rw in rows:
+			goods_nomenclature_item_id		= rw[0]
+			validity_start_date				= rw[1]
+			condition_duty_amount			= rw[2]
+			condition_monetary_unit_code	= rw[3]
+			condition_measurement_unit_code	= rw[4]
+
+			obj = local_eps(goods_nomenclature_item_id, validity_start_date, condition_duty_amount, condition_monetary_unit_code, condition_measurement_unit_code)
+			self.local_eps.append(obj)
+			self.local_eps_commodities_only.append(goods_nomenclature_item_id)
+
 			
-	def get_mfns_for_siv_products(self):
+	def get_mfns_for_eps_products(self):
 		# This function gets a list of all of the MFNs on the database that have Entry Price System
 		# threshold conditions attached to them; these will then be used later in the calculation of
 		# the rebase price for commodities that are subject to the Entry Price System.
