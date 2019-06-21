@@ -457,7 +457,7 @@ class application(object):
 			print (clause)
 
 		sql = """SELECT * FROM measures WHERE goods_nomenclature_item_id IN (""" + clause + """) AND measure_type_id IN ('103', '105')
-		AND validity_start_date < '2019_03_29' AND (validity_end_date >= '2019_03_29' OR validity_end_date IS NULL)"""
+		AND validity_start_date < '2019-10-31' AND (validity_end_date >= '2019-10-31' OR validity_end_date IS NULL)"""
 		#print (sql)
 
 	def list_to_where_clause_numeric(self, my_list):
@@ -468,10 +468,11 @@ class application(object):
 		s = s.strip(",")
 		return (s)
 
-	def get_mfs_for_siv_products(self):
+	def get_mfns_for_siv_products(self):
 		print (" - Getting MFNs for SIV products")
 
-		sql = """SELECT DISTINCT m.goods_nomenclature_item_id, mcc.duty_amount, m.validity_start_date, m.validity_end_date FROM measures m, measure_conditions mc, measure_condition_components mcc
+		sql = """SELECT DISTINCT m.goods_nomenclature_item_id, mcc.duty_amount, m.validity_start_date, m.validity_end_date
+		FROM measures m, measure_conditions mc, measure_condition_components mcc
 		WHERE mcc.measure_condition_sid = mc.measure_condition_sid
 		AND m.measure_sid = mc.measure_sid
 		AND mcc.duty_expression_id = '01'
@@ -538,9 +539,9 @@ class application(object):
 		cur.execute(sql)
 		row = cur.fetchone()
 		reduced_average = row[0]
-		#print (reduction_indicator)
 		try:
 			reduction = round((reduced_average / self.erga_omnes_average) * 100)
 		except:
 			reduction = 100
+		print (reduction_indicator, reduction, reduced_average, self.erga_omnes_average)
 		return (reduction)

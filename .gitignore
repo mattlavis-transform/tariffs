@@ -6,3 +6,4 @@ intellij/
 .idea/
 create-edifact.zip
 backup/
+.DS_Store

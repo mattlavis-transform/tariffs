@@ -25,6 +25,7 @@ class chapter(object):
 		print ("Creating " + app.sDocumentType + " for chapter " + self.chapter_string)
 
 		self.getChapterBasics()
+
 		self.getSection()
 		self.getChapterDescription()
 		self.getDuties()
@@ -41,13 +42,10 @@ class chapter(object):
 			return
 		###############################################################
 		# Get the table of classifications
-		# Relevant to just the schedule
+		# Relevant to just the schedule - reallyt? Are you sure about this???
 		sql = """SELECT DISTINCT goods_nomenclature_item_id, producline_suffix,
 		description, number_indents, leaf FROM ml.goods_nomenclature_export_brexit('""" + self.chapter_string + """%')
 		ORDER BY 1, 2"""
-
-		print (sql)
-		#sys.exit()
 
 		cur = app.conn.cursor()
 		cur.execute(sql)
@@ -74,8 +72,6 @@ class chapter(object):
 						my_commodity.assigned = True
 
 			my_commodity.combineDuties()
-
-		#sys.exit()
 
 
 		###########################################################################
@@ -130,11 +126,6 @@ class chapter(object):
 								#print ("Setting at a higher level", my_commodity.commodity_code, my_commodity.combined_duty)
 								# need to check this works - am passing up blanks at times
 
-		#sys.exit()
-		for my_commodity in commodity_list:
-			if my_commodity.commodity_code == "8708701000":
-				print (my_commodity.combined_duty)
-
 		###########################################################################
 		## Check for row suppression
 		###########################################################################
@@ -159,9 +150,9 @@ class chapter(object):
 
 
 		###########################################################################
-		## Finally, before we print, check if the duty should be suppresses
+		## Finally, before we print, check if the duty should be suppressed
 		## Hypothesis is that the duty will be suppressed if the children all
-		## have the same duties, but only if they are suppresses
+		## have the same duties, but only if they are suppressed
 		###########################################################################
 		for loop1 in range(0, commodity_count):
 			my_commodity = commodity_list[loop1]
@@ -179,8 +170,6 @@ class chapter(object):
 							break
 					if children_suppressed == False:
 						my_commodity.suppress_duty = True
-
-
 
 		###########################################################################
 		## Output the rows to buffer
@@ -283,11 +272,15 @@ class chapter(object):
 		sDocumentXML = re.sub("€ ([0-9]{1,3}),([0-9]{1,3})", "€ \\1.\\2", sDocumentXML, flags=re.MULTILINE)
 
 
-		basedir = os.path.dirname(os.path.abspath(__file__))
-		sFileName = basedir + "\\model\\word\\document.xml"
+		sFileName = os.path.join(app.MODEL_DIR, "word")
+		sFileName = os.path.join(sFileName, "document.xml")
+
+
 		file = codecs.open(sFileName, "w", "utf-8")
 		file.write(sDocumentXML)
-		file.close() 
+		file.close()
+
+		#print ("Creating document")
 
 		###########################################################################
 		## Finally, ZIP everything up

@@ -202,7 +202,7 @@ class commodity(object):
 					self.commodity_code_formatted = s[0:4] + ' ' + s[4:6] + ' ' + s[6:8] + ' ' + s[8:10]
 
 	def checkforSIV(self):
-		return
+		return # not clear why this is not run
 		if self.commodity_code in app.siv_list:
 			if self.product_line_suffix == "80":
 				self.combined_duty = "Formula"
@@ -300,16 +300,18 @@ class commodity(object):
 				self.special_list.append("generalrelief")
 
 	def checkforAuthorisedUse(self):
-		#print ("Checking for authorised use")
-		if self.commodity_code in app.authoriseduse_list:
-			if self.product_line_suffix == "80":
-				if len(self.special_list) == 0:
-					if len(self.notes_list) != 0:
-						print (self.notes_list)
-					self.notes_list.append("Code reserved for authorised use; the duty rate is specified under regulations made under section 19 of the Taxation (Cross-border Trade) Act 2018")
-					self.combined_duty = "AU"
-					self.assigned = True
-					self.special_list.append("authoriseduse")
+		if app.reference_authorised_relief_document != 0:
+			print ("Inserting authorised use data", app.reference_authorised_relief_document)
+			if self.commodity_code in app.authoriseduse_list:
+				if self.product_line_suffix == "80":
+					if len(self.special_list) == 0:
+						if len(self.notes_list) != 0:
+							print (self.notes_list)
+						self.notes_list.append("Code reserved for authorised use; the duty rate is specified under regulations made under section 19 of the Taxation (Cross-border Trade) Act 2018")
+						self.combined_duty = "AU"
+						self.assigned = True
+						self.special_list.append("authoriseduse")
+		
 
 	def checkforSeasonal(self):
 		#print ("Checking for seasonal commodities")

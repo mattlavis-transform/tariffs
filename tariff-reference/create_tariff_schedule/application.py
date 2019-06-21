@@ -31,6 +31,7 @@ class application(object):
 		self.BASE_DIR			= os.path.dirname(os.path.abspath(__file__))
 		self.SOURCE_DIR			= os.path.join(self.BASE_DIR, "source")
 		self.COMPONENT_DIR		= os.path.join(self.BASE_DIR, "xmlcomponents")
+		self.MODEL_DIR			= os.path.join(self.BASE_DIR, "model")
 		self.CONFIG_DIR			= os.path.join(self.BASE_DIR, "..")
 		self.CONFIG_DIR			= os.path.join(self.CONFIG_DIR, "..")
 		self.CONFIG_DIR			= os.path.join(self.CONFIG_DIR, "create-data")
@@ -92,13 +93,14 @@ class application(object):
 			my_dict = json.load(f)
 
 		self.DBASE	= my_dict['dbase']
-		self.DBASE = "tariff_staging"
-		self.p				= my_dict['p']
+		self.DBASE	= "tariff_staging"
+		self.p		= my_dict['p']
+		self.reference_authorised_relief_document = my_dict["reference_authorised_relief_document"]
 
 		# Get local config items
-		#with open(self.CONFIG_FILE_LOCAL, 'r') as f2:
-		#	my_dict = json.load(f2)
-		#self.import_file_list = my_dict["import_files"]
+		# with open(self.CONFIG_FILE_LOCAL, 'r') as f2:
+		# 	my_dict = json.load(f2)
+		
 
 		# Connect to the database
 		self.connect()
@@ -452,19 +454,17 @@ class application(object):
 
 
 	def getAuthorisedUse(self):
-		#print (self.DBASE)
-		#self.DBASE = "tariff_eu"
-		sql = """SELECT DISTINCT goods_nomenclature_item_id FROM ml.v5_2019 m WHERE measure_type_id = '105' ORDER BY 1;"""
-		#print (sql)
-		cur = self.conn.cursor()
-		cur.execute(sql)
-		rows = cur.fetchall()
-		for r in rows:
-			self.authoriseduse_list.append(r[0])
-		
-		# Also add in cucumbers: the data cannot find these, therefore manually added
-		self.authoriseduse_list.append("0707000510")
-		self.authoriseduse_list.append("0707000520")
+		if self.reference_authorised_relief_document != 0:
+			sql = """SELECT DISTINCT goods_nomenclature_item_id FROM ml.v5_2019 m WHERE measure_type_id = '105' ORDER BY 1;"""
+			cur = self.conn.cursor()
+			cur.execute(sql)
+			rows = cur.fetchall()
+			for r in rows:
+				self.authoriseduse_list.append(r[0])
+			
+			# Also add in cucumbers: the data cannot find these, therefore manually added
+			self.authoriseduse_list.append("0707000510")
+			self.authoriseduse_list.append("0707000520")
 		
 	def getSpecials(self):
 		sFileName = os.path.join(self.SOURCE_DIR, "special_notes.csv")

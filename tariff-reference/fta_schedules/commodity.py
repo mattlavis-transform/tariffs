@@ -14,7 +14,7 @@ class commodity(object):
 
 
 	def resolve_measures(self):
-		date_brexit = datetime.strptime("2019-03-30", "%Y-%m-%d") # '%m/%d/%y %H:%M:%S')
+		date_brexit = datetime.strptime("2019-10-31", "%Y-%m-%d") # '%m/%d/%y %H:%M:%S')
 		self.duty_string = ""
 
 		is_all_full_year	= True

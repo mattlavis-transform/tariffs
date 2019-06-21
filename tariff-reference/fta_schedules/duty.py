@@ -120,14 +120,13 @@ class duty(object):
 				my_duty = 0
 				
 			if self.commodity_code in g.app.local_sivs_commodities_only and g.app.country_profile == "morocco":
-				self.duty_string = "Entry Price - 0% + Specific 100% Rebased price €" + "{0:1.2f}".format(my_duty) + " Rebased Price P"
+				#self.duty_string = "Entry Price - 0% + Specific 100% Rebased price €" + "{0:1.2f}".format(my_duty) + " Rebased Price P"
 				self.duty_string = "Entry Price - " + "{0:1.2f}".format(my_duty) + "% + Specific 100%" + self.get_rebase() # " Rebased Price P"
 			else:
 				self.duty_string = "Entry Price - " + "{0:1.2f}".format(my_duty) + "% + Specific 100%"
 			#except:
 			#	print ("Error", self.commodity_code)
 			#	sys.exit()
-
 
 	def get_rebase(self):
 		out = ""

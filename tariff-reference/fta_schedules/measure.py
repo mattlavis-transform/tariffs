@@ -130,7 +130,7 @@ class measure(object):
 
 		# Now add in the Meursing components
 		if "ACR" in self.combined_duty or "SDR" in self.combined_duty or "FDR" in self.combined_duty:
-			#print ("Reduction indicator", self.reduction_indicator)
+			print ("Reduction indicator", self.reduction_indicator)
 			meursing_percentage = g.app.get_meursing_percentage(self.reduction_indicator, self.geographical_area_id)
 			self.combined_duty = "CAD - " + self.combined_duty + ") " + str(meursing_percentage) + "%"
 			self.combined_duty = self.combined_duty.replace(" + ", " + (", 1)
