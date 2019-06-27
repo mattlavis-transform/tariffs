@@ -38,9 +38,11 @@ class document(object):
 		# If so, then we will use the complete template with the quota table and intro text
 		# Otherwise, we will use the template without the quota table
 
+		# Derive the data from the UK database
+
 		sql = """SELECT DISTINCT ordernumber FROM ml.v5_2019 m WHERE m.measure_type_id IN ('143', '146')
 		AND m.geographical_area_id IN (""" + g.app.geo_ids + """) ORDER BY 1"""
-		cur = g.app.conn.cursor()
+		cur = g.app.conn_uk.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
 		if len(rows) == 0:
@@ -66,10 +68,15 @@ class document(object):
 		# Before getting the duties, get the measure component conditions
 		# These are used in adding in SIV components whenever the duty is no present
 		# due to the fact that there are SIVs applied via measure components
+
+		# This needs to be derived from the EU database, as the conditions will  ot exist in
+		# in the UK database
+
 		print (" - Getting measure conditions")
 		self.measure_condition_list = []
 		sql = """
-		SELECT DISTINCT mc.measure_sid, mcc.duty_amount FROM measure_conditions mc, measure_condition_components mcc, measures m
+		SELECT DISTINCT mc.measure_sid, mcc.duty_amount
+		FROM measure_conditions mc, measure_condition_components mcc, measures m
 		WHERE mc.measure_condition_sid = mcc.measure_condition_sid
 		AND m.measure_sid = mc.measure_sid AND condition_code = 'V' AND mcc.duty_expression_id = '01'
 		AND m.measure_type_id IN (""" + measure_type_list + """)
@@ -77,8 +84,8 @@ class document(object):
 		AND m.validity_start_date < '2019-12-31' AND m.validity_end_date >= '2018-01-01'
 		ORDER BY measure_sid;
 		"""
-		# print (sql)
-		cur = g.app.conn.cursor()
+
+		cur = g.app.conn_eu.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
 		for row in rows:
@@ -88,23 +95,25 @@ class document(object):
 			self.measure_condition_list.append (mc)
 
 		# Now get the country exclusions
+		# This should be taken from the UK database - not sure if there will be any
+		# relevant exclusions in reality
 		exclusion_list = []
 		if g.app.exclusion_check != "":
 			sql = """SELECT m.measure_sid FROM measure_excluded_geographical_areas mega, ml.v5_2019 m
 			WHERE m.measure_sid = mega.measure_sid
 			AND excluded_geographical_area = '""" + g.app.exclusion_check + """'
 			ORDER BY validity_start_date DESC"""
-			cur = g.app.conn.cursor()
+			cur = g.app.conn_uk.cursor()
 			cur.execute(sql)
 			rows = cur.fetchall()
 			for row in rows:
 				measure_sid = row[0]
 				exclusion_list.append (measure_sid)
-		
 
-		
-		# Get the duties (i.e the measure components)
-		# Add this back in for Switzerland ( OR m.measure_sid = 3231905)
+		# Get the duties (i.e. the measure components) - these will all be used unless they
+		# are excluded due to geo. exclusion
+
+		# This data must come from the UK database
 		sql = """
 		SELECT DISTINCT m.goods_nomenclature_item_id, m.additional_code_type_id, m.additional_code_id,
 		m.measure_type_id, mc.duty_expression_id, mc.duty_amount, mc.monetary_unit_code,
@@ -118,11 +127,12 @@ class document(object):
 		) ORDER BY m.goods_nomenclature_item_id, validity_start_date DESC, mc.duty_expression_id
 		"""
 
-		cur = g.app.conn.cursor()
+		cur = g.app.conn_uk.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
 
-		# Do a pass through the duties table and create a full duty expression - duty is a mnemonic for measure component
+		# Do a pass through the duties table and create a full duty expression
+		# Duty is a mnemonic for measure component
 		temp_commodity_list				= []
 		temp_quota_order_number_list	= []
 		temp_measure_list				= []
@@ -154,22 +164,22 @@ class document(object):
 				# there is a "V" code attached to the measure
 				#if ((duty_amount is None) and (duty_expression_id == "01")):
 				if duty_amount is None and duty_expression_id is None:
-					is_siv = True
+					is_eps = True
 					for mc in self.measure_condition_list:
-						#print (mc.measure_sid, measure_sid)
 						if mc.measure_sid == measure_sid:
 							duty_expression_id = "01"
 							duty_amount = mc.condition_duty_amount
-							#break
 				else:
-					is_siv = False
+					is_eps = False
 
-
+				# Create a new duty object (i.e. measure component)
 				obj_duty = duty(commodity_code, additional_code_type_id, additional_code_id, measure_type_id, duty_expression_id,
 				duty_amount, monetary_unit_code, measurement_unit_code, measurement_unit_qualifier_code,
-				measure_sid, quota_order_number_id, geographical_area_id, validity_start_date, validity_end_date, reduction_indicator, is_siv)
+				measure_sid, quota_order_number_id, geographical_area_id, validity_start_date, validity_end_date, reduction_indicator, is_eps)
+				# Add the object to the duty_list
 				self.duty_list.append(obj_duty)
 
+				
 				if measure_sid not in temp_measure_list:
 					obj_measure = measure(measure_sid, commodity_code, quota_order_number_id, validity_start_date, validity_end_date, geographical_area_id, reduction_indicator)
 					self.measure_list.append(obj_measure)
@@ -185,9 +195,7 @@ class document(object):
 						obj_quota_order_number = quota_order_number(quota_order_number_id)
 						self.quota_order_number_list.append(obj_quota_order_number)
 						temp_quota_order_number_list.append(quota_order_number_id)
-
-				#temp_commodity_list.append(commodity_code)
-				#temp_quota_order_number_list.append(commodityquota_order_number_id_code)
+				
 
 		# Loop through the measures and assign duties to them
 		for m in self.measure_list:
@@ -205,6 +213,7 @@ class document(object):
 		# Combine duties into a string
 		for m in self.measure_list:
 			m.combine_duties()
+
 		# Finally, form the measures into a consolidated string
 		for c in self.commodity_list:
 			c.resolve_measures()
@@ -213,10 +222,11 @@ class document(object):
 	def get_quota_order_numbers(self):
 		print (" - Getting unique quota order numbers")
 		# Get unique order numbers
+		# This data must come from the UK database
 		sql = """SELECT DISTINCT ordernumber FROM ml.v5_2019 m WHERE m.measure_type_id IN ('143', '146')
 		AND m.geographical_area_id IN (""" + g.app.geo_ids + """) ORDER BY 1"""
 
-		cur = g.app.conn.cursor()
+		cur = g.app.conn_uk.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
 		if len(rows) == 0:
@@ -248,16 +258,16 @@ class document(object):
 
 
 	def get_quota_measures(self):
-		#print (len(self.commodity_list))
 		# Get the measures - in order to get the commodity codes and the duties
 		# Just get the commodities and add to an array
+		# This must come from the UK database
 		sql = """
 		SELECT DISTINCT measure_sid, goods_nomenclature_item_id, ordernumber, validity_start_date,
 		validity_end_date, geographical_area_id, reduction_indicator FROM ml.v5_2019 m
 		WHERE measure_type_id IN ('143', '146') AND geographical_area_id IN (""" + g.app.geo_ids + """)
 		ORDER BY goods_nomenclature_item_id, measure_sid
 		"""
-		cur = g.app.conn.cursor()
+		cur = g.app.conn_uk.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
 		if len(rows) == 0:
@@ -356,11 +366,12 @@ class document(object):
 		# Now get the quota definitions - this just gets quota definitions for FCFS quota
 		# Any licensed quotas with first three characters "094" needs there to be an additional step to get the balances
 		# from a CSV file - as per function "get_quota_balances_from_csv" above
+		# This must come from the UK database
 
 		my_order_numbers = f.list_to_sql(self.q)
 		sql = """SELECT * FROM quota_definitions WHERE quota_order_number_id IN (""" + my_order_numbers + """)
 		AND validity_start_date >= '2018-01-01' ORDER BY quota_order_number_id, validity_start_date DESC"""
-		cur = g.app.conn.cursor()
+		cur = g.app.conn_uk.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
 		self.quota_definition_list = []
@@ -449,8 +460,8 @@ class document(object):
 						#qon.validity_end_date_2019 = qb.validity_end_date_2019
 						break
 
-	def print_quotas(self):
-		print (" - Getting quotas")
+	def write_quotas(self):
+		print (" - Writing quota table")
 		if self.has_quotas == False:
 			self.document_xml = self.document_xml.replace("{QUOTA TABLE GOES HERE}", "")
 			return
@@ -664,22 +675,8 @@ class document(object):
 		f.zipdir(self.word_filename)
 
 
-	def print_tariffs(self):
-		print (" - Getting preferential duties")
-
-
-		# Run a check to ensure that there are no 10 digit codes being added to the extract
-		# where the 8 digit code is also being displayed, and the duties are the same
-		# I may need this again
-		"""
-		for my_measure in measure_list:
-			if my_measure.commodity_code[8:] != "00":
-				my_duty = my_measure.combined_duty
-				for sub_commodity in measure_list:
-					if sub_commodity.commodity_code == my_measure.commodity_code[0:8] + "00":
-						if sub_commodity.combined_duty == my_duty:
-							my_measure.suppress_row = True
-		"""
+	def write_tariff_preferences(self):
+		print (" - Writing preferential duties")
 
 		###########################################################################
 		## Output the rows to buffer

@@ -225,67 +225,6 @@ class application(object):
 		for r in rows:
 			self.vessels_list.append(r[0])
 
-	def getCivilAir(self):
-		sql = """SELECT DISTINCT gn.goods_nomenclature_item_id
-		FROM goods_nomenclature_descriptions gnd, goods_nomenclatures gn
-		WHERE gn.goods_nomenclature_item_id = gnd.goods_nomenclature_item_id
-		AND (LOWER(description) LIKE '%civil air%' OR LOWER(description) LIKE '%civil use%')
-		AND gn.validity_start_date <= '2019/01/01'
-		AND (gn.validity_end_date >= '2019/03/29' OR gn.validity_end_date IS NULL) ORDER BY 1"""
-		cur = self.conn.cursor()
-		cur.execute(sql)
-		rows = cur.fetchall()
-		for r in rows:
-			self.civilair_list.append(r[0])
-
-		"""
-		sFileName = os.path.join(self.SOURCE_DIR, "civilair_commodities.csv")
-		with open(sFileName, "r") as f:
-			reader = csv.reader(f)
-			temp = list(reader)
-		for i in temp:
-			self.civilair_list.append(i[0])
-		"""
-
-	def getAirworthiness(self):
-		sql = """SELECT DISTINCT goods_nomenclature_item_id FROM ml.v5_brexit_day m WHERE measure_type_id = '119';"""
-		cur = self.conn.cursor()
-		cur.execute(sql)
-		rows = cur.fetchall()
-		for r in rows:
-			self.airworthiness_list.append(r[0])
-
-	def getAircraft(self):
-		sql = """SELECT DISTINCT goods_nomenclature_item_id FROM ml.v5_brexit_day m WHERE measure_type_id = '115' AND regulation_id = 'R953050' ORDER BY 1;"""
-		cur = self.conn.cursor()
-		cur.execute(sql)
-		rows = cur.fetchall()
-		for r in rows:
-			self.aircraft_list.append(r[0])
-
-	def getPharmaceuticals(self):
-		sql = """SELECT DISTINCT goods_nomenclature_item_id FROM ml.v5_brexit_day m WHERE additional_code_type_id = '2' AND additional_code_id = '500' ORDER BY 1;"""
-		cur = self.conn.cursor()
-		cur.execute(sql)
-		rows = cur.fetchall()
-		for r in rows:
-			self.pharmaceuticals_list.append(r[0])
-
-	def getITAProducts(self):
-		sFileName = os.path.join(self.SOURCE_DIR, "ita_commodities.csv")
-		with open(sFileName, "r") as f:
-			reader = csv.reader(f)
-			temp = list(reader)
-		for i in temp:
-			self.ita_list.append(i[0])
-
-	def getGeneralRelief(self):
-		sFileName = os.path.join(self.SOURCE_DIR, "generalrelief_commodities.csv")
-		with open(sFileName, "r") as f:
-			reader = csv.reader(f)
-			temp = list(reader)
-		for i in temp:
-			self.generalrelief_list.append(i[0])
 
 	def get_suspension_specials(self):
 		self.suspension_specials = []

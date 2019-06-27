@@ -19,12 +19,10 @@ wkbk = functions.wkbk
 wkbk.create_workbook(app)
 wkbk.write_headers()
 
-app.getSectionsChapters()
 app.readTemplates()
 
 if app.sDocumentType == "schedule":
 	app.getSivs()
-	app.getITAProducts()
 	app.getAuthorisedUse()
 	app.getSeasonal()
 	app.getSpecials()

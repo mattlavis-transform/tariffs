@@ -36,7 +36,7 @@ class base_regulation(object):
 
 			out = out.replace("{BASE_REGULATION_ROLE}",     "1")
 			out = out.replace("{BASE_REGULATION_ID}",       self.base_regulation_id)
-			out = out.replace("{PUBLISHED_DATE}",           "2019-01-01")
+			out = out.replace("{PUBLISHED_DATE}",           self.validity_start_date)
 			out = out.replace("{OFFICIALJOURNAL_NUMBER}",   "1")
 			out = out.replace("{OFFICIALJOURNAL_PAGE}",     "1")
 			out = out.replace("{VALIDITY_START_DATE}",      self.validity_start_date)

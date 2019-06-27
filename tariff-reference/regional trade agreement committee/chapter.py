@@ -168,8 +168,10 @@ class chapter(object):
 		for loop1 in range(0, commodity_count):
 			my_commodity = self.commodity_list[loop1]
 			if my_commodity.leaf != 1:
+				my_commodity.suppress_row = True
 				my_commodity.suppress_duty = True
 			else:
+				my_commodity.suppress_row = False
 				my_commodity.suppress_duty = False
 
 		###########################################################################
@@ -182,7 +184,7 @@ class chapter(object):
 				my_commodity.combine_notes()
 				row_string = app.sTableRowXML
 				row_string = row_string.replace("{COMMODITY}",   	my_commodity.commodity_code_formatted)
-				row_string = row_string.replace("{DESCRIPTION}",	my_commodity.description 	)
+				row_string = row_string.replace("{DESCRIPTION}",	my_commodity.description)
 				row_string = row_string.replace("{INDENT}",      	my_commodity.indent_string)
 				if my_commodity.suppress_duty == True:
 					row_string = row_string.replace("{DUTY}",       f.surround(""))
@@ -195,8 +197,9 @@ class chapter(object):
 			
 				# Write to excel
 				f.wkbk.current_row += 1
-				f.wkbk.write('A', my_commodity.commodity_code_formatted, f.wkbk.nowrap)
-				f.wkbk.write('B', my_commodity.description_excel, f.wkbk.indent_formats[my_commodity.indents])
+				f.wkbk.write('A', my_commodity.commodity_code, f.wkbk.nowrap)
+				#f.wkbk.write('B', my_commodity.description_excel, f.wkbk.indent_formats[my_commodity.indents])
+				f.wkbk.write('B', my_commodity.description_excel, f.wkbk.wrap)
 				if my_commodity.suppress_duty == False:
 					f.wkbk.write('C', my_commodity.combined_duty, f.wkbk.nowrap)
 					f.wkbk.write('D', my_commodity.combined_local_duty, f.wkbk.nowrap)

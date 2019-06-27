@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<env:envelope xmlns="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" id="5000">
+  <env:transaction id="102632">
+    <env:app.message id="1">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>102632</oub:transaction.id>
+          <oub:record.code>120</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>1</oub:record.sequence.number>
+          <oub:update.type>1</oub:update.type>
+          <oub:additional.code.type.description>
+            <oub:additional.code.type.id>8</oub:additional.code.type.id>
+            <oub:language.id>EN</oub:language.id>
+            <oub:description>Anti-dumping/countervailing</oub:description>
+          </oub:additional.code.type.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="102633">
+    <env:app.message id="2">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>102633</oub:transaction.id>
+          <oub:record.code>120</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>2</oub:record.sequence.number>
+          <oub:update.type>1</oub:update.type>
+          <oub:additional.code.type.description>
+            <oub:additional.code.type.id>A</oub:additional.code.type.id>
+            <oub:language.id>EN</oub:language.id>
+            <oub:description>Anti-dumping/countervailing</oub:description>
+          </oub:additional.code.type.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="102634">
+    <env:app.message id="3">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>102634</oub:transaction.id>
+          <oub:record.code>120</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>3</oub:record.sequence.number>
+          <oub:update.type>1</oub:update.type>
+          <oub:additional.code.type.description>
+            <oub:additional.code.type.id>B</oub:additional.code.type.id>
+            <oub:language.id>EN</oub:language.id>
+            <oub:description>Anti-dumping/countervailing</oub:description>
+          </oub:additional.code.type.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="102635">
+    <env:app.message id="4">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>102635</oub:transaction.id>
+          <oub:record.code>120</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>4</oub:record.sequence.number>
+          <oub:update.type>1</oub:update.type>
+          <oub:additional.code.type.description>
+            <oub:additional.code.type.id>C</oub:additional.code.type.id>
+            <oub:language.id>EN</oub:language.id>
+            <oub:description>Anti-dumping/countervailing</oub:description>
+          </oub:additional.code.type.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="102636">
+    <env:app.message id="5">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>102636</oub:transaction.id>
+          <oub:record.code>120</oub:record.code>
+          <oub:subrecord.code>00</oub:subrecord.code>
+          <oub:record.sequence.number>5</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:additional.code.type>
+            <oub:additional.code.type.id>E</oub:additional.code.type.id>
+            <oub:validity.start.date>2019-10-31</oub:validity.start.date>
+            <oub:application.code>1</oub:application.code>
+          </oub:additional.code.type>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="6">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>102636</oub:transaction.id>
+          <oub:record.code>120</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>6</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:additional.code.type.description>
+            <oub:additional.code.type.id>E</oub:additional.code.type.id>
+            <oub:language.id>EN</oub:language.id>
+            <oub:description>Anti-dumping / anti-subsidy</oub:description>
+          </oub:additional.code.type.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="102637">
+    <env:app.message id="7">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>102637</oub:transaction.id>
+          <oub:record.code>120</oub:record.code>
+          <oub:subrecord.code>00</oub:subrecord.code>
+          <oub:record.sequence.number>7</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:additional.code.type>
+            <oub:additional.code.type.id>F</oub:additional.code.type.id>
+            <oub:validity.start.date>2019-10-31</oub:validity.start.date>
+            <oub:application.code>1</oub:application.code>
+          </oub:additional.code.type>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="8">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>102637</oub:transaction.id>
+          <oub:record.code>120</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>8</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:additional.code.type.description>
+            <oub:additional.code.type.id>F</oub:additional.code.type.id>
+            <oub:language.id>EN</oub:language.id>
+            <oub:description>Anti-dumping / anti-subsidy</oub:description>
+          </oub:additional.code.type.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+  <env:transaction id="102638">
+    <env:app.message id="9">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>102638</oub:transaction.id>
+          <oub:record.code>120</oub:record.code>
+          <oub:subrecord.code>00</oub:subrecord.code>
+          <oub:record.sequence.number>9</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:additional.code.type>
+            <oub:additional.code.type.id>G</oub:additional.code.type.id>
+            <oub:validity.start.date>2019-10-31</oub:validity.start.date>
+            <oub:application.code>1</oub:application.code>
+          </oub:additional.code.type>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+    <env:app.message id="10">
+      <oub:transmission xmlns:oub="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0">
+        <oub:record>
+          <oub:transaction.id>102638</oub:transaction.id>
+          <oub:record.code>120</oub:record.code>
+          <oub:subrecord.code>05</oub:subrecord.code>
+          <oub:record.sequence.number>10</oub:record.sequence.number>
+          <oub:update.type>3</oub:update.type>
+          <oub:additional.code.type.description>
+            <oub:additional.code.type.id>G</oub:additional.code.type.id>
+            <oub:language.id>EN</oub:language.id>
+            <oub:description>Anti-dumping / anti-subsidy</oub:description>
+          </oub:additional.code.type.description>
+        </oub:record>
+      </oub:transmission>
+    </env:app.message>
+  </env:transaction>
+</env:envelope>

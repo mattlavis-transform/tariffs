@@ -193,6 +193,8 @@ class application(object):
 			self.DBASE = "tariff_cds"
 		elif my_script == "import_eu.py":
 			self.DBASE = "tariff_eu"
+		elif my_script == "import_uk.py":
+			self.DBASE = "tariff_uk"
 
 
 		# Get local config items

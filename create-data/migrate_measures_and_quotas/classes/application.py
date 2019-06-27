@@ -1171,6 +1171,7 @@ class application(object):
 		for obj in self.quota_blocking_period_list:
 			for i in range(start, len(self.quota_definition_list)):
 				q = self.quota_definition_list[i]
+				q.quota_blocking_period_list = []
 				if obj.quota_definition_sid == q.quota_definition_sid:
 					q.quota_blocking_period_list.append(obj)
 					start = i
@@ -1216,7 +1217,7 @@ class application(object):
 		#if self.country_limit != "":
 		#	country_clause = " AND geographical_area_id = '" + self.country_limit + "' "
 
-		print ("function get_measures", self.scope)
+		# print ("function get_measures", self.scope)
 		#sys.exit()
 
 		

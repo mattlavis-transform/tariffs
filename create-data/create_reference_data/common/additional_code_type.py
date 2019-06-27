@@ -25,7 +25,7 @@ class additional_code_type(object):
 		self.description = fn.cleanse(self.description)
 		out = out.replace("{ADDITIONAL_CODE_TYPE_ID}", self.additional_code_type_id)
 		out = out.replace("{DESCRIPTION}", self.description)
-		out = out.replace("{VALIDITY_START_DATE}", "2019-03-29")
+		out = out.replace("{VALIDITY_START_DATE}", app.critical_date)
 		out = out.replace("{LANGUAGE_ID}", "EN")
 		out = out.replace("{APPLICATION_CODE}", self.application_code)
 		out = out.replace("{TRANSACTION_ID}", str(app.transaction_id))

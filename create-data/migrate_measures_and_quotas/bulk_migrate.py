@@ -26,13 +26,13 @@ with open(migrations_file) as csv_file:
 				regulation_to = row[1]
 			except:
 				regulation_to = ""
-			
+
 			print (regulation_from, regulation_to)
-			
+
 			if len(regulation_from) == 7:
 				if regulation_to != "":
-					os.system("py migrate_measures.py r r " + regulation_from + " " + regulation_to)
+					os.system("python3 migrate_measures.py r r " + regulation_from + " " + regulation_to)
 				else:
-					os.system("py migrate_measures.py r t " + regulation_from)
+					os.system("python3 migrate_measures.py r t " + regulation_from)
 
 sys.exit()

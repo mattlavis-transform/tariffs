@@ -11,7 +11,7 @@ productline_suffix = "80"
 
 sql = """SELECT goods_nomenclature_item_id, producline_suffix as productline_suffix, number_indents,
 description FROM ml.goods_nomenclature_export('0805102200') WHERE producline_suffix = '80';"""
-cur = app.conn.cursor()
+cur = app.conn_uk.cursor()
 cur.execute(sql)
 rows = cur.fetchall()
 for row in rows:
@@ -52,7 +52,7 @@ AND validity_start_date < '2019_03_29' AND (validity_end_date >= '2019_03_29' OR
 print (sql)
 sys.exit()
 """
-cur = app.conn.cursor()
+cur = app.conn_uk.cursor()
 cur.execute(sql)
 rows = cur.fetchall()
 for row in rows:

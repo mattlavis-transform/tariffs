@@ -16,26 +16,19 @@ from local_eps import local_eps
 class application(object):
 	def __init__(self):
 		self.clear()
-		self.siv_list               = []
-		self.meursing_list			= []
-		self.vessels_list           = []
-		self.civilair_list			= []
-		self.airworthiness_list		= []
-		self.aircraft_list			= []
-		self.pharmaceuticals_list	= []
-		self.ita_list 				= []
-		self.generalrelief_list		= []
-		self.authoriseduse_list		= []
-		self.seasonal_list			= []
-		self.section_chapter_list	= []
-		self.lstFootnotes			= []
-		self.lstFootnotesUnique		= []
-		self.debug					= False
-		self.suppress_duties		= False
+		self.debug				= False
+		self.country_codes		= ""
+
+		# Initialise extended information
+		self.geographical_area_name = ""
+		self.agreement_title		= ""
+		self.agreement_date			= ""
+		self.version				= ""
 		self.country_codes			= ""
-		self.siv_data_list			= []
-		self.seasonal_fta_duties	= []
-		self.meursing_components		= []
+		self.origin_quotas			= ""
+		self.licensed_quota_volumes	= ""
+		self.quota_scope			= ""
+		self.quota_staging			= ""
 		
 		self.BASE_DIR			= os.path.dirname(os.path.abspath(__file__))
 		self.SOURCE_DIR			= os.path.join(self.BASE_DIR, "source")
@@ -72,24 +65,56 @@ class application(object):
 		except:
 			print ("No country scope parameter found - ending")
 			sys.exit()
-		
+
+		self.get_extended_profile()
 		self.get_country_list()
 		self.geo_ids = f.list_to_sql(self.country_codes)
 		self.get_meursing_components_for_erga_omnes()
 		self.get_mfns_for_eps_products()
 		self.get_local_eps()
 
+	def get_extended_profile(self):
+		# This function has been added to derive additional information to the FTA object
+		# to support the display of the quota table in FTA reference documents, which are
+		# currently unsupported.
+		sql = """select geographical_area_name, agreement_title, agreement_date,
+		version, country_codes, origin_quotas, licensed_quota_volumes,
+		quota_scope, quota_staging
+		from ml.extended_trade_agreement_information where fta_name = '""" + self.country_profile + """'"""
+
+		cur = self.conn_uk.cursor()
+		cur.execute(sql)
+		rows = cur.fetchall()
+		if len(rows) > 0:
+			rw = rows[0]
+			self.geographical_area_name = rw[0]
+			self.agreement_title		= rw[1]
+			self.agreement_date			= rw[2]
+			self.version				= rw[3]
+			self.country_codes			= rw[4]
+			self.origin_quotas			= rw[5]
+			self.licensed_quota_volumes	= rw[6]
+			self.quota_scope			= rw[7]
+			self.quota_staging			= rw[8]
+		else:
+			print ("Extended information on quotas not found - please review profile")
+			sys.exit()
 
 	def create_document(self):
 		# Create the document
 		my_document = document()
-		my_document.check_for_quotas()
-		self.readTemplates(my_document.has_quotas)
 
+		# Check if there are any quotas associated with this geographical area
+		# If there are, then we will use the XML document template that contains
+		# the quota table, if not then we will not
+		my_document.check_for_quotas()
+
+		# Read in the XML component templates that are used to build document.xml
+		self.readTemplates(my_document.has_quotas)
 
 		# Create the measures table
 		my_document.get_duties("preferences")
-		my_document.print_tariffs()
+		my_document.write_tariff_preferences()
 
 		# Create the quotas table
 		my_document.get_duties("quotas")
@@ -97,7 +122,7 @@ class application(object):
 		my_document.get_quota_balances_from_csv()
 		my_document.get_quota_measures()
 		my_document.get_quota_definitions()
-		my_document.print_quotas()
+		my_document.write_quotas()
 
 		# Personalise and write the document
 		my_document.create_core()
@@ -117,9 +142,13 @@ class application(object):
 		with open(self.CONFIG_FILE, 'r') as f:
 			my_dict = json.load(f)
 
-		self.DBASE					= my_dict['dbase']
-		self.DBASE = "tariff_eu"
-		self.p				= my_dict['p']
+		#self.DBASE	= my_dict['dbase']
+		#self.DBASE	= "tariff_eu"
+		
+		self.DBASE_EU	= my_dict['dbase_eu']
+		self.DBASE_UK	= my_dict['dbase_uk']
+		
+		self.p		= my_dict['p']
 
 		# Get local config items
 		with open(self.CONFIG_FILE_LOCAL, 'r') as f:
@@ -157,10 +186,13 @@ class application(object):
 		self.country_name			= self.all_country_profiles[self.country_profile]["country_name"]
 
 	def connect(self):
-		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password=" + self.p)
+		print (self.DBASE_UK)
+		self.conn_uk = psycopg2.connect("dbname=" + self.DBASE_UK + " user=postgres password=" + self.p)
+		self.conn_eu = psycopg2.connect("dbname=" + self.DBASE_EU + " user=postgres password=" + self.p)
 
 	def shutDown(self):
-		self.conn.close()
+		self.conn_uk.close()
+		self.conn_eu.close()
 
 	def readTemplates(self, has_quotas):
 		# Read in the XML fragments that will make up the pieced together HTML document.
@@ -229,7 +261,7 @@ class application(object):
 
 	def get_local_eps(self):
 		# Get all commodities where there is an Entry Price System-related measure
-		# This is a candidate for moving over to the EU database
+		# This must come from the EU database
 		sql = """
 		SELECT DISTINCT m.goods_nomenclature_item_id, m.validity_start_date, mc.condition_duty_amount,
 		mc.condition_monetary_unit_code, mc.condition_measurement_unit_code
@@ -240,7 +272,7 @@ class application(object):
 		ORDER BY 1, 2 DESC, 3 DESC
 		"""
 
-		cur = self.conn.cursor()
+		cur = self.conn_eu.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
 
@@ -258,13 +290,13 @@ class application(object):
 			self.local_eps.append(obj)
 			self.local_eps_commodities_only.append(goods_nomenclature_item_id)
 
-			
+	
 	def get_mfns_for_eps_products(self):
 		# This function gets a list of all of the MFNs on the database that have Entry Price System
 		# threshold conditions attached to them; these will then be used later in the calculation of
 		# the rebase price for commodities that are subject to the Entry Price System.
 
-		# This is a candidate to be drawn from the production EU database rather than from the UK database
+		# This must come from the production EU database rather than from the UK database
 
 		sql = """SELECT DISTINCT m.goods_nomenclature_item_id, mcc.duty_amount, m.validity_start_date, m.validity_end_date
 		FROM measures m, measure_conditions mc, measure_condition_components mcc
@@ -277,7 +309,7 @@ class application(object):
 		AND m.geographical_area_id = '1011'
 		ORDER BY m.goods_nomenclature_item_id, m.validity_start_date
 		"""
-		cur = self.conn.cursor()
+		cur = self.conn_eu.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
 		self.mfn_list = []
@@ -316,8 +348,9 @@ class application(object):
 		# This will then be used in working out the Rebase P clause of measures that are
 		# subject to Meursing agricultural duties in the EU' tariff
 		# Please note this uses a custom SQL view from the ml schema (ml.meursing_components)
+		# This must come from the EU database
 		sql = "SELECT AVG(duty_amount) FROM ml.meursing_components WHERE geographical_area_id = '1011'"
-		cur = self.conn.cursor()
+		cur = self.conn_eu.cursor()
 		cur.execute(sql)
 		row = cur.fetchone()
 		self.erga_omnes_average = row[0]
@@ -325,9 +358,11 @@ class application(object):
 
 	def get_meursing_percentage(self, reduction_indicator, geographical_area_id):
 		# Get the Erga Omnes Meursing average
+		# Derive information from the EU database, as this is not going to be available
+		# in the UK database after a valid data load
 		sql = """
 		SELECT AVG(duty_amount) FROM ml.meursing_components WHERE geographical_area_id = '""" + geographical_area_id + """' AND reduction_indicator = """ + str(reduction_indicator)
-		cur = self.conn.cursor()
+		cur = self.conn_eu.cursor()
 		cur.execute(sql)
 		row = cur.fetchone()
 		reduced_average = row[0]

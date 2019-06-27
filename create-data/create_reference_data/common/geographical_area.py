@@ -37,7 +37,7 @@ class geographical_area(object):
 			out = out.replace("{GEOGRAPHICAL_AREA_ID}", self.geographical_area_id)
 			out = out.replace("{GEOGRAPHICAL_AREA_CODE}", self.geographical_area_code)
 			out = out.replace("{DESCRIPTION}", self.description)
-			out = out.replace("{VALIDITY_START_DATE}", "2019-03-30")
+			out = out.replace("{VALIDITY_START_DATE}", app.critical_date)
 			out = out.replace("{GEOGRAPHICAL_AREA_DESCRIPTION_PERIOD_SID}", str(app.last_geographical_area_description_period_sid))
 			out = out.replace("{TRANSACTION_ID}", str(app.transaction_id))
 			out = out.replace("{MESSAGE_ID1}", str(app.message_id))

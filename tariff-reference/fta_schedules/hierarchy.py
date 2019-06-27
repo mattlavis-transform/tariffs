@@ -21,7 +21,7 @@ class hierarchy(object):
 		ar_hierarchies = []
 		stem = self.goods_nomenclature_item_id[0:2]
 		sql = "SELECT goods_nomenclature_item_id, producline_suffix as productline_suffix, number_indents, description FROM ml.goods_nomenclature_export('" + stem + "%') ORDER BY goods_nomenclature_item_id, producline_suffix"
-		cur = g.app.conn.cursor()
+		cur = g.app.conn_uk.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
 		
