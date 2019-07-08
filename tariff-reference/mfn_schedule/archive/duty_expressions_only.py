@@ -28,8 +28,8 @@ rows_duties = cur.fetchall()
 rdList = []
 sOutQual = ""
 for rd in rows_duties:
-	sCommodityCode                = rd[0]
-	sMeasureTypeId                = rd[1]
+	commodity_code                = rd[0]
+	measure_type_id                = rd[1]
 	sDutyExpression               = str(rd[2])
 	sDutyAmount                   = str(rd[3])
 	sMonetaryUnitCode             = str(rd[4])
@@ -48,16 +48,16 @@ for rd in rows_duties:
 	# print (sFullExpression)
 	if sMeasurementUnitQualifierCode != "None":
 		print (sMeasurementUnitQualifierCode)
-		sOutQual = sOutQual + sMeasurementUnitQualifierCode + "|" + sCommodityCode + "\n"
+		sOutQual = sOutQual + sMeasurementUnitQualifierCode + "|" + commodity_code + "\n"
 		
-	rdList.append([sCommodityCode, sDutyExpression, sDutyAmount, sMonetaryUnitCode, sMeasurementUnitCode, sMeasurementUnitQualifierCode, sFullExpression, "Active"])
+	rdList.append([commodity_code, sDutyExpression, sDutyAmount, sMonetaryUnitCode, sMeasurementUnitCode, sMeasurementUnitQualifierCode, sFullExpression, "Active"])
 	
 # Now, do a pass through the duties table and join up where there are multiple
-sCommodityCodeOld = ""
+commodity_codeOld = ""
 sOut = ""
 print (len(rdList))
 for x in range(1, len(rdList) - 1):
-	sCommodityCode = rdList[x][0]
+	commodity_code = rdList[x][0]
 	sDutyExpression = str(rdList[x][1])
 	sDutyAmount = str(rdList[x][2])
 	sMonetaryUnitCode = str(rdList[x][3])
@@ -65,20 +65,20 @@ for x in range(1, len(rdList) - 1):
 	sMeasurementUnitQualifierCode = str(rdList[x][5])
 	sFullExpression = str(rdList[x][6])
 	
-	if (sCommodityCodeOld == sCommodityCode):
+	if (commodity_codeOld == commodity_code):
 		rdList[x - 1][6] += " + " + rdList[x][6]
 		rdList[x][7] = "Inactive"
 	
 		for rd in rdList:
-			sCommodityCode2 = rd[0]
+			commodity_code2 = rd[0]
 			sActive = rd[7]
-			if (sCommodityCode == sCommodityCode2 and sActive == "Active"):
+			if (commodity_code == commodity_code2 and sActive == "Active"):
 				if (rd[6] == "") or (rd[6] == "0.0%"):
 					sDuty = "Free"
 				else:
 					sDuty = str(rd[6])
 				break
-		sOut = sOut + sCommodityCode + " : " + sDuty
+		sOut = sOut + commodity_code + " : " + sDuty
 
 conn.close()
 

@@ -129,7 +129,7 @@ if (sDocumentType == "schedule"):
 	# Do a pass through the duties table and create a full duty expression
 	rdList = []
 	for rd in rows_duties:
-		sCommodityCode = rd[0]
+		commodity_code = rd[0]
 		sDutyExpression = str(rd[2])
 		sDutyAmount = str(rd[3])
 		sMonetaryUnitCode = str(rd[4])
@@ -145,13 +145,13 @@ if (sDocumentType == "schedule"):
 		if (sMeasurementUnitCode != "" and sMeasurementUnitCode != "None"):
 			sFullExpression += " / " + sMeasurementUnitCode
 
-		rdList.append([sCommodityCode, sDutyExpression, sDutyAmount, sMonetaryUnitCode, sMeasurementUnitCode, sMeasurementUnitQualifierCode, sFullExpression, "Active"])
+		rdList.append([commodity_code, sDutyExpression, sDutyAmount, sMonetaryUnitCode, sMeasurementUnitCode, sMeasurementUnitQualifierCode, sFullExpression, "Active"])
 		
 	# Now, do a pass through the duties table and join up where there are multiple
-	sCommodityCodeOld = ""
+	commodity_codeOld = ""
 
 	for x in range(1, len(rdList) - 1):
-		sCommodityCode = rdList[x][0]
+		commodity_code = rdList[x][0]
 		sDutyExpression = str(rdList[x][1])
 		sDutyAmount = str(rdList[x][2])
 		sMonetaryUnitCode = str(rdList[x][3])
@@ -159,12 +159,12 @@ if (sDocumentType == "schedule"):
 		sMeasurementUnitQualifierCode = str(rdList[x][5])
 		sFullExpression = str(rdList[x][6])
 		
-		if (sCommodityCodeOld == sCommodityCode):
+		if (commodity_codeOld == commodity_code):
 			rdList[x - 1][6] += " + " + rdList[x][6]
 			rdList[x][7] = "Inactive"
 			#print ("Joining")
 		
-		sCommodityCodeOld = sCommodityCode
+		commodity_codeOld = commodity_code
 
 # Step 4b - Get the supplementary units
 sSQL = """SELECT * FROM ml.v5_2019 WHERE measure_type_id IN ('109', '110') AND goods_nomenclature_item_id LIKE '""" + sChapter + """%'"""
@@ -253,20 +253,20 @@ if (sDocumentType == "schedule"):
 for row in rows:
 	if row[0] != sChapter + "00000000":
 		row_cells = table.add_row().cells
-		sCommodityCode = row[0]
+		commodity_code = row[0]
 		indents = row[6]
-		sProductLineSuffix = row[1]
+		product_line_suffix = row[1]
 		
-		if (sProductLineSuffix == "80"):
+		if (product_line_suffix == "80"):
 			row_cells[0].text = formatCommodityCode(row[0])
 			
-		sDescription = ("-\t" * indents) + row[5]
-		sDescription = sDescription.replace("|", " ")
+		description = ("-\t" * indents) + row[5]
+		description = description.replace("|", " ")
 		
 		if (indents < 1):
-			row_cells[1].paragraphs[0].add_run(sDescription).bold = True
+			row_cells[1].paragraphs[0].add_run(description).bold = True
 		else:
-			row_cells[1].paragraphs[0].add_run(sDescription)
+			row_cells[1].paragraphs[0].add_run(description)
 			
 		p = row_cells[1].paragraphs[0]
 		tab_stops = p.paragraph_format.tab_stops
@@ -281,9 +281,9 @@ for row in rows:
 		
 		if (sDocumentType == "schedule"):
 			for rd in rdList:
-				sCommodityCode2 = rd[0]
+				commodity_code2 = rd[0]
 				sActive = rd[7]
-				if (sCommodityCode == sCommodityCode2 and sActive == "Active"):
+				if (commodity_code == commodity_code2 and sActive == "Active"):
 					if (rd[6] == ""):
 						sDuty = "Free"
 					else:
@@ -339,17 +339,17 @@ for row in listFootnotes:
 # Go back over the 1st table and add in footnote references
 tbl = document.tables[0]
 for rw in tbl.rows:
-	sCommodityCode = rw.cells[0].text
+	commodity_code = rw.cells[0].text
 
 	for fn in rows_footnotes:
-		#print (sCommodityCode + " : " + fn[0])
-		if (sCommodityCode == formatCommodityCode(fn[0])):
+		#print (commodity_code + " : " + fn[0])
+		if (commodity_code == formatCommodityCode(fn[0])):
 			p = rw.cells[0].paragraphs[0]
 			intfn2index = 0
 			for fn2 in listFootnotes:
 				intfn2index += 1
 				if fn[1] == fn2[0]:
-					print ("found match on " + sCommodityCode)
+					print ("found match on " + commodity_code)
 					break
 				
 			p.add_run(' (' + str(intfn2index) + ')').font.superscript = True
