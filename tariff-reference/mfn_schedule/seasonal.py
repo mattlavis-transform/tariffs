@@ -5,13 +5,13 @@ class seasonal(object):
 		self.commodity_code			= f.mstr(commodity_code)
 		self.season1_start          = f.mstr(season1_start)
 		self.season1_end            = f.mstr(season1_end)
-		self.season1_expression     = f.fmtSeasonal(season1_expression)
+		self.season1_expression     = f.format_seasonal_expression(season1_expression)
 
 		self.season2_start          = f.mstr(season2_start)
 		self.season2_end            = f.mstr(season2_end)
-		self.season2_expression     = f.fmtSeasonal(season2_expression)
+		self.season2_expression     = f.format_seasonal_expression(season2_expression)
 
 		self.season3_start          = f.mstr(season3_start)
 		self.season3_end            = f.mstr(season3_end)
-		self.season3_expression     = f.fmtSeasonal(season3_expression)
+		self.season3_expression     = f.format_seasonal_expression(season3_expression)
 

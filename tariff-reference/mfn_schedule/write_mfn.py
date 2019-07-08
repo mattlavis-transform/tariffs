@@ -14,18 +14,16 @@ from application import application
 from chapter     import chapter
 
 app = functions.app
-app.getSectionsChapters()
-app.readTemplates()
+app.get_sections_chapters()
+app.read_templates()
 
-if app.sDocumentType == "schedule":
-	app.getSivs()
-	app.getITAProducts()
-	app.getAuthorisedUse()
+if app.document_type == "schedule":
+	app.get_authorised_use_commodities()
 	app.getSeasonal()
-	app.getSpecials()
+	app.get_special_notes()
 
-for i in range(app.iChapterStart, app.iChapterEnd + 1):
+for i in range(app.first_chapter, app.last_chapter + 1):
 	oChapter = chapter(i)
-	oChapter.formatChapter()
+	oChapter.format_chapter()
 
-app.shutDown()
+app.db_disconnect()

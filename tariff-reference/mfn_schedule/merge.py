@@ -4,46 +4,46 @@ from docx import Document
 
 # Define the parameters - document type
 try:
-	sDocumentType = sys.argv[1]
+	document_type = sys.argv[1]
 except:
-	sDocumentType = "schedule"
+	document_type = "schedule"
 
-if sDocumentType == "s":
-	sDocumentType = "schedule"
-elif sDocumentType == "c":
-	sDocumentType = "classification"
+if document_type == "s":
+	document_type = "schedule"
+elif document_type == "c":
+	document_type = "classification"
 
 # Define the parameters - start document
 try:
-	iChapterStart = int(sys.argv[2])
+	first_chapter = int(sys.argv[2])
 except:
-	iChapterStart = 1
+	first_chapter = 1
 	
 # Define the parameters - end document
 try:
-	iChapterEnd   = int(sys.argv[3])
+	last_chapter   = int(sys.argv[3])
 except:
-	iChapterEnd   = iChapterStart
+	last_chapter   = first_chapter
 	
-sChapter = str(iChapterStart).zfill(2)
+sChapter = str(first_chapter).zfill(2)
 print ("Adding TOC")
 
 BASE_DIR		= os.path.dirname(os.path.abspath(__file__))
 COMPONENT_DIR	= os.path.join(BASE_DIR, "xmlcomponents")
 OUTPUT_DIR		= os.path.join(BASE_DIR, "output")
-DEEP_DIR		= os.path.join(OUTPUT_DIR, sDocumentType)
+DEEP_DIR		= os.path.join(OUTPUT_DIR, document_type)
 
 
-file_master = os.path.join(COMPONENT_DIR, "toc_" + sDocumentType + ".docx")
+file_master = os.path.join(COMPONENT_DIR, "toc_" + document_type + ".docx")
 master = Document(file_master)
 composer = Composer(master)
-for s in range(iChapterStart, iChapterEnd + 1):
+for s in range(first_chapter, last_chapter + 1):
 	if s not in (77, 98, 99):
 		sChapter = str(s).zfill(2)
 		print ("Adding chapter " + sChapter)
-		file_chapter = os.path.join(DEEP_DIR, sDocumentType + "_" + sChapter + ".docx")
+		file_chapter = os.path.join(DEEP_DIR, document_type + "_" + sChapter + ".docx")
 		doc1 = Document(file_chapter)
 		composer.append(doc1)
 
-file_out = os.path.join(DEEP_DIR, sDocumentType + "_combined.docx")
+file_out = os.path.join(DEEP_DIR, document_type + "_combined.docx")
 composer.save(file_out)

@@ -13,9 +13,9 @@ class duty(object):
 		self.measurement_unit_code           = functions.mstr(measurement_unit_code)
 		self.measurement_unit_qualifier_code = functions.mstr(measurement_unit_qualifier_code)
 		self.measure_sid					 = measure_sid
-		self.getDutyString()
+		self.get_duty_string()
 
-	def getDutyString(self):
+	def get_duty_string(self):
 		self.duty_string = ""
 
 		if self.duty_expression_id == "01":
@@ -24,9 +24,9 @@ class duty(object):
 			else:
 				self.duty_string += "{0:1.3f}".format(self.duty_amount) + " " + self.monetary_unit_code
 				if self.measurement_unit_code != "":
-					self.duty_string += " / " + self.getMeasurementUnit(self.measurement_unit_code)
+					self.duty_string += " / " + self.get_measurement_unit(self.measurement_unit_code)
 					if self.measurement_unit_qualifier_code != "":
-						self.duty_string += " / " + self.getQualifier()
+						self.duty_string += " / " + self.get_measurement_unit_qualifier_code()
 
 		elif self.duty_expression_id in ("04", "19", "20"):
 			if self.monetary_unit_code == "":
@@ -34,9 +34,9 @@ class duty(object):
 			else:
 				self.duty_string += "+ {0:1.3f}".format(self.duty_amount) + " " + self.monetary_unit_code
 				if self.measurement_unit_code != "":
-					self.duty_string += " / " + self.getMeasurementUnit(self.measurement_unit_code)
+					self.duty_string += " / " + self.get_measurement_unit(self.measurement_unit_code)
 					if self.measurement_unit_qualifier_code != "":
-						self.duty_string += " / " + self.getQualifier()
+						self.duty_string += " / " + self.get_measurement_unit_qualifier_code()
 
 		elif self.duty_expression_id == "12":
 			self.duty_string += " + AC"
@@ -47,9 +47,9 @@ class duty(object):
 			else:
 				self.duty_string += "MIN {0:1.3f}".format(self.duty_amount) + " " + self.monetary_unit_code
 				if self.measurement_unit_code != "":
-					self.duty_string += " / " + self.getMeasurementUnit(self.measurement_unit_code)
+					self.duty_string += " / " + self.get_measurement_unit(self.measurement_unit_code)
 					if self.measurement_unit_qualifier_code != "":
-						self.duty_string += " / " + self.getQualifier()
+						self.duty_string += " / " + self.get_measurement_unit_qualifier_code()
 
 		elif self.duty_expression_id == "17": #MAX
 			if self.monetary_unit_code == "":
@@ -57,9 +57,9 @@ class duty(object):
 			else:
 				self.duty_string += "MAX {0:1.3f}".format(self.duty_amount) + " " + self.monetary_unit_code
 				if self.measurement_unit_code != "":
-					self.duty_string += " / " + self.getMeasurementUnit(self.measurement_unit_code)
+					self.duty_string += " / " + self.get_measurement_unit(self.measurement_unit_code)
 					if self.measurement_unit_qualifier_code != "":
-						self.duty_string += " / " + self.getQualifier()
+						self.duty_string += " / " + self.get_measurement_unit_qualifier_code()
 
 		elif self.duty_expression_id == "21":
 			self.duty_string += " + SD"
@@ -67,7 +67,7 @@ class duty(object):
 		elif self.duty_expression_id == "27":
 			self.duty_string += " + FD"
 
-	def getMeasurementUnit(self, s):
+	def get_measurement_unit(self, s):
 		if s == "ASV":
 			return "% vol" # 3302101000
 		if s == "NAR":
@@ -136,29 +136,29 @@ class duty(object):
 		else:
 			return s
 
-	def getQualifier(self):
-		sQualDesc = ""
+	def get_measurement_unit_qualifier_code(self):
+		qualifier_description = ""
 		s = self.measurement_unit_qualifier_code
 		if s == "A":
-			sQualDesc = "tot alc" # Total alcohol
+			qualifier_description = "tot alc" # Total alcohol
 		elif s == "C":
-			sQualDesc = "1 000" # Total alcohol
+			qualifier_description = "1 000" # Total alcohol
 		elif s == "E":
-			sQualDesc = "net drained wt" # net of drained weight
+			qualifier_description = "net drained wt" # net of drained weight
 		elif s == "G":
-			sQualDesc = "gross" # Gross
+			qualifier_description = "gross" # Gross
 		elif s == "M":
-			sQualDesc = "net dry" # net of dry matter
+			qualifier_description = "net dry" # net of dry matter
 		elif s == "P":
-			sQualDesc = "lactic matter" # of lactic matter
+			qualifier_description = "lactic matter" # of lactic matter
 		elif s == "R":
-			sQualDesc = "std qual" # of the standard quality
+			qualifier_description = "std qual" # of the standard quality
 		elif s == "S":
-			sQualDesc = " raw sugar"
+			qualifier_description = " raw sugar"
 		elif s == "T":
-			sQualDesc = "dry lactic matter" # of dry lactic matter
+			qualifier_description = "dry lactic matter" # of dry lactic matter
 		elif s == "X":
-			sQualDesc = " hl" # Hectolitre
+			qualifier_description = " hl" # Hectolitre
 		elif s == "Z":
-			sQualDesc = "% sacchar." # per 1% by weight of sucrose
-		return sQualDesc
+			qualifier_description = "% sacchar." # per 1% by weight of sucrose
+		return qualifier_description

@@ -13,37 +13,15 @@ import re
 from application import application
 
 app = application()
-
-def formatFootnote(s):
-	sOut = ""
-	a = s.split("\n")
-	for ax in a:
-		ax.strip()
-		#print (ax)
-		if len(ax) > 0:
-			lChar = ascii(ax[0])
-			lChar = ord(ax[0])
-			if lChar == 8226:
-				sStyle = "ListBulletinTable"
-			else:
-				sStyle = "NormalinTable"
-			ax = ax.replace(chr(8226) + "\t", "")
-			ax = ax.replace("  ", " ")
-			sOut += "<w:p><w:pPr><w:pStyle w:val=\"" + sStyle + "\"/></w:pPr><w:r><w:t>" + ax + "</w:t></w:r></w:p>"
-	return (sOut)
-
-def fmtMeasureTypeDescription(s):
-	s = s.replace("end-use", "authorised use")
-	return s
 	
-def fmtDate(d):
+def format_date(d):
 	try:
 		d = datetime.strftime(d, '%d-%m-%y')
 	except:
 		d = ""
 	return d
 	
-def fmtMarkdown(s):
+def format_markdown(s):
 	s = re.sub("<table.*</table>", "", s, flags=re.DOTALL)
 	s = re.sub("<sup>", "", s, flags=re.DOTALL)
 	s = re.sub("</sup>", "", s, flags=re.DOTALL)
@@ -88,6 +66,7 @@ def fmtMarkdown(s):
 			
 	return (sOut)
 	
+
 def zipdir(archivename):
 	BASE_DIR     = os.path.dirname(os.path.realpath(__file__))
 	MODEL_DIR = os.path.join(BASE_DIR, "model")
@@ -99,11 +78,13 @@ def zipdir(archivename):
 				zfn = absfn[len(MODEL_DIR)+len(os.sep):] #XXX: relative path
 				z.write(absfn, zfn)
 
+
 def mstr(x):
 	if x is None:
 		return ""
 	else:
 		return str(x)
+
 
 def mnum(x):
 	if x is None:
@@ -111,9 +92,11 @@ def mnum(x):
 	else:
 		return int(x)
 
+
 def debug(x):
 	if app.debug:
 		print (x)
+
 
 def surround(x):
 	if "<w:t>" in x:
@@ -121,10 +104,10 @@ def surround(x):
 	else:
 		return "<w:r><w:t>" + x + "</w:t></w:r>"
 
-def fmtSeasonal(s):
+
+def format_seasonal_expression(s):
 	s = mstr(s)
 	s = s.replace("EUR", "€")
 	s = s.replace("DTN G", "/ 100 kg gross")
 	s = s.replace("DTN", "/ 100 kg")
 	return s
-

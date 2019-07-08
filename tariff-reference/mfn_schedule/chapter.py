@@ -22,22 +22,22 @@ class chapter(object):
 		self.seasonal_records = 0
 		self.wide_duty = False
 
-		print ("Creating " + app.sDocumentType + " for chapter " + self.chapter_string)
+		print ("Creating " + app.document_type + " for chapter " + self.chapter_string)
 
-		self.getChapterBasics()
+		self.get_chapter_basics()
 
-		self.getSection()
-		self.getChapterDescription()
-		self.getDuties()
+		self.get_section_details()
+		self.get_chapter_description()
+		self.get_duties()
 		
-		if app.sDocumentType == "classification":
-			self.getSectionNotes()
-			self.getChapterNotes()
+		if app.document_type == "classification":
+			self.get_section_notes()
+			self.get_chapter_notes()
 		else:
 			self.section_notes = ""
 			self.chapter_notes = ""
 
-	def formatChapter(self):
+	def format_chapter(self):
 		if self.chapter_id in (77, 98, 99):
 			return
 		###############################################################
@@ -52,11 +52,11 @@ class chapter(object):
 		rows = cur.fetchall()
 		commodity_list = []
 		for rw in rows:
-			commodity_code    = rw[0]
-			productline_suffix = f.mstr(rw[1])
-			description       = rw[2]
-			number_indents    = f.mnum(rw[3])
-			leaf              = f.mnum(rw[4])
+			commodity_code    	= rw[0]
+			productline_suffix	= f.mstr(rw[1])
+			description       	= rw[2]
+			number_indents    	= f.mnum(rw[3])
+			leaf              	= f.mnum(rw[4])
 
 			my_commodity = commodity(commodity_code, description, productline_suffix, number_indents, leaf)
 			commodity_list.append (my_commodity)
@@ -64,32 +64,21 @@ class chapter(object):
 		for my_commodity in commodity_list:
 			# Start with the duties
 			for d in self.duty_list:
-				#print (my_commodity.commodity_code_formatted)
 				if my_commodity.commodity_code == d.commodity_code:
 					if my_commodity.product_line_suffix == "80":
 						my_commodity.duty_list.append(d)
 						my_commodity.assigned = True
 
-			my_commodity.combineDuties()
-
+			my_commodity.combine_duties()
 
 		###########################################################################
 		## Get exceptions
 		###########################################################################
-		if app.sDocumentType == "schedule":
+		if app.document_type == "schedule":
 			for my_commodity in commodity_list:
-				my_commodity.checkforSIV()
-				my_commodity.checkforVessel()
-				my_commodity.checkforCivilAir()
-				my_commodity.checkforAirworthiness()
-				my_commodity.checkforAircraft()
-				my_commodity.checkforPharmaceuticals()
-				#my_commodity.checkforITA()
-				#my_commodity.checkforMixture()
-				my_commodity.checkforSpecials()
-				my_commodity.checkforAuthorisedUse()
-				my_commodity.checkforGeneralRelief()
-				self.seasonal_records += my_commodity.checkforSeasonal()
+				my_commodity.check_for_specials()
+				my_commodity.check_for_authorised_use()
+				self.seasonal_records += my_commodity.check_for_seasonal()
 
 		#####################################################################
 		## Inherit up
@@ -133,10 +122,8 @@ class chapter(object):
 		###########################################################################
 		table_content = ""
 		for my_commodity in commodity_list:
-			#if my_commodity.commodity_code == "0102211000":
-			#	print ("yowser", my_commodity.commodity_code, my_commodity.combined_duty)
 			if my_commodity.suppress_row == False:
-				my_commodity.checkforMixture()
+				my_commodity.check_for_mixture()
 				my_commodity.combine_notes()
 				row_string = app.sTableRowXML
 				row_string = row_string.replace("{COMMODITY}",   	my_commodity.commodity_code_formatted)
@@ -146,7 +133,6 @@ class chapter(object):
 					row_string = row_string.replace("{DUTY}",       f.surround(""))
 					row_string = row_string.replace("{NOTES}",      "")
 				else:
-					#print ("not suppress duty", my_commodity.commodity_code, my_commodity.combined_duty)
 					row_string = row_string.replace("{DUTY}",       f.surround(my_commodity.combined_duty))
 					row_string = row_string.replace("{NOTES}",      my_commodity.notes_string)
 				table_content += row_string
@@ -164,17 +150,17 @@ class chapter(object):
 			sOut += sHeading1XML
 			if self.section_notes != "":
 				sOut += self.section_notesHeading
-				sOut += f.fmtMarkdown(self.section_notes)
+				sOut += f.format_markdown(self.section_notes)
 
 		sHeading2XML = app.sHeading2XML
 		sHeading2XML = sHeading2XML.replace("{CHAPTER}", "Chapter " + self.chapter_string)
 		sHeading2XML = sHeading2XML.replace("{HEADING}", self.chapter_description)
 		sOut += sHeading2XML
 
-		if app.sDocumentType == "classification":
+		if app.document_type == "classification":
 			sChap = app.sHeading3XML.replace("{HEADING}", "Chapter Notes")
 			sOut += sChap
-			sOut += f.fmtMarkdown(self.chapter_notes)
+			sOut += f.format_markdown(self.chapter_notes)
 
 		sTableXML = app.sTableXML
 		#There are special columns where the width of the description needs to be big
@@ -252,63 +238,21 @@ class chapter(object):
 
 		f.zipdir(self.word_filename)
 
-	def getChapterBasics(self):
+	def get_chapter_basics(self):
 		BASE_DIR     = os.path.dirname(os.path.realpath(__file__))
 		OUTPUT_DIR = os.path.join(BASE_DIR, "output")
-		OUTPUT_DIR = os.path.join(OUTPUT_DIR, app.sDocumentType)
+		OUTPUT_DIR = os.path.join(OUTPUT_DIR, app.document_type)
 
-		filename = app.sDocumentType + "_" + self.chapter_string + ".docx"
+		filename = app.document_type + "_" + self.chapter_string + ".docx"
 		self.word_filename = os.path.join(OUTPUT_DIR, filename)
-		if (app.sDocumentType == "classification"):
+		if (app.document_type == "classification"):
 			self.document_title = "UK Goods Classification"
 		else:
 			self.document_title = "UK Goods Schedule"
 
-	def getSupplementaryUnits(self):
-		###############################################################
-		# Get the supplementary units
-		sql = """SELECT m.goods_nomenclature_item_id, mcc.measurement_unit_code, mcc.measurement_unit_qualifier_code FROM ml.v5_brexit_day m, measure_components mcc
-		WHERE measure_type_id IN ('109', '110')
-		AND m.measure_sid = mcc.measure_sid
-		AND goods_nomenclature_item_id LIKE '""" + self.chapter_string + """%'"""
-		curSupplementary = app.conn.cursor()
-		curSupplementary.execute(sql)
-		rowsSupplementary = curSupplementary.fetchall()
-		self.supplementary_unit_list = list(rowsSupplementary)
 
-	def getFootnotes(self):
-		# Get all footnotes
-		sql = """SELECT DISTINCT fagn.goods_nomenclature_item_id, (fagn.footnote_type || fagn.footnote_id) as footnote, fd.description as footnote_description
-		FROM footnote_association_goods_nomenclatures fagn, ml.ml_footnotes fd, footnote_types ft, goods_nomenclatures gn
-		WHERE fagn.footnote_id = fd.footnote_id
-		AND fagn.footnote_type = fd.footnote_type_id
-		AND fagn.footnote_type = ft.footnote_type_id
-		AND fagn.goods_nomenclature_item_id = gn.goods_nomenclature_item_id
-		AND fagn.productline_suffix = gn.producline_suffix
-		AND fagn.productline_suffix = '80'
-		AND gn.producline_suffix = '80'
-		AND fagn.goods_nomenclature_item_id LIKE '""" + self.chapter_string + """%'
-		AND ft.application_code IN ('1', '2')
-		AND fagn.validity_start_date < CURRENT_DATE
-		AND (fagn.validity_end_date > CURRENT_DATE OR fagn.validity_end_date IS NULL)
-		AND gn.validity_start_date < CURRENT_DATE
-		AND (gn.validity_end_date > CURRENT_DATE OR gn.validity_end_date IS NULL)
-		ORDER BY 1, 2"""
-		cur = app.conn.cursor()
-		cur.execute(sql)
-		rows_foonotes = cur.fetchall()
-		self.footnote_list = list(rows_foonotes)
-		self.footnote_listUnique = []
-		for x in self.footnote_list:
-			blFound = False
-			for y in self.footnote_listUnique:
-				if x[1] == y[0]:
-					blFound = True
-					break
-			if blFound == False:
-				self.footnote_listUnique.append([x[1], f.formatFootnote(x[2])])
 
-	def getChapterDescription(self):
+	def get_chapter_description(self):
 		###############################################################
 		# Get the chapter description
 		# Relevant to both the classification and the schedule
@@ -323,7 +267,7 @@ class chapter(object):
 		except:
 			self.chapter_description = ""
 
-	def getSection(self):
+	def get_section_details(self):
 		###############################################################
 		# Get the section header
 		# Relevant to both the classification and the schedule
@@ -332,6 +276,7 @@ class chapter(object):
 		WHERE gn.goods_nomenclature_sid = cs.goods_nomenclature_sid
 		AND s.id = cs.section_id
 		AND gn.goods_nomenclature_item_id = '""" + self.chapter_string + """00000000'"""
+		print (sql)
 		cur = app.conn.cursor()
 		cur.execute(sql)
 		row = cur.fetchone()
@@ -352,7 +297,7 @@ class chapter(object):
 
 
 
-	def getSectionNotes(self):
+	def get_section_notes(self):
 		###############################################################
 		# Get the section notes
 		# Relevant to the classification only
@@ -369,7 +314,7 @@ class chapter(object):
 			self.section_notesHeading = self.section_notesHeading.replace("{HEADING}", "There are important section notes for this part of the tariff:")
 
 
-	def getChapterNotes(self):
+	def get_chapter_notes(self):
 		###############################################################
 		# Get the chapter notes
 		# Relevant to the classification only
@@ -382,7 +327,7 @@ class chapter(object):
 		except:
 			self.chapter_notes = ""
 
-	def getDuties(self):
+	def get_duties(self):
 		###############################################################
 		# Get the duties
 
@@ -422,5 +367,3 @@ class chapter(object):
 
 			oDuty = duty(commodity_code, additional_code_type_id, additional_code_id, measure_type_id, duty_expression_id, duty_amount, monetary_unit_code, measurement_unit_code, measurement_unit_qualifier_code, measure_sid)
 			self.duty_list.append(oDuty)
-
-		# sys.exit()
