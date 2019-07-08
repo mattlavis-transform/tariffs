@@ -17,7 +17,7 @@
         </w:trPr>
         <w:tc>
           <w:tcPr>
-            <w:tcW w:w="20" w:type="pct"/>
+            <w:tcW w:w="15" w:type="pct"/>
           </w:tcPr>
           <w:p>
             <w:pPr>
@@ -30,7 +30,7 @@
         </w:tc>
         <w:tc>
           <w:tcPr>
-            <w:tcW w:w="60" w:type="pct"/>
+            <w:tcW w:w="85" w:type="pct"/>
           </w:tcPr>
           <w:p>
             <w:pPr>

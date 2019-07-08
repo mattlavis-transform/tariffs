@@ -129,7 +129,7 @@ class application(object):
 			fDocument = open(os.path.join(self.COMPONENT_DIR, "document_classification.xml"), "r")
 		else:
 			fDocument = open(os.path.join(self.COMPONENT_DIR, "document_schedule.xml"), "r")
-		self.sDocumentXML = fDocument.read()
+		self.document_xml_string = fDocument.read()
 
 		fHeading1 = open(os.path.join(self.COMPONENT_DIR, "heading1.xml"), "r") 
 		self.sHeading1XML = fHeading1.read()
@@ -159,7 +159,7 @@ class application(object):
 			fTable    = open(os.path.join(self.COMPONENT_DIR, "table_schedule.xml"), "r") 
 			fTableRow = open(os.path.join(self.COMPONENT_DIR, "tablerow_schedule.xml"), "r") 
 
-		self.sTableXML = fTable.read()
+		self.table_xml_string = fTable.read()
 		self.sTableRowXML = fTableRow.read()
 
 
@@ -193,8 +193,8 @@ class application(object):
 
 		# We may need to consider how we manage this CSV file
 
-		sFileName = os.path.join(self.SOURCE_DIR, "special_notes.csv")
-		with open(sFileName, "r") as f:
+		filename = os.path.join(self.SOURCE_DIR, "special_notes.csv")
+		with open(filename, "r") as f:
 			reader = csv.reader(f)
 			temp = list(reader)
 		for row in temp:
@@ -205,8 +205,8 @@ class application(object):
 			self.special_list.append(oSpecial)
 
 	def getSeasonal(self):
-		sFileName = os.path.join(self.SOURCE_DIR, "seasonal_commodities.csv")
-		with open(sFileName, "r") as f:
+		filename = os.path.join(self.SOURCE_DIR, "seasonal_commodities.csv")
+		with open(filename, "r") as f:
 			reader = csv.reader(f)
 			temp = list(reader)
 		for row in temp:

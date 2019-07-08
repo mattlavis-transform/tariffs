@@ -162,75 +162,71 @@ class chapter(object):
 			sOut += sChap
 			sOut += f.format_markdown(self.chapter_notes)
 
-		sTableXML = app.sTableXML
+		table_xml_string = app.table_xml_string
 		#There are special columns where the width of the description needs to be big
 		if self.chapter_id in (3, 15, 22, 29, 32, 38, 39, 44, 64, 70, 72, 84, 85):
 			width_list = [650, 900, 800, 2650]
 		else:
 			width_list = [650, 1150, 900, 2200]
 
-		sTableXML = sTableXML.replace("{WIDTH_CLASSIFICATION}", str(width_list[0]))
-		sTableXML = sTableXML.replace("{WIDTH_DUTY}",			str(width_list[1]))
-		sTableXML = sTableXML.replace("{WIDTH_NOTES}",			str(width_list[2]))
-		sTableXML = sTableXML.replace("{WIDTH_DESCRIPTION}",	str(width_list[3]))
+		table_xml_string = table_xml_string.replace("{WIDTH_CLASSIFICATION}", str(width_list[0]))
+		table_xml_string = table_xml_string.replace("{WIDTH_DUTY}",			str(width_list[1]))
+		table_xml_string = table_xml_string.replace("{WIDTH_NOTES}",			str(width_list[2]))
+		table_xml_string = table_xml_string.replace("{WIDTH_DESCRIPTION}",	str(width_list[3]))
 
-		sTableXML = sTableXML.replace("{TABLEBODY}", table_content)
+		table_xml_string = table_xml_string.replace("{TABLEBODY}", table_content)
 
-		sOut += sTableXML
-		sDocumentXML = app.sDocumentXML
-		sDocumentXML = sDocumentXML.replace("{BODY}", sOut)
+		sOut += table_xml_string
+		document_xml_string = app.document_xml_string
+		document_xml_string = document_xml_string.replace("{BODY}", sOut)
 
 		# Final replaces on the super and subscripts
-		sDocumentXML = sDocumentXML.replace("{TITLE1}", self.document_title.upper())
-		sDocumentXML = re.sub("<w:t>(.*)m2</w:t>", "<w:t>\g<1>m</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"superscript\"/></w:rPr><w:t>2</w:t>", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("<w:t>(.*)m3</w:t>", "<w:t>\g<1>m</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"superscript\"/></w:rPr><w:t>3</w:t>", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("<w:t>(.*)K2O</w:t>", "<w:t>\g<1>K</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"subscript\"/></w:rPr><w:t>2</w:t></w:r><w:r><w:t>O</w:t>", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("<w:t>(.*)H2O2</w:t>", "<w:t>\g<1>H</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"subscript\"/></w:rPr><w:t>2</w:t></w:r><w:r><w:t>O</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"subscript\"/></w:rPr><w:t>2</w:t>", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("<w:t>(.*)P2O5</w:t>", "<w:t>\g<1>P</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"subscript\"/></w:rPr><w:t>2</w:t></w:r><w:r><w:t>O</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"subscript\"/></w:rPr><w:t>5</w:t>", sDocumentXML, flags=re.MULTILINE)
+		document_xml_string = document_xml_string.replace("{TITLE1}", self.document_title.upper())
+		document_xml_string = re.sub("<w:t>(.*)m2</w:t>", "<w:t>\g<1>m</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"superscript\"/></w:rPr><w:t>2</w:t>", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("<w:t>(.*)m3</w:t>", "<w:t>\g<1>m</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"superscript\"/></w:rPr><w:t>3</w:t>", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("<w:t>(.*)K2O</w:t>", "<w:t>\g<1>K</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"subscript\"/></w:rPr><w:t>2</w:t></w:r><w:r><w:t>O</w:t>", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("<w:t>(.*)H2O2</w:t>", "<w:t>\g<1>H</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"subscript\"/></w:rPr><w:t>2</w:t></w:r><w:r><w:t>O</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"subscript\"/></w:rPr><w:t>2</w:t>", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("<w:t>(.*)P2O5</w:t>", "<w:t>\g<1>P</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"subscript\"/></w:rPr><w:t>2</w:t></w:r><w:r><w:t>O</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"subscript\"/></w:rPr><w:t>5</w:t>", document_xml_string, flags=re.MULTILINE)
 		
 		# Subscripts
-		sDocumentXML = re.sub("@(.)", '</w:t></w:r><w:r><w:rPr><w:vertAlign w:val="subscript"/></w:rPr><w:t>\\1</w:t></w:r><w:r><w:t>', sDocumentXML, flags=re.MULTILINE)
+		document_xml_string = re.sub("@(.)", '</w:t></w:r><w:r><w:rPr><w:vertAlign w:val="subscript"/></w:rPr><w:t>\\1</w:t></w:r><w:r><w:t>', document_xml_string, flags=re.MULTILINE)
 
 		# Missing commas
-		sDocumentXML = re.sub("([0-9]),([0-9]) kg", "\\1.\\2 kg", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]) Kg", "\\1.\\2 kg", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]) C", "\\1.\\2 C", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9])kg", "\\1.\\2kg", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]{1,3}) g", "\\1.\\2 g", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]{1,3})g", "\\1.\\2g", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]{1,3}) dl", "\\1.\\2 dl", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]{1,3}) m", "\\1.\\2 m", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]{1,3})m", "\\1.\\2m", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]{1,3}) decitex", "\\1.\\2 decitex", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]{1,3}) l", "\\1.\\2 l", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]{1,3}) kW", "\\1.\\2 kW", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]{1,3}) W", "\\1.\\2 W", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]{1,3}) V", "\\1.\\2 V", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]{1,3}) Ah", "\\1.\\2 Ah", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]{1,3}) bar", "\\1.\\2 bar", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]{1,3}) cm", "\\1.\\2 cm", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]{1,3}) Nm", "\\1.\\2 Nm", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]{1,3}) kV", "\\1.\\2 kV", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]{1,3}) kHz", "\\1.\\2 kHz", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]{1,3}) kV", "\\1.\\2 kV", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]{1,3}) MHz", "\\1.\\2 MHz", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]{1,3}) μm", "\\1.\\2 μm", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]{1,3}) Ohm", "\\1.\\2 Ohm", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]{1,3}) dB", "\\1.\\2 dB", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("([0-9]),([0-9]{1,3}) kvar", "\\1.\\2 kvar", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("±([0-9]),([0-9]{1,3})", "±\\1.\\2", sDocumentXML, flags=re.MULTILINE)
-		sDocumentXML = re.sub("€ ([0-9]{1,3}),([0-9]{1,3})", "€ \\1.\\2", sDocumentXML, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]) kg", "\\1.\\2 kg", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]) Kg", "\\1.\\2 kg", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]) C", "\\1.\\2 C", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9])kg", "\\1.\\2kg", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]{1,3}) g", "\\1.\\2 g", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]{1,3})g", "\\1.\\2g", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]{1,3}) dl", "\\1.\\2 dl", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]{1,3}) m", "\\1.\\2 m", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]{1,3})m", "\\1.\\2m", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]{1,3}) decitex", "\\1.\\2 decitex", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]{1,3}) l", "\\1.\\2 l", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]{1,3}) kW", "\\1.\\2 kW", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]{1,3}) W", "\\1.\\2 W", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]{1,3}) V", "\\1.\\2 V", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]{1,3}) Ah", "\\1.\\2 Ah", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]{1,3}) bar", "\\1.\\2 bar", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]{1,3}) cm", "\\1.\\2 cm", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]{1,3}) Nm", "\\1.\\2 Nm", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]{1,3}) kV", "\\1.\\2 kV", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]{1,3}) kHz", "\\1.\\2 kHz", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]{1,3}) kV", "\\1.\\2 kV", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]{1,3}) MHz", "\\1.\\2 MHz", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]{1,3}) μm", "\\1.\\2 μm", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]{1,3}) Ohm", "\\1.\\2 Ohm", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]{1,3}) dB", "\\1.\\2 dB", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]),([0-9]{1,3}) kvar", "\\1.\\2 kvar", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("±([0-9]),([0-9]{1,3})", "±\\1.\\2", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("€ ([0-9]{1,3}),([0-9]{1,3})", "€ \\1.\\2", document_xml_string, flags=re.MULTILINE)
 
 
-		sFileName = os.path.join(app.MODEL_DIR, "word")
-		sFileName = os.path.join(sFileName, "document.xml")
-
-
-		file = codecs.open(sFileName, "w", "utf-8")
-		file.write(sDocumentXML)
+		filename = os.path.join(app.MODEL_DIR, "word")
+		filename = os.path.join(filename, "document.xml")
+		file = codecs.open(filename, "w", "utf-8")
+		file.write(document_xml_string)
 		file.close()
-
-		#print ("Creating document")
 
 		###########################################################################
 		## Finally, ZIP everything up
@@ -276,7 +272,6 @@ class chapter(object):
 		WHERE gn.goods_nomenclature_sid = cs.goods_nomenclature_sid
 		AND s.id = cs.section_id
 		AND gn.goods_nomenclature_item_id = '""" + self.chapter_string + """00000000'"""
-		print (sql)
 		cur = app.conn.cursor()
 		cur.execute(sql)
 		row = cur.fetchone()
