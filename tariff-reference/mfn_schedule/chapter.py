@@ -7,6 +7,10 @@ from application import application
 from duty        import duty
 from commodity   import commodity
 from hierarchy   import hierarchy
+from docxcompose.composer import Composer
+from docx import Document
+from zipfile import ZipFile, ZIP_DEFLATED
+
 
 app = f.app
 
@@ -15,12 +19,12 @@ class chapter(object):
 		self.chapter_id = iChapter
 		if self.chapter_id in (77, 98, 99):
 			return
-		self.chapter_string = str(self.chapter_id).zfill(2)
-		self.footnote_list = []
-		self.duty_list = []
-		self.supplementary_unit_list = []
-		self.seasonal_records = 0
-		self.wide_duty = False
+		self.chapter_string				= str(self.chapter_id).zfill(2)
+		self.footnote_list				= []
+		self.duty_list					= []
+		self.supplementary_unit_list	= []
+		self.seasonal_records			= 0
+		self.wide_duty					= False
 
 		print ("Creating " + app.document_type + " for chapter " + self.chapter_string)
 
@@ -29,13 +33,8 @@ class chapter(object):
 		self.get_section_details()
 		self.get_chapter_description()
 		self.get_duties()
-		
-		if app.document_type == "classification":
-			self.get_section_notes()
-			self.get_chapter_notes()
-		else:
-			self.section_notes = ""
-			self.chapter_notes = ""
+
+
 
 	def format_chapter(self):
 		if self.chapter_id in (77, 98, 99):
@@ -142,26 +141,20 @@ class chapter(object):
 		## Write the main document
 		###########################################################################
 
-		sOut = ""
-		if self.new_section == True:
-			sHeading1XML = app.sHeading1XML
-			sHeading1XML = sHeading1XML.replace("{HEADINGa}", "Section " + self.section_numeral)
-			sHeading1XML = sHeading1XML.replace("{HEADINGb}", self.section_title)
-			sOut += sHeading1XML
-			if self.section_notes != "":
-				sOut += self.section_notesHeading
-				sOut += f.format_markdown(self.section_notes)
+		body_string = ""
+		if app.document_type == "schedule":
+			if self.new_section == True:
+				sHeading1XML = app.sHeading1XML
+				sHeading1XML = sHeading1XML.replace("{HEADINGa}", "Section " + self.section_numeral)
+				sHeading1XML = sHeading1XML.replace("{HEADINGb}", self.section_title)
+				body_string += sHeading1XML
 
-		sHeading2XML = app.sHeading2XML
-		sHeading2XML = sHeading2XML.replace("{CHAPTER}", "Chapter " + self.chapter_string)
-		sHeading2XML = sHeading2XML.replace("{HEADING}", self.chapter_description)
-		sOut += sHeading2XML
+			sHeading2XML = app.sHeading2XML
+			sHeading2XML = sHeading2XML.replace("{CHAPTER}", "Chapter " + self.chapter_string)
+			sHeading2XML = sHeading2XML.replace("{HEADING}", self.chapter_description)
+			body_string += sHeading2XML
 
-		if app.document_type == "classification":
-			sChap = app.sHeading3XML.replace("{HEADING}", "Chapter Notes")
-			sOut += sChap
-			sOut += f.format_markdown(self.chapter_notes)
-
+		
 		table_xml_string = app.table_xml_string
 		#There are special columns where the width of the description needs to be big
 		if self.chapter_id in (3, 15, 22, 29, 32, 38, 39, 44, 64, 70, 72, 84, 85):
@@ -176,9 +169,9 @@ class chapter(object):
 
 		table_xml_string = table_xml_string.replace("{TABLEBODY}", table_content)
 
-		sOut += table_xml_string
+		body_string += table_xml_string
 		document_xml_string = app.document_xml_string
-		document_xml_string = document_xml_string.replace("{BODY}", sOut)
+		document_xml_string = document_xml_string.replace("{BODY}", body_string)
 
 		# Final replaces on the super and subscripts
 		document_xml_string = document_xml_string.replace("{TITLE1}", self.document_title.upper())
@@ -233,14 +226,13 @@ class chapter(object):
 		###########################################################################
 
 		f.zipdir(self.word_filename)
+		if app.document_type == "classification":
+			self.prepend_chapter_notes()
+
 
 	def get_chapter_basics(self):
-		BASE_DIR     = os.path.dirname(os.path.realpath(__file__))
-		OUTPUT_DIR = os.path.join(BASE_DIR, "output")
-		OUTPUT_DIR = os.path.join(OUTPUT_DIR, app.document_type)
-
 		filename = app.document_type + "_" + self.chapter_string + ".docx"
-		self.word_filename = os.path.join(OUTPUT_DIR, filename)
+		self.word_filename = os.path.join(app.OUTPUT_DIR, filename)
 		if (app.document_type == "classification"):
 			self.document_title = "UK Goods Classification"
 		else:
@@ -290,37 +282,33 @@ class chapter(object):
 				self.new_section = r[2]
 				break
 
+	def prepend_chapter_notes(self):
+		chapter_notes_filename = "chapter" + self.chapter_string + ".docx"
+		chapter_notes_file = os.path.join(app.CHAPTER_NOTES_DIR, chapter_notes_filename)
+		master_document = Document(chapter_notes_file)
+		composer = Composer(master_document)
+		my_chapter_file = Document(self.word_filename)
+		composer.append(my_chapter_file)
+		composer.save(self.word_filename)
 
 
-	def get_section_notes(self):
-		###############################################################
-		# Get the section notes
-		# Relevant to the classification only
-		sql = """SELECT content FROM section_notes WHERE section_id = '""" + str(self.sSectionID) + """'"""
-		cur = app.conn.cursor()
-		cur.execute(sql)
-		if cur.rowcount == 0:
-			self.section_notesHeading = ""
-			self.section_notes        = ""
-		else:
-			row = cur.fetchone()
-			self.section_notes        = row[0]
-			self.section_notesHeading = app.sHeading3XML
-			self.section_notesHeading = self.section_notesHeading.replace("{HEADING}", "There are important section notes for this part of the tariff:")
+	def get_chapter_notes_from_document_xml(self):
+		path = os.path.join(app.CHAPTER_NOTES_DIR, "chapter01.docx")
+		document = ZipFile(path)
+		self.chapter_notes_xml = str(document.read('word/document.xml'))
+		self.chapter_notes_xml = self.remove_header_footer_xml(self.chapter_notes_xml)
+		document.close()
 
+	
+	def remove_header_footer_xml(self, s):
+		s2 = ""
+		pos = s.find("<w:body")
+		pos2 = s.find("<w:sectPr")
+		if pos > 0 and pos2 > 0:
+			s2 = s[pos + 8: pos2]
 
-	def get_chapter_notes(self):
-		###############################################################
-		# Get the chapter notes
-		# Relevant to the classification only
-		sql = "SELECT content FROM chapter_notes WHERE chapter_id = '" + self.chapter_string + "'"
-		cur = app.conn.cursor()
-		cur.execute(sql)
-		row = cur.fetchone()
-		try:
-			self.chapter_notes = row[0]
-		except:
-			self.chapter_notes = ""
+		return (s2)
+
 
 	def get_duties(self):
 		###############################################################

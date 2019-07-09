@@ -19,10 +19,12 @@ class application(object):
 		self.suppress_duties		= False
 
 		self.BASE_DIR			= os.path.dirname(os.path.abspath(__file__))
-		self.SOURCE_DIR			= os.path.join(self.BASE_DIR, "source")
-		self.COMPONENT_DIR		= os.path.join(self.BASE_DIR, "xmlcomponents")
-		self.MODEL_DIR			= os.path.join(self.BASE_DIR, "model")
-		self.CONFIG_DIR			= os.path.join(self.BASE_DIR, "..")
+		self.SOURCE_DIR			= os.path.join(self.BASE_DIR, 	"source")
+		self.TEMP_DIR			= os.path.join(self.BASE_DIR, 	"temp")
+		self.CHAPTER_NOTES_DIR	= os.path.join(self.SOURCE_DIR, "chapter_notes")
+		self.COMPONENT_DIR		= os.path.join(self.BASE_DIR, 	"xmlcomponents")
+		self.MODEL_DIR			= os.path.join(self.BASE_DIR, 	"model")
+		self.CONFIG_DIR			= os.path.join(self.BASE_DIR, 	"..")
 		self.CONFIG_DIR			= os.path.join(self.CONFIG_DIR, "..")
 		self.CONFIG_DIR			= os.path.join(self.CONFIG_DIR, "create-data")
 		self.CONFIG_DIR			= os.path.join(self.CONFIG_DIR, "config")
@@ -40,6 +42,9 @@ class application(object):
 				self.document_type = "classification"
 		except:
 			self.document_type = "schedule"
+
+		self.OUTPUT_DIR			= os.path.join(self.BASE_DIR,	"output")
+		self.OUTPUT_DIR			= os.path.join(self.OUTPUT_DIR, self.document_type)
 
 		# Define the parameters - first chapter
 		try:

@@ -27,7 +27,7 @@ def format_markdown(s):
 	s = re.sub("</sup>", "", s, flags=re.DOTALL)
 	s = re.sub("_", "\"", s, flags=re.DOTALL)
 	s = s.replace("  ", " ")
-	sOut = ""
+	body_string = ""
 	a = s.split("\n")
 	for ax in a:
 		if ax[:2] == "##":
@@ -35,7 +35,7 @@ def format_markdown(s):
 			sTemp = sTemp.replace("{HEADING}", ax.strip())
 			sTemp = sTemp.replace("\.", ".")
 			sTemp = sTemp.replace("##", "")
-			sOut += sTemp
+			body_string += sTemp
 		elif ax[:4] == "  * ":
 			sTemp = ax.strip()
 			sTemp = sTemp.replace("* -", "")
@@ -43,28 +43,28 @@ def format_markdown(s):
 			sTemp = sTemp.replace("\.", ".")
 			sTemp = re.sub("^\([a-z]\) ", "", sTemp)
 			sTemp = app.sBulletXML.replace("{TEXT}", sTemp)
-			sOut += sTemp
+			body_string += sTemp
 		elif ax[:2] == "* ":
 			sTemp = app.sParaXML
 			sTemp = sTemp.replace("{TEXT}", ax.strip())
 			sTemp = sTemp.replace("* ", "")
 			sTemp = sTemp.replace("\.", ".")
-			sOut += sTemp
+			body_string += sTemp
 		elif ax[:1] == "*":
 			sTemp = app.sParaXML
 			sTemp = sTemp.replace("{TEXT}", ax.strip())
 			sTemp = sTemp.replace("*", "")
 			sTemp = sTemp.replace("\.", ".")
-			sOut += sTemp
+			body_string += sTemp
 		else:
 			sTemp = app.sParaXML
 			sTemp = sTemp.replace("{TEXT}", ax.strip())
 			sTemp = sTemp.replace("* ", "")
 			sTemp = sTemp.replace("\.", ".")
 			if sTemp != "\n":
-				sOut += sTemp
+				body_string += sTemp
 			
-	return (sOut)
+	return (body_string)
 	
 
 def zipdir(archivename):
