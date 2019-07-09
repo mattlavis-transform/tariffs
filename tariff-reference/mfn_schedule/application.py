@@ -32,6 +32,7 @@ class application(object):
 		self.CONFIG_FILE_LOCAL	= os.path.join(self.CONFIG_DIR, "config_migrate_measures_and_quotas.json")
 
 		self.get_config()
+		a = 1
 
 		# Define the parameters - document type
 		try:
