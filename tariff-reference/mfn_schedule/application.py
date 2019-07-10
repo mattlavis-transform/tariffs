@@ -14,6 +14,7 @@ class application(object):
 		self.authoriseduse_list		= []
 		self.seasonal_list			= []
 		self.special_list			= []
+		self.latin_phrases			= []
 		self.section_chapter_list	= []
 		self.debug					= False
 		self.suppress_duties		= False
@@ -32,7 +33,8 @@ class application(object):
 		self.CONFIG_FILE_LOCAL	= os.path.join(self.CONFIG_DIR, "config_migrate_measures_and_quotas.json")
 
 		self.get_config()
-		a = 1
+		self.get_latin_terms()
+		
 
 		# Define the parameters - document type
 		try:
@@ -66,6 +68,17 @@ class application(object):
 			self.document_type = "schedule"
 
 		self.clear()
+
+	def get_latin_terms(self):
+		latin_folder	= os.path.join(self.SOURCE_DIR,	"latin")
+		latin_file		= os.path.join(latin_folder, 	"latin_phrases.txt")
+		with open(latin_file, "r") as f:
+			reader = csv.reader(f)
+			temp = list(reader)
+		
+		for row in temp:
+			latin_phrase	= row[0]
+			self.latin_phrases.append(latin_phrase)
 
 
 	def clear(self): 

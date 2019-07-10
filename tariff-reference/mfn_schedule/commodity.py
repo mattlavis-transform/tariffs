@@ -102,8 +102,23 @@ class commodity(object):
 		self.combined_duty = self.combined_duty.strip()
 
 
+	def latinise(self):
+		# Italicise any Latin text based on the content of the file latin_phrases.txt
+		my_phrases = []
+		for latin_phrase in app.latin_phrases:
+			latin_phrase_parts = latin_phrase.split(" ")
+			if self.description.find(latin_phrase) > 0:
+				if latin_phrase not in my_phrases:
+					self.description = self.description.replace(latin_phrase, "</w:t></w:r><w:r><w:rPr><w:i/><w:iCs/></w:rPr><w:t>" + latin_phrase + " </w:t></w:r><w:r><w:t xml:space='preserve'>")
+				for part in latin_phrase_parts:
+					my_phrases.append (part)
+					if "thynnus" in latin_phrase:
+						my_phrases.append ("thynnus")
+
+
 	def format_description(self):
 		self.description = str(self.description)
+		self.latinise()
 		self.description = self.description.replace("|", " ")
 		#self.description = re.sub("([0-9]),([0-9])", "\\1.\\2", self.description) # picks up false positives
 		self.description = re.sub("([0-9]) %", "\\1%", self.description)
@@ -124,9 +139,11 @@ class commodity(object):
 		self.description = self.description.replace("  ", " ")
 		self.description = self.description.replace("!o!", chr(176))
 		self.description = self.description.replace("\xA0", " ")
-		self.description = ("<w:t>-</w:t><w:tab/>" * self.indents) + "<w:t>" + self.description + "</w:t>"
+		self.description = ("<w:t>-</w:t><w:tab/>" * self.indents) + "<w:t xml:space='preserve'>" + self.description + "</w:t>"
 		if (self.indents < 2): # Make it bold
 			self.description = "<w:rPr><w:b/></w:rPr>" + self.description
+			self.description = self.description.replace("<w:r><w:rPr><w:i/><w:iCs/></w:rPr>", "<w:r><w:rPr><w:i/><w:b/><w:iCs/></w:rPr>")
+			self.description = self.description.replace("<w:r>", "<w:r><w:rPr><w:b/></w:rPr>")
 
 
 	def get_significant_digits(self):
