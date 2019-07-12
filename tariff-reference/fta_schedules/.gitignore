@@ -1,4 +1,5 @@
 __pycache__/
 output/
 unused/
-output*/
+output/*
+!output/README.md
