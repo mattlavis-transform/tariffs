@@ -79,25 +79,30 @@ class chapter(object):
 				my_commodity.check_for_authorised_use()
 				self.seasonal_records += my_commodity.check_for_seasonal()
 
-		#####################################################################
-		## Inherit up
-		#####################################################################
+		#######################################################################################
+		## Inherit any duties that exist at higher levels in the hierarchy down to lower levels
+		#######################################################################################
 		commodity_count = len(commodity_list)
 
 		### The new bit - Inherit duties from the 1st item you find above you in the
 		### list that has an indent lower than mine and a value
 		for loop1 in range(0, commodity_count):
 			my_commodity = commodity_list[loop1]
-			if my_commodity.product_line_suffix == "80":
-				if (my_commodity.combined_duty == "") and (my_commodity.leaf == 1):
-					for loop2 in range(loop1 - 1 , 0, -1):
+			if 1 > 0:
+			#if my_commodity.product_line_suffix == "80":
+				if (my_commodity.combined_duty == ""): # and (my_commodity.leaf == 1):
+					
+					for loop2 in range(loop1, 0, -1):
 						upper_commodity = commodity_list[loop2]
 						if upper_commodity.combined_duty != "" and upper_commodity.indents < my_commodity.indents:
 							my_commodity.combined_duty = upper_commodity.combined_duty
 							my_commodity.notes_list = upper_commodity.notes_list
+							if my_commodity.commodity_code == "0301919090":
+								print ("hello")
 							break
-						if upper_commodity.indents >= my_commodity.indents or upper_commodity.indents == 0:
-							break
+						if upper_commodity.indents > my_commodity.indents or upper_commodity.indents == 0:
+							#break
+							pass
 
 		###########################################################################
 		## Check for row suppression - We should not be suppressing rows 
@@ -116,6 +121,8 @@ class chapter(object):
 			else:
 				my_commodity.suppress_duty = False
 
+			my_commodity.suppress_duty = False
+
 		###########################################################################
 		## Output the rows to buffer
 		###########################################################################
@@ -129,6 +136,7 @@ class chapter(object):
 				row_string = row_string.replace("{DESCRIPTION}",	my_commodity.description)
 				row_string = row_string.replace("{INDENT}",      	my_commodity.indent_string)
 				if my_commodity.suppress_duty == True:
+					print ("Suppressing a duty")
 					row_string = row_string.replace("{DUTY}",       f.surround(""))
 					row_string = row_string.replace("{NOTES}",      "")
 				else:
@@ -226,7 +234,7 @@ class chapter(object):
 		###########################################################################
 
 		f.zipdir(self.word_filename)
-		if app.document_type == "classification":
+		if app.document_type == "xclassification":
 			self.prepend_chapter_notes()
 
 
@@ -255,6 +263,7 @@ class chapter(object):
 		except:
 			self.chapter_description = ""
 
+
 	def get_section_details(self):
 		###############################################################
 		# Get the section header
@@ -281,6 +290,7 @@ class chapter(object):
 			if int(r[0]) == self.chapter_id:
 				self.new_section = r[2]
 				break
+
 
 	def prepend_chapter_notes(self):
 		chapter_notes_filename = "chapter" + self.chapter_string + ".docx"
@@ -324,7 +334,6 @@ class chapter(object):
 		AND LEFT(m.goods_nomenclature_item_id, 2) = '""" + self.chapter_string + """'
 		AND m.measure_type_id IN ('103', '105')
 		ORDER BY m.goods_nomenclature_item_id, m.measure_type_id, m.measure_sid, mc.duty_expression_id"""
-		#print (sql, app.DBASE)
 
 		cur = app.conn.cursor()
 		cur.execute(sql)

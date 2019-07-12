@@ -34,7 +34,6 @@
               <w:tabs>
                 <w:tab w:val="left" w:pos="1250"/>
               </w:tabs>
-              <!--<w:jc w:val="left"/>//-->
             </w:pPr>
             {DUTY}
           </w:p>
@@ -50,7 +49,6 @@
           <w:p>
             <w:pPr>
               <w:pStyle w:val="NormalinTable"/>
-              <!--<w:jc w:val="left"/>//-->
             </w:pPr>
             {NOTES}
           </w:p>
@@ -83,7 +81,6 @@
             </w:pPr>
             <w:r>
               {DESCRIPTION}
-			  <!--{FOOT}//-->
             </w:r>
           </w:p>
         </w:tc>

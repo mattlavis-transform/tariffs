@@ -4,7 +4,7 @@ Euthynnus
 Zea mays var. saccharata
 Zea Mays Saccharata
 Xiphias gladius
-Xanthosoma spp
+Xanthosoma
 Voandzeia subterranea
 Vitis vinifera c.v.
 vigna unguiculata spp. unguiculata
@@ -30,22 +30,19 @@ Vaccinium macrocarpon
 Vaccinium corymbosum
 Vaccinium angustifolium
 Vaccinium
-Urophycis spp.
-Urophycis spp
 Urophycis
 Ulmus
 Triticum durum
-Trifolium spp
 Trifolium pratense L
+Trifolium
 Tridacnidae
 Trichosanthes L.
 Trichosantes L.
 Tricholoma
-Tremella spp
+Tremella
 Trachurus trachurus
-Trachurus spp.
-Trachurus spp
 Trachurus murphyi
+Trachurus
 Todarodes sagittatus
 Tilia
 Thyrsites atun
@@ -60,12 +57,11 @@ alalunga
 Theragra chalcogramma
 Murraya koenigii
 Swietenia
-Strongylocentrotus spp.
-Strombus spp.
-Strombus spp
+Strongylocentrotus
+Strombus
 Stichopus japonicus
-Squalus spp
 Squalus acanthias
+Squalus
 Sprattus sprattus
 Sphyrnidae
 Sparus aurata
@@ -73,52 +69,40 @@ Sparidae
 Solenidae
 Soleidae
 Solecurtidae
-Solea spp.
+Solea
 Solanum Melogena L.
 Sirenia
-Silurus spp.
-Sepioteuthis spp.
-Sepioteuthis spp
-Sepiola spp.
-Sepiola spp
+Silurus
+Sepioteuthis
+Sepiola
 Sepiola rondeleti
 Sepia officinalis
 Semelidae
-Sebastes spp.
-Sebastes spp
+Sebastes
 Sebastes mentella
 Sebastes marinus
-Scyliorhinus spp.
-Scyliorhinus spp
+Scyliorhinus
 Scophthalmidae
-Scomberomorus spp.
-Scomberomorus spp
+Scomberomorus
 Scomber scombrus
 Scomber japonicus
 Scomber colias
 Scomber australasicus
 sativum
-Sardinops;
-Sardinops spp.
-Sardinops spp
 Sardinops
-Sardinella spp.
-Sardinella spp
+Sardinella
 sardinella
 Sardina pilchardus
-Sarda spp.
-Sarda spp
-Sarda s.p.p.
+Sarda
 Salmo trutta
 Salmo salar
 Rossia macrosoma
 Robinia
-Rhopilema spp.
+Rhopilema
 Rhombosolea
 Rhincodon typus
 Reinhardtius hippoglossoides
-Rastrelliger spp.
-Rastrelliger spp
+Rastrelliger
 Rajidae
 Rachycentron canadum
 Quercus
@@ -150,18 +134,14 @@ Placopecten
 Pisum sativum
 Piper cubeba
 Piper betle L.
-Pinus spp
 Pinus
 Pinnipedia
 Pimenta
 Picea
 Phaseolus vulgaris
-Phaseolus spp.
-Phaseolus spp
 Phaseolus
-Peurullus spp.
-Perna spp.
-Perna spp
+Peurullus
+Perna
 Penaeus vannamei
 Penaeus monodon
 Penaeus
@@ -173,25 +153,21 @@ Pecten
 Parapenaeus longirostris
 Paralithodes camchaticus
 Paracentrotus lividus
-Panulirus spp.
-Pangasius spp.
-Pandalus spp.
+Panulirus
+Pangasius
 Pandalus montagui
 Pandalus jordani
 Pandalus borealis
 Pandalus
 Pandalidae
-Pampus spp.
-Pampus spp
-Palinurus spp.
-Pagellus spp.
-xPagellus spp
+Pampus
+Palinurus
+Pagellus
 Ommastrephes sagittatus
 Ostrea
 Osteochilus hasselti
 Origanum majorana
-Oreochromis spp.
-Oreochromis spp
+Oreochromis
 Orcynopsis unicolor
 Oncorhynchus tschawytscha
 Oncorhynchus rhodurus
@@ -207,28 +183,30 @@ Oncorhynchus chrysogaster
 Oncorhynchus apache
 Oncorhynchus aguabonita
 Onchorhynchus chrysogaster
-Ommastrephes spp.
+Ommastrephes
 Ommastrephes sagittatus
-Octopus spp.
-Nototodarus spp.
+Octopus
+Nototodarus
 Nephrops norvegicus
-Mytilus spp.
+Mytilus
 Mytilus edulis
 Mylopharyngodon piceus
 Myidae
 Muscari comusum
 Muraenolepididae
 Mormodica L.
+Mormodica
 Moridae
 Morida
 Momordica L.
-Molva spp.
+Momordica
 Molva molva
 Molva dipterygia dipterygia
+Molva
 Micromesistius poutassou
 Micromesistius australis
 Mesodesmatidae
-Merluccius spp.
+Merluccius
 Merluccius productus
 Merluccius paradoxus
 Merluccius merluccius
@@ -242,14 +220,11 @@ Merlangius merlangus
 Mentha piperita
 Melanonidae
 Melanogrammus aeglefinus
-Megalobrama spp.
-Megalobrama spp
+Megalobrama
 Marjorana hortensis
-Mangifera spp
 Mangifera
 Mallotus villosus
 Mactridae
-Macruronus spp
 Macruronus novaezelandiae
 Macruronus magellanicus
 Macruronus
@@ -260,63 +235,57 @@ Lycium barbarum L
 Lutjanus purpureus
 lupines
 Loxechinus albus
-Lophius spp.
-Lophius spp
+Lophius
 Lolium perenne L.
 Lolium multiflorum Lam.
 Loligo vulgaris
-Loligo spp.
-Loligo spp
 Loligo pealei
 Loligo gahi
+Loligo
 Liriodendron
 Limanda ferruginea
 Limanda aspera
-Lilium spp.
+Lilium
 Leucopaxillus
 Leucoagaricus
 Leucadendron
 Leptobarbus hoeveni
 Lepista
-Lepidorhombus spp.
-Lepidorhombus spp
+Lepidorhombus
 Lepidopsetta polyxystra
 Lepidopsetta bilineata
 Lates niloticus
 Lamna nasus
 Lactuca sativa
-Labeo spp.
+Labeo
 Katsuwonus pelamis
 Katsuwonus
 Kathetostoma giganteum
 Karakishmish
 Juglans
-Jasus spp
+Jasus
 Isuridae
 Istiophoridae
 inter alia
-Illex spp
-Ictalurus spp.
-Ictalurus spp
-Hypophthalmichthys spp.
+Illex
+Ictalurus
+Hypophthalmichthys
 Hucho hucho
-Homarus spp.
-Homarus spp
 Homarus americanus
+Homarus
 Holothuroidea
 Hippoglossus stenolepis
 Hippoglossus hippoglossus
 Hiatellidae
 Hexanchus griseus
-Haliotis spp.
-Haliotis spp
+Haliotis
 Geryon affinis
 Genypterus capensis
 Genypterus blacodes
-Genus Psidium spp.
+Genus Psidium
 genus Pimenta
-Genus Mangifera spp.
-Genus Carica spp.
+Genus Mangifera
+Genus Carica
 genus Capsicum
 Gallus domesticus
 Gadus ogac
@@ -332,77 +301,70 @@ Fagus
 Euterpe oleracea
 Euclichthyidae
 Eucalyptus
-Engraulis spp.
-Engraulis spp
+Engraulis
 Engraulis anchoita
+Engraulis
 egusi
 Echinus esculentus
 Dromaius novaehollandiae
 Donacidae
-Dissostichus spp.
-Dissostichus spp
-Dioscorea spp.
-Dicentrarchus spp.
+Dissostichus
+Dioscorea
 Dicentrarchus labrax
+Dicentrarchus
 Dentex dentex
-Decapterus spp.
-Decapterus spp
+Decapterus
 Dactylis glomerata L
-Cyprinus spp.
 Cyprinus carpio
+Cyprinus
 Cynoglossidae
 curcuma
-Cucurbita spp
+Cucurbita
 Cucurbita pepo L. var. oleifera Pietsch
 Cucurbita pepo L. convar. Citrullinia Greb. Var. styriaca
+Cucurbita
 Ctenopharyngodon idellus
 Crangon crangon
 Crangon
-Corylus spp.
+Corylus
 Coregone
 comber scombrus
 Cololabis saira
-Colocasia spp
+Colocasia
 Colocasia Schott
-Cola spp.
+Cola
 Cochlearia armoracia
 Clupea pallasii
 Clupea ilisha
 Clupea harengus
 Clitocybe
-Clarias spp.
+Clarias
 Citrus limonum
 Citrus limon
 Citrus latifolia
 Citrus aurantifolia
-Citrullus spp.
-Citrullus spp
+Citrullus
 Citharidae
-Cirrhinus spp.
+Cirrhinus
 Cinnamomum zeylanicum Blume
-Cichorium spp
+Cichorium
 Cichorium intybus var. foliosum
 Cichorium intybus
 Chlamys
-Chionoecetes spp.
-Channa spp.
-Channa spp
+Chionoecetes
+Channa
 Cetorhinus maximus
 Cetacea
 Catla catla
-Castanea spp.
 Castanea s
+Castanea
 Carya
 Carthamus tinctorius
 Cardiidae
 Carcharhinidae
-Carassius spp.
 Carassius carassius
-Caranx trachurus
-Caranx spp.
-Caranx spp
-Capsicum spp.
-Capsicum spp
+Carassiuss
+Caranx
 Capsicum annuum
 Capsicum
 Cannabis sativa L.
@@ -416,8 +378,7 @@ Brunia
 Brosme brosme
 Bregmacerotidae
 Brassica rapa spp. Rapa
-Brama spp.
-Brama spp
+Brama
 Bothidae
 Boreogadus saida
 Boops boops
@@ -429,19 +390,18 @@ Bergera koenigii
 Banksia
 Auxis thazard
 Auxis rochei
-Auricularia spp.
+Auricularia
 Auricularia polytricha
 Arcticidae
 Apium graveolens
-Anguilla spp.
-Anguilla spp
-angasius spp.
+Anguilla
+angasius
 andalus
 Ananas comosus
 Ananas
 Alopiidae
 Alnus
-Allocyttus spp.
+Allocyttus
 Agrostis
 Agave
 Agaricus

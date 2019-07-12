@@ -107,6 +107,7 @@ class commodity(object):
 		my_phrases = []
 		for latin_phrase in app.latin_phrases:
 			latin_phrase_parts = latin_phrase.split(" ")
+			#print (self.description)
 			if self.description.find(latin_phrase) > 0:
 				if latin_phrase not in my_phrases:
 					self.description = self.description.replace(latin_phrase, "</w:t></w:r><w:r><w:rPr><w:i/><w:iCs/></w:rPr><w:t>" + latin_phrase + " </w:t></w:r><w:r><w:t xml:space='preserve'>")
@@ -120,12 +121,10 @@ class commodity(object):
 		self.description = str(self.description)
 		self.latinise()
 		self.description = self.description.replace("|", " ")
-		#self.description = re.sub("([0-9]),([0-9])", "\\1.\\2", self.description) # picks up false positives
 		self.description = re.sub("([0-9]) %", "\\1%", self.description)
 		self.description = self.description.replace("!x!", "x")
 		self.description = self.description.replace(" - ", "</w:t></w:r><w:r><w:br/><w:t>- ")
 		self.description = re.sub(r"\$(.)", r'</w:t></w:r><w:r><w:rPr><w:vertAlign w:val="superscript"/></w:rPr><w:t>\1</w:t></w:r><w:r><w:t xml:space="preserve">', self.description)
-
 
 		if self.description[-3:] == "!1!":
 			self.description = self.description[:-3]
@@ -180,6 +179,8 @@ class commodity(object):
 					self.commodity_code_formatted = s[0:4] + ' ' + s[4:6] + ' ' + s[6:8]
 				else:
 					self.commodity_code_formatted = s[0:4] + ' ' + s[4:6] + ' ' + s[6:8] + ' ' + s[8:10]
+
+		self.commodity_code_formatted = self.commodity_code + "-" + self.product_line_suffix
 		
 	def check_for_mixture(self):
 		#print ("Checking for Mixture")
