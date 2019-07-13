@@ -1,4 +1,0 @@
-# HTML Prototype
-
-HTML prototypes
-
