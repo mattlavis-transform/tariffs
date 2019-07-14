@@ -202,6 +202,8 @@ class commodity(object):
 				self.commodity_code_formatted = s[0:4] + ' ' + s[4:6] + ' ' + s[6:8]
 			else:
 				self.commodity_code_formatted = s[0:4] + ' ' + s[4:6] + ' ' + s[6:8] + ' ' + s[8:10]
+
+		#self.commodity_code_formatted = self.commodity_code + ":" + str(self.indents)
 		
 	def check_for_mixture(self):
 		#print ("Checking for Mixture")
@@ -220,6 +222,7 @@ class commodity(object):
 					self.combined_duty = "Formula"
 				self.assigned = True
 				self.special_list.append("mixture")
+
 
 	def check_for_specials(self):
 		#print ("Checking for specials")

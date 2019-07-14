@@ -96,18 +96,25 @@ class chapter(object):
 			max_indent = -1
 			for loop1 in range(0, commodity_count):
 				my_commodity = commodity_list[loop1]
+				
 				if my_commodity.indents > max_indent:
 					max_indent = my_commodity.indents
-				if (my_commodity.combined_duty == ""): 
-					
-					for loop2 in range(loop1, 0, -1):
+
+				if (my_commodity.combined_duty == ""):
+					#print (my_commodity.commodity_code)
+					for loop2 in range(loop1 - 1, -1, -1):
 						upper_commodity = commodity_list[loop2]
-						if upper_commodity.combined_duty != "" and upper_commodity.indents < my_commodity.indents:
+						if (upper_commodity.combined_duty != "") and (upper_commodity.indents < my_commodity.indents or ((upper_commodity.significant_digits == 2 and my_commodity.significant_digits == 4))):
+							#print (my_commodity.commodity_code, upper_commodity.commodity_code)
 							my_commodity.combined_duty = upper_commodity.combined_duty
 							my_commodity.notes_list = upper_commodity.notes_list
 							break
-						if upper_commodity.indents <= 1:
-							break
+						if self.chapter_id in (97, 47, 80, 14, 48, 49):
+							if upper_commodity.indents <= 1 and upper_commodity.significant_digits == 2:
+								break
+						else:
+							if upper_commodity.indents <= 1 and upper_commodity.significant_digits > 2:
+								break
 
 
 		###########################################################################
@@ -116,21 +123,29 @@ class chapter(object):
 		###########################################################################
 
 		if app.document_type == "schedule":
-			for indent in range(max_indent, 2, -1):
+			for indent in range(max_indent, -1, -1):
 				for loop1 in range(0, commodity_count):
 					my_commodity = commodity_list[loop1]
 					if my_commodity.indents == indent:
 						if my_commodity.significant_digits == 10:
-							for loop2 in range(loop1, 0, -1):
+							for loop2 in range(loop1 - 1, -1, -1):
 								upper_commodity = commodity_list[loop2]
+								#print (my_commodity.commodity_code, upper_commodity.commodity_code)
 								if upper_commodity.indents == my_commodity.indents - 1:
 									if upper_commodity.combined_duty == my_commodity.combined_duty:
-										if my_commodity.commodity_code == "1001912020":
+										"""
+										if my_commodity.commodity_code == "9702000090":
 											print (my_commodity.commodity_code, my_commodity.indents, my_commodity.significant_digits, upper_commodity.commodity_code, upper_commodity.indents, upper_commodity.significant_digits, )
+										"""
 										my_commodity.suppress_row = True
 										break
-								if upper_commodity.indents <= 1:
-									break
+
+								if self.chapter_id in (97, 47, 80, 14, 48, 49):
+									if upper_commodity.indents <= 1 and upper_commodity.significant_digits == 2:
+										break
+								else:
+									if upper_commodity.indents <= 1 and upper_commodity.significant_digits > 2:
+										break
 
 		
 		###########################################################################

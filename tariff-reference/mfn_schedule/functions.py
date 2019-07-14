@@ -74,9 +74,10 @@ def zipdir(archivename):
 		for root, dirs, files in os.walk(MODEL_DIR):
 			#NOTE: ignore empty directories
 			for fn in files:
-				absfn = os.path.join(root, fn)
-				zfn = absfn[len(MODEL_DIR)+len(os.sep):] #XXX: relative path
-				z.write(absfn, zfn)
+				if fn != ".DS_Store":
+					absfn = os.path.join(root, fn)
+					zfn = absfn[len(MODEL_DIR)+len(os.sep):] #XXX: relative path
+					z.write(absfn, zfn)
 
 
 def mstr(x):
