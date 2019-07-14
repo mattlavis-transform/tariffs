@@ -107,8 +107,7 @@ class commodity(object):
 		my_phrases = []
 		for latin_phrase in app.latin_phrases:
 			latin_phrase_parts = latin_phrase.split(" ")
-			#print (self.description)
-			if self.description.find(latin_phrase) > 0:
+			if self.description.find(latin_phrase) > -1:
 				if latin_phrase not in my_phrases:
 					self.description = self.description.replace(latin_phrase, "</w:t></w:r><w:r><w:rPr><w:i/><w:iCs/></w:rPr><w:t>" + latin_phrase + " </w:t></w:r><w:r><w:t xml:space='preserve'>")
 				for part in latin_phrase_parts:
@@ -118,8 +117,10 @@ class commodity(object):
 
 
 	def format_description(self):
-		self.description = str(self.description)
 		self.latinise()
+		self.description = str(self.description)
+		self.description = self.description.replace("|%|", "% ")
+		self.description = self.description.replace("|gram", " gram")
 		self.description = self.description.replace("|g", "g")
 		self.description = self.description.replace("|kg", "kg")
 		self.description = self.description.replace("|", " ")
@@ -147,7 +148,7 @@ class commodity(object):
 			self.description = "<w:rPr><w:b/></w:rPr>" + self.description
 			self.description = self.description.replace("<w:r><w:rPr><w:i/><w:iCs/></w:rPr>", "<w:r><w:rPr><w:i/><w:b/><w:iCs/></w:rPr>")
 			self.description = self.description.replace("<w:r>", "<w:r><w:rPr><w:b/></w:rPr>")
-
+		
 
 	def get_significant_digits(self):
 		if self.commodity_code[-8:] == '00000000':

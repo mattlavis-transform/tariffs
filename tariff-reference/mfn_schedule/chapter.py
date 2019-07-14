@@ -216,6 +216,8 @@ class chapter(object):
 		document_xml_string = re.sub("@(.)", '</w:t></w:r><w:r><w:rPr><w:vertAlign w:val="subscript"/></w:rPr><w:t>\\1</w:t></w:r><w:r><w:t>', document_xml_string, flags=re.MULTILINE)
 
 		# Missing commas
+		document_xml_string = re.sub(" ([0-9]{1,3}),([0-9]{1,3}) ", " \\1.\\2 ", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub(" ([0-9]{1,3}),([0-9]{1,3})\\)", " \\1.\\2)", document_xml_string, flags=re.MULTILINE)
 		document_xml_string = re.sub("([0-9]),([0-9])%", "\\1.\\2%", document_xml_string, flags=re.MULTILINE)
 		document_xml_string = re.sub("([0-9]),([0-9]) kg", "\\1.\\2 kg", document_xml_string, flags=re.MULTILINE)
 		document_xml_string = re.sub("([0-9]),([0-9]) Kg", "\\1.\\2 kg", document_xml_string, flags=re.MULTILINE)

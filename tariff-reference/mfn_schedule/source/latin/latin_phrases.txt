@@ -1,6 +1,7 @@
-Euthynnus affinis
-Euthynnus (Katsuwonus) pelamis
 Euthynnus
+affinis
+Katsuwonus
+pelamis
 Zea mays var. saccharata
 Zea Mays Saccharata
 Xiphias gladius
@@ -126,7 +127,7 @@ Poa
 Pleuronectidae
 Pleuronectes quadrituberculatus
 Pleuronectes platessa
-xPleuronectes
+Pleuronectes
 Pleoticus muelleri
 Platichthys flesus
 Platanus
