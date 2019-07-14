@@ -30,11 +30,12 @@ print ("Adding TOC")
 
 BASE_DIR		= os.path.dirname(os.path.abspath(__file__))
 COMPONENT_DIR	= os.path.join(BASE_DIR, "xmlcomponents")
+SOURCE_DIR		= os.path.join(BASE_DIR, "source")
+TOC_DIR			= os.path.join(SOURCE_DIR, "toc")
 OUTPUT_DIR		= os.path.join(BASE_DIR, "output")
 DEEP_DIR		= os.path.join(OUTPUT_DIR, document_type)
 
-
-file_master = os.path.join(COMPONENT_DIR, "toc_" + document_type + ".docx")
+file_master = os.path.join(TOC_DIR, "toc_" + document_type + ".docx")
 master = Document(file_master)
 composer = Composer(master)
 for s in range(first_chapter, last_chapter + 1):

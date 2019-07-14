@@ -8,19 +8,19 @@ Xiphias gladius
 Xanthosoma
 Voandzeia subterranea
 Vitis vinifera c.v.
-vigna unguiculata spp. unguiculata
-Vigna unguiculata spp. sesquipedalis
-Vigna unguiculata
+unguiculata
+sesquipedalis
 Vigna subterranea
-Vigna spp.
 Vigna radiata (L.) Wilczek
 Vigna mungo (L.) Hepper
 Vigna angularis
-Vicia faba var. minor
-Vicia faba var. major
-Vicia faba var. equina
+vigna
+Vigna
 Vicia Faba major L
 Vicia faba
+var. minor
+var. major
+var. equina
 Veneridae
 var. dulce
 Vaccinium vitis-idaea
@@ -89,7 +89,6 @@ Scomber scombrus
 Scomber japonicus
 Scomber colias
 Scomber australasicus
-sativum
 Sardinops
 Sardinella
 sardinella
@@ -116,6 +115,7 @@ Prunus cerasus
 Prunus
 Protea
 Prionace glauca
+Portunus
 Populus
 Pollachius virens
 Pollachius pollachius
@@ -133,6 +133,7 @@ Platichthys flesus
 Platanus
 Placopecten
 Pisum sativum
+sativum
 Piper cubeba
 Piper betle L.
 Pinus
@@ -156,9 +157,9 @@ Paralithodes camchaticus
 Paracentrotus lividus
 Panulirus
 Pangasius
-Pandalus montagui
-Pandalus jordani
-Pandalus borealis
+montagui
+jordani
+borealis
 Pandalus
 Pandalidae
 Pampus
@@ -186,11 +187,10 @@ Oncorhynchus aguabonita
 Onchorhynchus chrysogaster
 Ommastrephes
 Ommastrephes sagittatus
-Octopus
 Nototodarus
 Nephrops norvegicus
-Mytilus
 Mytilus edulis
+Mytilus
 Mylopharyngodon piceus
 Myidae
 Muscari comusum
@@ -282,11 +282,10 @@ Haliotis
 Geryon affinis
 Genypterus capensis
 Genypterus blacodes
-Genus Psidium
-genus Pimenta
-Genus Mangifera
-Genus Carica
-genus Capsicum
+Psidium
+Pimenta
+Carica
+Capsicum
 Gallus domesticus
 Gadus ogac
 Gadus morhua
@@ -348,8 +347,9 @@ Citharidae
 Cirrhinus
 Cinnamomum zeylanicum Blume
 Cichorium
-Cichorium intybus var. foliosum
-Cichorium intybus
+intybus
+var.
+foliosum
 Chlamys
 Chionoecetes
 Channa
@@ -373,7 +373,7 @@ Camelidae
 Calocybe
 Callinectes sapidus
 Cajanus cajan
-BuccinumUndatum
+Buccinum Undatum
 Buccinum undatum
 Brunia
 Brosme brosme
@@ -410,3 +410,5 @@ Aesculus
 Actinidia chinensis
 Acer
 Abies
+spp.
+Spp.

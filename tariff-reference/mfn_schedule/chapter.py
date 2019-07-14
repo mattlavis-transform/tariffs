@@ -204,20 +204,12 @@ class chapter(object):
 		document_xml_string = app.document_xml_string
 		document_xml_string = document_xml_string.replace("{BODY}", body_string)
 
-		# Final replaces on the super and subscripts
-		document_xml_string = document_xml_string.replace("{TITLE1}", self.document_title.upper())
-		document_xml_string = re.sub("<w:t>(.*)m2</w:t>", "<w:t>\g<1>m</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"superscript\"/></w:rPr><w:t>2</w:t>", document_xml_string, flags=re.MULTILINE)
-		document_xml_string = re.sub("<w:t>(.*)m3</w:t>", "<w:t>\g<1>m</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"superscript\"/></w:rPr><w:t>3</w:t>", document_xml_string, flags=re.MULTILINE)
-		document_xml_string = re.sub("<w:t>(.*)K2O</w:t>", "<w:t>\g<1>K</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"subscript\"/></w:rPr><w:t>2</w:t></w:r><w:r><w:t>O</w:t>", document_xml_string, flags=re.MULTILINE)
-		document_xml_string = re.sub("<w:t>(.*)H2O2</w:t>", "<w:t>\g<1>H</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"subscript\"/></w:rPr><w:t>2</w:t></w:r><w:r><w:t>O</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"subscript\"/></w:rPr><w:t>2</w:t>", document_xml_string, flags=re.MULTILINE)
-		document_xml_string = re.sub("<w:t>(.*)P2O5</w:t>", "<w:t>\g<1>P</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"subscript\"/></w:rPr><w:t>2</w:t></w:r><w:r><w:t>O</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"subscript\"/></w:rPr><w:t>5</w:t>", document_xml_string, flags=re.MULTILINE)
-		
-		# Subscripts
-		document_xml_string = re.sub("@(.)", '</w:t></w:r><w:r><w:rPr><w:vertAlign w:val="subscript"/></w:rPr><w:t>\\1</w:t></w:r><w:r><w:t>', document_xml_string, flags=re.MULTILINE)
 
 		# Missing commas
-		document_xml_string = re.sub(" ([0-9]{1,3}),([0-9]{1,3}) ", " \\1.\\2 ", document_xml_string, flags=re.MULTILINE)
-		document_xml_string = re.sub(" ([0-9]{1,3}),([0-9]{1,3})\\)", " \\1.\\2)", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub(" ([0-9]{1,4}),([0-9]{1,4}) ", " \\1.\\2 ", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub("([0-9]{1,4}),([0-9]{1,4})/", "\\1.\\2/", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub(" ([0-9]{1,4}),([0-9]{1,4})%", " \\1.\\2%", document_xml_string, flags=re.MULTILINE)
+		document_xml_string = re.sub(" ([0-9]{1,4}),([0-9]{1,4})\\)", " \\1.\\2)", document_xml_string, flags=re.MULTILINE)
 		document_xml_string = re.sub("([0-9]),([0-9])%", "\\1.\\2%", document_xml_string, flags=re.MULTILINE)
 		document_xml_string = re.sub("([0-9]),([0-9]) kg", "\\1.\\2 kg", document_xml_string, flags=re.MULTILINE)
 		document_xml_string = re.sub("([0-9]),([0-9]) Kg", "\\1.\\2 kg", document_xml_string, flags=re.MULTILINE)

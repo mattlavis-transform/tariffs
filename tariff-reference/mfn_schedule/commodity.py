@@ -119,6 +119,8 @@ class commodity(object):
 	def format_description(self):
 		self.latinise()
 		self.description = str(self.description)
+		self.description = self.description.replace("|of the CN", "")
+		self.description = self.description.replace("liters", "litres")
 		self.description = self.description.replace("|%|", "% ")
 		self.description = self.description.replace("|gram", " gram")
 		self.description = self.description.replace("|g", "g")
@@ -127,7 +129,9 @@ class commodity(object):
 		self.description = re.sub("([0-9]) %", "\\1%", self.description)
 		self.description = self.description.replace("!x!", "x")
 		self.description = self.description.replace(" kg", "kg")
-		self.description = self.description.replace(" - ", "</w:t></w:r><w:r><w:br/><w:t>- ")
+		self.description = self.description.replace(" -goods", " - goods")
+		self.description = self.description.replace(" - ", "</w:t></w:r><w:r><w:br/><w:t xml:space='preserve'>- ")
+		self.description = self.description.replace(" • ", "</w:t></w:r><w:r><w:br/><w:t xml:space='preserve'>- ")
 		self.description = re.sub(r"\$(.)", r'</w:t></w:r><w:r><w:rPr><w:vertAlign w:val="superscript"/></w:rPr><w:t>\1</w:t></w:r><w:r><w:t xml:space="preserve">', self.description)
 
 		if self.description[-3:] == "!1!":
@@ -144,11 +148,28 @@ class commodity(object):
 		self.description = self.description.replace("\xA0", " ")
 		self.description = self.description.replace(" %", "%")
 		self.description = ("<w:t>-</w:t><w:tab/>" * self.indents) + "<w:t xml:space='preserve'>" + self.description + "</w:t>"
+
+		# Superscripts
+		self.description = re.sub("<w:t>(.*)m2</w:t>", "<w:t>\g<1>m</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"superscript\"/></w:rPr><w:t>2</w:t>", self.description, flags=re.MULTILINE)
+		self.description = re.sub("<w:t>(.*)m3</w:t>", "<w:t xml:space='preserve'>\g<1>m</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"superscript\"/></w:rPr><w:t>3</w:t>", self.description, flags=re.MULTILINE)
+		self.description = re.sub("<w:t>(.*)K2O</w:t>", "<w:t>\g<1>K</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"subscript\"/></w:rPr><w:t>2</w:t></w:r><w:r><w:t>O</w:t>", self.description, flags=re.MULTILINE)
+		self.description = re.sub("<w:t>(.*)H2O2</w:t>", "<w:t>\g<1>H</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"subscript\"/></w:rPr><w:t>2</w:t></w:r><w:r><w:t>O</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"subscript\"/></w:rPr><w:t>2</w:t>", self.description, flags=re.MULTILINE)
+		self.description = re.sub("<w:t>(.*)P2O5</w:t>", "<w:t>\g<1>P</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"subscript\"/></w:rPr><w:t>2</w:t></w:r><w:r><w:t>O</w:t></w:r><w:r><w:rPr><w:vertAlign w:val=\"subscript\"/></w:rPr><w:t>5</w:t>", self.description, flags=re.MULTILINE)
+		
+		# Subscripts
+		self.description = re.sub("@(.)", '</w:t></w:r><w:r><w:rPr><w:vertAlign w:val="subscript"/></w:rPr><w:t xml:space="preserve">\\1</w:t></w:r><w:r><w:t xml:space="preserve">', self.description, flags=re.MULTILINE)
+
+
+
 		if (self.indents < 2): # Make it bold
 			self.description = "<w:rPr><w:b/></w:rPr>" + self.description
 			self.description = self.description.replace("<w:r><w:rPr><w:i/><w:iCs/></w:rPr>", "<w:r><w:rPr><w:i/><w:b/><w:iCs/></w:rPr>")
 			self.description = self.description.replace("<w:r>", "<w:r><w:rPr><w:b/></w:rPr>")
-		
+		self.description = self.description.replace(" </w:t></w:r><w:r><w:t xml:space='preserve'>,", "</w:t></w:r><w:r><w:t xml:space='preserve'>,")
+		self.description = self.description.replace("€ ", "€")
+
+		self.description = self.description.replace("<w:r><w:br/></w:r><w:r><w:t> </w:t></w:r><w:r><w:br/></w:r>", "<w:r><w:br/></w:r><w:r><w:t> </w:t></w:r>")
+		 
 
 	def get_significant_digits(self):
 		if self.commodity_code[-8:] == '00000000':
