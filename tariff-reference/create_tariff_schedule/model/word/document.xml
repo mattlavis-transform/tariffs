@@ -427,7 +427,7 @@
               <w:pStyle w:val="NormalinTable"/>
               <w:jc w:val="left"/>
             </w:pPr>
-            <w:r><w:t></w:t></w:r>
+            
           </w:p>
         </w:tc>
         <w:tc>
@@ -500,7 +500,7 @@
               </w:tabs>
               <w:jc w:val="left"/>
             </w:pPr>
-            <w:r><w:t>AU</w:t></w:r>
+            <w:r><w:t></w:t></w:r>
           </w:p>
         </w:tc>
         <w:tc>
@@ -516,7 +516,7 @@
               <w:pStyle w:val="NormalinTable"/>
               <w:jc w:val="left"/>
             </w:pPr>
-            <w:r><w:t>Code reserved for authorised use; the duty rate is specified under regulations made under section 19 of the Taxation (Cross-border Trade) Act 2018</w:t></w:r>
+            <w:r><w:t></w:t></w:r>
           </w:p>
         </w:tc>
         <w:tc>

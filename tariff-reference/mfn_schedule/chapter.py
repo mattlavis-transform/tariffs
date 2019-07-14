@@ -24,7 +24,7 @@ class chapter(object):
 		self.duty_list					= []
 		self.supplementary_unit_list	= []
 		self.seasonal_records			= 0
-		self.wide_duty					= False
+		self.contains_authorised_use	= False
 
 		print ("Creating " + app.document_type + " for chapter " + self.chapter_string)
 
@@ -50,6 +50,7 @@ class chapter(object):
 		cur.execute(sql)
 		rows = cur.fetchall()
 		commodity_list = []
+		# Make a list of commodities
 		for rw in rows:
 			commodity_code    	= rw[0]
 			productline_suffix	= f.mstr(rw[1])
@@ -60,68 +61,90 @@ class chapter(object):
 			my_commodity = commodity(commodity_code, description, productline_suffix, number_indents, leaf)
 			commodity_list.append (my_commodity)
 
-		for my_commodity in commodity_list:
-			# Start with the duties
-			for d in self.duty_list:
-				if my_commodity.commodity_code == d.commodity_code:
-					if my_commodity.product_line_suffix == "80":
-						my_commodity.duty_list.append(d)
-						my_commodity.assigned = True
+		# Assign duties to those commodities as appropriate
+		if app.document_type == "schedule":
+			for my_commodity in commodity_list:
+				for d in self.duty_list:
+					if my_commodity.commodity_code == d.commodity_code:
+						if my_commodity.product_line_suffix == "80":
+							my_commodity.duty_list.append(d)
+							my_commodity.assigned = True
 
-			my_commodity.combine_duties()
+				my_commodity.combine_duties()
+				my_commodity.format_commodity_code()
 
 		###########################################################################
-		## Get exceptions
+		# Get exceptions
 		###########################################################################
 		if app.document_type == "schedule":
 			for my_commodity in commodity_list:
 				my_commodity.check_for_specials()
 				my_commodity.check_for_authorised_use()
+				if my_commodity.combined_duty == "AU":
+					self.contains_authorised_use = True
 				self.seasonal_records += my_commodity.check_for_seasonal()
 
-		#######################################################################################
-		## Inherit any duties that exist at higher levels in the hierarchy down to lower levels
-		#######################################################################################
-		commodity_count = len(commodity_list)
 
-		### The new bit - Inherit duties from the 1st item you find above you in the
-		### list that has an indent lower than mine and a value
-		for loop1 in range(0, commodity_count):
-			my_commodity = commodity_list[loop1]
-			if 1 > 0:
-			#if my_commodity.product_line_suffix == "80":
-				if (my_commodity.combined_duty == ""): # and (my_commodity.leaf == 1):
+		#######################################################################################
+		# Inherit any duties that exist at higher levels in the hierarchy down to lower levels
+		# Inherit duties from the 1st item you find above you in the
+		# list that has an indent lower than mine and a value
+		#######################################################################################
+
+		if app.document_type == "schedule":
+			commodity_count = len(commodity_list)
+			max_indent = -1
+			for loop1 in range(0, commodity_count):
+				my_commodity = commodity_list[loop1]
+				if my_commodity.indents > max_indent:
+					max_indent = my_commodity.indents
+				if (my_commodity.combined_duty == ""): 
 					
 					for loop2 in range(loop1, 0, -1):
 						upper_commodity = commodity_list[loop2]
 						if upper_commodity.combined_duty != "" and upper_commodity.indents < my_commodity.indents:
 							my_commodity.combined_duty = upper_commodity.combined_duty
 							my_commodity.notes_list = upper_commodity.notes_list
-							if my_commodity.commodity_code == "0301919090":
-								print ("hello")
 							break
-						if upper_commodity.indents > my_commodity.indents or upper_commodity.indents == 0:
-							#break
-							pass
+						if upper_commodity.indents <= 1:
+							break
+
 
 		###########################################################################
-		## Check for row suppression - We should not be suppressing rows 
+		# Hypothesis - we need to start at the deepest tier and then move upwards in order to work out
+		# what commodities are siblings of what and suppress all 
 		###########################################################################
-		for loop1 in range(0, commodity_count):
-			my_commodity.suppress_row = False
+
+		if app.document_type == "schedule":
+			for indent in range(max_indent, 2, -1):
+				for loop1 in range(0, commodity_count):
+					my_commodity = commodity_list[loop1]
+					if my_commodity.indents == indent:
+						if my_commodity.significant_digits == 10:
+							for loop2 in range(loop1, 0, -1):
+								upper_commodity = commodity_list[loop2]
+								if upper_commodity.indents == my_commodity.indents - 1:
+									if upper_commodity.combined_duty == my_commodity.combined_duty:
+										if my_commodity.commodity_code == "1001912020":
+											print (my_commodity.commodity_code, my_commodity.indents, my_commodity.significant_digits, upper_commodity.commodity_code, upper_commodity.indents, upper_commodity.significant_digits, )
+										my_commodity.suppress_row = True
+										break
+								if upper_commodity.indents <= 1:
+									break
+
 		
 		###########################################################################
 		## Only suppress the duty if the item is not PLS of 80
 		## This will change to be - only supppress if not a leaf
 		###########################################################################
-		for loop1 in range(0, commodity_count):
-			my_commodity = commodity_list[loop1]
-			if my_commodity.leaf != 1:
-				my_commodity.suppress_duty = True
-			else:
-				my_commodity.suppress_duty = False
+		if app.document_type == "schedule":
+			for loop1 in range(0, commodity_count):
+				my_commodity = commodity_list[loop1]
+				if my_commodity.product_line_suffix != "80":
+					my_commodity.suppress_duty = True
+				else:
+					my_commodity.suppress_duty = False
 
-			my_commodity.suppress_duty = False
 
 		###########################################################################
 		## Output the rows to buffer
@@ -129,14 +152,14 @@ class chapter(object):
 		table_content = ""
 		for my_commodity in commodity_list:
 			if my_commodity.suppress_row == False:
-				my_commodity.check_for_mixture()
-				my_commodity.combine_notes()
+				if app.document_type == "schedule":
+					my_commodity.check_for_mixture()
+					my_commodity.combine_notes()
 				row_string = app.sTableRowXML
 				row_string = row_string.replace("{COMMODITY}",   	my_commodity.commodity_code_formatted)
 				row_string = row_string.replace("{DESCRIPTION}",	my_commodity.description)
 				row_string = row_string.replace("{INDENT}",      	my_commodity.indent_string)
 				if my_commodity.suppress_duty == True:
-					print ("Suppressing a duty")
 					row_string = row_string.replace("{DUTY}",       f.surround(""))
 					row_string = row_string.replace("{NOTES}",      "")
 				else:
@@ -164,11 +187,11 @@ class chapter(object):
 
 		
 		table_xml_string = app.table_xml_string
-		#There are special columns where the width of the description needs to be big
-		if self.chapter_id in (3, 15, 22, 29, 32, 38, 39, 44, 64, 70, 72, 84, 85):
-			width_list = [650, 900, 800, 2650]
+
+		if self.contains_authorised_use == True:
+			width_list = [600, 1050, 1000, 2350]
 		else:
-			width_list = [650, 1150, 900, 2200]
+			width_list = [600, 1050, 600, 2750]
 
 		table_xml_string = table_xml_string.replace("{WIDTH_CLASSIFICATION}", str(width_list[0]))
 		table_xml_string = table_xml_string.replace("{WIDTH_DUTY}",			str(width_list[1]))
@@ -193,6 +216,7 @@ class chapter(object):
 		document_xml_string = re.sub("@(.)", '</w:t></w:r><w:r><w:rPr><w:vertAlign w:val="subscript"/></w:rPr><w:t>\\1</w:t></w:r><w:r><w:t>', document_xml_string, flags=re.MULTILINE)
 
 		# Missing commas
+		document_xml_string = re.sub("([0-9]),([0-9])%", "\\1.\\2%", document_xml_string, flags=re.MULTILINE)
 		document_xml_string = re.sub("([0-9]),([0-9]) kg", "\\1.\\2 kg", document_xml_string, flags=re.MULTILINE)
 		document_xml_string = re.sub("([0-9]),([0-9]) Kg", "\\1.\\2 kg", document_xml_string, flags=re.MULTILINE)
 		document_xml_string = re.sub("([0-9]),([0-9]) C", "\\1.\\2 C", document_xml_string, flags=re.MULTILINE)
@@ -234,7 +258,7 @@ class chapter(object):
 		###########################################################################
 
 		f.zipdir(self.word_filename)
-		if app.document_type == "xclassification":
+		if app.document_type == "classification":
 			self.prepend_chapter_notes()
 
 

@@ -18,7 +18,7 @@ class duty(object):
 	def get_duty_string(self):
 		self.duty_string = ""
 
-		if self.duty_expression_id == "01":
+		if self.duty_expression_id == "01": # Ad valorem of specific
 			if self.monetary_unit_code == "":
 				self.duty_string += "{0:1.1f}".format(self.duty_amount) + "%"
 			else:
@@ -28,7 +28,7 @@ class duty(object):
 					if self.measurement_unit_qualifier_code != "":
 						self.duty_string += " / " + self.get_measurement_unit_qualifier_code()
 
-		elif self.duty_expression_id in ("04", "19", "20"):
+		elif self.duty_expression_id in ("04", "19", "20"): # Plus % or amount
 			if self.monetary_unit_code == "":
 				self.duty_string += "+ {0:1.1f}".format(self.duty_amount) + "%"
 			else:
@@ -38,10 +38,10 @@ class duty(object):
 					if self.measurement_unit_qualifier_code != "":
 						self.duty_string += " / " + self.get_measurement_unit_qualifier_code()
 
-		elif self.duty_expression_id == "12":
+		elif self.duty_expression_id == "12": # Agri component
 			self.duty_string += " + AC"
 
-		elif self.duty_expression_id == "15":
+		elif self.duty_expression_id == "15": # Minimum
 			if self.monetary_unit_code == "":
 				self.duty_string += "MIN {0:1.1f}".format(self.duty_amount) + "%"
 			else:
@@ -51,7 +51,7 @@ class duty(object):
 					if self.measurement_unit_qualifier_code != "":
 						self.duty_string += " / " + self.get_measurement_unit_qualifier_code()
 
-		elif self.duty_expression_id == "17": #MAX
+		elif self.duty_expression_id == "17": # Maximum
 			if self.monetary_unit_code == "":
 				self.duty_string += "MAX {0:1.1f}".format(self.duty_amount) + "%"
 			else:
@@ -61,10 +61,10 @@ class duty(object):
 					if self.measurement_unit_qualifier_code != "":
 						self.duty_string += " / " + self.get_measurement_unit_qualifier_code()
 
-		elif self.duty_expression_id == "21":
+		elif self.duty_expression_id == "21": # Sugar duty
 			self.duty_string += " + SD"
 
-		elif self.duty_expression_id == "27":
+		elif self.duty_expression_id == "27": # Flour duty
 			self.duty_string += " + FD"
 
 	def get_measurement_unit(self, s):

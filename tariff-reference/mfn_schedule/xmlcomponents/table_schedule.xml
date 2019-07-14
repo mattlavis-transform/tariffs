@@ -8,6 +8,10 @@
       <w:tblPr>
         <w:tblStyle w:val="ListTable3"/>
         <w:tblW w:w="0" w:type="auto"/>
+		<w:tblCellMar>
+			<w:left w:w="57" w:type="dxa"/>
+			<w:right w:w="57" w:type="dxa"/>
+		</w:tblCellMar>
         <w:tblLook w:val="0620" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:noHBand="1" w:noVBand="1"/>
       </w:tblPr>
       <w:tr>

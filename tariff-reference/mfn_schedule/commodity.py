@@ -120,9 +120,12 @@ class commodity(object):
 	def format_description(self):
 		self.description = str(self.description)
 		self.latinise()
+		self.description = self.description.replace("|g", "g")
+		self.description = self.description.replace("|kg", "kg")
 		self.description = self.description.replace("|", " ")
 		self.description = re.sub("([0-9]) %", "\\1%", self.description)
 		self.description = self.description.replace("!x!", "x")
+		self.description = self.description.replace(" kg", "kg")
 		self.description = self.description.replace(" - ", "</w:t></w:r><w:r><w:br/><w:t>- ")
 		self.description = re.sub(r"\$(.)", r'</w:t></w:r><w:r><w:rPr><w:vertAlign w:val="superscript"/></w:rPr><w:t>\1</w:t></w:r><w:r><w:t xml:space="preserve">', self.description)
 
@@ -138,6 +141,7 @@ class commodity(object):
 		self.description = self.description.replace("  ", " ")
 		self.description = self.description.replace("!o!", chr(176))
 		self.description = self.description.replace("\xA0", " ")
+		self.description = self.description.replace(" %", "%")
 		self.description = ("<w:t>-</w:t><w:tab/>" * self.indents) + "<w:t xml:space='preserve'>" + self.description + "</w:t>"
 		if (self.indents < 2): # Make it bold
 			self.description = "<w:rPr><w:b/></w:rPr>" + self.description
@@ -168,19 +172,14 @@ class commodity(object):
 		if self.product_line_suffix != "80":
 			self.commodity_code_formatted = ""
 		else:
-			if self.leaf == 1:
-				self.commodity_code_formatted = s[0:4] + ' ' + s[4:6] + ' ' + s[6:8] + ' ' + s[8:10]
+			if s[4:10] == "000000":
+				self.commodity_code_formatted = s[0:4]
+			elif s[6:10] == "0000":
+				self.commodity_code_formatted = s[0:4] + ' ' + s[4:6]
+			elif s[8:10] == "00":
+				self.commodity_code_formatted = s[0:4] + ' ' + s[4:6] + ' ' + s[6:8]
 			else:
-				if s[4:10] == "000000":
-					self.commodity_code_formatted = s[0:4]
-				elif s[6:10] == "0000":
-					self.commodity_code_formatted = s[0:4] + ' ' + s[4:6]
-				elif s[8:10] == "00":
-					self.commodity_code_formatted = s[0:4] + ' ' + s[4:6] + ' ' + s[6:8]
-				else:
-					self.commodity_code_formatted = s[0:4] + ' ' + s[4:6] + ' ' + s[6:8] + ' ' + s[8:10]
-
-		self.commodity_code_formatted = self.commodity_code + "-" + self.product_line_suffix
+				self.commodity_code_formatted = s[0:4] + ' ' + s[4:6] + ' ' + s[6:8] + ' ' + s[8:10]
 		
 	def check_for_mixture(self):
 		#print ("Checking for Mixture")
@@ -218,9 +217,9 @@ class commodity(object):
 					if len(self.special_list) == 0:
 						if len(self.notes_list) != 0:
 							print (self.notes_list)
-						# self.notes_list.append("Code reserved for authorised use; the duty rate is specified under regulations made under section 19 of the Taxation (Cross-border Trade) Act 2018")
-						self.notes_list.append("Code reserved for authorised use")
-						#self.combined_duty = "AU"
+						self.notes_list.append("Code reserved for authorised use; the duty rate is specified under regulations made under section 19 of the Taxation (Cross-border Trade) Act 2018")
+						#self.notes_list.append("Code reserved for authorised use")
+						self.combined_duty = "AU"
 						self.assigned = True
 						self.special_list.append("authoriseduse")
 		

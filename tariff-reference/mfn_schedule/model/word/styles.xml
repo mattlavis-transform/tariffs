@@ -396,7 +396,6 @@
     <w:style w:type="paragraph" w:default="1" w:styleId="Normal">
         <w:name w:val="Normal"/>
         <w:qFormat/>
-        <w:rsid w:val="00F42657"/>
         <w:pPr>
             <w:spacing w:after="120"/>
             <w:jc w:val="both"/>
@@ -413,7 +412,6 @@
         <w:link w:val="Heading1Char"/>
         <w:uiPriority w:val="9"/>
         <w:qFormat/>
-        <w:rsid w:val="00457023"/>
         <w:pPr>
             <w:keepNext/>
             <w:keepLines/>
@@ -435,7 +433,6 @@
         <w:next w:val="Normal"/>
         <w:uiPriority w:val="9"/>
         <w:qFormat/>
-        <w:rsid w:val="00457023"/>
         <w:pPr>
             <w:keepNext/>
             <w:keepLines/>
@@ -458,7 +455,6 @@
         <w:uiPriority w:val="9"/>
         <w:unhideWhenUsed/>
         <w:qFormat/>
-        <w:rsid w:val="00457023"/>
         <w:pPr>
             <w:keepNext/>
             <w:keepLines/>
@@ -504,7 +500,6 @@
         <w:basedOn w:val="DefaultParagraphFont"/>
         <w:link w:val="Heading1"/>
         <w:uiPriority w:val="9"/>
-        <w:rsid w:val="00457023"/>
         <w:rPr>
             <w:rFonts w:ascii="Times New Roman" w:eastAsiaTheme="majorEastAsia" w:hAnsi="Times New Roman" w:cstheme="majorBidi"/>
             <w:b/>
@@ -519,7 +514,6 @@
         <w:link w:val="TitleChar"/>
         <w:uiPriority w:val="10"/>
         <w:qFormat/>
-        <w:rsid w:val="00915731"/>
         <w:pPr>
             <w:spacing w:after="0" w:line="312" w:lineRule="auto"/>
             <w:contextualSpacing/>
@@ -540,7 +534,6 @@
         <w:basedOn w:val="DefaultParagraphFont"/>
         <w:link w:val="Title"/>
         <w:uiPriority w:val="10"/>
-        <w:rsid w:val="00915731"/>
         <w:rPr>
             <w:rFonts w:ascii="Times New Roman" w:eastAsiaTheme="majorEastAsia" w:hAnsi="Times New Roman" w:cstheme="majorBidi"/>
             <w:b/>
@@ -558,7 +551,6 @@
         <w:uiPriority w:val="99"/>
         <w:semiHidden/>
         <w:unhideWhenUsed/>
-        <w:rsid w:val="00A0507B"/>
         <w:pPr>
             <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
         </w:pPr>
@@ -573,7 +565,6 @@
         <w:link w:val="FootnoteText"/>
         <w:uiPriority w:val="99"/>
         <w:semiHidden/>
-        <w:rsid w:val="00A0507B"/>
         <w:rPr>
             <w:sz w:val="20"/>
             <w:szCs w:val="20"/>
@@ -585,7 +576,6 @@
         <w:uiPriority w:val="99"/>
         <w:semiHidden/>
         <w:unhideWhenUsed/>
-        <w:rsid w:val="00A0507B"/>
         <w:rPr>
             <w:vertAlign w:val="superscript"/>
         </w:rPr>
@@ -594,7 +584,6 @@
         <w:name w:val="Table Grid"/>
         <w:basedOn w:val="TableNormal"/>
         <w:uiPriority w:val="39"/>
-        <w:rsid w:val="00A0507B"/>
         <w:pPr>
             <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
         </w:pPr>
@@ -613,7 +602,6 @@
         <w:name w:val="List Table 3"/>
         <w:basedOn w:val="TableNormal"/>
         <w:uiPriority w:val="48"/>
-        <w:rsid w:val="00195E3D"/>
         <w:pPr>
             <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
         </w:pPr>
@@ -737,9 +725,8 @@
         <w:name w:val="Normal in Table"/>
         <w:basedOn w:val="Normal"/>
         <w:qFormat/>
-        <w:rsid w:val="00F7426B"/>
         <w:pPr>
-            <w:spacing w:before="60" w:after="60" w:line="240" w:lineRule="auto"/>
+            <w:spacing w:before="40" w:after="40" w:line="264" w:lineRule="auto"/>
             <w:jc w:val="left"/>
         </w:pPr>
         <w:rPr>
@@ -752,7 +739,6 @@
         <w:basedOn w:val="DefaultParagraphFont"/>
         <w:link w:val="Heading3"/>
         <w:uiPriority w:val="9"/>
-        <w:rsid w:val="00457023"/>
         <w:rPr>
             <w:rFonts w:ascii="Times New Roman" w:eastAsiaTheme="majorEastAsia" w:hAnsi="Times New Roman" w:cstheme="majorBidi"/>
             <w:b/>
@@ -764,7 +750,6 @@
         <w:basedOn w:val="Normal"/>
         <w:uiPriority w:val="99"/>
         <w:unhideWhenUsed/>
-        <w:rsid w:val="00D568F3"/>
         <w:pPr>
             <w:numPr>
                 <w:numId w:val="1"/>
@@ -778,7 +763,6 @@
         <w:link w:val="HeaderChar"/>
         <w:uiPriority w:val="99"/>
         <w:unhideWhenUsed/>
-        <w:rsid w:val="00A35C1B"/>
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="center" w:pos="4513"/>
@@ -792,7 +776,6 @@
         <w:basedOn w:val="DefaultParagraphFont"/>
         <w:link w:val="Header"/>
         <w:uiPriority w:val="99"/>
-        <w:rsid w:val="00A35C1B"/>
         <w:rPr>
             <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
             <w:sz w:val="21"/>
@@ -804,7 +787,6 @@
         <w:link w:val="FooterChar"/>
         <w:uiPriority w:val="99"/>
         <w:unhideWhenUsed/>
-        <w:rsid w:val="00A35C1B"/>
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="center" w:pos="4513"/>
@@ -818,7 +800,6 @@
         <w:basedOn w:val="DefaultParagraphFont"/>
         <w:link w:val="Footer"/>
         <w:uiPriority w:val="99"/>
-        <w:rsid w:val="00A35C1B"/>
         <w:rPr>
             <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
             <w:sz w:val="21"/>
@@ -828,7 +809,6 @@
         <w:name w:val="Approval"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
         <w:pPr>
             <w:spacing w:before="160" w:line="220" w:lineRule="atLeast"/>
             <w:jc w:val="center"/>
@@ -843,7 +823,6 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="ArrHead">
         <w:name w:val="ArrHead"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
         <w:pPr>
             <w:keepNext/>
             <w:tabs>
@@ -863,7 +842,6 @@
         <w:name w:val="Balloon Text"/>
         <w:basedOn w:val="Normal"/>
         <w:link w:val="BalloonTextChar"/>
-        <w:rsid w:val="00765153"/>
         <w:pPr>
             <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
             <w:jc w:val="left"/>
@@ -878,7 +856,6 @@
     <w:style w:type="character" w:customStyle="1" w:styleId="BalloonTextChar">
         <w:name w:val="Balloon Text Char"/>
         <w:link w:val="BalloonText"/>
-        <w:rsid w:val="00765153"/>
         <w:rPr>
             <w:rFonts w:ascii="Segoe UI" w:eastAsia="Times New Roman" w:hAnsi="Segoe UI" w:cs="Segoe UI"/>
             <w:sz w:val="18"/>
@@ -889,7 +866,6 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="Banner">
         <w:name w:val="Banner"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
         <w:pPr>
             <w:pBdr>
                 <w:top w:val="single" w:sz="12" w:space="8" w:color="auto"/>
@@ -910,7 +886,6 @@
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Normal"/>
         <w:qFormat/>
-        <w:rsid w:val="00765153"/>
         <w:pPr>
             <w:spacing w:before="120" w:line="220" w:lineRule="atLeast"/>
         </w:pPr>
@@ -923,7 +898,6 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="ColumnHeader">
         <w:name w:val="ColumnHeader"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
         <w:pPr>
             <w:spacing w:before="40" w:after="0" w:line="220" w:lineRule="atLeast"/>
         </w:pPr>
@@ -937,7 +911,6 @@
         <w:name w:val="Coming"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="left" w:pos="3232"/>
@@ -956,7 +929,6 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="ComingC">
         <w:name w:val="ComingC"/>
         <w:basedOn w:val="Coming"/>
-        <w:rsid w:val="00765153"/>
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="clear" w:pos="3232"/>
@@ -970,7 +942,7 @@
     <w:style w:type="character" w:styleId="CommentReference">
         <w:name w:val="annotation reference"/>
         <w:semiHidden/>
-        <w:rsid w:val="00765153"/>
+
         <w:rPr>
             <w:sz w:val="16"/>
             <w:szCs w:val="16"/>
@@ -981,7 +953,6 @@
         <w:basedOn w:val="Normal"/>
         <w:link w:val="CommentTextChar"/>
         <w:semiHidden/>
-        <w:rsid w:val="00765153"/>
         <w:pPr>
             <w:spacing w:after="0" w:line="220" w:lineRule="atLeast"/>
         </w:pPr>
@@ -996,7 +967,7 @@
         <w:basedOn w:val="DefaultParagraphFont"/>
         <w:link w:val="CommentText"/>
         <w:semiHidden/>
-        <w:rsid w:val="00765153"/>
+
         <w:rPr>
             <w:rFonts w:ascii="Arial" w:eastAsia="Times New Roman" w:hAnsi="Arial" w:cs="Times New Roman"/>
             <w:sz w:val="20"/>
@@ -1008,7 +979,7 @@
         <w:basedOn w:val="CommentText"/>
         <w:next w:val="CommentText"/>
         <w:link w:val="CommentSubjectChar"/>
-        <w:rsid w:val="00765153"/>
+
         <w:rPr>
             <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
             <w:b/>
@@ -1019,7 +990,7 @@
         <w:name w:val="Comment Subject Char"/>
         <w:basedOn w:val="CommentTextChar"/>
         <w:link w:val="CommentSubject"/>
-        <w:rsid w:val="00765153"/>
+
         <w:rPr>
             <w:rFonts w:ascii="Times New Roman" w:eastAsia="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
             <w:b/>
@@ -1032,7 +1003,7 @@
         <w:name w:val="Confirmed"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:after="240" w:line="220" w:lineRule="atLeast"/>
         </w:pPr>
@@ -1045,7 +1016,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="Copyright">
         <w:name w:val="Copyright"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:after="80" w:line="240" w:lineRule="auto"/>
             <w:jc w:val="left"/>
@@ -1060,7 +1031,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="CopyrightLine">
         <w:name w:val="Copyright Line"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:after="0" w:line="220" w:lineRule="atLeast"/>
         </w:pPr>
@@ -1074,7 +1045,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="Correction">
         <w:name w:val="Correction"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:after="240" w:line="220" w:lineRule="atLeast"/>
             <w:jc w:val="center"/>
@@ -1089,7 +1060,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="DefPara">
         <w:name w:val="Def Para"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="80" w:after="0" w:line="220" w:lineRule="atLeast"/>
             <w:ind w:left="340"/>
@@ -1102,7 +1073,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="dept">
         <w:name w:val="dept"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
             <w:jc w:val="right"/>
@@ -1117,7 +1088,7 @@
     </w:style>
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="DisplayItem">
         <w:name w:val="DisplayItem"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="120" w:after="120" w:line="240" w:lineRule="auto"/>
             <w:jc w:val="center"/>
@@ -1131,7 +1102,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="Draft">
         <w:name w:val="Draft"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:after="240" w:line="220" w:lineRule="atLeast"/>
         </w:pPr>
@@ -1144,7 +1115,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="EANote">
         <w:name w:val="EA_Note"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:spacing w:line="220" w:lineRule="atLeast"/>
@@ -1160,7 +1131,7 @@
         <w:name w:val="EA_Note_note"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:after="240" w:line="220" w:lineRule="atLeast"/>
             <w:jc w:val="center"/>
@@ -1174,7 +1145,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="FootnoteCont">
         <w:name w:val="Footnote Cont"/>
         <w:basedOn w:val="FootnoteText"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:line="180" w:lineRule="exact"/>
             <w:ind w:left="340"/>
@@ -1186,7 +1157,7 @@
     </w:style>
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="FormHeading">
         <w:name w:val="FormHeading"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
             <w:jc w:val="center"/>
@@ -1199,7 +1170,7 @@
     </w:style>
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="FormSubHeading">
         <w:name w:val="FormSubHeading"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
             <w:jc w:val="center"/>
@@ -1212,7 +1183,7 @@
     </w:style>
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="FormText">
         <w:name w:val="FormText"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:after="0" w:line="220" w:lineRule="atLeast"/>
         </w:pPr>
@@ -1226,7 +1197,7 @@
         <w:name w:val="H1"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:spacing w:before="320" w:after="0" w:line="220" w:lineRule="atLeast"/>
@@ -1241,7 +1212,7 @@
         <w:name w:val="H2"/>
         <w:basedOn w:val="Heading2"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepLines w:val="0"/>
             <w:spacing w:before="80" w:line="220" w:lineRule="atLeast"/>
@@ -1260,7 +1231,7 @@
         <w:name w:val="H3"/>
         <w:basedOn w:val="Heading3"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepLines w:val="0"/>
             <w:spacing w:before="80" w:line="220" w:lineRule="atLeast"/>
@@ -1277,7 +1248,7 @@
     </w:style>
     <w:style w:type="character" w:styleId="Hyperlink">
         <w:name w:val="Hyperlink"/>
-        <w:rsid w:val="00765153"/>
+
         <w:rPr>
             <w:color w:val="auto"/>
             <w:u w:val="none"/>
@@ -1287,7 +1258,7 @@
         <w:name w:val="Interpretation"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="360" w:after="0" w:line="220" w:lineRule="atLeast"/>
         </w:pPr>
@@ -1300,7 +1271,7 @@
         <w:name w:val="Laid"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Coming"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="right" w:pos="6804"/>
@@ -1318,18 +1289,18 @@
         <w:name w:val="Laid before"/>
         <w:basedOn w:val="Approval"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
     </w:style>
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LaidDraft">
         <w:name w:val="LaidDraft"/>
         <w:basedOn w:val="Approval"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
     </w:style>
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LegSeal">
         <w:name w:val="LegSeal"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
         </w:pPr>
@@ -1344,7 +1315,7 @@
         <w:name w:val="toc 9"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepLines/>
             <w:tabs>
@@ -1362,7 +1333,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="lineseparator">
         <w:name w:val="lineseparator"/>
         <w:basedOn w:val="TOC9"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:pBdr>
                 <w:bottom w:val="single" w:sz="4" w:space="1" w:color="auto"/>
@@ -1373,7 +1344,7 @@
     </w:style>
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="linespace">
         <w:name w:val="linespace"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:after="0" w:line="240" w:lineRule="exact"/>
         </w:pPr>
@@ -1387,7 +1358,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="List1">
         <w:name w:val="List1"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="80" w:after="0" w:line="220" w:lineRule="atLeast"/>
             <w:ind w:left="737" w:hanging="397"/>
@@ -1400,7 +1371,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="List1Cont">
         <w:name w:val="List1 Cont"/>
         <w:basedOn w:val="List1"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:firstLine="0"/>
         </w:pPr>
@@ -1408,7 +1379,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQT1">
         <w:name w:val="LQT1"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="160" w:after="0" w:line="220" w:lineRule="atLeast"/>
             <w:ind w:left="567"/>
@@ -1421,7 +1392,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQT2">
         <w:name w:val="LQT2"/>
         <w:basedOn w:val="LQT1"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="80"/>
         </w:pPr>
@@ -1429,7 +1400,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQDefPara">
         <w:name w:val="LQ Def Para"/>
         <w:basedOn w:val="LQT2"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="907"/>
         </w:pPr>
@@ -1438,7 +1409,7 @@
         <w:name w:val="LQArrHead"/>
         <w:basedOn w:val="ArrHead"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="567"/>
         </w:pPr>
@@ -1449,7 +1420,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQDisplayItem">
         <w:name w:val="LQDisplayItem"/>
         <w:basedOn w:val="DisplayItem"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="567"/>
         </w:pPr>
@@ -1458,7 +1429,7 @@
         <w:name w:val="LQH1"/>
         <w:basedOn w:val="H1"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="567"/>
         </w:pPr>
@@ -1467,7 +1438,7 @@
         <w:name w:val="LQH2"/>
         <w:basedOn w:val="H2"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="737"/>
         </w:pPr>
@@ -1476,7 +1447,7 @@
         <w:name w:val="LQH3"/>
         <w:basedOn w:val="H3"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="907"/>
         </w:pPr>
@@ -1484,7 +1455,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQList1">
         <w:name w:val="LQList1"/>
         <w:basedOn w:val="List1"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1304"/>
         </w:pPr>
@@ -1492,7 +1463,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQList1Cont">
         <w:name w:val="LQList1 Cont"/>
         <w:basedOn w:val="List1Cont"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1304"/>
         </w:pPr>
@@ -1500,7 +1471,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQN1">
         <w:name w:val="LQN1"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="160" w:after="0" w:line="220" w:lineRule="atLeast"/>
             <w:ind w:left="567" w:firstLine="170"/>
@@ -1513,7 +1484,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQN2">
         <w:name w:val="LQN2"/>
         <w:basedOn w:val="LQN1"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="80"/>
         </w:pPr>
@@ -1521,7 +1492,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQN3">
         <w:name w:val="LQN3"/>
         <w:basedOn w:val="LQN2"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="left" w:pos="1304"/>
@@ -1533,7 +1504,7 @@
         <w:name w:val="LQN3-N4"/>
         <w:basedOn w:val="LQN3"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="clear" w:pos="1304"/>
@@ -1546,7 +1517,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQN4">
         <w:name w:val="LQN4"/>
         <w:basedOn w:val="LQN3"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="clear" w:pos="1304"/>
@@ -1560,7 +1531,7 @@
         <w:name w:val="LQN4-N5"/>
         <w:basedOn w:val="LQN4"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="left" w:pos="2268"/>
@@ -1571,7 +1542,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQN5">
         <w:name w:val="LQN5"/>
         <w:basedOn w:val="LQN4"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="clear" w:pos="1588"/>
@@ -1585,7 +1556,7 @@
         <w:name w:val="LQpart"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:tabs>
@@ -1606,7 +1577,7 @@
         <w:name w:val="LQpartHead"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="LQT1"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:tabs>
@@ -1627,7 +1598,7 @@
         <w:name w:val="LQschedule"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:tabs>
@@ -1648,7 +1619,7 @@
         <w:name w:val="LQscheduleHead"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="LQT1"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:tabs>
@@ -1668,7 +1639,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQschedules">
         <w:name w:val="LQschedules"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:spacing w:before="480" w:after="480" w:line="240" w:lineRule="auto"/>
@@ -1685,7 +1656,7 @@
         <w:name w:val="LQsection"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:tabs>
@@ -1706,7 +1677,7 @@
         <w:name w:val="LQsectionHead"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="LQT1"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:spacing w:before="80" w:after="0" w:line="220" w:lineRule="atLeast"/>
@@ -1722,7 +1693,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQSublist1">
         <w:name w:val="LQSublist1"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="80" w:after="0" w:line="220" w:lineRule="atLeast"/>
             <w:ind w:left="1701" w:hanging="397"/>
@@ -1735,7 +1706,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQSublist1Cont">
         <w:name w:val="LQSublist1 Cont"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="80" w:after="0" w:line="220" w:lineRule="atLeast"/>
             <w:ind w:left="1701"/>
@@ -1749,7 +1720,7 @@
         <w:name w:val="LQsubPart"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:tabs>
@@ -1770,7 +1741,7 @@
         <w:name w:val="LQsubPartHead"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="LQT1"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:tabs>
@@ -1790,7 +1761,7 @@
         <w:name w:val="LQsubSection"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:tabs>
@@ -1811,7 +1782,7 @@
         <w:name w:val="LQsubSectionHead"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="LQT1"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:spacing w:before="40" w:after="0" w:line="220" w:lineRule="atLeast"/>
@@ -1828,7 +1799,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQT1Indent">
         <w:name w:val="LQT1 Indent"/>
         <w:basedOn w:val="LQT1"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:firstLine="170"/>
         </w:pPr>
@@ -1836,7 +1807,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQT3">
         <w:name w:val="LQT3"/>
         <w:basedOn w:val="LQT2"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1304"/>
         </w:pPr>
@@ -1844,7 +1815,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQT4">
         <w:name w:val="LQT4"/>
         <w:basedOn w:val="LQT3"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1701"/>
         </w:pPr>
@@ -1852,7 +1823,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQT5">
         <w:name w:val="LQT5"/>
         <w:basedOn w:val="LQT4"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="2268"/>
         </w:pPr>
@@ -1861,7 +1832,7 @@
         <w:name w:val="LQTableCaption"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:line="220" w:lineRule="atLeast"/>
             <w:ind w:left="567"/>
@@ -1876,7 +1847,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQTableFoot">
         <w:name w:val="LQTableFoot"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="40" w:after="0" w:line="220" w:lineRule="atLeast"/>
             <w:ind w:left="567"/>
@@ -1891,7 +1862,7 @@
         <w:name w:val="LQTableNumber"/>
         <w:basedOn w:val="LQTableCaption"/>
         <w:next w:val="LQTableCaption"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="120"/>
         </w:pPr>
@@ -1899,7 +1870,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQTableTopText">
         <w:name w:val="LQTableTopText"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:after="80" w:line="220" w:lineRule="atLeast"/>
             <w:ind w:left="567"/>
@@ -1914,7 +1885,7 @@
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Normal"/>
         <w:uiPriority w:val="39"/>
-        <w:rsid w:val="002D2AC7"/>
+        
         <w:pPr>
             <w:keepNext/>
             <w:tabs>
@@ -1935,7 +1906,7 @@
         <w:basedOn w:val="TOC1"/>
         <w:next w:val="Normal"/>
         <w:autoRedefine/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="567"/>
         </w:pPr>
@@ -1945,7 +1916,7 @@
         <w:basedOn w:val="TOC1"/>
         <w:next w:val="Normal"/>
         <w:autoRedefine/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="567"/>
         </w:pPr>
@@ -1953,7 +1924,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQTOC10">
         <w:name w:val="LQTOC 10"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepLines/>
             <w:tabs>
@@ -1977,7 +1948,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQTOC11">
         <w:name w:val="LQTOC 11"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepLines/>
             <w:tabs>
@@ -2001,7 +1972,7 @@
         <w:name w:val="LQTOC 12"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="LQTOC10"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:spacing w:after="240" w:line="240" w:lineRule="auto"/>
@@ -2019,7 +1990,7 @@
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Normal"/>
         <w:uiPriority w:val="39"/>
-        <w:rsid w:val="002D2AC7"/>
+        
         <w:pPr>
             <w:keepNext/>
             <w:tabs>
@@ -2040,7 +2011,7 @@
         <w:basedOn w:val="TOC2"/>
         <w:next w:val="Normal"/>
         <w:autoRedefine/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="567"/>
         </w:pPr>
@@ -2051,7 +2022,7 @@
         <w:next w:val="Normal"/>
         <w:autoRedefine/>
         <w:semiHidden/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:tabs>
@@ -2072,7 +2043,7 @@
         <w:basedOn w:val="TOC3"/>
         <w:next w:val="Normal"/>
         <w:autoRedefine/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="567"/>
         </w:pPr>
@@ -2083,7 +2054,7 @@
         <w:next w:val="Normal"/>
         <w:autoRedefine/>
         <w:semiHidden/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:tabs>
@@ -2103,7 +2074,7 @@
         <w:name w:val="LQTOC 4"/>
         <w:basedOn w:val="TOC4"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="567"/>
         </w:pPr>
@@ -2114,7 +2085,7 @@
         <w:next w:val="Normal"/>
         <w:autoRedefine/>
         <w:semiHidden/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:tabs>
@@ -2135,7 +2106,7 @@
         <w:basedOn w:val="TOC5"/>
         <w:next w:val="Normal"/>
         <w:autoRedefine/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="567"/>
         </w:pPr>
@@ -2146,7 +2117,7 @@
         <w:next w:val="Normal"/>
         <w:autoRedefine/>
         <w:semiHidden/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:tabs>
@@ -2168,7 +2139,7 @@
         <w:basedOn w:val="TOC6"/>
         <w:next w:val="Normal"/>
         <w:autoRedefine/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="567"/>
         </w:pPr>
@@ -2179,7 +2150,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQTOC9">
         <w:name w:val="LQTOC 9"/>
         <w:basedOn w:val="TOC9"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="left" w:pos="1145"/>
@@ -2190,7 +2161,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="LQTOC9Indent">
         <w:name w:val="LQTOC 9 Indent"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepLines/>
             <w:tabs>
@@ -2210,7 +2181,7 @@
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Laid"/>
         <w:link w:val="MadeChar"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="left" w:pos="2438"/>
@@ -2232,7 +2203,7 @@
         <w:name w:val="Made Char"/>
         <w:link w:val="Made"/>
         <w:locked/>
-        <w:rsid w:val="00765153"/>
+
         <w:rPr>
             <w:rFonts w:ascii="Times New Roman" w:eastAsia="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
             <w:i/>
@@ -2243,7 +2214,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="N1">
         <w:name w:val="N1"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:numPr>
                 <w:numId w:val="6"/>
@@ -2258,7 +2229,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="N1legal">
         <w:name w:val="N1legal"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="160" w:after="0" w:line="220" w:lineRule="atLeast"/>
             <w:ind w:firstLine="170"/>
@@ -2271,7 +2242,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="N2">
         <w:name w:val="N2"/>
         <w:basedOn w:val="N1"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:numPr>
                 <w:ilvl w:val="1"/>
@@ -2282,7 +2253,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="N3">
         <w:name w:val="N3"/>
         <w:basedOn w:val="N2"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:numPr>
                 <w:ilvl w:val="2"/>
@@ -2293,7 +2264,7 @@
         <w:name w:val="N3-N4"/>
         <w:basedOn w:val="N3"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:numPr>
                 <w:ilvl w:val="0"/>
@@ -2309,7 +2280,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="N4">
         <w:name w:val="N4"/>
         <w:basedOn w:val="N3"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:numPr>
                 <w:ilvl w:val="3"/>
@@ -2320,7 +2291,7 @@
         <w:name w:val="N4-N5"/>
         <w:basedOn w:val="N4"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:numPr>
                 <w:ilvl w:val="0"/>
@@ -2337,7 +2308,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="N5">
         <w:name w:val="N5"/>
         <w:basedOn w:val="N4"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:numPr>
                 <w:ilvl w:val="4"/>
@@ -2348,7 +2319,7 @@
         <w:name w:val="Negative"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="linespace"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="left" w:pos="3232"/>
@@ -2368,7 +2339,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="NLQDefPara">
         <w:name w:val="NLQ Def Para"/>
         <w:basedOn w:val="LQDefPara"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1474"/>
         </w:pPr>
@@ -2376,7 +2347,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="NLQDisplayItem">
         <w:name w:val="NLQDisplayItem"/>
         <w:basedOn w:val="LQDisplayItem"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1134"/>
         </w:pPr>
@@ -2385,7 +2356,7 @@
         <w:name w:val="NLQH1"/>
         <w:basedOn w:val="LQH1"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1134"/>
         </w:pPr>
@@ -2394,7 +2365,7 @@
         <w:name w:val="NLQH2"/>
         <w:basedOn w:val="LQH2"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1304"/>
         </w:pPr>
@@ -2403,7 +2374,7 @@
         <w:name w:val="NLQH3"/>
         <w:basedOn w:val="LQH3"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1474"/>
         </w:pPr>
@@ -2411,7 +2382,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="NLQList1">
         <w:name w:val="NLQList1"/>
         <w:basedOn w:val="LQList1"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1871"/>
         </w:pPr>
@@ -2419,7 +2390,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="NLQList1Cont">
         <w:name w:val="NLQList1 Cont"/>
         <w:basedOn w:val="LQList1Cont"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1871"/>
         </w:pPr>
@@ -2427,7 +2398,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="NLQN1">
         <w:name w:val="NLQN1"/>
         <w:basedOn w:val="LQN1"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1134"/>
         </w:pPr>
@@ -2435,7 +2406,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="NLQN2">
         <w:name w:val="NLQN2"/>
         <w:basedOn w:val="LQN2"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1134"/>
         </w:pPr>
@@ -2443,7 +2414,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="NLQN3">
         <w:name w:val="NLQN3"/>
         <w:basedOn w:val="LQN3"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1871"/>
         </w:pPr>
@@ -2452,7 +2423,7 @@
         <w:name w:val="NLQN3-N4"/>
         <w:basedOn w:val="NLQN3"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="clear" w:pos="1304"/>
@@ -2465,7 +2436,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="NLQN4">
         <w:name w:val="NLQN4"/>
         <w:basedOn w:val="LQN4"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="clear" w:pos="1588"/>
@@ -2480,7 +2451,7 @@
         <w:name w:val="NLQN4-N5"/>
         <w:basedOn w:val="LQN4-N5"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="clear" w:pos="1588"/>
@@ -2494,7 +2465,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="NLQN5">
         <w:name w:val="NLQN5"/>
         <w:basedOn w:val="LQN5"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="2835"/>
         </w:pPr>
@@ -2503,7 +2474,7 @@
         <w:name w:val="NLQpart"/>
         <w:basedOn w:val="LQpart"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="clear" w:pos="4451"/>
@@ -2516,7 +2487,7 @@
         <w:name w:val="NLQpartHead"/>
         <w:basedOn w:val="LQpartHead"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1134"/>
         </w:pPr>
@@ -2525,7 +2496,7 @@
         <w:name w:val="NLQschedule"/>
         <w:basedOn w:val="LQschedule"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="clear" w:pos="4451"/>
@@ -2538,7 +2509,7 @@
         <w:name w:val="NLQscheduleHead"/>
         <w:basedOn w:val="LQscheduleHead"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1134"/>
         </w:pPr>
@@ -2546,7 +2517,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="NLQschedules">
         <w:name w:val="NLQschedules"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:spacing w:before="480" w:after="480" w:line="240" w:lineRule="auto"/>
@@ -2563,7 +2534,7 @@
         <w:name w:val="NLQsection"/>
         <w:basedOn w:val="LQsection"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="clear" w:pos="4451"/>
@@ -2576,7 +2547,7 @@
         <w:name w:val="NLQsectionHead"/>
         <w:basedOn w:val="LQsectionHead"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1134"/>
         </w:pPr>
@@ -2584,7 +2555,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="NLQSublist1">
         <w:name w:val="NLQSublist1"/>
         <w:basedOn w:val="LQSublist1"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="2308"/>
         </w:pPr>
@@ -2592,7 +2563,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="NLQSublist1Cont">
         <w:name w:val="NLQSublist1 Cont"/>
         <w:basedOn w:val="LQSublist1Cont"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="2308"/>
         </w:pPr>
@@ -2601,7 +2572,7 @@
         <w:name w:val="NLQsubPart"/>
         <w:basedOn w:val="LQsubPart"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="clear" w:pos="4451"/>
@@ -2614,7 +2585,7 @@
         <w:name w:val="NLQsubPartHead"/>
         <w:basedOn w:val="LQsubPartHead"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1134"/>
         </w:pPr>
@@ -2623,7 +2594,7 @@
         <w:name w:val="NLQsubSection"/>
         <w:basedOn w:val="LQsubSection"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="clear" w:pos="4451"/>
@@ -2636,7 +2607,7 @@
         <w:name w:val="NLQsubSectionHead"/>
         <w:basedOn w:val="LQsubSectionHead"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1134"/>
         </w:pPr>
@@ -2644,7 +2615,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="NLQT1">
         <w:name w:val="NLQT1"/>
         <w:basedOn w:val="LQT1"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1134"/>
         </w:pPr>
@@ -2652,7 +2623,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="NLQT1Indent">
         <w:name w:val="NLQT1 Indent"/>
         <w:basedOn w:val="LQT1Indent"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1134"/>
         </w:pPr>
@@ -2660,7 +2631,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="NLQT2">
         <w:name w:val="NLQT2"/>
         <w:basedOn w:val="LQT2"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1134"/>
         </w:pPr>
@@ -2668,7 +2639,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="NLQT3">
         <w:name w:val="NLQT3"/>
         <w:basedOn w:val="LQT3"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1871"/>
         </w:pPr>
@@ -2676,7 +2647,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="NLQT4">
         <w:name w:val="NLQT4"/>
         <w:basedOn w:val="LQT4"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="2268"/>
         </w:pPr>
@@ -2684,7 +2655,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="NLQT5">
         <w:name w:val="NLQT5"/>
         <w:basedOn w:val="LQT5"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="2835"/>
         </w:pPr>
@@ -2693,7 +2664,7 @@
         <w:name w:val="NLQTableCaption"/>
         <w:basedOn w:val="LQTableCaption"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1134"/>
         </w:pPr>
@@ -2701,7 +2672,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="NLQTableFoot">
         <w:name w:val="NLQTableFoot"/>
         <w:basedOn w:val="LQTableFoot"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1134"/>
         </w:pPr>
@@ -2709,7 +2680,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="NLQTableNumber">
         <w:name w:val="NLQTableNumber"/>
         <w:basedOn w:val="LQTableNumber"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1134"/>
         </w:pPr>
@@ -2717,7 +2688,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="NLQTableTopText">
         <w:name w:val="NLQTableTopText"/>
         <w:basedOn w:val="LQTableTopText"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1134"/>
         </w:pPr>
@@ -2726,7 +2697,7 @@
         <w:name w:val="Number"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:after="320" w:line="240" w:lineRule="auto"/>
             <w:jc w:val="center"/>
@@ -2741,13 +2712,13 @@
     <w:style w:type="character" w:styleId="PageNumber">
         <w:name w:val="page number"/>
         <w:basedOn w:val="DefaultParagraphFont"/>
-        <w:rsid w:val="00765153"/>
+
     </w:style>
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="Part">
         <w:name w:val="Part"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:tabs>
@@ -2767,7 +2738,7 @@
         <w:name w:val="PartHead"/>
         <w:basedOn w:val="Part"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="120"/>
         </w:pPr>
@@ -2778,7 +2749,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="Pre">
         <w:name w:val="Pre"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="360" w:after="0" w:line="220" w:lineRule="atLeast"/>
         </w:pPr>
@@ -2790,7 +2761,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="Price">
         <w:name w:val="Price"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="600" w:after="0" w:line="240" w:lineRule="auto"/>
         </w:pPr>
@@ -2803,7 +2774,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="PrinterDetail">
         <w:name w:val="PrinterDetail"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="480" w:after="0" w:line="240" w:lineRule="auto"/>
         </w:pPr>
@@ -2816,7 +2787,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="QualHead">
         <w:name w:val="QualHead"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:after="0" w:line="220" w:lineRule="atLeast"/>
             <w:jc w:val="center"/>
@@ -2828,7 +2799,7 @@
     </w:style>
     <w:style w:type="character" w:customStyle="1" w:styleId="Ref">
         <w:name w:val="Ref"/>
-        <w:rsid w:val="00765153"/>
+
         <w:rPr>
             <w:sz w:val="21"/>
         </w:rPr>
@@ -2837,7 +2808,7 @@
         <w:name w:val="Res"/>
         <w:basedOn w:val="Pre"/>
         <w:next w:val="Pre"/>
-        <w:rsid w:val="00765153"/>
+
         <w:rPr>
             <w:b/>
         </w:rPr>
@@ -2846,7 +2817,7 @@
         <w:name w:val="Royal"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Pre"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:after="220" w:line="220" w:lineRule="atLeast"/>
             <w:jc w:val="center"/>
@@ -2860,7 +2831,7 @@
         <w:name w:val="Schedule"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:tabs>
@@ -2880,7 +2851,7 @@
         <w:name w:val="ScheduleHead"/>
         <w:basedOn w:val="Schedule"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="120" w:after="100"/>
         </w:pPr>
@@ -2891,7 +2862,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="Schedules">
         <w:name w:val="Schedules"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:spacing w:before="480" w:after="480" w:line="240" w:lineRule="auto"/>
@@ -2907,7 +2878,7 @@
         <w:name w:val="Section"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:tabs>
@@ -2927,7 +2898,7 @@
         <w:name w:val="SectionHead"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:spacing w:before="80" w:after="0" w:line="220" w:lineRule="atLeast"/>
@@ -2942,21 +2913,21 @@
     <w:style w:type="character" w:customStyle="1" w:styleId="SigAdd">
         <w:name w:val="Sig_Add"/>
         <w:basedOn w:val="DefaultParagraphFont"/>
-        <w:rsid w:val="00765153"/>
+
     </w:style>
     <w:style w:type="character" w:customStyle="1" w:styleId="SigDate">
         <w:name w:val="Sig_Date"/>
         <w:basedOn w:val="DefaultParagraphFont"/>
-        <w:rsid w:val="00765153"/>
+
     </w:style>
     <w:style w:type="character" w:customStyle="1" w:styleId="Sigsignatory">
         <w:name w:val="Sig_signatory"/>
         <w:basedOn w:val="DefaultParagraphFont"/>
-        <w:rsid w:val="00765153"/>
+
     </w:style>
     <w:style w:type="character" w:customStyle="1" w:styleId="SigSignee">
         <w:name w:val="Sig_Signee"/>
-        <w:rsid w:val="00765153"/>
+
         <w:rPr>
             <w:i/>
         </w:rPr>
@@ -2964,12 +2935,12 @@
     <w:style w:type="character" w:customStyle="1" w:styleId="Sigtitle">
         <w:name w:val="Sig_title"/>
         <w:basedOn w:val="DefaultParagraphFont"/>
-        <w:rsid w:val="00765153"/>
+
     </w:style>
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="SigBlock">
         <w:name w:val="SigBlock"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepLines/>
             <w:tabs>
@@ -2987,7 +2958,7 @@
         <w:name w:val="Signature"/>
         <w:basedOn w:val="Normal"/>
         <w:link w:val="SignatureChar"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:after="0" w:line="220" w:lineRule="atLeast"/>
             <w:ind w:left="4320"/>
@@ -3001,7 +2972,7 @@
         <w:name w:val="Signature Char"/>
         <w:basedOn w:val="DefaultParagraphFont"/>
         <w:link w:val="Signature"/>
-        <w:rsid w:val="00765153"/>
+
         <w:rPr>
             <w:rFonts w:ascii="Times New Roman" w:eastAsia="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
             <w:sz w:val="21"/>
@@ -3011,7 +2982,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="StraddleHeader">
         <w:name w:val="StraddleHeader"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="40" w:after="0" w:line="220" w:lineRule="atLeast"/>
             <w:jc w:val="left"/>
@@ -3026,7 +2997,7 @@
         <w:name w:val="subject"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:after="320" w:line="240" w:lineRule="auto"/>
             <w:jc w:val="center"/>
@@ -3042,7 +3013,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="Sublist1">
         <w:name w:val="Sublist1"/>
         <w:basedOn w:val="List1"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1134"/>
         </w:pPr>
@@ -3050,7 +3021,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="Sublist1Cont">
         <w:name w:val="Sublist1 Cont"/>
         <w:basedOn w:val="Sublist1"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:firstLine="0"/>
         </w:pPr>
@@ -3059,7 +3030,7 @@
         <w:name w:val="SubPart"/>
         <w:basedOn w:val="PartHead"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:rPr>
             <w:sz w:val="22"/>
         </w:rPr>
@@ -3068,7 +3039,7 @@
         <w:name w:val="SubPartHead"/>
         <w:basedOn w:val="SubPart"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:rPr>
             <w:sz w:val="21"/>
         </w:rPr>
@@ -3077,7 +3048,7 @@
         <w:name w:val="SubSection"/>
         <w:basedOn w:val="Section"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:rPr>
             <w:sz w:val="18"/>
         </w:rPr>
@@ -3086,7 +3057,7 @@
         <w:name w:val="SubSectionHead"/>
         <w:basedOn w:val="SectionHead"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="40"/>
         </w:pPr>
@@ -3097,7 +3068,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="Subsub">
         <w:name w:val="Subsub"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:after="360" w:line="240" w:lineRule="auto"/>
             <w:jc w:val="center"/>
@@ -3113,7 +3084,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="T1">
         <w:name w:val="T1"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="160" w:after="0" w:line="220" w:lineRule="atLeast"/>
         </w:pPr>
@@ -3125,7 +3096,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="T1Indent">
         <w:name w:val="T1 Indent"/>
         <w:basedOn w:val="T1"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:firstLine="170"/>
         </w:pPr>
@@ -3133,7 +3104,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="T2">
         <w:name w:val="T2"/>
         <w:basedOn w:val="T1"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="80"/>
         </w:pPr>
@@ -3141,7 +3112,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="T3">
         <w:name w:val="T3"/>
         <w:basedOn w:val="T2"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="737"/>
         </w:pPr>
@@ -3149,7 +3120,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="T4">
         <w:name w:val="T4"/>
         <w:basedOn w:val="T3"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1134"/>
         </w:pPr>
@@ -3157,7 +3128,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="T5">
         <w:name w:val="T5"/>
         <w:basedOn w:val="T4"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:ind w:left="1701"/>
         </w:pPr>
@@ -3166,7 +3137,7 @@
         <w:name w:val="TableCaption"/>
         <w:basedOn w:val="Caption"/>
         <w:next w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="0"/>
             <w:jc w:val="left"/>
@@ -3175,7 +3146,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="TableFoot">
         <w:name w:val="TableFoot"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="40" w:after="0" w:line="220" w:lineRule="atLeast"/>
         </w:pPr>
@@ -3187,7 +3158,7 @@
     </w:style>
     <w:style w:type="character" w:customStyle="1" w:styleId="TableFootRef">
         <w:name w:val="TableFootRef"/>
-        <w:rsid w:val="00765153"/>
+
         <w:rPr>
             <w:vertAlign w:val="superscript"/>
         </w:rPr>
@@ -3196,7 +3167,7 @@
         <w:name w:val="TableNumber"/>
         <w:basedOn w:val="TableCaption"/>
         <w:next w:val="TableCaption"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="120"/>
         </w:pPr>
@@ -3204,7 +3175,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="TableText">
         <w:name w:val="TableText"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:before="20" w:after="0" w:line="220" w:lineRule="atLeast"/>
             <w:jc w:val="left"/>
@@ -3217,7 +3188,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="TableTopText">
         <w:name w:val="TableTopText"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:spacing w:after="80" w:line="220" w:lineRule="atLeast"/>
         </w:pPr>
@@ -3229,7 +3200,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="TOC10">
         <w:name w:val="TOC 10"/>
         <w:basedOn w:val="TOC9"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="clear" w:pos="576"/>
@@ -3244,12 +3215,12 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="TOC11">
         <w:name w:val="TOC 11"/>
         <w:basedOn w:val="TOC10"/>
-        <w:rsid w:val="00765153"/>
+
     </w:style>
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="TOC12">
         <w:name w:val="TOC 12"/>
         <w:next w:val="TOC10"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:spacing w:after="240" w:line="240" w:lineRule="auto"/>
@@ -3267,7 +3238,7 @@
         <w:next w:val="Normal"/>
         <w:autoRedefine/>
         <w:semiHidden/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="right" w:pos="7938"/>
@@ -3288,7 +3259,7 @@
         <w:next w:val="Normal"/>
         <w:autoRedefine/>
         <w:semiHidden/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="right" w:pos="7938"/>
@@ -3306,7 +3277,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="TOC9Indent">
         <w:name w:val="TOC 9 Indent"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepLines/>
             <w:tabs>
@@ -3326,7 +3297,7 @@
         <w:uiPriority w:val="99"/>
         <w:semiHidden/>
         <w:unhideWhenUsed/>
-        <w:rsid w:val="00765153"/>
+
         <w:rPr>
             <w:color w:val="605E5C"/>
             <w:shd w:val="clear" w:color="auto" w:fill="E1DFDD"/>
@@ -3335,7 +3306,7 @@
     <w:style w:type="paragraph" w:customStyle="1" w:styleId="XNote">
         <w:name w:val="X_Note"/>
         <w:basedOn w:val="Normal"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:spacing w:line="220" w:lineRule="atLeast"/>
@@ -3351,7 +3322,7 @@
         <w:name w:val="X_Note_note"/>
         <w:basedOn w:val="Normal"/>
         <w:next w:val="T1"/>
-        <w:rsid w:val="00765153"/>
+
         <w:pPr>
             <w:keepNext/>
             <w:spacing w:line="220" w:lineRule="atLeast"/>
@@ -3367,13 +3338,12 @@
         <w:name w:val="List Bullet in Table"/>
         <w:basedOn w:val="ListBullet"/>
         <w:qFormat/>
-        <w:rsid w:val="004F54B5"/>
         <w:pPr>
             <w:tabs>
                 <w:tab w:val="clear" w:pos="360"/>
                 <w:tab w:val="left" w:pos="227"/>
             </w:tabs>
-            <w:spacing w:before="60" w:after="60" w:line="240" w:lineRule="auto"/>
+            <w:spacing w:before="40" w:after="40" w:line="240" w:lineRule="auto"/>
             <w:ind w:left="227" w:hanging="227"/>
         </w:pPr>
         <w:rPr>
