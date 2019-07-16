@@ -27,6 +27,7 @@ class commodity(object):
 		self.significant_children   = False
 		self.measure_count          = 0
 		self.measure_type_count     = 0
+		
 		self.format_description()
 		self.get_significant_digits()
 		self.get_indent_string()
@@ -36,8 +37,8 @@ class commodity(object):
 		self.special_list = []
 
 	def combine_notes(self):
-		#if len(self.notes_list) > 1:
-			#print ("More than one note", self.commodity_code)
+		if len(self.notes_list) > 1:
+			print ("More than one note", self.commodity_code)
 			#sys.exit()
 		self.notes_list.sort(reverse = True)
 		if len(self.notes_list) == 0:
@@ -210,7 +211,7 @@ class commodity(object):
 		my_chapter		= self.commodity_code[0:2]
 		my_subheading	= self.commodity_code[0:4]
 		right_chars		= self.commodity_code[-2:]
-		if (my_chapter in ('02', '10', '11') or my_subheading in ('0904', '0910')) and right_chars == "00":
+		if (my_chapter in ('02', '10', '11') or my_subheading in ('0904', '0905', '0906', '0907', '0908', '0909', '0910')) and right_chars == "00":
 			if self.combined_duty == "":
 				pass
 			else:
@@ -235,18 +236,15 @@ class commodity(object):
 					#print ("Adding a special on", self.commodity_code)
 
 	def check_for_authorised_use(self):
-		if app.reference_authorised_relief_document != 0:
-			# print ("Inserting authorised use data", app.reference_authorised_relief_document)
-			if self.commodity_code in app.authoriseduse_list:
-				if self.product_line_suffix == "80":
-					if len(self.special_list) == 0:
-						if len(self.notes_list) != 0:
-							print (self.notes_list)
-						self.notes_list.append("Code reserved for authorised use; the duty rate is specified under regulations made under section 19 of the Taxation (Cross-border Trade) Act 2018")
-						#self.notes_list.append("Code reserved for authorised use")
-						self.combined_duty = "AU"
-						self.assigned = True
-						self.special_list.append("authoriseduse")
+		if self.commodity_code in app.authoriseduse_list:
+			if self.product_line_suffix == "80":
+				if len(self.special_list) == 0:
+					if len(self.notes_list) != 0:
+						print (self.notes_list)
+					self.notes_list.append("Code reserved for authorised use; the duty rate is specified under regulations made under section 19 of the Taxation (Cross-border Trade) Act 2018")
+					self.combined_duty = "AU"
+					self.assigned = True
+					self.special_list.append("authoriseduse")
 		
 
 	def check_for_seasonal(self):

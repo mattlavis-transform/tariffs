@@ -99,7 +99,6 @@ class application(object):
 		self.DBASE	= "tariff_staging"
 		self.DBASE	= "tariff_eu"
 		self.p		= my_dict['p']
-		self.reference_authorised_relief_document = my_dict["reference_authorised_relief_document"]
 
 		# Connect to the database
 		self.connect()
@@ -191,17 +190,17 @@ class application(object):
 		# If a commodity code has a 105 instead of a 103 assigned to it, this means that there is
 		# a need to insert an authorised use message in the notes column for the given commodity
 
-		if self.reference_authorised_relief_document != 0:
-			sql = """SELECT DISTINCT goods_nomenclature_item_id FROM ml.v5_2019 m WHERE measure_type_id = '105' ORDER BY 1;"""
-			cur = self.conn.cursor()
-			cur.execute(sql)
-			rows = cur.fetchall()
-			for r in rows:
-				self.authoriseduse_list.append(r[0])
-			
-			# Also add in cucumbers: the data cannot find these, therefore manually added
-			self.authoriseduse_list.append("0707000510")
-			self.authoriseduse_list.append("0707000520")
+		sql = """SELECT DISTINCT goods_nomenclature_item_id FROM ml.v5_2019 m WHERE measure_type_id = '105' ORDER BY 1;"""
+		cur = self.conn.cursor()
+		cur.execute(sql)
+		rows = cur.fetchall()
+		for r in rows:
+			self.authoriseduse_list.append(r[0])
+		
+		# Also add in cucumbers: the data cannot find these, therefore manually added, 
+		# as per instruction from David Owen
+		self.authoriseduse_list.append("0707000510")
+		self.authoriseduse_list.append("0707000520")
 		
 	def get_special_notes(self):
 		# This function is required - it looks in the file special_notes.csv

@@ -86,40 +86,59 @@ class chapter(object):
 
 
 		#######################################################################################
-		# Inherit any duties that exist at higher levels in the hierarchy down to lower levels
-		# Inherit duties from the 1st item you find above you in the
-		# list that has an indent lower than mine and a value
+		# The purpose of the code below is to loop down through all commodity codes in
+		# this chapter and, for each commodity code, then loop back up through the commodity
+		# code hierarchy to find any duties that could be inherited down to the current
+		# commodity code, in case there is no duty explicity assigned to the commodity code.
+		# This is achieved by looking for the 1st commodity code with a lower indent (to find
+		# the immediate antecedent) and viewing the assigned duty.
+		# 
+		# In case of commodities where the duties are set at CN chapter level
+		# (in the EU this is chapters 97, 47, 80, 14, 48, 49), this is a special case to look out for,
+		# as both the CN chapter and the CN subheading have an indent of 0, therefore number of
+		# significant digits needs to be used as a comparator instead of indents
 		#######################################################################################
 
 		if app.document_type == "schedule":
 			commodity_count = len(commodity_list)
 			max_indent = -1
 			for loop1 in range(0, commodity_count):
-				my_commodity = commodity_list[loop1]
+				my_commodity		= commodity_list[loop1]
+				yardstick_indent	= my_commodity.indents
 				
 				if my_commodity.indents > max_indent:
 					max_indent = my_commodity.indents
 
 				if (my_commodity.combined_duty == ""):
-					#print (my_commodity.commodity_code)
 					for loop2 in range(loop1 - 1, -1, -1):
 						upper_commodity = commodity_list[loop2]
-						if (upper_commodity.combined_duty != "") and (upper_commodity.indents < my_commodity.indents or ((upper_commodity.significant_digits == 2 and my_commodity.significant_digits == 4))):
-							#print (my_commodity.commodity_code, upper_commodity.commodity_code)
-							my_commodity.combined_duty = upper_commodity.combined_duty
-							my_commodity.notes_list = upper_commodity.notes_list
-							break
-						if self.chapter_id in (97, 47, 80, 14, 48, 49):
-							if upper_commodity.indents <= 1 and upper_commodity.significant_digits == 2:
+
+						if my_commodity.significant_digits == 4:
+							if upper_commodity.significant_digits == 2:
+								if upper_commodity.combined_duty != "":
+									my_commodity.combined_duty = upper_commodity.combined_duty
 								break
 						else:
-							if upper_commodity.indents <= 1 and upper_commodity.significant_digits > 2:
-								break
+							if upper_commodity.indents < yardstick_indent:
+								if upper_commodity.combined_duty != "":
+									my_commodity.combined_duty = upper_commodity.combined_duty
+									break
+								elif upper_commodity.indents == 0:
+										break
+								yardstick_indent = upper_commodity.indents
 
 
 		###########################################################################
-		# Hypothesis - we need to start at the deepest tier and then move upwards in order to work out
-		# what commodities are siblings of what and suppress all 
+		# This function is intended to suppress rows where there is no reason to show them
+		# We are only going to suppress rows where the goods is of 10 significant digits
+		# (i.e.) it does not end with "00" and where there is no difference in the 
+		# applicable duty for it and all its siblings
+		# 
+		# The first way to look at this is to find all codes with 10 significant digits
+		# and suppress them when they have the same duty as their parent (by indent).
+		# This is only going to work where the duty has been set at a higher level and
+		# inherited down - it will not work where the duty has been actually set at
+		# 10-digit level and should be inherited up
 		###########################################################################
 
 		if app.document_type == "schedule":
@@ -130,13 +149,8 @@ class chapter(object):
 						if my_commodity.significant_digits == 10:
 							for loop2 in range(loop1 - 1, -1, -1):
 								upper_commodity = commodity_list[loop2]
-								#print (my_commodity.commodity_code, upper_commodity.commodity_code)
 								if upper_commodity.indents == my_commodity.indents - 1:
 									if upper_commodity.combined_duty == my_commodity.combined_duty:
-										"""
-										if my_commodity.commodity_code == "9702000090":
-											print (my_commodity.commodity_code, my_commodity.indents, my_commodity.significant_digits, upper_commodity.commodity_code, upper_commodity.indents, upper_commodity.significant_digits, )
-										"""
 										my_commodity.suppress_row = True
 										break
 
@@ -147,7 +161,23 @@ class chapter(object):
 									if upper_commodity.indents <= 1 and upper_commodity.significant_digits > 2:
 										break
 
-		
+			for loop1 in range(0, commodity_count):
+				sibling_duties = []
+				my_commodity = commodity_list[loop1]
+				if my_commodity.significant_digits == 10:
+					if my_commodity.combined_duty != "":
+						sibling_duties.append (my_commodity.combined_duty)
+						if loop1 < commodity_count:
+							for loop2 in range(loop1 + 1, commodity_count):
+								next_commodity = commodity_list[loop2]
+								if next_commodity.indents == my_commodity.indents:
+									sibling_duties.append (next_commodity.combined_duty)
+								else:
+									sibling_duty_set = set(sibling_duties)
+									print (my_commodity.commodity_code, str(len(sibling_duties)), str(len(sibling_duty_set)))
+									break
+
+
 		###########################################################################
 		## Only suppress the duty if the item is not PLS of 80
 		## This will change to be - only supppress if not a leaf
@@ -203,10 +233,13 @@ class chapter(object):
 		
 		table_xml_string = app.table_xml_string
 
-		if self.contains_authorised_use == True:
-			width_list = [600, 1050, 1000, 2350]
+		if self.chapter_id in (2, 9, 10, 11): # These all have misture rule, therefore a wider notes column
+			width_list = [600, 900, 1150, 2350]
 		else:
-			width_list = [600, 1050, 600, 2750]
+			if self.contains_authorised_use == True:
+				width_list = [600, 1050, 1100, 2250]
+			else:
+				width_list = [600, 1050, 600, 2750]
 
 		table_xml_string = table_xml_string.replace("{WIDTH_CLASSIFICATION}", str(width_list[0]))
 		table_xml_string = table_xml_string.replace("{WIDTH_DUTY}",			str(width_list[1]))
