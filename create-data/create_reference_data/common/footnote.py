@@ -7,21 +7,15 @@ import common.functions as fn
 from unidecode import unidecode
 
 class footnote(object):
-	def __init__(self, footnote_type_id, footnote_id, description_old, description, type):
+	def __init__(self, footnote_type_id, footnote_id, description, type):
 		self.footnote_type_id	= fn.mstr(footnote_type_id).upper()
 		self.footnote_id		= fn.mstr(footnote_id)
 		self.description		= fn.mstr(description)
 		self.type				= fn.mstr(type)
-		self.needs_change		= False
-		self.description_old	= description_old
 		self.cnt = 0
 		self.xml = ""
-		if self.description_old != self.description:
-			self.validate()
-			self.same = False
-		else:
-			self.same = True
-		self.same = False
+
+		self.validate()
 
 	def validate(self):
 		# Validate the footnote type ID
@@ -41,41 +35,31 @@ class footnote(object):
 
 
 	def writeXML(self, app):
-		if not(self.same):
-			if self.type == "update":
-				out = app.update_footnote_description_XML
-			else:
-				out = app.insert_footnote_XML
-			
-			self.description = fn.cleanse(self.description)
-			out = out.replace("{FOOTNOTE_TYPE_ID}", self.footnote_type_id)
-			out = out.replace("{FOOTNOTE_ID}", self.footnote_id)
-			out = out.replace("{DESCRIPTION}", self.description)
-			out = out.replace("{VALIDITY_START_DATE}", "2019-03-29")
-			out = out.replace("{FOOTNOTE_DESCRIPTION_PERIOD_SID}", str(app.base_footnote_description_period_sid))
-			out = out.replace("{TRANSACTION_ID}", str(app.transaction_id))
-			out = out.replace("{MESSAGE_ID1}", str(app.message_id))
-			out = out.replace("{MESSAGE_ID2}", str(app.message_id + 1))
-			out = out.replace("{MESSAGE_ID3}", str(app.message_id + 2))
-			out = out.replace("{RECORD_SEQUENCE_NUMBER1}", str(app.message_id))
-			out = out.replace("{RECORD_SEQUENCE_NUMBER2}", str(app.message_id + 1))
-			out = out.replace("{RECORD_SEQUENCE_NUMBER3}", str(app.message_id + 2))
+		if self.type == "update":
+			out = app.update_footnote_description_XML
+		else:
+			out = app.insert_footnote_XML
+		
+		self.description = fn.cleanse(self.description)
+		out = out.replace("{FOOTNOTE_TYPE_ID}", self.footnote_type_id)
+		out = out.replace("{FOOTNOTE_ID}", self.footnote_id)
+		out = out.replace("{DESCRIPTION}", self.description)
+		out = out.replace("{VALIDITY_START_DATE}", "2019-11-01")
+		out = out.replace("{FOOTNOTE_DESCRIPTION_PERIOD_SID}", str(app.base_footnote_description_period_sid))
+		out = out.replace("{TRANSACTION_ID}", str(app.transaction_id))
+		out = out.replace("{MESSAGE_ID1}", str(app.message_id))
+		out = out.replace("{MESSAGE_ID2}", str(app.message_id + 1))
+		out = out.replace("{MESSAGE_ID3}", str(app.message_id + 2))
+		out = out.replace("{RECORD_SEQUENCE_NUMBER1}", str(app.message_id))
+		out = out.replace("{RECORD_SEQUENCE_NUMBER2}", str(app.message_id + 1))
+		out = out.replace("{RECORD_SEQUENCE_NUMBER3}", str(app.message_id + 2))
 
-			self.xml = out
+		self.xml = out
 
-			app.base_footnote_description_period_sid	+= 1
-			app.transaction_id 							+= 1
-			if self.type == "update":
-				app.message_id 					+= 2
-			else:
-				app.message_id 					+= 3
-	
-	def resolve(self, app):
-		s = self.description
-		if "reg. " in s.lower():
-			app.cnt += 1
-		s = re.sub(r", as last amended by Reg. [^.]{1,1000}.", r".", s)
-		s = re.sub(r"issued in accordance with Reg. [^.]{1,1000}.", r"", s)
-		s = s.strip()
-		s = s.strip(",")
-		self.new_description = s
+		app.base_footnote_description_period_sid	+= 1
+		app.transaction_id 							+= 1
+		if self.type == "update":
+			app.message_id 					+= 2
+		else:
+			app.message_id 					+= 3
+

@@ -17,7 +17,7 @@ app.getTemplates()
 
 fname = os.path.join(app.SOURCE_DIR, "memberships.xlsx")
 wb = load_workbook(filename=fname, read_only=True)
-ws = wb['New']
+ws = wb['Memberships']
 
 row_count = ws.max_row
 col_count = ws.max_column

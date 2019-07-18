@@ -26,10 +26,9 @@ col_count = ws.max_column
 for i in range(2, row_count + 1):
 	FOOTNOTE_TYPE_ID = ws.cell(row = i, column = 1).value
 	FOOTNOTE_ID      = ws.cell(row = i, column = 2).value
-	DESCRIPTION_OLD  = ws.cell(row = i, column = 3).value
-	DESCRIPTION      = ws.cell(row = i, column = 4).value
+	DESCRIPTION      = ws.cell(row = i, column = 3).value
 
-	f = footnote(FOOTNOTE_TYPE_ID, FOOTNOTE_ID, DESCRIPTION, DESCRIPTION_OLD, "update")
+	f = footnote(FOOTNOTE_TYPE_ID, FOOTNOTE_ID, DESCRIPTION, "update")
 	app.footnotes_list.append(f)
 
 ws = wb['New']

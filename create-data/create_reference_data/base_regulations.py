@@ -13,10 +13,19 @@ from common.application import application
 app = o.app
 app.d("Writing regulation XML", False)
 app.getTemplates()
-app.get_profile("regulations")
+#app.get_profile("regulations")
+
+try:
+	profile = sys.argv[1]
+except:
+	profile = "base_regulations"
+
+fname = os.path.join(app.SOURCE_DIR, profile + ".xlsx")
+
 
 app.d("Reading Excel source file")
-wb = load_workbook(filename=app.excel_source, read_only=True, data_only=True)
+#wb = load_workbook(filename=app.excel_source, read_only=True, data_only=True)
+wb = load_workbook(filename=fname, read_only=True, data_only=True)
 
 ws = wb['New']
 row_count = ws.max_row

@@ -30,10 +30,9 @@ col_count = ws.max_column
 for i in range(2, row_count + 1):
 	GEOGRAPHICAL_AREA_SID   = ws.cell(row = i, column = 1).value
 	GEOGRAPHICAL_AREA_ID    = ws.cell(row = i, column = 2).value
-	DESCRIPTION_OLD         = ws.cell(row = i, column = 3).value
-	DESCRIPTION             = ws.cell(row = i, column = 4).value
+	DESCRIPTION             = ws.cell(row = i, column = 3).value
 
-	obj = geographical_area(GEOGRAPHICAL_AREA_SID, GEOGRAPHICAL_AREA_ID, "", DESCRIPTION_OLD, DESCRIPTION, "update")
+	obj = geographical_area(GEOGRAPHICAL_AREA_SID, GEOGRAPHICAL_AREA_ID, "", DESCRIPTION, "update")
 	app.geographical_area_list.append(obj)
 
 ws = wb['New']
