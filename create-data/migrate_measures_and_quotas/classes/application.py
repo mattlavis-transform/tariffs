@@ -38,31 +38,30 @@ class application(object):
 		self.clear()
 
 		self.BASE_DIR				= os.path.dirname(os.path.abspath(__file__))
-		self.BASE_DIR				= os.path.join(self.BASE_DIR,	"..")
+		if "/classes" in self.BASE_DIR:
+			self.BASE_DIR = self.BASE_DIR.replace("/classes", "")
+		else:
+			self.BASE_DIR = self.BASE_DIR.replace("\classes", "")
 		self.TEMPLATE_DIR			= os.path.join(self.BASE_DIR,	"templates")
 		self.CSV_DIR				= os.path.join(self.BASE_DIR,	"csv")
 		self.SOURCE_DIR 			= os.path.join(self.BASE_DIR,	"source")
+		self.MIGRATION_PROFILE_DIR 	= os.path.join(self.BASE_DIR,	"migration_profiles")
+		
 		self.XML_OUT_DIR			= os.path.join(self.BASE_DIR,	"xml_out")
 		self.XML_REPORT_DIR			= os.path.join(self.BASE_DIR,	"xml_report")
-		self.TEMP_DIR				= os.path.join(self.BASE_DIR,	"temp")
-		self.TEMP_FILE				= os.path.join(self.TEMP_DIR,	"temp.xml")
-		self.LOG_DIR				= os.path.join(self.BASE_DIR,	"log")
-		self.IMPORT_LOG_DIR			= os.path.join(self.LOG_DIR,	"import")
-		self.LOG_FILE				= os.path.join(self.LOG_DIR,	"log.csv")
-		self.MERGE_DIR				= os.path.join(self.BASE_DIR,	"..")
-		self.MERGE_DIR				= os.path.join(self.MERGE_DIR,	"migrate_reference_data")
-		self.MERGE_DIR				= os.path.join(self.MERGE_DIR,	"xml")
-		self.DUMP_DIR				= os.path.join(self.BASE_DIR,	"dump")
+
+		self.TEMP_DIR 				= os.path.join(self.BASE_DIR,	"temp")
+		self.BULK_LOG_FILE			= os.path.join(self.TEMP_DIR,	"bulk_log.csv")
 
 		self.CONFIG_DIR				= os.path.join(self.BASE_DIR, "..")
 		self.CONFIG_DIR				= os.path.join(self.CONFIG_DIR, "config")
 		self.CONFIG_FILE			= os.path.join(self.CONFIG_DIR, "config_common.json")
 		self.CONFIG_FILE_LOCAL		= os.path.join(self.CONFIG_DIR, "config_migrate_measures_and_quotas.json")
 
+		# Used for validating the produced XML
 		self.SCHEMA_DIR				= os.path.join(self.BASE_DIR, "..")
 		self.SCHEMA_DIR				= os.path.join(self.SCHEMA_DIR, "xsd")
 
-		self.SOURCE_DIR				= os.path.join(self.BASE_DIR, "source")
 		self.QUOTA_DIR				= os.path.join(self.SOURCE_DIR, "quotas")
 		self.BALANCE_FILE			= os.path.join(self.QUOTA_DIR, "quota_volume_master.csv")
 		self.QUOTA_DESCRIPTION_FILE	= os.path.join(self.QUOTA_DIR, "quota definitions.csv")
@@ -279,7 +278,6 @@ class application(object):
 		self.regulation_string		= ""
 		self.country_profile		= ""
 		self.output_filename		= ""
-		self.special				= ""
 
 		# These are special cases that allow for shortcuts across multiple measure types
 		self.credibility_list			= ['430', '431', '485', '481', '482', '483']
@@ -288,6 +286,7 @@ class application(object):
 		self.supplementary_list			= ['109', '110']
 		self.suspension_list			= ['112', '115', '117', '119', '141']
 		self.surveillance_list			= ['442', '447']
+		self.agri_list					= ['489', '490', '651', '652', '653', '654']
 		self.omit_measure_types_list	= self.credibility_list + self.supplementary_list + self.suspension_list + self.wto_quota_list
 
 
@@ -297,9 +296,9 @@ class application(object):
 		elif sys.argv[0] == "migrate_measures.py": # We are migrating measures
 			# Get scope type - this is specified in the 1st argument and could be "measure types", "regulation" or "country"
 			if (len(sys.argv) > 1):
-				if sys.argv[1] in ("measure_types", "measuretypes", "m"):	# measures
+				if sys.argv[1] in ("measure_types", "measuretypes", "measuretype", "measure_type", "m"):	# measures
 					self.scope = "measuretypes"
-				elif sys.argv[1] in ("regulations", "regulation", "r"):		# regulations
+				elif sys.argv[1] in ("regulations", "regulation", "r", "rb"):		# regulations
 					self.scope = "regulation"
 				elif sys.argv[1] in ("country", "preferential", "c"):		# by country's preferential agreement
 					self.scope = "country"
@@ -336,52 +335,25 @@ class application(object):
 			self.d("Parameters", False)
 			self.d("Using database: "			+ self.DBASE)
 			self.d("Scope string: "				+ self.scope)
-			#self.d("Bulk migration profile: " + self.scope)
 			self.d("Action string: "			+ self.action_string)
 			self.d("Country string: "			+ self.country_profile)
 			self.d("Regulation string: "		+ self.regulation_string)
 			self.d("Measure type list: "		+ str(self.measure_type_list))
 			self.d("Future regulation: "		+ self.future_regulation_id)
 			self.d("Output filename: "			+ self.output_filename)
-			self.d("Special circumstances: "	+ self.special)
+			self.d("Output folder: "			+ self.XML_OUT_DIR)
 			print ("\n")
 
-			#if self.override_prompt == False:
-			if 1 > 2:
+			if self.override_prompt == False:
 				ret = fn.yes_or_no("Do you want to continue?")
 				if not (ret):
 					sys.exit()
 
 	def get_migrate_regulation_parameters(self):
-		# Get the date - this will be appended to the output filename
+		# Get today's date - this will be appended to the output filename
 		d = datetime.now()
 		d2 = d.strftime("%Y-%m-%d")
-		self.bulk_migration_profile = ""
-		if sys.argv[3].lower() == "gsp":
-			self.regulation_string = "R120978"
-			self.special = "gsp"
-		else:
-			self.regulation_string = sys.argv[3]
-			if self.regulation_string in ("trade_remedies3", "trade_remedies4"):
-				self.bulk_migration_profile = self.regulation_string
-				migrations_file = os.path.join(self.SOURCE_DIR,	self.bulk_migrations_list[self.bulk_migration_profile])
-				with open(migrations_file) as csv_file:
-					csv_reader = csv.reader(csv_file, delimiter = ",")
-					self.regulation_string = ""
-					for row in csv_reader:
-						if len(row) > 0:
-							if row[0] != "Regulation ID":
-								self.regulation_string += "'" + row[0] + "', "
-								#print (self.regulation_string)
-
-					self.regulation_string = self.regulation_string.strip()
-					self.regulation_string = self.regulation_string.strip(",")
-
-			#print (self.regulation_string)
-			#sys.exit()
-
-
-
+		self.regulation_string = sys.argv[3]
 
 		# Get the future regulation ID
 		if (len(sys.argv) > 4):
@@ -392,17 +364,74 @@ class application(object):
 
 		# Set the filename for measure exports
 		if self.action_string == "terminate":
-			if self.bulk_migration_profile == "":
-				self.output_filename = self.scope + "_end_" + self.regulation_string + "_" + d2 + ".xml"
-			else:
-				self.output_filename = self.scope + "_end_" + self.bulk_migration_profile + "_" + d2 + ".xml"
+			self.output_filename = self.scope + "_end_" + self.regulation_string + "_" + d2 + ".xml"
 		else:
 			self.output_filename = self.scope + "_end_" + self.regulation_string + "_start_" + self.future_regulation_id + "_" + d2 + ".xml"
 
 		self.country_profile = ""
-		if (len(sys.argv) > 5):
-			self.country_profile = sys.argv[5].strip()
 		
+		# If this script is being run from the bulk migration script,
+		# then it needs to be silent, i.e. suppress the "Are you sure?" prompt.
+		# We also need to be able to recompile the individual files back into a
+		# single XML file at the end, therefore we need to log the filenames that are created.
+		if sys.argv[1] == "rb":
+			self.override_prompt = True
+			self.bulk_log()
+
+	def bulk_log_delete(self):
+		try:
+			os.remove(self.BULK_LOG_FILE)
+		except:
+			pass
+		f = open(self.BULK_LOG_FILE, "w+")
+		
+	
+	def bulk_log(self):
+		f = open(self.BULK_LOG_FILE, "a+")
+		f.write (self.output_filename + "\n")
+		f.close()
+
+	def bulk_recompile(self):
+		merged_filename = "bulk_migration_" + self.bulk_migration_profile + ".xml"
+		merged_filename2	= os.path.join(self.XML_OUT_DIR, merged_filename)
+		files = []
+		f = open(self.BULK_LOG_FILE, "r")
+		lines = f.readlines()
+		for line in lines:
+			files.append (line.replace("\n", ""))
+		f.close()
+
+		buffer = ""
+		tally = -1
+		file_count = len(files)
+		for file in files:
+			tally += 1
+			file2	= os.path.join(self.XML_OUT_DIR, file)
+			f = open(file2, "r")
+			contents = f.read()
+			if tally == 0:
+				contents = contents.replace("</env:envelope>", "")
+			elif tally == file_count - 1:
+				contents = contents.replace('<?xml version="1.0" encoding="UTF-8"?>', "")
+				contents = contents.replace('<env:envelope xmlns="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" id="[ID]">', "")
+			else:
+				contents = contents.replace("</env:envelope>", "")
+				contents = contents.replace('<?xml version="1.0" encoding="UTF-8"?>', "")
+				contents = contents.replace('<env:envelope xmlns="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" id="[ID]">', "")
+		
+			buffer += contents
+
+		f = open(merged_filename2, "w+")
+		f.write (buffer)
+		f.close()
+
+		for file in files:
+			file2 = os.path.join(self.XML_OUT_DIR, file)
+			os.remove(file2)
+		
+		self.validate(merged_filename)
+		sys.exit()
+
 
 	def get_migrate_measure_type_parameters(self):
 		# Get the date - this will be appended to the output filename 
@@ -419,10 +448,10 @@ class application(object):
 			if self.measure_type_string in ("credibility", "credibilitychecks", "cred"):	# credibility checks
 				self.measure_type_list = self.credibility_list
 
-			elif self.measure_type_string in ("supp", "supplementaryunits", "sup"):		# supplementary units
+			elif self.measure_type_string in ("supp", "supplementaryunits", "sup"):			# supplementary units
 				self.measure_type_list = self.supplementary_list
 
-			elif self.measure_type_string in ("quota", "quotas", "wto_quotas", "wto", "q"):							# quotas
+			elif self.measure_type_string in ("quota", "quotas", "wto_quotas", "wto", "q"):	# quotas
 				self.measure_type_list = self.wto_quota_list
 
 			elif self.measure_type_string in ("mfn"):										# MFNs
@@ -431,15 +460,15 @@ class application(object):
 			elif self.measure_type_string in ("suspension", "suspensions", "susp"):			# suspensions
 				self.measure_type_list = self.suspension_list
 
-			elif self.measure_type_string in ("surveillance", "surv"):			# surveillance
+			elif self.measure_type_string in ("surveillance", "surv"):						# surveillance
 				self.measure_type_list = self.surveillance_list
+
+			elif self.measure_type_string in ("agri"):										# agricultural safeguards
+				self.measure_type_list = self.agri_list
 
 			else:
 				self.measure_type_list = []
 				self.measure_type_list.append(self.measure_type_string)
-
-		#print (self.measure_type_list)
-		#sys.exit()
 
 		# Get the future regulation ID
 		if (len(sys.argv) > 4):
@@ -454,6 +483,7 @@ class application(object):
 		else:
 			self.output_filename = self.scope + "_end_" + self.measure_type_string + "_new_regulation_" + self.future_regulation_id + "_" + d2 + ".xml"
 
+
 	def get_migrate_country_parameters(self):
 		if (len(sys.argv) > 3):
 			self.country_profile = sys.argv[3].strip()
@@ -462,22 +492,27 @@ class application(object):
 			print ("No country specified - quitting")
 			sys.exit()
 
+		self.output_filename = self.scope + "_" + self.action_string + "_" + self.country_profile
+
 		if (len(sys.argv) > 4):
 			self.future_regulation_id = sys.argv[4].strip()
+			self.output_filename += "_" + self.future_regulation_id
 			if len(self.future_regulation_id) != 8:
 				print ("Erroneous future regulation string - please fix")
 				sys.exit()
 		else:
-			print ("No 'to-be' regulation specified - quitting")
-			sys.exit()
-		self.output_filename = self.country_profile + ".xml"
+			if self.action_string != "terminate":
+				print ("No 'to-be' regulation specified - quitting")
+				sys.exit()
+		
+		self.output_filename += ".xml"
 
 
 	def get_quota_parameters(self):
 		self.scope = "quotas"
-		if sys.argv[0] == "kill_all_quota_definitions.py":
+		if sys.argv[0] == "terminate_quota_definitions.py":
 			self.action_string = "terminate"
-			self.output_filename = "kill_quota_definitions.xml"
+			self.output_filename = "terminate_quota_definitions.xml"
 		elif sys.argv[0] == "create_new_fcfs_quotas.py":
 			self.action_string = "create"
 			self.output_filename = "create_quota_definitions.xml"
@@ -487,25 +522,10 @@ class application(object):
 		self.regulation_string = ""
 		self.measure_type_list = ""
 		self.future_regulation_id = ""
-		self.special = ""
 	
 	def get_country_list(self):
 		self.country_codes = self.all_country_profiles[self.country_profile]["country_codes"]
 
-	def parse_regulations(self):
-		x = []
-		self.regulation_string = ""
-		for r in self.regulation_list:
-			if "/" in r:
-				temp = r[0] + r[-2:] + r[1:5]
-				x.append(temp)
-				self.regulation_string += "'" + temp + "', "
-			else:
-				x.append(r)
-				self.regulation_string += "'" + r + "', "
-		self.regulation_list = x
-		self.regulation_string = self.regulation_string.strip()
-		self.regulation_string = self.regulation_string.strip(",")
 
 	def get_templates(self):
 		# Get template - envelope
@@ -864,26 +884,13 @@ class application(object):
 		self.d("Searching database for quota definitions", False)
 		self.d("Get 2018 quota definitions")
 		# Get all the definitions that are on the database for 2018
-		#if self.regulation_string != "":
 		
-		if 1 > 2:
-			sql = """
-			SELECT DISTINCT qd.quota_order_number_id, qd.validity_start_date, qd.validity_end_date, qd.quota_definition_sid,
-			qd.initial_volume, qd.monetary_unit_code, qd.measurement_unit_code,
-			qd.measurement_unit_qualifier_code, qd.maximum_precision, qd.critical_state,
-			qd.critical_threshold, qd.description, qd.quota_order_number_sid
-			FROM quota_definitions qd, measures m
-			WHERE m.ordernumber = qd.quota_order_number_id
-			AND qd.validity_start_date < '2018-12-31' AND qd.validity_end_date > '2018-01-01'
-			AND LEFT(m.measure_generating_regulation_id, 7) IN (""" + self.regulation_string + """)
-			ORDER BY 1, 2, 3;"""
-		else:
-			sql = """SELECT quota_order_number_id, validity_start_date, validity_end_date, quota_definition_sid,
-			initial_volume, monetary_unit_code, measurement_unit_code,
-			measurement_unit_qualifier_code, maximum_precision, critical_state,
-			critical_threshold, description, quota_order_number_sid
-			FROM quota_definitions
-			WHERE validity_start_date < '2018-12-31' AND validity_end_date > '2018-01-01' ORDER BY 1, 2, 3"""
+		sql = """SELECT quota_order_number_id, validity_start_date, validity_end_date, quota_definition_sid,
+		initial_volume, monetary_unit_code, measurement_unit_code,
+		measurement_unit_qualifier_code, maximum_precision, critical_state,
+		critical_threshold, description, quota_order_number_sid
+		FROM quota_definitions
+		WHERE validity_start_date < '2018-12-31' AND validity_end_date > '2018-01-01' ORDER BY 1, 2, 3"""
 		cur = self.conn.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
@@ -908,25 +915,12 @@ class application(object):
 
 		self.d("Get 2019 quota definitions")
 		# Get all the definitions that are on the database for 2019
-		if 1 > 2:
-		#if self.regulation_string != "":
-			sql = """
-			SELECT DISTINCT qd.quota_order_number_id, qd.validity_start_date, qd.validity_end_date, qd.quota_definition_sid,
-			qd.initial_volume, qd.monetary_unit_code, qd.measurement_unit_code,
-			qd.measurement_unit_qualifier_code, qd.maximum_precision, qd.critical_state,
-			qd.critical_threshold, qd.description, qd.quota_order_number_sid
-			FROM quota_definitions qd, measures m
-			WHERE m.ordernumber = qd.quota_order_number_id
-			AND qd.validity_start_date < '2019-12-31' AND qd.validity_end_date > '2019-01-01'
-			AND LEFT(m.measure_generating_regulation_id, 7) IN (""" + self.regulation_string + """)
-			ORDER BY 1, 2, 3;"""
-		else:
-			sql = """SELECT quota_order_number_id, validity_start_date, validity_end_date, quota_definition_sid,
-			initial_volume, monetary_unit_code, measurement_unit_code,
-			measurement_unit_qualifier_code, maximum_precision, critical_state,
-			critical_threshold, description, quota_order_number_sid
-			FROM quota_definitions
-			WHERE validity_start_date < '2019-12-31' AND validity_end_date > '2019-01-01' ORDER BY 1, 2, 3"""
+		sql = """SELECT quota_order_number_id, validity_start_date, validity_end_date, quota_definition_sid,
+		initial_volume, monetary_unit_code, measurement_unit_code,
+		measurement_unit_qualifier_code, maximum_precision, critical_state,
+		critical_threshold, description, quota_order_number_sid
+		FROM quota_definitions
+		WHERE validity_start_date < '2019-12-31' AND validity_end_date > '2019-01-01' ORDER BY 1, 2, 3"""
 		cur = self.conn.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
@@ -1235,8 +1229,6 @@ class application(object):
 			AND measure_type_id IN (""" + my_measure_types + """) ORDER BY measure_sid
 			"""
 
-			#print (sql)
-
 		elif self.scope == "quotas":
 			sql = """SELECT measure_sid, ordernumber, measure_type_id, validity_start_date, validity_end_date,
 			geographical_area_id, goods_nomenclature_item_id, additional_code_type_id,
@@ -1260,8 +1252,7 @@ class application(object):
 			""" + country_clause + """
 			ORDER BY measure_sid
 			"""
-			#print (sql)
-			#sys.exit()
+
 
 		elif self.scope == "regulation":
 			if "," in self.regulation_string:
@@ -1271,8 +1262,6 @@ class application(object):
 					clause = "AND regulation_id = '" + self.regulation_string + "' "
 				else:
 					clause = "AND measure_generating_regulation_id = '" + self.regulation_string + "' "
-			#print (clause)
-			#sys.exit()
 
 			omit_measure_type_clause = ""
 			for obj in self.omit_measure_types_list:
@@ -1296,7 +1285,6 @@ class application(object):
 
 
 		# Write the data retrieved to a CSV - just for debug purposes, this is actually not required
-		
 		cur = self.conn.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
@@ -1707,68 +1695,66 @@ class application(object):
 		# The following code hunts for SIVs and remove the threshold-based values / replace with standard component
 		#self.d("Checking for SIVs")
 		for obj in self.measure_list:
-			#if 1 > 0:
-			if obj.measure_type_id in ('142', '143', '145', '146'):
-				my_duty_list = []
-				# Search through the measure conditions and if there is a "V" type condition code (an SIV)
-				# remove the condition and then add a measure component equivalent to the consensus
-				# ad valorem measure condition component's ad valorem component duty amount
+			my_duty_list = []
+			# Search through the measure conditions and if there is a "V" type condition code (an SIV)
+			# remove the condition and then add a measure component equivalent to the consensus
+			# ad valorem measure condition component's ad valorem component duty amount
 
-				# Here we capture all of the measure condition components (V type)
-				# and compile a "duty list", from which we find the ad valorem that we are interested in
-				# For MFNs, these should just be deleted, not replaced - all products with SIVs on them are "0"-rated
-				# This script is no longer used on MFNs
+			# Here we capture all of the measure condition components (V type)
+			# and compile a "duty list", from which we find the ad valorem that we are interested in
+			# For MFNs, these should just be deleted, not replaced - all products with SIVs on them are "0"-rated
+			# This script is no longer used on MFNs
 
-				for mc in obj.measure_condition_list:
-					if mc.condition_code == "V":
-						for mcc in obj.measure_condition_component_list:
-							if mc.measure_sid == mcc.measure_sid:
-								if mcc.duty_expression_id == "01":
-									my_duty_list.append (mcc.duty_amount)
+			for mc in obj.measure_condition_list:
+				if mc.condition_code == "V":
+					for mcc in obj.measure_condition_component_list:
+						if mc.measure_sid == mcc.measure_sid:
+							if mcc.duty_expression_id == "01":
+								my_duty_list.append (mcc.duty_amount)
 
-				p.print_progress(cnt)
-				cnt += 1
-				if obj.action == "delete":
-					self.deleted_measure_list.append(obj)
-					self.content += obj.xml()
-					self.transaction_id += 1
-				
-				elif obj.action == "recreate":
-					self.recreated_measure_list.append(obj)
-					obj.action = "delete"
-					self.content += obj.xml()
-					self.transaction_id += 1
-				
-				elif obj.action == "enddate":
-					self.enddated_measure_list.append(obj)
-					self.content += obj.xml()
-					self.transaction_id += 1
+			p.print_progress(cnt)
+			cnt += 1
+			if obj.action == "delete":
+				self.deleted_measure_list.append(obj)
+				self.content += obj.xml()
+				self.transaction_id += 1
+			
+			elif obj.action == "recreate":
+				self.recreated_measure_list.append(obj)
+				obj.action = "delete"
+				self.content += obj.xml()
+				self.transaction_id += 1
+			
+			elif obj.action == "enddate":
+				self.enddated_measure_list.append(obj)
+				self.content += obj.xml()
+				self.transaction_id += 1
 
-				
-				if (self.scope != "measuretypes") or ("103" not in self.measure_type_list):
-					#print ("Reviewing SIVs and removing")
-					if len(my_duty_list) > 0:
-						duty_amount_last = -1
-						all_match = True
-						for da in my_duty_list:
-							if duty_amount_last != -1:
-								if da != duty_amount_last:
-									all_match = False
-									break
+			
+			if (self.scope != "measuretypes") or ("103" not in self.measure_type_list):
+				#print ("Reviewing SIVs and removing")
+				if len(my_duty_list) > 0:
+					duty_amount_last = -1
+					all_match = True
+					for da in my_duty_list:
+						if duty_amount_last != -1:
+							if da != duty_amount_last:
+								all_match = False
+								break
 
-							duty_amount_last = da
+						duty_amount_last = da
 
-						if all_match == True:
-							#print ("Creating a new component")
-							new_component = measure_component(obj.measure_sid, "01", duty_amount_last, "", "", "", obj.goods_nomenclature_item_id)
-							mc_found = False
-							for mc in obj.measure_component_list:
-								if mc.duty_expression_id == "01":
-									mc_found = True
-									break
-							if mc_found == False:
-								obj.measure_component_list.append (new_component)
-								#print ("Adding an SIV replacement measure for: ", obj.goods_nomenclature_item_id, obj.validity_start_date, obj.measure_sid)
+					if all_match == True:
+						#print ("Creating a new component")
+						new_component = measure_component(obj.measure_sid, "01", duty_amount_last, "", "", "", obj.goods_nomenclature_item_id)
+						mc_found = False
+						for mc in obj.measure_component_list:
+							if mc.duty_expression_id == "01":
+								mc_found = True
+								break
+						if mc_found == False:
+							obj.measure_component_list.append (new_component)
+							#print ("Adding an SIV replacement measure for: ", obj.goods_nomenclature_item_id, obj.validity_start_date, obj.measure_sid)
 
 		print ("\n")
 		#sys.exit()
@@ -1800,31 +1786,25 @@ class application(object):
 			p = ProgressBar(len(self.enddated_measure_list), sys.stdout)
 			cnt = 1
 			for obj in self.enddated_measure_list:
-				#if 1 > 0:
-				#if obj.measure_type_id in ('277', '278', '410', '420', '464', '465', '467', '473', '474', '475', '476', '477', '478', '479', '705', '706', '707', '708', '709', '710', '711', '712', '713', '714', '715', '716', '717', '718', '719', '722', '724', '725', '728', '730', '735', '740', '745', '746', '747', '748', '749', '750', '751', '755', '770', '771', '772', '773', '774'):
-				if obj.measure_type_id in ('142', '145'):
-					p.print_progress(cnt)
-					cnt += 1
-					obj.action = "restart"
-					obj.measure_generating_regulation_id = self.future_regulation_id
-					obj.measure_generating_regulation_role = "1"
-					self.content += obj.xml()
-					self.transaction_id += 1
+				p.print_progress(cnt)
+				cnt += 1
+				obj.action = "restart"
+				obj.measure_generating_regulation_id = self.future_regulation_id
+				obj.measure_generating_regulation_role = "1"
+				self.content += obj.xml()
+				self.transaction_id += 1
 			print ("\n")
 			self.d("Writing script to reinstitute deleted future measures", False)
 			p = ProgressBar(len(self.recreated_measure_list), sys.stdout)
 			cnt = 1
 			for obj in self.recreated_measure_list:
-				#if 1 > 0:
-				if obj.measure_type_id in ('142', '145'):
-				#if obj.measure_type_id in ('277', '278', '410', '420', '464', '465', '467', '473', '474', '475', '476', '477', '478', '479', '705', '706', '707', '708', '709', '710', '711', '712', '713', '714', '715', '716', '717', '718', '719', '722', '724', '725', '728', '730', '735', '740', '745', '746', '747', '748', '749', '750', '751', '755', '770', '771', '772', '773', '774'):
-					p.print_progress(cnt)
-					cnt += 1
-					obj.action = "restart"
-					obj.measure_generating_regulation_id = self.future_regulation_id
-					obj.measure_generating_regulation_role = "1"
-					self.content += obj.xml()
-					self.transaction_id += 1
+				p.print_progress(cnt)
+				cnt += 1
+				obj.action = "restart"
+				obj.measure_generating_regulation_id = self.future_regulation_id
+				obj.measure_generating_regulation_role = "1"
+				self.content += obj.xml()
+				self.transaction_id += 1
 			print ("\n")
 		else:
 			self.d("No new measures to write - terminate only", False)
@@ -1932,8 +1912,11 @@ class application(object):
 		f.write(out)
 		f.close()
 
-	def validate(self):
-		fname = os.path.join(self.XML_OUT_DIR,	self.output_filename)
+	def validate(self, filename):
+		fname = os.path.join(self.XML_OUT_DIR,	filename)
+		#fname = filename
+		#print (fname)
+		#sys.exit()
 		msg = "Validating the XML file against the Taric 3 schema"
 		self.d(msg, False)
 		schema_path = os.path.join(self.SCHEMA_DIR, "envelope.xsd")

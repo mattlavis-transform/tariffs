@@ -38,8 +38,9 @@ class commodity(object):
 
 	def combine_notes(self):
 		if len(self.notes_list) > 1:
-			print ("More than one note", self.commodity_code)
+			#print ("More than one note", self.commodity_code)
 			#sys.exit()
+			pass
 		self.notes_list.sort(reverse = True)
 		if len(self.notes_list) == 0:
 			self.notes_string = "<w:r><w:t></w:t></w:r>"

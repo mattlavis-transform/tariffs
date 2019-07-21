@@ -77,7 +77,7 @@ class application(object):
 		print ("Protecting commodities from ME32")
 		list_count = len(self.goods_nomenclature_list)
 		p = ProgressBar(list_count, sys.stdout)
-		for loop1 in range(0, list_count + 1):
+		for loop1 in range(0, list_count):
 			g1 = self.goods_nomenclature_list[loop1]
 			if g1.status in ("Applied", "Liberalise"):
 				self.protect_code(loop1, g1, "both")

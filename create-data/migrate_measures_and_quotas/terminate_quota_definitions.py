@@ -27,4 +27,4 @@ app.truncate_straddling_quota_definitions()
 
 
 app.write_content()
-app.validate()
+app.validate(app.output_filename)

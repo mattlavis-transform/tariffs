@@ -174,7 +174,7 @@ class chapter(object):
 									sibling_duties.append (next_commodity.combined_duty)
 								else:
 									sibling_duty_set = set(sibling_duties)
-									print (my_commodity.commodity_code, str(len(sibling_duties)), str(len(sibling_duty_set)))
+									#print (my_commodity.commodity_code, str(len(sibling_duties)), str(len(sibling_duty_set)))
 									break
 
 

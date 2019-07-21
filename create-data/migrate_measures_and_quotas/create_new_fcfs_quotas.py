@@ -23,4 +23,4 @@ app.write_uk_future_quota_definitions()
 app.write_uk_future_quota_associations()
 
 app.write_content()
-app.validate()
+app.validate(app.output_filename)

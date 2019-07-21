@@ -27,7 +27,7 @@ app.terminate_measures()
 app.restart_measures()
 
 app.write_content()
-app.validate()
+app.validate(app.output_filename)
 #app.generate_xml_report()
 #app.check_business_rules()
 app.copy_to_custom_import_folder()

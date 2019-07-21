@@ -29,4 +29,4 @@ app.terminate_measures()
 app.terminate_definitions() 
 
 app.write_content()
-app.validate()
+app.validate(app.output_filename)
