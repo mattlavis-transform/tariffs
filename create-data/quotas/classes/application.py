@@ -79,11 +79,13 @@ class application(object):
 
 		if len(sys.argv) > 1:
 			self.output_profile = sys.argv[1]
-			print (self.output_profile)
+			self.CSV_DIR = os.path.join(self.CSV_DIR, self.output_profile)
 			self.output_filename = os.path.join(self.XML_OUT_DIR, "quotas_" + self.output_profile.strip() + ".xml")
 		else:
 			print ("No profile specified")
 			sys.exit()
+
+		self.d("Writing XML data for profile " + self.output_profile, False)
 
 
 	def get_config(self):
@@ -124,6 +126,7 @@ class application(object):
 
 
 	def write_xml(self):
+		self.d("Writing XML", True)
 		xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
 		xml += '<env:envelope xmlns="urn:publicid:-:DGTAXUD:TARIC:MESSAGE:1.0" xmlns:env="urn:publicid:-:DGTAXUD:GENERAL:ENVELOPE:1.0" id="ENV">\n'
 		
@@ -149,7 +152,6 @@ class application(object):
 			clause += "'" + q.quota_order_number_id + "', "
 		clause = clause.strip()
 		clause = clause.strip(",")
-		print (self.DBASE)
 		
 		sql = """SELECT m.measure_sid, m.goods_nomenclature_item_id, m.measure_type_id, mc.duty_expression_id,
 		mc.duty_amount, mc.monetary_unit_code, mc.measurement_unit_code, mc.measurement_unit_qualifier_code,
@@ -160,7 +162,6 @@ class application(object):
 		AND gn.validity_end_date IS NULL AND ordernumber IN (""" + clause + """)
 		ORDER BY ordernumber, measure_sid"""
 		
-		#print (sql)
 		cur = self.conn.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
@@ -225,6 +226,7 @@ class application(object):
 
 
 	def get_measures_from_csv(self):
+		self.d("Getting commodities from quota_commodities.csv", True)
 		self.quota_order_number_list = []
 		my_file = os.path.join(self.CSV_DIR, "quota_commodities.csv")
 		with open(my_file) as csv_file:
@@ -238,19 +240,16 @@ class application(object):
 					monetary_unit_code				= row[4]
 					measurement_unit_code			= row[5]
 					measurement_unit_qualifier_code	= row[6]
-					#start_date_override				= row[7]
-					#end_date_override				= row[8]
+					start_date_override				= row[7]
+					end_date_override				= row[8]
 					
-					start_date_override				= ""
-					end_date_override				= ""
-					
-
 					if (goods_nomenclature_item_id != "goods nomenclature") and (goods_nomenclature_item_id != ""):
 						obj = measure(goods_nomenclature_item_id, quota_order_number_id, origin_identifier, duty_amount,
 						monetary_unit_code, measurement_unit_code, measurement_unit_qualifier_code, start_date_override, end_date_override)
 						self.measure_list.append(obj)
 
 	def get_quota_order_numbers_from_csv(self):
+		self.d("Getting order numbers from quota_order_numbers.csv", True)
 		# Think about countries other than China
 		self.quota_order_number_list = []
 		my_file = os.path.join(self.CSV_DIR, "quota_order_numbers.csv")
@@ -266,7 +265,7 @@ class application(object):
 					origin_exclusion_string = row[5]
 					validity_start_date		= row[6]
 					subject					= row[7]
-					#method = ""
+
 					try:
 						status = row[8]
 					except:
@@ -296,7 +295,6 @@ class application(object):
 			my_origin = obj.origin_list
 			db_match_list = []
 			for db_origin in self.db_origin_list:
-				#print (db_origin.quota_order_number_id, db_origin.geographical_area_id)
 				if db_origin.quota_order_number_id == obj.quota_order_number_id:
 					db_match_list.append (db_origin.geographical_area_id)
 
@@ -332,21 +330,10 @@ class application(object):
 			if matched == False:
 				if obj.quota_order_number_id[0:3] != "094":
 					pass
-					#print ("Incomplete match on ", obj.quota_order_number_id, "in the Word doc it says", obj.actual_origin_string, "versus in the DB", db_match_string, "failure =", match_fail)
-
-
-		"""
-		for obj in self.quota_order_number_list:
-			exclusion_string = obj.origin_exclusion_string.strip()
-			if (exclusion_string != ""):
-				for db_exclusion in self.db_origin_exclusion_list:
-					if db_exclusion.quota_order_number_id == obj.quota_order_number_id:
-						print (obj.quota_order_number_id, "Match")
-		"""
-		#sys.exit()
 
 
 	def get_quota_definitions_from_csv(self):
+		self.d("Getting quota definitions from quota_definitions.csv", True)
 		self.quota_definition_list = []
 		my_file = os.path.join(self.CSV_DIR, "quota_definitions.csv")
 		with open(my_file) as csv_file:
@@ -368,27 +355,7 @@ class application(object):
 					measurement_unit_qualifier_code	= row[12]
 					blocking_period_start			= "" # row[13]
 					blocking_period_end				= "" # row[14]
-					origin_identifier							= row[15]
-
-					"""
-					quota_order_number_id			= row[0]
-					measure_type					= "122"
-					quota_method					= "FCFS"
-					validity_start_date				= row[1]
-					validity_end_date				= row[2]
-					length							= -1
-					initial_volume 					= row[3]
-					measurement_unit_code			= row[4]
-					maximum_precision				= row[5]
-					critical_state					= row[6]
-					critical_threshold				= row[7]
-					monetary_unit_code				= row[8]
-					measurement_unit_qualifier_code	= row[9]
-					blocking_period_start			= "" # row[13]
-					blocking_period_end				= "" # row[14]
-					origin_identifier				= ""
-					"""
-
+					origin_identifier				= row[15]
 
 					obj = quota_definition(quota_order_number_id, measure_type, quota_method, validity_start_date, validity_end_date, length, initial_volume,
 					measurement_unit_code, maximum_precision, critical_state, critical_threshold, monetary_unit_code,
@@ -458,10 +425,10 @@ class application(object):
 		self.DBASE = "tariff_staging"
 		self.conn = psycopg2.connect("dbname=" + self.DBASE + " user=postgres password=" + self.p)
 
+
 	def validate(self):
 		fname = self.output_filename
-		msg = "Validating the XML file against the Taric 3 schema"
-		self.d(msg, False)
+		self.d("Validating the XML file against the Taric 3 schema", True)
 		schema_path = os.path.join(self.SCHEMA_DIR, "envelope.xsd")
 		my_schema = xmlschema.XMLSchema(schema_path)
 
@@ -479,6 +446,7 @@ class application(object):
 			my_schema.validate(fname)
 
 	def get_all_origins_from_db(self):
+		self.d("Getting origins from database", True)
 		self.db_origin_list = []
 		sql = """SELECT qono.quota_order_number_origin_sid, qon.quota_order_number_id,
 		qon.quota_order_number_id, geographical_area_id
@@ -502,8 +470,6 @@ class application(object):
 			qono.quota_order_number_id = quota_order_number_id
 			self.db_origin_list.append (qono)
 		
-		print (len(self.db_origin_list))
-
 		self.db_origin_exclusion_list = []
 		sql = """SELECT quota_order_number_id, qon.quota_order_number_sid, excluded_geographical_area_sid,
 		gad.geographical_area_id, gad.description /*, qonoe.* */

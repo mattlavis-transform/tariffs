@@ -282,13 +282,12 @@ class application(object):
 		# These are special cases that allow for shortcuts across multiple measure types
 		self.credibility_list			= ['430', '431', '485', '481', '482', '483']
 		self.mfn_list					= ['103', '105']
-		self.wto_quota_list				= ['122', '123', '653', '654']
+		self.quota_list					= ['122', '123', '143', '146']
 		self.supplementary_list			= ['109', '110']
 		self.suspension_list			= ['112', '115', '117', '119', '141']
 		self.surveillance_list			= ['442', '447']
 		self.agri_list					= ['489', '490', '651', '652', '653', '654']
-		self.omit_measure_types_list	= self.credibility_list + self.supplementary_list + self.suspension_list + self.wto_quota_list
-
+		self.omit_measure_types_list	= self.credibility_list + self.supplementary_list + self.suspension_list + self.quota_list
 
 		if "quota" in sys.argv[0]:	# quotas
 			self.get_quota_parameters()
@@ -452,7 +451,7 @@ class application(object):
 				self.measure_type_list = self.supplementary_list
 
 			elif self.measure_type_string in ("quota", "quotas", "wto_quotas", "wto", "q"):	# quotas
-				self.measure_type_list = self.wto_quota_list
+				self.measure_type_list = self.quota_list
 
 			elif self.measure_type_string in ("mfn"):										# MFNs
 				self.measure_type_list = self.mfn_list

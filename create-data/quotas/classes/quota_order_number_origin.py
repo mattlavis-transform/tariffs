@@ -13,13 +13,11 @@ class quota_order_number_origin(object):
 		self.quota_order_number_id			= ""
 		self.exclusion_list = []
 
-		print (self.geographical_area_id)
 		self.get_geography()
 
 	def get_geography(self):
 		sql = """SELECT geographical_area_sid, geographical_code FROM geographical_areas WHERE
 		geographical_area_id = '""" + self.geographical_area_id + """' ORDER BY validity_start_date DESC LIMIT 1"""
-		#print (sql)
 		cur = g.app.conn.cursor()
 		cur.execute(sql)
 		rows = cur.fetchall()
